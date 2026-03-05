@@ -1,0 +1,112 @@
+{
+    "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "source": "4201 Das Orkland.md, 4502 Zug durch das Nebelmoor.md",
+    "tags": [
+        "Jäger",
+        "Wildnis",
+        "Orkland",
+        "Fallensteller"
+    ],
+    "general": {
+        "name": "Ulfried 'der Bär' Knutson",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 968,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wildnisbewohner",
+        "specification": "Erfahrener Bärenjäger und Fallensteller im Finsterkamm",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Nebelmoor-Rand",
+        "former-locations": [
+            "Trallop",
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Hat eine alte Elfenruine im Nebelmoor entdeckt und sucht jemanden, der die 'Spitzohren-Zeichen' lesen kann.",
+            "Warnt Adarell vor einer ungewöhnlich aggressiven Rotte Orks, die er 'Die blutigen Hauer' nennt."
+        ]
+    },
+    "appearance": {
+        "size": 195,
+        "weight": 110,
+        "hair": "Wilder, graumelierter Vollbart und lange Haare",
+        "skin": "Vernarbt und wettergegerbt",
+        "eyes": "Dunkelbraun, fast schwarz",
+        "outfit": {
+            "headgear": "Mütze aus Bärenfell",
+            "top": "Dicker Pelzmantel über Lederwams",
+            "trousers": "Robuste Lederhosen",
+            "footwear": "Schwere Stiefel mit Eisenbeschlägen",
+            "jewellery": "Kette aus Bärenkrallen",
+            "things": "Falleisen, Jagdmesser, Trinkhorn",
+            "weapons": "Eine schwere Bärenspieß und eine Axt"
+        },
+        "distinguishing_features": "Hinkt leicht auf dem linken Bein (alte Bärenverletzung)."
+    },
+    "personality": {
+        "traits": [
+            "Brummig",
+            "Ehrlich",
+            "Naturverbunden",
+            "Abergläubisch",
+            "Genügsam"
+        ],
+        "actual-mood": [
+            "Grimmig"
+        ],
+        "family-background": "Keine Familie mehr. Frau und Kind starben im harten Winter 998 BF. Lebt allein in einer Hütte.",
+        "motivation": "Will den 'Großen Alten', einen riesigen Bären, erlegen, der ihn einst verletzte."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 10,
+            "IN": 14,
+            "CH": 9,
+            "FF": 11,
+            "GE": 12,
+            "KO": 16,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 40,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtensuchen",
+                "FW": 13
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 14
+            },
+            {
+                "name": "Speere",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

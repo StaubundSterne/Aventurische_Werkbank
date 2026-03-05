@@ -1,0 +1,105 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d47a",
+    "source": "wiki-aventurica.de (Orden des Donners, Ehrenstein), 4309 Orden und Bündnisse.md",
+    "tags": [],
+    "general": {
+        "name": "Alara von Ehrenstein",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Wölfin (rudelanführend, unerbittlich)",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Ordenskriegerin",
+        "specification": "Anführerin einer kleinen Schwadron des Ordens des Donners. Spezialisiert auf den Grenzschutz im Svelltland. Sie verbindet rondrianische Wehrhaftigkeit mit einer pragmatischen, fast schon söldnerhaften Einstellung.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Gashok",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Alara provoziert Jost wegen seines 'sauberen' Glaubens und fordert ihn heraus, sich im Schlamm des Svelltlands zu beweisen.",
+            "Sie erkennt in Adarell das 'Elbenblut' und begegnet ihm mit einer Mischung aus Misstrauen und Respekt vor seinen Instinkten."
+        ]
+    },
+    "appearance": {
+        "size": 176,
+        "weight": 72,
+        "hair": "Kurzes, struppiges, dunkelbraunes Haar",
+        "skin": "Gebräunt, Narbe über der Oberlippe",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Lederhelm (oft am Gürtel)",
+            "top": "Brünierte Halbrüstung über einem Waffenrock mit schwarzen Blitzen auf blau-silbernem Grund",
+            "trousers": "Lederne Reithose, schlammbeschmutzt",
+            "footwear": "Schwere, kniehohe Reiterstiefel",
+            "jewellery": "Ein massives silbernes Schwertamulett (Ordenszeichen)",
+            "things": "Ein Beutel mit Gashoker Silbermünzen, eine Feldflasche mit Starkbier",
+            "weapons": "Ein langes Breitschwert ('Donnerschlag'), ein Jagdmesser"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Zynisch",
+            "Autoritär",
+            "Trinkfest",
+            "Kampferfahren",
+            "Gottesfürchtig (auf ihre Art)"
+        ],
+        "actual-mood": [
+            "Herausfordernd"
+        ],
+        "family-background": "Mutter Elwine von Ehrenstein, verarmte Landadlige; Vater Alrik, gefallen in der Schlacht am Neunaugensee. Die Familie hat ihren Sitz in Weiden verloren.",
+        "motivation": "Den Orden durch Beute und erfolgreiche Aufträge finanzieren, während sie die Straßen von Ork-Gesindel säubert."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 11,
+            "IN": 13,
+            "CH": 12,
+            "FF": 10,
+            "GE": 13,
+            "KO": 14,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 14
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 12
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

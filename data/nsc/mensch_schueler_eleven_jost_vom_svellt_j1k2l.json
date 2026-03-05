@@ -1,0 +1,110 @@
+{
+    "id": "b4e5f6g7-1a2b-3c4d-5e6f-7g8h9i0j1k2l",
+    "source": "4301 Hallen arkaner Macht, S. 112; 4202 Reich des roten Mondes",
+    "tags": [],
+    "general": {
+        "name": "Jost vom Svellt",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 989,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schüler / Eleven",
+        "specification": "Adept kurz vor der Prüfung; Schwerpunkt auf der körperlichen Selbstverwandlung und Kampfmagie.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Jost (NSC) fordert Jost (SC) zu einem Übungsduell im Innenhof heraus, um zu sehen, wessen 'Andergaster' Schule überlegen ist.",
+            "Er bietet Fredegis an, ihm die 'weniger offiziellen' Schänken der Unterstadt zu zeigen, in denen Magier seltener kontrolliert werden."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 82,
+        "hair": "Kurz geschoren, aschblond.",
+        "skin": "Gebräunt, einige Narben an den Unterarmen vom Training.",
+        "eyes": "Stahlgrau.",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Ärmellose Magierrobe, die seine kräftigen Arme betont.",
+            "trousers": "Robuste Reiterhose.",
+            "footwear": "Genagelte Stiefel.",
+            "jewellery": "Ein Lederarmband mit einem Wolfszahn.",
+            "things": "Ein Schleifstein; ein kleiner Beutel mit Wurfmessern.",
+            "weapons": "Ein schwerer Wanderstab aus Eiche (Magierstab)."
+        },
+        "distinguishing_features": "Trägt die Robe eher wie eine Uniform; wirkt für einen Magier ungewöhnlich athletisch."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Rau",
+            "Loyal",
+            "Direkt",
+            "Phexgefällig"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Sohn von Holzknechten aus dem Svelltschen; seine Familie wurde bei einem Orküberfall dezimiert. Er hasst die Besatzer und will die Magie als Waffe nutzen.",
+        "motivation": "Möchte seine Abschlussprüfung so schnell wie möglich hinter sich bringen, um sich dem Widerstand gegen die Orks anzuschließen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 10,
+            "FF": 11,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 40
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 11
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Visibili",
+                "FW": 8
+            },
+            {
+                "name": "Armatrutz",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,117 @@
+{
+    "id": "b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e",
+    "source": "https://de.wiki-aventurica.de/wiki/Sewerus_von_Greifenfurt; [4303] Stätten okkulter Geheimnisse, S. 110; [4301] Hallen arkaner Macht",
+    "tags": [],
+    "general": {
+        "name": "Sewerus von Greifenfurt",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Svellttaler / Lowangen",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier / Alchimist",
+        "specification": "Magister ordinarius controllarius; Licentiatus alchimicae. Spezialist für Alchimie und Grenzgänger der Beherrschungsmagie.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Greifenfurt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Er versucht Adarell in ein Gespräch über die 'Fesseln der Ideologie' zu verwickeln, um zu prüfen, wie flexibel seine Gesinnung gegenüber verbotener Alchimie ist."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 88,
+        "hair": "Dunkelblondes, leicht fettiges Haar; kurzer, ungepflegter Bart.",
+        "skin": "Blass, oft mit Ruß- oder Säureflecken übersät.",
+        "eyes": "Wachsame, spöttisch funkelnde blaue Augen.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Eine fleckige, ehemals graue Magierrobe, deren Taschen ständig mit Kräutern und Phiolen ausgebeult sind.",
+            "trousers": "Robuste Lederhose.",
+            "footwear": "Abgetretene Schnürstiefel.",
+            "jewellery": "Ein silberner Ring mit einem eingelassenen Stück Schwefel; sein Akademiereif der Perval-Akademie.",
+            "things": "Ein Set alchimistischer Messinstrumente; sein Homunculus Oswyn, der oft in seiner weiten Ärmeltasche hockt.",
+            "weapons": "Ein kurzer Magierstab, der eher wie ein rührstab für Kessel aussieht."
+        },
+        "distinguishing_features": "Füllige Gestalt; neigt zu einem sarkastischen Schnauben; riecht permanent nach Schwefel und getrockneten Alraunen."
+    },
+    "personality": {
+        "traits": [
+            "Spöttelnd",
+            "Genial",
+            "Arrogant",
+            "Unorthodox",
+            "Wachsam"
+        ],
+        "actual-mood": [
+            "Gereizt"
+        ],
+        "family-background": "Stammt aus einer bürgerlichen Familie in Greifenfurt; sein Vater war Apotheker. In Lowangen hat er sich durch sein Talent hochgearbeitet, fühlt sich aber von den 'Betonköpfen' der Akademie (Puschinske) missverstanden.",
+        "motivation": "Perfektionierung seiner alchimistischen Beherrschungsmagie; Suche nach Schülern mit 'flexiblem Geist', während er den Kleinkriegen mit Puschinske (noch) standhält."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 15,
+            "IN": 14,
+            "CH": 12,
+            "FF": 15,
+            "GE": 10,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 33,
+            "AsP": 45
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Alchimie",
+                "FW": 16
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 12
+            },
+            {
+                "name": "Überreden",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Bannbaladin",
+                "FW": 11
+            },
+            {
+                "name": "Salander Mutare",
+                "FW": 10
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": "1009 BF: Noch in Lowangen aktiv, sein Konflikt mit Puschinske schwelt bereits gewaltig."
+}

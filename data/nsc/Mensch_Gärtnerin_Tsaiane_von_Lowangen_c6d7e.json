@@ -1,0 +1,93 @@
+{
+    "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [
+        "Tsa",
+        "Gartenbau"
+    ],
+    "general": {
+        "name": "Tsaiane von Lowangen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Schmetterling",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gärtnerin",
+        "specification": "Dienerin der Tsa; spezialisiert auf das Ziehen von Nutzpflanzen in widrigen Klimazonen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Arsingen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Tsaiane bittet Şahin um Samen seltener Steppenblumen aus seiner Heimat, um den grauen Mauern von Yrramis mehr Farbe zu verleihen.",
+            "Sie fragt Hesindian nach alchemistischer Unterstützung, um einen Dünger gegen den frühen Frost im Svellttal zu entwickeln."
+        ]
+    },
+    "appearance": {
+        "size": 164,
+        "weight": 58,
+        "hair": "Wirr und oft mit Pflanzensäften bunt gefärbt.",
+        "skin": "Gebräunt und meist erdverschmiert.",
+        "eyes": "Frühlingsgrün.",
+        "outfit": {
+            "headgear": "Ein oft welkender, geflochtener Blumenkranz",
+            "top": "Buntes Flickenkleid aus verschiedenen Stoffresten",
+            "trousers": "Leichtes Unterkleid aus Leinen",
+            "footwear": "Barfuß oder leichte Bastschuhe",
+            "jewellery": "Viele bunte Bänder an den Handgelenken",
+            "things": "Kleines Grabscheit, Samentütchen, kleine Schaufel",
+            "weapons": "Grabscheit (Improvisiert)"
+        },
+        "distinguishing_features": "Summt ständig Melodien, die nach Frühling klingen; bemalt Steine mit bunten Farben."
+    },
+    "personality": {
+        "traits": [
+            "Lebensfroh",
+            "Optimistisch",
+            "Sprunghaft",
+            "Naturverbunden",
+            "Sanftmütig"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Wuchs als Tochter eines Kräutersammlers in Arsingen auf, bevor sie dem Ruf der jungen Göttin folgte.",
+        "motivation": "Das Leben selbst gegen die harten Winter und die graue Realität des Krieges zu verteidigen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 11
+            },
+            {
+                "name": "Heilkunde Gift",
+                "FW": 8
+            },
+            {
+                "name": "Malen/Zeichnen",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

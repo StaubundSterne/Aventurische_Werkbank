@@ -1,0 +1,126 @@
+{
+    "id": "7b8a9c0d-1e2f-4a3b-8c9d-0e1f2a3b4c5d",
+    "source": "https://de.wiki-aventurica.de/wiki/Eldor_Verani_Bharaspis; [4303] Stätten okkulter Geheimnisse, S. 109-111; [4301] Hallen arkaner Macht",
+    "tags": [
+        "Kaiser-Perval-Akademie",
+        "Autor",
+        "Emeritus",
+        "Lowangen",
+        "Inquisition"
+    ],
+    "general": {
+        "name": "Eldor Verani Bharaspis",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 923,
+        "alive": true,
+        "culture": "Tulamidisch / Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Uhu",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Magister Emeritus der Kaiser-Perval-Akademie; renommierter Fachautor für vergleichende Magiekunde (Druiden- & Hexenkult).",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Fasar",
+            "Kuslik"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Bharaspis hält Hesindian für einen Agenten der Inquisition und verbirgt hastig eine Originalabschrift seines Werkes unter seinem Mantel, während er ihn misstrauisch fixiert.",
+            "Er erkennt Aurelevinas Potenzial und flüstert ihr zu, dass der 'eiserne Wille' der einzige Weg sei, die 'wilde Magie' der Hexen wirklich zu begreifen.",
+            "Er bietet an, Hesindian in die Geheimnisse der nivesischen Schamanen einzuführen, wenn dieser ihm im Gegenzug frischen 'Wirselkraut-Tee' aus dem Grauen Trakt besorgt."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 55,
+        "hair": "Dünnes, schneeweißes Haar; ein langer, fast bis zum Gürtel reichender Bart, der oft mit Tintenflecken übersät ist.",
+        "skin": "Faltig wie altes Pergament, mit zahlreichen Altersflecken.",
+        "eyes": "Trübe, aber bei Erwähnung seiner Bücher plötzlich hellwach und stechend.",
+        "outfit": {
+            "headgear": "Ein schlichter, abgetragener schwarzer Magierhut.",
+            "top": "Eine schwere, ehemals prachtvolle schwarze Samtrobe, die nun speckig und verstaubt wirkt.",
+            "trousers": "Dunkle Stoffhose, an den Knien durchgewetzt.",
+            "footwear": "Weiche Filzhausschuhe, um in der Bibliothek nicht zu stören.",
+            "jewellery": "Ein Siegelring mit einem gesprungenen Amethysten; sein alter Akademiereif.",
+            "things": "Ein kleiner Handspiegel (zur Prüfung von Auren); ein Federkiel, den er meist hinter dem Ohr trägt.",
+            "weapons": "Ein uralter Magierstab aus Knochenholz, der oben eine Kugel aus Bergkristall hält."
+        },
+        "distinguishing_features": "Hustet oft trocken; seine Finger sind permanent dunkel von Tinte verfärbt; verströmt den Geruch von altem Leder und Kampfer."
+    },
+    "personality": {
+        "traits": [
+            "Verschroben",
+            "Wissensdurstig",
+            "Misstrauisch",
+            "Eigensinnig",
+            "Verschwiegen"
+        ],
+        "actual-mood": [
+            "Melancholisch"
+        ],
+        "family-background": "Stammt aus einer tulamidischen Gelehrtenfamilie aus Fasar, die nach der Perval-Ära in Ungnade fiel. Er hat keine lebenden Verwandten mehr und sieht die Bibliothek als sein einziges Erbe an.",
+        "motivation": "Die Bewahrung seines Lebenswerks vor der Inquisition und die Suche nach einem würdigen Nachfolger, der die 'objektive' Erforschung fremder Magie fortsetzt."
+    },
+    "stats": {
+        "experience-level": "Brillant",
+        "attributes": {
+            "MU": 12,
+            "KL": 17,
+            "IN": 15,
+            "CH": 11,
+            "FF": 13,
+            "GE": 8,
+            "KO": 9,
+            "KK": 7
+        },
+        "energies": {
+            "LeP": 22,
+            "AsP": 62
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 18
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 16
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 15
+            }
+        ],
+        "spells": [
+            {
+                "name": "Analüs Arcanstruktur",
+                "FW": 15
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 14
+            },
+            {
+                "name": "Memorabia Mensschief",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": "1009 BF: Ein lebendes Lexikon der Akademiegeschichte; er hütet die gefährlichsten Bücher der Halle."
+}

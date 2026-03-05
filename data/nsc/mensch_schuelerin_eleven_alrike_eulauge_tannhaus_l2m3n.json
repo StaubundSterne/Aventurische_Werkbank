@@ -1,0 +1,110 @@
+{
+    "id": "e8f9a0b1-c2d3-4e5f-6g7h-8i9j0k1l2m3n",
+    "source": "4301 Hallen arkaner Macht, S. 112; 4501 Im Zeichen der Kröte",
+    "tags": [],
+    "general": {
+        "name": "Alrike 'Eulauge' Tannhaus",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schülerin / Eleven",
+        "specification": "Mittlere Elevenstufe; konzentriert sich auf Sinnesschärfung und Beobachtungsmagie.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Alrike korrigiert Aurelevinas Aussprache eines Weidener Dialekts und bietet an, ihr die besten Plätze zur Sternenbeobachtung auf dem Dach der Akademie zu zeigen.",
+            "Sie bittet Hesindian, ihr bei der Analyse einer 'merkwürdigen Trübung' in ihrem Kristall zu helfen, die sie seit Tagen beobachtet."
+        ]
+    },
+    "appearance": {
+        "size": 164,
+        "weight": 54,
+        "hair": "Dunkelbraun, oft zu einem unordentlichen Zopf geflochten.",
+        "skin": "Sehr hell, fast durchscheinend.",
+        "eyes": "Auffallend groß, bernsteinfarben, wirkt fast so, als würde sie im Dunkeln leuchten.",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Saubere, aber oft geflickte Elevenrobe.",
+            "trousers": "Dunkler Rock aus Wolle.",
+            "footwear": "Leichte Wildlederschuhe.",
+            "jewellery": "Ein Brillengestell aus Messing, das sie meist auf der Stirn trägt.",
+            "things": "Ein Fernrohr; ein Notizbuch voller Skizzen von Vögeln.",
+            "weapons": "Keine."
+        },
+        "distinguishing_features": "Blinzelt sehr selten; neigt dazu, den Kopf schief zu legen, wenn sie jemanden beobachtet."
+    },
+    "personality": {
+        "traits": [
+            "Beobachtend",
+            "Ruhig",
+            "Präzise",
+            "Einsiedlerisch",
+            "Analytisch"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Waisenkind aus Baliho; wurde von einem reisenden Magier entdeckt und nach Lowangen vermittelt. Sie hat keine Erinnerung an ihre Eltern.",
+        "motivation": "Will die Welt durch Magie bis in das kleinste Detail verstehen und träumt davon, eines Tages die Augen einer Eule permanent zu besitzen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 15,
+            "IN": 15,
+            "CH": 11,
+            "FF": 13,
+            "GE": 12,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 26,
+            "AsP": 42
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sinnesschärfe",
+                "FW": 12
+            },
+            {
+                "name": "Malen & Zeichnen",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Adlerschwinge",
+                "FW": 7
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

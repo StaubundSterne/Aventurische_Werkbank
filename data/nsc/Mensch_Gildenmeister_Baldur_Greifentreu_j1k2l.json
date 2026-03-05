@@ -1,0 +1,92 @@
+{
+    "id": "c7d8e9f0-a1b2-3c4d-5e6f-7g8h9i0j1k2l",
+    "source": "Lowangen.txt",
+    "tags": [],
+    "general": {
+        "name": "Baldur Greifentreu",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Lowangener",
+        "species": "Mensch",
+        "soul-animal": "Bär (ruhig, aber kraftvoll)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmeister",
+        "specification": "Vorsteher der Schmiedezunft von Lowangen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Baldur prüft Josts Ambitionen, in die Gilde aufgenommen zu werden, und verlangt ein Meisterstück.\nEr benötigt Hesindians Hilfe bei der Bestimmung seltener Mineralien für eine Speziallegierung."
+    },
+    "appearance": {
+        "size": 180,
+        "weight": 95,
+        "hair": "Dichtes, bereits ergrautes Haar, Vollbart",
+        "skin": "Rußgeschwärzt an den Händen, wettergegerbt",
+        "eyes": "Grau",
+        "outfit": {
+            "top": "Schwere Leder-Schmiedeschürze über Leinenhemd",
+            "trousers": "Dunkle Stoffhose",
+            "footwear": "Schwere Arbeitsstiefel",
+            "jewellery": "Zunftring aus Eisen",
+            "things": "Schmiedehammer, Maßband",
+            "weapons": "Schmiedehammer (als Waffe nutzbar)"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Autoritär",
+            "Ehrlich",
+            "Traditionell",
+            "Geduldig",
+            "Stolz"
+        ],
+        "actual-mood": [
+            "Sachlich"
+        ],
+        "family-background": "Sein Vater war bereits Schmiedemeister in Lowangen. Baldur führt die Familientradition mit Stolz fort und hat drei Söhne, die ebenfalls im Handwerk tätig sind.",
+        "motivation": "Erhalt der Gildenrechte gegenüber den aufstrebenden Händlern; Perfektionierung der Stahlherstellung."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 12,
+            "CH": 13,
+            "FF": 14,
+            "GE": 11,
+            "KO": 15,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 14
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

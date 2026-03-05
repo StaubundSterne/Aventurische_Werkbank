@@ -1,0 +1,89 @@
+{
+    "id": "c3d4e5f6-a7b8-4c7d-0e1f-2a3b4c5d6e7f",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Olko Einarm",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Ausrüstungsverwalter",
+        "specification": "Zeugwart der Miliz; verantwortlich für Waffenkammer und Instandhaltung der Lederwaren.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Er diskutiert mit Hesindian über die Haltbarkeit von garetischem vs. svellttalerischem Leder."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 78,
+        "hair": "Kurz, braun, licht werdend.",
+        "skin": "Blass, da er meist in der Waffenkammer arbeitet.",
+        "eyes": "Dunkelbraun.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Einfacher Waffenrock der Miliz.",
+            "trousers": "Feste Leinenhose.",
+            "footwear": "Ausgetretene Stiefel.",
+            "jewellery": "Keine",
+            "things": "Lederwerkzeug, Nadel und Faden (einhändig bedienbar).",
+            "weapons": "Keine (Waffen in Reichweite)."
+        },
+        "distinguishing_features": "Fehlender linker Arm; flickt Riemen beeindruckend schnell mit nur einer Hand."
+    },
+    "personality": {
+        "traits": [
+            "Penibel",
+            "Ordnungsliebend",
+            "Stolz",
+            "Zuverlässig",
+            "Direkt"
+        ],
+        "actual-mood": [
+            "Streng"
+        ],
+        "family-background": "Ehemaliger Seesoldat; verlor seinen Arm bei einer Flusspiraten-Abwehr. Seine Schwester betreibt eine Gerberei in Lowangen.",
+        "motivation": "Jedes Stück Ausrüstung in perfektem Zustand zu halten, um das Leben der Läufer zu schützen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Lederarbeiten",
+                "FW": 13
+            },
+            {
+                "name": "Schätzen",
+                "FW": 11
+            },
+            {
+                "name": "Rechnen",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

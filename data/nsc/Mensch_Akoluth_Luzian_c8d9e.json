@@ -1,0 +1,90 @@
+{
+    "id": "b5c6d7e8-f9a0-4b1c-2d3e-4f5a6b7c8d9e",
+    "source": "NSC aus Yrramis.csv, 4300 Aera des goldenen Kaisers",
+    "tags": [],
+    "general": {
+        "name": "Luzian",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Garetien",
+        "species": "Mensch",
+        "soul-animal": "Falke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Prätor in Yrramis",
+        "specification": "Diener des Praios; verantwortlich für die Reinheit und Ordnung am lokalen Schrein.",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Jost"
+        ],
+        "injection-points": [
+            "Luzian ist beeindruckt von Aurelinas würdevoller Haltung und bittet sie um eine Spende für die Sonnenuhr.",
+            "Er beobachtet Jost mit misstrauischen Augen und mahnt ihn, dass das Licht des Herren keinen Makel duldet."
+        ]
+    },
+    "appearance": {
+        "size": 176,
+        "weight": 68,
+        "hair": "Dunkelblond, streng geschnitten.",
+        "skin": "Hell, neigt zu Sonnenbrand.",
+        "eyes": "Stahlblau, sehr klar.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichte weiße Leinentunika.",
+            "trousers": "Helle Stoffhose.",
+            "footwear": "Einfache Sandalen.",
+            "jewellery": "Keine",
+            "things": "Poliertuch, Messingpflegemittel.",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Extrem saubere Erscheinung; poliert ständig die Messingbeschläge des Portals."
+    },
+    "personality": {
+        "traits": [
+            "Ordnungsliebend",
+            "Fromm",
+            "Detailverliebt",
+            "Ruhig",
+            "Diszipliniert"
+        ],
+        "actual-mood": [
+            "Andächtig"
+        ],
+        "family-background": "Sohn eines garetischen Schreibers; kam mit einer Mission der Praios-Kirche in das Svelltland.",
+        "motivation": "Die göttliche Ordnung durch Sauberkeit und rituellen Fleiß im Alltag sichtbar machen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Etikette",
+                "FW": 11
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 10
+            },
+            {
+                "name": "Götter/Kulte",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": "Verhandelte mit Borgrim über eine praiosgefällige Vogelperformance"
+}

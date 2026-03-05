@@ -1,0 +1,120 @@
+{
+    "id": "n4o5p6q7-r8s9-0123-4567-890123abcdef",
+    "source": "4201 Das Orkland.md, 4200 Svelltland.md",
+    "tags": [
+        "Elf",
+        "Wildnis",
+        "Kultur",
+        "Auenseen"
+    ],
+    "general": {
+        "name": "Lindariel 'Mondschatten'",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 900,
+        "alive": true,
+        "culture": "Auelfen",
+        "species": "Elf",
+        "soul-animal": "Libelle",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wildnisbewohner",
+        "specification": "Auelfische Bewahrerin an den Auenseen",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Auenseen",
+        "former-locations": [
+            "Salamandersteine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Erkennt Adarell als eine der 'Verlorenen' und bietet ihr spirituelle Führung an.",
+            "Bitte Adarell um Hilfe, eine Verschmutzung der Seen durch Menschen (oder Orks) zu stoppen."
+        ]
+    },
+    "appearance": {
+        "size": 180,
+        "weight": 60,
+        "hair": "Silbernes, langes Haar",
+        "skin": "Hell, fast leuchtend",
+        "eyes": "Violett",
+        "outfit": {
+            "headgear": "Blumenkranz (im Sommer)",
+            "top": "Gewand aus Bausch und Seide",
+            "trousers": "Leggings",
+            "footwear": "Keine (oder leichte Sandalen)",
+            "jewellery": "Keine (nur natürliche Materialien)",
+            "things": "Flöte",
+            "weapons": "Elfenbogen"
+        },
+        "distinguishing_features": "Bewegt sich lautlos."
+    },
+    "personality": {
+        "traits": [
+            "Sanft",
+            "Fremdartig",
+            "Musikalisch",
+            "Naturverbunden",
+            "Friedliebend"
+        ],
+        "actual-mood": [
+            "Harmonisch"
+        ],
+        "family-background": "Lebt in einer Sippe. Ihre Eltern sind 'ins Licht gegangen'.",
+        "motivation": "Will den Einklang (badoc vermeiden) bewahren und die Schönheit der Natur schützen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 16,
+            "CH": 14,
+            "FF": 14,
+            "GE": 15,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 45,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Singen",
+                "FW": 15
+            },
+            {
+                "name": "Bogen",
+                "FW": 14
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 13
+            }
+        ],
+        "spells": [
+            {
+                "name": "Bannbaladin",
+                "FW": 10
+            },
+            {
+                "name": "Haselbusch",
+                "FW": 12
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,90 @@
+{
+    "id": "89501423-c3d4-6e5f-0a1b-7d6c5b4a3e2f",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Bork",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 971,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Hufschmied",
+        "specification": "Schmied am Südtor; zuständig für Beschläge und einfache Eisenarbeiten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Ein Weiler im Thasch"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Bork bittet Şahin, sein Pferd beim Beschlagen festzuhalten, da er keine Zeit für Tänze hat.",
+            "Er bietet Aurelina an, ihre Ausrüstung gegen eine kleine Spende zu reparieren, zeigt sich aber wortkarg gegenüber Adligen."
+        ]
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 110,
+        "hair": "Schwarz, verrußt.",
+        "skin": "Rußig, glänzend von Schweiß.",
+        "eyes": "Dunkelbraun.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Kein Oberteil bei der Arbeit",
+            "trousers": "Feste Schmiedehose",
+            "footwear": "Feste Schmiedestiefel",
+            "jewellery": "Keine",
+            "things": "Amboss, Esse, Schleifstein",
+            "weapons": "Schwerer Schmiedehammer, Zange"
+        },
+        "distinguishing_features": "Enormer Brustumfang; riecht nach verbranntem Horn und Eisen; Kleidung ist übersät mit Brandlöchern."
+    },
+    "personality": {
+        "traits": [
+            "Kraftvoll",
+            "Direkt",
+            "Wortkarg",
+            "Zuverlässig",
+            "Ehrlich"
+        ],
+        "actual-mood": [
+            "Hitzig"
+        ],
+        "family-background": "Kam aus den Bergen des Thasch nach Yrramis, um dort als Schmied sein Glück zu suchen.",
+        "motivation": "Glaubt an die Ehrlichkeit des Eisens; wer zu schwach ist, scheitert am Material."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schmieden",
+                "FW": 13
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 12
+            },
+            {
+                "name": "Hitzeresistenz",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

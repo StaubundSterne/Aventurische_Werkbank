@@ -1,0 +1,103 @@
+{
+    "id": "e412b9c3-12a4-4f91-b1e2-9f3c4d12a8b1",
+    "source": "4300 Aera des goldenen Kaisers; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [
+        "Gelehrte",
+        "Markt",
+        "Lowangen"
+    ],
+    "general": {
+        "name": "Aldare von Kieselstein",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 986,
+        "alive": true,
+        "culture": "Mittelländisch (Garetien)",
+        "species": "Mensch",
+        "soul-animal": "Bibliotheksmaus",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Gelehrte",
+        "specification": "Junior-Bibliothekarin auf Forschungsreise; untersucht die Unterschiede zwischen der Verformer- und der Perval-Bibliothek.",
+        "magical": false,
+        "clerical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Vinsalt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Aldare erkennt in Aurelevina eine Standesgenossin und beklagt sich bei ihr über die 'barbarischen Zustände' und den Gestank nach Orks im Norden.",
+            "Sie bittet Adarell um Geleitschutz zu einem abgelegenen Buchhändler in der Unterstadt, da sie sich in den dunklen Gassen fürchtet."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 52,
+        "hair": "Dunkelbraun, akkurat in einem Netz gehalten.",
+        "skin": "Sehr blass, fast vornehm kränklich.",
+        "eyes": "Große, kurzsichtige braune Augen.",
+        "outfit": {
+            "headgear": "Ein elegantes, blaues Barett.",
+            "top": "Ein hochgeschlossenes Reisekleid aus feiner garetischer Wolle in Saphirblau.",
+            "jewellery": "Ein kleiner silberner Schlüssel an einer Kette (Zeichen ihres Amtes in Gareth).",
+            "things": "Ein ledergebundenes Notizbuch und ein Tintenfass mit festem Verschluss.",
+            "weapons": "Ein kleiner Zierdोलch (völlig unbrauchbar im Kampf)."
+        },
+        "distinguishing_features": "Rückt sich ständig ein kleines Monokel zurecht; spricht ein extrem gepflegtes Hochgarethi."
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Etwas herablassend",
+            "Ordentlich",
+            "Furchtsam",
+            "Belesen"
+        ],
+        "actual-mood": [
+            "Überfordert"
+        ],
+        "family-background": "Nichte des Barons von Kieselstein; ihre Familie erwartet von ihr eine vorteilhafte Heirat, doch sie liebt nur ihre Bücher.",
+        "motivation": "Möchte einen seltenen Index verbotener Schriften finden, der angeblich in Lowangen versteckt wurde."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 9,
+            "KL": 15,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 10,
+            "KO": 9,
+            "KK": 8
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 12
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 10
+            },
+            {
+                "name": "Etikette",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

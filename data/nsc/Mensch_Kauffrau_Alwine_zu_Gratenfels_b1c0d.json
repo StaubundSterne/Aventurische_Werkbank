@@ -1,0 +1,95 @@
+{
+    "id": "f5e4d3c2-b1a0-9f8e-7d6c-5b4a3a2b1c0d",
+    "source": "Lowangen.txt, Aventurisches-Archiv2.txt",
+    "tags": [],
+    "general": {
+        "name": "Alwine zu Gratenfels",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Pfau (eitel und stolz)",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Kauffrau",
+        "specification": "Fernhändlerin für Luxusgüter und ehemalige Hofdame",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gratenfels",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Alwine teilt mit Aurelina Violanta den Klatsch über den mittelreichischen Adel und kennt ihre Familiengeschichte.",
+            "Sie plant mit Şahin ein gemeinsames Handelsunternehmen für exotische Gewürze aus dem Süden."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 60,
+        "hair": "Aufwendig frisierte goldblonde Haare",
+        "skin": "Vornehm blass",
+        "eyes": "Hellblau",
+        "outfit": {
+            "top": "Samtkleid in tiefem Blau",
+            "trousers": "Keine (Reifrock)",
+            "footwear": "Seidene Halbschuhe",
+            "jewellery": "Perlenhalskette, mehrere Ringe",
+            "things": "Fächer, Parfümiertes Taschentuch",
+            "weapons": "Zierdolch"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Elegant",
+            "Arrogant",
+            "Gebildet",
+            "Manipulativ",
+            "Verschwenderisch"
+        ],
+        "actual-mood": [
+            "Amüsiert"
+        ],
+        "family-background": "Stammt aus einem verarmten Adelsgeschlecht aus Gratenfels. Floh nach einem Skandal nach Lowangen, um dort durch Handel wieder zu Reichtum zu gelangen.",
+        "motivation": "Wiedererlangung ihres sozialen Status; Aufbau eines Handelsmonopols für Seide in Lowangen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 13,
+            "CH": 15,
+            "FF": 11,
+            "GE": 10,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Etikette",
+                "FW": 13
+            },
+            {
+                "name": "Überreden",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

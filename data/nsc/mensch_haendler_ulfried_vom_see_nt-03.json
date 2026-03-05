@@ -1,0 +1,90 @@
+{
+    "id": "merchant-03",
+    "source": "4201 Das Orkland; wiki-aventurica.de/wiki/Teshkal",
+    "tags": [],
+    "general": {
+        "name": "Ulfried vom See",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händler",
+        "specification": "Getreidehändler und Fuhrherr; besitzt zwei große Maultierkarren.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Tiefhusen",
+            "Enqui"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Ulfried erkennt Şahins Kampfkraft und bietet ihm die Führung des Geleitschutzes an.",
+            "Er bittet Adarell um Rat wegen einer Seuche, die seine Maultiere befallen haben könnte."
+        ]
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 110,
+        "hair": "Schwarz, wild wuchernd, ungepflegt.",
+        "skin": "Dunkel von der Sonne und staubig.",
+        "eyes": "Tiefschwarz",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Zerschlissenes Lederwams über einem dicken Wollpullover",
+            "trousers": "Feste Reiterhose",
+            "footwear": "Klobige Lederstiefel",
+            "jewellery": "Keiner",
+            "things": "Eine lange Peitsche, eine hölzerne Pfeife",
+            "weapons": "Ein schwerer Streitkolben"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Grobschlächtig",
+            "Direkt",
+            "Verschwiegen",
+            "Stur",
+            "Mutig"
+        ],
+        "actual-mood": [
+            "Grimmig"
+        ],
+        "family-background": "Ehemaliger Söldner; hat seine gesamte Ersparnis in die Karren investiert.",
+        "motivation": "Ist entschlossen, die Steppe zu durchqueren, koste es, was es wolle."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fahrzeug lenken",
+                "FW": 13
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 11
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

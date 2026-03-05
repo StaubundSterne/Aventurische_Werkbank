@@ -1,0 +1,259 @@
+/* --- BASIS-EINSTELLUNGEN --- */
+* {
+    box-sizing: border-box;
+    /* Sorgt dafür, dass Abstände die Breite nicht verändern */
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #361610;
+    /* Dunkler Hintergrund für die Augen */
+    color: #fafafa;
+    /* Helle Schriftfarbe für den Kontrast */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- ZONE A: DER HEADER: KAMPAGNE, EPISODEN UND RECAP --- */
+header.context {
+    background-color: #008000;
+    padding: 10px 20px;
+    border-bottom: 3px solid #361610;
+    transition: max-height 0.3s ease-out;
+    /* Weicher Übergang beim Einklappen */
+    overflow: hidden;
+    position: relative;
+}
+
+header.context.collapsed {
+    max-height: 20px !important;
+    overflow: hidden;
+}
+
+#toggle-header {
+    position: absolute;
+    /* Ändere 'bottom' zu 'top', damit der Button immer an der gleichen Stelle bleibt */
+    top: 5px;
+    right: 20px;
+    background: #361610;
+    color: white;
+    border: none;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-size: 0.7em;
+    border-radius: 3px;
+    z-index: 100;
+    /* Stellt sicher, dass der Button über den Reglern liegt */
+}
+
+.context-slots {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.slot {
+    font-size: 0.85em;
+    color: #361610;
+}
+
+.weight-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #361610;
+    /* Leichte Aufhellung im Hintergrund */
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.weight-controls input[type="range"] {
+    -webkit-appearance: none; /* Für Chrome, Safari, neue Edge */
+    appearance: none;         /* Standard für Firefox und moderne Browser */
+    width: 80px;
+    height: 4px;
+    background: #361610;
+    border: 1px solid #d4af37;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Der Knopf (Thumb) für Chrome/Safari/Edge */
+.weight-controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #008000;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+}
+
+/* Der Knopf (Thumb) für Firefox */
+.weight-controls input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #008000;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* --- DAS LAYOUT (DIE DREI SPALTEN) --- */
+.workbench-layout {
+    display: flex;
+    flex: 1;
+    /* Füllt den restlichen Platz aus */
+    padding: 10px;
+    gap: 15px;
+    overflow-x: auto;
+    /* Erlaubt horizontales Scrollen, falls der Bildschirm zu schmal wird */
+    min-width: 1000px;
+    /* Die Werkbank braucht insgesamt Platz zum Atmen */
+}
+
+/* Gemeinsame Regeln für alle Spalten */
+.stream-column,
+.focus-area {
+    background-color: #252525;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.focus-area {
+    flex: 1;
+    min-width: 400px; /* Schutz vor zu schmalem Viewport */
+}
+
+.magnet-stream {
+    min-height: 100px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Karten untereinander */
+    gap: 10px;
+    /* Abstand zwischen den Karten */
+    min-height: 100px;
+}
+
+/* --- GEMEINSAME REGELN FÜR KLAPPBARE SEITENSPALTEN --- */
+.stream-column {
+    transition: width 0.3s ease, min-width 0.3s ease, padding 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Verhindert, dass Inhalt beim Klappen rausragt */
+}
+
+.stream-column.collapsed {
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 10px 5px !important;
+    cursor: pointer;
+}
+
+.stream-column.collapsed > *:not(.toggle-btn) {
+    display: none;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    background: #361610;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Button-Positionen */
+#toggle-ingame { right: 8px; }  /* Links: Pfeil sitzt rechts in der Spalte */
+#toggle-resource { left: 8px; } /* Rechts: Pfeil sitzt links in der Spalte */
+
+
+
+/* --- GEMEINSAME REGELN FÜR ALLE KARTEN --- */
+.info-card {
+    background-color: #f4eeda;
+    /* Cremefarbenes Papier */
+    color: #361610;
+    /* Deine dunkle Textfarbe */
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border-left: 5px solid #361610;
+    position: relative;
+}
+
+.info-card.active {
+    border-left: 5px solid #008000; /* Grüner "Glow" am Rand */
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+}
+
+.info-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ccc;
+}
+
+/* SCORE-BADGE */
+.score-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #361610; /* Dunkles Holz-Braun */
+    color: #f4eeda;            /* Pergament-Weiß */
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    border: 1px solid #d4af37; /* Goldener Rand */
+    z-index: 10;
+}
+
+/* --- ZONE B: INGAME-INFORMATION --- */
+.ingame-information {
+    width: 280px;
+    min-width: 250px;
+    /* Verhindert das Zerquetschen der Handreichungen */
+    flex-shrink: 0;
+    /* Die Spalte darf nicht kleiner werden als die min-width */
+}
+
+/* --- ZONE C: SITUATION-INPUT UND WORKBENCH-CANVAS --- */
+.focus-area {
+    flex: 1;
+    /* Nimmt sich den restlichen Platz */
+    min-width: 400px;
+}
+
+/* --- ZONE C: DAS EINGABEFELD (MITTE) --- */
+textarea#situation-input {
+    width: 100%;
+    min-height: 80px;
+    /* Verhindert, dass das Feld zu einem Schlitz wird */
+    max-height: 300px;
+    /* Verhindert, dass es den ganzen Bildschirm einnimmt */
+    background-color: #000;
+    color: #008000;
+    border: 1px solid #361610;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+/* --- ZONE D: RESSOURCEN (NSC, SCHAUPLÄTZE, GEGENSTÄNDE --- */
+.resource {
+    width: 320px;
+    min-width: 300px;
+    /* Genug Platz für NSC-Namen und Badges */
+    flex-shrink: 0;
+}

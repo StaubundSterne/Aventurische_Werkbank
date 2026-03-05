@@ -1,0 +1,111 @@
+{
+    "id": "e4d3c2b1-a1b2-4c3d-8e9f-0a1b2c3d4e5f",
+    "source": "4200 Svelltland.md, 4201 Das Orkland.md",
+    "tags": [
+        "Händler",
+        "Tiefhusen",
+        "Svelltbund"
+    ],
+    "general": {
+        "name": "Alrik von Tiefhusen",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Kürschner und Lederhändler im Zunfthaus",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tiefhusen",
+        "former-locations": [
+            "Lowangen",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Kennt Şahins Mutter aus alten Tagen in Riva und schuldet ihr noch einen Gefallen.",
+            "Sucht einen diskreten Boten für einen Brief an den 'Grauen' in Lowangen, ohne dass die Zunft davon erfährt."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 85,
+        "hair": "Dichtes, braunes Haar, zum Zopf gebunden",
+        "skin": "Gebräunt und wettergegerbt",
+        "eyes": "Grau wie der Svellt im Herbst",
+        "outfit": {
+            "headgear": "Lederkappe mit Biberschwanz-Verzierung",
+            "top": "Robuste Lederweste über Leinenhemd",
+            "trousers": "Lederhosen mit vielen Taschen",
+            "footwear": "Hohe Stiefel aus Rindsleder",
+            "jewellery": "Ein silberner Ring mit dem Wappen der Kürschnerzunft",
+            "things": "Gerbermesser, diverse Fellproben",
+            "weapons": "Ein kräftiger Dolch am Gürtel"
+        },
+        "distinguishing_features": "Riecht immer leicht nach Gerbstoffen und Moschus."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Misstrauisch",
+            "Loyal",
+            "Praktisch veranlagt",
+            "Heimatverbunden"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Sohn von Meister Hanke (verstorben), Bruder von Lenya (Wirtin in Gashok). Familie lebt seit drei Generationen vom Fellhandel.",
+        "motivation": "Will seine Lagerbestände vor dem befürchteten Orkeinfall sichern und nach Süden bringen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 14,
+            "CH": 12,
+            "FF": 15,
+            "GE": 11,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 10
+            },
+            {
+                "name": "Lederarbeiten",
+                "FW": 12
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

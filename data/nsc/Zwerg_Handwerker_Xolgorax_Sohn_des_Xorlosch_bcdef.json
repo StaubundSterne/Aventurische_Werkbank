@@ -1,0 +1,112 @@
+{
+    "id": "i9j0k1l2-m3n4-5678-9012-345678abcdef",
+    "source": "4201 Das Orkland.md, 4200 Svelltland.md",
+    "tags": [
+        "Schmied",
+        "Tjolmar",
+        "Handwerk",
+        "Zwerg"
+    ],
+    "general": {
+        "name": "Xolgorax Sohn des Xorlosch",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 920,
+        "alive": true,
+        "culture": "Ambosszwerge",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Waffenschmied in Tjolmar, spezialisiert auf Äxte",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tjolmar",
+        "former-locations": [
+            "Xorlosch",
+            "Angbar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Weigert sich, Waffen an jemanden zu verkaufen, der nicht 'würdig' ist. Jost könnte ihn überzeugen.",
+            "Hat Ärger mit einer Lieferung Eisen aus dem Orkland, die überfällig ist. Bittet Jost um Nachforschung."
+        ]
+    },
+    "appearance": {
+        "size": 135,
+        "weight": 70,
+        "hair": "Roter Bart, zu Zöpfen geflochten, Glatze",
+        "skin": "Hell, rußgeschwärzt",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Lederne Schürze",
+            "top": "Arbeitshemd (hochgekrempelt)",
+            "trousers": "Robuste Hosen",
+            "footwear": "Eisenbeschlagene Stiefel",
+            "jewellery": "Keine",
+            "things": "Schmiedehammer, Zange",
+            "weapons": "Ein großer Schmiedehammer (auch als Waffe)"
+        },
+        "distinguishing_features": "Brandnarbe auf dem rechten Unterarm."
+    },
+    "personality": {
+        "traits": [
+            "Stur",
+            "Perfektionistisch",
+            "Traditionsbewusst",
+            "Ehrlich",
+            "Brummig"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Stammt aus einer langen Linie von Schmieden. Sein Vater war ein berühmter Plattner in Xorlosch.",
+        "motivation": "Will die perfekte Axt schmieden, die selbst Drachenschuppen spaltet."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 12,
+            "CH": 10,
+            "FF": 16,
+            "GE": 10,
+            "KO": 16,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 45,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Grobschmied",
+                "FW": 15
+            },
+            {
+                "name": "Waffenschmied",
+                "FW": 14
+            },
+            {
+                "name": "Zwergennase",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

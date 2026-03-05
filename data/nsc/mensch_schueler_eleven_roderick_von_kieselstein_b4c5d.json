@@ -1,0 +1,106 @@
+{
+    "id": "c7b8a9d0-1e2f-4a3b-8c9d-0e1f2a3b4c5d",
+    "source": "4301 Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [],
+    "general": {
+        "name": "Roderick von Kieselstein",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 997,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Schüler / Eleven",
+        "specification": "Jung-Eleve im ersten Lehrjahr; spezialisiert sich früh auf die Theorie der belebten Materie.",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Roderick rempelt Hesindian in der Bibliothek an, während er einen Stapel zu schwerer Bücher trägt, und bittet stotternd um Hilfe beim Lesen eines komplizierten Diagramms.",
+            "Er erkennt in Aurelevina eine Standesgenossin und fragt sie schüchtern, ob der Adel im Süden auch so viel Zeit mit dem 'Säubern von Retorten' verbringen muss."
+        ]
+    },
+    "appearance": {
+        "size": 152,
+        "weight": 42,
+        "hair": "Dunkelbraun, topfschnittartig geschnitten, wirkt immer etwas struppig.",
+        "skin": "Blass, mit Sommersprossen auf der Nase.",
+        "eyes": "Große, neugierige rehbraune Augen.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Zu große, graue Elevenrobe, deren Ärmel er ständig hochkrempeln muss.",
+            "trousers": "Einfache Leinenhose.",
+            "footwear": "Saubere Lederschuhe.",
+            "jewellery": "Ein silberner Siegelring derer von Kieselstein am Lederband um den Hals.",
+            "things": "Ein kleiner Schreibgriffel und ein abgegriffenes Übungsheft.",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Hinterlässt oft Tintenflecke an seinen Wangen; wirkt deutlich jünger als er ist."
+    },
+    "personality": {
+        "traits": [
+            "Wissbegierig",
+            "Schüchtern",
+            "Ordentlich",
+            "Heimwehkrank",
+            "Höflich"
+        ],
+        "actual-mood": [
+            "Überfordert"
+        ],
+        "family-background": "Sohn von Junker Alrich von Kieselstein; Mutter Belinde führt das Gut bei Tiefhusen. Seine Eltern schickten ihn nach Lowangen, um die Familientradition der Gelehrsamkeit zu wahren.",
+        "motivation": "Will seinen Vater nicht enttäuschen und versucht verzweifelt, die Grundlagen der Objekthelligkeit zu begreifen."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 10,
+            "KO": 9,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 25,
+            "AsP": 32
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechnen",
+                "FW": 7
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Flim Flam",
+                "FW": 4
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,128 @@
+{
+    "id": "7d9a1c2e-3f4b-4a5c-9d8e-7f6a5b4c3d2e",
+    "source": "https://de.wiki-aventurica.de/wiki/Oswyn_Puschinske; [4303] Stätten okkulter Geheimnisse, S. 110-111; [4301] Hallen arkaner Macht",
+    "tags": [
+        "Spektabilität",
+        "Erzmagier",
+        "Lowangen",
+        "Schwarzmagier",
+        "Kaiser-Perval-Akademie"
+    ],
+    "general": {
+        "name": "Oswyn Puschinske",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 913,
+        "alive": true,
+        "culture": "Mittelländisch (Gareth/Zorgan)",
+        "species": "Mensch (vermutlich halbelfisches Blut)",
+        "soul-animal": "Aasgeier",
+        "social-state": "Adel / Stand der Magier"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Erzmagier und Spektabilität der Kaiser-Perval-Akademie; ehemaliger Hofmagier Kaiser Pervals; Koryphäe der Beherrschungsmagie und Magieforscher.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Greifenfurt",
+            "Zorgan"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Puschinske mustert Hesindian mit einem Blick, der dessen gesamten arkanenen Werdegang zu sezieren scheint, und bietet ihm eine 'Partnerschaft' an, die eher wie ein Pakt mit dem Namenlosen wirkt.",
+            "Er spricht Aurelevina auf ein dunkles Geheimnis ihrer Familie aus der Ära Pervals an, das er als damaliger Hofmagier mit eigenen Augen sah.",
+            "Da Puschinske den orkischen Geist erforscht, zeigt er ein beunruhigendes Interesse an Şahins animistischer Weltsicht und schlägt vor, dessen 'primitiven' Geist für die Wissenschaft zu vermessen."
+        ]
+    },
+    "appearance": {
+        "size": 169,
+        "weight": 52,
+        "hair": "Völlig kahlköpfig, bis auf einige lange, weiße Haarbüschel an den Schläfen.",
+        "skin": "Extrem faltig, gezeichnet von den tiefen Narben der Zorgan-Pocken.",
+        "eyes": "Dunkel, mit einem flackernden, fast fiebrigen Blick, der nichts übersieht.",
+        "outfit": {
+            "headgear": "Oft tief in das Gesicht gezogene Kapuze seines Mantels.",
+            "top": "Ein schwerer, bodenlanger Kapuzenmantel aus tiefschwarzem Samt.",
+            "trousers": "Nicht sichtbar unter der Robe.",
+            "footwear": "Lautlose Stoffstiefel.",
+            "jewellery": "Sein prächtiger Akademiereif aus geschwärztem Silber; ein Ring mit einem riesigen, hypnotisch funkelnden Opal.",
+            "things": "Ein kleiner Abakus aus Obsidian; mehrere Pergamente mit modifizierten Zauberformeln.",
+            "weapons": "Sein Magierstab aus schwarzem Metall, dessen Knauf die Form einer zupackenden Klaue hat."
+        },
+        "distinguishing_features": "Stellt sich oft gebrechlich und zittrig dar, ist aber geistig und körperlich erschreckend agil; sein Gehör ist trotz seines Alters übernatürlich scharf."
+    },
+    "personality": {
+        "traits": [
+            "Skrupellos",
+            "Machtbesessen",
+            "Opportunistisch",
+            "Alterszornig",
+            "Kalkulierend"
+        ],
+        "actual-mood": [
+            "Lauernd"
+        ],
+        "family-background": "Puschinske ist ein Kind der Schatten. Er diente Kaiser Perval und überlebte dessen Sturz sowie das Todesurteil der Inquisition. Er sieht sich selbst als den letzten wahren Bewahrer der Magokratie.",
+        "motivation": "Das Wohl seiner Akademie sichern; die Errichtung einer Herrschaft der Magier vorbereiten; Elcarna Erillion von Hohenstein öffentlich demütigen."
+    },
+    "stats": {
+        "experience-level": "Legendär",
+        "attributes": {
+            "MU": 16,
+            "KL": 19,
+            "IN": 18,
+            "CH": 15,
+            "FF": 13,
+            "GE": 11,
+            "KO": 14,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 95
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 21
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 19
+            },
+            {
+                "name": "Überreden",
+                "FW": 17
+            }
+        ],
+        "spells": [
+            {
+                "name": "Imperavi",
+                "FW": 22
+            },
+            {
+                "name": "Bannbaladin (Modifiziert)",
+                "FW": 18
+            },
+            {
+                "name": "Persequando (Eigenentwicklung)",
+                "FW": 15
+            }
+        ]
+    },
+    "session-notes": "1009 BF: Er ist der unangefochtene Herrscher des schwarzen Trakts. Er nutzt seine angebliche Gebrechlichkeit als Waffe."
+}

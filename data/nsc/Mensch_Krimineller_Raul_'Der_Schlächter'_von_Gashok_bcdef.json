@@ -1,0 +1,111 @@
+{
+    "id": "o5p6q7r8-s9t0-1234-5678-901234abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Räuber",
+        "Orkland",
+        "Gefahr",
+        "Svellttal"
+    ],
+    "general": {
+        "name": "Raul 'Der Schlächter' von Gashok",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Hyäne",
+        "social-state": "Gesetzlos"
+    },
+    "profession": {
+        "category": "Krimineller",
+        "specification": "Anführer einer Räuberbande im Svellttal",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Versteck im Wald nahe Gashok",
+        "former-locations": [
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Hat eine Karawane überfallen, die Aurelevina wichtig war (Briefe, Geschenke).",
+            "Aurelevina erkennt ihn als ehemaligen Soldaten ihres Vaters, der desertiert ist."
+        ]
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 90,
+        "hair": "Schwarz, fettig, Zopf",
+        "skin": "Narbige",
+        "eyes": "Kalt, Grau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Gestohlener Wappenrock (überfärbt) über Lederüstung",
+            "trousers": "Dreckige Hosen",
+            "footwear": "Stiefel",
+            "jewellery": "Goldkette (Raubgut)",
+            "things": "Beutel mit Münzen",
+            "weapons": "Ein Säbel und Dolche"
+        },
+        "distinguishing_features": "Fehlendes linkes Ohr."
+    },
+    "personality": {
+        "traits": [
+            "Grausam",
+            "Gierig",
+            "Skrupellos",
+            "Paranoid",
+            "Führungsstark"
+        ],
+        "actual-mood": [
+            "Gierig"
+        ],
+        "family-background": "Verstießene Familie. Vater war ein Trunkenbold.",
+        "motivation": "Will Reichtum anhäufen und niemanden mehr fürchten müssen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 13,
+            "CH": 12,
+            "FF": 11,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Säbel",
+                "FW": 13
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 12
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

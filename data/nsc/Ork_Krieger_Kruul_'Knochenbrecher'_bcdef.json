@@ -1,0 +1,111 @@
+{
+    "id": "e5f6g7h8-i9j0-1234-5678-901234abcdef",
+    "source": "4201 Das Orkland.md",
+    "tags": [
+        "Ork",
+        "Krieger",
+        "Orkland",
+        "Feind"
+    ],
+    "general": {
+        "name": "Kruul 'Knochenbrecher'",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Orkland",
+        "species": "Ork",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Krieger",
+        "specification": "Junger, ehrgeiziger Orkkrieger des Korogai-Stammes",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Orkland-Grenze",
+        "former-locations": [
+            "Khezzara"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Führt einen Spähtrupp an, der Adarells Gruppe beobachtet. Könnte zu einem Kampf oder einer Verhandlung führen.",
+            "Trägt eine elfische Waffe als Trophäe, die Adarell erkennt."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 90,
+        "hair": "Schwarzer Zopf",
+        "skin": "Dunkelbraun, fast schwarz",
+        "eyes": "Gelb leuchtend",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Lederharnisch mit Knochenverzierungen",
+            "trousers": "Fellhose",
+            "footwear": "Fellstiefel",
+            "jewellery": "Halskette aus Zähnen",
+            "things": "Kriegsbemalung (weiß)",
+            "weapons": "Ein grober Säbel (Byakka) und ein Wurfbeil"
+        },
+        "distinguishing_features": "Tiefe Narbe quer über der Brust."
+    },
+    "personality": {
+        "traits": [
+            "Aggressiv",
+            "Ehrgeizig",
+            "Stolz",
+            "Brutal",
+            "Loyal zum Stamm"
+        ],
+        "actual-mood": [
+            "Wütend"
+        ],
+        "family-background": "Sohn eines gefallenen Kriegers. Muss sich im Stamm erst noch beweisen.",
+        "motivation": "Will Ruhm erlangen, um in der Stammes-Hierarchie aufzusteigen und vielleicht eines Tages Häuptling zu werden."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 8,
+            "IN": 12,
+            "CH": 9,
+            "FF": 10,
+            "GE": 12,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Säbel",
+                "FW": 11
+            },
+            {
+                "name": "Raufen",
+                "FW": 12
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

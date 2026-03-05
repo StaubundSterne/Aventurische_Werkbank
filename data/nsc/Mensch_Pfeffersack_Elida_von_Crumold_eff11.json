@@ -1,0 +1,94 @@
+{
+    "id": "88776655-4433-2211-00aa-bbccddeeff11",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Elida von Crumold",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Garethien",
+        "species": "Mensch",
+        "soul-animal": "Pfau",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Pfeffersack",
+        "specification": "Wohlhabende Kauffrau, die den Handel mit Luxusstoffen aus dem Horasreich kontrolliert.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Vinsalt",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Elida möchte Aurelina Violanta für eine diskrete Mission engagieren: Sie soll sicherstellen, dass eine Warenlieferung per Kutsche über den Landweg kommt, um den Seeweg zu vermeiden."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 68,
+        "hair": "Hochgesteckte, gepuderte Perücke über aschblondem Haar.",
+        "skin": "Gepflegt und stark parfümiert.",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Ein kleiner, modischer Federhut.",
+            "top": "Ein prachtvolles Kleid aus violetter Seide mit Brokatbesatz.",
+            "trousers": "Keine.",
+            "footwear": "Seidene Maultaschen (Schuhe) mit Absätzen.",
+            "jewellery": "Mehrere Goldketten und Ringe mit Edelsteinen.",
+            "things": "Ein Fächer aus Elfenbein, den sie benutzt, um den 'Meeresgestank' zu vertreiben.",
+            "weapons": "Ein versteckter Dolch im Mieder."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Arrogant",
+            "Wasserscheu",
+            "Ehrgeizig",
+            "Dekadent",
+            "Verschwiegen"
+        ],
+        "actual-mood": [
+            "Genervt"
+        ],
+        "family-background": "Das Haus Crumold hat Handelsbeziehungen bis nach Kunchom, doch Elida verachtet alles, was mit Schiffen zu tun hat, seit sie bei einer Überfahrt fast ertrank.",
+        "motivation": "Möchte ihren Reichtum vermehren, ohne jemals wieder einen Fuß auf ein Schiff setzen zu müssen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 11,
+            "KL": 15,
+            "IN": 13,
+            "CH": 16,
+            "FF": 10,
+            "GE": 10,
+            "KO": 11,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 15
+            },
+            {
+                "name": "Überzeugen",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": ""
+}

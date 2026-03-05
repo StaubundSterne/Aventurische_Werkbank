@@ -1,0 +1,112 @@
+{
+    "id": "c3d4e5f6-g7h8-9012-3456-789012abcdef",
+    "source": "4201 Das Orkland.md, 4200 Svelltland.md",
+    "tags": [
+        "Söldner",
+        "Krieger",
+        "Tjolmar",
+        "Orkland"
+    ],
+    "general": {
+        "name": "Grom 'Eisenfaust' Hrogarson",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Thorwal",
+        "species": "Mensch",
+        "soul-animal": "Walross",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Krieger",
+        "specification": "Söldnerführer einer kleinen Truppe in Tjolmar",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tjolmar",
+        "former-locations": [
+            "Thorwal",
+            "Prem"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Sucht einen Priester des Praios, um einen Streit in seiner Truppe gerecht zu schlichten (es geht um Beuteanteile).",
+            "Hat Gerüchte über Orks gehört, die Praios-Symbole schänden, und will dies Jost melden."
+        ]
+    },
+    "appearance": {
+        "size": 188,
+        "weight": 100,
+        "hair": "Rotes, wildes Haar und geflochtener Bart",
+        "skin": "Hell, viele Sommersprossen",
+        "eyes": "Wasserblau",
+        "outfit": {
+            "headgear": "Lederhelm mit Nasenschutz",
+            "top": "Kettenhemd über Wollwams",
+            "trousers": "Weite Hosen mit Wadenwickeln",
+            "footwear": "Feste Stiefel",
+            "jewellery": "Ein massiver Armreif aus Silber (Beutestück)",
+            "things": "Schleifstein, Würfelbecher",
+            "weapons": "Eine große Skraja (Axt) und ein Rundschild"
+        },
+        "distinguishing_features": "Hat eine große Tätowierung eines Seeungeheuers auf dem rechten Arm."
+    },
+    "personality": {
+        "traits": [
+            "Raufbold",
+            "Loyal",
+            "Trinkfest",
+            "Laut",
+            "Aberglaubisch"
+        ],
+        "actual-mood": [
+            "Kampflustig"
+        ],
+        "family-background": "Sohn eines Thorwaler Kapitäns. Wurde wegen einer Schlägerei aus seiner Ottajasko verbannt.",
+        "motivation": "Will genug Gold sammeln, um sich ein eigenes Schiff zu kaufen und nach Thorwal zurückzukehren."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 11,
+            "GE": 13,
+            "KO": 15,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Äxte/Beile",
+                "FW": 13
+            },
+            {
+                "name": "Raufen",
+                "FW": 12
+            },
+            {
+                "name": "Zechen",
+                "FW": 14
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

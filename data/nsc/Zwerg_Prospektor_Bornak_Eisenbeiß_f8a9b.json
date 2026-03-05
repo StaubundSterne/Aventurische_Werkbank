@@ -1,0 +1,85 @@
+{
+    "id": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+    "source": "4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Bornak Eisenbeiß",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 852,
+        "alive": true,
+        "culture": "Zwerge (Ambosszwerge)",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Prospektor",
+        "specification": "Suchender nach Edelmetallen und alten Zwergenpingen im Thasch-Gebirge; Kenner von Gesteinsschichten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Xorlosch",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Jost hat Bornak einmal beim Würfelspiel in einer Kascheme abgezockt; der Zwerg grollt noch immer, schuldet ihm aber technisch gesehen noch einen Gefallen aus einer Rauferei."
+        ]
+    },
+    "appearance": {
+        "size": 138,
+        "weight": 82,
+        "hair": "Feuerroter Bart, mit Eisenringen geflochten; Glatze",
+        "skin": "Wie gegerbtes Leder, voller Steinstaub",
+        "eyes": "Grau wie Granit",
+        "outfit": {
+            "headgear": "Verbeulter Eisenhelm",
+            "top": "Lederweste über einem Kettenhemd",
+            "trousers": "Robuste Arbeitshose",
+            "footwear": "Eisenbeschlagene Stiefel",
+            "jewellery": "Ein Ring mit einem Rohdiamanten",
+            "things": "Geologenhammer, eine kleine Laterne, die mit Lampenöl betrieben wird",
+            "weapons": "Zwergenskraja am Gürtel"
+        },
+        "distinguishing_features": "Riecht nach Schwefel und starkem Schnaps; hat ein lautes, polterndes Lachen."
+    },
+    "personality": {
+        "traits": [
+            "Stur",
+            "Goldgierig",
+            "Direkt",
+            "Trinkfest",
+            "Erfahren"
+        ],
+        "actual-mood": [
+            "Ungeduldig"
+        ],
+        "family-background": "Sohn des Balderich; hat sieben Brüder, die alle in den Minen von Xorlosch arbeiten.",
+        "motivation": "Hat Hinweise auf ein vergessenes Silbervorkommen gefunden und sucht verlässliche Begleiter für die Expedition."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gesteinskunde",
+                "FW": 14
+            },
+            {
+                "name": "Zechen",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

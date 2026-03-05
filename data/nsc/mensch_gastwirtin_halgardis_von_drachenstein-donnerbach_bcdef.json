@@ -1,0 +1,104 @@
+{
+    "id": "e4a1f3b2-7c9d-4e8a-b123-456789abcdef",
+    "source": "wiki-aventurica.de (Donnerbach, Drachenstein-Donnerbach), 4000 Bibliotheken (Senne Nord)",
+    "tags": [],
+    "general": {
+        "name": "Halgardis von Drachenstein-Donnerbach",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 968,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Bärin (ruhig, aber wehrhaft)",
+        "social-state": "Adel (niederadelig)"
+    },
+    "profession": {
+        "category": "Gastwirtin",
+        "specification": "Ehemalige Gardistin der Senne Nord, nun Inhaberin des Traditionshauses 'Treu und Ehr'. Bekannt für ihre Disziplin und das strikte Verbot von unehrenhaftem Gebaren in ihrer Schankstube.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Burg Drachenstein",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Jost kennt Halgardis als respektierte Veteranin der Kirche, vor der er sich als Akoluth oft beweisen möchte.",
+            "Adarell wird von ihr geduldet, da er als Zögling von Vater Gerion einen guten Ruf im Viertel genießt."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 75,
+        "hair": "Eisgraues Haar, streng zum Knoten gebunden",
+        "skin": "Wettergegerbt, kleine Narbe am Kinn",
+        "eyes": "Stahlblau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichtes Kleid aus festem, grauem Loden; darüber eine schwere Lederschürze",
+            "trousers": "Wollene Unterröcke",
+            "footwear": "Solide Lederstiefel, stets sauber geputzt",
+            "jewellery": "Ein silberner Ring mit dem Siegel derer von Drachenstein; ein schlichtes Rondra-Amulett aus Eisen",
+            "things": "Ein schwerer Schlüsselbund am Gürtel, ein Zapfhahn-Schlüssel",
+            "weapons": "Ein schwerer Holzknüppel unter der Theke ('Der Mahner'); ein Jagdmesser am Gürtel"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Autoritär",
+            "Ehrenhaft",
+            "Wortkarg",
+            "Pflichtbewusst",
+            "Gastfreundlich (streng)"
+        ],
+        "actual-mood": [
+            "Beobachtend"
+        ],
+        "family-background": "Mutter Borone von Drachenstein, verstorbene Geweihte; Vater Halman, Junker; Bruder Alrik, dient als Schwertritter in Weiden. Die Familie verlor beim Neunaugensee-Feldzug einst Ländereien.",
+        "motivation": "Das 'Treu und Ehr' als moralischen Ankerpunkt für Rondrianer in Waldsend bewahren und die Traditionen der Senne Nord hochhalten."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 11,
+            "GE": 12,
+            "KO": 14,
+            "KK": 14
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zechen",
+                "FW": 12
+            },
+            {
+                "name": "Etikette",
+                "FW": 8
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

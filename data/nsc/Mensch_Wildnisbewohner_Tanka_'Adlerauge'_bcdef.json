@@ -1,0 +1,110 @@
+{
+    "id": "p6q7r8s9-t0u1-2345-6789-012345abcdef",
+    "source": "4201 Das Orkland.md",
+    "tags": [
+        "Jäger",
+        "Orkland",
+        "Führer"
+    ],
+    "general": {
+        "name": "Tanka 'Adlerauge'",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 979,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Adler",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wildnisbewohner",
+        "specification": "Pfadfinderin und Jägerin im Orkland",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Bodir-Tal",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Respektiert Adarells Fähigkeiten und bietet an, Informationen über Wildwechsel und Wasserstellen zu tauschen.",
+            "Sucht Hilfe, um einen verletzten Kameraden aus einer gefährlichen Zone zu bergen."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 62,
+        "hair": "Braun, kurz geschnitten",
+        "skin": "Gebräunt",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Lederband",
+            "top": "Lederwams",
+            "trousers": "Lederhosen",
+            "footwear": "Leichte Stiefel",
+            "jewellery": "Feder am Lederband",
+            "things": "Köcher, Bogen, Messer",
+            "weapons": "Kurzbogen und Dolch"
+        },
+        "distinguishing_features": "Scharfer, durchdringender Blick."
+    },
+    "personality": {
+        "traits": [
+            "Ruhig",
+            "Beobachtend",
+            "Zuverlässig",
+            "Wortkarg",
+            "Mutig"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Tochter eines Jägers. Kennt den Wald wie ihre Westentasche.",
+        "motivation": "Will die Freiheit der Wildnis genießen und ihre Fähigkeiten perfektionieren."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 15,
+            "CH": 10,
+            "FF": 13,
+            "GE": 14,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Bogen",
+                "FW": 13
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 14
+            },
+            {
+                "name": "Schleichen",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

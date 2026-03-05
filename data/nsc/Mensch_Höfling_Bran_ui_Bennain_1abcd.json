@@ -1,0 +1,94 @@
+{
+    "id": "e4b47c34-8b6a-4978-8d2a-7f654321abcd",
+    "source": "Aventurisches Archiv 2, Wiki Aventurica (Havena), Das Orkland (Namen Albernia)",
+    "tags": [],
+    "general": {
+        "name": "Bran ui Bennain",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Wüstenfuchs (sehnt sich nach Trockenheit)",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Höfling",
+        "specification": "Verarmter Junker ohne Landbesitz, der sich in der Oberstadt als Berater für Etikette verdingt.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Winhall",
+            "Honingen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Bran erkennt das Wappen oder das Auftreten von Aurelina Violanta als Zeichen hoher Etikette und sucht ihre Nähe, um seinen schwindenden Einfluss durch Assoziation zu stützen."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Dunkelblondes, streng nach hinten gekämmtes Haar mit Pomade fixiert.",
+        "skin": "Blass, fast pergamentartig.",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Ein breitkrempiger Hut, der sorgsam vor jedem Tropfen Regen schützt.",
+            "top": "Ein dunkelgrüner Wams mit abgewetzten Goldstickereien am Kragen.",
+            "trousers": "Eng anliegende Reiterhosen aus trockenem Tuch.",
+            "footwear": "Hohe Lederstiefel, deren Sohlen mit Wachs dick versiegelt sind.",
+            "jewellery": "Ein Siegelring des Hauses Bennain (Nebenlinie).",
+            "things": "Ein großer, stets griffbereiter Schirm aus geölter Seide.",
+            "weapons": "Ein eleganter, aber stumpfer Degen."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Etikettebewusst",
+            "Hydrophob",
+            "Stolz",
+            "Förmlich",
+            "Beobachtend"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Mutter: Elwine ui Bennain (verstorben); Vater: Cuan ui Bennain (verarmter Junker in Winhall). Die Familie verlor ihre Ländereien durch eine Sturmflut, was Brans Abneigung begründete.",
+        "motivation": "Sucht einen trockenen Platz im Umfeld des Fürstenhofs und vermeidet jeden Kontakt mit der Unterstadt oder dem Hafen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 13,
+            "CH": 15,
+            "FF": 10,
+            "GE": 11,
+            "KO": 9,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Etikette",
+                "FW": 12
+            },
+            {
+                "name": "Überreden",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

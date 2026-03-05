@@ -1,0 +1,93 @@
+{
+    "id": "aabbccdd-1122-3344-5566-77889900aabb",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Mairead ni Chonn",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Katze",
+        "social-state": "Unfrei"
+    },
+    "profession": {
+        "category": "Dienstmagd",
+        "specification": "Schankmaid in einer Taverne der Oberstadt, die sich weigert, den Boden nass aufzuwischen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Honingen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Mairead erinnert sich an Şahin von einem früheren Besuch und schenkt ihm ein Glas staubtrockenen Wein ein, während sie sich über die 'feuchten Wände' beschwert."
+        ]
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 58,
+        "hair": "Blondes, wirres Haar.",
+        "skin": "Zart, mit Mehlflecken.",
+        "eyes": "Blau",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Ein einfaches Mieder über einer Bluse.",
+            "trousers": "Ein langer Rock.",
+            "footwear": "Abgetretene Schuhe.",
+            "jewellery": "Keiner.",
+            "things": "Ein trockenes Tuch, mit dem sie ständig über die Tische wischt.",
+            "weapons": "Ein schweres Tablett."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Flink",
+            "Wasserscheu",
+            "Neugierig",
+            "Frech",
+            "Sorgsam"
+        ],
+        "actual-mood": [
+            "Fröhlich"
+        ],
+        "family-background": "Mutter: Chonn, Köchin; Vater: unbekannt. Sie nutzt Sand zum Reinigen der Dielen, um dem Wasser zu entgehen.",
+        "motivation": "Träumt von einer Anstellung in einer Wüstenstadt, von der Reisende im Wirtshaus erzählt haben."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 10,
+            "IN": 13,
+            "CH": 14,
+            "FF": 13,
+            "GE": 12,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zechen",
+                "FW": 6
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

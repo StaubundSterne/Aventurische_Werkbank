@@ -1,0 +1,73 @@
+{
+    "id": "e1d0a3-onder-traviadane-984",
+    "source": "4201 Das Orkland, S. 48",
+    "tags": [],
+    "general": {
+        "name": "Traviadane Onder",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Biene",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Hauswirtschafterin",
+        "specification": "Verantwortlich für die Zimmerreinigung und die Wäsche; sorgt für die 'ungezieferfreien' Betten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Traviadane beschwert sich bei Adarell über den Dreck, den Abenteurer im Flur hinterlassen, und drückt ihm einen Besen in die Hand.",
+            "Sie fragt Hesindian neugierig nach der Wirkung von magischen Duftöfen, um den Fischgeruch aus den Gästezimmern zu vertreiben."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 60,
+        "hair": "Dunkelblond, zu einem praktischen Zopf geflochten.",
+        "skin": "Etwas bleich vom vielen Aufenthalt im Inneren.",
+        "eyes": "Graugrün.",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Einfache Arbeitsbluse mit hochgekrempelten Ärmeln.",
+            "trousers": "Dunkler Rock aus derbem Tuch.",
+            "footwear": "Holzpantinen.",
+            "jewellery": "Ein schlichtes Lederband am Handgelenk.",
+            "things": "Ein Korb mit frischen Laken; ein Bündel Lavendelzweige.",
+            "weapons": "Keine."
+        },
+        "distinguishing_features": "Hat oft rote Hände vom heißen Waschwasser; bewegt sich sehr schnell und effizient."
+    },
+    "personality": {
+        "traits": [
+            "Fleißig",
+            "Streng",
+            "Pflichtbewusst",
+            "Wortkarg",
+            "Sauberkeitsliebend"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Älteste Tochter von Elgor und Thalia. Sie fühlt sich für den Ruf des Hauses verantwortlich.",
+        "motivation": "Will die Pension eines Tages übernehmen und träumt von einer Modernisierung der Waschküche."
+    },
+    "stats": {
+        "experience-level": "Unerfahren"
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "id": "b2c3d4e5-f6a7-4b6c-9d0e-1f2a3b4c5d6e",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Sivrid Sumpfinger",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Luchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Kundschafterin",
+        "specification": "Späherin der Thasch-Läufer; Spezialistin für das Dunkelsfarntal und lautlose Aufklärung.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Dunkelsfarntal"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Jost"
+        ],
+        "injection-points": [
+            "Sivrid ist fasziniert von Şahins Wissen über weites Land und fragt ihn nach Zeichen für Wetterumschwünge in der Steppe.",
+            "Sie traut Jost nicht über den Weg, da er für sie nach 'Stadt und unehrlichem Gold' riecht."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 55,
+        "hair": "Dunkelbraun, kurz und ungleichmäßig geschnitten.",
+        "skin": "Oft mit Schlamm zur Tarnung verschmiert.",
+        "eyes": "Grün-braun, unruhig.",
+        "outfit": {
+            "headgear": "Kapuze mit Moosbewuchs.",
+            "top": "Fleckige, getarnte Wildlederkleidung.",
+            "trousers": "Flexible Lederhose.",
+            "footwear": "Geräuscharme Wildlederschuhe.",
+            "jewellery": "Keine",
+            "things": "Falknerhandschuh, messingbeschlagenes Fernrohr.",
+            "weapons": "Kurzbogen, Jagdmesser."
+        },
+        "distinguishing_features": "Riecht stets nach Kiefernharz und Sumpfwasser; wirkt ständig fluchtbereit."
+    },
+    "personality": {
+        "traits": [
+            "Nervös",
+            "Einzelgängerisch",
+            "Instinktgesteuert",
+            "Flink",
+            "Aufmerksam"
+        ],
+        "actual-mood": [
+            "Gehetzt"
+        ],
+        "family-background": "Wuchs als Waise in den Auen des Svellt auf; lernte das Überleben von einem alten Einsiedler namens Knorre.",
+        "motivation": "Die Bewegungen der Orks frühzeitig erkennen, um Yrramis eine Fluchtmöglichkeit zu sichern."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtensuche",
+                "FW": 15
+            },
+            {
+                "name": "Tarnung",
+                "FW": 14
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": ""
+}

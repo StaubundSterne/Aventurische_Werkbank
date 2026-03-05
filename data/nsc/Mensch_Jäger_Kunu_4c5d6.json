@@ -1,0 +1,96 @@
+{
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
+    "source": "Lowangen.txt, Werkbank.txt",
+    "tags": [],
+    "general": {
+        "name": "Kunu",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Nivesen",
+        "species": "Mensch",
+        "soul-animal": "Schneehase (wachsam und anpassungsfähig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Jäger",
+        "specification": "Fährtensucher und Pelzhändler in der Messergrassteppe",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Messergrassteppe",
+        "former-locations": [
+            "Tiefhusen",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Kunu warnt Fredegis vor orkischen Spähtrupps in der nördlichen Steppe.",
+            "Er bittet Adarell um ein Heilmittel für ein krankes Karenkalb seiner Sippe."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 62,
+        "hair": "Schwarzes, glattes Haar, oft geflochten",
+        "skin": "Bernsteinfarben, wettergegerbt",
+        "eyes": "Dunkelbraun, mandelförmig",
+        "outfit": {
+            "headgear": "Pelzmütze",
+            "top": "Wams aus Karenleder",
+            "trousers": "Hose aus festem Leder",
+            "footwear": "Weiche Stiefel aus Robbenfell",
+            "jewellery": "Ein Zahn eines Steppenwolfs an einer Kette",
+            "things": "Fallen, Fleischvorrat",
+            "weapons": "Kurzbogen, Jagdmesser"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Wachsam",
+            "Naturverbunden",
+            "Vorsichtig",
+            "Genügsam",
+            "Ehrlich"
+        ],
+        "actual-mood": [
+            "Misstrauisch"
+        ],
+        "family-background": "Gehört zur Sippe der 'Windentänzer'. Seine Familie zieht mit den Karenherden durch das nördliche Svelltland. Er hat ein tiefes Misstrauen gegenüber sesshaften Menschen.",
+        "motivation": "Schutz der Karenherden vor Raubtieren und Orks; Tausch von Pelzen gegen Metallwaren."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 15,
+            "CH": 10,
+            "FF": 13,
+            "GE": 14,
+            "KO": 14,
+            "KK": 11
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtensuchen",
+                "FW": 11
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,93 @@
+{
+    "id": "f5e4d3c2-b1a0-9e8d-7c6b-5a4f3e2d1c0b",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Gwenyth ni Moruun",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gelehrte",
+        "specification": "Kopistin und Archivarin, die im Dienst eines lokalen Adligen alte Dokumente transkribiert.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Angbar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Gwenyth hat in einem Archiv in Havena Informationen über die Felsmachers gefunden und möchte Hesindian zu seinen Vorfahren befragen."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 55,
+        "hair": "Schwarzes Haar, zu einem strengen Knoten gebunden.",
+        "skin": "Sehr hell, fast lichtscheu.",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Ein hochgeschlossenes Kleid aus dunkelblauem Samt.",
+            "trousers": "Keine.",
+            "footwear": "Leichte Stoffschuhe, die sie nur in Innenräumen trägt.",
+            "jewellery": "Ein Monokel an einer silbernen Kette.",
+            "things": "Ein Schreibset, bei dem sie peinlich darauf achtet, dass kein Wassertropfen die Tinte verdünnt.",
+            "weapons": "Ein langer Brieföffner."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Akribisch",
+            "Skeptisch",
+            "Wasserscheu",
+            "Gebildet",
+            "Reserviert"
+        ],
+        "actual-mood": [
+            "Neutral"
+        ],
+        "family-background": "Eltern: Moruun und Aileen, beide Buchbinder in Angbar. Gwenyth fürchtet, dass die Feuchtigkeit Havenas ihre wertvollen Pergamente zerstört.",
+        "motivation": "Will eine Methode entwickeln, um Papier vor Wasser- und Schimmelschäden zu schützen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 15,
+            "IN": 14,
+            "CH": 11,
+            "FF": 13,
+            "GE": 10,
+            "KO": 9,
+            "KK": 8
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechtskunde",
+                "FW": 9
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

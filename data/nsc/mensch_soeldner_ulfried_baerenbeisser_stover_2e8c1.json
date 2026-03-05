@@ -1,0 +1,104 @@
+{
+    "id": "d982b1c4-a3e2-4f11-92b1-0f32a412e8c1",
+    "source": "4201 Das Orkland; 4202 Reich des roten Mondes",
+    "tags": [
+        "Söldner",
+        "Markt",
+        "Wettkampf"
+    ],
+    "general": {
+        "name": "Ulfried 'Bärenbeißer' Stover",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Mittelländisch (Svellttaler)",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Söldner",
+        "specification": "Ehemaliger Grenzreiter am Greifenpass; nimmt in Lowangen an den Schau-Ringkämpfen teil, um sein Sold aufzubessern.",
+        "magical": false,
+        "clerical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tiefhusen",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Ulfried fordert Jost zu einem Armdrücken in einer Schänke heraus und wettet um das nächste Fass Bier.",
+            "Er warnt Fredegis vor den 'Zahnstocher-Orks' am Pass und behauptet, dass die Bestien dort oben unnatürlich ruhig geworden sind – ein schlechtes Omen."
+        ]
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 95,
+        "hair": "Dunkelbraun, struppig, mit einem grob gestutzten Vollbart.",
+        "skin": "Narbig, besonders am linken Unterarm (Bärenbiss).",
+        "eyes": "Graublau, oft leicht gerötet vom Bier.",
+        "outfit": {
+            "top": "Ein speckiges Lederwams über einem abgewetzten Wollhemd.",
+            "trousers": "Hose aus festem Segeltuch.",
+            "footwear": "Schwere Soldatenstiefel.",
+            "jewellery": "Ein Ingerimm-Amulett aus Eisen.",
+            "things": "Ein Wetzstein; ein Beutel mit Silbertalern, die er beim Ringen gewonnen hat.",
+            "weapons": "Ein schwerer Morgenstern am Gürtel."
+        },
+        "distinguishing_features": "Fehlendes oberes rechtes Ohrläppchen; lacht dröhnend und tief."
+    },
+    "personality": {
+        "traits": [
+            "Rauflustig",
+            "Loyal",
+            "Grob",
+            "Praktisch",
+            "Trinkfest"
+        ],
+        "actual-mood": [
+            "Gereizt"
+        ],
+        "family-background": "Sohn von Stover, einem Schmied aus Tiefhusen. Seine gesamte Familie arbeitet im Handwerk, Ulfried war das 'schwarze Schaf', das lieber mit Eisen schlug als es zu schmieden.",
+        "motivation": "Will sich einen neuen Kürass leisten, da sein alter beim letzten Scharmützel mit Orks zerbeult wurde."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 9,
+            "IN": 12,
+            "CH": 10,
+            "FF": 9,
+            "GE": 12,
+            "KO": 15,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Raufen",
+                "FW": 13
+            },
+            {
+                "name": "Zechen",
+                "FW": 12
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

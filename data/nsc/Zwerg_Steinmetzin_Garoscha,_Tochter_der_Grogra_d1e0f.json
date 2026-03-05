@@ -1,0 +1,90 @@
+{
+    "id": "67389201-a1b2-4c3d-8e9f-5b4a3c2d1e0f",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland, 4205 Die Zwerge",
+    "tags": [],
+    "general": {
+        "name": "Garoscha, Tochter der Grogra",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 941,
+        "alive": true,
+        "culture": "Zwerge",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Steinmetzin",
+        "specification": "Instandhalterin der Fundamente; spezialisiert auf Statik und Baukunst.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Unbekannte Binge"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Garoscha beobachtet Hesindian beim Betrachten der Mauern und weist ihn barsch darauf hin, dass Magie kein Ersatz für anständigen Mörtel ist.",
+            "Sie bittet den kräftigen Adarell, ihr beim Versetzen eines Schlusssteins zu helfen, da sie den menschlichen Handlangern nicht traut."
+        ]
+    },
+    "appearance": {
+        "size": 135,
+        "weight": 65,
+        "hair": "Dunkelbraun, in komplizierte Zöpfe geflochten.",
+        "skin": "Steingrau, ledrig.",
+        "eyes": "Bernsteinfarben.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schwere Lederschürze",
+            "trousers": "Robuste Lederhose",
+            "footwear": "Eisenbeschlagene Stiefel",
+            "jewellery": "Viele Ringe aus Messing in den Ohren",
+            "things": "Präzisionsmeißel, kleiner Hammer",
+            "weapons": "Schwerer Fäustel (Hammer)"
+        },
+        "distinguishing_features": "Presst das Ohr oft gegen Steinmauern, um deren Klang zu prüfen; schüttelt oft den Kopf über menschliche Bauwerke."
+    },
+    "personality": {
+        "traits": [
+            "Akribisch",
+            "Geduldig",
+            "Skeptisch",
+            "Traditionsbewusst",
+            "Stolz"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Tochter der Grogra; sie verließ ihre Binge, um im Svelltland die Festigkeit der oberirdischen Wehrbauten zu prüfen.",
+        "motivation": "Die Steinmetzin möchte sicherstellen, dass Yrramis den kommenden Stürmen (und Orks) standhält."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Steinmetz",
+                "FW": 14
+            },
+            {
+                "name": "Baukunst",
+                "FW": 12
+            },
+            {
+                "name": "Zwergennase",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

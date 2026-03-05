@@ -1,0 +1,90 @@
+{
+    "id": "8e0f1a2b-3c4d-4e5f-b6a7-9d8c7b6a5e4d",
+    "source": "4200 Svelltland, wiki-aventurica.de/wiki/Yrramis, [NSC kanonisch mit Quelle]",
+    "tags": [],
+    "general": {
+        "name": "Mywara Alberg",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 998,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schankhilfe",
+        "specification": "Tochter der Wirtin und zukünftige Erbin; hilft bei der Vorratspflege und im Schankraum.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Yrramis"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Mywara beobachtet Adarells Bewaffnung mit stiller Faszination; sie hat ihr heimlich ein extra Stück getrocknetes Fleisch eingepackt.",
+            "Sie hat Şahin dabei beobachtet, wie er die Pferde im Stall beruhigte, und hält ihn für einen 'Pferdeflüsterer' – sie stellt ihm nun viele neugierige Fragen über die Steppe."
+        ]
+    },
+    "appearance": {
+        "size": 163,
+        "weight": 52,
+        "hair": "Hellbraun, zu zwei praktischen Zöpfen geflochten.",
+        "skin": "Hell, von der Phexkälte leicht gerötet.",
+        "eyes": "Grünbraun, wirken oft unnatürlich wachsam.",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Schlichte Leinentunika über einem warmen Unterhemd.",
+            "trousers": "Grauer Wollrock.",
+            "footwear": "Flache Lederschuhe.",
+            "jewellery": "Ein kleines Medaillon aus Zinn an einer dünnen Schnur.",
+            "things": "Oft ein Tuch zum Abwischen der Tische in der Hand.",
+            "weapons": "Keine."
+        },
+        "distinguishing_features": "Nimmt eine fast starre Beobachtungshaltung aus dem Hintergrund ein; wirkt für ihr Alter ungewöhnlich ernst und konzentriert."
+    },
+    "personality": {
+        "traits": [
+            "Beobachtend",
+            "Aufmerksam",
+            "Schweigsam",
+            "Fleißig",
+            "Zurückhaltend"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Tochter von Haldara; bewundert die Stärke ihrer Mutter, sammelt aber heimlich Wissen über die Gäste, das über das Gastgewerbe hinausgeht.",
+        "motivation": "Alles über die Menschen zu erfahren, die den Kreuzweg passieren, während sie ihre Aufgaben perfekt erledigt."
+    },
+    "stats": {
+        "experience-level": "Unerfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sich Verstecken",
+                "FW": 7
+            },
+            {
+                "name": "Wahrnehmung",
+                "FW": 10
+            },
+            {
+                "name": "Etikette",
+                "FW": 4
+            }
+        ]
+    },
+    "session-notes": ""
+}

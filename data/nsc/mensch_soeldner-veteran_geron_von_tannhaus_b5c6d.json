@@ -1,0 +1,105 @@
+{
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "source": "wiki-aventurica.de (Geron von Tannhaus), Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Geron von Tannhaus",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 951,
+        "alive": true,
+        "culture": "Andergast",
+        "species": "Mensch",
+        "soul-animal": "Dachs (zäh und beharrlich)",
+        "social-state": "Adel (verarmt)"
+    },
+    "profession": {
+        "category": "Söldner-Veteran",
+        "specification": "Ehemaliger Hauptmann der 'Banner von Tannhaus'. Er suchte nach dem Verlust seiner Truppe Zuflucht in Donnerbach und dient nun gelegentlich als Ausbilder oder Berater für die Stadtwache.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Andergast",
+            "Gashok",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Geron kennt Adarells Eltern aus seiner Zeit im Svelltland und hütet ein Geheimnis über deren Verschwinden.",
+            "Jost schätzt Gerons Wissen über praktische Feldmedizin und alte Schmiedetechniken aus Andergast."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 82,
+        "hair": "Dünnes, graues Haar; langer, ungepflegter Bart",
+        "skin": "Ledrig, viele Altersflecken und Narben",
+        "eyes": "Trübes Bernstein",
+        "outfit": {
+            "headgear": "Abgewetztes Barett aus Samt",
+            "top": "Alter Lederwams mit geflickten Stellen",
+            "trousers": "Grobe Wollhose, mehrfach gestopft",
+            "footwear": "Ausgetretene Wanderstiefel",
+            "jewellery": "Ein schlichter Kupferring (Ehering)",
+            "things": "Ein kleiner Flachmann aus Zinn, ein Beutel mit billigem Pfeifentabak",
+            "weapons": "Ein rostiges, aber scharfes Kurzschwert; ein schwerer Eichenstab"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Zynisch",
+            "Erfahren",
+            "Loyal",
+            "Geduldig",
+            "Genügsam"
+        ],
+        "actual-mood": [
+            "Melancholisch"
+        ],
+        "family-background": "Verstorbene Frau Elwine; Sohn Ulman, verschollen im Orkensturm; Tochter Tsaiane, lebt als Heilerin in Joborn.",
+        "motivation": "Einen ruhigen Lebensabend verbringen und sein Wissen an die nächste Generation weitergeben, um unnötiges Blutvergießen zu vermeiden."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 13,
+            "IN": 14,
+            "CH": 10,
+            "FF": 11,
+            "GE": 10,
+            "KO": 13,
+            "KK": 12
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Menschenkenntnis",
+                "FW": 12
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 10
+            },
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

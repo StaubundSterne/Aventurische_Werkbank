@@ -1,0 +1,90 @@
+{
+    "id": "78490312-b2c3-5d4e-9f0a-6c5b4a3d2e1f",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Gesa die Seilerin",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 973,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Seilerin",
+        "specification": "Handwerkerin am Flussufer; fertigt Taue für die Flöße auf dem Svellt.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Gesa bietet Jost einen günstigen Preis für ein stabiles Kletterseil an, wenn er ihr im Gegenzug eine bestimmte Sorte Rauchtabak aus dem Süden besorgt.",
+            "Sie bittet Şahin, ihr beim Transport schwerer Hanfbündel vom Hafen zu ihrer Werkstatt zu helfen."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 68,
+        "hair": "Aschblond, kurz.",
+        "skin": "Wettergegerbt, rissig an den Händen.",
+        "eyes": "Graublau.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Derbes Leinenhemd",
+            "trousers": "Arbeitsrock aus festem Tuch",
+            "footwear": "Einfache Lederschuhe",
+            "jewellery": "Keine",
+            "things": "Seilrad, Hanfbündel",
+            "weapons": "Großes Messer zum Kappen von Tauen"
+        },
+        "distinguishing_features": "Hände sind durch Hanf und Teerrückstände verfärbt; hat einen ständigen, leichten Husten durch Teerdämpfe."
+    },
+    "personality": {
+        "traits": [
+            "Ausdauernd",
+            "Kränklich",
+            "Fleißig",
+            "Praktisch",
+            "Ruhig"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Stammt aus Lowangen; zog nach Yrramis, um der Enge der Stadt zu entkommen.",
+        "motivation": "Möchte durch ihre Arbeit die Flößerei auf dem Svellt am Laufen halten."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handwerk (Seiler)",
+                "FW": 13
+            },
+            {
+                "name": "Fesseln",
+                "FW": 11
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

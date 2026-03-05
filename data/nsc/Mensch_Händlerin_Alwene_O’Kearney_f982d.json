@@ -1,0 +1,93 @@
+{
+    "id": "7f4c0847-75e9-4e48-81e1-6d76e73f982d",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Alwene O’Kearney",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Obstverkäuferin auf dem Markt der Oberstadt, spezialisiert auf Dörrobst.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Abagund"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Alwene hat Şahin vor Kurzem eine Kette aus getrockneten Datteln verkauft, die sie extra aus dem fernen Süden importiert hat, und erkennt ihn wieder."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 60,
+        "hair": "Rotes, krauses Haar, das unter einem Kopftuch verborgen ist.",
+        "skin": "Sommersprossig und sonnengebräunt.",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Ein eng gebundenes Leinentuch.",
+            "top": "Eine grobe Leinentunika, die mit trockenem Mehl bestäubt ist.",
+            "trousers": "Ein weiter Wollrock.",
+            "footwear": "Holzpantinen, um den Bodenkontakt zu minimieren.",
+            "jewellery": "Ein kleiner Anhänger aus Bernstein.",
+            "things": "Ein kleiner Handbesen, mit dem sie ständig Staub und Feuchtigkeit von ihrem Stand fegt.",
+            "weapons": "Ein kleines Obstmesser."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Reinlich",
+            "Wachsam",
+            "Geschäftstüchtig",
+            "Wasserscheu",
+            "Redselig"
+        ],
+        "actual-mood": [
+            "Hektisch"
+        ],
+        "family-background": "Mutter: Finnia, Gemüsehändlerin; Vater: Tadhg, Korbflechter. Ihr Stand wurde einst durch ein leckendes Fass zerstört.",
+        "motivation": "Möchte ihre Waren absolut trocken halten und meidet den Fischmarkt wegen des Geruchs nach Meerwasser."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 11,
+            "KO": 11,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 10
+            },
+            {
+                "name": "Menschenkennis",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

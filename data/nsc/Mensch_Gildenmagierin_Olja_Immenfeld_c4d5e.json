@@ -1,0 +1,90 @@
+{
+    "id": "e9b2d3c4-f5a6-4b7c-8d9e-0f1a2b3c4d5e",
+    "source": "4301 Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Olja_Immenfeld",
+    "tags": ["Akademie der Verformungen", "Lowangen", "Haut zu Pelz"],
+    "general": {
+        "name": "Olja Immenfeld",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Biene",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagierin",
+        "title": "Magistra ordinaria mutanda",
+        "specification": "Lehrmeisterin an der Akademie der Verformungen; Expertin für Verwandlungsmagie; Forscherin im Projekt 'Haut zu Pelz'.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Olja hat ein Auge auf Hesindians Ausrüstung geworfen und bietet ihm an, seine Instrumente durch arkane Formung zu 'perfektionieren', sofern er ihr im Gegenzug seltene Mineralien aus dem Hochland liefert.",
+            "Sie könnte die SC instrumentalisieren, um Informationen über den Fortschritt von Salix Horrigans Experimenten auszuspionieren."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 62,
+        "hair": "Graugesträhnter Pagenschnitt.",
+        "skin": "Gepflegt, wirkt oft etwas unterkühlt.",
+        "eyes": "Bernsteinfarben (oder stechendes Grau).",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Makellose, streng sitzende Magierrobe der Akademie",
+            "trousers": "Dunkle Tuchhose",
+            "footwear": "Hochwertige, polierte Lederstiefel",
+            "jewellery": "Silberner Siegelring, Akademiereif",
+            "things": "Präzisionsinstrumente zur Strukturprüfung",
+            "weapons": "Magierstab aus dunklem Holz"
+        },
+        "distinguishing_features": "Hat die Angewohnheit, Gegenstände im Gespräch ständig zu drehen und zu wenden, als würde sie deren Struktur prüfen; riecht dezent nach Ozon und kaltem Eisen."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Sachlich",
+            "Präzise",
+            "Materialistisch",
+            "Fleißig",
+            "Geduldig",
+            "Verbissen"
+        ],
+        "actual-mood": [
+            "Analytisch",
+            "Konkurrenzbetont"
+        ],
+        "family-background": "Geboren und ausgebildet in Lowangen; ihr gesamtes Leben und ihre Identität sind eng mit der Akademie der Verformungen verknüpft.",
+        "motivation": "Definiert sich einzig über ihre Karriere. Will im Projekt 'Haut zu Pelz' unbedingt vor Salix Horrigan erfolgreich sein."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "talents": [
+            { "name": "Metallbearbeitung", "FW": 11 },
+            { "name": "Steinbearbeitung", "FW": 9 },
+            { "name": "Schätzen", "FW": 13 }
+        ],
+        "spells": [
+            { "name": "Haselbusch und Ginsterkraut", "FW": 8 },
+            { "name": "Objectoviso", "FW": 12 },
+            { "name": "Hartes schmelze!", "FW": 14 }
+        ]
+    },
+    "session-notes": "Kann die joviale Art von Salix Horrigan nicht ausstehen. Grollt Mayla Mondhaar, da diese ihr bei der Ernennung zur Vize-Spektabilität vorgezogen wurde. Gilt als 'die saure Immenfeld' unter Kollegen."
+}

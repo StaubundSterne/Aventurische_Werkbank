@@ -1,0 +1,90 @@
+{
+    "id": "d4e5f6a7-b8c9-4d8e-1f2a-3b4c5d6e7f8a",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Jandor",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Bussard",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bogenschütze",
+        "specification": "Scharfschütze der Miliz; Experte für Fernkampf auf weite Distanzen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Ein Weiler nahe Yrramis"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Jandor beobachtet Şahins Umgang mit dem Kurzbogen und bietet ihm einen freundschaftlichen Wettkampf an.",
+            "Er fragt Adarell nach Haltungstechniken zur Entlastung des Rückens bei langen Wachtalent-Schichten."
+        ]
+    },
+    "appearance": {
+        "size": 180,
+        "weight": 70,
+        "hair": "Hellbraun, zerzaust.",
+        "skin": "Gebräunt durch stundenlange Wachen.",
+        "eyes": "Hellbraun.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Grüner Waffenrock.",
+            "trousers": "Braune Stoffhose.",
+            "footwear": "Leichte Lederschuhe.",
+            "jewellery": "Keine",
+            "things": "Pfeilzieher, Sehnenwachs.",
+            "weapons": "Langbogen, Köcher aus Wildschweinfell."
+        },
+        "distinguishing_features": "Ausgeprägte Hornhaut an den Fingern der rechten Hand; trägt den Bogen sehr vorsichtig."
+    },
+    "personality": {
+        "traits": [
+            "Gewissenhaft",
+            "Ruhig",
+            "Geduldig",
+            "Fokussiert",
+            "Bescheiden"
+        ],
+        "actual-mood": [
+            "Beobachtend"
+        ],
+        "family-background": "Sohn von Bauern; seine Eltern flohen vor drei Jahren nach Yrramis, nachdem ihr Hof geplündert wurde.",
+        "motivation": "Dafür zu sorgen, dass kein Feind die Mauern lebend erreicht."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Bogen",
+                "FW": 14
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 12
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

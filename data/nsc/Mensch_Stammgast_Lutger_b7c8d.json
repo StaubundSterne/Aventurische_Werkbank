@@ -1,0 +1,90 @@
+{
+    "id": "a4b5c6d7-e8f9-4a0b-1c2d-3e4f5a6b7c8d",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland, 4201 Das Orkland",
+    "tags": [],
+    "general": {
+        "name": "Lutger",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 933,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Stammgast",
+        "specification": "Ehemaliger Grenzposten und Geschichtenerzähler; lebt von den Almosen der Gäste für seine Prophezeiungen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Thasch-Vorberge (Grenzposten)"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Lutger erkennt in Hesindians Augen das 'Wissen der Alten' und raunt ihm eine düstere Warnung zu.",
+            "Er bietet Şahin an, ihm von den alten Reiterpfaden im Thasch zu erzählen, die heute längst vergessen sind."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 55,
+        "hair": "Weiß, lang und ungepflegt.",
+        "skin": "Ledrig, tief gefurcht.",
+        "eyes": "Trüb, wässrig; starrt oft in die Glut.",
+        "outfit": {
+            "headgear": "Abgewetzte Pelzmütze.",
+            "top": "Speckiger Pelzmantel aus Bärenfell.",
+            "trousers": "Alte Lederhose.",
+            "footwear": "Mit Fell gefütterte Stiefel.",
+            "jewellery": "Keine",
+            "things": "Alter, knorriger Wanderstab, eine leere Pfeife.",
+            "weapons": "Wanderstab"
+        },
+        "distinguishing_features": "Trägt seinen Pelzmantel auch im Hochsommer; hat einen festen Platz am Kamin."
+    },
+    "personality": {
+        "traits": [
+            "Kauzig",
+            "Nostalgisch",
+            "Eigenbrötlerisch",
+            "Geduldig",
+            "Mysteriös"
+        ],
+        "actual-mood": [
+            "Melancholisch"
+        ],
+        "family-background": "War einst Rottenführer im Thasch; seine Kameraden fielen alle bei einem Orküberfall im Jahr 962 BF.",
+        "motivation": "Das Wetter und die Zeichen der Zeit deuten, um die Jungen vor den Fehlern der Vergangenheit zu warnen."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Wettervorhersage",
+                "FW": 14
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 13
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

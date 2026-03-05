@@ -1,0 +1,97 @@
+{
+    "id": "e45e2d44-9931-4b1a-8e2b-1192a1c2d3e4",
+    "source": "Aventurische Namen, 4000 Bibliotheken (Gashok/Donnerbach)",
+    "tags": [],
+    "general": {
+        "name": "Helmar",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Esel (stur, aber arbeitswillig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Waffenknecht",
+        "specification": "Der Jüngste der Donnerer. Er kümmert sich um die Ausrüstung und die Pferde, greift aber im Kampf ebenso mutig zu Schild und Schwert.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Neu-Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Helmar provoziert Jost, ihm die Stiefel zu putzen, um seine eigene Unsicherheit gegenüber Geweihten zu überspielen."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 70,
+        "hair": "Kurzes, dunkles Haar",
+        "skin": "Leicht unrein, jugendlich",
+        "eyes": "Blau",
+        "outfit": {
+            "headgear": "Einfache Eisenkappe",
+            "top": "Leinenhemd, darüber eine grobe Lederweste",
+            "trousers": "Dunkle Stoffhose",
+            "footwear": "Gute Marschstiefel",
+            "jewellery": "Keiner",
+            "things": "Pferdestriegel, Lederfett-Dose",
+            "weapons": "Schwert, Holzschild mit dem Blitzsymbol der Donnerer"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Lauthals",
+            "Eifrig",
+            "Vorlaut",
+            "Naiv",
+            "Stur"
+        ],
+        "actual-mood": [
+            "Aufgeputscht"
+        ],
+        "family-background": "Sohn eines Stallmeisters aus Donnerbach. Er lief von zu Hause fort, um 'echte' Abenteuer zu erleben.",
+        "motivation": "Ein richtiger Ritter werden oder zumindest so viel Gold wie Alara besitzen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 10,
+            "IN": 11,
+            "CH": 12,
+            "FF": 11,
+            "GE": 12,
+            "KO": 13,
+            "KK": 13
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Abrichten",
+                "FW": 9
+            },
+            {
+                "name": "Schwerter",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

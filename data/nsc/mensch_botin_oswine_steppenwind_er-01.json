@@ -1,0 +1,90 @@
+{
+    "id": "lowangen-messenger-01",
+    "source": "4200 Svelltland; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [],
+    "general": {
+        "name": "Oswine Steppenwind",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Schwalbe",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Botin",
+        "specification": "Eilbotin des Stadtmagistrats von Lowangen; spezialisiert auf diplomatische Depeschen im Kriegsgebiet.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Oswine hat eine Nachricht für Hesindian im Gepäck, darf sie aber nur gegen ein spezielles Losungswort aushändigen.",
+            "Sie bittet Şahin um Hilfe beim Sichern ihrer Route, da sie Späher im Westen vermutet."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Aschblond, zu einem festen Zopf geflochten.",
+        "skin": "Blass, mit Rötungen durch den kalten Wind.",
+        "eyes": "Hellgrün",
+        "outfit": {
+            "headgear": "Kapuze eines wetterfesten Mantels",
+            "top": "Eng anliegende Lederwams",
+            "trousers": "Reithose aus festem Tuch",
+            "footwear": "Hohe Reitstiefel mit Sporen",
+            "jewellery": "Das offizielle Siegel des Lowanger Magistrats an einer Kette",
+            "things": "Versiegelte Rollen in einer wasserdichten Ledertasche",
+            "weapons": "Kurzschwert"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Furchtlos",
+            "Hektisch",
+            "Direkt",
+            "Loyal",
+            "Belastbar"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Waise; wuchs im Umfeld der Botenzunft auf; betrachtet ihre Pferde als einzige Familie.",
+        "motivation": "Muss eine Warnung vor Ork-Patrouillen rechtzeitig nach Lowangen bringen."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Reiten",
+                "FW": 14
+            },
+            {
+                "name": "Orientierung",
+                "FW": 13
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

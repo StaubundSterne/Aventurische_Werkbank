@@ -1,0 +1,97 @@
+{
+    "id": "2d9c1b8a-7e6f-4d3c-b2a1-0f9e8d7c6b5a",
+    "source": "Aventurisches-Archiv2.txt, Lowangen.txt",
+    "tags": [],
+    "general": {
+        "name": "Praiodane von Gashok",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 969,
+        "alive": true,
+        "culture": "Gashoker",
+        "species": "Mensch",
+        "soul-animal": "Greif (majestätisch und unbestechlich)",
+        "social-state": "Klerus"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Richterin im Praios-Tempel von Gashok",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Gashok",
+        "former-locations": [
+            "Gareth",
+            "Elenvina"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Praiodane kennt die Hintergründe zum Prozess gegen Aurelinas Mutter und mahnt zur Einhaltung göttlicher Ordnung.",
+            "Sie diskutiert mit Adarell über die ethischen Grenzen der Magieanwendung in der Heilkunst."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 70,
+        "hair": "Streng zurückgebundenes, graumeliertes Haar",
+        "skin": "Hell, gepflegt",
+        "eyes": "Goldbraun",
+        "outfit": {
+            "headgear": "Goldene Stirnbinde",
+            "top": "Weiße Robe mit Sonnensymbolen",
+            "jewellery": "Schweres Praios-Amulett aus Messing",
+            "things": "Gesetzbuch, Schreibfeder",
+            "weapons": "Sonnenzepter (Liturgiewerkzeug)"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Unbeugsam",
+            "Gerecht",
+            "Stolz",
+            "Analytisch",
+            "Streng"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Stammt aus einer angesehenen Juristenfamilie in Gareth. Wurde nach Gashok entsandt, um die dortige Rechtsprechung zu festigen.",
+        "motivation": "Wahrung der Ordnung im gesetzlosen Svelltland; Suche nach Wahrheit in komplexen Rechtsfällen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 15,
+            "IN": 13,
+            "CH": 14,
+            "FF": 10,
+            "GE": 10,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "KaP": 45
+        }
+    },
+    "abilities": {
+        "liturgies": [
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 12
+            },
+            {
+                "name": "Sonnengruß",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

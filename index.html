@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aventurische Werkbank 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="workbench">
+
+        <header class="context collapsible" id="main-header">
+            <div class="context-slots">
+                <div class="slot" id="campaign">
+                    <span class="indicator"></span> Kampagne
+                </div>
+                <div class="slot" id="episodes">
+                    <span class="indicator"></span> Episoden
+                </div>
+                <div class="slot" id="recaps">
+                    <span class="indicator"></span> Recaps
+                </div>
+            </div>
+
+            <div class="weight-controls">
+                <div class="control-group">
+                    <label>Kampagne</label>
+                    <input type="range" id="weight-campaign" min="1" max="10" value="1">
+                </div>
+                <div class="control-group">
+                    <label>Episoden</label>
+                    <input type="range" id="weight-episodes" min="1" max="10" value="3">
+                </div>
+                <div class="control-group">
+                    <label>Recaps</label>
+                    <input type="range" id="weight-recaps" min="1" max="10" value="4">
+                </div>
+            </div>
+
+            <button id="toggle-header">&#9650;</button>
+
+        </header>
+
+        <main class="workbench-layout">
+
+            <aside class="resource stream-column" id="aside-resource">
+                <button class="toggle-btn" id="toggle-resource">&#9654;</button>
+                <div id="NSC-stream" class="magnet-stream">
+            </aside>
+
+            <aside class="ingame-information stream-column" id="aside-ingame">
+                <button class="toggle-btn" id="toggle-ingame">&#9664;</button>
+                <div id="ingame-information-stream" class="magnet-stream">
+                    <div class="info-card">
+                        <div class="score-badge">0</div>
+                        <h3>TITEL HANDREICHUNG</h3>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="focus-area">
+                <div class="situation-input-container">
+                    <textarea id="situation-input" placeholder="Aktuelle Spielsituation (x 5.0)..."></textarea>
+                </div>
+
+                <div id="workbench-canvas" class="card-display">
+                </div>
+            </section>
+
+            <aside class="resource stream-column" id="aside-resource">
+                <button class="toggle-btn" id="toggle-resource">&#9654;</button>
+                <div id="NSC-stream" class="magnet-stream">
+                    <div class="info-card">
+                        <div class="score-badge">0</div>
+                        <h3>NAME NSC</h3>
+                    </div>
+                </div>
+
+                <div id="venue-stream" class="magnet-stream collapsible">
+                    <div class="info-card">
+                        <div class="score-badge">0</div>
+                        <h3>SCHAUPLATZ</h3>
+                    </div>
+                </div>
+
+                <div id="objects-stream" class="magnet-stream">
+                    <div class="info-card">
+                        <div class="score-badge">0</div>
+                        <h3>GEGENSTAND</h3>
+                    </div>
+                </div>
+            </aside>
+
+        </main>
+
+    </div>
+
+    <script src="magnet-engine.js" type="module"></script>
+    <script src="ui-controller.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+{
+  "id": "7d6e5f4a-3b2c-1d0e-9f8a-7b6c5d4e3f2g",
+  "source": "[4301] Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Visalyar_Wassertänzer; Abenteuer Donnerwacht I & II",
+  "tags": [],
+  "general": {
+    "name": "Visalyar Wassertänzer",
+    "gender": "männlich",
+    "canonical": true,
+    "birth-year": 901,
+    "alive": true,
+    "culture": "Steppenelfisch",
+    "species": "Elf",
+    "soul-animal": "Wildpferd",
+    "social-state": "Frei (Magister extraordinarius)"
+  },
+  "profession": {
+    "category": "Gildenmagier / Elfischer Formmeister",
+    "specification": "Magister extraordinarius für elfische Repräsentation; lehrt das Zaubern durch bildhafte Gleichnisse und Naturbetrachtung.",
+    "clerical": false,
+    "magical": true,
+    "noble": false
+  },
+  "locations": {
+    "actual-location": "Lowangen",
+    "former-locations": [
+      "Luttermund (Sippengebiet)",
+      "Gashok"
+    ]
+  },
+  "sc-inject": {
+    "sc": [
+      "Adarell",
+      "Hesindian"
+    ],
+    "injection-points": [
+      "Hesindian wird von Visalyar sanft zurechtgewiesen, da er Zauberei zu 'technisch' angeht; Visalyar fordert ihn auf, die Wärme des Lichts erst zu fühlen.",
+      "Wenn Adarell das Wort 'Ork' oder 'Schwarzpelz' auch nur flüstert, verwandelt sich der heitere Elfenmagister augenblicklich in eine knurrende, gefährliche Raubkatze."
+    ]
+  },
+  "appearance": {
+    "size": 182,
+    "weight": 65,
+    "hair": "Tiefschwarz, lang und in Zöpfen geflochten, in die bunte Perlen eingearbeitet sind.",
+    "skin": "Leicht gebräunt, wirkt sehnig und drahtig.",
+    "eyes": "Mandelförmig, von einer ruhigen, zeitlosen Tiefe.",
+    "outfit": {
+      "headgear": "Keine",
+      "top": "Schlichte, bequeme Robe aus grauer Wildseide",
+      "trousers": "Geschmeidige Lederhose",
+      "footwear": "Weiche, lautlose Wildlederstiefel",
+      "jewellery": "Bunte Perlen im Haar, ein einfacher Knochenreif am Oberarm.",
+      "things": "Ein kleiner Beutel mit Beeren; ein rituelles Instrument aus Holz.",
+      "weapons": "Ein langes, elfisches Messer an der Seite (Iryan-Holz-Griff); Magierstab."
+    },
+    "distinguishing_features": "Hört extrem aufmerksam zu und unterbricht nie; bekommt einen stechenden Blick und knurrt tief, wenn Orks thematisiert werden."
+  },
+  "personality": {
+    "traits": [
+      "Verspielt",
+      "Geduldig",
+      "Heiter",
+      "Zornig (gegen Orks)",
+      "Bildhaft"
+    ],
+    "actual-mood": [
+      "Heiter"
+    ],
+    "family-background": "Verbrachte Jahrzehnte als Nomade in der Steppe; sieht seinen Aufenthalt in Lowangen (seit ca. 1000 BF) als 'kurzes Intermezzo' von wenigen Jahrzehnten an.",
+    "motivation": "Den Menschen die Schönheit der elfischen Magie begreiflich zu machen, während er die ihm verhassten Orks aus der Nähe beobachtet."
+  },
+  "stats": {
+    "experience-level": "Meisterlich",
+    "attributes": {
+      "MU": 14,
+      "KL": 12,
+      "IN": 16,
+      "CH": 14,
+      "FF": 13,
+      "GE": 15,
+      "KO": 12,
+      "KK": 11
+    }
+  },
+  "abilities": {
+    "talents": [
+      {
+        "name": "Sagen & Legenden",
+        "FW": 12
+      },
+      {
+        "name": "Sinnesschärfe",
+        "FW": 13
+      },
+      {
+        "name": "Willenskraft",
+        "FW": 10
+      }
+    ],
+    "spells": [
+      {
+        "name": "Somnigravis",
+        "FW": 14
+      },
+      {
+        "name": "Fulminictus",
+        "FW": 13
+      },
+      {
+        "name": "Balsam Salabunde",
+        "FW": 12
+      },
+      {
+        "name": "Adlerauge",
+        "FW": 12
+      }
+    ]
+  },
+  "session-notes": ""
+}

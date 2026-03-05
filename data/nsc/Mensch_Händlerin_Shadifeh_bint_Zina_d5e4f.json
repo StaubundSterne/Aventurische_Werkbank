@@ -1,0 +1,95 @@
+{
+    "id": "9e8d7c6b-5a4b-3c2d-1e0f-9a8b7c6d5e4f",
+    "source": "Lowangen.txt",
+    "tags": [],
+    "general": {
+        "name": "Shadifeh bint Zina",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Tulamidische Stadtstaaten",
+        "species": "Mensch",
+        "soul-animal": "Gazelle (anmutig und schnell)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Seiden- und Gewürzhändlerin in der Gilde der Krämer zu Lowangen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Fasar",
+            "Khunchom"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Shadifeh erkennt in Şahin einen Landsmann und bietet ihm Insider-Informationen über den Markt in Lowangen.",
+            "Sie versucht, Aurelina Violanta exklusive Stoffe aus dem fernen Khunchom zu verkaufen."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 55,
+        "hair": "Rabenpflegtes, langes Haar",
+        "skin": "Dunkel, olivfarben",
+        "eyes": "Dunkelbraun, fast schwarz",
+        "outfit": {
+            "top": "Seidene Bluse mit Goldstickerei",
+            "trousers": "Weite Pluderhose",
+            "footwear": "Bestickte Sandalen",
+            "jewellery": "Drei silberne Ohrringe im linken Ohr",
+            "things": "Duftfläschchen, Rechenbrett",
+            "weapons": "Versteckter Wurfdolch"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Charmant",
+            "Berechnend",
+            "Weltoffen",
+            "Phexgläubig"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Stammt aus einer einflussreichen Händlerfamilie aus Fasar. Floh vor einem Familienzwist nach Norden und baute sich in Lowangen eine neue Existenz auf.",
+        "motivation": "Etablierung einer neuen Handelsroute über das Orkland nach Süden; Gewinnmaximierung."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 14,
+            "CH": 15,
+            "FF": 13,
+            "GE": 12,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 11
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,104 @@
+{
+    "id": "7f8a9b0c-1d2e-4f3a-8b5c-6d7e8f9a0b1c",
+    "source": "wiki-aventurica.de (Rondralieb von Wetterfels), 4000 Bibliotheken (Senne Nord)",
+    "tags": [],
+    "general": {
+        "name": "Rondralieb von Wetterfels",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Falke (scharfblickend und stolz)",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Ritterin",
+        "specification": "Ritterin der Senne Nord. Erfahrene Kämpferin gegen die Orks, die für ihre eiserne Disziplin und die Einhaltung des ritterlichen Ehrenkodex bekannt ist.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Wetterfels",
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Jost sieht in ihr das Ideal eines Rondra-Anhängers, fürchtet aber ihr hartes Urteil über seine mangelnde Erfahrung.",
+            "Rondralieb beobachtet Josts Schmiedearbeiten im Tempel und erkennt das Potenzial seiner Klingen."
+        ]
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 78,
+        "hair": "Dunkelblond, kurz geschnitten unter der Bundhaube",
+        "skin": "Blass, gezeichnet von einer langen Narbe über dem linken Jochbein",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Stählerne Sturmhaube (liegt griffbereit auf dem Tisch)",
+            "top": "Brünierte Halbrüstung über einem Waffenrock mit dem Wetterfels-Wappen (steigender Hirsch vor Gewitterwolke)",
+            "trousers": "Lederne Reithosen",
+            "footwear": "Schwere Ritterstiefel mit festsitzenden Sporen",
+            "jewellery": "Ein silberner Talisman in Form eines Schwertes an einer groben Kette",
+            "things": "Wetzstein, Ölfläschchen aus Ton, Poliertuch",
+            "weapons": "Amazonensäbel (Meisterstück), Dolch"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Unbeugsam",
+            "Streng",
+            "Gottesfürchtig",
+            "Wachsam",
+            "Prinzipientreu"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Mutter Alara, verstorbene Burgfrau; Vater Bernhelm, im Kampf gegen Orks gefallen; Bruder Gerold, Junker auf Wetterfels. Die Familie hat eine lange Tradition im Dienst der Senne Nord.",
+        "motivation": "Vorbereitung auf die kommenden Auseinandersetzungen mit den Orks und die Wahrung der Tugenden in Zeiten des moralischen Verfalls."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 15,
+            "KL": 11,
+            "IN": 14,
+            "CH": 12,
+            "FF": 10,
+            "GE": 14,
+            "KO": 15,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 16
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 13
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 15
+            },
+            {
+                "name": "Reiten",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

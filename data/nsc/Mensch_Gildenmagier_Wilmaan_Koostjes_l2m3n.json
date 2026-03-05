@@ -1,0 +1,112 @@
+{
+    "id": "8e9f0a1b-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+    "source": "https://de.wiki-aventurica.de/wiki/Wilmaan_Koostjes; [4301] Hallen arkaner Macht; Kanonische Ergänzungen aus Nutzerquelle",
+    "tags": [],
+    "general": {
+        "name": "Wilmaan Koostjes",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Bornländisch (Scherpinskoje)",
+        "species": "Mensch",
+        "soul-animal": "Vielfraß",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Magister ordinarius mutandus; Spezialist für den SALANDER MUTANDER; Dozent an der Akademie der Verformungen.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Scherpinskoje",
+            "Festum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Wilmaan korrigiert Adarell herablassend bei der Astralfluss-Steuerung des Salander und lässt ihn seine fachliche Überlegenheit spüren.,Er versucht Jost in ein Gespräch über Karrieremöglichkeiten außerhalb des Svellttals zu verwickeln, wobei sein Neid auf etablierte Größen wie Elcarna deutlich durchscheint.,Adarell bemerkt Wilmaans kühles, fast berechnendes Wesen, während er über die mangelnde Anerkennung seiner 'enormen Fachkenntnisse' klagt."
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 95,
+        "hair": "Dunkelbraunes Haar, dichter, gepflegter Vollbart.",
+        "skin": "Blass",
+        "eyes": "Blaugrau, kühl und abschätzend.",
+        "outfit": {
+            "headgear": "Schlichte Magierkappe",
+            "top": "Dunkelblaue Magierrobe mit bornländischem Pelzbesatz am Kragen.",
+            "trousers": "Schwarze Tuchhose",
+            "footwear": "Feste Lederstiefel",
+            "jewellery": "Akademiereif der Halle der Macht aus Silber.",
+            "things": "Ein dicker Foliant über die Anatomie von Wechselbälgern.",
+            "weapons": "Magierstab aus schwerem Eichenholz."
+        },
+        "distinguishing_features": "Bullige, kräftige Gestalt; wirkt eher wie ein Schmied in Magierroben."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Kühl",
+            "Fachkundig",
+            "Geltungsbedürftig",
+            "Kaltblütig"
+        ],
+        "actual-mood": [
+            "Frustriert"
+        ],
+        "family-background": "Frau und sechs Kinder leben in einer geräumigen, aber für seinen Geschmack zu bescheidenen Wohnung nahe der Akademie; stammt aus dem bornländischen Scherpinskoje.",
+        "motivation": "Endlich aus dem Schatten der Spektabilität heratustreten und eine Position zu finden, die seinem Talent und seinem Machtanspruch gerecht wird."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 15,
+            "IN": 13,
+            "CH": 11,
+            "FF": 12,
+            "GE": 11,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 52
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 14
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 7
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 8
+            }
+        ],
+        "spells": [
+            {
+                "name": "Salander Mutare",
+                "FW": 16
+            },
+            {
+                "name": "Adlerschwinge Wolfsgestalt",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

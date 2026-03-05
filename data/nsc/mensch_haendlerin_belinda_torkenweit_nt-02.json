@@ -1,0 +1,86 @@
+{
+    "id": "merchant-02",
+    "source": "4200 Svelltland; wiki-aventurica.de/wiki/Messergrassteppe",
+    "tags": [],
+    "general": {
+        "name": "Belinda Torkenweit",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Fuchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Eisenhändlerin; transportiert Werkzeuge für die Siedler in Teshkal.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Belinda sucht Aurelevina auf, da sie Gerüchte über deren magische Begabung gehört hat und einen 'Glücksbringer' braucht.",
+            "Sie bittet Hesindian, die Echtheit einiger alter Münzen zu prüfen, die sie als Bezahlung erhalten hat."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 65,
+        "hair": "Rotbraun, unter einem Kopftuch verborgen.",
+        "skin": "Mit Rußspuren an den Händen.",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Festes Kopftuch",
+            "top": "Robuste Leinentunika",
+            "trousers": "Dicke Stoffhose",
+            "footwear": "Arbeitsschuhe aus gegerbtem Leder",
+            "jewellery": "Ein kleiner Amboss-Anhänger aus Eisen (Ingerimm-Symbol)",
+            "things": "Ein schwerer Ledergürtel mit Werkzeugtaschen",
+            "weapons": "Ein kurzer Schmiedehammer"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Tüchtig",
+            "Humorvoll",
+            "Zäh",
+            "Phexgefällig",
+            "Schlagfertig"
+        ],
+        "actual-mood": [
+            "Zuversichtlich"
+        ],
+        "family-background": "Tochter eines Schmieds; führt das Geschäft nach seinem Tod alleine weiter.",
+        "motivation": "Will die lukrative Nachfrage in Teshkal nutzen, bevor die Steppe zu gefährlich wird."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Überreden",
+                "FW": 9
+            },
+            {
+                "name": "Metallbearbeitung",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

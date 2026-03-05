@@ -1,0 +1,118 @@
+{
+  "id": "a2c1b4e5-9d8f-4a3b-2c1d-0e9f7649d8a3",
+  "source": "4301 Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Dorota_Wenzelin; [NSC kanonisch mit Quelle]",
+  "tags": [
+    "Kaiser-Perval-Akademie",
+    "Eleven",
+    "Lowangen",
+    "Beherrschungsmagie"
+  ],
+  "general": {
+    "name": "Dorota Wenzelin",
+    "gender": "weiblich",
+    "canonical": true,
+    "birth-year": 993,
+    "alive": true,
+    "culture": "Svellttaler",
+    "species": "Mensch",
+    "soul-animal": "Nachtfalter",
+    "social-state": "Frei"
+  },
+  "profession": {
+    "category": "Schülerin / Eleven",
+    "specification": "Fortgeschrittene Eleven an der Kaiser-Perval-Akademie; fanatische Anhängerin Puschinskes und heimliche Spezialistin für Beherrschungsmagie.",
+    "clerical": false,
+    "magical": true,
+    "noble": false
+  },
+  "locations": {
+    "actual-location": "Lowangen",
+    "former-locations": [
+      "Lowangen"
+    ]
+  },
+  "sc-inject": {
+    "sc": [
+      "Hesindian"
+    ],
+    "injection-points": [
+      "Hesindian bemerkt, wie Dorota ihn aus dem Schatten eines Regals beobachtet; ihr Blick ist unnatürlich fokussiert, als würde sie bereits die Kontrolle über seinen Geist testen.",
+      "Sie bittet Hesindian naiv um Hilfe beim Übersetzen einer alten Schriftrolle, nutzt die Zeit aber eigentlich, um ihn subtil über seine Loyalitäten auszuhorchen."
+    ]
+  },
+  "appearance": {
+    "size": 155,
+    "weight": 45,
+    "hair": "Wilde, dunkle Locken, die ihr oft unordentlich ins Gesicht fallen.",
+    "skin": "Blass, fast wächsern, mit Tintenflecken an den Fingerspitzen.",
+    "eyes": "Große, dunkelbraune Augen, die bei Erwähnung Puschinskes glänzen.",
+    "outfit": {
+      "headgear": "Keine",
+      "top": "Eine schlichte, graue Elevengewandung (Tarnung), unter der sie heimlich ein schwarzes Band trägt.",
+      "trousers": "Dunkler Rock aus grobem Stoff.",
+      "footwear": "Einfache Lederschlappen.",
+      "jewellery": "Ein schmuckloses Lederband am Handgelenk.",
+      "things": "Ein dicker Stapel Pergamentrollen mit Notizen zur Beherrschungsmagie.",
+      "weapons": "Keine"
+    },
+    "distinguishing_features": "Deutlicher leichter Buckel durch ständiges Studium; wirkt durch ihre kleine Statur viel jünger und harmloser, als sie ist."
+  },
+  "personality": {
+    "traits": [
+      "Fanatisch",
+      "Arbeitswütig",
+      "Skrupellos",
+      "Hinterhältig",
+      "Unterschätzt"
+    ],
+    "actual-mood": [
+      "Besessen"
+    ],
+    "family-background": "Tochter des Buchbinders Wenzel aus Lowangen; ihre Mutter verstarb früh. Sie sieht in Puschinske eine Vaterfigur, die sie über alles stellt.",
+    "motivation": "Dorota möchte Puschinske ihre absolute Nützlichkeit beweisen und ist bereit, jede Konkurrentin – insbesondere Semirhija – auszuschalten, um seine Gunst zu erlangen."
+  },
+  "stats": {
+    "experience-level": "Unerfahren",
+    "attributes": {
+      "MU": 12,
+      "KL": 15,
+      "IN": 14,
+      "CH": 13,
+      "FF": 11,
+      "GE": 10,
+      "KO": 9,
+      "KK": 8
+    },
+    "energies": {
+      "LeP": 25,
+      "AsP": 38
+    }
+  },
+  "abilities": {
+    "talents": [
+      {
+        "name": "Magiekunde",
+        "FW": 9
+      },
+      {
+        "name": "Menschenkenntnis",
+        "FW": 7
+      },
+      {
+        "name": "Sinnenschärfe",
+        "FW": 8
+      }
+    ],
+    "spells": [
+      {
+        "name": "Bannbaladin",
+        "FW": 8
+      },
+      {
+        "name": "Imperavi",
+        "FW": 5
+      }
+    ]
+  },
+  "session-notes": "1009 BF: Sie dient als Informantin für Puschinske innerhalb des Schülertrakts."
+}

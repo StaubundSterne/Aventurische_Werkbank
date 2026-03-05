@@ -1,0 +1,85 @@
+{
+    "id": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+    "source": "4302 Horte magischen Wissens, 4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Meister Belar",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Salamander",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Alchemist",
+        "specification": "Betreiber der Alchemie-Stube 'Zum Goldenen Kessel'; Lieferant für die Akademie der Verformungen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Khunchom",
+            "Festum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Belar hat Hesindian einmal eine Ladung minderwertigen Alraunstaubs verkauft und schuldet ihm seither eine 'echte Rarität' als Wiedergutmachung."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 65,
+        "hair": "Wirres, weißes Haar, oft mit Rußflecken",
+        "skin": "Fleckig von chemischen Verätzungen",
+        "eyes": "Gelblich getrübt, aber aufmerksam",
+        "outfit": {
+            "headgear": "Eine schiefe Samtkappe",
+            "top": "Mit Flecken übersäte Schürze über einem weiten Kittel",
+            "trousers": "Dunkle Stoffhose",
+            "footwear": "Holzpantoffeln",
+            "jewellery": "Ein kleiner Ring mit einem Smaragd, der angeblich vor Giften warnt",
+            "things": "Reagenzglas, Mörser und Stößel",
+            "weapons": "Einige Wurffläschchen mit unbekanntem Inhalt"
+        },
+        "distinguishing_features": "Riecht nach Schwefel, Weingeist und verbranntem Zucker; seine Hände zittern leicht, außer wenn er Tränke mischt."
+    },
+    "personality": {
+        "traits": [
+            "Exzentrisch",
+            "Gelehrt",
+            "Vergesslich",
+            "Großzügig",
+            "Verschmitzt"
+        ],
+        "actual-mood": [
+            "Aufgeregt"
+        ],
+        "family-background": "Keine Familie vor Ort; behauptet, von einem Dschinn in den Tulamidenlanden unterrichtet worden zu sein.",
+        "motivation": "Versucht eine Formel für ein Elixier zu perfektionieren, das die Kälte des Winters vertreibt."
+    },
+    "stats": {
+        "experience-level": "Meisterlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Alchimie",
+                "FW": 16
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

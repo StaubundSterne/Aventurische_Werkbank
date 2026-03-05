@@ -1,0 +1,110 @@
+{
+    "id": "m3n4o5p6-q7r8-9012-3456-789012abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Wirt",
+        "Tiefhusen",
+        "Information"
+    ],
+    "general": {
+        "name": "Mirma 'Mutter' Krüger",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Glucke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gastgewerbe",
+        "specification": "Betreiberin einer Herberge in Tiefhusen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tiefhusen",
+        "former-locations": [
+            "Keine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Bietet Adarell ein günstiges Zimmer an, weil sie sie an ihre verstorbene Tochter erinnert.",
+            "Weiß von seltsamen Gestalten, die sich nachts in der Nähe herumtreiben und Adarell verdächtig vorkommen könnten."
+        ]
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 80,
+        "hair": "Grau, zum Dutt gesteckt",
+        "skin": "Faltig, freundlich",
+        "eyes": "Braun",
+        "outfit": {
+            "headgear": "Haube",
+            "top": "Schlichtes Kleid",
+            "trousers": "Schürze",
+            "footwear": "Pantoffeln",
+            "jewellery": "Ehering",
+            "things": "Staubwedel",
+            "weapons": "Keine (ruft nach der Garde)"
+        },
+        "distinguishing_features": "Hustet oft heftig."
+    },
+    "personality": {
+        "traits": [
+            "Fürsorglich",
+            "Neugierig",
+            "Ängstlich",
+            "Ordentlich",
+            "Gläubig"
+        ],
+        "actual-mood": [
+            "Beschäftigt"
+        ],
+        "family-background": "Witwe. Tochter starb jung. Lebt für ihre Herberge.",
+        "motivation": "Will ihren Gästen ein sauberes und sicheres Zuhause bieten."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 9,
+            "KL": 10,
+            "IN": 12,
+            "CH": 13,
+            "FF": 11,
+            "GE": 9,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 22,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hauswirtschaft",
+                "FW": 14
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 10
+            },
+            {
+                "name": "Kochen",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

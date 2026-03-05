@@ -1,0 +1,90 @@
+{
+    "id": "90612534-d4e5-7f0a-1b2c-8e7d6c5b4f3a",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Fana",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 961,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Elster",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Krämerin",
+        "specification": "Markthändlerin in Yrramis; bekannt für scharfe Blicke und harte Preise.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Yrramis"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Fana versucht Aurelina überteuertes Trockenfleisch zu verkaufen und behauptet, es halte länger als ein Versprechen.",
+            "Sie beobachtet Fredegis misstrauisch, da sie glaubt, er wolle etwas an ihrem Stand mitgehen lassen."
+        ]
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 75,
+        "hair": "Grau-weiß, unter Kopftuch.",
+        "skin": "Faltig, vom Wind gezeichnet.",
+        "eyes": "Klein, scharf blickend, grünlich.",
+        "outfit": {
+            "headgear": "Warmes Kopftuch aus Wolle",
+            "top": "Wollkleid mit vielen Taschen",
+            "trousers": "Wollschürze",
+            "footwear": "Bequeme Filzstiefel",
+            "jewellery": "Viele kleine Bronzeringe",
+            "things": "Balkenwaage, Gewichte, Geldbeutel",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Beobachtet die Konkurrenz mit zusammengekniffenen Augen; wiegt jede Ware dreimal nach."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Mißtrauisch",
+            "Schlagfertig",
+            "Geizig",
+            "Wachsam"
+        ],
+        "actual-mood": [
+            "Berechnend"
+        ],
+        "family-background": "Alteingesessene Händlerin aus Yrramis; kennt jedes Gerücht vom Marktplatz.",
+        "motivation": "Möchte durch harten Handel ihren Stand in der kargen Grenzregion behaupten."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 14
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 12
+            },
+            {
+                "name": "Feilschen",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": ""
+}

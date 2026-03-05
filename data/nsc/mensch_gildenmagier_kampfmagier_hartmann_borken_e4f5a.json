@@ -1,0 +1,120 @@
+{
+    "id": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+    "source": "https://de.wiki-aventurica.de/wiki/Hartmann_Borkent; [4301] Hallen arkaner Macht; [4303] Stätten okkulter Geheimnisse",
+    "tags": [],
+    "general": {
+        "name": "Hartmann Borken",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Andergastisch",
+        "species": "Mensch",
+        "soul-animal": "Turmfalke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier / Kampfmagier",
+        "specification": "Adept des Kampfseminars Andergast; aktuell zur Kur in Lowangen; Hilfslehrer für weltlichen Kampf an der Halle der Macht.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Andergast"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Hartmann korrigiert Josts Kampfhaltung während einer Übungsstunde mit unnötiger Härte und einer fast schmerzhaften Förmlichkeit.",
+            "Fredegis beobachtet, wie Hartmann panisch ins Freie stürzt, als er in einem der engen, fensterlosen Archive der Akademie eingesperrt wurde.",
+            "Er befragt Adarell ausgiebig über die militärische Stärke des Svelltlands und macht keinen Hehl aus seiner Verachtung für die 'Nachgiebigkeit' gegenüber den Orks."
+        ]
+    },
+    "appearance": {
+        "size": 189,
+        "weight": 75,
+        "hair": "Dunkelbraun, kurz geschoren nach andergastischer Militärmanier.",
+        "skin": "Wettergegerbt, trotz der vielen Zeit in Bibliotheken.",
+        "eyes": "Stahlblau, wirken oft gehetzt, wenn er sich in engen Räumen aufhält.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Einfache, aber penibel saubere graue Magierrobe mit andergastischen Knotenmustern an den Manschetten.",
+            "trousers": "Feste Reiterhose aus dunklem Leinen.",
+            "footwear": "Schwere, genagelte Marschstiefel.",
+            "jewellery": "Ein silberner Ring in Form einer Eiche (Andergaster Herkunft); sein Adeptensiegel.",
+            "things": "Ein hölzernes Übungsschwert; eine Lederpeitsche (Brabaker Rohr) am Gürtel.",
+            "weapons": "Ein langer, eisenbeschlagener Magierstab aus Steineiche."
+        },
+        "distinguishing_features": "Hager und auffallend hochgewachsen; meidet instinktiv Ecken und schmale Gänge; steht immer so nah wie möglich an Fenstern oder Türen."
+    },
+    "personality": {
+        "traits": [
+            "Förmlich",
+            "Streng",
+            "Klaustrophobisch",
+            "Enthusiastisch (militärisch)",
+            "Diszipliniert"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Sohn einer einfachen Soldatenfamilie aus der Nähe von Andergast; seine magische Begabung wurde früh entdeckt und vom Staat gefördert. Er fühlt sich seiner Heimat und deren militärischen Traditionen tief verpflichtet.",
+        "motivation": "Heilung seiner Klaustrophobie, um als vollwertiger Offiziersmagier nach Andergast zurückkehren zu können; gleichzeitig Aufbau einer effektiven Ausbildung gegen die 'Schwarzpelze'."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 13,
+            "IN": 12,
+            "CH": 11,
+            "FF": 10,
+            "GE": 14,
+            "KO": 13,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 42
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 12
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 10
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 13
+            }
+        ],
+        "spells": [
+            {
+                "name": "Fulminictus",
+                "FW": 11
+            },
+            {
+                "name": "Armatrutz",
+                "FW": 9
+            },
+            {
+                "name": "Ignifaxius",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": "1009 BF: Er ist als 'Andergaster Schleifer' bereits bekannt, leidet aber stark unter dem Aufenthalt in der steinernen Akademie."
+}

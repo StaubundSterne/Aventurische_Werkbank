@@ -1,0 +1,90 @@
+{
+    "id": "e5f6a7b8-c9d0-4e9f-2a3b-4c5d6e7f8a9b",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Hanne",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Steinmarder",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Fallenstellerin",
+        "specification": "Expertin für Gebirgsjägerei; sichert die Pässe des Thasch mit versteckten Vorrichtungen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Thasch-Vorberge"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": [
+            "Hanne warnt Fredegis vor einer neuen Schlinge im Norden und testet seine Aufmerksamkeit, indem sie ihn fast hineinlaufen lässt.",
+            "Sie bietet Jost an, ihm bei der Beschaffung seltener Felle zu helfen, wenn er ihr im Gegenzug Werkzeug aus der Stadt mitbringt."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 65,
+        "hair": "Dunkelblond, oft verfilzt.",
+        "skin": "Wettergegerbt, wirkt sehr robust.",
+        "eyes": "Bernsteinfarben.",
+        "outfit": {
+            "headgear": "Pelzmütze (Dachs).",
+            "top": "Robuste Jagdkleidung aus Leder.",
+            "trousers": "Hohe Lederhose.",
+            "footwear": "Fest geschnürte Bergstiefel.",
+            "jewellery": "Gürtel mit metallischen Schlingen und Haken.",
+            "things": "Fallenbausatz, Köderbeutel.",
+            "weapons": "Jagdmesser, kleiner Wurfspeer."
+        },
+        "distinguishing_features": "Riecht nach Moschus und altem Laub; bewegt sich mit einem schleichenden Gang."
+    },
+    "personality": {
+        "traits": [
+            "Erfinderisch",
+            "Naturverbunden",
+            "Hartnäckig",
+            "Vorsichtig",
+            "Praktisch"
+        ],
+        "actual-mood": [
+            "Lauernd"
+        ],
+        "family-background": "Mutter Berga, Köchin; Vater Janko, Jäger. Die Familie lebt seit Generationen von den Erträgen des Thasch.",
+        "motivation": "Das Gebirge in eine Todesfalle für jeden zu verwandeln, der Yrramis schaden will."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fallenstellen",
+                "FW": 16
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 14
+            },
+            {
+                "name": "Fährtensuche",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": ""
+}

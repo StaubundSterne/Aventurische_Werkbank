@@ -1,0 +1,111 @@
+{
+    "id": "j0k1l2m3-n4o5-6789-0123-456789abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Garde",
+        "Lowangen",
+        "Ordnung",
+        "Gesetz"
+    ],
+    "general": {
+        "name": "Weibel Korbinian 'Der Fels' Staller",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Mastiff",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gardist",
+        "specification": "Weibel der Stadtgarde von Yrramis (Torwache)",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Keine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Ist ein strikter Verfechter von Gesetz und Ordnung, respektiert Jost als Praios-Geweihten zutiefst.",
+            "Bittet Jost um Hilfe bei einem Fall von Schmuggel, bei dem er Korruption in den eigenen Reihen vermutet."
+        ]
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 95,
+        "hair": "Kurzes, graues Haar, sauber rasiert",
+        "skin": "Hell",
+        "eyes": "Stahlblau",
+        "outfit": {
+            "headgear": "Eisenhelm mit Federbusch",
+            "top": "Wappenrock der Stadt Lowangen über Kettenhemd",
+            "trousers": "Dunkle Hosen",
+            "footwear": "Polierte Stiefel",
+            "jewellery": "Dienstabzeichen",
+            "things": "Schlüsselbund, Trillerpfeife",
+            "weapons": "Hellebarde und Kurzschwert"
+        },
+        "distinguishing_features": "Steht immer kerzengerade."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Streng",
+            "Unbestechlich",
+            "Humorlos",
+            "Loyal"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Sohn eines Gardisten. Sein Sohn dient ebenfalls in der Garde. Frau führt einen kleinen Laden.",
+        "motivation": "Will Lowangen sicher halten und seinen Dienst bis zur Pensionierung ehrenvoll erfüllen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 11,
+            "FF": 10,
+            "GE": 11,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hellebarden",
+                "FW": 12
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 8
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

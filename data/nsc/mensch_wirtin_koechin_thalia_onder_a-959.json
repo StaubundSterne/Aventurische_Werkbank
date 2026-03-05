@@ -1,0 +1,73 @@
+{
+    "id": "e1d0a2-onder-thalia-959",
+    "source": "4201 Das Orkland, S. 48",
+    "tags": [],
+    "general": {
+        "name": "Thalia Onder",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 959,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Glucke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wirtin / Köchin",
+        "specification": "Herz der Pension; bekannt für ihren Tjolmarer Pamps und die familiäre Bewirtung in der Küche.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Thalia nötigt Aurelevina eine zweite Portion ihres Eintopfs auf, da die junge Dame ihr 'viel zu blass' vorkommt.",
+            "Sie bittet Şahin um Rat bezüglich einiger Kräuter für ihren Eintopf, die angeblich die Manneskraft stärken sollen."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 75,
+        "hair": "Aschgraues Haar, unter einer weißen Haube verborgen.",
+        "skin": "Rosig, oft glänzend vom Küchendampf.",
+        "eyes": "Wache, warme braune Augen.",
+        "outfit": {
+            "headgear": "Weiße Leinenhaube.",
+            "top": "Blaues Kleid mit einer stets sauberen, weißen Schürze.",
+            "trousers": "Keine (langer Rock).",
+            "footwear": "Bequeme Filzhausschuhe.",
+            "jewellery": "Ein Travia-Gänseamulett aus Silber.",
+            "things": "Ein großer Holzlöffel; ein Küchentuch über der Schulter.",
+            "weapons": "Ein schweres Nudelholz (unbenutzt)."
+        },
+        "distinguishing_features": "Riecht permanent nach Kohl, Fisch und frischer Hefe; lacht schrill und herzlich."
+    },
+    "personality": {
+        "traits": [
+            "Fürsorglich",
+            "Neugierig",
+            "Gastfreundlich",
+            "Direkt",
+            "Aberglaubisch"
+        ],
+        "actual-mood": [
+            "Beschäftigt"
+        ],
+        "family-background": "Geboren in Tjolmar; floh als junge Frau vor der Armut nach Lowangen. Hat ihren Elgor auf der Brücke kennengelernt.",
+        "motivation": "Möchte, dass kein Gast hungrig ins Bett geht, und sammelt fleißig Gerüchte für den Klatsch am Frühstückstisch."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    }
+}

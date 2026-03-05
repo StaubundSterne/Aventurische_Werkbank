@@ -1,0 +1,93 @@
+{
+    "id": "ccdd1122-3344-5566-7788-9900aabbccdd",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Siobhan ni Oisinn",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Reh",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Heilerin",
+        "specification": "Kräuterweib, das ausschließlich mit getrockneten Absuden arbeitet und frische Wickel ablehnt.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Farindelwald"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Siobhan benötigt Adarells Hilfe, um einen Patienten zu heilen, der an 'Sumpffieber' leidet, da sie sich weigert, das betroffene nasse Verbandmaterial anzufassen."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 52,
+        "hair": "Langes, offenes kupferrotes Haar.",
+        "skin": "Zart und blass.",
+        "eyes": "Moosgrün",
+        "outfit": {
+            "headgear": "Ein Kranz aus getrockneten Blumen.",
+            "top": "Ein erdfarbenes Kleid aus Leinen.",
+            "trousers": "Keine.",
+            "footwear": "Sandalen mit hohen Sohlen.",
+            "jewellery": "Ein kleiner Peramu-Anhänger aus Holz.",
+            "things": "Ein Beutel mit getrockneten Heilkräutern.",
+            "weapons": "Ein Sichelmesser."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Sanftmütig",
+            "Naturverbunden",
+            "Wasserscheu",
+            "Vorsichtig",
+            "Hilfsbereit"
+        ],
+        "actual-mood": [
+            "Melancholisch"
+        ],
+        "family-background": "Mutter: Oisinn, Heilerin; Vater: unbekannt. Sie wuchs in den trockenen Ausläufern des Farindelwaldes auf.",
+        "motivation": "Sucht nach Kräutern, die ohne viel Wasser gedeihen, um ihre Medizin 'rein' zu halten."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 14,
+            "CH": 14,
+            "FF": 12,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Gift",
+                "FW": 8
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

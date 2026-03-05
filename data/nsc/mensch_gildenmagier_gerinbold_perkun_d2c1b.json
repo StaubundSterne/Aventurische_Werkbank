@@ -1,0 +1,126 @@
+{
+    "id": "f5e4d3c2-b1a0-4e9d-8c7b-6a5f4e3d2c1b",
+    "source": "https://de.wiki-aventurica.de/wiki/Gerinbold_Perkun; DSA-Roman: Das letzte Lied; [4301] Hallen arkaner Macht",
+    "tags": [
+        "Halle der Macht",
+        "Lowangen",
+        "Nandus-Rätsel",
+        "Dozent"
+    ],
+    "general": {
+        "name": "Gerinbold Perkun",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Magister an der Halle der Macht; Gelehrter der Sternkunde und vergleichenden Zauberei; Liebhaber nandusgefälliger Denkspiele.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Jost",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Gerinbold hält Hesindian auf dem Gang an, um ihm ungefragt ein Rätsel über die Endziffern von Potenzen zu stellen, da er dessen wachen Geist schätzt.",
+            "Er lädt Jost zu einer Runde 'Nandus-Schach' ein und erzählt dabei scherzend von seinen Träumen, das Svelltland eines Tages als freier Reisender zu durchqueren.",
+            "Aurelevina bemerkt seine ungewöhnlichen Studien über Elfenmagie und erkennt in ihm einen Magier, der über den Tellerrand der Gildenmagie hinausblickt."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Dunkelbraunes, leicht zerzaustes Haar; ein freundliches Gesicht mit Lachfalten.",
+        "skin": "Gesund, leicht gebräunt durch Beobachtungen unter freiem Sternenhimmel.",
+        "eyes": "Hellbraun, funkelnd vor Neugier.",
+        "outfit": {
+            "headgear": "Oft ein schief sitzender spitzer Magierhut, den er zum Grübeln abnimmt.",
+            "top": "Eine bequeme, tiefblaue Robe mit aufgestickten Sternbildern und Planetenbahnen.",
+            "trousers": "Dunkelbraune Tuchhose.",
+            "footwear": "Bequeme Reiseschuhe (er bereitet sich innerlich schon auf das Wandern vor).",
+            "jewellery": "Ein silbernes Amulett des Nandus an einer schlichten Kordel.",
+            "things": "Ein kleiner Abakus; mehrere Notizbücher mit Rätseln und mathematischen Skizzen.",
+            "weapons": "Ein schlichter Magierstab aus Birkenholz."
+        },
+        "distinguishing_features": "Trägt ständig Kreide bei sich, um Rechenwege oder Rätsel auf den Boden oder Wände zu kritzeln."
+    },
+    "personality": {
+        "traits": [
+            "Freundlich",
+            "Scherzend",
+            "Rätselverliebt",
+            "Weltoffen",
+            "Scharfsinnig"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Sohn einer Händlerfamilie aus dem Umland von Baliho; seine Eltern hofften auf eine Karriere im Handel, doch Nandus rief ihn zur Magie.",
+        "motivation": "Das Sammeln und Lösen von Rätseln; Erforschung der Gemeinsamkeiten zwischen gildenmagischen und fremden Traditionen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 16,
+            "IN": 15,
+            "CH": 14,
+            "FF": 12,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 55
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechnen",
+                "FW": 16
+            },
+            {
+                "name": "Sternkunde",
+                "FW": 14
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 12
+            }
+        ],
+        "spells": [
+            {
+                "name": "Odem Arcanum",
+                "FW": 12
+            },
+            {
+                "name": "Analüs Arcanstruktur",
+                "FW": 13
+            },
+            {
+                "name": "Flim Flam",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": "1009 BF: Er ist der 'Rätselmeister' der Akademie und ein Bindeglied zwischen den verschiedenen Fachbereichen."
+}

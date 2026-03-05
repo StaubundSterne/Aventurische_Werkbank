@@ -1,0 +1,95 @@
+{
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+    "source": "Werkbank.txt, Lowangen.txt",
+    "tags": [],
+    "general": {
+        "name": "Madaiana von Donnerbach",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Eule (weise und beobachtend)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Heilerin",
+        "specification": "Wundärztin und Alchimistin am Rande der Messergrassteppe",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Donnerbach",
+            "Hilvalla"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Madaiana war eine ältere Mitschülerin von Adarell im Seminar der elfischen Verständigung.",
+            "Sie hat Jost nach einer Schlägerei in einer Taverne in Lowangen fachmännisch verarztet."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Dunkelbraun, oft mit einem grünen Band gebunden",
+        "skin": "Leicht gebräunt",
+        "eyes": "Grün",
+        "outfit": {
+            "top": "Braune Weste über grünem Hemd",
+            "trousers": "Robuste Lederhose",
+            "footwear": "Hohe Schnürstiefel",
+            "jewellery": "Holzkreuz der Peraine",
+            "things": "Kräutertasche, Mörser und Stößel",
+            "weapons": "Dolch"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Geduldig",
+            "Methodisch",
+            "Einfühlsam",
+            "Verschwiegen",
+            "Sorgfältig"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Tochter von Peraine-Laienhelfern aus Donnerbach. Verlor ihre Eltern bei einer Seuche und widmete ihr Leben daraufhin der Heilkunst.",
+        "motivation": "Eindämmung von Krankheiten in den armen Vierteln von Lowangen; Austausch über neue Heilmethoden."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 14,
+            "CH": 13,
+            "FF": 15,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 12
+            },
+            {
+                "name": "Alchimie",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

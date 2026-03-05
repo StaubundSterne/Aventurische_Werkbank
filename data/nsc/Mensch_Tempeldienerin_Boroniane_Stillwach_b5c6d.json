@@ -1,0 +1,93 @@
+{
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland, 4202 Reich des roten Mondes",
+    "tags": [
+        "Tempel",
+        "Seelsorge"
+    ],
+    "general": {
+        "name": "Boroniane Stillwach",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 955,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Tempeldienerin",
+        "specification": "Verwalterin des Boron-Angers in Yrramis; kümmert sich um die Totenruhe und die Seelsorge der Hinterbliebenen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Boroniane erkennt in Aurelina eine verwandte, würdevolle Seele und bittet sie, eine Grabrede für einen verstorbenen Reisenden zu halten.",
+            "Sie spürt Hesindians akademisches Interesse am Tod und warnt ihn davor, dass die Toten im Svelltland unruhig werden, wenn die Orks näher rücken."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 52,
+        "hair": "Graues Haar, das unter der Kapuze verborgen bleibt.",
+        "skin": "Fahl und pergamentartig.",
+        "eyes": "Dunkelgrau.",
+        "outfit": {
+            "headgear": "Tiefe, schwarze Kapuze",
+            "top": "Schlichtes schwarzes Gewand unter einem schweren Kapuzenumhang",
+            "trousers": "Entfällt (Gewand)",
+            "footwear": "Weiche Stoffschuhe für lautlose Fortbewegung",
+            "jewellery": "Keine",
+            "things": "Kleine Sichel zum Entfernen von Geäst auf den Gräbern",
+            "weapons": "Sichel (Improvisiert)"
+        },
+        "distinguishing_features": "Ihre Anwesenheit scheint die Lautstärke der Umgebung merklich zu senken; sie erscheint oft wie aus dem Nichts."
+    },
+    "personality": {
+        "traits": [
+            "Schweigsam",
+            "Würdevoll",
+            "Empathisch",
+            "Unauffällig",
+            "Geduldig"
+        ],
+        "actual-mood": [
+            "Melancholisch"
+        ],
+        "family-background": "Stammt aus einer verarmten Weberfamilie aus Tjolmar; verlor früh ihren Gatten durch das Sumpffieber und widmete sich daraufhin dem Dienst am Boron-Anger.",
+        "motivation": "Die Bewahrung der Totenruhe und die Unterstützung der Lebenden in ihrem stillen Schmerz."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Seele",
+                "FW": 12
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 9
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

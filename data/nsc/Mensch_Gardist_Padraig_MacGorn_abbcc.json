@@ -1,0 +1,93 @@
+{
+    "id": "99aabbcc-dde2-4455-6677-889900aabbcc",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Padraig MacGorn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Wachhund",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gardist",
+        "specification": "Mitglied der Stadtgarde Havenas, das konsequent Patrouillen an den Kaimauern meidet.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Winhall"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Padraig hat Jost beim Training beobachtet und bittet ihn um einen Rat zur Waffenpflege, da Padraigs Schwert durch die salzige Luft ständig rostet – was er verabscheut."
+        ]
+    },
+    "appearance": {
+        "size": 180,
+        "weight": 82,
+        "hair": "Kurzes, braunes Haar.",
+        "skin": "Wettergegerbt.",
+        "eyes": "Grau",
+        "outfit": {
+            "headgear": "Ein einfacher Eisenhelm.",
+            "top": "Ein Lederwams mit dem Wappen Havenas.",
+            "trousers": "Feste Wollhosen.",
+            "footwear": "Gute Lederstiefel.",
+            "jewellery": "Keiner.",
+            "things": "Eine Laterne und eine Pfeife.",
+            "weapons": "Ein Langschwert und ein Dolch."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Wasserscheu",
+            "Bodenständig",
+            "Misstrauisch",
+            "Direkt"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Sohn von Gorn und Brina. Sein Vater war Fischer, Padraig jedoch hasst das Meer, seit er als Kind sah, wie ein Freund in der Brandung verschwand.",
+        "motivation": "Möchte in die Innere Garde versetzt werden, die nur innerhalb der Mauern der Oberstadt Dienst tut."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 12,
+            "CH": 10,
+            "FF": 11,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

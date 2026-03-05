@@ -1,0 +1,73 @@
+{
+    "id": "e1d0a4-onder-xalver-987",
+    "source": "4201 Das Orkland, S. 48",
+    "tags": [],
+    "general": {
+        "name": "Xalver Onder",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 987,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Welpe",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Hausdiener / Laufbursche",
+        "specification": "Zuständig für das Gepäck, Einkäufe und Botengänge in der Stadt; kennt Lowangen wie seine Westentasche.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Jost"
+        ],
+        "injection-points": [
+            "Xalver bietet Şahin an, ihn zu den 'echten' Kräuterhändlern am Hafen zu führen, wenn er ihm eine Münze gibt.",
+            "Er bewundert Josts Ausrüstung und fragt ihn Löcher in den Bauch über Kämpfe gegen Orks außerhalb der Stadtmauern."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 65,
+        "hair": "Strohblonder Wuschelkopf.",
+        "skin": "Sommersprossig.",
+        "eyes": "Helle, funkelnde grüne Augen.",
+        "outfit": {
+            "headgear": "Eine schiefe Kappe.",
+            "top": "Ein bunt geflicktes Wams über einem Hemd.",
+            "trousers": "Kniehose mit hohen Wollsocken.",
+            "footwear": "Leichte Schnürschuhe.",
+            "jewellery": "Keine.",
+            "things": "Eine Umhängetasche für Botenbriefe; eine kleine hölzerne Pfeife.",
+            "weapons": "Eine Steinschleuder in der Tasche."
+        },
+        "distinguishing_features": "Kann nicht stillstehen; pfeift ständig fröhliche Melodien."
+    },
+    "personality": {
+        "traits": [
+            "Abenteuerlustig",
+            "Naiv",
+            "Schnell",
+            "Hilfsbereit",
+            "Verspielt"
+        ],
+        "actual-mood": [
+            "Aufgeregt"
+        ],
+        "family-background": "Jüngster Sohn der Onders. Er wird von seiner Schwester Traviadane oft zur Arbeit angetrieben.",
+        "motivation": "Möchte Lowangen verlassen und die weite Welt sehen, am liebsten als Begleiter einer Heldengruppe."
+    },
+    "stats": {
+        "experience-level": "Unerfahren"
+    }
+}

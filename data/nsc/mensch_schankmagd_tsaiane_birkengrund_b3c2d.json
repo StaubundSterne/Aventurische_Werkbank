@@ -1,0 +1,103 @@
+{
+    "id": "a1b2c3d4-e5f6-4a5b-9c8d-7e6f5a4b3c2d",
+    "source": "Aventurische Namen (Birkengrund), 4000 Bibliotheken (Donnerbach)",
+    "tags": [],
+    "general": {
+        "name": "Tsaiane Birkengrund",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Wiesel (flink und aufmerksam)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schankmagd",
+        "specification": "Auszubildende in der Hauswirtschaft bei Halgardis. Sie stammt aus einer Holzfällerfamilie und hofft, später einmal eine eigene Schänke im Svelltland zu eröffnen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Waldsend"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Tsaiane ist im selben Alter wie die SC und hat früher oft mit Jost am Ufer des Donnerfalls gespielt.",
+            "Sie vertraut Adarell kleine Geheimnisse über die Gäste an, da sie ihn für einen guten Zuhörer hält."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 54,
+        "hair": "Honigblond, meist zu zwei Zöpfen geflochten",
+        "skin": "Sommersprossig, helle Haut",
+        "eyes": "Haselnussbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Helle Leinenbluse mit Schnürung; dunkles Mieder",
+            "trousers": "Grüner Rock aus festem Stoff",
+            "footwear": "Einfache Lederschuhe",
+            "jewellery": "Ein hölzernes Tsa-Rad an einem Lederband",
+            "things": "Ein weißes Serviertuch, das sie stets über der Schulter trägt",
+            "weapons": "Ein kleines Obstmesser in der Schürzentasche"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Flink",
+            "Gutmütig",
+            "Redselig",
+            "Vorsichtig"
+        ],
+        "actual-mood": [
+            "Eingeschüchtert"
+        ],
+        "family-background": "Mutter Perainiane, Kräutersammlerin; Vater Gero, Holzfäller bei Meister Elmar Stockrod; drei jüngere Schwestern (Tsaia, Peraine, Ifirn). Die Familie lebt am Rande von Waldsend.",
+        "motivation": "Genug Geld sparen, um ihren Schwestern eine Mitgift zu ermöglichen und dem rauen Ton der Donnerer-Söldner auszuweichen."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 11,
+            "IN": 14,
+            "CH": 13,
+            "FF": 15,
+            "GE": 14,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hauswirtschaft",
+                "FW": 11
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 6
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 7
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

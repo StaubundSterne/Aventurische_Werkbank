@@ -1,0 +1,120 @@
+{
+    "id": "k1l2m3n4-o5p6-7890-1234-567890abcdef",
+    "source": "4201 Das Orkland.md, 4200 Svelltland.md",
+    "tags": [
+        "Schamane",
+        "Ork",
+        "Religion",
+        "Tairach"
+    ],
+    "general": {
+        "name": "Grokh 'Geisterrufer'",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 960,
+        "alive": true,
+        "culture": "Orkland",
+        "species": "Ork",
+        "soul-animal": "Rabe",
+        "social-state": "Geweihter"
+    },
+    "profession": {
+        "category": "Schamane",
+        "specification": "Tairach-Schamane eines kleinen Orkstammes",
+        "clerical": true,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Orkland-Dörfer",
+        "former-locations": [
+            "Khezzara"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Besitzt ein uraltes Artefakt, das Hesindian als magisch identifiziert. Grokh ist bereit zu handeln (Wissen gegen Wissen).",
+            "Führt ein Ritual durch, das Hesindian beobachten möchte, aber es ist gefährlich."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 80,
+        "hair": "Kahl rasiert, rituelle Narben am Kopf",
+        "skin": "Dunkelbraun",
+        "eyes": "Rot unterlaufen",
+        "outfit": {
+            "headgear": "Schädelmaske (Wolf)",
+            "top": "Umhang aus schwarzen Federn und Fellen",
+            "trousers": "Lederhose",
+            "footwear": "Barfuß (oder Fellwickel)",
+            "jewellery": "Amulette aus Knochen und Steinen",
+            "things": "Trommel, Rasseln, Knochenbeutel",
+            "weapons": "Ein Knochenstab"
+        },
+        "distinguishing_features": "Riecht nach Rauch und Kräutern. Murmelt oft vor sich hin."
+    },
+    "personality": {
+        "traits": [
+            "Weise",
+            "Unheimlich",
+            "Mächtig",
+            "Traditionsbewusst",
+            "Rätselhaft"
+        ],
+        "actual-mood": [
+            "Tranceartig"
+        ],
+        "family-background": "Wurde schon als Kind von den Geistern auserwählt. Hat keine 'normale' Familie.",
+        "motivation": "Will den Willen Tairachs erfüllen und seinen Stamm vor bösen Geistern schützen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 13,
+            "IN": 15,
+            "CH": 12,
+            "FF": 11,
+            "GE": 10,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 40,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Ritualkenntnis",
+                "FW": 14
+            },
+            {
+                "name": "Heilkunde Geist",
+                "FW": 12
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Geisterbann",
+                "FW": 10
+            },
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 8
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

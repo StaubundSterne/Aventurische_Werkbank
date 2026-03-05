@@ -1,0 +1,106 @@
+{
+    "id": "a2c1b4e5-9d8f-4a3b-2c1d-0e9f7649d8a3",
+    "source": "4301 Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Dorota_Wenzelin",
+    "tags": [],
+    "general": {
+        "name": "Dorota Wenzelin",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 993,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Nachtfalter",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schülerin / Eleven",
+        "specification": "Fortgeschrittene Eleven; arbeitet oft als Laborhilfe für Magister Horrigan.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Hesindian beobachtet, wie Dorota im Labor mit ätzenden Substanzen hantiert und dabei leise Selbstgespräche über die 'Schönheit der Zersetzung' führt.",
+            "Sie fragt Şahin nach der Beschaffenheit von Hirschgeweihen, da sie für ein Experiment die Elastizität von Horn untersuchen muss."
+        ]
+    },
+    "appearance": {
+        "size": 158,
+        "weight": 48,
+        "hair": "Dunkelblond, streng zum Dutt gebunden, einzelne Strähnen sind durch Säure gebleicht.",
+        "skin": "Blass, mit kleinen Narben von Laborspritzern an den Händen.",
+        "eyes": "Graublau, wirken oft abwesend oder fokussiert auf Kleinstes.",
+        "outfit": {
+            "headgear": "Ein schlichtes Haarband.",
+            "top": "Abgewetzte Elevenrobe mit einer schweren Lederschürze darüber.",
+            "trousers": "Dunkle Stoffhose.",
+            "footwear": "Feste Arbeitsstiefel.",
+            "jewellery": "Keine.",
+            "things": "Ein kleiner Mörser aus Stein; eine Schutzbrille aus dickem Glas.",
+            "weapons": "Ein langes Labormesser."
+        },
+        "distinguishing_features": "Riecht permanent nach scharfem Essig und Kräuterextrakten; hat einen leichten Buckel vom Bücken über den Arbeitstisch."
+    },
+    "personality": {
+        "traits": [
+            "Arbeitswütig",
+            "Detailverliebt",
+            "Unterwürfig",
+            "Begeisterungsfähig",
+            "Naiv"
+        ],
+        "actual-mood": [
+            "Euphorisch"
+        ],
+        "family-background": "Tochter von Meister Wenzel, einem Buchbinder in Lowangen; Mutter Alrike verstarb früh. Ihr Vater ist stolz auf ihre Gabe, fürchtet aber die Kosten der Ausbildung.",
+        "motivation": "Möchte Magister Sewerus beweisen, dass sie fähig ist, komplexe Transformationen fehlerfrei durchzuführen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 13,
+            "CH": 10,
+            "FF": 15,
+            "GE": 11,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 38
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Alchimie",
+                "FW": 10
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 8
+            }
+        ],
+        "spells": [
+            {
+                "name": "Adlerschwinge",
+                "FW": 5
+            }
+        ]
+    },
+    "session-notes": ""
+}

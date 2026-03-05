@@ -1,0 +1,91 @@
+{
+    "id": "7649d8a3-2c1b-4e5a-9d8f-4a3b2c1d0e9f",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland, 4300 Aera des goldenen Kaisers",
+    "tags": [],
+    "general": {
+        "name": "Trautgrimm Gertenwald",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 961,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Amtsadel"
+    },
+    "profession": {
+        "category": "Stadtmagistrat",
+        "specification": "Verwalter von Yrramis; verantwortlich für die Logistik am Kreuzweg und Berichterstattung an den Städtebund.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen",
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Trautgrimm hält Hesindian für einen Abgesandten der Halle der Macht und bedrängt ihn mit Anträgen auf magische Grenzsicherung gegen die Orks.",
+            "Er erkennt Aurelinas adlige Herkunft und bittet sie nervös um Vermittlung bei den Handelshäusern in Gareth, um die Versorgung des Svelltlands zu sichern."
+        ]
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 72,
+        "hair": "Lichtes, grau meliertes Haar, akkurat gekämmt.",
+        "skin": "Blass, von Sorgenfalten durchzogen.",
+        "eyes": "Graublau, blicken oft übermüdet.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkelblaues Tunicum aus schwerem Wollstoff mit silbernen Knöpfen.",
+            "trousers": "Dunkle Tuchhose.",
+            "footwear": "Feste, geputzte Lederstiefel.",
+            "jewellery": "Silberner Siegelring am rechten Ringfinger.",
+            "things": "Schreibfeder, Dienstsiegel des Städtebundes, ein Stapel vergilbtes Pergament.",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Dreht in Momenten der Anspannung nervös an seinem Siegelring; hat einen hageren Körperbau."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Besorgt",
+            "Bürokratisch",
+            "Loyal",
+            "Wachsam"
+        ],
+        "actual-mood": [
+            "Ermüdet"
+        ],
+        "family-background": "Sohn von Ratsherr Alwin Gertenwald aus Lowangen; verheiratet mit Elwine, die in Tjolmar bei Verwandten lebt, um der Orkgefahr zu entgehen.",
+        "motivation": "Versucht verzweifelt, die Ordnung in Yrramis aufrechtzuerhalten, während die Schatten der Orks aus dem Westen länger werden."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechtskunde",
+                "FW": 12
+            },
+            {
+                "name": "Etikette",
+                "FW": 10
+            },
+            {
+                "name": "Rechnen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

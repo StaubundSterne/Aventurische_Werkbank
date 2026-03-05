@@ -1,0 +1,86 @@
+{
+    "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "source": "4201 Das Orkland, 4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Gritka die Norbardin",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Norbarden",
+        "species": "Mensch",
+        "soul-animal": "Hamster",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Wanderhändlerin der Seweryn-Sippe; führt einen bunten Planwagen mit Waren aus dem Bornland.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Festum",
+            "Tiefhusen",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Jost schuldete Gritkas Cousin einmal eine beträchtliche Summe; sie betrachtet ihn mit einer Mischung aus Misstrauen und der Hoffnung, dass er 'endlich zu Verstand' gekommen ist."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 75,
+        "hair": "Schwarze Locken, oft unter einem bunten Tuch verborgen",
+        "skin": "Leicht gebräunt, rundliches Gesicht",
+        "eyes": "Dunkelbraun, funkelnd beim Feilschen",
+        "outfit": {
+            "headgear": "Besticktes Kopftuch mit kleinen Goldmünzen am Rand",
+            "top": "Mehrlagige, bunte Westen über einer weißen Bluse",
+            "trousers": "Weite Pluderhose",
+            "footwear": "Weiche Lederstiefel",
+            "jewellery": "Zahlreiche Armreifen aus Kupfer und Bronze, die bei jeder Bewegung leise klirren",
+            "things": "Ein kleiner Abakus, ein Bund bunter Bänder",
+            "weapons": "Ein versteckter Dolch im Stiefelschaft"
+        },
+        "distinguishing_features": "Riecht nach Zimt, altem Käse und Pferdeschweiß; lacht laut und kehlig."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Redselig",
+            "Familienorientiert",
+            "Abergläubisch",
+            "Optimistisch"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Sippenälteste Nadjescha (Tante); Bruder Iwan (Wagenlenker); Cousin Pjotr (Schmied).",
+        "motivation": "Möchte ihren Warenvorrat an bornischem Branntwein gegen Svellttaler Silber eintauschen, bevor die Pässe unsicher werden."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 11
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

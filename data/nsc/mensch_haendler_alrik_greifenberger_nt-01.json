@@ -1,0 +1,86 @@
+{
+    "id": "merchant-01",
+    "source": "4201 Das Orkland; wiki-aventurica.de/wiki/Messergrassteppe",
+    "tags": [],
+    "general": {
+        "name": "Alrik Greifenberger",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Esel",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händler",
+        "specification": "Pelzhändler; versucht seine letzte Ladung vor dem Ork-Vormarsch nach Teshkal zu retten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Greifenfurt",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Er bietet Jost eine Beteiligung am Gewinn an, wenn dieser die Wagen mit seinem Stab schützt.",
+            "Alrik versucht Fredegis als 'Ehrenwache' anzuwerben, um Eindruck bei anderen Händlern zu schinden."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 95,
+        "hair": "Schütteres braunes Haar, kurzer Vollbart.",
+        "skin": "Hell, neigt zu Schweißperlen.",
+        "eyes": "Braun",
+        "outfit": {
+            "headgear": "Breitkrempiger Hut",
+            "top": "Prunkvolle, aber schmutzige Schaube mit Pelzbesatz",
+            "trousers": "Wollene Beinkleider",
+            "footwear": "Schnallenschuhe",
+            "jewellery": "Ein goldener Ring mit dem Familienwappen (leicht zerkratzt)",
+            "things": "Ein großer Wanderstab aus Eichenholz",
+            "weapons": "Ein versteckter Dolch im Stiefel"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Geizig",
+            "Ängstlich",
+            "Redselig",
+            "Berechnend",
+            "Nervös"
+        ],
+        "actual-mood": [
+            "Verzweifelt"
+        ],
+        "family-background": "Stammt aus einer verarmten Kaufmannsfamilie aus Greifenfurt.",
+        "motivation": "Will sein Hab und Gut retten und sucht händeringend nach Schutz für die Passage durch die Messergrassteppe."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Feilschen",
+                "FW": 12
+            },
+            {
+                "name": "Schätzen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,93 @@
+{
+    "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [
+        "Mühle",
+        "Versorgung"
+    ],
+    "general": {
+        "name": "Mühlen-Merten",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 967,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Esel",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Stadtmüller",
+        "specification": "Betreiber der Svelltmühle; verantwortlich für die Getreidevorräte der Stadt Yrramis.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Yrramis"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Jost"
+        ],
+        "injection-points": [
+            "Merten bittet Şahin, seine Reitpferde zum Antreiben des Ersatz-Mahlwerks zur Verfügung zu stellen, da das Wasserrad blockiert ist.",
+            "Er bietet Jost eine Beteiligung an, wenn dieser ihm hilft, die Getreidesteuer bei den widerspenstigen Bauern im Umland einzutreiben."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 82,
+        "hair": "Dunkles Haar, das meist unter Mehlstaub verborgen ist.",
+        "skin": "Ständig weiß bestäubt.",
+        "eyes": "Dunkel, wirken durch den Staub sehr hervortretend.",
+        "outfit": {
+            "headgear": "Mehlmütze",
+            "top": "Helles Arbeitshemd",
+            "trousers": "Leinenhose",
+            "footwear": "Holzpantinen",
+            "jewellery": "Keine",
+            "things": "Mehlwaage, Körbe",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Besitzt eine heiser krächzende Stimme und ein sehr lautes Organ."
+    },
+    "personality": {
+        "traits": [
+            "Arbeitsam",
+            "Laut",
+            "Direkt",
+            "Stolz",
+            "Unruhig"
+        ],
+        "actual-mood": [
+            "Gehetzt"
+        ],
+        "family-background": "Führt die Svelltmühle in dritter Generation; sein Vater verstarb erst vor kurzem an einer Staublunge.",
+        "motivation": "Die Versorgung der Stadt sicherzustellen, bevor der Regen oder die Orks die Ernte vernichten."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Mechanik",
+                "FW": 12
+            },
+            {
+                "name": "Handel",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

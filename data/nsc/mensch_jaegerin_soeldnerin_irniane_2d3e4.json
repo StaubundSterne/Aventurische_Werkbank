@@ -1,0 +1,98 @@
+{
+    "id": "d12e2d44-5531-4b1a-8e2b-9192a1c2d3e4",
+    "source": "Aventurische Namen, 4000 Bibliotheken (Nivesenlande/Svelltland)",
+    "tags": [],
+    "general": {
+        "name": "Irniane",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 983,
+        "alive": true,
+        "culture": "Svellttal (nivesische Einflüsse)",
+        "species": "Mensch",
+        "soul-animal": "Schneeleopard (geduldig, tödlich aus dem Hinterhalt)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Jägerin / Söldnerin",
+        "specification": "Spezialistin für den Kampf im Unterholz und Bogenschützin. Sie spricht kaum ein Wort zu viel und ist das Gewissen der Gruppe, wenn es um das Überleben in der Wildnis geht.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Paavi",
+            "Neu-Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Irniane erkennt Adarells Naturverbundenheit und tauscht mit ihm wortlos Kräuter aus."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 58,
+        "hair": "Schwarzes Haar, in viele dünne Zöpfe geflochten",
+        "skin": "Hell, fast blass, mit Tätowierungen an den Unterarmen",
+        "eyes": "Klar, stahlgrau",
+        "outfit": {
+            "headgear": "Kapuze aus Wolfsfell",
+            "top": "Dunkelgrüner Jagdrock, Lederwams",
+            "trousers": "Eng anliegende Lederhose",
+            "footwear": "Lautlose Wildlederstiefel",
+            "jewellery": "Orkhauer an einer Lederkette",
+            "things": "Köcher mit Federpfeilen, kleine Tasche für Heilkräuter",
+            "weapons": "Langbogen, Jagdmesser"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Wortkarg",
+            "Naturverbunden",
+            "Präzise",
+            "Kühl",
+            "Beobachtend"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Tochter einer nivesischen Jägerin und eines svellttaler Fallenstellers. Ihr Stamm wurde von Orks dezimiert.",
+        "motivation": "Rache an den Schwarzpelzen und Schutz der Wildnis vor deren Zerstörung."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 15,
+            "CH": 10,
+            "FF": 15,
+            "GE": 14,
+            "KO": 12,
+            "KK": 11
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Bogen",
+                "FW": 15
+            },
+            {
+                "name": "Fesseln",
+                "FW": 10
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

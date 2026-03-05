@@ -1,0 +1,93 @@
+{
+    "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [
+        "Friedhof",
+        "Kraft"
+    ],
+    "general": {
+        "name": "Marban",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 970,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Maulwurf",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Grabhelfer",
+        "specification": "Gehilfe am Boron-Anger; zuständig für Schwerstarbeiten und das Setzen von Grabplatten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Ein Dorf im Thasch"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Marban fordert Adarell wortlos zu einem Krafttest beim Tragen einer schweren Steinplatte heraus.",
+            "Er hat Fredegis beim Herumschleichen nahe des Friedhofs beobachtet und signalisiert ihm durch ein kurzes Grollen, dass er ein Auge auf ihn hat."
+        ]
+    },
+    "appearance": {
+        "size": 188,
+        "weight": 105,
+        "hair": "Kurz, schwarz und ungepflegt.",
+        "skin": "Sehr blass, fast kalkweiß.",
+        "eyes": "Dunkel und tief liegend.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Grobes graues Leinenhemd",
+            "trousers": "Feste, dunkle Lederhose",
+            "footwear": "Schwere, erdverschmierte Stiefel",
+            "jewellery": "Keine",
+            "things": "Schwere Grabschaufel, hölzerne Trage für Steine",
+            "weapons": "Grabschaufel (Wuchtwaffe)"
+        },
+        "distinguishing_features": "Besitzt massive, kräftige Hände; spricht niemals mit Fremden."
+    },
+    "personality": {
+        "traits": [
+            "Stoisch",
+            "Schweigsam",
+            "Kräftig",
+            "Zuverlässig",
+            "Unauffällig"
+        ],
+        "actual-mood": [
+            "Düster"
+        ],
+        "family-background": "Sohn eines Bergmanns aus dem Thasch, der bei einem Einsturz ums Leben kam; Marban floh vor den Erinnerungen nach Yrramis.",
+        "motivation": "Die harte körperliche Arbeit als eine Form der Meditation und des Dienstes am Schweigsamen Gott zu begreifen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kraftakt",
+                "FW": 14
+            },
+            {
+                "name": "Hauswirtschaft",
+                "FW": 7
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

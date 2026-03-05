@@ -1,0 +1,121 @@
+{
+    "id": "e7b1a2d3-c4e5-4f6g-8h9i-0j1k2l3m4n5o",
+    "source": "https://de.wiki-aventurica.de/wiki/Semirhija_Jushibi_Al%27Kasim; [4303] Stätten okkulter Geheimnisse, S. 110; [4301] Hallen arkaner Macht, S. 114",
+    "tags": [],
+    "general": {
+        "name": "Semirhija Jushibi Al'Kasim",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 967,
+        "alive": true,
+        "culture": "Almadanisch / Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Schneeleopard",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Gildenmagierin",
+        "specification": "Magistra controllaria; persönliche Schülerin Puschinskes und leitende Verwalterin der Kaiser-Perval-Akademie.",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Punin",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Semirhija verweigert Hesindian den Zugang zu den schwarzmagischen Archiven mit dem Hinweis auf ein fehlendes Formular, wobei sie ihn nicht einmal ansieht.",
+            "Sie erkennt Aurelevinas adlige Herkunft an, behandelt sie jedoch mit der gleichen klinischen Distanz wie einen gewöhnlichen Untertanen.",
+            "Fredegis bemerkt ihre absolute Gefühlskälte, als sie eine drakonische Disziplinarstrafe gegen einen Novizen ausspricht, ohne auch nur mit der Wimper zu zucken."
+        ]
+    },
+    "appearance": {
+        "size": 171,
+        "weight": 58,
+        "hair": "Stahlgraues Haar (früh ergraut), extrem streng nach hinten zu einem Knoten gebunden.",
+        "skin": "Blass, glatt und fast maskenhaft.",
+        "eyes": "Kühle, hellgraue Augen, die das Gegenüber wie ein Objekt analysieren.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Eine steife, hochgeschlossene schwarze Robe aus schwerem Brokat mit silbernen Runenstickereien.",
+            "trousers": "Eng geschnittene schwarze Stoffhose unter der Robe.",
+            "footwear": "Schwarze, lautlose Stiefel aus poliertem Leder.",
+            "jewellery": "Ein schwerer Siegelring der al'Kasim aus Silber; ein silberner Akademiereif der Perval-Akademie.",
+            "things": "Ein Klemmbrett aus dunklem Holz mit akribisch geführten Listen.",
+            "weapons": "Ein schlichter Magierstab aus poliertem Metall und schwarzem Holz."
+        },
+        "distinguishing_features": "Bewegt sich mit einer unheimlichen Präzision; zeigt keinerlei Mimik."
+    },
+    "personality": {
+        "traits": [
+            "Gefühlskalt",
+            "Logisch",
+            "Diszipliniert",
+            "Streng",
+            "Loyal (gegenüber Puschinske)"
+        ],
+        "actual-mood": [
+            "Analytisch"
+        ],
+        "family-background": "Stammt aus der einflussreichen almadanischen Familie al'Kasim; seit dem 15. Lebensjahr Schülerin von Puschinske; hat jeglichen Kontakt zu ihrer 'emotionalen' Verwandtschaft abgebrochen.",
+        "motivation": "Die Aufrechterhaltung der absoluten Ordnung und Effizienz in der Verwaltung der Kaiser-Perval-Akademie; Schutz der Interessen ihres Meisters."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 16,
+            "IN": 14,
+            "CH": 9,
+            "FF": 12,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 48
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechnen",
+                "FW": 15
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 13
+            },
+            {
+                "name": "Willenskraft",
+                "FW": 14
+            }
+        ],
+        "spells": [
+            {
+                "name": "Imperavi",
+                "FW": 12
+            },
+            {
+                "name": "Memorabia",
+                "FW": 10
+            },
+            {
+                "name": "Bannbaladin",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,106 @@
+{
+    "id": "f9a0b1c2-d3e4-5f6g-7h8i-9j0k1l2m3n4o",
+    "source": "4301 Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [],
+    "general": {
+        "name": "Gerinbold 'Kröte' Perkun",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 995,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Kröte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schüler / Eleven",
+        "specification": "Junger Eleve; gilt als schwieriger Schüler aufgrund seines Interesses an 'unappetitlichen' Verwandlungen.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Gerinbold versucht Şahin davon zu überzeugen, dass der Schleim einer Sumpfkröte die beste Basis für Schutzsalben ist.",
+            "Er wird von Hesindian dabei erwischt, wie er versucht, eine Fliege in eine kleine Spinne zu verwandeln, was jedoch nur in einem unförmigen Klumpen endet."
+        ]
+    },
+    "appearance": {
+        "size": 145,
+        "weight": 55,
+        "hair": "Fettig, schwarz, hängt ihm oft in die Stirn.",
+        "skin": "Unrein, neigt zu Pusteln.",
+        "eyes": "Dunkelbraun, leicht vorquellend.",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Schmutzige Elevenrobe mit zahlreichen Flecken.",
+            "trousers": "Kurze Leinenhose.",
+            "footwear": "Sandalen.",
+            "jewellery": "Keine.",
+            "things": "Ein Glas mit Kaulquappen; ein Beutel mit feuchter Erde.",
+            "weapons": "Keine."
+        },
+        "distinguishing_features": "Atmet laut durch den Mund; hat oft schmutzige Fingernägel."
+    },
+    "personality": {
+        "traits": [
+            "Hartnäckig",
+            "Eigensinnig",
+            "Schmutzig",
+            "Direkt",
+            "Witzig"
+        ],
+        "actual-mood": [
+            "Vergnügt"
+        ],
+        "family-background": "Sohn einer Waschfrau in Lowangen; sein Vater ist unbekannt. Er wuchs in den Gossen der Stadt auf, bis seine Gabe entdeckt wurde.",
+        "motivation": "Will allen zeigen, dass auch die 'hässliche' Natur mächtige Magie birgt."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 12,
+            "CH": 9,
+            "FF": 11,
+            "GE": 9,
+            "KO": 13,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 30
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fischen & Angeln",
+                "FW": 8
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Salander",
+                "FW": 3
+            }
+        ]
+    },
+    "session-notes": ""
+}

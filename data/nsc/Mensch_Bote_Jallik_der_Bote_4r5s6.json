@@ -1,0 +1,96 @@
+{
+    "id": "d1e2f3g4-h5i6-j7k8-l9m0-n1o2p3q4r5s6",
+    "source": "Lowangen.txt",
+    "tags": [],
+    "general": {
+        "name": "Jallik der Bote",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 990,
+        "alive": true,
+        "culture": "Svelltland",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen (flink und geschäftig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bote",
+        "specification": "Eilbote des Botendienstes 'Svelltaue' zwischen Lowangen und Riva",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Riva",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Jallik überbringt Adarell einen dringenden Brief aus Donnerbach.",
+            "Er liefert Aurelevina Violanta eine versiegelte Nachricht von einem anonymen Informanten."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 60,
+        "hair": "Kurzes, blondes Wuschelhaar",
+        "skin": "Leicht wettergebräunt",
+        "eyes": "Blau",
+        "outfit": {
+            "headgear": "Blaue Botenmütze",
+            "top": "Blaue Weste über weißem Hemd",
+            "trousers": "Kurze Lederhose",
+            "footwear": "Leichte Laufstiefel",
+            "jewellery": "Silberne Pfeife an einer Kette",
+            "things": "Versiegelte Rollen, Umhängetasche",
+            "weapons": "Wanderstab"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Flink",
+            "Neugierig",
+            "Redselig",
+            "Zuverlässig",
+            "Optimistisch"
+        ],
+        "actual-mood": [
+            "Eilig"
+        ],
+        "family-background": "Sohn einer Näherin und eines Stadtschreibers. Hat vier Schwestern, die alle in verschiedenen Städten des Svelltlands als Botinnen arbeiten.",
+        "motivation": "Zustellung aller Nachrichten in Rekordzeit; Sammeln von Gerüchten für den Aventurischen Boten."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 13,
+            "CH": 14,
+            "FF": 12,
+            "GE": 15,
+            "KO": 13,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Athletik",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

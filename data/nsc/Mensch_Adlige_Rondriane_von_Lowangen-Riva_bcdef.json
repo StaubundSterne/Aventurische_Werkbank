@@ -1,0 +1,112 @@
+{
+    "id": "b2c3d4e5-f6g7-8901-2345-678901abcdef",
+    "source": "4200 Svelltland.md, 4501 Im Zeichen der Kröte.md",
+    "tags": [
+        "Adel",
+        "Lowangen",
+        "Politik",
+        "Intrige"
+    ],
+    "general": {
+        "name": "Rondriane von Lowangen-Riva",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Falke",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Adlige",
+        "specification": "Junge Adlige auf Brautschau und diplomatische Abgesandte",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Riva",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Kennt Aurelevina von einem Ball in Gareth und bittet sie um Rat in einer heiklen Herzensangelegenheit.",
+            "Sucht Unterstützung, um einen Skandal zu vertuschen, der ihre Familie ruinieren könnte (ein unanständiger Briefwechsel)."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 65,
+        "hair": "Langes, blondes Haar, kunstvoll hochgesteckt",
+        "skin": "Hell und gepflegt",
+        "eyes": "Strahlend blau",
+        "outfit": {
+            "headgear": "Ein feines Netz aus Silberfäden",
+            "top": "Edles Kleid aus blauer Seide mit Goldborte",
+            "trousers": "Seidenstrümpfe",
+            "footwear": "Feine Lederschuhe mit Silberschnallen",
+            "jewellery": "Ein Rubincollier und passende Ohrringe",
+            "things": "Fächer, Parfümfläschchen, versiegeltes Schreiben",
+            "weapons": "Ein zierlicher Dolch im Strumpfband"
+        },
+        "distinguishing_features": "Hat ein kleines Muttermal am linken Mundwinkel."
+    },
+    "personality": {
+        "traits": [
+            "Eitel",
+            "Charmant",
+            "Berechnend",
+            "Gebildet",
+            "Ehrgeizig"
+        ],
+        "actual-mood": [
+            "Gelangweilt"
+        ],
+        "family-background": "Tochter von Baron Alrik (Lowangen) und Baroness Leandra (Riva). Soll vorteilhaft verheiratet werden.",
+        "motivation": "Will eine gute Partie machen, aber heimlich träumt sie von Abenteuern wie in den Romanen, die sie liest."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 13,
+            "CH": 15,
+            "FF": 12,
+            "GE": 12,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Etikette",
+                "FW": 12
+            },
+            {
+                "name": "Überreden",
+                "FW": 10
+            },
+            {
+                "name": "Tanzen",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

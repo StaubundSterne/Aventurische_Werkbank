@@ -1,0 +1,90 @@
+{
+    "id": "yrramis-lead-01",
+    "source": "4200 Svelltland; wiki-aventurica.de/wiki/Yrramis",
+    "tags": [],
+    "general": {
+        "name": "Jallik von Yrramis",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 971,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Stationsleiter",
+        "specification": "Leiter der Wechselstation 'Zum flinken Boten'; verantwortlich für die Instandhaltung der Gatter und die Logistik der Maultierstaffetten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Jallik erkennt Adarells Ausbildung in Donnerbach und bittet sie, ein verletztes Maultier zu begutachten.",
+            "Er misstraut Fredegis' ritterlichem Auftreten in dieser rauen Gegend und fordert eine Vorauszahlung für Informationen."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 82,
+        "hair": "Dunkelbraun, kurz geschoren, beginnt grau zu werden.",
+        "skin": "Wettergegerbt, viele kleine Narben an den Unterarmen.",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Abgewetzte Pelzkappe",
+            "top": "Grobe Wollweste über Leinenhemd",
+            "trousers": "Lederhose mit Schlammspritzern",
+            "footwear": "Schwere Arbeitsstiefel",
+            "jewellery": "Ein kleiner silberner Phex-Fuchs an einer Lederkordel",
+            "things": "Ein schwerer Schlüsselbund, ein Notizbuch aus Wachstuch",
+            "weapons": "Ein langer Dolch (Hirscher)"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Wachsam",
+            "Pragmatisch",
+            "Wortkarg",
+            "Misstrauisch"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Sohn von Halm, einem Köhler; Frau und Kinder leben in Sicherheit in Lowangen.",
+        "motivation": "Will die Station betriebsbereit halten, solange der Svellt noch befahrbar ist."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 10
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 12
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

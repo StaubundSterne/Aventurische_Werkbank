@@ -1,0 +1,84 @@
+{
+    "id": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+    "source": "4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Laria die Seilerin",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 989,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Sperling",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerkerin",
+        "specification": "Lehrling in der Seilerei am Hafen; nebenberufliche Informantin für die 'Schatten' der Stadt.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Laria ist die jüngere Schwester einer ehemaligen Kameradin von Adarell; sie sieht in Adarell ein Vorbild und steckt ihr oft heimlich Informationen zu."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 52,
+        "hair": "Kurzes, struppiges Haar, aschblond",
+        "skin": "Blass, mit Schwielen an den Händen",
+        "eyes": "Neugierige graue Augen",
+        "outfit": {
+            "headgear": "Eine einfache Mütze",
+            "top": "Grobes Leinenhemd, mit Hanfresten bedeckt",
+            "trousers": "Einfache Stoffhose",
+            "footwear": "Abgetretene Sandalen",
+            "jewellery": "Keiner",
+            "things": "Ein kurzes Stück Seil, das sie ständig in den Händen zwirbelt",
+            "weapons": "Ein kleines Schnitzmesser"
+        },
+        "distinguishing_features": "Riecht nach Teer und frischem Hanf; wirkt oft nervös, blickt sich ständig um."
+    },
+    "personality": {
+        "traits": [
+            "Flink",
+            "Aufmerksam",
+            "Ängstlich",
+            "Loyal",
+            "Verschmitzt"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Mutter Jala (Wäscherin); Schwester Miri (vermisst); Vater unbekannt.",
+        "motivation": "Sammelt Geld, um ihre verschwundene Schwester in Gashok suchen zu lassen."
+    },
+    "stats": {
+        "experience-level": "Unerfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gassenwissen",
+                "FW": 9
+            },
+            {
+                "name": "Klettern",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

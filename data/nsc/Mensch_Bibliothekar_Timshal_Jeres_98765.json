@@ -1,0 +1,106 @@
+{
+    "id": "e7d6c5b4-a321-4654-b8c9-0fedcba98765",
+    "source": "[4301] Hallen arkaner Macht, S. 111",
+    "tags": [
+        "Lowangen",
+        "Akademie der Verformungen",
+        "Bibliothecarius"
+    ],
+    "general": {
+        "name": "Timshal Jeres",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bibliothekar",
+        "specification": "Bibliothecarius der Akademie der Verformungen.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Wenn Adarell in der Bibliothek recherchiert, muss er erst an Timshals 'Freunden' (den Büchern) vorbei und vielleicht eine Katze kraulen.",
+            "Adarell bemerkt Timshals Schälchen für die Registerlinge und könnte ihn auf seine Gabe ansprechen – Timshal reagiert darauf sehr erfreut.,Er bittet die SC, ihm ein spezielles Gebäck vom Markt mitzubringen, da seine 'kleinen Helfer' die letzte Ration bereits verputzt haben."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "hair": "Dunkelblond, etwas zerzaust, erste graue Strähnen.",
+        "eyes": "Gütig, umgeben von ausgeprägten Lachfalten.",
+        "outfit": {
+            "top": "Eine etwas verstaubte graue Magierrobe, oft mit Kuchenkrümeln übersät",
+            "jewellery": "Akademiereif (eher schief sitzend)",
+            "things": "Ein Bündel alter Schlüssel, ein weicher Staubwedel",
+            "weapons": "Magierstab (wird oft als Gehstock oder zum Heranholen hoher Bücher genutzt)"
+        },
+        "distinguishing_features": "Murmelt ständig Selbstgespräche (oder spricht mit den Büchern in seinen Händen); wirkt wunderlich, aber zutiefst sympathisch."
+    },
+    "personality": {
+        "traits": [
+            "Wunderlich",
+            "Gütig",
+            "Tierlieb",
+            "Bücherliebend",
+            "Phantasievoll"
+        ],
+        "actual-mood": [
+            "Heiter",
+            "Zerstreut"
+        ],
+        "family-background": "Fühlt sich in der Stille der Bibliothek wohler als unter den lauten Händlern der Stadt.",
+        "motivation": "Das Wohlbefinden seiner 'Freunde' (der Bücher) und die Harmonie mit den unsichtbaren Bewohnern der Bibliothek (Registerlinge)."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 14
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 15
+            },
+            {
+                "name": "Sprachen kennen",
+                "FW": 12
+            },
+            {
+                "name": "Abrichten (Katzen)",
+                "FW": 8
+            }
+        ],
+        "spells": [
+            {
+                "name": "Objectoviso",
+                "FW": 11
+            },
+            {
+                "name": "Analüs Arkanstruktur",
+                "FW": 13
+            },
+            {
+                "name": "Manifesto",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": "Timshal ist überzeugt, dass eine Familie von Registerlingen (Wichteln) nachts für Ordnung sorgt. Er stellt ihnen regelmäßig süße Kuchen hin. Er spricht mit den Katzen der Bibliothek, die er als seine Mitstreiter gegen Mäuse ansieht."
+}

@@ -1,0 +1,85 @@
+{
+    "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "source": "4201 Das Orkland, 4202 Reich des roten Mondes, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Sanyala Silberhaar",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 959,
+        "alive": true,
+        "culture": "Nivesen",
+        "species": "Halbelfe",
+        "soul-animal": "Polarwolf",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Fährtensucherin",
+        "specification": "Spezialistin für die nördlichen Steppen und den Rand des Orklands; Vermittlerin zwischen Nivesensippen und Siedlern.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Bjaldorn",
+            "Paavi"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Sanyala erkennt in Şahin den 'Geist der fernen Weite' und hat ihm einst den Weg durch einen Schneesturm gewiesen, indem sie ihm Zeichen in den Bäumen hinterließ."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 58,
+        "hair": "Langes, fast weißes Haar, oft mit kleinen Knochen verziert",
+        "skin": "Sehr hell, fast durchscheinend",
+        "eyes": "Ein Auge grün, das andere stahlgrau",
+        "outfit": {
+            "headgear": "Stirnband aus Wolfsfell",
+            "top": "Eng anliegende Lederweste über nivesischer Tunika",
+            "trousers": "Wildlederhose mit Fransen",
+            "footwear": "Weiche Stiefel aus Rentierfell",
+            "jewellery": "Silberner Armreif mit eingravierten Tiermotiven",
+            "things": "Ein Beutel mit Heilkräutern, eine kleine Knochenflöte",
+            "weapons": "Ein langer Jagdspeer, ein kurzes Messer"
+        },
+        "distinguishing_features": "Bewegt sich fast lautlos; riecht nach Kälte, Minze und frischem Blut."
+    },
+    "personality": {
+        "traits": [
+            "Geheimnisvoll",
+            "Geduldig",
+            "Scharfsinnig",
+            "Einzelgängerisch",
+            "Respektvoll"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Mutter eine Nivesin (Sippe der Kaltwinde); Vater unbekannter Elf. Hat keine Geschwister.",
+        "motivation": "Warnt die Bewohner Lowangens vor ungewöhnlichen Bewegungen der Ork-Stämme im Norden."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Orientierung",
+                "FW": 15
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 14
+            }
+        ]
+    },
+    "session-notes": ""
+}

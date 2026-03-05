@@ -1,0 +1,95 @@
+{
+    "id": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+    "source": "Lowangen.txt",
+    "tags": [],
+    "general": {
+        "name": "Eldgrimm Eisenhand",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 960,
+        "alive": true,
+        "culture": "Ambosszwerg",
+        "species": "Zwerg",
+        "soul-animal": "Widder (stur und durchsetzungsstark)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmied",
+        "specification": "Waffenschmied spezialisiert auf Zwergenspan in Tjolmar",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tjolmar",
+        "former-locations": [
+            "Xorlosch",
+            "Thaschberge"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Jost"
+        ],
+        "injection-points": [
+            "Eldgrimm schätzt Hesindians Verbindung zur Erde und tauscht sich mit ihm über Gesteinsschichten aus.",
+            "Er kritisiert Josts Schmiedetechnik als 'menschlich-oberflächlich' und fordert ihn zu einem Wettkampf heraus."
+        ]
+    },
+    "appearance": {
+        "size": 138,
+        "weight": 75,
+        "hair": "Feuerroter Bart, kunstvoll geflochten",
+        "skin": "Fest und ledrig",
+        "eyes": "Bernsteingelb",
+        "outfit": {
+            "top": "Kettenhemd unter schwerem Lederwams",
+            "trousers": "Robuste Stoffhose",
+            "footwear": "Schwere Stiefel mit Stahlkappen",
+            "jewellery": "Silberne Bartringe",
+            "things": "Wetzstein, Zange",
+            "weapons": "Felsspalter (Zwergenaxt)"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Starrsinnig",
+            "Meisterhaft",
+            "Loyal",
+            "Kritisch",
+            "Traditionsbewusst"
+        ],
+        "actual-mood": [
+            "Grummelig"
+        ],
+        "family-background": "Sohn von Gorim, einem legendären Schmied aus Xorlosch. Eldgrimm verließ die Berge, um in Tjolmar sein Glück zu suchen. Er vermisst die Hallen seiner Ahnen.",
+        "motivation": "Erschaffung einer Waffe, die eines Hochkönigs würdig ist; Verteidigung Tjolmars gegen die Orks."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 15,
+            "KL": 12,
+            "IN": 13,
+            "CH": 10,
+            "FF": 15,
+            "GE": 10,
+            "KO": 16,
+            "KK": 16
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 16
+            },
+            {
+                "name": "Zechen",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

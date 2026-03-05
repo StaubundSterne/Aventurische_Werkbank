@@ -1,0 +1,94 @@
+{
+    "id": "11223344-5566-7788-9900-aabbccddeeff",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Finian O’Sullivan",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 970,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Schildkröte (die ihren Panzer nie verlässt)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Tagelöhner",
+        "specification": "Ehemaliger Seemann, der nach einem Schiffbruch nie wieder ein Boot betreten hat und nun als Lastenträger in der Oberstadt arbeitet.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Thorwal",
+            "Grangor"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Finian hat Jost im Rondra-Tempel beobachtet und glaubt, in ihm einen fähigen Kämpfer zu erkennen, der ihn vor den 'Geistern der Flut' beschützen könnte."
+        ]
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 90,
+        "hair": "Stoppeliges, ergrauendes Haar.",
+        "skin": "Vom Wetter gegerbt, mit einer Narbe quer über die Wange.",
+        "eyes": "Stechendes Hellblau",
+        "outfit": {
+            "headgear": "Eine abgetragene Wollmütze.",
+            "top": "Eine schmutzige Weste über einem verwaschenen Hemd.",
+            "trousers": "Flickerlhosen aus Segeltuch.",
+            "footwear": "Alte, brüchige Lederstiefel.",
+            "jewellery": "Ein kleiner Haifischzahn an einem Lederband (Talisman gegen Ertrinken).",
+            "things": "Ein schwerer Tragebalken.",
+            "weapons": "Ein klobiger Holzknüppel."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Traumatisiert",
+            "Aberglaubisch",
+            "Stark",
+            "Wasserscheu",
+            "Ehrlich"
+        ],
+        "actual-mood": [
+            "Ängstlich"
+        ],
+        "family-background": "Alle Familienmitglieder gingen bei der Großen Flut oder auf See verloren. Er ist der letzte O’Sullivan.",
+        "motivation": "Verdient gerade genug, um sich von den Kaianlagen fernzuhalten und in einem trockenen Keller zu schlafen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 9,
+            "IN": 11,
+            "CH": 10,
+            "FF": 11,
+            "GE": 12,
+            "KO": 14,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kraftakt",
+                "FW": 12
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

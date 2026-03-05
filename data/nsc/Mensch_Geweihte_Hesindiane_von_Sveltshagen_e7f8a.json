@@ -1,0 +1,85 @@
+{
+    "id": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+    "source": "4300 Aera des goldenen Kaisers, 4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Hesindiane von Sveltshagen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Svellttaler (Adel)",
+        "species": "Mensch",
+        "soul-animal": "Schwan",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Akolythin im Hesinde-Tempel zu Lowangen; betreut die Archive und die diplomatische Korrespondenz.",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Vinsalt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta"
+        ],
+        "injection-points": [
+            "Hesindiane und Aurelina besuchten denselben Etikette-Unterricht in ihrer Jugend; sie kennt Aurelinas wahre Herkunft und bewundert ihren Mut zur Unabhängigkeit."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 60,
+        "hair": "Dunkelbraun, hochgesteckt mit silbernen Nadeln",
+        "skin": "Gepflegt und hell",
+        "eyes": "Waches Smaragdgrün",
+        "outfit": {
+            "headgear": "Ein feiner Schleier aus Seide während des Gebets",
+            "top": "Grüne Robe mit silbernen Bestickungen (Schlangenmotive)",
+            "trousers": "Unterkleid aus feiner Wolle",
+            "footwear": "Elegante Stoffschuhe",
+            "jewellery": "Ein schweres Hesinde-Amulett aus Silber an einer feinen Kette",
+            "things": "Ein Bündel Pergamente, ein silbernes Schreibzeug",
+            "weapons": "Keine (lehnt Gewalt ab)"
+        },
+        "distinguishing_features": "Hinterlässt einen Hauch von Rosenduft; ihre Kleidung raschelt leise bei jedem Schritt."
+    },
+    "personality": {
+        "traits": [
+            "Eloquent",
+            "Analytisch",
+            "Distanziert",
+            "Hesine-fromm",
+            "Hilsbereit"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Tochter von Baron Elger von Sveltshagen; Bruder Praiodan ist Ritter im Mittelreich.",
+        "motivation": "Sucht nach Beweisen für eine Verschwörung innerhalb des Stadtrats, die den Schutz der Stadt gefährdet."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "liturgies": [
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 8
+            },
+            {
+                "name": "Segen der Gelehrsamkeit",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,111 @@
+{
+    "id": "r8s9t0u1-v2w3-4567-8901-234567abcdef",
+    "source": "4502 Zug durch das Nebelmoor.md",
+    "tags": [
+        "Führer",
+        "Nebelmoor",
+        "Geheimnis",
+        "Gefahr"
+    ],
+    "general": {
+        "name": "Moor-Lieschen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Unke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wildnisbewohner",
+        "specification": "Moorführerin und Sammlerin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Nebelmoor",
+        "former-locations": [
+            "Ein Dorf am Rand des Moors"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Verkauft Şahin seltene Pilze oder Gifte, die man im Moor findet.",
+            "Führt die Gruppe sicher durch das Moor, verlangt aber einen seltsamen Preis (eine Locke Haar, ein Lied, etc.)."
+        ]
+    },
+    "appearance": {
+        "size": 155,
+        "weight": 50,
+        "hair": "Verfilzt, grünlich (Algen?)",
+        "skin": "Blass, feucht",
+        "eyes": "Groß, dunkel",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Lumpen aus grauem Stoff",
+            "trousers": "Lumpen",
+            "footwear": "Barfuß",
+            "jewellery": "Kette aus Schneckenhäusern",
+            "things": "Korb, langer Stock",
+            "weapons": "Messer"
+        },
+        "distinguishing_features": "Hat Schwimmhäute zwischen den Fingern (Gerücht?)."
+    },
+    "personality": {
+        "traits": [
+            "Scheu",
+            "Rätselhaft",
+            "Naturverbunden",
+            "Ängstlich",
+            "Hilfsbereit (wenn man sie gut behandelt)"
+        ],
+        "actual-mood": [
+            "Vorsichtig"
+        ],
+        "family-background": "Wurde als Kind im Moor ausgesetzt (?) und überlebte. Spricht kaum über ihre Herkunft.",
+        "motivation": "Will im Moor überleben und ihre Ruhe haben."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 10,
+            "IN": 14,
+            "CH": 9,
+            "FF": 12,
+            "GE": 13,
+            "KO": 12,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 25,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Wildnisleben",
+                "FW": 13
+            },
+            {
+                "name": "Schwimmen",
+                "FW": 12
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

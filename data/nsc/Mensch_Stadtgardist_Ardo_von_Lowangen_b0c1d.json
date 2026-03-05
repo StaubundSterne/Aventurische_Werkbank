@@ -1,0 +1,85 @@
+{
+    "id": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+    "source": "4200 Svelltland, 4501 Im Zeichen der Kröte, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Ardo von Lowangen",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 970,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Wachhund",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Stadtgardist",
+        "specification": "Weibel der Stadtwache; zuständig für das Marktviertel und die Einlasskontrollen am Haupttor.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Neu-Lowangen",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Ardo schätzt Fredegis' forstliche Expertise; er hat ihn schon mehrmals als sachverständigen Zeugen bei Wilderei-Prozessen vor das Stadtgericht geladen."
+        ]
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 88,
+        "hair": "Kurzes, dunkles Haar, beginnt an den Schläfen zu ergrauen",
+        "skin": "Sonnengeschädigt, rote Wangen",
+        "eyes": "Ernste, graublaue Augen",
+        "outfit": {
+            "headgear": "Lederhelm mit Eisenbeschlägen",
+            "top": "Garnisonstunika in Stadtfarben, darüber ein leichter Lederharnisch",
+            "trousers": "Dunkelblaue Uniformhose",
+            "footwear": "Soldatenstiefel",
+            "jewellery": "Ein bronzenes Abzeichen seiner Einheit",
+            "things": "Ein Bund schwerer Schlüssel, eine Pfeife aus Ton",
+            "weapons": "Kurzschwert, schwere Armbrust (am Posten)"
+        },
+        "distinguishing_features": "Riecht nach altem Leder und Bohnerwachs; hat eine markante, befehlsgewohnte Stimme."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Gerecht",
+            "Streng",
+            "Bürokratisch",
+            "Vorsichtig"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Verheiratet mit Elfa (Bäckerin); drei Kinder: Geron, Tulla und kleine Alrike.",
+        "motivation": "Ist besorgt über die steigende Zahl von Taschendiebstählen durch ortsfremde 'Glücksritter'."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Recht",
+                "FW": 10
+            },
+            {
+                "name": "Überreden",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

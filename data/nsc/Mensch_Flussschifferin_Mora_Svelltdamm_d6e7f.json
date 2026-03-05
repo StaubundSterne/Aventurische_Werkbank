@@ -1,0 +1,95 @@
+{
+    "id": "f3b4e5a6-d7c8-4b9a-0e1f-2a3b4c5d6e7f",
+    "source": "Lowangen.txt, Werkbank.txt",
+    "tags": [],
+    "general": {
+        "name": "Mora Svelltdamm",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Svelltland",
+        "species": "Mensch",
+        "soul-animal": "Flussotter (flink und verspielt)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Flussschifferin",
+        "specification": "Lotsin für den Oberlauf des Svellt zwischen Tiefhusen und Tjolmar",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tiefhusen",
+        "former-locations": [
+            "Riva",
+            "Hilvalla"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Mora erkennt in Fredegis einen fähigen Seemann und bittet ihn um Hilfe bei einer schwierigen Passage.",
+            "Sie hat Şahins Warenlieferung sicher durch die Stromschnellen geleitet und erwartet eine Prämie."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 65,
+        "hair": "Rotblond, meist zum Zopf gebunden",
+        "skin": "Wettergegerbt, Sommersprossen",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "top": "Blaue Schifferjacke",
+            "trousers": "Helle Leinenhose",
+            "footwear": "Leichte Stiefel",
+            "jewellery": "Ein kleiner Fisch aus Messing an einem Lederband",
+            "things": "Lotleine, Fernrohr",
+            "weapons": "Bootshaken"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Schlagfertig",
+            "Aufmerksam",
+            "Wagemutig",
+            "Loyal",
+            "Naturverbunden"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Tochter einer nivesischen Mutter und eines mittelreichischen Händlers. Wuchs auf einem Frachtkahn auf. Ihre Familie ist im ganzen Svelltland für ihre Navigationskünste bekannt.",
+        "motivation": "Erwerb eines eigenen kleinen Seglers; Schutz der Wasserwege vor Ork-Überfällen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 14,
+            "CH": 12,
+            "FF": 13,
+            "GE": 13,
+            "KO": 12,
+            "KK": 11
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Boote fahren",
+                "FW": 10
+            },
+            {
+                "name": "Orientierung",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

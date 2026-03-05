@@ -1,0 +1,85 @@
+{
+    "id": "e4b3c9a1-7d2f-4b0c-bd8e-1a2b3c4d5e6f",
+    "source": "4202 Reich des roten Mondes, 4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Alrike Tanfana",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Luchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Trapperin",
+        "specification": "Erfahrene Fallenstellerin und Pelzhändlerin aus den Finsterkammern; spezialisiert auf Silberfüchse.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tiefhusen",
+            "Finsterkammern"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Alrike hat Fredegis vor zwei Wintern in den Finsterkammern das Leben gerettet, als er in eine ihrer Bärenfallen geriet; sie erkennt seinen Gang sofort wieder."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 68,
+        "hair": "Dunkelblond, zu einem praktischen Zopf geflochten",
+        "skin": "Wettergegerbt und von Sommersprossen übersät",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Kapuze aus gegerbtem Hirschleder",
+            "top": "Wams aus festem Leinen über einem Unterhemd aus Wolle",
+            "trousers": "Robuste Lederhose mit Verstärkungen an den Knien",
+            "footwear": "Hohe Schnürstiefel aus wasserdichtem Robbenleder",
+            "jewellery": "Ein kleiner Zahn eines Höhlenbären an einem Lederband",
+            "things": "Wetzstein, kleiner Beutel mit Fallenködern (riecht stechend nach Moschus)",
+            "weapons": "Jagdmesser am Gürtel, Kurzbogen auf dem Rücken"
+        },
+        "distinguishing_features": "Eine Narbe quer über den linken Handrücken; riecht intensiv nach Kiefernharz und altem Rauch."
+    },
+    "personality": {
+        "traits": [
+            "Wortkarg",
+            "Naturverbunden",
+            "Zäh",
+            "Misstrauisch gegenüber Städtern",
+            "Ehrenhaft"
+        ],
+        "actual-mood": [
+            "Abwartend"
+        ],
+        "family-background": "Mutter Berte, Gerberin in Lowangen; Vater Jallik (verstorben), Trapper; Schwester Linne, Köchin im 'Hammer und Amboss'.",
+        "motivation": "Sucht einen Käufer für ein Paket seltener Schneefuchsfelle, um die Schulden ihrer Schwester zu begleichen."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtensuchen",
+                "FW": 12
+            },
+            {
+                "name": "Handel",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

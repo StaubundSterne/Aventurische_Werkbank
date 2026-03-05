@@ -1,0 +1,95 @@
+{
+    "id": "7d9e2a1b-3c4d-4e5f-b6a7-8c9d0e1f2a3b",
+    "source": "4200 Svelltland, wiki-aventurica.de/wiki/Yrramis, [NSC kanonisch mit Quelle]",
+    "tags": [],
+    "general": {
+        "name": "Haldara Alberg",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 969,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Bärin",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wirtin",
+        "specification": "Leiterin des strategisch wichtigen Wirtshauses „Zum Kreuzweg“ in Yrramis; bekannt für ihre eiserne Disziplin.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Lowangen",
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Jost hat in ihrem Schankraum einmal versucht, falsch zu spielen; Haldara hat ihn am Kragen gepackt und vor die Tür gesetzt – sie vergisst kein Gesicht.",
+            "Fredegis nutzt das „Zum Kreuzweg“ oft als Umschlagplatz für Informationen aus den Wäldern; Haldara schätzt seine Unaufdringlichkeit, verlangt aber, dass er seinen Schlamm vor der Tür lässt."
+        ]
+    },
+    "appearance": {
+        "size": 176,
+        "weight": 82,
+        "hair": "Grau, streng zurückgebunden zu einem festen Knoten.",
+        "skin": "Wettergegerbt und rissig an den Händen.",
+        "eyes": "Graubraun, blicken durchdringend.",
+        "outfit": {
+            "headgear": "Gelegentlich ein einfaches, dunkles Kopftuch.",
+            "top": "Dunkles Wollkleid, die Ärmel meist hochgekrempelt.",
+            "trousers": "Entfällt (Unterröcke aus Leinen).",
+            "footwear": "Feste, knöchelhohe Lederstiefel.",
+            "jewellery": "Keine.",
+            "things": "Ein schwerer, eiserner Schlüsselbund am Ledergürtel, der bei jedem Schritt klirrt.",
+            "weapons": "Ein kurzes Alltagsmesser am Gürtel."
+        },
+        "distinguishing_features": "Auffallend kräftige, muskulöse Unterarme; eine Tätowierung der „Svelltauge“ am linken Unterarm. Ihre Stimme ist weithin hörbar."
+    },
+    "personality": {
+        "traits": [
+            "Resolut",
+            "Effizient",
+            "Pflichtbewusst",
+            "Autoritär",
+            "Pragmatisch"
+        ],
+        "actual-mood": [
+            "Geschäftig"
+        ],
+        "family-background": "Mutter von Mywara; verheiratet mit dem (oft abwesenden) Händler Olgard Alberg. Ihre Familie betreibt das Haus seit drei Generationen.",
+        "motivation": "Das Wirtshaus trotz der unsicheren Zeiten und der orkischen Bedrohung als sicheren Hafen und florierendes Geschäft zu erhalten."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 10
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 12
+            },
+            {
+                "name": "Zechen",
+                "FW": 8
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

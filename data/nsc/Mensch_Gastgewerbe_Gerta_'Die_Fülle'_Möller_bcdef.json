@@ -1,0 +1,112 @@
+{
+    "id": "f6g7h8i9-j0k1-2345-6789-012345abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Wirt",
+        "Lowangen",
+        "Information",
+        "Treffpunkt"
+    ],
+    "general": {
+        "name": "Gerta 'Die Fülle' Möller",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 970,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Schwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gastgewerbe",
+        "specification": "Wirtin der Taverne 'Zum tanzenden Bären' in Lowangen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Weiß alles, was in Lowangen passiert. Verkauft Informationen gegen gute Geschichten oder Gold.",
+            "Hat ein Problem mit Ratten im Keller (oder etwas Schlimmerem) und bittet Şahin um Hilfe."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 95,
+        "hair": "Blonde Locken unter einer Haube",
+        "skin": "Rosig",
+        "eyes": "Blau und freundlich",
+        "outfit": {
+            "headgear": "Weiße Haube",
+            "top": "Weite Bluse und Mieder",
+            "trousers": "Weiter Rock mit Schürze",
+            "footwear": "Bequeme Pantoffeln",
+            "jewellery": "Goldene Ohrringe",
+            "things": "Kochlöffel, Schlüsselbund",
+            "weapons": "Ein Nudelholz unter der Theke"
+        },
+        "distinguishing_features": "Lacht oft und laut.",
+        "stature": "-fff"
+    },
+    "personality": {
+        "traits": [
+            "Herzlich",
+            "Neugierig",
+            "Geschwätzig",
+            "Mütterlich",
+            "Resolut"
+        ],
+        "actual-mood": [
+            "Fröhlich"
+        ],
+        "family-background": "Witwe. Mann starb bei einem Unfall mit einem Fuhrwerk. Keine Kinder, betrachtet ihre Stammgäste als Familie.",
+        "motivation": "Will, dass ihre Taverne der beliebteste Ort in Lowangen bleibt und alle satt werden."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 13,
+            "CH": 14,
+            "FF": 12,
+            "GE": 10,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kochen",
+                "FW": 15
+            },
+            {
+                "name": "Zechen",
+                "FW": 10
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

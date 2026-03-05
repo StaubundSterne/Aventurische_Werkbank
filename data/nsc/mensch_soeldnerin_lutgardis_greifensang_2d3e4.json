@@ -1,0 +1,100 @@
+{
+    "id": "c71e2d44-1131-4b1a-8e2b-7192a1c2d3e4",
+    "source": "Wiki Aventurica (Greifensang), 4000 Bibliotheken (Weiden)",
+    "tags": [],
+    "general": {
+        "name": "Lutgardis Greifensang",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Elster (neugierig, liebt Glitzerndes)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Söldnerin",
+        "specification": "Leichte Infanteristin und Armbrustschützin. Sie ist die Cousine von Berthilda Greifensang, wählte aber den Weg des freien Schwerts statt des Gardistenlebens.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Sie erzählt Adarell von den 'steifen' Familienfesten der Greifensangs, um ihn zum Lachen zu bringen.",
+            "Lutgardis bittet Jost, ihre Armbrustbolzen zu härten."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 62,
+        "hair": "Kurzes, rotes Haar (ähnlich wie Berthilda)",
+        "skin": "Blass, Sommersprossen",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Lederrüstung, darüber ein zerlumpter grüner Rock",
+            "trousers": "Braune Hose",
+            "footwear": "Leichte Stiefel",
+            "jewellery": "Mehrere kleine Silberringe in den Ohren",
+            "things": "Würfelspiel aus Knochen, kleiner Weinbeutel",
+            "weapons": "Leichte Armbrust, Kurzschwert"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Spöttisch",
+            "Gesellig",
+            "Wagemutig",
+            "Geldgierig",
+            "Freigeistig"
+        ],
+        "actual-mood": [
+            "Belustigt"
+        ],
+        "family-background": "Cousine von Berthilda Greifensang. Ihre Eltern sind Schafzüchter in Weiden. Sie floh vor einer arrangierten Ehe.",
+        "motivation": "Spaß haben, Gold scheffeln und ihrer Cousine zeigen, dass man ohne Uniform besser lebt."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 13,
+            "CH": 14,
+            "FF": 14,
+            "GE": 13,
+            "KO": 12,
+            "KK": 11
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Armbrust",
+                "FW": 13
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 10
+            },
+            {
+                "name": "Überreden",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

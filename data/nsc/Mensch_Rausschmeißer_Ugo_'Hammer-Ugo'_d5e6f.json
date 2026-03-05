@@ -1,0 +1,85 @@
+{
+    "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+    "source": "4200 Svelltland, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Ugo 'Hammer-Ugo'",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 977,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Büffel",
+        "social-state": "Unfrei/Leibeigen (ehemals), jetzt Frei"
+    },
+    "profession": {
+        "category": "Rausschmeißer",
+        "specification": "Leibwächter und Ordnungskraft in der Taverne 'Hammer und Amboss'; ehemaliger Steinbrecher.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Riva",
+            "Tschu"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Ugo sah Adarell vor Monaten in einer prekären Situation in einer Gasse und war beeindruckt von ihrer Standhaftigkeit; er nickt ihr respektvoll zu, wenn sie die Taverne betritt."
+        ]
+    },
+    "appearance": {
+        "size": 195,
+        "weight": 115,
+        "hair": "Kahlgeschorener Kopf, dichter schwarzer Bart",
+        "skin": "Narbige, grobe Haut",
+        "eyes": "Kleine, dunkle Augen unter buschigen Brauen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ärmelloses Lederwams, das seine massiven Oberarme betont",
+            "trousers": "Dicke Leinenhose, schmutzig-grau",
+            "footwear": "Schwere Arbeitsstiefel mit Eisenkappen",
+            "jewellery": "Ein Ingerimm-Amulett aus rußigem Eisen",
+            "things": "Ein schwerer Ledergürtel, ein Krug dünnes Bier",
+            "weapons": "Ein massiver Holzknüppel ('Mein Argument')"
+        },
+        "distinguishing_features": "Eine tiefe Bassstimme, die den Boden vibrieren lässt; riecht nach Schweiß und billigem Tabak."
+    },
+    "personality": {
+        "traits": [
+            "Gutmütig",
+            "Beschützend",
+            "Träge",
+            "Loyal",
+            "Praktisch veranlagt"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Keine bekannte Familie; wuchs als Waisenkind in den Minen von Riva auf.",
+        "motivation": "Sorgt für Ruhe in seinem Viertel und spart auf ein eigenes kleines Haus am Stadtrand."
+    },
+    "stats": {
+        "experience-level": "Erfahren"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Raufen",
+                "FW": 13
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

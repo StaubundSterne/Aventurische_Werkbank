@@ -1,0 +1,112 @@
+{
+    "id": "q7r8s9t0-u1v2-3456-7890-123456abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Händler",
+        "Tjolmar",
+        "Reichtum",
+        "Einfluss"
+    ],
+    "general": {
+        "name": "Baldur 'Silberzunge' von Tjolmar",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 962,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Fuchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händler",
+        "specification": "Großhändler für Erze und Metalle in Tjolmar",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tjolmar",
+        "former-locations": [
+            "Angbar",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Will Geschäfte mit Aurelevinas Familie machen und versucht, sie mit teuren Geschenken zu bestechen/beeindrucken.",
+            "Hat Probleme mit 'Schutzgelderpressern' und hofft auf Aurelevinas Einfluss oder Schutz."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 85,
+        "hair": "Grau, gepflegt",
+        "skin": "Hell",
+        "eyes": "Blau",
+        "outfit": {
+            "headgear": "Samtbarett",
+            "top": "Teurer Brokatmantel",
+            "trousers": "Seidenhosen",
+            "footwear": "Schnabelschuhe",
+            "jewellery": "Mehrere Goldringe, schwere Goldkette",
+            "things": "Geldbörse, Verträge",
+            "weapons": "Ein dekorativer Dolch (eher Schmuck)"
+        },
+        "distinguishing_features": "Reibt sich oft die Hände."
+    },
+    "personality": {
+        "traits": [
+            "Raffiniert",
+            "Höflich",
+            "Gierig",
+            "Vorsichtig",
+            "Diplomatisch"
+        ],
+        "actual-mood": [
+            "Geschäftig"
+        ],
+        "family-background": "Stammt aus einer Händlerfamilie. Hat das Geschäft seines Vaters stark vergrößert.",
+        "motivation": "Will der reichste Mann in Tjolmar werden und vielleicht einen Adelstitel kaufen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 14,
+            "CH": 15,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 15
+            },
+            {
+                "name": "Überreden",
+                "FW": 13
+            },
+            {
+                "name": "Rechnen",
+                "FW": 14
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

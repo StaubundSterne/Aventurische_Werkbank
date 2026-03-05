@@ -1,0 +1,99 @@
+{
+    "id": "b82e1d44-2637-4d1a-8e2b-7493a1c2d3e4",
+    "source": "Aventurische Namen (Grauzahn), 4000 Bibliotheken (Svelltland)",
+    "tags": [],
+    "general": {
+        "name": "Wulfen von Grauzahn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein (wild und zäh)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Söldner",
+        "specification": "Kundschafter und Infanterist der Donnerer. Er kennt die Schleichwege des Svelltlands wie kaum ein anderer und ist für seine rücksichtslose Art im Kampf bekannt.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Lowangen",
+            "Tiefhusen",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": [
+            "Wulfen hat Adarells Fährte im Wald schon einmal gekreuzt und ist beeindruckt von der elfischen Tarnung."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 80,
+        "hair": "Dreckiges Blond, ungepflegt",
+        "skin": "Narbig, schmutzig",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Stirnband aus Fell",
+            "top": "Abgewetztes Kettenhemd, darüber ein Fellumhang",
+            "trousers": "Grobe Leinenhose",
+            "footwear": "Mit Lederriemen umwickelte Schuhe",
+            "jewellery": "Ein Zahn eines Höhlenbären an einer Schnur",
+            "things": "Wetzstein, kleiner Beutel mit getrocknetem Fleisch",
+            "weapons": "Großer Dolch, Kurzschwert, Wurfmesser"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Grob",
+            "Pragmatisch",
+            "Wachsam",
+            "Ungebildet",
+            "Verschlagen"
+        ],
+        "actual-mood": [
+            "Hungrig"
+        ],
+        "family-background": "Sohn einer Gerberin aus Lowangen; Vater unbekannt. Seine Geschwister starben bei einer Fieber-Epidemie.",
+        "motivation": "Überleben im rauen Norden und genug Silber für den nächsten Rausch verdienen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 9,
+            "IN": 14,
+            "CH": 9,
+            "FF": 12,
+            "GE": 12,
+            "KO": 14,
+            "KK": 13
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtensuchen",
+                "FW": 13
+            },
+            {
+                "name": "Dolche",
+                "FW": 12
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

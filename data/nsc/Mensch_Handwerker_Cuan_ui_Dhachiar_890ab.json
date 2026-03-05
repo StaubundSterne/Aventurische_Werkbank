@@ -1,0 +1,93 @@
+{
+    "id": "12345678-abcd-efgh-ijkl-1234567890ab",
+    "source": "Aventurische Namen, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Cuan ui Dhachiar",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 986,
+        "alive": true,
+        "culture": "Albernia",
+        "species": "Mensch",
+        "soul-animal": "Wüstenrennmaus",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Dachdecker, der sich darauf spezialisiert hat, Häuser absolut regendicht zu machen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Kyndoch"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Cuan sucht nach alten Bauplänen für eine 'trockene Versiegelung' und hofft, dass Hesindian ihm bei der Übersetzung eines alten Textes helfen kann."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 70,
+        "hair": "Kurzes, hellbraunes Haar.",
+        "skin": "Sonnengebräunt.",
+        "eyes": "Hellbraun",
+        "outfit": {
+            "headgear": "Ein breitkrempiger Strohhut.",
+            "top": "Ein festes Leinenhemd.",
+            "trousers": "Latzhose aus festem Tuch.",
+            "footwear": "Schuhe mit griffiger Sohle.",
+            "jewellery": "Ein Ingerimm-Amulett aus Kupfer.",
+            "things": "Eine Rolle Teerpappe.",
+            "weapons": "Ein kleiner Hammer."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Wasserscheu",
+            "Schwindelfrei",
+            "Gewissenhaft",
+            "Direkt"
+        ],
+        "actual-mood": [
+            "Zuversichtlich"
+        ],
+        "family-background": "Stammt aus einer Familie von Köhlern. Er hasst Wasser, da er die 'Aufweichung der Welt' fürchtet.",
+        "motivation": "Will das trockenste Haus in ganz Havena bauen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 10,
+            "FF": 14,
+            "GE": 14,
+            "KO": 12,
+            "KK": 12
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handwerk",
+                "FW": 11
+            },
+            {
+                "name": "Klettern",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

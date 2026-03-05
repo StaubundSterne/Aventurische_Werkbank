@@ -1,0 +1,104 @@
+{
+    "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+    "source": "Aventurische Namen (Greifensang), Wiki Aventurica (Donnerbach)",
+    "tags": [],
+    "general": {
+        "name": "Berthilda Greifensang",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Luchs (unabhängig und präzise)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Waffenknecht",
+        "specification": "Erfahrene Kriegerin in der Garde von Donnerbach. Sie spezialisierte sich auf den Kampf mit der Hellebarde und gilt als eine der besten Ausbilderinnen für Rekruten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Elenvina"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Berthilda hat Jost mehrfach wegen 'nachlässiger' Beinarbeit beim Training zurechtgewiesen.",
+            "Adarell versorgte einmal eine schwere Wunde an ihrem Bein nach einem Grenzgefecht."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 72,
+        "hair": "Feuerrotes Haar, zu einem festen Pferdeschwanz gebunden",
+        "skin": "Blass, viele Sommersprossen",
+        "eyes": "Steingrau",
+        "outfit": {
+            "headgear": "Lederkappe",
+            "top": "Kettenhemd über einem roten Rock; lederne Armschienen",
+            "trousers": "Graue Tuchhose",
+            "footwear": "Genagelte Soldatenstiefel",
+            "jewellery": "Keiner, bis auf einen kleinen Eisenring im rechten Ohr",
+            "things": "Ein kleiner Schleifstein, ein Bund Verbandszeug",
+            "weapons": "Hellebarde (neben der Bank lehnend), Kurzschwert"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Direkt",
+            "Diszipliniert",
+            "Misstrauisch",
+            "Belastbar",
+            "Treu"
+        ],
+        "actual-mood": [
+            "Genervt"
+        ],
+        "family-background": "Mutter Gerlinde, Köchin; Vater Berthold, verstorbener Kor-Geweihter; zwei Brüder im Heer des Herzogs von Weiden.",
+        "motivation": "Die Stadt Donnerbach vor jeglicher Bedrohung schützen und sicherstellen, dass die Rekruten nicht beim ersten Feindkontakt sterben."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 13,
+            "CH": 11,
+            "FF": 10,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Stangenwaffen",
+                "FW": 14
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 11
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 12
+            },
+            {
+                "name": "Wettervorhersage",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

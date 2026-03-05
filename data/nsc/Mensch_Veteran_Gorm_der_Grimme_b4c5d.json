@@ -1,0 +1,91 @@
+{
+    "id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Gorm der Grimme",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 953,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Alter Wolf",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Veteran",
+        "specification": "Rottenführer der Thasch-Läufer; erfahrener Kämpfer in der Verteidigung gegen Orks.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Tjolmar",
+            "Thasch-Vorberge"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Gorm erkennt Adarells Ausbildung an und fordert ihn wortkarg zu einer Übungseinheit am frühen Morgen heraus.",
+            "Er tadelt Fredegis schroff für das geringste Geräusch beim Gehen; im Grenzland bedeutet Lärm den Tod."
+        ]
+    },
+    "appearance": {
+        "size": 184,
+        "weight": 90,
+        "hair": "Grau, kurzgeschoren, mit einem drahtigen Bart.",
+        "skin": "Wettergegerbt, mit zahlreichen Narben gezeichnet.",
+        "eyes": "Eisgrau, wachsam.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Zusammengeflickte Lederrüstung aus verschiedenen Stücken.",
+            "trousers": "Schwere Tuchhose.",
+            "footwear": "Verstärkte Stiefel.",
+            "jewellery": "Keine",
+            "things": "Wetzstein, kleiner Lederbeutel mit Glücksbringern.",
+            "weapons": "Schweres Beil, Dolch."
+        },
+        "distinguishing_features": "Tiefes Narbengewebe an der linken Wange; schärft ständig sein Beil."
+    },
+    "personality": {
+        "traits": [
+            "Wortkarg",
+            "Stoisch",
+            "Erfahren",
+            "Unbeugsam",
+            "Loyal"
+        ],
+        "actual-mood": [
+            "Grimmig"
+        ],
+        "family-background": "Sohn eines Holzfällers; verlor seine gesamte Rotte beim 'Großen Ansturm' 962 BF und blieb als einziger Überlebender zurück.",
+        "motivation": "Die jungen Läufer so hart zu drillen, dass sie den nächsten Winter überleben."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hiebwaffen",
+                "FW": 14
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 12
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

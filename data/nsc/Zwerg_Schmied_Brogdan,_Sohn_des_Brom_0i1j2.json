@@ -1,0 +1,94 @@
+{
+    "id": "a1b2c3d4-e5f6-4a5b-bc6d-e7f8g9h0i1j2",
+    "source": "Das Orkland, Aventurisches Archiv 2",
+    "tags": [],
+    "general": {
+        "name": "Brogdan, Sohn des Brom",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 912,
+        "alive": true,
+        "culture": "Ambosszwerg",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmied",
+        "specification": "Kesselschmied, der sich weigert, Schiffe oder wassernahe Anlagen zu reparieren.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Xorlosch",
+            "Eisenwald"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Brogdan kannte Fredegis' Vater Olbar aus gemeinsamen Tagen in den Zwergenpingen und bietet Fredegis einen Platz an seinem trockenen Schmiedefeuer an."
+        ]
+    },
+    "appearance": {
+        "size": 138,
+        "weight": 85,
+        "hair": "Kurzer, drahtiger grauer Bart, streng geflochten.",
+        "skin": "Rußgeschwärzt und grobporig.",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine, nur ein Lederband im Haar.",
+            "top": "Eine schwere Lederschürze über einem Wollhemd.",
+            "trousers": "Feste Lederhosen.",
+            "footwear": "Schwere Stiefel mit Eisenkappen.",
+            "jewellery": "Ein Ingerimm-Symbol aus Eisen.",
+            "things": "Ein schwerer Schmiedehammer, der nie den Boden berührt.",
+            "weapons": "Ein Schmiedehammer (Werte wie Kriegshammer)."
+        }
+    },
+    "personality": {
+        "traits": [
+            "Mürrisch",
+            "Präzise",
+            "Wasserscheu",
+            "Loyal",
+            "Erdgebunden"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Sohn von Brom und Angra. Seine Sippe arbeitet traditionell tief unter der Erde; die Feuchtigkeit von Havena lässt seine Gelenke schmerzen.",
+        "motivation": "Versucht, seine Werkstatt in der Oberstadt vor dem allgegenwärtigen Küstennebel abzudichten."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 12,
+            "CH": 9,
+            "FF": 15,
+            "GE": 10,
+            "KO": 16,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 14
+            },
+            {
+                "name": "Zechen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

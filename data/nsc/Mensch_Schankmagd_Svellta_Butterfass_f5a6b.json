@@ -1,0 +1,90 @@
+{
+    "id": "e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
+    "source": "NSC aus Yrramis.csv, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Svellta Butterfass",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Bärin",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schankmagd",
+        "specification": "Bedienung im 'Kreuzweg'; bekannt für ihre Schlagfertigkeit und enorme Körperkraft.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Ein Dorf am Svellt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Svellta hat Jost dabei erwischt, wie er ein falsches Spielkärtchen im Ärmel verbarg, und droht ihm mit einem 'Freiflug' aus dem Fenster.",
+            "Sie fordert Adarell zu einem Armdrücken heraus, nachdem sie seine trainierten Unterarme bemerkt hat."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 78,
+        "hair": "Flachsblond, meist wirr und ungebändigt.",
+        "skin": "Gerötet, rundes Gesicht.",
+        "eyes": "Hellblau, blicken keck.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Helles Mieder über einer groben Leinenbluse.",
+            "trousers": "Weiter, roter Rock aus festem Tuch.",
+            "footwear": "Derbe Bundschuhe.",
+            "jewellery": "Keine",
+            "things": "Ein großes Holztablett, oft beladen mit drei Humpen pro Hand.",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Enorme körperliche Kraft; lacht lauter als die meisten Fuhrleute."
+    },
+    "personality": {
+        "traits": [
+            "Lebensfroh",
+            "Derb",
+            "Fleißig",
+            "Schlagfertig",
+            "Mutig"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Tochter einer Waschfrau; wuchs in den rauen Gassen am Svellt auf und lernte früh, sich durchzusetzen.",
+        "motivation": "Möchte genug Trinkgeld sammeln, um ihrer Mutter einen ruhigen Lebensabend in Lowangen zu ermöglichen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kraftakt",
+                "FW": 13
+            },
+            {
+                "name": "Zechen",
+                "FW": 12
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

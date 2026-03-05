@@ -1,0 +1,105 @@
+{
+    "id": "7611e9a2-5b91-4e7a-9a3d-8625414f0821",
+    "source": "4202 Reich des roten Mondes; 4111 Aventurische Namen; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [
+        "Markt",
+        "Lowangen",
+        "Händler"
+    ],
+    "general": {
+        "name": "Gerburgis von Twerun",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Elster",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Spezialistin für Kräuter und seltene Harze aus dem Svelltschen Forst; beliefert gelegentlich die Akademie der Verformungen.",
+        "magical": false,
+        "clerical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Twerun",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Gerburgis bietet Hesindian ein Glas 'echtes Drachenblutharz' an, das auffällig nach Terpentin riecht, und verwickelt ihn in ein Gespräch über alchimistische Bindemittel.",
+            "Sie erkennt in Şahin den Naturburschen und fragt ihn verstohlen, ob er ihr beim Schmuggel einiger streng reglementierter Rauschkräuter an der Stadtgarde vorbei helfen kann."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 60,
+        "hair": "Strohblond, zu vielen kleinen Zöpfen geflochten, die mit bunten Wollfäden umwickelt sind.",
+        "skin": "Sommersprossig und vom Wind gegerbt.",
+        "eyes": "Wache, bernsteinfarbene Augen.",
+        "outfit": {
+            "headgear": "Ein grünes Kopftuch.",
+            "top": "Ein praktisches Mieder über einer Leinenbluse, deren Ärmel sie stets hochgekrempelt hat.",
+            "trousers": "Ein schwerer, brauner Wollrock mit vielen eingenähten Taschen.",
+            "footwear": "Derbe Schnürschuhe aus Wildleder.",
+            "jewellery": "Ein Ring aus Horn am Daumen; ein Lederband mit einem getrockneten Krötenfuß um den Hals.",
+            "things": "Ein kleiner Weidenkorb mit frischem Thymian.",
+            "weapons": "Ein langer Dolch im Gürtel (zur Kräuterernte und Selbstverteidigung)."
+        },
+        "distinguishing_features": "Riecht permanent nach einer Mischung aus Minze, Harz und altem Leder."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Redselig",
+            "Abergläubisch",
+            "Wachsam",
+            "Humorvoll"
+        ],
+        "actual-mood": [
+            "Euphorisch"
+        ],
+        "family-background": "Tochter von Korbinian, einem Köhler aus Twerun; Schwester Alrike führt eine Schenke in Riva. Gerburgis floh vor einer Zwangsheirat nach Lowangen.",
+        "motivation": "Möglichst viel Gold auf dem Markt verdienen, um sich einen festen Stand in der Halle der Macht (Hofseite) zu mieten."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 14,
+            "CH": 13,
+            "FF": 13,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 12
+            },
+            {
+                "name": "Überreden",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": ""
+}

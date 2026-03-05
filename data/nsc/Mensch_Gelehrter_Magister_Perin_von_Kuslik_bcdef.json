@@ -1,0 +1,112 @@
+{
+    "id": "g7h8i9j0-k1l2-3456-7890-123456abcdef",
+    "source": "4201 Das Orkland.md, 4300 Aera des goldenen Kaisers.md",
+    "tags": [
+        "Gelehrter",
+        "Kartograph",
+        "Reisender",
+        "Orkland"
+    ],
+    "general": {
+        "name": "Magister Perin von Kuslik",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Schildkröte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gelehrter",
+        "specification": "Kartograph und Forschungsreisender im Auftrag der Kaiserlichen Geographischen Gesellschaft",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Reist im Svellttal",
+        "former-locations": [
+            "Kuslik",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Sucht einen ortskundigen Begleiter (Hesindian) für eine Expedition in die Blutzinnen, um eine alte Karte zu verifizieren.",
+            "Diskutiert mit Hesindian über die wahre Quelle des Svellt und hat eine gewagte Theorie."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 70,
+        "hair": "Grauer Kranz, sonst kahl",
+        "skin": "Sonnenverbrannt (nur im Gesicht und an den Händen)",
+        "eyes": "Braun, hinter dicken Brillengläsern",
+        "outfit": {
+            "headgear": "Breitkrempiger Reisehut\n",
+            "top": "Reiseweste mit vielen Taschen",
+            "trousers": "Kniehosen",
+            "footwear": "Wanderstiefel",
+            "jewellery": "Siegelring der Derographischen Gesellschaft",
+            "things": "Kartenrolle, Sextant, Notizbuch, Schreibzeug",
+            "weapons": "Ein Wanderstab mit verborgener Klinge"
+        },
+        "distinguishing_features": "Hat ständig Tintenflecken an den Fingern."
+    },
+    "personality": {
+        "traits": [
+            "Pedantisch",
+            "Abenteuerlustig",
+            "Belesen",
+            "Stur",
+            "Begeisterungsfähig"
+        ],
+        "actual-mood": [
+            "Gestresst"
+        ],
+        "family-background": "Stammt aus einer Familie von Buchhändlern in Kuslik. Hat nie geheiratet, die Wissenschaft ist seine Braut.",
+        "motivation": "Will die definitive Karte des Orklands erstellen und seinen Namen in den Annalen der Wissenschaft verewigen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 16,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geographie",
+                "FW": 16
+            },
+            {
+                "name": "Malen/Zeichnen",
+                "FW": 14
+            },
+            {
+                "name": "Orientierung",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

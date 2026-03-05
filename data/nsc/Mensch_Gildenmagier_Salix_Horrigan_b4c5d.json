@@ -1,0 +1,117 @@
+{
+    "id": "c1a2b3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "4301 Hallen arkaner Macht, S. 112; wiki-aventurica.de/wiki/Salix_Horrigan",
+    "tags": [
+        "Akademie der Verformungen",
+        "Alchimie",
+        "Lowangen"
+    ],
+    "general": {
+        "name": "Salix Horrigan",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 979,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Wolf",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Laboratoriumsleiter in der Akademie der Verformungen; Forscher im Projekt 'Haut zu Pelz'.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen",
+            "Gashok",
+            "Punin"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Adarell kennt ihn aus einem Lehrsemester am Seminar der elfischen Verständigung in Donnerbach.",
+            "Salix interessiert sich für Fredegis' eigenartigen Zugang zu Kräutern.,Er könnte die Gruppe um Hilfe bitten, um seltene Reagenzien zu beschaffen, um Magistra Immenfeld zuvorzukommen."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 70,
+        "hair": "Weißblond, zerzaust; trägt einen ebenso zerzausten weißen Bart.",
+        "skin": "Blass (Laborantenteint), oft mit Flecken von Alchimika.",
+        "eyes": "Hellblau, funkelnd bei neuen Ideen.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Einfache Magierrobe, oft mit Brandlöchern oder Säureflecken",
+            "trousers": "Schlichte Stoffhose",
+            "footwear": "Bequeme Lederschuhe",
+            "jewellery": "Akademiereif",
+            "things": "Alchimistische Notizen, diverse Phiolen",
+            "weapons": "Magierstab"
+        },
+        "distinguishing_features": "Rauft sich bei schwierigen Problemen den Bart; wirkt oft gehetzt und unordentlich."
+    },
+    "personality": {
+        "traits": [
+            "Leidenschaftlich",
+            "Engagiert",
+            "Unordentlich",
+            "Arbeitsam",
+            "Wortkarg",
+            "Pragmatisch"
+        ],
+        "actual-mood": [
+            "Wachsam",
+            "Konzentriert",
+            "Ehrgeizig"
+        ],
+        "family-background": "Stammt aus einfachen Verhältnissen aus dem Norden des Svelltlands; lernte in Punin, empfand die dortige Lehre jedoch als zu theoretisch.",
+        "motivation": "Verfolgt das Prinzip 'Probieren ist besser als Studieren'. Setzt alles daran, im Forschungsprojekt schneller zu sein als seine Rivalin Olja Immenfeld."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Alchimie",
+                "FW": 15
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 14
+            },
+            {
+                "name": "Fährtensuchen",
+                "FW": 12
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Adlerschwinge Wolfsgestalt",
+                "FW": 16
+            },
+            {
+                "name": "Visibili Vanitar",
+                "FW": 9
+            },
+            {
+                "name": "Sanftmut",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": "Hat ein offenes Ohr für Scholaren, predigt ihnen Ordnung und Sicherheit, vernachlässigt diese aber selbst völlig. Sieht Magistra Olja Immenfeld als interne Konkurrenz und 'saure' Gegenspielerin."
+}

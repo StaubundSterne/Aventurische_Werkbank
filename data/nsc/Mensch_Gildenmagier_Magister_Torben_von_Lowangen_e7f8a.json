@@ -1,0 +1,85 @@
+{
+    "id": "f5d6e7a8-9b0c-4d1e-8f2a-3b4c5d6e7f8a",
+    "source": "4301 Hallen arkaner Macht, 4302 Horte magischen Wissens, [KI-Ergänzung: fiktiv]",
+    "tags": [],
+    "general": {
+        "name": "Magister Torben von Lowangen",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Lehrender an der Akademie der Verformungen zu Lowangen; Spezialist für die belebte Natur.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Punin"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Torben korrespondierte jahrelang mit Hesindians ehemaligem Mentor über die Metamorphose von Sumpfkröten; er hält Hesindian für ein vielversprechendes, wenn auch ungeschliffenes Talent."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Dünner werdendes, graumeliertes Haar",
+        "skin": "Blass, wie Pergament",
+        "eyes": "Stechendes Hellblau hinter einer Brille aus Kristallglas",
+        "outfit": {
+            "headgear": "Schlichtes Barett in den Farben der Akademie (Gelb/Schwarz)",
+            "top": "Magierrobe mit zahlreichen Innentaschen für Schreibzeug",
+            "trousers": "Dunkle Stoffhose",
+            "footwear": "Lederschuhe mit Silberschnallen",
+            "jewellery": "Akademiesiegelring aus Silber",
+            "things": "Ein ledergebundenes Notizbuch, das ständig in Gebrauch ist",
+            "weapons": "Magierstab aus Steineiche"
+        },
+        "distinguishing_features": "Riecht nach Tinte und getrockneten Kräutern; seine Stimme ist kratzig, als hätte er zu viel Staub eingeatmet."
+    },
+    "personality": {
+        "traits": [
+            "Wissensdurstig",
+            "Pedantisch",
+            "Hilsbereit",
+            "Zerstreut",
+            "Hesinde-gläubig"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Sohn von Ratsherr Gero aus Lowangen; Mutter Mada (Heilerin). Er ist unverheiratet, sein Leben gehört der Forschung.",
+        "motivation": "Versucht die Auswirkungen der orkischen Wanderungen auf die lokale Fauna magisch zu kartographieren."
+    },
+    "stats": {
+        "experience-level": "Kompetent"
+    },
+    "abilities": {
+        "spells": [
+            {
+                "name": "Adlerschwinge",
+                "FW": 14
+            },
+            {
+                "name": "Analüs Arkanstruktur",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

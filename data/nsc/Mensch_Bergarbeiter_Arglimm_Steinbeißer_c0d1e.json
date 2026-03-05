@@ -1,0 +1,96 @@
+{
+    "id": "78a2d1f4-9c3e-4b2a-8d5f-6e7a8b9c0d1e",
+    "source": "Lowangen.txt, Werkbank.txt, Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Arglimm Steinbeißer",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svelltland",
+        "species": "Mensch",
+        "soul-animal": "Dachs (beharrlich und wehrhaft)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bergarbeiter",
+        "specification": "Stollenhauer in den Blei- und Silberminen von Tjolmar",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tjolmar",
+        "former-locations": [
+            "Lowangen",
+            "Finsterkammern"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Jost"
+        ],
+        "injection-points": [
+            "Arglimm sucht fachkundigen Rat bei Hesindian bezüglich ungewöhnlicher Erzadern in den unteren Stollen.",
+            "Er hat Jost in der Schmiede von Tjolmar beobachtet und schätzt die Qualität seiner Werkzeugreparaturen."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 82,
+        "hair": "Dunkelbraun, kurz geschoren, staubig",
+        "skin": "Blass, mit Ruß- und Erzflecken",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Lederne Kappe",
+            "top": "Grobe Leinentunika unter einem schweren Lederwams",
+            "trousers": "Feste Stoffhose mit Knieverstärkungen",
+            "footwear": "Beschlagene Arbeitsstiefel",
+            "jewellery": "Keiner",
+            "things": "Grubenlampe, Beutel mit Erzproben",
+            "weapons": "Spitzhacke (improvisiert)"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Beharrlich",
+            "Wortkarg",
+            "Fachkundig",
+            "Misstrauisch",
+            "Gottesfürchtig (Ingerimm)"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Sohn von Hulmar, einem Minenvorarbeiter, und Elene, einer Wäscherin. Sein Bruder verschwand vor zwei Jahren in einem eingestürzten Stollen. Die Familie lebt seit drei Generationen in Tjolmar.",
+        "motivation": "Sicherung des Lebensunterhalts für seine kranke Mutter; Suche nach dem verschollenen Bruder."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 10,
+            "FF": 13,
+            "GE": 11,
+            "KO": 14,
+            "KK": 14
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Steinbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Zechen",
+                "FW": 6
+            }
+        ]
+    },
+    "session-notes": ""
+}

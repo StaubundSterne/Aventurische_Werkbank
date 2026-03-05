@@ -1,0 +1,111 @@
+{
+    "id": "h8i9j0k1-l2m3-4567-8901-234567abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Bettler",
+        "Tiefhusen",
+        "Information",
+        "Straße"
+    ],
+    "general": {
+        "name": "Der alte Hannes",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 950,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Ratte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bettler",
+        "specification": "Stadtbekannter Bettler und Informant in Tiefhusen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tiefhusen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Weiß von einem geheimen Treffen der Diebesgilde und könnte Fredegis den Ort verraten.",
+            "Behauptet, ein Phex-Wunder gesehen zu haben und sucht jemanden, der ihm glaubt (Fredegis)."
+        ]
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 50,
+        "hair": "Dünnes, weißes Haar",
+        "skin": "Schmutzig und faltig",
+        "eyes": "Milchig (ein Auge blind)",
+        "outfit": {
+            "headgear": "Kaputte Filzkappe",
+            "top": "Lumpen in mehreren Schichten",
+            "trousers": "Zerrissene Hosen",
+            "footwear": "Ein Schuh, ein Fuß in Lumpen gewickelt",
+            "jewellery": "Keine",
+            "things": "Bettelschale, alter Sack mit 'Schätzen'",
+            "weapons": "Ein angespitzter Stock"
+        },
+        "distinguishing_features": "Fehlende Zähne, humpelt stark."
+    },
+    "personality": {
+        "traits": [
+            "Schlau",
+            "Überlebenskünstler",
+            "Zynisch",
+            "Dankbar (für Almosen)",
+            "Geschwätzig"
+        ],
+        "actual-mood": [
+            "Hungrig"
+        ],
+        "family-background": "War früher ein angesehener Handwerker, verlor aber alles durch ein Feuer. Familie tot oder weggezogen.",
+        "motivation": "Will den nächsten Winter überleben und vielleicht noch einmal einen warmen Braten essen."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 11,
+            "IN": 14,
+            "CH": 10,
+            "FF": 10,
+            "GE": 10,
+            "KO": 11,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 20,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gassenwissen",
+                "FW": 13
+            },
+            {
+                "name": "Sich Verstecken",
+                "FW": 10
+            },
+            {
+                "name": "Betteln",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": "Hier steht eine Zeile.\nHier steht eine weitere Zeile."
+}

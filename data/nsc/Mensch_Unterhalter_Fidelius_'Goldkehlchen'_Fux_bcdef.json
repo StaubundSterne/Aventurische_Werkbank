@@ -1,0 +1,112 @@
+{
+    "id": "l2m3n4o5-p6q7-8901-2345-678901abcdef",
+    "source": "4200 Svelltland.md",
+    "tags": [
+        "Barde",
+        "Gaukler",
+        "Tiefhusen",
+        "Unterhaltung"
+    ],
+    "general": {
+        "name": "Fidelius 'Goldkehlchen' Fux",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Nachtigall",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Unterhalter",
+        "specification": "Wandernder Barde und Geschichtenerzähler",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Tiefhusen",
+        "former-locations": [
+            "Gareth",
+            "Punin"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin"
+        ],
+        "injection-points": [
+            "Kennt ein Spottlied über einen lokalen Adligen, das Şahin nützlich sein könnte.",
+            "Sucht einen Partner für einen kleinen 'Auftritt' (Ablenkung), um an Essen oder Geld zu kommen."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 65,
+        "hair": "Blond, lockig, schulterlang",
+        "skin": "Hell",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Federhut",
+            "top": "Buntes Wams (etwas verschlissen)",
+            "trousers": "Enge Hosen",
+            "footwear": "Schnabelschuhe",
+            "jewellery": "Ein Ohrring",
+            "things": "Laute, Liederbuch",
+            "weapons": "Ein versteckter Dolch"
+        },
+        "distinguishing_features": "Hat immer ein Lächeln auf den Lippen."
+    },
+    "personality": {
+        "traits": [
+            "Charismatisch",
+            "Eitel",
+            "Lebenslustig",
+            "Feige",
+            "Kreativ"
+        ],
+        "actual-mood": [
+            "Optimistisch"
+        ],
+        "family-background": "Sohn eines Schneiders. Wollte nicht das Handwerk des Vaters erlernen und lief davon.",
+        "motivation": "Will berühmt werden und in den besten Häusern auftreten (und gut essen)."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 11,
+            "IN": 13,
+            "CH": 15,
+            "FF": 14,
+            "GE": 12,
+            "KO": 10,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 25,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Musizieren",
+                "FW": 13
+            },
+            {
+                "name": "Singen",
+                "FW": 12
+            },
+            {
+                "name": "Betören",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

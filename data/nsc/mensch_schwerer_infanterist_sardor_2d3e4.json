@@ -1,0 +1,99 @@
+{
+    "id": "a93f2c44-7731-4b1a-8c2b-9182a1c2d3e4",
+    "source": "Aventurische Namen, Wiki Aventurica (Mhanadistan/Söldner)",
+    "tags": [],
+    "general": {
+        "name": "Sardor",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Mhanadistan (tulamidisch)",
+        "species": "Mensch",
+        "soul-animal": "Bär (ruhig, aber bei Angriff verheerend)",
+        "social-state": "Unfrei (ehemaliger Galeerensklave)"
+    },
+    "profession": {
+        "category": "Schwerer Infanterist",
+        "specification": "Der 'Hammer' der Gruppe. Ein Mann von gewaltiger Statur, der den Zweihänder führt. Er spricht wenig, aber seine Taten auf dem Schlachtfeld sind legendär unter den Donnerern.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Fasar",
+            "Khunchom",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Sardor beobachtet Josts Kraft beim Schmieden und nickt ihm anerkennend zu – ein seltenes Zeichen von Respekt."
+        ]
+    },
+    "appearance": {
+        "size": 195,
+        "weight": 110,
+        "hair": "Glatze, schwarzer Vollbart",
+        "skin": "Dunkel, gezeichnet von Peitschennarben am Rücken",
+        "eyes": "Tiefschwarz",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schweres Kettenhemd, lederne Armschienen",
+            "trousers": "Weite Pluderhose aus festem Stoff",
+            "footwear": "Schwere Stiefel",
+            "jewellery": "Ein zerbrochenes Sklavenarmband aus Eisen (als Mahnung)",
+            "things": "Ein kleiner Gebetsteppich, ein Beutel mit scharfen Gewürzen",
+            "weapons": "Zweihänder ('Wolkenspalter')"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Stoisch",
+            "Ehrenhaft",
+            "Geduldig",
+            "Grimmig",
+            "Loyal"
+        ],
+        "actual-mood": [
+            "Ruhig"
+        ],
+        "family-background": "Verkaufte sich als Kind in die Sklaverei, um seine Mutter zu retten. Hat keinen Kontakt mehr zu seiner Familie in Fasar.",
+        "motivation": "Freiheit durch Stärke bewahren und Alara treu dienen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 12,
+            "CH": 10,
+            "FF": 9,
+            "GE": 11,
+            "KO": 16,
+            "KK": 17
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihänder",
+                "FW": 15
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 14
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 15
+            }
+        ]
+    },
+    "session-notes": ""
+}

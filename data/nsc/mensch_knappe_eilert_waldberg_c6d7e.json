@@ -1,0 +1,102 @@
+{
+    "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "source": "Aventurische Namen (Waldberg), 4000 Bibliotheken (Donnerbach)",
+    "tags": [],
+    "general": {
+        "name": "Eilert Waldberg",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Junghirsch (stürmisch und lernbegierig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Knappe",
+        "specification": "Knappe im Dienst der Stadtgarde von Donnerbach. Er hofft auf eine baldige Ritterweihe und verbringt jede freie Minute mit dem Studium von Fechtbüchern.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Elbenfeld"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost"
+        ],
+        "injection-points": [
+            "Eilert eifert Jost nach und bittet ihn oft um Rat bezüglich der Instandhaltung seiner Übungswaffen.",
+            "Die beiden haben oft auf dem Exerzierplatz gemeinsam trainiert."
+        ]
+    },
+    "appearance": {
+        "size": 179,
+        "weight": 70,
+        "hair": "Kurzes, strohblondes Haar",
+        "skin": "Rein, leicht gebräunt",
+        "eyes": "Hellgrün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Wappenrock der Stadtgarde (Grün-Weiß) über einem Gambeson",
+            "trousers": "Dunkelbraune Tuchhose",
+            "footwear": "Leichte Stiefel aus Wildleder",
+            "jewellery": "Ein Glücksbringer aus Elfenhaar am Handgelenk",
+            "things": "Ein Notizbuch mit Skizzen von Kampftechniken, eine Schreibfeder",
+            "weapons": "Übungsschwert aus Holz; scharfer Dolch am Gürtel"
+        }
+    },
+    "personality": {
+        "traits": [
+            "Idealistisch",
+            "Ehrgeizig",
+            "Höflich",
+            "Etwas naiv",
+            "Wagemutig"
+        ],
+        "actual-mood": [
+            "Aufgeregt"
+        ],
+        "family-background": "Vater Elmar, Büchsenmacher; Mutter Linne, Näherin; Schwester Alrike, Novizin im Peraine-Tempel.",
+        "motivation": "Sich als würdiger Verteidiger Donnerbachs zu beweisen und eines Tages in den Adelsstand erhoben zu werden."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 13,
+            "FF": 12,
+            "GE": 14,
+            "KO": 12,
+            "KK": 13
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 9
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Etikette",
+                "FW": 7
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

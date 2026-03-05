@@ -1,0 +1,73 @@
+{
+    "id": "e1d0a1-onder-elgor-959",
+    "source": "4201 Das Orkland, S. 48; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [],
+    "general": {
+        "name": "Elgor Onder",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 959,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Hausschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Pensionär / Wirt",
+        "specification": "Ehemaliger Brückenwächter und Mitbegründer der Pension; kümmert sich um Reparaturen und schwere Arbeiten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Elgor bittet Jost um Hilfe beim Verrücken einer schweren Eichentruhe im Flur und erzählt dabei von der 'guten alten Zeit' vor der Brückensperrung.",
+            "Er warnt Fredegis vor losen Dielen im Obergeschoss und fachsimpelt mit ihm über die Stabilität der alten Brückenpfeiler."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 88,
+        "hair": "Grau meliert, kurz geschnitten, ein buschiger Schnurrbart.",
+        "skin": "Wettergegerbt und rissig.",
+        "eyes": "Gutmutige, wässrige blaue Augen.",
+        "outfit": {
+            "headgear": "Eine abgewetzte Wollmütze.",
+            "top": "Ein grobes Leinenhemd und ein Lederwams.",
+            "trousers": "Robuste braune Tuchhose.",
+            "footwear": "Alte, aber gepflegte Lederstiefel.",
+            "jewellery": "Ein Ingerimm-Symbol aus Eisen am Lederband.",
+            "things": "Ein Bund schwerer Schlüssel; ein kleiner Hammer im Gürtel.",
+            "weapons": "Ein schwerer Wanderstab."
+        },
+        "distinguishing_features": "Humpelt leicht mit dem linken Bein; verströmt einen Geruch nach Sägespänen und Tabak."
+    },
+    "personality": {
+        "traits": [
+            "Gutmütig",
+            "Redselig",
+            "Handwerklich geschickt",
+            "Konservativ",
+            "Ordnungsliebend"
+        ],
+        "actual-mood": [
+            "Zufrieden"
+        ],
+        "family-background": "Verheiratet mit Thalia; Kinder Traviadane und Xalver. Stammt aus einer Familie von Brückenzöllnern.",
+        "motivation": "Will das Haus für seine Kinder instand halten und sorgt dafür, dass die Gäste sich sicher fühlen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    }
+}

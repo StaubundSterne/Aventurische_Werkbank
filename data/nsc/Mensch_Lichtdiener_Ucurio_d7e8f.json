@@ -1,0 +1,93 @@
+{
+    "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+    "source": "NSC aus Yrramis.csv, 4300 Aera des goldenen Kaisers",
+    "tags": [
+        "Praios",
+        "Adel"
+    ],
+    "general": {
+        "name": "Ucurio",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 990,
+        "alive": true,
+        "culture": "Garetien",
+        "species": "Mensch",
+        "soul-animal": "Bussard",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Lichtdiener",
+        "specification": "Novize des Praios; zuständig für die rituelle Entzündung der Lampen bei Sonnenuntergang.",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Yrramis",
+        "former-locations": [
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelina Violanta",
+            "Jost"
+        ],
+        "injection-points": [
+            "Ucurio erkennt in Aurelina eine Standesgenossin und bittet sie um eine Spende für teureres Lampenöl, um das Licht des Praios heller strahlen zu lassen.",
+            "Er beobachtet Jost mit tiefem Misstrauen und glaubt, in seinem Schatten ein 'Zeichen der Unordnung' zu sehen."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 64,
+        "hair": "Kurz geschnitten, hellblond.",
+        "skin": "Sehr hell und empfindlich.",
+        "eyes": "Goldbraun.",
+        "outfit": {
+            "headgear": "Schmales goldenes Stirnband",
+            "top": "Weiße Novizenrobe mit goldenem Saum",
+            "trousers": "Weiße Stoffhose",
+            "footwear": "Goldfarbene Sandalen",
+            "jewellery": "Goldenes Amulett in Form einer Sonnenscheibe",
+            "things": "Ölkanne, langer Dochtanzünder",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Bewegt sich mit einer fast schon unnatürlichen, rituellen Langsamkeit."
+    },
+    "personality": {
+        "traits": [
+            "Ehrfürchtig",
+            "Rituell",
+            "Gehorsam",
+            "Bescheiden",
+            "Konzentriert"
+        ],
+        "actual-mood": [
+            "Andächtig"
+        ],
+        "family-background": "Stammt aus einem verarmten garetischen Adelsgeschlecht; wurde zur Sühne für die Sünden seines Vaters in den Tempeldienst gegeben.",
+        "motivation": "Durch die perfekte Ausführung ritueller Handlungen die göttliche Ordnung in der Grenzmark aufrechtzuerhalten."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich"
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Liturgiekunde",
+                "FW": 9
+            },
+            {
+                "name": "Etikette",
+                "FW": 11
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,120 @@
+{
+    "id": "f8e7d6c5-b4a3-2109-8765-43210fedcba9",
+    "source": "4301 Hallen arkaner Macht; wiki-aventurica.de/wiki/Elcarna_Erillion_von_Hohenstein; [4201] Das Orkland (Werte 993 BF); [4300] Aera des goldenen Kaisers",
+    "tags": [],
+    "general": {
+        "name": "Elcarna Erillion von Hohenstein",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 956,
+        "alive": true,
+        "culture": "Weiden / Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Weiße Katze",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Spektabilität der Akademie der Verformungen (seit 992 BF); Erzmagus (seit 988 BF); hochangesehener Heilmagier und Vermittler.",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Weiden (Heimat)",
+            "Norburg (Lehrzeit)",
+            "Gerasim (Lehrzeit)"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell"
+        ],
+        "injection-points": "Elcarna spricht immer wieder mit einer seiner sechs weißen Katzen."
+    },
+    "appearance": {
+        "size": 183,
+        "weight": 70,
+        "hair": "Lockiges, langes Haar, 1009 BF von dunklem Blond in Grau übergehend; offen getragen.",
+        "skin": "Aristokratisch bleich.",
+        "eyes": "Gütige, graugrüne Augen.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichte, aber hochwertige graue Magierrobe.",
+            "trousers": "Dunkle Stoffhose.",
+            "footwear": "Bequeme Lederschuhe.",
+            "jewellery": "Der berühmte 'Weiße Stein' an einer silbernen Kette; Siegelring des Hauses Hohenstein.",
+            "things": "Immer von mehreren seiner sechs weißen Katzen umgeben.",
+            "weapons": "Ein meisterhafter Kampfstab (1W+1 TP)."
+        },
+        "distinguishing_features": "Bartlos (im Jahr 1009 BF); wirkt trotz seines Alters eigentümlich jung im Gesicht; hagerer Körperbau."
+    },
+    "personality": {
+        "traits": [
+            "Hilfsbereit",
+            "Selbstbeherrscht",
+            "Tierlieb",
+            "Tolerant",
+            "Bescheiden"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Spross eines Weidener Adelsgeschlechts; verheiratet mit der Hexe Azila aus Punin; Vater des Metamagiers Zordan.",
+        "motivation": "Linderung von Not und Krankheit; Bekämpfung von Aberglauben; Vermittlung zwischen den magischen Traditionen."
+    },
+    "stats": {
+        "experience-level": "Brillant",
+        "attributes": {
+            "MU": 9,
+            "KL": 17,
+            "IN": 15,
+            "CH": 17,
+            "FF": 12,
+            "GE": 13,
+            "KO": 12,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 39,
+            "AsP": 73
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 16
+            },
+            {
+                "name": "Heilkunde Krankheiten",
+                "FW": 18
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 17
+            },
+            {
+                "name": "Sagen & Legenden",
+                "FW": 15
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 18
+            },
+            {
+                "name": "Klarum Purum",
+                "FW": 16
+            },
+            {
+                "name": "Adlerschwinge Wolfsgestalt",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": "Elcarna genießt 1009 BF höchstes Ansehen in Lowangen, besonders seit seinem Einsatz gegen die Zorgan-Pocken 988 BF."
+}
