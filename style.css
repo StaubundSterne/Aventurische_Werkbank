@@ -159,6 +159,11 @@ header.context.collapsed {
     display: none;
 }
 
+.stream-column.collapsed .magnet-stream, 
+.stream-column.collapsed h3 {
+    display: none;
+}
+
 .toggle-btn {
     position: absolute;
     top: 10px;
@@ -179,6 +184,11 @@ header.context.collapsed {
 #toggle-ingame { right: 8px; }  /* Links: Pfeil sitzt rechts in der Spalte */
 #toggle-resource { left: 8px; } /* Rechts: Pfeil sitzt links in der Spalte */
 
+.stream-column.collapsed .toggle-btn {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+}
 
 
 /* --- GEMEINSAME REGELN FÜR ALLE KARTEN --- */

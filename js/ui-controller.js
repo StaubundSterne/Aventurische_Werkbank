@@ -2,6 +2,9 @@
  * UI-Controller für die Aventurische Werkbank 2.0
  */
 
+// --- IMPORTS AUS DER MAGNET-ENGINE.JS ---
+import { berechneMagnetismus } from './magnet-engine.js';
+
 // --- INITIALISIERUNG (Die Eröffnungszeremonie) ---
 function initUI() {
     console.log("Die Werkbank wird vorbereitet...");
@@ -41,7 +44,7 @@ function initUI() {
 
     // 4. ZONEN B UND D EIN- UND AUSKLAPPBAR
 
-    etupCollapsible('aside-ingame', 'toggle-ingame', '&#9664;', '&#9654;');
+    setupCollapsible('aside-ingame-information', 'toggle-ingame-information', '&#9664;', '&#9654;');
     setupCollapsible('aside-resource', 'toggle-resource', '&#9654;', '&#9664;');
 
     function setupCollapsible(asideId, btnId, openIcon, closedIcon) {
@@ -50,7 +53,7 @@ function initUI() {
 
         if (btn && aside) {
             btn.addEventListener('click', (e) => {
-                e.stopPropagation();
+                e.stopPropagation(); // Verhindert, dass der Klick das aside-Event triggert
                 const isCollapsed = aside.classList.toggle('collapsed');
                 btn.innerHTML = isCollapsed ? closedIcon : openIcon;
             });
@@ -68,13 +71,12 @@ function initUI() {
 
 // --- DATEN-LADEN: KAMPAGNE, EPISODEN, RECAP, INGAME-INFORMATION, NSC, SCHAUPLÄTZE, GEGENSTÄNDE ---
 
-
-// --- IMPORTS AUS DER MAGNET-ENGINE.JS ---
-import { berechneMagnetismus } from './magnet-engine.js';
-
-
 // --- HAUPTFUNKTION: RANKING & SORTIERUNG ---
 
+function aktualisiereRanking() {
+    // Vorerst leer, damit es keine Fehler wirft
+    console.log("Ranking-Update getriggert");
+}
 
 // Dieser Befehl startet alles, sobald die Seite im Browser geladen ist
 document.addEventListener('DOMContentLoaded', initUI);
