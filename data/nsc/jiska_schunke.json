@@ -1,0 +1,107 @@
+{
+    "id": "a5d6e7f8-b9c0-4d1e-2f3a-4b5c6d7e8f90",
+    "source": "wiki-aventurica; [4200] Am wilden Svellt; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Jiska Schunke",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Norbarden",
+        "species": "Mensch",
+        "soul-animal": "Eichelhäher (wachsam, bunt, lautstark)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Wanderhändlerin einer kleinen Sippe; Expertin für Felle und seltene Kräuter",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Festum",
+            "Riva",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Jiska bietet Adarell eine kleine Phiole mit 'echtem' Einbeerensaft an und zwinkert ihm zu, dass die Akademie 'zu viel Wasser' in ihre Mischungen gibt.",
+            "Sie erkennt in Şahin einen weitgereisten Mann und bietet ihm einen Tauschhandel gegen Neuigkeiten aus dem Süden an."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Rotschwarz, in unzähligen Zöpfen geflochten, die mit bunten Bändern und Bronzeglöckchen verziert sind",
+        "skin": "Dunkel gebräunt, mit Lachfalten um die Augen",
+        "eyes": "Dunkelbraun, fast schwarz",
+        "outfit": {
+            "headgear": "Ein buntes Kopftuch",
+            "top": "Mehrlagige, farbenfrohe Röcke und eine bestickte Weste über einer weiten Bluse",
+            "trousers": "Keine",
+            "footwear": "Weiche Stiefel aus Rentierleder",
+            "jewellery": "Zahlreiche Ketten aus Bernstein und Glasperlen; ein bronzener Nasenring",
+            "things": "Ein kleiner Beutel mit Kräutern; ein Tragegestell für ihre Waren (jetzt abgelegt)",
+            "weapons": "Ein krummer Dolch im Gürtel"
+        },
+        "distinguishing_features": "Ein leises Klingeln bei jeder ihrer Bewegungen durch die vielen Glöckchen."
+    },
+    "personality": {
+        "traits": [
+            "Schlagfertig",
+            "Geschäftstüchtig",
+            "Lebhaft",
+            "Skeptisch gegenüber Sesshaften",
+            "Großzügig (bei Freunden)"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Tochter von Matwei und Dunja; ihre Sippe zieht zwischen den Blutzinnen und Lowangen hin und her. Sie hat fünf Geschwister.",
+        "motivation": "Ihre Waren zu Bestpreisen verkaufen und Geschichten für das nächste Sippentreffen sammeln."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 14,
+            "CH": 15,
+            "FF": 13,
+            "GE": 12,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 13
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 12
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

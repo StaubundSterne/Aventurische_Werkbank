@@ -1,0 +1,100 @@
+{
+    "id": "c9d8e7f6-a5b4-4c3d-2e1f-0g9h8i7j6k5l",
+    "source": "[4200] Svelltland; [4202] Reich des roten Mondes",
+    "tags": [],
+    "general": {
+        "name": "Olgard Erkenstein",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Wildsau",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Viehhändlerin aus dem Umland von Lowangen; spezialisiert auf das zähe Lowanger Bergvieh.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": [
+            "Fredegis bemerkt das schwere, einschneidige Messer an ihrem Gürtel, das deutliche Gebrauchsspuren aufweist.",
+            "Jost hört ihr lautes Lachen und den derben Dialekt, der ihn an die Grenzdörfer zum Orkland erinnert."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 82,
+        "hair": "Dunkelbraun, zu einem dicken Zopf geflochten.",
+        "skin": "Grobporig und wettergebräunt.",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Ein breitkrempiger Filzhut.",
+            "top": "Wetterfeste Weste aus Schafsfell über einem karierten Hemd.",
+            "trousers": "Dicke Lederhose.",
+            "footwear": "Schwere Bundschuhe.",
+            "jewellery": "Ein klobiger Silberring am Daumen.",
+            "things": "Ein dicker Geldbeutel am Gürtel; ein kleiner hölzerner Flachmann.",
+            "weapons": "Ein langes Jagdmesser."
+        },
+        "distinguishing_features": "Starker Geruch nach Stall und Tabak; eine Narbe über dem rechten Handrücken."
+    },
+    "personality": {
+        "traits": [
+            "Direkt",
+            "Geschäftstüchtig",
+            "Derb",
+            "Loyal",
+            "Skeptisch"
+        ],
+        "actual-mood": [
+            "Zufrieden"
+        ],
+        "family-background": "Wuchs auf einem Gehöft nördlich von Lowangen auf; hat drei Brüder, die alle als Stadtwachen dienen.",
+        "motivation": "Hat heute ein gutes Geschäft mit Schafen gemacht; will den Abend bei Bier und Unterhaltung genießen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 11,
+            "GE": 10,
+            "KO": 14,
+            "KK": 14
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 12
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 11
+            },
+            {
+                "name": "Zechen",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

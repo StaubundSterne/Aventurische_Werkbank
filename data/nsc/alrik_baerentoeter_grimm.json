@@ -1,0 +1,111 @@
+{
+    "id": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+    "source": "wiki-aventurica; [4201] Das Orkland; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Alrik 'Bärentöter' Grimm",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 987,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Ochse (stark, ausdauernd, manchmal schwerfällig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Novize (Adept); Gehilfe von Salix Horrigan bei der physischen Inspektion von Nutztieren",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Knotterborn"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": [
+            "Alrik bittet Fredegis um Hilfe, um ein besonders nervöses Maultier festzuhalten, während er dessen Hufe reinigt.",
+            "Er fragt Jost nach der besten Mischung für Wagenschmiere, um sie mit seinen 'magisch verbesserten' Ölen zu vergleichen."
+        ]
+    },
+    "appearance": {
+        "size": 188,
+        "weight": 92,
+        "hair": "Kurz geschorenes, blondes Haar",
+        "skin": "Grob, mit vielen kleinen Kratzern von der Arbeit mit Tieren",
+        "eyes": "Gutgläubige, graue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ärmellose graue Robe (um seine Muskeln nicht einzuengen) über einem Leinenhemd",
+            "trousers": "Grobe Wollhose",
+            "footwear": "Feste Arbeitsstiefel mit Stahlkappen",
+            "jewellery": "Ein kleiner Anhänger aus Bärenzahn an einer Lederschnur",
+            "things": "Ein Hufeisen-Reiniger; eine Bürste; ein kleiner Sack mit Hafer",
+            "weapons": "Ein langer Wanderstab"
+        },
+        "distinguishing_features": "Seine magische Robe wirkt an ihm aufgrund seiner Statur fast wie eine Zwangsjacke."
+    },
+    "personality": {
+        "traits": [
+            "Gutherzig",
+            "Kräftig",
+            "Etwas langsam im Denken",
+            "Tierlieb",
+            "Loyal"
+        ],
+        "actual-mood": [
+            "Eifrig"
+        ],
+        "family-background": "Sohn eines Köhlers aus dem Umland von Lowangen. Er erhielt seinen Spitznamen, weil er als Kind ein Bärenjunges aus einer Falle befreite.",
+        "motivation": "Den Tieren helfen und beweisen, dass Magie auch für 'einfache Leute' nützlich ist."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 10,
+            "GE": 11,
+            "KO": 15,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 25,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Tierkunde",
+                "FW": 11
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 12
+            }
+        ],
+        "spells": [
+            {
+                "name": "Bärenruhe",
+                "FW": 6
+            },
+            {
+                "name": "Armatrutz",
+                "FW": 4
+            }
+        ]
+    },
+    "session-notes": ""
+}

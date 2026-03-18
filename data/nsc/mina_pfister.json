@@ -1,0 +1,96 @@
+{
+    "id": "f4a5b6c7-e8d9-4a01-c234-567890abcdef",
+    "source": "[4200] Svelltland; [4202] Reich des roten Mondes",
+    "tags": [],
+    "general": {
+        "name": "Mina Pfister",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 990,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Dienstbotin",
+        "specification": "Küchenhilfe und Laufmädchen; arbeitet eigentlich in einer nahegelegenen Gerberei, schleicht sich aber oft in die 'Bunte Flucht' für die Vorstellungen.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Jost"
+        ],
+        "injection-points": [
+            "Aurelevina bemerkt Minas gerötete Augen und den Husten, der vom scharfen Dampf der Gerberlohe herrührt.",
+            "Jost sieht, wie Mina fasziniert die bunten Lichter der Aufführung beobachtet und dabei völlig vergisst, an ihrem dünnen Tee zu nippen."
+        ]
+    },
+    "appearance": {
+        "size": 155,
+        "weight": 48,
+        "hair": "Dunkelblond, ungepflegt, zu zwei wilden Zöpfen gebunden.",
+        "skin": "Blass, mit Rußflecken im Gesicht.",
+        "eyes": "Hellbraun",
+        "outfit": {
+            "headgear": "Eine einfache, schmutzige Haube.",
+            "top": "Ein grobes Untergewand, darüber eine geflickte Schürze.",
+            "trousers": "Keine (langes Kleid).",
+            "footwear": "Holzpantinen, die bei jeder Bewegung klappern.",
+            "jewellery": "Ein geflochtenes Band aus Schafswolle am Handgelenk.",
+            "things": "Ein kleiner Korb mit ein paar welken Äpfeln.",
+            "weapons": "Keine."
+        },
+        "distinguishing_features": "Riecht streng nach saurer Beize und altem Leder; hat auffällig schmale, geschmeidige Finger."
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Ängstlich",
+            "Träumerisch",
+            "Flink",
+            "Bescheiden"
+        ],
+        "actual-mood": [
+            "Verzaubert"
+        ],
+        "family-background": "Wuchs als drittes von sechs Kindern in den Elendsvierteln Lowangens auf. Ihr Vater ist Tagelöhner, ihre Mutter Wäscherin.",
+        "motivation": "Sucht in den farbenfrohen Aufführungen der 'Bunten Flucht' eine Flucht aus ihrem grauen und harten Alltag."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 11,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 13,
+            "KO": 9,
+            "KK": 8
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sich Verstecken",
+                "FW": 9
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,102 @@
+{
+    "id": "e3f4a5b6-d7c8-4901-b234-567890abcdef",
+    "source": "[4200] Svelltland; [4300] Aera des goldenen Kaisers",
+    "tags": [],
+    "general": {
+        "name": "Berengar von Tannhaus",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Mittelländisch (Garetien)",
+        "species": "Mensch",
+        "soul-animal": "Jagdhund",
+        "social-state": "Adel (verarmt)"
+    },
+    "profession": {
+        "category": "Söldner / Gardist",
+        "specification": "Ehemaliger Offizier der garetischen Kavallerie; verdingt sich nun als privater Sicherheitsberater für Handelskarawanen.",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Weiden",
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Adarell erkennt Berengars adelige Herkunft an der aufrechten Haltung und der Art, wie er sein Besteck führt, trotz der abgewetzten Kleidung.",
+            "Fredegis bemerkt, dass Berengars Schwertgurt so positioniert ist, dass er die Waffe auch im Sitzen in Bruchteilen einer Sekunde ziehen könnte."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 76,
+        "hair": "Kurz geschnittenes, graues Haar; ein akkurat gestutzter Schnurrbart.",
+        "skin": "Blass, mit einer markanten Narbe, die vom linken Ohr bis zum Kiefer verläuft.",
+        "eyes": "Kaltes Grau",
+        "outfit": {
+            "headgear": "Ein schlichter Eisenhut, der momentan am Stuhl hängt.",
+            "top": "Ein gepflegter, aber mehrfach geflickter Waffenrock in verblichenem Blau und Weiß.",
+            "trousers": "Dunkelbraune Reiterhose aus festem Stoff.",
+            "footwear": "Hohe Reiterstiefel mit silbernen Sporen.",
+            "jewellery": "Ein abgenutzter Siegelring am kleinen Finger.",
+            "things": "Ein lederner Handschuh; eine kleine Karte des Svelltlands.",
+            "weapons": "Ein garetisches Langschwert in einer schlichten Stahlscheide."
+        },
+        "distinguishing_features": "Hinkt leicht mit dem rechten Bein; hat die Angewohnheit, ständig die Umgebung der Tür im Auge zu behalten."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Melancholisch",
+            "Diszipliniert",
+            "Vorsichtig",
+            "Zynisch"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Stammt aus dem garetischen Niederadel. Sein Familiengut wurde während kriegerischer Auseinandersetzungen zerstört. Er ist der letzte seines Namens.",
+        "motivation": "Wartet auf die Ankunft einer Karawane aus Gashok, die er sicher durch das orkverseuchte Umland nach Riva geleiten soll."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 12,
+            "IN": 14,
+            "CH": 10,
+            "FF": 11,
+            "GE": 12,
+            "KO": 14,
+            "KK": 14
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 14
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 11
+            },
+            {
+                "name": "Etikette",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,107 @@
+{
+    "id": "a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d",
+    "source": "wiki-aventurica; [4301] Hallen arkaner Macht; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Selinde von Gashok",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 989,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen (flink, sammelnd, nervös)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Novizin (Adeptin); Assistentin von Timshal Jeres bei der 'Sprechenden Bibliothek'",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Selinde stolpert fast über Hesindian, während sie schwere Folianten für die Lesung heranschleppt, und bittet ihn um Hilfe beim Stapeln.",
+            "Sie versucht Adarell in ein Gespräch über elfische Lyrik zu verwickeln, da sie gehört hat, dass das 'Archiv der Reisenden' Lücken in diesem Bereich hat."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 52,
+        "hair": "Dunkelbraun, zu zwei festen Zöpfen geflochten, die mit grünen Bändern fixiert sind",
+        "skin": "Blass, mit Sommersprossen auf der Nase",
+        "eyes": "Wache, haselnussbraune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Graue Novizenrobe mit einem grünen Gürtelband (Symbol der Hesinde-Kooperation)",
+            "trousers": "Keine",
+            "footwear": "Einfache Ledersandalen",
+            "jewellery": "Eine kleine silberne Schlange an einer Halskette",
+            "things": "Ein Stapel Pergamentrollen; ein Kohlestift",
+            "weapons": "Ein kleiner Dolch zur Federkielbearbeitung"
+        },
+        "distinguishing_features": "Hat fast immer einen Tintenfleck am rechten Mittelfinger."
+    },
+    "personality": {
+        "traits": [
+            "Eifrig",
+            "Belesen",
+            "Etwas tollpatschig",
+            "Höflich",
+            "Organisiert"
+        ],
+        "actual-mood": [
+            "Gestresst"
+        ],
+        "family-background": "Tochter eines Buchbinders aus Gashok; ihre Familie ist stolz darauf, eine Magierin in den eigenen Reihen zu haben.",
+        "motivation": "Sicherstellen, dass kein Buch beschädigt wird und die Lesung ein voller Erfolg wird."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 15,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 24,
+            "AsP": 35,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 8
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Adlerschwinge",
+                "FW": 3
+            }
+        ]
+    },
+    "session-notes": ""
+}

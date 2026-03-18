@@ -1,0 +1,101 @@
+{
+    "id": "c1f2e3d4-b5a6-4789-9012-34567890abcd",
+    "source": "[4200] Svelltland; [4201] Das Orkland; Regionalbeschreibung Lowangen",
+    "tags": [],
+    "general": {
+        "name": "Hjalmar Knorrson",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 971,
+        "alive": true,
+        "culture": "Thorwaler (Svellttaler Zweig)",
+        "species": "Mensch",
+        "soul-animal": "Walross",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Seiler und Takelmacher; spezialisiert auf schwere Hanfseile für die Lastkähne auf dem Svellt.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Enqui",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Jost bemerkt die thorwalschen Runentätowierungen auf Hjalmars massiven Unterarmen, die von den Taten seiner Vorfahren im Svelltland künden.",
+            "Fredegis erkennt in Hjalmars prüfendem Blick auf die Dachbalken des Hotels einen Mann, der sich mit Statik und Materialspannungen auskennt."
+        ]
+    },
+    "appearance": {
+        "size": 188,
+        "weight": 105,
+        "hair": "Aschblond, zu einem dicken, kurzen Zopf geflochten; struppiger Vollbart mit grauen Strähnen.",
+        "skin": "Grobporig, von Wind und Wetter gegerbt.",
+        "eyes": "Stahlblau",
+        "outfit": {
+            "headgear": "Keine.",
+            "top": "Ein ärmelloses Hemd aus grobem, braunem Leinen, darüber eine speckige Lederweste.",
+            "trousers": "Weite Segeltuchhose, die mit Teerflecken übersät ist.",
+            "footwear": "Schwere Lederstiefel, deren Kappen mit Metall verstärkt sind.",
+            "jewellery": "Ein massiver silberner Armreif mit Fischmotiven.",
+            "things": "Ein kleiner Bund mit Hanfproben am Gürtel.",
+            "weapons": "Ein breites Arbeitsmesser (Skrama)."
+        },
+        "distinguishing_features": "Riecht stark nach altem Teer und Salzwasser; hat eine donnernde Lache, die das Geschirr am Tisch zum Zittern bringt."
+    },
+    "personality": {
+        "traits": [
+            "Leutselig",
+            "Trinkfest",
+            "Direkt",
+            "Aberglaubisch",
+            "Stolz"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Sohn von Knorr Hjalmarson, der als einer der ersten thorwalschen Siedler eine Seilerei in Lowangen eröffnete. Seine Mutter Swantje stammt aus einer lokalen Fischerfamilie.",
+        "motivation": "Genießt seinen Feierabend nach einem langen Tag am Hafen und lässt sich von der Musik der Gaukler berieseln."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 13,
+            "GE": 10,
+            "KO": 15,
+            "KK": 16
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Seiler",
+                "FW": 14
+            },
+            {
+                "name": "Zechen",
+                "FW": 12
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,116 @@
+{
+    "id": "e0b5f1a3-8c4d-4b9e-9a72-6d1f9e8a7c21",
+    "source": "wiki-aventurica; [4200] Am wilden Svellt; [4201] Das Orkland",
+    "tags": [],
+    "general": {
+        "name": "Ardagher von Twergenfels",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 962,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Einsamer Wolf (beobachtend, warnend, isoliert)",
+        "social-state": "Klerus"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Hesindegeweihter der Halle der Wissenden Herrin; Archivar und Mahner vor der orkischen Bedrohung",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Twergenfels",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Ardagher erkennt in Şahins aufmerksamer Haltung einen potenziellen Verbündeten und drückt ihm eine Abschrift alter Grenzwachtberichte in die Hand.",
+            "Er korrigiert Aurelevina schroff, als sie die historische Beständigkeit der Lowanger Mauern lobt, und verweist auf die 'unnatürliche Stille' im Norden."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 68,
+        "hair": "Dünnes, angegrautes Haar, streng zurückgekämmt",
+        "skin": "Blass, fast pergamentartig mit tiefen Sorgenfalten auf der Stirn",
+        "eyes": "Stechend helle, hellgraue Augen",
+        "outfit": {
+            "headgear": "Kapuze der Geweihtenrobe, meist tief ins Gesicht gezogen",
+            "top": "Schwere, dunkelgrüne Robe aus derbem Loden mit silbernen Stickereien am Saum",
+            "trousers": "Einfache Tuchhose",
+            "footwear": "Abgetretene Lederstiefel, die für lange Archivgänge geeignet sind",
+            "jewellery": "Ein schweres, silbernes Hesinde-Amulett (Schlange), das er oft nervös umklammert",
+            "things": "Ein Bündel vergilbter Karten des Svelltlands; eine Schreibfeder hinter dem Ohr",
+            "weapons": "Ein langer Wanderstab aus Steineiche"
+        },
+        "distinguishing_features": "Ein nervöses Zucken des linken Augenlids, wenn er über Orks spricht."
+    },
+    "personality": {
+        "traits": [
+            "Pessimistisch",
+            "Pflichtbewusst",
+            "Unbequem",
+            "Hochgebildet",
+            "Mahnend"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Sohn von Halman von Twergenfels (Landadel aus Tobrien/Svellttal-Grenzregion); Schwester Perainejane ist Geweihte in Perainefluss.",
+        "motivation": "Den drohenden Untergang des Svellttals durch die geeinten Orksippen verhindern oder zumindest die Menschen wachrütteln."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 16,
+            "IN": 14,
+            "CH": 11,
+            "FF": 12,
+            "GE": 9,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 0,
+            "KaP": 38
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 14
+            },
+            {
+                "name": "Geographie",
+                "FW": 13
+            },
+            {
+                "name": "Sagen und Legenden",
+                "FW": 12
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 8
+            },
+            {
+                "name": "Prophezeiung",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

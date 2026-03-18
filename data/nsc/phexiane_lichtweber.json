@@ -1,0 +1,106 @@
+{
+    "id": "a1b2c3d4-e5f6-4a1b-9c2d-3e4f5a6b7c8d",
+    "source": "[4300] Aera des goldenen Kaisers; [4200] Svelltland; wiki-aventurica.de/wiki/Tsa",
+    "tags": [],
+    "general": {
+        "name": "Phexiane Lichtweber",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Mittelländisch",
+        "species": "Mensch",
+        "soul-animal": "Chamäleon",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gauklerin / Akrobatin",
+        "specification": "Spezialistin für Prismenmagie (weltlich) und Jonglage; sorgt für die atmosphärischen Lichtbrechungen während der Stücke.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Greifenfurt",
+            "Enqui"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Aurelevina erkennt, dass Phexiane ihre Prismen mit derselben Sorgfalt reinigt, wie sie selbst ihre medizinischen Instrumente.",
+            "Adarell bemerkt, wie Phexiane vor dem Auftritt eine kleine Gebetsformel an Tsa flüstert, die sie aus einem abgelegenen Kloster in den Salamandersteinen kennt."
+        ]
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 52,
+        "hair": "Kurz geschoren, mit leuchtend blauer Farbe eingefärbt.",
+        "skin": "Olivfarben, sehr glatt.",
+        "eyes": "Hellblau, fast silbrig.",
+        "outfit": {
+            "headgear": "Ein eng anliegendes Kläppchen aus Seide.",
+            "top": "Ein enges Mieder aus buntem Patchwork-Leder.",
+            "trousers": "Kurze Hosen, darüber ein Rock aus vielen bunten Bändern.",
+            "footwear": "Leichte Gymnastikschuhe aus Stoff.",
+            "jewellery": "Zahlreiche klimpernde Armreifen aus Kupfer.",
+            "things": "Ein Beutel mit geschliffenen Bergkristallen und Spiegeln.",
+            "weapons": "Mehrere Wurfmesser, die sie auch für ihre Jonglage-Nummer nutzt."
+        },
+        "distinguishing_features": "Phexiane riecht ständig nach Zitronenöl, das sie zum Polieren ihrer Linsen verwendet."
+    },
+    "personality": {
+        "traits": [
+            "Heiter",
+            "Verschmitzt",
+            "Geschickt",
+            "Aberglaubisch",
+            "Flexibel"
+        ],
+        "actual-mood": [
+            "Aufgedreht"
+        ],
+        "family-background": "Wuchs in einem Waisenhaus in Gareth auf, nachdem ihre Eltern (beide Taschendiebe) im Kerker von Greifenfurt verstarben. Sie schloss sich der Gruppe an, um dem Gesetz zu entfliehen.",
+        "motivation": "Will eines Tages genug Geld sparen, um eine eigene Schaubühne in Lowangen zu eröffnen, die ausschließlich 'Lichttheater' zeigt."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 14,
+            "CH": 15,
+            "FF": 15,
+            "GE": 16,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Jonglieren",
+                "FW": 13
+            },
+            {
+                "name": "Gaukelei",
+                "FW": 10
+            },
+            {
+                "name": "Taschendiebstahl",
+                "FW": 7
+            },
+            {
+                "name": "Singen",
+                "FW": 6
+            }
+        ]
+    },
+    "session-notes": ""
+}

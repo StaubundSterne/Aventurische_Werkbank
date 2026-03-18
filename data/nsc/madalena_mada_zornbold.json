@@ -1,0 +1,107 @@
+{
+    "id": "c1d2e3f4-a5b6-4c7d-8e9f-0a1b2c3d4e5f",
+    "source": "wiki-aventurica; [4301] Hallen arkaner Macht; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Madalena 'Mada' Zornbold",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 992,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Marder (neugierig, flink, bissig wenn nötig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Novizin (Adeptin); zuständig für die Demonstration der alchemistischen 'Wasserdicht'-Essenzen",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Hilalla"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Mada spritzt Şahin (scheinbar aus Versehen) Wasser auf den Mantel, um ihm die Wirksamkeit ihres abperlenden Öls zu beweisen.",
+            "Sie bittet Aurelevina um einen Tropfen ihres (vermutlich) teuren Parfüms, um es mit einer Basisessenz zu mischen."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 55,
+        "hair": "Kurzes, struppiges rotes Haar",
+        "skin": "Blass, mit einer kleinen Brandnarbe am Kinn",
+        "eyes": "Freche, grüngraue Augen",
+        "outfit": {
+            "headgear": "Ein Stirnband aus Leder",
+            "top": "Novizenrobe, die am Saum deutliche Brandspuren aufweist",
+            "trousers": "Leichte Tuchhose",
+            "footwear": "Ledersandalen",
+            "jewellery": "Ein bronzener Ring mit einem Amethysten",
+            "things": "Mehrere kleine Glasphiolen; eine Pipette; ein Tuch zum Abwischen",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Verströmt ständig eine Mischung aus Schwefel- und Kiefernduft."
+    },
+    "personality": {
+        "traits": [
+            "Vorlaut",
+            "Experimentierfreudig",
+            "Geschickt",
+            "Hitzköpfig",
+            "Neugierig"
+        ],
+        "actual-mood": [
+            "Aufgedreht"
+        ],
+        "family-background": "Wuchs als Waise in einem Kloster in Hilalla auf, bevor ihre Begabung entdeckt wurde.",
+        "motivation": "Eine Tinktur erfinden, die Kleidung nicht nur wasserdicht, sondern auch schmutzabweisend macht."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 14,
+            "CH": 13,
+            "FF": 15,
+            "GE": 12,
+            "KO": 11,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 26,
+            "AsP": 34,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Alchimie",
+                "FW": 10
+            },
+            {
+                "name": "Fingerfertigkeit",
+                "FW": 11
+            }
+        ],
+        "spells": [
+            {
+                "name": "Manifesto",
+                "FW": 5
+            }
+        ]
+    },
+    "session-notes": ""
+}

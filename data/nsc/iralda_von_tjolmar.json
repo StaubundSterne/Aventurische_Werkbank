@@ -1,0 +1,106 @@
+{
+    "id": "78b4d1f2-5a9e-4c8a-9231-f1b0c9a4d3e5",
+    "source": "[4200] Svelltland; [4202] Reich des roten Mondes; wiki-aventurica.de/wiki/Lowangen",
+    "tags": [],
+    "general": {
+        "name": "Iralda von Tjolmar",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Libelle",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gauklerin / Schattenmeisterin",
+        "specification": "Anführerin der Gruppe; spezialisiert auf filigrane Schattenfiguren aus Pergament und Draht sowie die Koordination von Lichteffekten.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tjolmar",
+            "Riva",
+            "Norburg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Hesindian bemerkt, dass Iralda die physikalischen Gesetze der Lichtbrechung nutzt, die er aus alten Folianten der Halle des Quecksilbers in Festum kennt.",
+            "Şahin erkennt in Iraldas fließenden Bewegungen beim Aufbau der Schattenwand Parallelen zu den rituellen Vorbereitungen der Hazaqi-Tänze."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 58,
+        "hair": "Strohblond, zu vielen kleinen Zöpfen geflochten, die mit bunten Wollfäden durchwebt sind.",
+        "skin": "Blass, mit zahlreichen Sommersprossen auf der Nase.",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Ein Stirnband aus geflochtenem Bast mit zwei kleinen Federn einer Elster.",
+            "top": "Ein ärmelloses Wams aus gegerbtem Hirschleder über einer weiten, weißen Leinentunika.",
+            "trousers": "Lockere Pluderhose aus grobem Leinen in dunklem Blau.",
+            "footwear": "Weiche Wildlederstiefel mit lautloser Sohle.",
+            "jewellery": "Ein kleiner Anhänger aus buntem Glas am Lederband (Symbol für Tsa).",
+            "things": "Mehrere Pergamentrollen, eine Schatulle mit Drahtwerkzeugen.",
+            "weapons": "Ein langer Dolch am Gürtel (eher Werkzeug als Waffe)."
+        },
+        "distinguishing_features": "Iralda hat an der rechten Hand einen permanenten Tintenfleck am Mittelfinger vom Zeichnen der Figuren."
+    },
+    "personality": {
+        "traits": [
+            "Ideenreich",
+            "Ungeduldig",
+            "Farbenliebend",
+            "Wagemutig",
+            "Tierfreundlich"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Tochter von Gerwulf, einem ehemaligen Flößer in Tjolmar, und Mutter Belinde, die eine kleine Färberei betrieb. Die Familie verlor ihren Besitz bei einem Überfall räuberischer Goblins.",
+        "motivation": "Möchte durch ihre Kunst die Hoffnung auf Frieden im Svelltland verbreiten und sammelt Spenden für den Tsa-Tempel in Lowangen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 14,
+            "IN": 15,
+            "CH": 14,
+            "FF": 16,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gaukelei",
+                "FW": 12
+            },
+            {
+                "name": "Malen & Zeichnen",
+                "FW": 14
+            },
+            {
+                "name": "Sagen & Legenden",
+                "FW": 10
+            },
+            {
+                "name": "Klettern",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

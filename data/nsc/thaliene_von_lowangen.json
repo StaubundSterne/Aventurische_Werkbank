@@ -1,0 +1,112 @@
+{
+    "id": "f2a1b5c4-9d3e-4f8a-9b72-7e2f0d9b8c32",
+    "source": "wiki-aventurica; [4200] Am wilden Svellt; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Thaliene von Lowangen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Buchfink (geschäftig, ordnungsliebend, flink)",
+        "social-state": "Klerus"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Hesindegeweihte; Kopistin und Expertin für Buchrestaurierung",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Hilalla",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Thaliene bittet Adarell um Hilfe bei der Identifizierung eines seltenen, getrockneten Pflanzenblattes in einem uralten Folianten.",
+            "Sie zeigt Hesindian eine seltene Darstellung zwergischer Baukunst in einem Lowanger Stadtarchiv-Band."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 54,
+        "hair": "Aschblond, in einem praktischen Haarnetz geflochten",
+        "skin": "Glatte Haut, oft mit Tintenflecken an den Fingerspitzen",
+        "eyes": "Freundliche bernsteinfarbene Augen",
+        "outfit": {
+            "headgear": "Helles Tuchband",
+            "top": "Leichte, hellgrüne Tunika über einem weißen Untergewand",
+            "trousers": "Keine (lange Robe)",
+            "footwear": "Sandalen aus weichem Leder",
+            "jewellery": "Ein kleiner Schlangenreif am rechten Oberarm",
+            "things": "Ein kleiner Kasten mit Pinseln, Schabinsern und verschiedenen Tintenfässchen",
+            "weapons": "Ein kleiner Dolch zur Federkielbearbeitung"
+        },
+        "distinguishing_features": "Riecht permanent nach altem Pergament und Kiefernharz."
+    },
+    "personality": {
+        "traits": [
+            "Geduldig",
+            "Akribisch",
+            "Freundlich",
+            "Belesen",
+            "Hilfsbereit"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Tochter von Geron, einem Lowanger Seiler, und Mada, einer Gemüsehändlerin. Ihr Onkel war Tempeldiener bei Efferd.",
+        "motivation": "Das Wissen der Vergangenheit für die Zukunft bewahren; jedes Buch ist eine Welt für sich."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 13,
+            "CH": 12,
+            "FF": 15,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 25,
+            "AsP": 0,
+            "KaP": 32
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Malen/Zeichnen",
+                "FW": 12
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 9
+            },
+            {
+                "name": "Alchimie",
+                "FW": 8
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Objektsegen",
+                "FW": 6
+            }
+        ]
+    },
+    "session-notes": ""
+}

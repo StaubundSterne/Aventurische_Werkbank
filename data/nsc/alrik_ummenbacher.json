@@ -1,0 +1,106 @@
+{
+    "id": "b7c8d9e0-f1a2-4b3c-9d4e-5f6a7b8c9d0e",
+    "source": "wiki-aventurica; [4200] Am wilden Svellt; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Alrik Ummenbacher",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 979,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Wachhund (treu, pflichtbewusst, etwas bellend)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Stadtwache",
+        "specification": "Weibel der Lowanger Stadtwache; zuständig für die Sicherheit auf dem Marktplatz während des Festes",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Norburg",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Alrik nickt Fredegis respektvoll zu, da er in ihm einen erfahrenen Kämpfer erkennt, und warnt ihn leise vor Taschendieben in der 'Bunten Flucht'.",
+            "Er behält Şahin argwöhnisch im Auge, da er Fremden mit verschleierten Absichten grundsätzlich misstraut."
+        ]
+    },
+    "appearance": {
+        "size": 180,
+        "weight": 82,
+        "hair": "Kurz geschorenes, blondes Haar; ein akkurat gestutzter Schnurrbart",
+        "skin": "Blass, mit einer markanten Narbe über der linken Wange",
+        "eyes": "Graublau, aufmerksam wandernd",
+        "outfit": {
+            "headgear": "Ein einfacher Eisenhut mit dem Wappen Lowangens",
+            "top": "Ein wattierter Waffenrock (Gambeson) in den Farben der Stadt (Rot-Weiß) über einem Kettenhemd",
+            "trousers": "Dicke Stoffhose",
+            "footwear": "Schwere Soldatenstiefel",
+            "jewellery": "Ein kleiner silberner Siegelring (Dienstabzeichen)",
+            "things": "Eine Signalpfeife an einer Schnur; ein Bund Schlüssel",
+            "weapons": "Ein kurzes Schwert; eine Hellebarde (die er meist als Stütze nutzt)"
+        },
+        "distinguishing_features": "Steht immer kerzengerade, auch wenn er sich ausruht."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Wachsam",
+            "Etwas humorlos",
+            "Gerecht",
+            "Lokalpatriotisch"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Sohn eines Schmieds; verheiratet mit Elene, einer Wäscherin; zwei Töchter. Sein Bruder fiel bei einem Grenzscharmützel gegen Orks.",
+        "motivation": "Dafür sorgen, dass 'Markt und Spiele' ohne Zwischenfälle verlaufen und die Ordnung gewahrt bleibt."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 13,
+            "CH": 10,
+            "FF": 10,
+            "GE": 12,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Wahrnehmung",
+                "FW": 12
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,111 @@
+{
+    "id": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e",
+    "source": "wiki-aventurica; [4301] Hallen arkaner Macht; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Helmbrecht Baumgarten",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Dachs (gründlich, bodenständig, wehrhaft wenn bedrängt)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Novize (Adept); persönlicher Assistent von Salix Horrigan beim Projekt 'Haut zu Pelz'",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Helmbrecht bewundert die Qualität von Josts Lederhose und fragt ihn nach der Gerbmethode, um sie mit seinen magischen Analysen abzugleichen.",
+            "Er bittet Fredegis, ein Stück 'Otterpelz-Leder' auf seine Reißfestigkeit zu prüfen, indem er mit voller Kraft daran zieht."
+        ]
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 74,
+        "hair": "Stoppeliges, schwarzes Haar",
+        "skin": "Grobporig, riecht leicht nach Gerbsäure",
+        "eyes": "Dunkelbraun, sehr konzentrierter Blick",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Graue Arbeitsrobe mit hochgekrempelten Ärmeln und einer derben Lederschürze",
+            "trousers": "Feste Stoffhose",
+            "footwear": "Schwere Arbeitsstiefel",
+            "jewellery": "Ein Lederband am Handgelenk",
+            "things": "Ein kleiner Hammer; ein Lupenglas; verschiedene Lederproben",
+            "weapons": "Ein kurzes Arbeitsmesser"
+        },
+        "distinguishing_features": "Seine Unterarme sind von kleinen Narben und Verfärbungen durch alchemistische Substanzen gezeichnet."
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Gründlich",
+            "Konkurrenzbewusst",
+            "Handwerklich geschickt",
+            "Bodenständig"
+        ],
+        "actual-mood": [
+            "Ehrgeizig"
+        ],
+        "family-background": "Sohn eines Gerbers aus Riva. Er sieht die Magie als die logische Fortsetzung des väterlichen Handwerks.",
+        "motivation": "Magister Horrigan beweisen, dass er den Durchbruch beim 'Haut zu Pelz'-Verfahren verdient hat."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 13,
+            "IN": 12,
+            "CH": 10,
+            "FF": 15,
+            "GE": 11,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 30,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Lederbearbeitung",
+                "FW": 12
+            },
+            {
+                "name": "Alchimie",
+                "FW": 8
+            }
+        ],
+        "spells": [
+            {
+                "name": "Transmutare",
+                "FW": 6
+            },
+            {
+                "name": "Hartes schmelze",
+                "FW": 4
+            }
+        ]
+    },
+    "session-notes": ""
+}

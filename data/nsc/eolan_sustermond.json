@@ -1,0 +1,123 @@
+{
+    "id": "e0l4n-5u5t-1009-bf",
+    "source": "de.wiki-aventurica.de/wiki/Eolan_Sustermond; [4301] Hallen arkaner Macht; [4309] Orden und Bündnisse",
+    "tags": [],
+    "general": {
+        "name": "Eolan Sustermond",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 955,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Uhu (wachsam, weise, ein unerbittlicher Schützer des Reviers/Wissens)",
+        "social-state": "Akademiker / Magister"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Großmeister der Grauen Stäbe (Ordo Defensores Lecturia) zu Lowangen; Magister der Akademie der Verformungen; Bewahrer des arkanen Erbes.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Punin"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Eolan erkennt in Hesindian ein großes Potenzial für die theoretische Magie und lädt ihn ein, die geheimen Archive der Grauen Stäbe unter seiner Aufsicht zu studieren.",
+            "Er bittet Aurelevina um eine Einschätzung über eine 'instabile Signatur' in der Stadt, da er eine Störung des sphärischen Gefüges befürchtet – eine düstere Vorahnung seines Schicksals."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 68,
+        "hair": "Schneeweißes, langes Haar, das oft mit einem schlichten Lederband zusammengehalten wird; ein kurzer, gepflegter Vollbart.",
+        "skin": "Blass, von feinen Falten durchzogen, die ihm ein würdevolles Aussehen verleihen.",
+        "eyes": "Tiefliegende, hellgraue Augen, die eine enorme geistige Schärfe ausstrahlen.",
+        "outfit": {
+            "headgear": "Keine, im Außeneinsatz eine tiefe Kapuze.",
+            "top": "Eine schwere, dunkelgraue Magierrobe mit dem silbernen Emblem der Grauen Stäbe; darunter ein leichter Lederharnisch.",
+            "trousers": "Dunkle Stoffhose.",
+            "footwear": "Weiche Lederschuhe, die fast lautlose Schritte ermöglichen.",
+            "jewellery": "Sein prächtiger Großmeister-Ring; ein silbernes Amulett mit dem Symbol der Hesinde.",
+            "things": "Ein kleiner Schlüsselbund für die Archive; ein Beutel mit feinstem Kreidestaub für Glyphen.",
+            "weapons": "Robureon (ein mächtiger Stab aus dunkler Steineiche, der eine spürbare arkane Aura verströmt)."
+        },
+        "distinguishing_features": "Er wirkt stets wie eine Säule der Ruhe, selbst wenn um ihn herum das Chaos ausbricht."
+    },
+    "personality": {
+        "traits": [
+            "Opferbereit",
+            "Gelehrt",
+            "Besonnen",
+            "Pflichtbewusst",
+            "Autoritär"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Wenig über seine leibliche Familie bekannt; er widmete sein gesamtes Leben dem Ordo Defensores Lecturia und betrachtet die Bibliothek als sein Heim.",
+        "motivation": "Der Schutz des Wissens vor profaner Zerstörung und die Abwehr sphärischer Bedrohungen im Svellttal."
+    },
+    "stats": {
+        "experience-level": "Brillant",
+        "attributes": {
+            "MU": 15,
+            "KL": 17,
+            "IN": 16,
+            "CH": 14,
+            "FF": 13,
+            "GE": 11,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 65,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 18
+            },
+            {
+                "name": "Sphärenkunde",
+                "FW": 17
+            },
+            {
+                "name": "Stäbe",
+                "FW": 14
+            }
+        ],
+        "spells": [
+            {
+                "name": "Analys Arkanstruktur",
+                "FW": 16
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 15
+            },
+            {
+                "name": "Veraenderung aufheben",
+                "FW": 14
+            },
+            {
+                "name": "Sphärenschlitz",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

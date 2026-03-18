@@ -1,0 +1,116 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "wiki-aventurica; [4200] Am wilden Svellt; [4107] Aventurisches Götterwirken",
+    "tags": [],
+    "general": {
+        "name": "Boromil Senebier",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen (sammelnd, vorausschauend, lebhaft)",
+        "social-state": "Klerus"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Hesindegeweihter; Naturphilosoph und Kurator der Botanischen Sammlung",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Donnerbach",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Boromil bewundert Josts handwerkliche Präzision und bittet ihn, ein spezielles Gestell für seine seltenen Svellttaler Wasserlilien zu schmieden.",
+            "Er versucht Fredegis davon zu überzeugen, dass auch Steine 'ein Gedächtnis der Schöpfung' besitzen und zeigt ihm seine Mineraliensammlung."
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 72,
+        "hair": "Krauses, hellbraunes Haar, oft mit kleinen Blattstücken darin",
+        "skin": "Gebräunt und sommersprossig",
+        "eyes": "Wache, grasgrüne Augen",
+        "outfit": {
+            "headgear": "Ein breiter Strohhut (wenn er draußen ist)",
+            "top": "Kurze, grüne Tunika mit vielen aufgesetzten Taschen",
+            "trousers": "Robuste Kniehose aus Leinen",
+            "footwear": "Feste Schnürschuhe",
+            "jewellery": "Ein geflochtenes Armband aus Gräsern und Silberfäden",
+            "things": "Ein kleiner Spaten am Gürtel; ein Botanisiertrommel aus Zinn",
+            "weapons": "Ein einfacher Dolch"
+        },
+        "distinguishing_features": "Hat die Angewohnheit, an Kräutern zu kauen, während er nachdenkt."
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Redselig",
+            "Naturverbunden",
+            "Zerstreut",
+            "Enthusiastisch"
+        ],
+        "actual-mood": [
+            "Begeistert"
+        ],
+        "family-background": "Sohn von Alwine Senebier, einer Hebamme aus Riva; sein Vater unbekannt. Wuchs in den Gärten des Hesindetempels in Riva auf.",
+        "motivation": "Die Vielfalt der Schöpfung katalogisieren und das Wissen über Heilpflanzen für das gemeine Volk zugänglich machen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 15,
+            "CH": 14,
+            "FF": 13,
+            "GE": 10,
+            "KO": 13,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 31,
+            "AsP": 0,
+            "KaP": 35
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 13
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 11
+            },
+            {
+                "name": "Orientierung",
+                "FW": 10
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Pflanzensegen",
+                "FW": 9
+            },
+            {
+                "name": "Tiergestalt",
+                "FW": 4
+            }
+        ]
+    },
+    "session-notes": ""
+}

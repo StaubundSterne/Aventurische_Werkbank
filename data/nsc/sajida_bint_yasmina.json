@@ -1,0 +1,102 @@
+{
+    "id": "d2e3f4a5-c6b7-4890-a123-4567890abcde",
+    "source": "[4202] Reich des roten Mondes; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Sajida bint Yasmina",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 986,
+        "alive": true,
+        "culture": "Tulamidisch (Mhanadistan)",
+        "species": "Mensch",
+        "soul-animal": "Falke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Gewürzhändlerin und Importeurin für exotische Harze; hat eine kleine Niederlassung nahe dem Marktplatz.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Fasar",
+            "Khunchom",
+            "Festum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Şahin erkennt Sajidas Herkunft an ihrem spezifischen Fasarer Dialekt und der Art, wie sie ihren Tee mit Safran würzt.",
+            "Hesindian bemerkt, dass Sajida die Gaukleraufführung mit einer professionellen Distanz beobachtet, als würde sie den Marktwert der Prismen schätzen."
+        ]
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 54,
+        "hair": "Tiefschwarz, glänzend, zu einem komplexen Zopf mit Goldfäden geflochten.",
+        "skin": "Dunkel, olivfarben und sehr gepflegt.",
+        "eyes": "Dunkelbraun, fast schwarz.",
+        "outfit": {
+            "headgear": "Ein kunstvoll geschlungener Turban aus hauchdünner violetter Seide.",
+            "top": "Ein Kaftan aus schwerem Brokat mit eingewebten Pfauenaugenmustern.",
+            "trousers": "Weite Pluderhose aus gelber Seide.",
+            "footwear": "Schnabelschuhe aus weichem Saffianleder.",
+            "jewellery": "Zahlreiche goldene Fingerringe; ein Nasenstecker mit einem winzigen Rubin.",
+            "things": "Ein kleiner Fächer aus Ebenholz; eine Schreibfeder aus Metall.",
+            "weapons": "Ein kleiner, reich verzierter Kunchomer am Gürtel."
+        },
+        "distinguishing_features": "Verströmt eine intensive Wolke aus Zimt, Nelken und Moschus; ihre Bewegungen sind von einer kühlen Eleganz geprägt."
+    },
+    "personality": {
+        "traits": [
+            "Berechnend",
+            "Höflich",
+            "Weltgewandt",
+            "Verschwiegen",
+            "Gourmet"
+        ],
+        "actual-mood": [
+            "Amüsiert"
+        ],
+        "family-background": "Stammt aus der weitverzweigten Händlerfamilie der al-Abbas aus Fasar. Sie kam nach Lowangen, um den Norden für mhanadistanische Luxusgüter zu erschließen.",
+        "motivation": "Sucht Kontakte zu den Lehrkräften der Magierakademie, um exklusive Lieferverträge für alchimistische Zutaten abzuschließen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 15,
+            "IN": 14,
+            "CH": 15,
+            "FF": 12,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 15
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 13
+            },
+            {
+                "name": "Etikette",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,113 @@
+{
+    "id": "b4rngr1mm-r4d0br3cht-1009-bf",
+    "source": "de.wiki-aventurica.de/wiki/Barngrimm_Radobrecht; [4301] Hallen arkaner Macht; [4309] Orden und Bündnisse",
+    "tags": [],
+    "general": {
+        "name": "Barngrimm Radobrecht",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 983,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Dachs (wehrhaft, gründlich, schätzt den Schutz des Baus)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Magister an der Akademie der Verformungen; Mitglied der Grauen Stäbe (Ordo Defensores Lecturia); Vertrauter von Hagen Gerion.",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": []
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Barngrimm überwacht die Sicherheit der Bibliothek und ermahnt Hesindian streng, pfleglich mit den Folianten umzugehen.",
+            "Er bittet Aurelevina um Hilfe bei der Katalogisierung neuer Schriften über Verformungsmagie, um sich bei Hagen Gerion zu profilieren."
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 72,
+        "hair": "Dunkelbraun, kurz und militärisch exakt geschnitten.",
+        "skin": "Gesund, leicht gebräunt von Reisen zwischen den Bibliotheken.",
+        "eyes": "Aufmerksame, bernsteinfarbene Augen.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichte graue Magierrobe, darüber ein Lederharnisch (typisch für die Grauen Stäbe).",
+            "trousers": "Robuste graue Tuchhose.",
+            "footwear": "Feste Wanderstiefel.",
+            "jewellery": "Sein Akademie-Siegelring; eine Brosche der Gemeinschaft des Lernens.",
+            "things": "Mehrere Pergamentrollen; ein Schreibset.",
+            "weapons": "Ein kräftiger Magierstab (noch nicht das Artefakt Robureon)."
+        },
+        "distinguishing_features": "Trägt seine Magierrobe mit einer fast soldatischen Disziplin."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Wissbegierig",
+            "Loyal",
+            "Streng",
+            "Mutig"
+        ],
+        "actual-mood": [
+            "Eifrig"
+        ],
+        "family-background": "Sohn einer alteingesessenen Lowanger Familie. Er sieht in den Grauen Stäben seine wahre Berufung und in Hagen Gerion sein großes Vorbild.",
+        "motivation": "Sich als Verteidiger des Wissens beweisen und die Strukturen des Ordens im Svellttal stärken."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 15,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 11,
+            "KO": 12,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 31,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 12
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Stäbe",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Adlerschwinge",
+                "FW": 8
+            },
+            {
+                "name": "Armatrutz",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

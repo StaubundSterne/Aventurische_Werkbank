@@ -1,0 +1,106 @@
+{
+    "id": "78a2e1c4-5b3a-4f9e-bc71-2d9f8a3c4b51",
+    "source": "wiki-aventurica; [4200] Am wilden Svellt; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Geron Scholl",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 961,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Braunbär (gutmütig, aber behäbig und kräftig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Pferdezüchter",
+        "specification": "Spezialist für Svellttaler Kaltblüter; Besitzer des Gestüts 'Schollhof' vor den Toren Lowangens",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tiefhusen",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Geron klopft Jost kräftig auf die Schulter und fragt, ob er Zeit hätte, sich ein gespaltenes Hufeisen an seinem prämierten Hengst 'Donner' anzusehen.",
+            "Er bittet Adarell um eine Zweitmeinung zu Salix' Kräutermischung, da er den 'Akademie-Gelehrten' zwar schätzt, aber Adarells elfischem Gespür mehr vertraut."
+        ]
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 95,
+        "hair": "Graumeliertes, lockiges Haar; ein dichter Vollbart, in dem Strohhalme hängen",
+        "skin": "Ledrig, tief gebräunt durch Jahrzehnte unter freiem Himmel",
+        "eyes": "Gutmütige, hellblaue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ein weites Hemd aus ungebleichtem Leinen unter einer schweren Lederweste",
+            "trousers": "Robuste Reiterhose aus braunem Hirschleder",
+            "footwear": "Klobige, kniehohe Stiefel mit Eisenspornen",
+            "jewellery": "Ein Lederband mit einem geschnitzten Pferdekopf aus Eichenholz",
+            "things": "Eine geflochtene Peitsche am Gürtel; ein Apfel für seine Tiere",
+            "weapons": "Ein schweres Jagdmesser"
+        },
+        "distinguishing_features": "Fehlt das obere Glied des rechten Zeigefingers (Unfall beim Einreiten)."
+    },
+    "personality": {
+        "traits": [
+            "Bodenständig",
+            "Wettergegerbt",
+            "Direkt",
+            "Tierlieb",
+            "Misstrauisch gegenüber Prunk"
+        ],
+        "actual-mood": [
+            "Zufrieden"
+        ],
+        "family-background": "Sohn von Holmer Scholl (Züchter) und Alwine; hat drei Söhne, die alle im Familienbetrieb arbeiten. Die Familie lebt seit drei Generationen im Svellttal.",
+        "motivation": "Sicherstellen, dass seine Zuchttiere beim Steineziehen und dem 12-Meilen-Rennen in Bestform sind."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 11,
+            "GE": 10,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Tierkunde (Pferde)",
+                "FW": 14
+            },
+            {
+                "name": "Abrichten",
+                "FW": 12
+            },
+            {
+                "name": "Reiten",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

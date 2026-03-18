@@ -1,0 +1,110 @@
+{
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "source": "https://de.wiki-aventurica.de/wiki/Alvina_Zuliban; https://de.wiki-aventurica.de/wiki/Hotel_Bunte_Flucht; [4200] Svelltland und Bundesrepublik, S. 109",
+    "tags": [],
+    "general": {
+        "name": "Alvina Zuliban",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Pfau",
+        "social-state": "Frei (Besitzerin eines Etablissements)"
+    },
+    "profession": {
+        "category": "Wirtin / Hotelierin",
+        "specification": "Besitzerin und Leiterin des Hotels 'Bunte Flucht' in Lowangen; bekannt für ihre Toleranz und die Förderung unkonventioneller Kunst.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Aurelevina",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Adarell erkennt in Alvinas entspanntem Umgang mit den verschiedenen Spezies im Saal eine tiefe, fast philosophische Gelassenheit, die sie an Lehren aus dem Bornland erinnert.",
+            "Aurelevina bemerkt, dass Alvina beim Servieren der Getränke genau darauf achtet, wer im Saal Anzeichen von Erschöpfung zeigt, und diskret Kräutertees statt starkem Bier empfiehlt.",
+            "Hesindian wird von Alvina auf seine Aufzeichnungen angesprochen; sie bietet ihm einen Platz in der ruhigeren Bibliothek des Obergeschosses an, falls das Treiben im Saal zu unruhig wird."
+        ]
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 65,
+        "hair": "Dunkelbraunes, gelocktes Haar, das oft mit bunten Bändern oder kleinen Blumen geschmückt ist.",
+        "skin": "Gesunde, leicht gebräunte Haut mit Lachfalten um die Augen.",
+        "eyes": "Lebhafte, hellbraune Augen.",
+        "outfit": {
+            "headgear": "Oft ein lockeres, farbenfrohes Seidentuch, das nach tulamidischer Art geknotet ist.",
+            "top": "Eine Weste aus kostbarem Brokat in wechselnden Farben über einer weiten, cremefarbenen Bluse.",
+            "trousers": "Ein langer, schwerer Rock aus dunkelgrünem Samt mit bunten Stickereien am Saum.",
+            "footwear": "Bequeme Hausschuhe aus weichem Leder mit bunten Applikationen.",
+            "jewellery": "Ein Amulett in Form eines bunten Vogels (Symbol für Tsa); mehrere Ringe mit Halbedelsteinen.",
+            "things": "Ein Schlüsselbund aus Bronze; ein kleines Notizbuch für Reservierungen.",
+            "weapons": "Ein kleiner, verzierter Dolch, der jedoch eher als Brieföffner dient."
+        },
+        "distinguishing_features": "Alvina bewegt sich mit einer auffälligen Leichtigkeit durch den Raum; sie verströmt einen Duft von Lavendel und frischem Gebäck."
+    },
+    "personality": {
+        "traits": [
+            "Weltoffen",
+            "Optimistisch",
+            "Tolerant",
+            "Geschäftstüchtig",
+            "Diplomatisch"
+        ],
+        "actual-mood": [
+            "Gastfreundlich"
+        ],
+        "family-background": "Stammt aus einer alteingesessenen Lowanger Kaufmannsfamilie. Ihre Eltern führten ein kleines Handelshaus für Tuche, was ihr Gespür für Farben und Materialien erklärt. Sie ist unverheiratet und betrachtet ihre Angestellten als Ersatzfamilie.",
+        "motivation": "Sie möchte das 'Bunte Flucht' als einen Ort des Friedens und der Erneuerung erhalten, an dem Herkunft und Stand zweitrangig sind – ein lebendiges Denkmal für die Göttin Tsa."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 15,
+            "CH": 16,
+            "FF": 13,
+            "GE": 12,
+            "KO": 12,
+            "KK": 10
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Etikette",
+                "FW": 12
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 14
+            },
+            {
+                "name": "Handel",
+                "FW": 11
+            },
+            {
+                "name": "Überreden",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

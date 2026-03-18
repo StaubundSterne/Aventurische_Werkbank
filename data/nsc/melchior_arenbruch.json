@@ -1,0 +1,120 @@
+{
+    "id": "7649d214-5f8a-4c2d-9b1e-4c1f9e8a3d21",
+    "source": "wiki-aventurica.de/wiki/Melchior_Arenbruch; wiki-aventurica.de/wiki/Gemeinschaft_des_Lernens; [4301] Hallen arkaner Macht",
+    "tags": [],
+    "general": {
+        "name": "Melchior Arenbruch",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Dachs (gründlich, beharrlich, schätzt ein sicheres Heim)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Magister an der Akademie der Verformungen zu Lowangen; Mitglied der Gemeinschaft des Lernens; Experte für die theoretischen Grundlagen der Metamorphose [NSC kanonisch]",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Festum",
+            "Norburg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Melchior spricht Hesindian auf dessen zwergisches Erbe an und philosophiert darüber, wie die 'Struktur des Erzes' die Formmagie beeinflusst.",
+            "Er bittet Aurelevina um einen Vergleich zwischen der Lowanger 'Schule des direkten Weges' und den eher ästhetisch-formgebenden Ansätzen in den Tulamidenlanden oder Almada."
+        ]
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 76,
+        "hair": "Dunkelbraunes, schütteres Haar mit einer ausgeprägten Stirnglatze; ordentlich gestutzter Bart",
+        "skin": "Blass, wie es für jemanden üblich ist, der viel Zeit in Bibliotheken verbringt",
+        "eyes": "Dunkelbraune Augen, die hinter einer runden Lesebrille oft etwas vergrößert wirken",
+        "outfit": {
+            "headgear": "Oft eine schlichte, graue Samtkappe",
+            "top": "Eine tadellose Magierrobe in verschiedenen Grautönen, aus hochwertiger Wolle, gesäumt mit dem blauen Band der Gemeinschaft des Lernens",
+            "trousers": "Dunkle Tuchhose",
+            "footwear": "Bequeme Halbschuhe aus weichem Kalbsleder",
+            "jewellery": "Ein silberner Ring mit dem Symbol einer aufgeschlagenen Buchseite (Gemeinschaft des Lernens); sein Akademie-Siegelring",
+            "things": "Ein Bündel Schreibfedern; ein kleines Fläschchen mit bester Tinte; oft ein Pergament mit komplizierten Formeln in der Hand",
+            "weapons": "Sein Magierstab (schlicht, aus dunklem Nussbaumholz)"
+        },
+        "distinguishing_features": "Hat die Angewohnheit, sich beim Nachdenken ständig den Bart zu streichen und die Brille auf der Nase hochzuschieben."
+    },
+    "personality": {
+        "traits": [
+            "Methodisch",
+            "Gelehrt",
+            "Diskussionsfreudig",
+            "Loyal",
+            "Etwas pedantisch"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Stammt aus einer bürgerlichen Familie aus Lowangen (Vater war Kontorist); er hat eine tiefe Verbindung zur 'Gemeinschaft des Lernens', die er als seine eigentliche geistige Familie betrachtet [NSC kanonisch].",
+        "motivation": "Den Austausch von Wissen zwischen den Akademien fördern und die theoretische Untermauerung der Formmagie perfektionieren."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 12,
+            "KL": 16,
+            "IN": 14,
+            "CH": 13,
+            "FF": 13,
+            "GE": 10,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 45,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 15
+            },
+            {
+                "name": "Rechnen",
+                "FW": 12
+            },
+            {
+                "name": "Sphärenkunde",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Adlerschwinge Wolfsgestalt",
+                "FW": 13
+            },
+            {
+                "name": "Veraenderung aufheben",
+                "FW": 11
+            },
+            {
+                "name": "Analys Arkanstruktur",
+                "FW": 14
+            }
+        ]
+    },
+    "session-notes": ""
+}

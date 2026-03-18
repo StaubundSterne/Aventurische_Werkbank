@@ -1,0 +1,107 @@
+{
+    "id": "c8d9e0f1-a2b3-4c4d-ae5f-6a7b8c9d0e1f",
+    "source": "wiki-aventurica; [4202] Reich des roten Mondes; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Yasmina saba Shiras",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Tulamidenlande",
+        "species": "Mensch",
+        "soul-animal": "Gazelle (anmutig, neugierig, fremdartig)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gelehrte",
+        "specification": "Privatgelehrte und Sammlerin von Kuriositäten; auf Forschungsreise durch den Norden",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Fasar",
+            "Khunchom",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Yasmina spricht Şahin auf Tulamidia an und drückt ihre Erleichterung aus, eine 'bekannte Seele' in diesem 'Land des ewigen Regens' zu treffen.",
+            "Sie bittet Aurelevina um ihre Meinung zu einem kleinen, verformten Artefakt, das sie in den Thaschbergen erworben hat."
+        ]
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 52,
+        "hair": "Tiefschwarz, meist unter einem Turban verborgen",
+        "skin": "Olivenfarben, sehr gepflegt",
+        "eyes": "Große, dunkle Augen, die mit Khol umrandet sind",
+        "outfit": {
+            "headgear": "Ein kunstvoll gewundener Turban aus gelber Seide",
+            "top": "Ein besticktes Obergewand (Kaftan) über Pluderhosen; darüber ein schwerer Reisemantel mit Pelzbesatz gegen die Kälte",
+            "trousers": "Seidene Pluderhosen",
+            "footwear": "Bestickte Schnabelschuhe (innerhalb des Standes); draußen trägt sie derbe Lederüberzieher",
+            "jewellery": "Zwei goldene Armreifen; ein kleiner Saphir im linken Nasenflügel",
+            "things": "Ein Fernglas aus Khunchomer Fertigung; ein kleiner Lederbeutel für Fundstücke",
+            "weapons": "Ein reich verzierter Dolch (eher Zierrat)"
+        },
+        "distinguishing_features": "Fröstelt ständig und zieht ihren Mantel bei jedem Windzug enger."
+    },
+    "personality": {
+        "traits": [
+            "Hochintelligent",
+            "Höflich",
+            "Exzentrisch",
+            "Wohlhabend",
+            "Beobachtend"
+        ],
+        "actual-mood": [
+            "Fasziniert"
+        ],
+        "family-background": "Tochter eines wohlhabenden Gewürzhändlers aus Fasar; sie nutzt ihr Erbe, um die 'barbarischen Ränder der Welt' zu studieren.",
+        "motivation": "Die Unterschiede zwischen tulamidischer Elementarmagie und mittelaventurischer Formmagie dokumentieren."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 11,
+            "KL": 16,
+            "IN": 15,
+            "CH": 13,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 26,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sagen und Legenden",
+                "FW": 14
+            },
+            {
+                "name": "Sprachen (Tulamidia)",
+                "FW": 15
+            },
+            {
+                "name": "Schätzen",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

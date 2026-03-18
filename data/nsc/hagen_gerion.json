@@ -1,0 +1,119 @@
+{
+    "id": "h4g3n-g3r1on-1009-bf-corr",
+    "source": "de.wiki-aventurica.de/wiki/Hagen_Gerion; [4301] Hallen arkaner Macht; [4309] Orden und Bündnisse",
+    "tags": [],
+    "general": {
+        "name": "Hagen Gerion",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Andergast",
+        "species": "Mensch",
+        "soul-animal": "Keiler (störrisch, wehrhaft, tief verwurzelt)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Absolvent des Kampfseminars zu Andergast; junges Mitglied der Grauen Stäbe (Ordo Defensores Lecturia).",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Andergast"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Hagen sucht in Lowangen nach kampferfahrenen Leuten wie Fredegis, die ihm zeigen, wie man einen Stab im echten Gefecht führt, da ihm die Theorie der Akademie nicht ausreicht.",
+            "Er gerät mit Hesindian in einen Disput über die 'Eleganz' der Magie – für Hagen muss Magie vor allem nützlich sein und 'Wumms' haben."
+        ]
+    },
+    "appearance": {
+        "size": 181,
+        "weight": 84,
+        "hair": "Dunkelbraun, struppig und kurz geschnitten.",
+        "skin": "Grobporig, oft dem Wetter ausgesetzt, kräftige Hände.",
+        "eyes": "Tief liegende, wachsame braune Augen.",
+        "outfit": {
+            "headgear": "Ein einfacher Lederhut.",
+            "top": "Eine robuste, dunkelgrüne Magierrobe aus schwerem Leinen, die eher wie ein Reisemantel wirkt.",
+            "trousers": "Derbe Lederhose.",
+            "footwear": "Schwere, beschlagene Wanderstiefel.",
+            "jewellery": "Ein einfacher Eisenring als Zeichen seiner Herkunft; sein Akademie-Siegelring aus Andergast.",
+            "things": "Ein kleiner Beutel mit Kräutertabak; ein Schnitzmesser; ein Ranzen aus Hirschleder.",
+            "weapons": "Ein wuchtiger Magierstab aus Steineiche, der am oberen Ende mit Eisen beschlagen ist."
+        },
+        "distinguishing_features": "Er spricht mit einem deutlichen andergastischen Akzent und wirkt deutlich kräftiger als der typische Lowanger Stadtmagier."
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Stur",
+            "Bodenständig",
+            "Mutig",
+            "Direkt"
+        ],
+        "actual-mood": [
+            "Tatendurstig"
+        ],
+        "family-background": "Sohn eines Holzfällers aus den andergastischen Wäldern; hat fünf Geschwister. Er ist der Stolz seiner Familie, da er als Einziger die Gabe und die Ausbildung zum Magier erhielt.",
+        "motivation": "Sich im Dienst des Ordens beweisen und zeigen, dass ein andergastischer Magier mehr wert ist als drei gelehrte Stutzer aus dem Horasreich."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 10,
+            "FF": 11,
+            "GE": 12,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Stäbe",
+                "FW": 10
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Fulminictus",
+                "FW": 7
+            },
+            {
+                "name": "Armatrutz",
+                "FW": 8
+            },
+            {
+                "name": "Motoricus",
+                "FW": 6
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,112 @@
+{
+    "id": "92b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d",
+    "source": "wiki-aventurica; [4301] Hallen arkaner Macht; [4310] Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Valerius von Dergelquell",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 987,
+        "alive": true,
+        "culture": "Garetien",
+        "species": "Mensch",
+        "soul-animal": "Libelle (nervös, flink, schillernd)",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Adept der Akademie der Verformungen; Hilfskraft bei der Wasseratem-Vorführung",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Eslamsgrund"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Valerius erkennt Aurelevinas almadischen Akzent und versucht sie mit seinem (etwas eingerosteten) höfischen Benehmen zu beeindrucken, während er über die 'barbarische Kälte' des Svellt klagt.",
+            "Er beobachtet Hesindian neugierig und fragt sich laut, ob dessen zwergische Naturmagie nicht 'mathematisch höchst ineffizient' sei."
+        ]
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 63,
+        "hair": "Dunkelbraun, sorgfältig gescheitelt und mit Pomade geglättet",
+        "skin": "Blass, mit leichten Rötungen durch den kalten Wind",
+        "eyes": "Wache, braune Augen hinter einer kleinen Lesehilfe",
+        "outfit": {
+            "headgear": "Ein kleines Barett in Akademie-Grau",
+            "top": "Eine tadellose, graue Magierrobe mit den silbernen Borten der Verformer",
+            "trousers": "Tuchhose aus feinem Loden",
+            "footwear": "Polierte Lederschuhe",
+            "jewellery": "Ein goldener Siegelring mit dem Wappen der Dergelquells",
+            "things": "Ein schmales Notizbuch; ein silberner Schreibgriffel",
+            "weapons": "Ein schlichter Magierstab aus Birkenholz"
+        },
+        "distinguishing_features": "Riecht auffällig nach teurem Parfüm (Rose und Moschus), was in der rauen Umgebung Lowangens deplatziert wirkt."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Etwas arrogant",
+            "Wissbegierig",
+            "Heimwehkrank",
+            "Akribisch"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Dritter Sohn des Junkers Valpo von Dergelquell; seine Familie schickte ihn nach Lowangen, da er für das garetische Militär 'zu feingeistig' war.",
+        "motivation": "Seine Prüfung zum Magister ablegen und schnellstmöglich in den Süden zurückkehren."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 15,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 11,
+            "KO": 9,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 24,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 11
+            },
+            {
+                "name": "Rechnen",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Wasseratem",
+                "FW": 8
+            },
+            {
+                "name": "Adlerschwinge",
+                "FW": 5
+            }
+        ]
+    },
+    "session-notes": ""
+}

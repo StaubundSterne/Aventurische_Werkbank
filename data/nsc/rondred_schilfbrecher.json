@@ -1,0 +1,111 @@
+{
+    "id": "7d9283f4-12a3-4b5c-9d6e-8f2a1b3c4d5e",
+    "source": "wiki-aventurica; [4301] Hallen arkaner Macht; [4200] Am wilden Svellt",
+    "tags": [],
+    "general": {
+        "name": "Rondred Schilfbrecher",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Flussschildkröte (ausdauernd, ruhig, unter Wasser heimisch)",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Novize (Adept) der Akademie der Verformungen; Demonstrationsobjekt für das Exercitium 'Wasseratem'",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Şahin"
+        ],
+        "injection-points": [
+            "Aurelevina bemerkt, dass Rondred im Bottich nicht nur liest, sondern die astralen Linien des Wassers mit seinen Fingern nachzeichnet.",
+            "Şahin erkennt das Potenzial dieser Magie für das unbemerkte Infiltrieren von Flussschiffen und sucht Blickkontakt zu dem untergetauchten Novizen."
+        ]
+    },
+    "appearance": {
+        "size": 176,
+        "weight": 65,
+        "hair": "Dunkelblond, kinnlang, durch das Wasser ständig strähnig im Gesicht hängend",
+        "skin": "Blass, mit schrumpeligen Fingern ('Waschfrauenhände') vom langen Tauchen",
+        "eyes": "Hellgrün, wirken unter Wasser unnatürlich groß",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichte, graue Arbeitsrobe aus schwerem Leinen, die sich im Wasser eng an den Körper schmiegt",
+            "trousers": "Kurze Leinenhose (unter der Robe)",
+            "footwear": "Barfuß",
+            "jewellery": "Keine",
+            "things": "Ein mit Wachs und Harz imprägniertes Buch über die 'Struktur des fließenden Elements'",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Seine Haut weist einen leichten, silbrigen Schimmer auf, ein Nebeneffekt der ständigen Formmanipulation für den Wasseratem."
+    },
+    "personality": {
+        "traits": [
+            "Geduldig",
+            "Konzentriert",
+            "Wasserscheu (ironischerweise an Land)",
+            "Wissbegierig",
+            "Schweigsam"
+        ],
+        "actual-mood": [
+            "Meditativ"
+        ],
+        "family-background": "Sohn von Elwine, einer Wäscherin aus Tiefhusen. Sein Talent wurde entdeckt, als er ungewöhnlich lange nach versunkenen Münzen im Svellt tauchen konnte.",
+        "motivation": "Die Meisterschaft über das nasse Element erlangen, um seiner Mutter ein Haus fernab der sumpfigen Ufer zu bauen."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 13,
+            "CH": 11,
+            "FF": 13,
+            "GE": 12,
+            "KO": 14,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 32,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwimmen",
+                "FW": 10
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Wasseratem",
+                "FW": 7
+            },
+            {
+                "name": "Leib des Wassers",
+                "FW": 4
+            }
+        ]
+    },
+    "session-notes": ""
+}

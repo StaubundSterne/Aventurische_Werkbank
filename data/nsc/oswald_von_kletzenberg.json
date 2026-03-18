@@ -1,0 +1,101 @@
+{
+    "id": "a5b6c7d8-f9e0-4b12-d345-67890abcdef1",
+    "source": "[4200] Svelltland; [4303] Stätten okkulter Geheimnisse",
+    "tags": [],
+    "general": {
+        "name": "Oswald von Kletzenberg",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 960,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gelehrter",
+        "specification": "Privatgelehrter für Regionalgeschichte und Genealogie des Svelltlands; besitzt eine beeindruckende Sammlung alter Urkunden.",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tjolmar",
+            "Festum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Aurelevina"
+        ],
+        "injection-points": [
+            "Hesindian erkennt in Oswald einen Kenner der svellttaler Historie, als dieser leise die Ungenauigkeiten der Gauklerdarstellung bezüglich der Schlacht auf dem Rosenfeld korrigiert.",
+            "Aurelevina bemerkt die zitternden Hände Oswalds, als er versucht, seine schwere Brille zu putzen, und vermutet eine neurologische Ursache."
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 60,
+        "hair": "Vollständig kahl, mit einem Kranz aus weißem Haar an den Schläfen.",
+        "skin": "Fleckig, dünn wie Pergament.",
+        "eyes": "Wässriges Blau, stark vergrößert durch eine dicke Brille.",
+        "outfit": {
+            "headgear": "Eine schwarze Samtkappe.",
+            "top": "Ein schwerer, pelzverbrämter Rock aus dunklem Tuch.",
+            "trousers": "Wollhose.",
+            "footwear": "Filzstiefel.",
+            "jewellery": "Eine schwere silberne Kette mit einer Lupe als Anhänger.",
+            "things": "Ein kleiner Stapel Pergamente; ein Tintenfass zum Umhängen.",
+            "weapons": "Ein Spazierstock mit silbernem Knauf."
+        },
+        "distinguishing_features": "Hustet oft trocken in ein weißes Seidentuch; hat einen permanenten Geruch nach altem Papier und Staub."
+    },
+    "personality": {
+        "traits": [
+            "Pedantisch",
+            "Wissensdurstig",
+            "Belesen",
+            "Eigensinnig",
+            "Höflich"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Stammt aus einer ehemals wohlhabenden Ratsherrenfamilie aus Tjolmar, die ihr Vermögen durch schlechte Spekulationen im Pelzhandel verlor.",
+        "motivation": "Sucht in den Erzählungen der Gaukler nach mündlichen Überlieferungen, die seine Theorien über die Gründung Lowangens stützen könnten."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 16,
+            "IN": 14,
+            "CH": 12,
+            "FF": 10,
+            "GE": 9,
+            "KO": 10,
+            "KK": 8
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 16
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 12
+            },
+            {
+                "name": "Geographie",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

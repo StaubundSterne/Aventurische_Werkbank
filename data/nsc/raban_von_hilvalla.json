@@ -1,0 +1,105 @@
+{
+    "id": "e4f3a2b1-d5c6-4b7a-90e1-f8d7c6b5a492",
+    "source": "[4201] Das Orkland; [4200] Svelltland; wiki-aventurica.de/wiki/Markt_und_Spiele",
+    "tags": [],
+    "general": {
+        "name": "Raban von Hilvalla",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Musiker / Akrobat",
+        "specification": "Verantwortlich für die rhythmische Begleitung und die körperbetonten Darstellungen (wie den Ork im Schattenstück).",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Hilvalla",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": [
+            "Fredegis bemerkt die alten Narben an Rabans Unterarmen, die eindeutig von einem Kampf gegen Orks in der Nähe von Hilvalla rühren.",
+            "Jost hört, dass Raban beim Stimmen der Trommel einen tiefen, kehlig-brummenden Ton summt, der ihn an die Gesänge der Thorwaler erinnert."
+        ]
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 85,
+        "hair": "Dunkelbraun, struppig und schulterlang, oft mit einem Lederband im Nacken zusammengehalten.",
+        "skin": "Wettergegerbt und leicht narbig.",
+        "eyes": "Dunkelgrün",
+        "outfit": {
+            "headgear": "Keine, trägt im Spiel die Orksmaske.",
+            "top": "Ein grobes Hemd aus ungefärbtem Leinen, darüber ein weites Fellwams.",
+            "trousers": "Robuste Hose aus Wollstoff mit Lederverstärkungen an den Knien.",
+            "footwear": "Schwere, genagelte Bundschuhe.",
+            "jewellery": "Ein kleiner Ring aus Knochen im linken Ohr.",
+            "things": "Eine große Rahmentrommel aus Ziegenleder, verschiedene Flöten.",
+            "weapons": "Ein schwerer Wanderstab aus Eschenholz."
+        },
+        "distinguishing_features": "Eine tiefe Kerbe im linken Ohrwaschl und eine raue, fast flüsternde Stimme."
+    },
+    "personality": {
+        "traits": [
+            "Bärbeißig",
+            "Zuverlässig",
+            "Naturverbunden",
+            "Musikalisch",
+            "Wortkarg"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Sohn der Holzfällerin Alrike und des Jägers Olko aus Hilvalla. Seine Eltern verschwanden während eines Ork-Überfalls, er wuchs bei einem fahrenden Spielmann namens 'Humpel-Hajo' auf.",
+        "motivation": "Sucht nach Hinweisen auf den Verbleib seiner Sippe und nutzt die Auftritte, um in verschiedenen Städten Informationen zu sammeln."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 13,
+            "CH": 12,
+            "FF": 11,
+            "GE": 15,
+            "KO": 14,
+            "KK": 15
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Musizieren",
+                "FW": 11
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}
