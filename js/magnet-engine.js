@@ -33,7 +33,7 @@ function generiereTokens(text) {
 
 // --- VENUE-PARSING-MODUL ---
 
-// --- OBJECTS-PARSING-MODUL ---
+// --- ITEMS-PARSING-MODUL ---
 
 
 // --- BASISGEWICHTUNG ---
@@ -43,7 +43,7 @@ const GEWICHTE = {
     INGAME_INFO: 5.0,
     NSC: 5.0,
     VENUES: 5.0,
-    OBJECTS: 5.0,
+    ITEMS: 5.0,
     RECAP: 4.0,
     EPISODE: 3.0,
     CAMPAIGN: 1.0
@@ -71,7 +71,7 @@ export function berechneMagnetismus(situationstext, karte, aktuelleSitzung, g) {
 
     // --- RANK 3: VENUE (venue-stream) ---
 
-    // --- RANK 4: OBJECTS (objects-stream) ---
+    // --- RANK 4: ITEMS (items-stream) ---
 
     // --- RANK 5: RECAP (recaps) ---
 

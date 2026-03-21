@@ -5,9 +5,18 @@
 // --- IMPORTS AUS DER MAGNET-ENGINE.JS ---
 import { berechneMagnetismus } from './magnet-engine.js';
 
+
+// --- IMPORTS AUS DER DATA-LAKE.JS ---
+
+import { initDataLake } from './data-lake.js';
+
 // --- INITIALISIERUNG (Die Eröffnungszeremonie) ---
 function initUI() {
     console.log("Die Werkbank wird vorbereitet...");
+
+    initDataLake().then(() => {
+        console.log("Check: Alle Ressourcen sind jetzt im Speicher!");
+    });
 
     // 1. SITUATION-INPUT AKTIVIEREN
     const sitInput = document.getElementById('situation-input');
