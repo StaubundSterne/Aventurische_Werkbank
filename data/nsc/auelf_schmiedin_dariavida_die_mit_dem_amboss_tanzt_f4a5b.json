@@ -1,0 +1,122 @@
+{
+    "id": "d8f3a1b2-3c4d-4e5f-8a9b-0c1d2e3f4a5b",
+    "source": "https://de.wiki-aventurica.de/wiki/Festum, Ingame-Informationen 1009 BF",
+    "tags": [],
+    "general": {
+        "name": "Dariavida die mit dem Amboss tanzt",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 935,
+        "alive": true,
+        "culture": "Auelfen",
+        "species": "Auelf",
+        "soul-animal": "Eisvogel",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmiedin",
+        "specification": "Feinschmiedin in der Äußeren Schmiede",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Neersand",
+            "Uhdenberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": "Feinschmiedekunst, Elbenfeld, Werkstattsrivalität"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 68,
+        "hair": "Schulterlanges, rotes Haar, meist mit einem Band aus dem Gesicht gehalten",
+        "skin": "Leicht bronzegetönte, von Funkenflug gesprenkelte Haut",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Keine, Haarband aus gegerbtem Leder",
+            "top": "Schweres Lederwams über schlichtem Leinenhemd",
+            "trousers": "Dunkle, strapazierfähige Tuchhose",
+            "footwear": "Festes Schuhwerk mit verstärkter Kappe",
+            "jewellery": "Ein zierlicher Armreif aus Messing mit Tiersymbolen",
+            "things": "Leichter Schmiedehammer, Zange, Feilen-Set",
+            "weapons": "Arbeitsmesser am Gürtel"
+        },
+        "distinguishing_features": "Kräftige Arme und breite Schultern, ungewöhnlich muskulös für eine Auelfin"
+    },
+    "personality": {
+        "traits": [
+            "Geduldig",
+            "Präzise",
+            "Freundschaftlich-kompetitiv",
+            "Naturverbunden",
+            "Traditionsbewusst"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Mutter verstarb vor Jahrzehnten auf der Reise. Vater Eldariel der mit dem Amboss tanzt, Schmiedemeister in der Nachbarschaft.",
+        "motivation": "Perfektionierung filigraner Schmiedearbeiten aus Bronze und Kupfer im Einklang mit elfischen Formidealen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 13,
+            "IN": 14,
+            "CH": 12,
+            "FF": 15,
+            "GE": 14,
+            "KO": 13,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 12
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Singen",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Axxeleratus",
+                "FW": 6
+            },
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 5
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 7
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

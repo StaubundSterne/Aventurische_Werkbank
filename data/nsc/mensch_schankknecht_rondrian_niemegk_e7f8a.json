@@ -1,0 +1,108 @@
+{
+    "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+    "source": "wiki-aventurica.de, Schild des Reiches, Das Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Rondrian Niemegk",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 995,
+        "alive": true,
+        "culture": "Weidener",
+        "species": "Mensch",
+        "soul-animal": "Jagdhund",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Schankknecht",
+        "specification": "Schankknecht im 'Leckeren Krug' (angehender Caterer)",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Baliho",
+        "former-locations": [
+            "Niemegk"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Bestellung aufnehmen, Rebellionsgeschichten, Catering-Pläne"
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 62,
+        "hair": "Langes, glattes, dunkelblondes Haar (Protestfrisur)",
+        "skin": "Hell",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Helles Leinenhemd mit hochgebundenen Ärmeln",
+            "trousers": "Simple braune Stoffhose",
+            "footwear": "Einfache Lederschuhe",
+            "jewellery": "Tuch am Gürtel",
+            "things": "Großes Holztablett, Notizschiefertafel für Catering-Ideen",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "1,75 m groß, 14 Jahre alt, schlaksig mit dünnen Beinen und kräftigen Unterarmen; bewegt sich konstant rhythmisch, summt und tippt im Takt der Musik in seinem Kopf"
+    },
+    "personality": {
+        "traits": [
+            "Aufmüpfig",
+            "Zielstrebig",
+            "Rhythmisch",
+            "Ehrgeizig",
+            "Eigensinnig"
+        ],
+        "actual-mood": [
+            "Beschwingt"
+        ],
+        "family-background": "Sohn der adligen Familie Niemegk. Sollte auf Wunsch der Eltern Rondrakrieger werden, weigerte sich jedoch standhaft, ließ sich aus Protest die Haare lang wachsen und ging nach Baliho, um ein eigenes Catering-Gewerbe zu gründen.",
+        "motivation": "Erfahrung und Geld beim Tabletttragen sammeln, um sich baldmöglichst mit einem Catering-Betrieb selbstständig zu machen."
+    },
+    "stats": {
+        "experience-level": "Aktiv",
+        "attributes": {
+            "MU": 12,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 14,
+            "KO": 11,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Tanzen",
+                "FW": 8
+            },
+            {
+                "name": "Musizieren",
+                "FW": 6
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 7
+            },
+            {
+                "name": "Handel",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

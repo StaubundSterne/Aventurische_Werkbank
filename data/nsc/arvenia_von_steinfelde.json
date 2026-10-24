@@ -1,0 +1,99 @@
+{
+    "id": "ae1f2b3c-4d5e-4a6b-9c8d-7e6f5a4b3c2d",
+    "source": "Eigene Kampagnenvorgabe, 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Arvenia von Steinfelde",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Andergastisch",
+        "species": "Mensch",
+        "soul-animal": "Luchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Soldat",
+        "specification": "Kundschafterin / Späherin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Steinfelde",
+            "Joborn"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": "Aufklärung, Khezzara-Gerüchte, Misstrauen"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 55,
+        "hair": "Kurz geschoren, aschblond",
+        "skin": "Helle Haut, viele Sommersprossen",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Kapuze aus grünem Loden",
+            "top": "Leichte Lederrüstung, dunkelgrün",
+            "trousers": "Enge Lederhose",
+            "footwear": "Weiche Wildlederschuhe",
+            "jewellery": "Keiner, um nicht hängenzubleiben",
+            "things": "Ein hochwertiges Fernrohr",
+            "weapons": "Kurzbogen, Jagdmesser"
+        },
+        "distinguishing_features": "Bewegt sich fast lautlos und meidet direktes Sonnenlicht."
+    },
+    "personality": {
+        "traits": [
+            "Vorsichtig",
+            "Schweigsam",
+            "Beobachtungsgabe",
+            "Misstrauisch",
+            "Flink"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Wuchs als Waise in Steinfelde auf; ihr Vater war ein desertierter Soldat. Sie lernte das Überleben im Wald von Kindesbeinen an.",
+        "motivation": "Den Rückzugsweg für ihre Gruppe sichern und die orkischen Späher im Umland ausfindig machen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 15,
+            "CH": 10,
+            "FF": 14,
+            "GE": 14,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sinnenschärfe",
+                "FW": 13
+            },
+            {
+                "name": "Verbergen",
+                "FW": 14
+            }
+        ]
+    },
+    "session-notes": ""
+}

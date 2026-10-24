@@ -1,0 +1,122 @@
+{
+    "id": "b7e2c1a0-4d3e-4f5a-9b8c-1d2e3f4a5b6c",
+    "source": "https://de.wiki-aventurica.de/wiki/Festum, Ingame-Informationen 1009 BF",
+    "tags": [],
+    "general": {
+        "name": "Eldariel der mit dem Amboss tanzt",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 806,
+        "alive": true,
+        "culture": "Auelfen",
+        "species": "Auelf",
+        "soul-animal": "Bär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmied",
+        "specification": "Schmiedemeister in der Äußeren Schmiede",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Geronshagen",
+            "Neersand"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Schmiedetradition, Elfenkultur, Rohstoffe"
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 92,
+        "hair": "Kurz geschorenes, schwarzes Haar",
+        "skin": "Wettergegerbte, rußgeschwärzte Haut",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ärmelloses Ledermieder über schlichtem Hemd",
+            "trousers": "Feste Lederhose mit Metallverstärkungen",
+            "footwear": "Schwere Schmiedestiefel",
+            "jewellery": "Ein silberner Ohrring im rechten Ohr",
+            "things": "Großer Schmiedehammer, schwere Zange",
+            "weapons": "Schmiedehammer"
+        },
+        "distinguishing_features": "Der breiteste Elf weit und breit, mit sehr massiven Oberarmen"
+    },
+    "personality": {
+        "traits": [
+            "Ruhig",
+            "Bärenstark",
+            "Besonnen",
+            "Pragmatisch",
+            "Gastfreundlich"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Vater der Feinschmiedin Dariavida. Seine Gefährtin verstarb vor langer Zeit auf der Reise.",
+        "motivation": "Weitergabe der Schmiedekunst an seine Tochter und Pflege der freundschaftlichen Nachbarschaft zur Rüstungswerkstatt."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 13,
+            "KO": 15,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 40,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 15
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 12
+            },
+            {
+                "name": "Zechen",
+                "FW": 9
+            },
+            {
+                "name": "Handel",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Axxeleratus",
+                "FW": 7
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 6
+            },
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 4
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

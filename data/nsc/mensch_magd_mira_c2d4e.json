@@ -1,0 +1,112 @@
+{
+    "id": "c3af5295-8b4e-4d23-a920-4f6a8b0c2d4e",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Mira",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 992,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magd",
+        "specification": "Wasch- und Küchenmagd in Donnerbach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Pflegeschwester, Herdfeuer, Kräuterheilkunde"
+    },
+    "appearance": {
+        "size": 163,
+        "weight": 54,
+        "hair": "Kastanienbraunes Haar, streng im Nacken geflochten",
+        "skin": "Helle, von Wasser und Seife beanspruchte Haut",
+        "eyes": "Aufmerksame grau-grüne Augen",
+        "outfit": {
+            "headgear": "Weißes Kopftuch",
+            "top": "Flickkleid aus derber blauer Wolle über einem grauen Leinenhemd",
+            "trousers": "Keine",
+            "footwear": "Einfache Holzzloggen",
+            "jewellery": "Ein Holzkreuz-Amulett an einem Bindfaden",
+            "things": "Waschbrett, Leinensack, Seifenstück",
+            "weapons": "Küchenmesser"
+        },
+        "distinguishing_features": "Gerötete Hände vom heißen Waschwasser und sehr leiser Schritt"
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Hilfsbereit",
+            "Ruhig",
+            "Dankbar",
+            "Einfühlsam"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Pflegeeltern Gerwulf Kempf (56, Gutsherr) und Swangard Kempf (57, Verwalterin). Wurde als verwaistes Säugling im Donnerbacher Traviatempel abgegeben und von den Kempfs aufgenommen.",
+        "motivation": "Der Familie Kempf durch ihre Arbeit im Haushalt beizustehen und Travias Gebote getreulich zu befolgen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 11,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kochen",
+                "FW": 8
+            },
+            {
+                "name": "Stoffbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 6
+            },
+            {
+                "name": "Sinnenfeinheit",
+                "FW": 7
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

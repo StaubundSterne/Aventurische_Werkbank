@@ -1,0 +1,101 @@
+{
+    "id": "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c",
+    "source": "Entwürfe der Mitspielenden; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Elkwin Salindason",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 987,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Halbelf",
+        "soul-animal": "Luchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerk",
+        "specification": "Küchenjunge und Souschef",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Aurelevina"
+        ],
+        "injection-points": "Pausierte Antworten, Direkte Sprache, Versteckte Rezepte"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 65,
+        "hair": "Kupferrotes, glattes Haar, schulterlang",
+        "skin": "Helle Haut mit dichten Sommersprossen auf Wangen und Nasenrücken",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Weißes Leinentuch, straff nach hinten gebunden",
+            "top": "Weiße, teils fleckige Kochtunika",
+            "trousers": "Dunkelbraune Leinenhose",
+            "footwear": "Leichte, leise Sohlen",
+            "jewellery": "Kein Schmuck",
+            "things": "Ein handgeschriebener Zettel mit Zutaten, versteckt im Ärmel",
+            "weapons": "Ein scharfes Schälmesser im Gürtel"
+        },
+        "distinguishing_features": "Leicht spitze Ohren, hält vor jeder Antwort drei bis vier Sekunden inne."
+    },
+    "personality": {
+        "traits": [
+            "Sehr innvoativ. Antwortet ohne metaphorische Umschreibungen",
+            "Lässt hörbare Pausen vor dem Sprechen",
+            "Führt Handgriffe in der Küche mit hohem Tempo aus",
+            "Beobachtet häufig den Eingang zur Backstube",
+            "Legt den Kopf schief",
+            "wenn jemand redensartlich spricht"
+        ],
+        "actual-mood": [
+            "Beobachtend"
+        ],
+        "family-background": "Mutter Salinda Stromer, Tuchschneiderin in Riva; Vater Falandriel, elfischer Zauberweber aus der Sippe der Morgentauglanz. Elkwin wuchs im Neunaugensee-Einzugsgebiet auf.",
+        "motivation": "Vesucht handgeschriebene Anleitungen für Speisen der Backabteilung als traditionelle Rezepte unterzujubeln."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 14,
+            "CH": 10,
+            "FF": 15,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 12,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kochen",
+                "FW": 14
+            },
+            {
+                "name": "Verbergen",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

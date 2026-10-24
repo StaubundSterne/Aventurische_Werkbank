@@ -1,0 +1,113 @@
+{
+    "id": "e9821816-c340-4494-8255-467472491f24",
+    "source": "https://de.wiki-aventurica.de/wiki/Erbert_Domian, [4200 Svelltland]",
+    "tags": [],
+    "general": {
+        "name": "Erbert Domian von Zanderhof",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 973,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Wachhund",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Stadtgardist",
+        "specification": "Stadtkommandant der Stadtgarde von Lowangen",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Greifenfurt",
+            "Arras de Mott"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Aurelevina"
+        ],
+        "injection-points": "Militärische Ordnung, Orkinvasion, Strategie"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 82,
+        "hair": "Kurzes, ergrauendes Haar, akkurater Schnurrbart",
+        "skin": "Wettergegerbt, blass",
+        "eyes": "Stahlblau, wachsam",
+        "outfit": {
+            "headgear": "Ein polierter Eisenhelm mit rotem Federbusch (bei Dienst)",
+            "top": "Wappenrock der Lowanger Garde über einem Kettenhemd",
+            "trousers": "Dunkelblaue Tuchhose",
+            "footwear": "Schwarze Lederstiefel mit Sporen",
+            "jewellery": "Ein Siegelring des Hauses Zanderhof, silberne Pfeife an einer Kette",
+            "things": "Ein aufgerolltes Pergament mit dem Stadtplan, Schreibzeug",
+            "weapons": "Ein meisterlich gearbeitetes Breitschwert, ein Dolch am Gürtel"
+        },
+        "distinguishing_features": "Eine schmale Narbe über der linken Augenbraue; geht stets kerzengerade."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Strategisch",
+            "Nüchtern",
+            "Vorausschauend",
+            "Autoritär"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Adelshaus Zanderhof. Sein Vater war Offizier im Mittelreich; seine Schwester Alara führt ein kleines Gut nahe Arsingen.",
+        "motivation": "Sicherung der Stadt Lowangen gegen die drohende Belagerung durch die Orks; Suche nach Verbündeten."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 13,
+            "IN": 14,
+            "CH": 12,
+            "FF": 11,
+            "GE": 12,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kriegskunst",
+                "FW": 12
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 10
+            },
+            {
+                "name": "Überzeugen",
+                "FW": 8
+            },
+            {
+                "name": "Menschenkunde",
+                "FW": 9
+            },
+            {
+                "name": "Schwerter",
+                "FW": 13
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

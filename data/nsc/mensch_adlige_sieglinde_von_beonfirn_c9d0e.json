@@ -1,0 +1,104 @@
+{
+    "id": "b2c3d4e5-f6a1-42c3-9d4e-5f6a7b8c9d0e",
+    "source": "wiki-aventurica.de, Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Warmelind von Beonfirn",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 966,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Adlige",
+        "specification": "Verwalterin von Beonfirn",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Beonfirn",
+        "former-locations": [
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Hesindian"
+        ],
+        "injection-points": "Geheimrezeptur, Ahnenchronik, Reisegeld"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 62,
+        "hair": "Kupferblondes, hochgestecktes Haar",
+        "skin": "Blass mit leichten Fältchen",
+        "eyes": "Nussbraun",
+        "outfit": {
+            "headgear": "Bestickte Haube aus Leinen",
+            "top": "Dunkelgrünes Samtkleid mit Silberstickereien",
+            "trousers": "Wollene Unterröcke",
+            "footwear": "Lederne Halbschuhe",
+            "jewellery": "Silberne Kette mit Perlmutt-Anhänger",
+            "things": "Schlüsselbund des Guts, Notizbuch aus Pergament",
+            "weapons": "Feiner Zierdolch"
+        },
+        "distinguishing_features": "Trägt stets einen schweren Gürtel mit dem Schlüsselbund des Anwesens"
+    },
+    "personality": {
+        "traits": [
+            "Vorausschauend",
+            "Streng",
+            "Fürsorglich",
+            "Gläubig",
+            "Pragmatisch"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Mutter von Eudovan. Entstammt einer verarmten Ritterfamilie aus der Balihoer Gegend und führt die Haushaltsbücher des Guts mit fester Hand.",
+        "motivation": "Die Finanzen von Beonfirn geordnet zu halten und Aurelevina auf ihrer Reise geschützt zu wissen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 13,
+            "CH": 12,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechnen",
+                "FW": 11
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 8
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

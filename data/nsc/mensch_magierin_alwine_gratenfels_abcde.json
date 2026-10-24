@@ -1,0 +1,112 @@
+{
+    "id": "1c2d3e4f-5a6b-4789-8012-3456789abcde",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Alwine Gratenfels",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Fuchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magierin",
+        "specification": "Absolventin des Seminars der elfischen Verständigung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gratenfels",
+            "Angbar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Lernpartnerschaft, Nachtschichten, Sturkopf, ehemalige Kommilitonin"
+        ]
+    },
+    "appearance": {
+        "size": 183,
+        "weight": 69,
+        "hair": "Braune Haare im Zopf, seit kurzem mit krumm selbst geschnittenem Pony",
+        "skin": "Helle Haut mit leichten Rändern unter den Augen",
+        "eyes": "Eisblaue, wachsame Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichtes, dunkles Magierhemd",
+            "trousers": "Dunkle Stoffhose (lehnt Röcke konsequent ab)",
+            "footwear": "Feste Schnürstiefel",
+            "jewellery": "Keine",
+            "things": "Mehrere Bücher, Tintentopf, Federkiel",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Groß und schlank; wirkt wegen ständigen Schlafmangels oft übermüdet, aber geistig hellwach."
+    },
+    "personality": {
+        "traits": [
+            "Wissbegierig",
+            "Witzig",
+            "Eigensinnig",
+            "Rastlos",
+            "Direkt"
+        ],
+        "actual-mood": [
+            "Fokussiert"
+        ],
+        "family-background": "Mutter Robena, Buchbinderin in Gratenfels; Vater Hal, Schreiber. Aufgewachsen zwischen alten Wälzern, verließ sie die Heimat für die Akademie.",
+        "motivation": "Will Adarells verlässlichste Lernpartnerin sein, schläft aus Wissensdurst nur 5 Stunden pro Nacht und lässt sich von niemandem etwas befehlen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 13,
+            "CH": 11,
+            "FF": 13,
+            "GE": 11,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 40,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 8
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Analys Arcanstruktur",
+                "FW": 6
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 7
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

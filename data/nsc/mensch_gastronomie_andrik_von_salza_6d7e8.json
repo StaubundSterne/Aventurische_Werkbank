@@ -1,0 +1,100 @@
+{
+    "id": "c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8",
+    "source": "Entwürfe der Mitspielenden; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Andrik Boronjew",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Bornländer",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gastronomie",
+        "specification": "Schankmeister und Koch",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Festum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Fredegis"
+        ],
+        "injection-points": "Gerolltes R, Rhythmisches Summen, Scheinbare Ruhe"
+    },
+    "appearance": {
+        "size": 180,
+        "weight": 75,
+        "hair": "Schwarze, unordentlich abstehende Haare",
+        "skin": "Sonnengebräunt",
+        "eyes": "Dunkelgrün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Weißes Hemd mit hochgekrempelten Ärmeln",
+            "trousers": "Dunkelrote Stoffhose",
+            "footwear": "Weiche Lederhalbschuhe",
+            "jewellery": "Ein breiter Lederriemen um das rechte Handgelenk",
+            "things": "Ein Poliertuch über der Schulter",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Rollt beim Aussprechen des Namens 'Andrik' den R-Laut mehrfach."
+    },
+    "personality": {
+        "traits": [
+            "Führt Flaschen und Gläser in kreisenden Bewegungen",
+            "Gibt durchgehend tiefe Töne in gleichmäßigem Rhythmus von sich",
+            "Greift erst nach Verstreichen mehrerer Minuten nach eingegangenen Bestellungen",
+            "Nickt bei akustischen Signalen kurz ab",
+            "Hält die Schulterlinie tief"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Mutter Linnea, Schankmaid in Festum am Born; Vater unbekannt. Erlente das Schankhandwerk in Festum.",
+        "motivation": "Arbeitet Schankbestellungen an der Bar in eigener Abfolge ab."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 12,
+            "IN": 14,
+            "CH": 13,
+            "FF": 14,
+            "GE": 15,
+            "KO": 12,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zechen",
+                "FW": 11
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

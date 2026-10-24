@@ -1,0 +1,121 @@
+{
+    "id": "a8f11d92-23c4-4b51-91e8-7102b41299e2",
+    "source": "Entwürfe der Mitspielenden; Seminar der elfischen Verständigung und natürlichen Heilung zu Donnerbach",
+    "tags": [],
+    "general": {
+        "name": "Feyaria-spricht-mit-den-Schmetterlingen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 994,
+        "alive": true,
+        "culture": "Auelfen",
+        "species": "Halbelf",
+        "soul-animal": "Tagpfauenauge",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magierin",
+        "specification": "Adarells Mentee am Seminar der elfischen Verständigung und natürlichen Heilung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Elbenfeld"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Zaubergesten-Fehler, Balsamsalabunde-Einübung, Morgentauglanz-Sippe"
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 48,
+        "hair": "Dunkelbraun, ungekämmt und schulterlang",
+        "skin": "Leicht sonnengebräunt",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Geflickte Tunika aus festem, grobem Leinen",
+            "trousers": "Geflickte Hose aus ungefärbtem Leinen",
+            "footwear": "Keine (geht im Seminargebäude barfuß)",
+            "jewellery": "Einfaches Band aus geflochtenem Gras am rechten Handgelenk",
+            "things": "Kleine Holzschachtel mit getrockneten Kräutern",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Ausgeprägte, spitz zulaufende Ohren. Geht im Seminargebäude meist barfuß. Hält bei plötzlichen, lauten Geräuschen in der Bewegung inne."
+    },
+    "personality": {
+        "traits": [
+            "Feinfühlig",
+            "Unsicher",
+            "Naturverbunden",
+            "Schreckhaft",
+            "Lernbegierig"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Mutter Elawen die-Sonnenglanz-sucht, Auelfin aus der Morgentauglanz-Sippe; Vater Branjo Tuchscherer, Seilermeister in Donnerbach; zwei jüngere Halbgeschwister in Donnerbach.",
+        "motivation": "Einübung der gildenmagischen Bewegungsabläufe für die Hauszauber BALSAM SALABUNDE und RUHE KÖRPER, RUHE GEIST Schritt für Schritt zusammen mit Adarell Eibenkind."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 12,
+            "IN": 14,
+            "CH": 13,
+            "FF": 12,
+            "GE": 13,
+            "KO": 10,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 34,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 6
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 7
+            },
+            {
+                "name": "Singen",
+                "FW": 5
+            },
+            {
+                "name": "Klettern",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 4
+            },
+            {
+                "name": "Ruhe Körper, ruhe Geist",
+                "FW": 3
+            },
+            {
+                "name": "Hilfreiche Tat",
+                "FW": 5
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,112 @@
+{
+    "id": "7b8f9e01-1234-4567-89ab-cdef01234567",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Jallik Tannhaus",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 990,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Mauswiesel",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Absolvent des Seminars der elfischen Verständigung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Akademie-Tratsch, Unruhe, Freundschaft, ehemaliger Kommilitone"
+        ]
+    },
+    "appearance": {
+        "size": 181,
+        "weight": 72,
+        "hair": "Zerzaustes schwarzes Haar",
+        "skin": "Leicht sommersprossig",
+        "eyes": "Lebhafte grüne Augen",
+        "outfit": {
+            "headgear": "Buntes, verknotetes Kopftuch",
+            "top": "Lange, offene Stoffweste über weißem Hemd",
+            "trousers": "Bequeme Hose",
+            "footwear": "Abgewetzte Stiefel",
+            "jewellery": "Sehr breiter Ledergürtel mit massiver Schnalle",
+            "things": "Taschenmesser, Würfelbeutel, Kräutersäckchen",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Ständiges verschmitztes Grinsen; wirkt immer leicht zappelig und unruhig."
+    },
+    "personality": {
+        "traits": [
+            "Frech",
+            "Feige",
+            "Gutherzig",
+            "Hyperaktiv",
+            "Geschwätzig"
+        ],
+        "actual-mood": [
+            "Aufgeregt"
+        ],
+        "family-background": "Mutter Sanna, Schneiderin in Donnerbach; Vater Rondralf, Krämer. Jallik wuchs in einer geschäftigen Händlerfamilie auf und wurde oft wegen seiner Sprunghaftigkeit gerügt.",
+        "motivation": "Will seinen Freunden helfen und Spaß haben, zieht aber den Kopf ein, sobald es handgreiflich wird. Wurmt sich heimlich, dass Alwine größer ist als er."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 12,
+            "IN": 13,
+            "CH": 13,
+            "FF": 13,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 31,
+            "AsP": 36,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gassenwissen",
+                "FW": 6
+            },
+            {
+                "name": "Taschendiebstahl",
+                "FW": 4
+            }
+        ],
+        "spells": [
+            {
+                "name": "Axxeleratus",
+                "FW": 5
+            },
+            {
+                "name": "Klarum Purum",
+                "FW": 4
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

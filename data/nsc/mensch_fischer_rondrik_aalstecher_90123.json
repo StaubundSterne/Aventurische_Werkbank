@@ -1,0 +1,109 @@
+{
+    "id": "f0db2245-6789-4a12-83de-f34567890123",
+    "source": "https://de.wiki-aventurica.de/wiki/Auenmarkt",
+    "tags": [],
+    "general": {
+        "name": "Rondrik Aalstecher",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 954,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Graureiher",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Fischer",
+        "specification": "Flussfischer und Netzknüpfer auf dem Rathil",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Auenmarkt",
+        "former-locations": [
+            "Gareth",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": "Flussnetze, Wasserstand, Seemannsgarn"
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 68,
+        "hair": "Ergrauend, wirr, mit langem schütterem Vollbart",
+        "skin": "Tief gefurcht, sonnenverbrannt und wettergewohnt",
+        "eyes": "Steingrau",
+        "outfit": {
+            "headgear": "Breitkrempiger Filzhut gegen den Regen",
+            "top": "Imprägnierte Wolljacke über grobem Kittel",
+            "trousers": "Wetterfeste Lederhose",
+            "footwear": "Hohe Watstiefel aus gefettetem Leder",
+            "jewellery": "Ein Schnitzwerk aus Fischknochen an einer Flachsschnur",
+            "things": "Kästchen mit Angelhaken, Tabakspfeife",
+            "weapons": "Fischstecher (Jagdspeer)"
+        },
+        "distinguishing_features": "Fehlendes oberes Glied am rechten Zeigefinger, riecht stets nach Flusswasser und Pfeifentabak"
+    },
+    "personality": {
+        "traits": [
+            "Aberglaubisch",
+            "Eigensinnig",
+            "Naturverbunden",
+            "Geduldig",
+            "Kauzige Art"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Bruder Geron, Binnenferger auf dem Großen Fluss; Sohn Marell arbeitet ebenfalls als Fischer weiter flussabwärts.",
+        "motivation": "Möchte den perfekten Fang machen und die alten Geheimnisse und Sagen des Flusses entschlüsseln."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 14,
+            "CH": 10,
+            "FF": 13,
+            "GE": 12,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fischen & Angeln",
+                "FW": 11
+            },
+            {
+                "name": "Boote fahren",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 8
+            },
+            {
+                "name": "Sagen & Mythen",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

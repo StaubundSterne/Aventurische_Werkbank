@@ -1,0 +1,107 @@
+{
+    "id": "782bd92e-3994-4e43-85f7-9201f9c8d231",
+    "source": "4200 Svelltland, 4310 Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Lutger 'Schiefmaul' Holler",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Ratte",
+        "social-state": "Unfrei"
+    },
+    "profession": {
+        "category": "Assistent",
+        "specification": "Mittelsmann, Informant und Träger für zwielichtige Händler",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gashok",
+            "Rorkvell"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Jost"
+        ],
+        "injection-points": "Informationen über den Schwarzmarkt, Kontakt zu Diebesbanden, Angst vor Orks"
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 68,
+        "hair": "Fettiges, strähniges schwarzes Haar, Kinnbartansatz",
+        "skin": "Blass, etwas unrein",
+        "eyes": "Wässriges Blau",
+        "outfit": {
+            "headgear": "Eine speckige Wollmütze",
+            "top": "Ein mehrfach geflicktes Wams aus grobem Leinen",
+            "trousers": "Dunkle Stoffhose mit Flicken an den Knien",
+            "footwear": "Ausgetretene Halbschuhe mit losen Sohlen",
+            "jewellery": "Ein kleiner, wertloser Glücksbringer aus Messing an einer Schnur",
+            "things": "Ein kleiner Lederbeutel für Botenlohn, ein Klappmesser",
+            "weapons": "Ein versteckter Dolch im Ärmel"
+        },
+        "distinguishing_features": "Eine alte Verletzung lässt seinen Mundwinkel links dauerhaft leicht nach oben gezogen wirken (daher sein Beiname)."
+    },
+    "personality": {
+        "traits": [
+            "Speichelleckerisch",
+            "Ängstlich",
+            "Gierig",
+            "Gerissen",
+            "Nervös"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Mutter Hilke, Wäscherin; Vater unbekannt; Bruder in Orkscharmützel gefallen.",
+        "motivation": "Sich durch kleine Gefallen bei den Mächtigen und Reichen über Wasser halten und genug Geld für den nächsten Rausch verdienen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 11,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 12,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gassenwissen",
+                "FW": 11
+            },
+            {
+                "name": "Sich Verstecken",
+                "FW": 9
+            },
+            {
+                "name": "Überreden",
+                "FW": 8
+            },
+            {
+                "name": "Falschspiel",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

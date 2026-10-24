@@ -1,0 +1,138 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "source": "Entwurf der Mitspielenden, Wiki Aventurica (Finsterkamm)",
+    "tags": [],
+    "general": {
+        "name": "Fanko",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 973,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Gemse",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Jäger:in",
+        "specification": "Gebirgsjäger im Finsterkamm",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Yrramis",
+            "Nordhag",
+            "Greifenfurt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Wundertal, Finsterkamm-Pässe, Waidmannskunst"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 86,
+        "hair": "Dunkelbraunes, schulterlanges Haar mit ergrauenden Schläfen und ungepflegtem Vollbart",
+        "skin": "Wettergegerbt, von Sommersprossen und kleinen Schnittnarben im Gesicht durchsetzt",
+        "eyes": "Graugrün",
+        "outfit": {
+            "headgear": "Braune Filzmütze mit leicht abgegriffenem Rand",
+            "top": "Dicht gewobener Lodenrock in braungrünen Tönen über einem groben Leinenhemd",
+            "trousers": "Lederne Beinlinge mit sichtbaren Fettflecken",
+            "footwear": "Genagelte Wanderschuhe mit abgenutzten Eisenprofilen",
+            "jewellery": "Kein Schmuck",
+            "things": "Trage aus geschältem Eschenholz mit zwei gebundenen Gemsen; Häutungsmesser mit naturbelassenem Hirschhornheft am Gürtel; Beutel mit getrockneten Flechtenfasern",
+            "weapons": "Windenarmbrust mit gefülltem Bolzenköcher auf dem Rücken; dreikantiger Jagdspieß mit geprägter Lederscheide"
+        },
+        "distinguishing_features": "Breit gebaut; gestikuliert beim Sprechen ausladend mit der rechten Hand und hebt dabei die Stimme."
+    },
+    "personality": {
+        "traits": [
+            "Mitteilsam",
+            "Waidmannserfahren",
+            "Geltungsbedürftig",
+            "Trittfest",
+            "Abergläubisch"
+        ],
+        "actual-mood": [
+            "Mitteilsam"
+        ],
+        "family-background": "Mutter Alwine, Gerberin in Yrramis; Vater Garsch, Köhler im Svellttal; Schwester Elsbeth, Magd auf einem Hof nahe Nordhag.",
+        "motivation": "Transport der erlegten Gemsen nach Yrramis zum Verkauf sowie Weitergabe von Wissen über Gebirgspässe und Waidmannskunst an Reisende."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 13,
+            "CH": 11,
+            "FF": 12,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtenlesen",
+                "FW": 11
+            },
+            {
+                "name": "Fesselung",
+                "FW": 8
+            },
+            {
+                "name": "Klettern",
+                "FW": 10
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 12
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 7
+            },
+            {
+                "name": "Sagen und Mythen",
+                "FW": 6
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 11
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 12
+            },
+            {
+                "name": "Armbrüste",
+                "FW": 10
+            },
+            {
+                "name": "Metiere",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

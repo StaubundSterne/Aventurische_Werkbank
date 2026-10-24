@@ -1,0 +1,120 @@
+{
+    "id": "7d3a8124-3f1a-4d2b-9e8c-1a2b3c4d5e6f",
+    "source": "wiki-aventurica.de (Alia Lichtweberin), 4205 Aus Licht und Traum, 4303 Stätten okkulter Geheimnisse",
+    "tags": [],
+    "general": {
+        "name": "Alia Lichtweberin",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 880,
+        "alive": true,
+        "culture": "Waldelfen",
+        "species": "Elf",
+        "soul-animal": "Seidenreiher",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Zauberweberin",
+        "specification": "Dozentin im Kreis der Einfühlung",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gerasim",
+            "Salamandersteine",
+            "Riva",
+            "Mandredsbaiern"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Verlorenes Lichtweb-Muster, Blockiertes Salasandra, Alter Zwist"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 58,
+        "hair": "Silberweißes, hüftlanges Haar, in komplizierte Zöpfe geflochten",
+        "skin": "Ebenholzfarben, makellos und von leicht schimmerndem Teint",
+        "eyes": "Mandelform, tiefes Smaragdgrün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Gewebte Tunika aus Weidenbast vom Schneider Alaric aus Gerasim",
+            "trousers": "Enganliegende Hosen aus gegerbtem Rehhautleder",
+            "footwear": "Weiche Wildlederstiefel ohne feste Sohle",
+            "jewellery": "Amulett aus Rohbernstein von ihrer Mutter Fianna",
+            "things": "Spindel aus Mondsilber, Kräuterbeutel mit seltenen Alraunen",
+            "weapons": "Elfischer Bogen aus Eibenholz"
+        },
+        "distinguishing_features": "Ihre Bewegung wirkt völlig geräuschlos; bei starker Magienutzung glimmen ihre Fingerspitzen schwach sanftgrün."
+    },
+    "personality": {
+        "traits": [
+            "Einfühlsam",
+            "Naturverbunden",
+            "Zurückhaltend",
+            "Melancholisch",
+            "Geduldig"
+        ],
+        "actual-mood": [
+            "Andächtig"
+        ],
+        "family-background": "Tochter der Sippenältesten Fianna Sommerwind (Sängerin) und des Jägers Orimael (gefallen im Svelltland gegen Orks). Ihr Bruder Valanion arbeitet als Wildläufer in den Salamandersteinen, während Tante Lindariel als Kräuterkundige nahe Riva lebt.",
+        "motivation": "Den menschlichen wie elfischen Schülern des Seminars das wesenhafte Salasandra näherzubringen, ohne dass die elfische Seele durch reine menschliche Verstandesanalysen beschädigt wird."
+    },
+    "stats": {
+        "experience-level": "Brillant",
+        "attributes": {
+            "MU": 13,
+            "KL": 14,
+            "IN": 17,
+            "CH": 16,
+            "FF": 15,
+            "GE": 16,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 48,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Musizieren",
+                "FW": 14
+            },
+            {
+                "name": "Singen",
+                "FW": 16
+            },
+            {
+                "name": "Orientierung",
+                "FW": 12
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 13
+            },
+            {
+                "name": "Harmonie der Seelen",
+                "FW": 15
+            },
+            {
+                "name": "Lichtzauber",
+                "FW": 11
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": "Ehemalige Gastdozentin für emotionale Resonanz und Salasandra-Webkunst am Seminar zu Donnerbach"
+}

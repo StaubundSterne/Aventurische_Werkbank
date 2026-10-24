@@ -1,0 +1,100 @@
+{
+    "id": "e42d7f91-1b2c-4a3d-8f5e-6a7b8c9d0e1f",
+    "source": "Entwürfe der Mitspielenden; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Falko Bärenklau",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Mittelreicher",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Dienstleistung",
+        "specification": "Portier",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Neetha"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Ogerhafte Statur, Pergamentnotizen, Sanfte Stimme"
+    },
+    "appearance": {
+        "size": 208,
+        "weight": 125,
+        "hair": "Dunkelbraunes, dichtes Haar, kurz geschnitten",
+        "skin": "Grobporig, an den Händen stark verhornt",
+        "eyes": "Hellbraun",
+        "outfit": {
+            "headgear": "Dunkelgrüne Filzkappe",
+            "top": "Spannende, goldbestickte rote Livree",
+            "trousers": "Schwarze Tuchhose",
+            "footwear": "Schwere, lederne Arbeitsschuhe",
+            "jewellery": "Kein Schmuck",
+            "things": "Ein kleiner Kohlestift und gefaltetes Pergament in der Brusttasche",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Überragt die meisten Gäst:innen um Haupteslänge, atmet hörbar und tief aus, wenn er Gepäck abstellt."
+    },
+    "personality": {
+        "traits": [
+            "Bewegt sich langsam und bedächtig",
+            "Spricht in sehr gedämpfter Lautstärke",
+            "Holt in unbeobachteten Momenten den Kohlestift hervor",
+            "Blickt beim Zuhören an den Gäst:innen vorbei in die Ferne",
+            "Greift nach mehreren Gepäckstücken gleichzeitig"
+        ],
+        "actual-mood": [
+            "Fokussiert"
+        ],
+        "family-background": "Mutter Alwina Bärenklau (geb. Tannenbecher), Waschfrau in Donnerbach; Vater Gerion Bärenklau, Holzfäller in den Wäldern der Weidener Grenzregion. Falko verbrachte Arbeitszeit in der örtlichen Schreibstube nahe dem Hesinde-Tempel, bevor er die Anstellung im Hotel antrat.",
+        "motivation": "Formuliert beim Tragen von Gepäckstücken Sätze auf Pergamentschnipseln."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 10,
+            "CH": 11,
+            "FF": 10,
+            "GE": 10,
+            "KO": 15,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kraftakt",
+                "FW": 10
+            },
+            {
+                "name": "Schreiben",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

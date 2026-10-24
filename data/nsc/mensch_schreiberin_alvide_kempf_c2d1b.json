@@ -1,0 +1,112 @@
+{
+    "id": "2f5b8c30-694e-4d92-ba03-9e8f7a4c2d1b",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Alvide Kempf",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schreiberin",
+        "specification": "Gehilfin und Laufmädchen bei einem Donnerbacher Notar",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Pflegeschwester, Pergamon, Geheimnis"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 55,
+        "hair": "Dunkelblondes, lange hochgestecktes Haar",
+        "skin": "Blass mit vereinzelt Tintenspuren an den Fingern",
+        "eyes": "Wachsame graue Augen",
+        "outfit": {
+            "headgear": "Schlichte Stoffhaube",
+            "top": "Dunkelgrüne Wolljacke über einer sauberen Leinenbluse",
+            "trousers": "Dunkler knöchellanger Faltenrock",
+            "footwear": "Einfache Lederschuhe",
+            "jewellery": "Kleine, schlichte Ohrstecker aus Zinn",
+            "things": "Holzkästchen mit Schreibzeug und Tintentopfgürtel",
+            "weapons": "Kleines Federmesser"
+        },
+        "distinguishing_features": "Tinte an den Kuppen von Zeige- und Mittelfinger der rechten Hand"
+    },
+    "personality": {
+        "traits": [
+            "Wissbegierig",
+            "Vorsichtig",
+            "Diskret",
+            "Ordnungsliebend",
+            "Ehrgeizig"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Pflegeeltern Gerwulf Kempf (56, Gutsherr) und Swangard Kempf (57, Verwalterin). Kam als Kleinkind zur Familie Kempf und lernte früh Lesen und Schreiben bei den lokalen Geweihten.",
+        "motivation": "Sucht nach alten Dokumenten über ihre biologische Herkunft in den Donnerbacher Archiven."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 13,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 6
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 5
+            },
+            {
+                "name": "Sinnenfeinheit",
+                "FW": 7
+            },
+            {
+                "name": "Geographie",
+                "FW": 5
+            },
+            {
+                "name": "Überreden",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

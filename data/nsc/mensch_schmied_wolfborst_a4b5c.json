@@ -1,0 +1,110 @@
+{
+    "id": "f1a2b3c4-5d6e-4f7a-8b9c-0d1e2f3a4b5c",
+    "source": "https://de.wiki-aventurica.de/wiki/Festum, Ingame-Informationen 1009 BF",
+    "tags": [],
+    "general": {
+        "name": "Wolfborst Eisenarm\n",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmied",
+        "specification": "Rüstungsmacher und Plättner (Meister bronzierter Kettenhemden)",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Norburg",
+            "Vallusa"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": "Kettenhemdfertigung, Spitzname Häkeltante, Werkstattsnachbarschaft"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 74,
+        "hair": "Dunkelbraunes, kurz geschnittenes Haar",
+        "skin": "Helle Haut mit leichten Brandscharben an den Unterarmen",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Leinenhemd unter dicker Schmiedeschürze aus Rindsleder",
+            "trousers": "Arbeitskleidung aus derbem Zwillich",
+            "footwear": "Feste Halbstiefel aus Leder",
+            "jewellery": "Keiner",
+            "things": "Kettenringzange, Durchschlag, Drahtspulen",
+            "weapons": "Dolch am Gürtel"
+        },
+        "distinguishing_features": "Sehr geschickte, hornhautbedeckte Hände; wird scherzhaft 'Häkeltante' genannt"
+    },
+    "personality": {
+        "traits": [
+            "Gewissenhaft",
+            "Geduldig",
+            "Humorvoll",
+            "Sorgfältig",
+            "Arbeitsam"
+        ],
+        "actual-mood": [
+            "Geschäftig"
+        ],
+        "family-background": "Enkel der emeritierten Rüstungsmacherin Wolfgard. Vater Thorben, Schmiedegeselle in Donnerbach.",
+        "motivation": "Perfektionierung bronzierter Kettenhemden nach klassischem Vorbild Heleons unter den wachsamen Blicken seiner Großmutter."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 13,
+            "CH": 11,
+            "FF": 16,
+            "GE": 13,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 13
+            },
+            {
+                "name": "Stoffbearbeitung",
+                "FW": 7
+            },
+            {
+                "name": "Handel",
+                "FW": 8
+            },
+            {
+                "name": "Überreden",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

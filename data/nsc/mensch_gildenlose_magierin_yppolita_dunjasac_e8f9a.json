@@ -1,0 +1,110 @@
+{
+    "id": "1a6e5f4a-7b8c-4d9e-0f1a-4b5c6d7e8f9a",
+    "source": "wiki-aventurica.de / Seminar der elfischen Verständigung",
+    "tags": [],
+    "general": {
+        "name": "Yppolita Dunjasac",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 960,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Katze",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gildenlose Magierin",
+        "specification": "Magistra und Dozentin für Arkanum",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Belhanka",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Geistprüfung, Barrieren, Meditation"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Schwarze Locken bis auf die Schultern",
+        "skin": "Hell",
+        "eyes": "Dunkelblau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkelblaue Robe mit silberner Borte",
+            "trousers": "Dunkler Rock",
+            "footwear": "Leichte Lederschuhe",
+            "jewellery": "Ein eiserner Ring an der linken Hand",
+            "things": "Ein kleines Holzkästchen mit Räucherwerk",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Häufiges Zusammenzucken bei plötzlichem Lärm"
+    },
+    "personality": {
+        "traits": [
+            "Ruhig",
+            "Bedachtsam",
+            "Beobachtend",
+            "Streng",
+            "Gerecht"
+        ],
+        "actual-mood": [
+            "Ruhig"
+        ],
+        "family-background": "Vater Corrado Dunjasac, Händler; Mutter Simia Dunjasac, Weberin.",
+        "motivation": "Vermittlung theoretischer Magie und Untersuchung seelischer Gleichgewichte."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 15,
+            "IN": 14,
+            "CH": 13,
+            "FF": 12,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 48,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Menschenkenntnis",
+                "FW": 11
+            },
+            {
+                "name": "Wissen über Magie",
+                "FW": 12
+            }
+        ],
+        "spells": [
+            {
+                "name": "Armatrutz",
+                "FW": 11
+            },
+            {
+                "name": "Mindleber",
+                "FW": 10
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

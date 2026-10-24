@@ -1,0 +1,114 @@
+{
+    "id": "132f8b9e-63bc-4d89-9a12-82f3a4b5c6d7",
+    "source": "Entwürfe der Mitspielenden, Binge Finsterkoppen, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Daron Sohn des Garbalon",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 954,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Steinbock",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Krieger",
+        "specification": "Passwache der Binge Finsterkoppen",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Finsterkoppen",
+            "Lowangen",
+            "Nordhag"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Messkette, Goldener Tannenzapfen, Passkontrolle"
+    },
+    "appearance": {
+        "size": 137,
+        "weight": 66,
+        "hair": "Dunkelbrauner, geflochtener Bart mit zwei eingearbeiteten Messingringen, kurzes dunkelbraunes Haupthaar",
+        "skin": "Wettergegerbt, helle Haut mit Sommersprossen auf dem Nasenrücken",
+        "eyes": "Dunkelbraune Augen mit tiefen Falten an den äußeren Winkeln",
+        "outfit": {
+            "headgear": "Quadratisch geformter Eisenhelm mit Nasenschutz",
+            "top": "Schweres Kettenhemd über einem dicken Lederwams",
+            "trousers": "Dunkelbraune Lederhose mit Schieferstaubspuren an den Knien",
+            "footwear": "Beschlagene Zwergenstiefel aus Rindsleder",
+            "jewellery": "Breite Gürtelschnalle aus feuervergoldetem Messing mit Ingerimm-Symbolik",
+            "things": "Bergmannslampe aus Messing mit verstellbarem Blendschutz, geprägte Messkette in der Ledergürteltasche",
+            "weapons": "Doppelköpfiger Kriegshammer mit verstärktem Holzstiel, schwere metallene Spitzhacke"
+        },
+        "distinguishing_features": "Eine drei Finger breite Narbe verläuft waagerecht über den linken Unterarm."
+    },
+    "personality": {
+        "traits": [
+            "Regelbewusst",
+            "Angroschgläubig",
+            "Traditionsbewusst",
+            "Wachsam",
+            "Gastfreundlich"
+        ],
+        "actual-mood": [
+            "Aufmerksam"
+        ],
+        "family-background": "Vater: Garbalon Sohn des Gerambalosch, Bergkönig der Binge Finsterkoppen (Zwergenalter 113 im Jahr 1009 BF); Schwester: Prinzessin Arglescha Tochter der Angrarda, Anführerin von Handelsgruppen; Mutter: Angrarda (verstorben); Großvater: Gerambalosch",
+        "motivation": "Überwachung des Wegs durch den nördlichen Finsterkamm im Jahr 1009 BF, Durchsetzung des zwergischen Etikette-Protokolls gegenüber Reisenden und Händler:innen sowie Weitergabe der Überlieferung vom goldenen Tannenzapfen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 12,
+            "CH": 11,
+            "FF": 12,
+            "GE": 11,
+            "KO": 15,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 42,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hiebwaffen",
+                "FW": 12
+            },
+            {
+                "name": "Zechen",
+                "FW": 10
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 9
+            },
+            {
+                "name": "Sagen und Mythen",
+                "FW": 8
+            },
+            {
+                "name": "Orientierung",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

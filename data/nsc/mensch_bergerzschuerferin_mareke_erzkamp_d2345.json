@@ -1,0 +1,113 @@
+{
+    "id": "e83bd29c-32aa-4f81-8173-9d291e1d2345",
+    "source": "wiki-aventurica.de, Fredegis allein im Finsterkamm_3.md",
+    "tags": [],
+    "general": {
+        "name": "Mareke Erzkamp",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Steinbock",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bergerzschürferin",
+        "specification": "Pochwascherin und Erzsorterin am Bachlauf im Finsterkamm",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Donnerbach",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": "Pochwäsche-Technik, Zwergenklafter-Tiefe, Feuersetzen"
+    },
+    "appearance": {
+        "size": 169,
+        "weight": 66,
+        "hair": "Kastanienbraunes, stramm geflochtenes Haar, im Nacken mit einer Lederschnur gebunden",
+        "skin": "Sonnengebräunte Haut mit Schwielen an den Handflächen",
+        "eyes": "Nussbraune Augen",
+        "outfit": {
+            "headgear": "Gefaltetes Kopftuch aus ungebleichtem Leinen",
+            "top": "Kurzärmeliger Leinenkittel in Blassgrau",
+            "trousers": "Eisenplattenverstärkte Lederschürze über fester Beinkleidung aus braunem Loden",
+            "footwear": "Schlammbedeckte Lederstiefel mit hohen Schäften",
+            "jewellery": "Eine schlichte Messingbrosche am Kragen",
+            "things": "Flache Pochsteine; gelochte Holzsiebe für die Pochwäsche; Trockentücher für gewaschenes Silberkonzentrat",
+            "weapons": "Schwerer Fäustel und Eisenkeil an einem Gürtel aus Rinderleder; kleines Schnitzmesser"
+        },
+        "distinguishing_features": "Ausgeprägte Hornhaut an den Händen vom Pochhammer-Führen; helle Kalkeinfärbungen an den Unterarmen"
+    },
+    "personality": {
+        "traits": [
+            "Regeltreu",
+            "Aufmerksam",
+            "Wortkarg",
+            "Zäh",
+            "Gerechtigkeitsliebend"
+        ],
+        "actual-mood": [
+            "Fokussiert"
+        ],
+        "family-background": "Mutter Hilde Erzkamp, Kräutersammlerin in Donnerbach; Vater Berthold Erzkamp, Köhler im Finsterkamm; älterer Bruder Corvin Erzkamp, Soldat der Stadtgarde in Lowangen.",
+        "motivation": "Einhaltung der Auflagen des Bergkönigs Garbalon Sohn des Gerambalosch (maximal drei Zwergenklafter Tiefe, Magieverbot, Schutz von Methusalem-Eichen), um das Schürfrecht nicht zu gefährden."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 12,
+            "IN": 13,
+            "CH": 11,
+            "FF": 14,
+            "GE": 12,
+            "KO": 13,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Bergbau",
+                "FW": 9
+            },
+            {
+                "name": "Steinbearbeitung",
+                "FW": 7
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 8
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 6
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,131 @@
+{
+    "id": "7d3b2a19-6e4f-4c8d-9b0a-2f1e4c6d8a9b",
+    "source": "Aus Licht und Traum, Geheimnisse der Elfen, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Leandra",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Waldelfen",
+        "species": "Waldelf",
+        "soul-animal": "Silberfalke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Zauberweberin",
+        "specification": "Waldelfische Bewahrerin und Zauberweberin",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Weltsicht, Elfenlied, Seelenverwandtschaft, Kulturlotsin für Adarell"
+        ]
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 56,
+        "hair": "Langes, seidenes, goldblondes Haar, in das feine Pflanzenteile und Zöpfe geflochten sind",
+        "skin": "Zarte, ebenmäßige, leicht bronzefarbene Haut",
+        "eyes": "Ausdrucksstarke, mandelförmige, seegrüne Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Geschmeidiges Hemd aus weichem, grünem Wildleder mit pflanzlichen Stickereien",
+            "trousers": "Bequeme Hose aus dunkelbraunem Hirschleder",
+            "footwear": "Lautlose, weiche Lederstiefel",
+            "jewellery": "Geschnitzter Holzanhänger in Form einer erblühenden Wasserlilie",
+            "things": "Zauberflöte aus Ebereschenholz, Kräuterbeutel, feines Flechtseil",
+            "weapons": "Elfenbogen, Vulkanglasdolch"
+        },
+        "distinguishing_features": "Anmutige, fast schwerelose Bewegungen und eine außergewöhnlich sanfte, beruhigende Ausstrahlung"
+    },
+    "personality": {
+        "traits": [
+            "Offen",
+            "Gutherzig",
+            "Neugierig",
+            "Harmoniebedürftig",
+            "Naturverbunden"
+        ],
+        "actual-mood": [
+            "Einfühlsam"
+        ],
+        "family-background": "Krähenruf-Sippe aus den Salamandersteinen; Tochter des Jägers Faelar und der Sängerin Calenra. Als Waisenkind wurde sie von der Familie Kempf aufgenommen.",
+        "motivation": "Adarell als spirituelle Brücke zur elfischen Weltsicht beizustehen, das Verständnis für das Prinzip des salasandra zu vertiefen und das harmonische Miteinander zu fördern."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 15,
+            "CH": 14,
+            "FF": 14,
+            "GE": 15,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Singen",
+                "FW": 12
+            },
+            {
+                "name": "Musizieren",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 12
+            },
+            {
+                "name": "Fährtenlesen",
+                "FW": 10
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 11
+            }
+        ],
+        "spells": [
+            {
+                "name": "Bannbaladin",
+                "FW": 12
+            },
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 10
+            },
+            {
+                "name": "Solidirid",
+                "FW": 8
+            },
+            {
+                "name": "Silentium",
+                "FW": 9
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

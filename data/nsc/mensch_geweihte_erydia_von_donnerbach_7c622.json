@@ -1,0 +1,114 @@
+{
+    "id": "e8a21f7c-9b12-43d8-8c34-51a9e8b7c622",
+    "source": "wiki-aventurica.de/wiki/Donnerbach, wiki-aventurica.de/wiki/Canyzeth, DSA5 Regelwiki",
+    "tags": [],
+    "general": {
+        "name": "Erydia von Donnerbach",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Mittelreich / Weiden",
+        "species": "Mensch",
+        "soul-animal": "Smaragdeidechse",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Mentorin / Forscherin elfischer Mythen",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Lowangen",
+            "Elenvina"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": "Canyzeth-Tafel, Elfische-Pantheon-Mythen, Eternenwacht-Vision"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 59,
+        "hair": "Kupferrotes Haar, fest im Nacken geflochten",
+        "skin": "Hell, mit zarten Sommersprossen im Gesicht",
+        "eyes": "Hellgrau und stets neugierig aufgeschlagen",
+        "outfit": {
+            "headgear": "Schlichtes grünes Stirnband mit eingewebten Silberfäden",
+            "top": "Einfache, dunkelgrüne Hesindetunika mit breiten Stoffärmeln",
+            "trousers": "Bequeme Helle Stoffhose",
+            "footwear": "Flache Lederschuhe",
+            "jewellery": "Feines Silberarmband in Schlangenform",
+            "things": "Dickes Notizbuch aus Pergament, Holzkohlestifte, Messinglupe",
+            "weapons": "Gürteldolch"
+        },
+        "distinguishing_features": "Dauerhafte Tintenflecke an den Fingerspitzen und Zeigefingern."
+    },
+    "personality": {
+        "traits": [
+            "Enthusiastisch",
+            "Wissbegierig",
+            "Feinfühlig",
+            "Unbedarft",
+            "Hartnäckig"
+        ],
+        "actual-mood": [
+            "Fasziniert"
+        ],
+        "family-background": "Tochter einer Schneiderin aus Lowangen. Wurde wegen ihrer frühen Begeisterung für alte Schriften von den Eltern in den Tempel gegeben; träumt seit jeher von arkanen Entdeckungen.",
+        "motivation": "Das Rätsel um Erynnion Quendan Eternenwachts Vision und die legendäre Tafel der Erzheiligen Canyzeth mit dem elfischen Glauben abzugleichen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 14,
+            "CH": 13,
+            "FF": 13,
+            "GE": 12,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 31,
+            "AsP": 0,
+            "KaP": 32
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Götter & Kulte",
+                "FW": 10
+            },
+            {
+                "name": "Sagen & Mythen",
+                "FW": 9
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 8
+            },
+            {
+                "name": "Sprachen (Isdira)",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Hesindes Weisheit",
+                "FW": 6
+            }
+        ]
+    },
+    "session-notes": ""
+}

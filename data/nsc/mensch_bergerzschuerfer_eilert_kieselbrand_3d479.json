@@ -1,0 +1,113 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "source": "wiki-aventurica.de, Fredegis allein im Finsterkamm_3.md",
+    "tags": [],
+    "general": {
+        "name": "Eilert Kieselbrand",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Bergerzschürfer",
+        "specification": "Gesteinsschürfer und Erzfahrer der Stollen im Finsterkamm",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Lowangen",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Finsterkopp-Vertrag, Pochwäsche, Ochsengespann"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 82,
+        "hair": "Dunkelbraunes, schütteres Haar, kurz geschnitten mit leichtem Graustich an den Schläfen",
+        "skin": "Wettergegerbte, von Staub und Russschlieren durchzogene Haut mit tiefen Stirnfalten",
+        "eyes": "Graugrüne Augen mit geröteten Bindehäuten",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Grober, leinener Kittel in erdigem Grau über ungarbierter Wolle",
+            "trousers": "Mit Eisenplatten verstärkte Schürze aus braunem Rinderleder über dicker Tuchhose",
+            "footwear": "Schlammbedeckte Lederstiefel mit doppelter Holzsohle",
+            "jewellery": "Ein schlichtes Band aus verdrillter Ziegenwolle am rechten Handgelenk",
+            "things": "Zweirädriger Holzwagen mit Joch; zwei Ochsen; geflochtene Weidenkörbe und eichene Holzfässer gefüllt mit grau-schwarzem Gestein, Roteisenstein, Bleiglanz und quarzhaltigem Geröll; Schlägel",
+            "weapons": "Schwerer Fäustel und zwei eiserne Keile an einem breiten Ledergürtel aus Rinderleder"
+        },
+        "distinguishing_features": "Eine flache Narbe an der linken Wangenseite; von Gesteinsstaub dunkel geränderte Fingernägel"
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Arbeitsam",
+            "Vertragstreu",
+            "Wetterfühlig",
+            "Trinkfest"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Mutter Alwine Kieselbrand, Näherin in Lowangen; Vater Gernot Kieselbrand (verstorben), ehemaliger Steinmetz; jüngere Schwester Radegund Kieselbrand, Magd auf einem Gutshof nahe Donnerbach.",
+        "motivation": "Transport des geförderten Erzes nach Donnerbach sowie fristgerechte Abgabe des Zehnten an der Zwergenwache am Nôrrnstieg zur Aufrechterhaltung des Schürfrechts."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 12,
+            "CH": 10,
+            "FF": 13,
+            "GE": 11,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Bergbau",
+                "FW": 10
+            },
+            {
+                "name": "Steinbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Kraftakt",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 6
+            },
+            {
+                "name": "Zechen",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

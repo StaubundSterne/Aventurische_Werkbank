@@ -1,0 +1,110 @@
+{
+    "id": "5e0c9d8e-1f2a-4b3c-4d5e-8f9a0b1c2d3e",
+    "source": "wiki-aventurica.de / Hallen Arkaner Macht",
+    "tags": [],
+    "general": {
+        "name": "Alwadirion Morgentauglanz",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 810,
+        "alive": true,
+        "culture": "Waldelfen",
+        "species": "Elf",
+        "soul-animal": "Hirsch",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Zauberweber",
+        "specification": "Meisterlicher Zauberweber und Mentor",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine",
+            "Elbenfeld"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Şahin"
+        ],
+        "injection-points": "Naturphilosophie, Salasandra, Mentoring"
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 60,
+        "hair": "Silberweiß, lang und offen getragen",
+        "skin": "Hell",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Weiche Tunika aus fetem Moosgewebe",
+            "trousers": "Beige Lederhose",
+            "footwear": "Weiche Lederschuhe ohne Sohle",
+            "jewellery": "Ein Holzreif mit eingeschnitzten Runen",
+            "things": "Eine geschnitzte Holzflöte",
+            "weapons": "Elfenbogen mit einigen Pfeilen"
+        },
+        "distinguishing_features": "Klein gewachsen, ausgesprochen freundlich und aufgeschlossen"
+    },
+    "personality": {
+        "traits": [
+            "Ausgeglichen",
+            "Weise",
+            "Freundlich",
+            "Aufgeschlossen",
+            "Einfühlsam"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Elterliche Sippe im Herzen der Salamandersteine, traditionsreiche Bewahrer alter Gesänge.",
+        "motivation": "Vermittlung elfischer Naturphilosophie und Begleitung junger Studierender."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 15,
+            "IN": 16,
+            "CH": 15,
+            "FF": 15,
+            "GE": 15,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 75,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Singen",
+                "FW": 15
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 14
+            }
+        ],
+        "spells": [
+            {
+                "name": "Salasandra",
+                "FW": 16
+            },
+            {
+                "name": "Einflussnahme",
+                "FW": 13
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

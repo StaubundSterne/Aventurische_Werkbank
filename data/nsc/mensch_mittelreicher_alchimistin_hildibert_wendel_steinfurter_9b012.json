@@ -1,0 +1,123 @@
+{
+    "id": "4f7d3a1b-9e2c-48a1-b53d-82c1e4f9b012",
+    "source": "wiki-aventurica.de (Atan-Kiefer, Olginwurz, Bund des roten Salamanders, Donnerbach, Steinfurt, Andergast); Spieler:innen-Entwurf 'Fredegis allein im Finsterkamm auf der Suche nach den elementaren Gewalten.md'",
+    "tags": [],
+    "general": {
+        "name": "Hildibert Wendel Steinfurter",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Andergast",
+        "species": "Mensch (Mittelreicher)",
+        "soul-animal": "Feuersalamander",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Alchimist:in",
+        "specification": "Alchimie-Geselle der Niederlassung des Bundes des roten Salamanders in Andergast",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Donnerbach",
+            "Steinfurt",
+            "Andergast",
+            "Teshkal"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Atan-Kiefernrinde, Atanax-Sud, Elementar-Dissonanzen"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 74,
+        "hair": "Schulterlanges, braunes Haar mit leichtem Wellenschlag",
+        "skin": "Blasse, von hellen Sommersprossen gezeichnete Haut",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung",
+            "top": "Dunkelgrünes Wollwams unter einer imprägnierten Schürze aus braunem Rindsleder",
+            "trousers": "Dunkelbraune Wollhose",
+            "footwear": "Kniehohe, schlammbespritzte Lederschnürstiefel",
+            "jewellery": "Ein kreisrunder Messingstempel an der Brusttasche der Schürze mit eingeritztem Symbol eines Salamanders im Feuerkreis",
+            "things": "Ein Messinggestell mit Brille und runden Gläsern; am Ledergürtel ein Steckfach mit Hornspatel, Pflanzeneisen und drei kleinen Messingzangen; auf dem Rücken ein hölzernes Tragegestell mit gepolsterten Fächern für verschlossene Glasphiolen und Tonkrüge",
+            "weapons": "Ein kurzes Arbeitsmesser in Scheide am Gürtel"
+        },
+        "distinguishing_features": "Trägt eine runde Messingbrille auf der Nase; aus der Kleidung steigt ein Geruch nach Essig, getrockneten Kräutern und Harz auf."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Theoriebezogen",
+            "Debattierfreudig",
+            "Detailversessen",
+            "Pünktlich"
+        ],
+        "actual-mood": [
+            "Gereizt"
+        ],
+        "family-background": "Mutter Alwine Steinfurter, Schneiderin in Steinfurt; Vater Wendel Steinfurter, Schreiner in Steinfurt; Schwester Rondralinde Steinfurter, Bogenbauerin in Andergast. Die Familie lebt seit Generationen in der Grafschaft Steinfurt.",
+        "motivation": "Sucht das unmittelbare dreitägige Einkochen frischer Atan-Kiefernrinde zur Herstellung des Suds Atanax durchzusetzen und den Verlust von Olginwurz auszugleichen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 13,
+            "CH": 11,
+            "FF": 14,
+            "GE": 11,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Alchimie",
+                "FW": 10
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 9
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 5
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 6
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 6
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 5
+            },
+            {
+                "name": "Rechnen",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

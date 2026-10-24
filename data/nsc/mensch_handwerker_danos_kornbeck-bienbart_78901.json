@@ -1,0 +1,105 @@
+{
+    "id": "b4c2d3e5-f6a7-4890-9b2c-d3e4f5678901",
+    "source": "Eigenentwicklung für Abenteuer in Donnerbach; Referenz zu Zimmerei Bienbart",
+    "tags": [],
+    "general": {
+        "name": "Danos Kornbeck-Bienbart",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Töpfermeister der neuen Töpferei im Werk Neunauge",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Brennofenumbau, Koriandergarten, Hausrecht"
+    },
+    "appearance": {
+        "size": 179,
+        "weight": 88,
+        "hair": "Kurzes, strähniges braunes Haar mit tiefen Schläfenansätzen",
+        "skin": "Rau, ständig mit getrocknetem Ton verschmiert",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Eine fleckige Ledermütze",
+            "top": "Grobes Leinenhemd mit hochgekrempelten Ärmeln",
+            "trousers": "Schwere Arbeitshose aus derbem Zwillich",
+            "footwear": "Abgewetzte Holzpantinen mit Lederriemen",
+            "jewellery": "Kein Schmuck",
+            "things": "Töpfermesser, Holzspachtel, Tonklumpen",
+            "weapons": "Ein schwerer Holzschlegel"
+        },
+        "distinguishing_features": "Fehlender Ringfinger an der linken Hand; stampft beim Gehen polternd auf."
+    },
+    "personality": {
+        "traits": [
+            "Cholerisch",
+            "Arrogant",
+            "Gegen Elfen",
+            "Arbeitswütig",
+            "Ungehobelt"
+        ],
+        "actual-mood": [
+            "Gereizt"
+        ],
+        "family-background": "Neffe der Zunftmeisterin Gramhuld Bienbart; Sohn des verstorbenen Fuhrmanns Bruno Bienbart; Bruder von Grimbald Bienbart.",
+        "motivation": "Möchte den Innenhof von Werk Neunauge plattmachen, um riesige Trockengestelle für Billigtöpfe aufzustellen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 11,
+            "CH": 9,
+            "FF": 13,
+            "GE": 11,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Töpfern",
+                "FW": 11
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 7
+            },
+            {
+                "name": "Zechen",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

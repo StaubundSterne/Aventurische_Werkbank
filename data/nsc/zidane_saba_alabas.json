@@ -1,0 +1,114 @@
+{
+    "id": "e4f1a2b3-c5d6-4e7f-8a9b-0c1d2e3f4a5b",
+    "source": "4310 Aventurische Namen, Tsa-Vademecum (Süd-Traditionen)",
+    "tags": [],
+    "general": {
+        "name": "Zidane saba Al’Abas",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Tulamidisch (Mhanadistan)",
+        "species": "Mensch",
+        "soul-animal": "Wüstenechse",
+        "social-state": "Geweihter"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Tsa-Geweihter mit Fokus auf die echsischen Wurzeln (Z'zah-Aspekt)",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Fasar",
+            "Khunchom",
+            "Tersmon"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Jost"
+        ],
+        "injection-points": "Echsen-Mysterien, Tulamidische-Magie, Häutungs-Ritual"
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 65,
+        "hair": "Tiefschwarz, lockig, mit eingeflochtenen bunten Glasperlen",
+        "skin": "Dunkelbraun, glatt und oft eingeölt",
+        "eyes": "Schmal, fast lidlos wirkend, von dunklem Grün",
+        "outfit": {
+            "headgear": "Ein Turban aus sieben verschiedenen Seidenstoffen",
+            "top": "Kurze Weste ohne Hemd, mit Tätowierungen von schlangenartigen Mustern auf der Brust",
+            "trousers": "Pluderhosen aus schwerem Kattun",
+            "footwear": "Spitzschuhe mit leisen Glöckchen an den Spitzen",
+            "jewellery": "Ein schwerer Armreif aus Messing in Form einer Schlange, die sich in den Schwanz beißt",
+            "things": "Ein Beutel mit buntem Wüstensand für Sandmandala-Rituale",
+            "weapons": "Ein zeremonieller Dolch mit wellenförmiger Klinge (Kris)"
+        },
+        "distinguishing_features": "Er bewegt sich gleitend und verharrt oft minutenlang in vollkommener Reglosigkeit, bevor er in blitzartige Aktivität ausbricht."
+    },
+    "personality": {
+        "traits": [
+            "Exotisch",
+            "Rätselhaft",
+            "Lebensfroh",
+            "Sprunghaft",
+            "Tiefgründig"
+        ],
+        "actual-mood": [
+            "Ekstatisch"
+        ],
+        "family-background": "Sohn einer Teppichknüpferin in Fasar; Mentor war der blinde Seher Hasrabal saba Belkredel.",
+        "motivation": "Will die Bewohner des Nordens lehren, dass Tsa die Macht der Mutation und der ewigen Häutung ist."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 14,
+            "CH": 15,
+            "FF": 13,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Tanzen",
+                "FW": 11
+            },
+            {
+                "name": "Überreden",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 8
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Tanz der Farben",
+                "FW": 10
+            },
+            {
+                "name": "Hauch des Lebens",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

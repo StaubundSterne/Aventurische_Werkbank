@@ -1,0 +1,112 @@
+{
+    "id": "b29e4184-7a3d-4c12-981f-3e5f7a9b1c3d",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Garmut",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 989,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Ochs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Holzfäller",
+        "specification": "Holzfäller und Flößerknecht in Donnerbach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": "Pflegebruder, Travia-Glaube, Flößerei"
+    },
+    "appearance": {
+        "size": 179,
+        "weight": 82,
+        "hair": "Kurzes, struppiges dunkelbraunes Haar",
+        "skin": "Wettergegerbte, raue Haut mit Schwielen",
+        "eyes": "Gutmütige braune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Grobe, geflickte Wolljacke über einem ungebleichten Leinenhemd",
+            "trousers": "Derbe braune Tuchhose",
+            "footwear": "Abgewetzte, schwere Arbeitsstiefel",
+            "jewellery": "Keine",
+            "things": "Wetzstein, lederner Wasserschlauch",
+            "weapons": "Holzfälleraxt"
+        },
+        "distinguishing_features": "Sehr breite Schultern und eine kleine Brandnarbe am rechten Unterarm"
+    },
+    "personality": {
+        "traits": [
+            "Arbeitsam",
+            "Gottesfürchtig",
+            "Stur",
+            "Gutmütig",
+            "Wortkarg"
+        ],
+        "actual-mood": [
+            "Erschöpft"
+        ],
+        "family-background": "Pflegeeltern Gerwulf Kempf (56, Gutsherr) und Swangard Kempf (57, Verwalterin). Garmut verlor seine leiblichen Eltern als Kleinkind bei einer Flussüberschwemmung und wuchs unter der strengen traviagläubigen Erziehung der Kempfs auf.",
+        "motivation": "Durch ehrliche Handarbeit am Donnerbach zum Lebensunterhalt der großen Pflegefamilie beizustehen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 10,
+            "IN": 11,
+            "CH": 10,
+            "FF": 11,
+            "GE": 11,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Zweihandäxte",
+                "FW": 7
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 7
+            },
+            {
+                "name": "Schwimmen",
+                "FW": 6
+            },
+            {
+                "name": "Zechen",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,109 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "wiki-aventurica.de, Schild des Reiches, Das Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Hera Tsalinde Stahlarm",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Bärin",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Heiler",
+        "specification": "Magister magnus und Vorsteher des Ordenshaus' der Bruder- und Schwesternschaft zur Förderung der Heilzauberei des Anconius in Donnerbach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Baliho",
+        "former-locations": [
+            "Trallop",
+            "Bärwalde"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": "Zechen, Wirtshausstreit, Festtagsgeschichten"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 84,
+        "hair": "Langes, schwarzes Haar, nur manchmal im Zopf gebunden",
+        "skin": "Wettergegerbt",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Leinenhemd mit einer robusten Fellweste",
+            "trousers": "Stabile Lederhose",
+            "footwear": "Schwere Lederstiefel",
+            "jewellery": "Tätowierter bunter Regenbogen um jeden Unterarm",
+            "things": "Schanktuch, Messingkamm, Zinnbecher",
+            "weapons": "Heavy Holzknüppel unter der Theke und ein Dolch"
+        },
+        "distinguishing_features": "1,82 m groß, kräftige Arme aus Stahl und bunte Regenbogen-Tätowierungen an beiden Unterarmen"
+    },
+    "personality": {
+        "traits": [
+            "Durchsetzungsstark",
+            "Pragmatisch",
+            "Trinkfest",
+            "Eitel",
+            "Direkt"
+        ],
+        "actual-mood": [
+            "Bestimmt"
+        ],
+        "family-background": "Geboren in Trallop als Sohn einer Bäckerfamilie; zwei jüngere Schwestern verblieben im Bäckerhandwerk.",
+        "motivation": "Die Schenke 'Zum leckeren Krug' mit eiserner Hand und vollem Einsatz erfolgreich zu führen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 11,
+            "FF": 11,
+            "GE": 12,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Raufen",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 9
+            },
+            {
+                "name": "Überreden",
+                "FW": 7
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

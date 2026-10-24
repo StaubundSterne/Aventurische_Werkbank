@@ -1,0 +1,113 @@
+{
+    "id": "c3a8f912-7b2e-4d1a-8f05-9e32a184bc27",
+    "source": "wiki-aventurica.de, 4000 Bibliotheken / Donnerbach Dossier (1009 BF), Spielrunden-Entwurf 'Das Rezeptbuch der Gräfin'",
+    "tags": [],
+    "general": {
+        "name": "Grimmwald Broder",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 989,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmied",
+        "specification": "Rüstungsschmiedegeselle (Spezialisierung auf Kettengeflecht in der Rüstungswerkstatt von Wolfborst Eisenarm)",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Uhdenberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Verzocktes Buch, Spielschulden, Kettenhemd-Reparatur"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 82,
+        "hair": "Dunkelblond, kurz geschnitten, an den Schläfen mit Ruß behaftet",
+        "skin": "Hell, mit Hitzerötungen an den Unterarmen und leichten Rußspuren im Gesicht",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Stirnband aus braunem Rindsleder",
+            "top": "Grobe, graue Leinentunika vom Schneider Haschabna aus Thalusa unter einer feuerfesten Lederschürze mit Brandflecken",
+            "trousers": "Dunkelbraune Wollhose mit Lederverstärkung an den Knien",
+            "footwear": "Verschnürte Rindslederstiefel mit verstärkenden Kappen",
+            "jewellery": "Ein enges Messingamulett mit Hammer-Symbolik des Ingerimm an einem Lederband",
+            "things": "Kettengliedmerzunge, Flechtzange, Zieheisen, Knochenwürfel im Lederbeutel",
+            "weapons": "Schmiedehammer am Gürtel, langes Gütermesser"
+        },
+        "distinguishing_features": "Frische Brandnarbe am rechten Unterarm in Form zweier ineinandergreifender Ringe; vermeidet direkten Blickkontakt bei Nachfragen zum Verbleib von Gegenständen"
+    },
+    "personality": {
+        "traits": [
+            "Arbeitsam",
+            "Spielversessen",
+            "Schuldbewusst",
+            "Handwerklich geschickt",
+            "Leicht beeinflussbar"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Vater Broder, Grobschmied in Uhdenberg; Mutter Mareke, Wollweberin in Trallop; jüngerer Bruder Halman, Lehrling in der Stellmacherei Donnersturm in Donnerbach. Die Familie verließ Uhdenberg nach Auseinandersetzungen über lokale Zunftrechte.",
+        "motivation": "Möchte die aufgelaufenen 7 Silbertaler Verzugsgebühren für den Hesindetempel sowie seine Spielschulden bei Elkwin Salindason abbezahlen und sucht nach Mut, Jost Zumpel den Verlust des verliehenen Buches zu gestehen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 10,
+            "IN": 11,
+            "CH": 10,
+            "FF": 14,
+            "GE": 12,
+            "KO": 13,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 33,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Zechen",
+                "FW": 5
+            },
+            {
+                "name": "Glücksspiel",
+                "FW": 3
+            },
+            {
+                "name": "Feilschen",
+                "FW": 4
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

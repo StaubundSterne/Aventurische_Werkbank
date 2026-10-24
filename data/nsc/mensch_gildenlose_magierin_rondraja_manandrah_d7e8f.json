@@ -1,0 +1,110 @@
+{
+    "id": "9c5d4e3f-6a7b-4c8d-9e0f-3a4b5c6d7e8f",
+    "source": "wiki-aventurica.de / Seminar der elfischen Verständigung",
+    "tags": [],
+    "general": {
+        "name": "Rondraja Ma’nandrah",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Aranien und Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Falke",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Gildenlose Magierin",
+        "specification": "Magistra extraordinaria und Arkanforscherin",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Rathil",
+            "Punin"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Fredegis"
+        ],
+        "injection-points": "Feenmagie, Sphärenkraft, Gewebe"
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 62,
+        "hair": "Dunkelbraun, lang und in einen Zopf geflochten",
+        "skin": "Leicht gebräunt",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Taillierte Tunika in Resedagrün",
+            "trousers": "Beige Stoffhose",
+            "footwear": "Weiche Lederstiefel",
+            "jewellery": "Ein filigraner Silberreif im Haar",
+            "things": "Ein kleiner Skalpellkoffer aus Ebenholz",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Schnelle, präzise Handbewegungen"
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Entschlossen",
+            "Feinsinnig",
+            "Vorsichtig",
+            "Wissbegierig"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Vater Boris von Rathil, Landadliger; Mutter Miriama Ma'nandrah, Gelehrte.",
+        "motivation": "Erforschung arkan-chirurgischer Geweberegeneration und feenmagischer Sphärenkräfte."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 14,
+            "IN": 13,
+            "CH": 13,
+            "FF": 15,
+            "GE": 12,
+            "KO": 11,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 27,
+            "AsP": 45,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Magie",
+                "FW": 13
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 13
+            },
+            {
+                "name": "Hexenkrallen",
+                "FW": 10
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

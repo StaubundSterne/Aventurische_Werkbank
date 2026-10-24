@@ -1,0 +1,104 @@
+{
+    "id": "d8b9c023-4567-4890-a1bc-def123456789",
+    "source": "https://de.wiki-aventurica.de/wiki/Auenmarkt",
+    "tags": [],
+    "general": {
+        "name": "Linea Holzhammer",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schänkmagd",
+        "specification": "Schänkmagd und Küchenhilfe im Gasthaus Am Bach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Auenmarkt",
+        "former-locations": [
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Bierkrüge, Dorfgerüchte, Plumpsklo-Pandlarilie"
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 56,
+        "hair": "Flachsblond, in zwei enge Zöpfe geflochten",
+        "skin": "Blass mit rötlichen Wangen",
+        "eyes": "Hellblau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Helle Leinenbluse mit aufgerollten Ärmeln",
+            "trousers": "Dunkelgrüner Reit- und Arbeitsrock",
+            "footwear": "Eingetragene Lederstiefel",
+            "jewellery": "Ein einfaches Holzamulett an einem Lederband",
+            "things": "Holztablett mit Bierkrügen, Scheuertuch",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Flinke, unruhige Bewegungen und stets ein fröhliches Summen auf den Lippen"
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Flink",
+            "Redselig",
+            "Hilfsbereit",
+            "Schreckhaft"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Vater Roban Holzhammer, Köhler in den Wäldern nahe Trallop; zwei jüngere Brüder Alrik und Dan, die beim Vater arbeiten.",
+        "motivation": "Möchte genug Münzen ansparen, um eines Tages eine eigene Bäckerei in einer größeren Stadt zu eröffnen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 11,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Körperbeherrschung",
+                "FW": 7
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 6
+            },
+            {
+                "name": "Singen",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

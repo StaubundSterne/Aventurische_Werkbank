@@ -1,0 +1,122 @@
+{
+    "id": "8b1c4e9f-2a3d-45f6-a789-0123456789ab",
+    "source": "wiki-aventurica.de (Atan-Kiefer, Olginwurz, Bund des roten Salamanders, Donnerbach, Waldand, Lowangen); Spieler:innen-Entwurf 'Fredegis allein im Finsterkamm auf der Suche nach den elementaren Gewalten.md'",
+    "tags": [],
+    "general": {
+        "name": "Halmida Waldand",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 983,
+        "alive": true,
+        "culture": "Andergast",
+        "species": "Mensch (Mittelreicher)",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Kräutersammler:in",
+        "specification": "Kräutersuchende Gesellin der Niederlassung des Bundes des roten Salamanders in Andergast",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Donnerbach",
+            "Andergast",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Olginwurz-Haltbarkeit, Pflanzengeister, Ork-Bewegungen"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 61,
+        "hair": "Geflochtenes, schwarzes Haar unter einer Mütze",
+        "skin": "Leicht wettergebräunte, glatte Haut",
+        "eyes": "Graugrün",
+        "outfit": {
+            "headgear": "Graue Wollmütze",
+            "top": "Graue Lodenjacke über einem leinenen Hemd, verstärkende Lederstulpen an den Unterarmen",
+            "trousers": "Grauer Lodenrock mit darunterliegender fester Stoffhose",
+            "footwear": "Braune, feste Lederstiefel mit Schnallen",
+            "jewellery": "Ein kleiner Messingsalamander-Anhänger an einer ledernen Halskordel",
+            "things": "Eine kleine Feinwaage aus Messing mit zwei Aufhängeschalen in den Händen; eine Umhängetasche aus rohem Segeltuch; am Gürtel ein gebogenes Pflanzenmesser mit Holzgriff",
+            "weapons": "Gebogenes Pflanzenmesser mit scharfer Klinge am Gürtel"
+        },
+        "distinguishing_features": "Auf den Ärmeln der Lodenjacke haften weiße Harzspuren von Kiefernrinde; beim Schritt erzeugen die Waagschalen ein leises Klirren."
+    },
+    "personality": {
+        "traits": [
+            "Praxisorientiert",
+            "Geduldig",
+            "Pragmatisch",
+            "Naturverbunden",
+            "Redselig"
+        ],
+        "actual-mood": [
+            "Bestimmt"
+        ],
+        "family-background": "Mutter Elwine Waldand, Kräuterfrau nahe Waldand; Vater Halman Waldand, Köhler im Steineichenwald; Bruder Geron Waldand, Holzfäller in Teschkal. Wuchs mit dem Sammeln von Waldpflanzen auf.",
+        "motivation": "Will die geerntete Atan-Kiefernrinde schonend im Segeltuchbeutel an der Luft trocknen, um den Harzgehalt während des Transports nach Donnerbach zu bewahren."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 14,
+            "CH": 12,
+            "FF": 13,
+            "GE": 12,
+            "KO": 13,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 11
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 8
+            },
+            {
+                "name": "Alchimie",
+                "FW": 6
+            },
+            {
+                "name": "Sinnenschärfe",
+                "FW": 8
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 6
+            },
+            {
+                "name": "Heilkunde Gift",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

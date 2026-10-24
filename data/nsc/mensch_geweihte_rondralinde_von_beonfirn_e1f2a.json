@@ -1,0 +1,114 @@
+{
+    "id": "d4e5f6a1-b2c3-44e5-bf6a-7b8c9d0e1f2a",
+    "source": "wiki-aventurica.de, Peraine-Kirche",
+    "tags": [],
+    "general": {
+        "name": "Rondralinde von Beonfirn",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 968,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Hirschkuh",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Perainegeweihte im Weidener Wiesenland",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Beonfirn",
+        "former-locations": [
+            "Pandlaril",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Jost"
+        ],
+        "injection-points": "Heilkräuter, Perainesegen, Sumpffieber"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 67,
+        "hair": "Dunkelblondes Haar im schlichten Nackenknoten",
+        "skin": "Gesund gebräunt",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Schlichtes grünes Kopftuch",
+            "top": "Grün-braune Perainegewandung aus grobem Leinen",
+            "trousers": "Einfacher Wollenrock",
+            "footwear": "Lederne Bundschuhe",
+            "jewellery": "Geschnitzte Holzsichel als Heiliges Symbol",
+            "things": "Kräutertasche, Verbandszeug, Salbentiegel",
+            "weapons": "Holzstab"
+        },
+        "distinguishing_features": "Riecht stets nach getrockneter Kamille und Feldkräutern"
+    },
+    "personality": {
+        "traits": [
+            "Sanftmütig",
+            "Geduldig",
+            "Hilfsbereit",
+            "Bodenständig",
+            "Bescheiden"
+        ],
+        "actual-mood": [
+            "Zuversichtlich"
+        ],
+        "family-background": "Tante von Aurelevina, jüngere Schwester von Norre. Entschied sich schon in jungen Jahren gegen den Dienst an der Rondrakirche und für den Dienst an Mutter Peraine.",
+        "motivation": "Die Landbevölkerung zu heilen und Aurelevina schützende Heilmittel für die Reise durch das Nebelmoor mitzugeben."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 12,
+            "IN": 14,
+            "CH": 13,
+            "FF": 13,
+            "GE": 10,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 28
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 12
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Segen der Heilung",
+                "FW": 8
+            },
+            {
+                "name": "Kleiner Segen",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

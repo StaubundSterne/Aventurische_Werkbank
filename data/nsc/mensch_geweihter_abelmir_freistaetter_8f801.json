@@ -1,0 +1,118 @@
+{
+    "id": "d3b07384-d113-41a4-a712-422a57f8f801",
+    "source": "wiki-aventurica.de/wiki/Abelmir_Freist%C3%A4tter, Das Dominium Donnerbach, DSA5 Regelwiki",
+    "tags": [],
+    "general": {
+        "name": "Abelmir Freistätter",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 952,
+        "alive": true,
+        "culture": "Mittelreich\n",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Hoher Lehrmeister der Hesinde / Tempelvorsteher zu Donnerbach",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gareth",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Aurelevina"
+        ],
+        "injection-points": "Freibauerntum, Draconiter, Elfische Götter"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 82,
+        "hair": "Ergrauendes dunkelbraunes Haar, kurz geschnitten, gepflegter Vollbart",
+        "skin": "Wettergegerbt und von früherer Feldarbeit gezeichnet",
+        "eyes": "Dunkelgrün und aufmerksam",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Bodenlange grün-weiße Geweihtenrobe der Hesinde mit schlichten Borten",
+            "trousers": "Dunkle Stoffhose unter der Robe",
+            "footwear": "Derbe, gut gepflegte Lederstiefel",
+            "jewellery": "Schlangenamulett aus Bronze an einer Kordel",
+            "things": "Pergamentrolle, Holzetui mit Schreibkielen",
+            "weapons": "Schlangenkopf-Geweihtenstab aus Buchsbaumholz"
+        },
+        "distinguishing_features": "Kräftige Hände eines Landwirts gepaart mit der ruhigen Gestik eines wohlbedachten Gelehrten."
+    },
+    "personality": {
+        "traits": [
+            "Bodenständig",
+            "Pragmatisch",
+            "Diplomatisch",
+            "Treusorgend",
+            "Unparteiisch"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Sohn einer angesehenen Freibauernfamilie nordöstlich der Weidener Reichsgrenze. Die Familie bewirtschaftet seit Generationen einen freien Hof; sein jüngerer Bruder führt das Anwesen weiter.",
+        "motivation": "Den Hesinde-Tempel strikt aus den politischen Konflikten Donnerbachs herauszuhalten und pures Wissen ohne städtische Dünkel zu bewahren."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 15,
+            "IN": 14,
+            "CH": 14,
+            "FF": 12,
+            "GE": 11,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 38
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Götter & Kulte",
+                "FW": 12
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 10
+            },
+            {
+                "name": "Ackerbau",
+                "FW": 9
+            },
+            {
+                "name": "Überreden",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Hesindes Weisheit",
+                "FW": 10
+            },
+            {
+                "name": "Blick der Erkenntnis",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

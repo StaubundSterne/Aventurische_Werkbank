@@ -1,0 +1,108 @@
+{
+    "id": "01ec3356-7890-4b23-94ef-056789012345",
+    "source": "https://de.wiki-aventurica.de/wiki/Auenmarkt",
+    "tags": [],
+    "general": {
+        "name": "Fenna Buchenspan",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Buntspecht",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schreinerin",
+        "specification": "Zimmermannsgesellin und Möbelbauerin in Auenmarkt",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Auenmarkt",
+        "former-locations": [
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Aurelevina"
+        ],
+        "injection-points": "Würfelspiel, Holzqualität, Werkzeugtausch"
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 65,
+        "hair": "Dunkelrot, kurz geschnitten und praktisch nach hinten gekämmt",
+        "skin": "Hell, mit hellbraunen Sommersprossen im Gesicht",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Stabile Leinenweste mit vielen Taschen über weißer Bluse",
+            "trousers": "Feste braune Stoffhose",
+            "footwear": "Halbstiefel aus derbem Rindsleder",
+            "jewellery": "Silberner Ohrring im rechten Ohr",
+            "things": "Holzgliedermaßstab im Gürtel, Schnitzmesser",
+            "weapons": "Zimmermannshammer am Werkzeuggürtel"
+        },
+        "distinguishing_features": "Feine Holzspäne in den Haaren und extrem geschickte, hornhautbedeckte Hände"
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Treffsicher",
+            "Gesellig",
+            "Ehrlich",
+            "Wettkampflustig"
+        ],
+        "actual-mood": [
+            "Entspannt"
+        ],
+        "family-background": "Mutter Helma, Stellmacherin in Baliho; Bruder Valpo, Korbmacher in Weiden.",
+        "motivation": "Freut sich nach harter Tagwerk-Arbeit auf das Würfelspiel in der Taverne und schätzt Jost handgefertigte Preise."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 12,
+            "CH": 12,
+            "FF": 15,
+            "GE": 13,
+            "KO": 12,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Holzbearbeitung",
+                "FW": 11
+            },
+            {
+                "name": "Brett- & Würfelspiel",
+                "FW": 8
+            },
+            {
+                "name": "Zechen",
+                "FW": 7
+            },
+            {
+                "name": "Handel",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

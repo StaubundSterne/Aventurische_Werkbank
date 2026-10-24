@@ -1,0 +1,123 @@
+{
+    "id": "f4e3d2c1-b0a9-4f8e-9d6c-5b4a3f2e1d0c",
+    "source": "Entwurf der Mitspielenden, wiki-aventurica.de (Finsterkamm, Mooshüter)",
+    "tags": [],
+    "general": {
+        "name": "Morlo",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Erdkröte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Druide",
+        "specification": "Haindruidin (Sumupriesterin)",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Donnerbach",
+            "Saljeth",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Fredegis"
+        ],
+        "injection-points": "Mooshüter-Geoden, Tal der Elemente, Schiefertafeln"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 61,
+        "hair": "Mausgraues, straff nach hinten gebundenes Haar.",
+        "skin": "Blass, verstreute Sommersprossen auf dem Nasenrücken.",
+        "eyes": "Dunkelbraune Iris.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dicker, dunkelgrauer Filzumhang über einer braunen Leinentunika.",
+            "trousers": "Dunkle Stoffhose.",
+            "footwear": "Holzkuppelschuhe mit Riemen aus Rohleder.",
+            "jewellery": "Keines",
+            "things": "Umhängetasche aus grobem Leinen mit Erdschollen, Moosfaserbündeln und beschrifteten Schiefertafeln.",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Keine metallenen Verschlussknöpfe, Schnallen oder Beschläge. Wahrnehmbarer Geruch nach feuchter Mooserde und getrocknetem Harz."
+    },
+    "personality": {
+        "traits": [
+            "Beobachtend",
+            "Bedächtig",
+            "Konsequent",
+            "Geduldig",
+            "Distanzierend"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Mutter Swantje, Filzerin in Greifenfurt; Vater Gero, Holzfäller. Jüngere Schwester Alke, Spinnerin in Lowangen. Verließ das Elternhaus im Jahr 988 BF zur Ausbildung.",
+        "motivation": "Erfassung und Bewahrung der elementaren Übergänge zur Minderglobule des Tals der Elemente."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 15,
+            "CH": 10,
+            "FF": 11,
+            "GE": 12,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 44,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Orientierung",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 13
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 10
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 8
+            }
+        ],
+        "spells": [
+            {
+                "name": "Sumus Elixier",
+                "FW": 9
+            },
+            {
+                "name": "Eins mit der Natur",
+                "FW": 9
+            },
+            {
+                "name": "Elementarer Pfeil",
+                "FW": 5
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

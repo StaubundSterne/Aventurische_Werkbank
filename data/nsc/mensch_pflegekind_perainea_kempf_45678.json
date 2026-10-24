@@ -1,0 +1,104 @@
+{
+    "id": "f4d25b43-6e7c-4d14-c25a-1ba1f4345678",
+    "source": "4310 Aventurische Namen, wiki-aventurica.de, Eigenkreation Rollenspielrunde",
+    "tags": [],
+    "general": {
+        "name": "Perainea Kempf",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 994,
+        "alive": true,
+        "culture": "Donenrbach",
+        "species": "Mensch",
+        "soul-animal": "Wildgans",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Pflegekind",
+        "specification": "Gehilfin der Herdfeuerpflege",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Şahin"
+        ],
+        "injection-points": "Gesticktes Bild, Lesestunden, Gewürzkunde"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 56,
+        "hair": "Dunkelbraunes, zu einem festen Knotendutt gestecktes Haar",
+        "skin": "Glatte, leicht gebräunte Haut",
+        "eyes": "Dunkelbraune Augen",
+        "outfit": {
+            "headgear": "Ein weißes Haubentuch aus Leinen",
+            "top": "Helles Mieder über einer gesäumten Leinenbluse",
+            "trousers": "Langer, dunkelgrüner Wollrock",
+            "footwear": "Feste Lederstiefel",
+            "jewellery": "Ein aus Holz geschnitztes Traviasymbol an einem Flechtband",
+            "things": "Ein kleines Notizheft aus Pergamentresten mit einem schwarzen Kohlestift",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Mehlspuren an den Händen und der Rechten Seite des Schürzenstoffs."
+    },
+    "personality": {
+        "traits": [
+            "Geduldig",
+            "Verantwortungsbewusst",
+            "Gastfreundlich",
+            "Lernbegierig",
+            "Sanftmütig"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Wuchs bis 1002 BF in Baliho auf. Nach dem Verlust ihrer Mutter holte Vater Gerion Grünfelde das Mädchen im Alter von 8 Jahren nach Donnerbach, wo Familie Kempf sie aufnahm.",
+        "motivation": "Knetet den Teig für das morgige Brot der Pflegefamilie am Küchentisch."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 12,
+            "IN": 12,
+            "CH": 12,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 27,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kochen",
+                "FW": 6
+            },
+            {
+                "name": "Schneiderei",
+                "FW": 4
+            },
+            {
+                "name": "Sagen und Mythen",
+                "FW": 3
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

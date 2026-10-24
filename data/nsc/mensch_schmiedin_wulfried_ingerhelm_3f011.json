@@ -1,0 +1,104 @@
+{
+    "id": "2b6a9c42-81f3-4d62-b12e-9c7482d3f011",
+    "source": "Entwürfe der Mitspielenden & Dossier: Der Rondratempel zu Donnerbach im Jahre 1009 BF",
+    "tags": [],
+    "general": {
+        "name": "Wulfried Ingerhelm",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 959,
+        "alive": true,
+        "culture": "Nordaventurisch / Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmied",
+        "specification": "Tempelschmied und Ausbilder für Metallschnitt",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Angbar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Tempelschmiede, Handwerkslehre, Glühende Kohlen"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 95,
+        "hair": "Kurz, aschblond mit grauen Strähnen, vom Ruß gezeichnet",
+        "skin": "Rötlich von der ständigen Hitze der Esse, schwielige Hände",
+        "eyes": "Kräftig blau",
+        "outfit": {
+            "headgear": "Einfache Lederkappe",
+            "top": "Schwere, rußgeschwärzte Lederschürze über grobem Leinenhemd",
+            "trousers": "Feste Arbeitshose aus starkem Leder",
+            "footwear": "Brandfeste Holz- und Lederschuhe",
+            "jewellery": "Kein auffälliger Schmuck",
+            "things": "Schwere Zange und Polierstein",
+            "weapons": "Massiver Handhocker / schwerer Schmiedehammer"
+        },
+        "distinguishing_features": "Tiefe, dröhnende Stimme und Hände, die von harter Arbeit und Funkenflug gezeichnet sind."
+    },
+    "personality": {
+        "traits": [
+            "Handfest",
+            "Direkt",
+            "Zuverlässig",
+            "Hitzig",
+            "Gütig"
+        ],
+        "actual-mood": [
+            "Zufrieden"
+        ],
+        "family-background": "Vater Hektor, Hufschmied in Angbar; Mutter Ylva, Köchin. Bruder Gero, Bergbauer in den Bergen. Wulfried zog vor Jahren nach Donnerbach und fand im Rondratempel eine neue Heimat und Bestimmung als Tempelschmied.",
+        "motivation": "Jost aus der Schreibstube weglocken/retten, um ihm an der Esse handwerkliche Disziplin und die Zähigkeit des Metalls beizubringen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 10,
+            "FF": 15,
+            "GE": 11,
+            "KO": 16,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 15
+            },
+            {
+                "name": "Hiebwaffen",
+                "FW": 11
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

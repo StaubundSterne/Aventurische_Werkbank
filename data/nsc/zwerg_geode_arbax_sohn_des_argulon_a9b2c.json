@@ -1,0 +1,115 @@
+{
+    "id": "6f8a1b3c-5d7e-4a9f-8b2c-1d3e5f7a9b2c",
+    "source": "wiki-aventurica.de (Arbax Sohn des Argulon); 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Arbax, Sohn des Argulon",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 960,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Erdkröte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Geode",
+        "specification": "Mooshüter-Geode im Tosch'Kar",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkoppen",
+        "former-locations": [
+            "Tosch'Kar",
+            "Lowangen",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Garamoschs Tod, Schiefertafel-Bruchstücke, Akademiesiegel Donnerbach"
+    },
+    "appearance": {
+        "size": 135,
+        "weight": 60,
+        "hair": "Dunkelbraunes, ungestaltetes Haar und kurzer, ungepflegter Bart",
+        "skin": "Blass mit Schlamm- und Rußspuren",
+        "eyes": "Gerötete braune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Abgewetzte Wollkleidung und Lodenmantel",
+            "trousers": "Feuchte, erdbeschmutzte Lederhose",
+            "footwear": "Durchgeweichte Schnürstiefel",
+            "jewellery": "Unvollendetes Holzamulett mit Einkerbungen",
+            "things": "Drei Bruchstücke einer dunklen Schiefertafel, beschädigter Lederbeutel mit Flechten und Moosen",
+            "weapons": "Vulkanglasdolch, Stab aus Bergkiefer"
+        },
+        "distinguishing_features": "Helle Tränenspuren im Gesteinsstaub des Gesichts, spürbar zitternde Hände"
+    },
+    "personality": {
+        "traits": [
+            "Überfordert",
+            "Feinfühlig",
+            "Trauernd",
+            "Pflichterfüllt",
+            "Naturverbunden"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Vater Argulon, Kupferschmied in Hiltorp; Lehrmeister Garamosch (Mooshüter-Geode, vor drei Wochen im Tosch'Kar verstorben).\nKein Vertrautentier und kein bevorzugtes Elemente.",
+        "motivation": "Antritt des Erbes von Garamosch und Einordnung der Schutzaufgaben im Tosch'Kar."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 15,
+            "CH": 11,
+            "FF": 14,
+            "GE": 12,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 33,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 11
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 10
+            },
+            {
+                "name": "Orientierung",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Sumus Elixier",
+                "FW": 8
+            },
+            {
+                "name": "Blick in die Vergangenheit",
+                "FW": 6
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

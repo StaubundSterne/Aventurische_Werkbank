@@ -1,0 +1,105 @@
+{
+    "id": "a1b2c3d4-e5f6-41b2-8c3d-4e5f6a7b8c9d",
+    "source": "wiki-aventurica.de, Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Norre von Beonfirn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 962,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Keiler",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Junker",
+        "specification": "Gutsherr von Beonfirn",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Beonfirn",
+        "former-locations": [
+            "Trallop",
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Fredegis"
+        ],
+        "injection-points": "Erbstreitigkeit, Weidener Lehnsrecht, Familienwappen"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 88,
+        "hair": "Dunkelblond mit grauen Schläfen, kurz geschnitten",
+        "skin": "Wettergegerbt und sommersprossig",
+        "eyes": "Graugrün",
+        "outfit": {
+            "headgear": "Kappe aus Bärenfell",
+            "top": "Wollener Wams im grüngoldenen Wappenmuster von Beonfirn",
+            "trousers": "Dunkelbraune Lederhose",
+            "footwear": "Hohe Reitstiefel aus Rindsleder",
+            "jewellery": "Siegelring derer von Beonfirn aus Messing",
+            "things": "Hornbesteck, Jagdmesser",
+            "weapons": "Anderthalbhänder"
+        },
+        "distinguishing_features": "Markante Narbe an der linken Wangenseite von einer Wildschweinjagd"
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Starrköpfig",
+            "Traditionsbewusst",
+            "Gastfreundlich",
+            "Misstrauisch"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Vater von Eudovan. Ehemann von Warmlinde. Führt das Gut Beonfirn seit zwei Jahrzehnten gegen drohenden Verfall und Orküberfälle.",
+        "motivation": "Sicherung des Familienerbes und Verheiratung der Kinder im weidener Niederadel."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 12,
+            "CH": 12,
+            "FF": 10,
+            "GE": 11,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihänder",
+                "FW": 10
+            },
+            {
+                "name": "Orientierung",
+                "FW": 8
+            },
+            {
+                "name": "Reiten",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

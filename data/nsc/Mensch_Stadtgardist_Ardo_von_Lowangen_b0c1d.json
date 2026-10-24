@@ -3,7 +3,7 @@
     "source": "4200 Svelltland, 4501 Im Zeichen der Kröte, [KI-Ergänzung: fiktiv]",
     "tags": [],
     "general": {
-        "name": "Ardo von Lowangen",
+        "name": "Ardo Bungolder",
         "gender": "männlich",
         "canonical": false,
         "birth-year": 970,
@@ -15,7 +15,7 @@
     },
     "profession": {
         "category": "Stadtgardist",
-        "specification": "Weibel der Stadtwache; zuständig für das Marktviertel und die Einlasskontrollen am Haupttor.",
+        "specification": "Weibel der Stadtwache; zuständig für das Viertel 'Bunte Flucht' und die Kontzrollen an der Regenbogenbrücke.",
         "clerical": false,
         "magical": false,
         "noble": false

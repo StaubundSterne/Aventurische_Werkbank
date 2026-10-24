@@ -1,0 +1,112 @@
+{
+    "id": "3a6c9d41-705f-4ea3-8b14-0f9a8b5d3e2c",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Roderick Kempf",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 994,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Fischer",
+        "specification": "Fischerknecht am Donnerbach und Moorgrund",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": "Pflegebruder, Netzknüpfen, Flussufer"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 68,
+        "hair": "Wuscheliges rotes Haar",
+        "skin": "Wettergegerbt mit vielen Sommersprossen",
+        "eyes": "Grüne, schelmische Augen",
+        "outfit": {
+            "headgear": "Wollmütze",
+            "top": "Grober grau-blauer Wollpullover",
+            "trousers": "Wetterfeste Lederhose",
+            "footwear": "Hohe Watstiefel aus gefettetem Leder",
+            "jewellery": "Einfacher Fischknochen-Anhänger",
+            "things": "Fischernetz, Hornpfeife",
+            "weapons": "Fischspeer"
+        },
+        "distinguishing_features": "Riecht meist leicht nach Flusswasser und Räucherfisch"
+    },
+    "personality": {
+        "traits": [
+            "Humorvoll",
+            "Wetterfest",
+            "Direkt",
+            "Gesellig",
+            "Gelassen"
+        ],
+        "actual-mood": [
+            "Gute Laune"
+        ],
+        "family-background": "Pflegeeltern Gerwulf Kempf (56, Gutsherr) und Swangard Kempf (57, Verwalterin). Wurde als jüngster Pflegesohn aufgenommen und verbringt die meiste Zeit am Flussufer.",
+        "motivation": "Träumt von einem eigenen kleinen Fischerboot auf dem Neunaugensee."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 12,
+            "GE": 12,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 33,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fischen & Angeln",
+                "FW": 8
+            },
+            {
+                "name": "Schwimmen",
+                "FW": 7
+            },
+            {
+                "name": "Boote fahren",
+                "FW": 7
+            },
+            {
+                "name": "Orientierung",
+                "FW": 6
+            },
+            {
+                "name": "Zechen",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

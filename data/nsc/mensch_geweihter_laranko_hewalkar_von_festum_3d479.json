@@ -1,0 +1,113 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "source": "Entwürfe der Mitspielenden & Dossier: Der Rondratempel zu Donnerbach im Jahre 1009 BF",
+    "tags": [],
+    "general": {
+        "name": "Laranko Hewalkar von Festum",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 949,
+        "alive": true,
+        "culture": "Nordaventurisch / Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Steinadler",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte:r",
+        "specification": "Rondrageweihte:r und Tempelritter zu Donnerbach",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Festum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Novizenausbildung, Altarraum, Strenge Zucht"
+    },
+    "appearance": {
+        "size": 188,
+        "weight": 90,
+        "hair": "Grau, kurz und praktisch geschnitten",
+        "skin": "Wettergegerbt, von der Kälte und Gischt des Donnerfalls geprägt",
+        "eyes": "Grau und prüfend",
+        "outfit": {
+            "headgear": "Einfache Kapuze",
+            "top": "Wollenes Gewand in den Farben der Göttin, schwerer Kettenkragen",
+            "trousers": "Robuste Leinenbeinkleider",
+            "footwear": "Feste, nagelbestiigte Stiefel",
+            "jewellery": "Ein schlichtes silbernes Rondrasymbol",
+            "things": "Gebetbuch und Pergamentrollen",
+            "weapons": "Geweihtes Langschwert"
+        },
+        "distinguishing_features": "Hölzerne, harte Schritte auf dem feuchten Steinboden durch eine alte Verletzung im Knie."
+    },
+    "personality": {
+        "traits": [
+            "Unnachgiebig",
+            "Diszipliniert",
+            "Pflichtbewusst",
+            "Streng",
+            "Gerecht"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Vater Alduran, Waffenschmied in Festum; Mutter Alrike, Tuchhändlerin. Bruder Boris, Soldat in den Nordmarken. Die Familie schickte Laranko früh zur Ausbildung in den Rondratempel nach Festum, bevor er seine Wege in den Norden nach Donnerbach lenkte.",
+        "motivation": "Die treue Seele der jungen Ayla in die Obhut der Donnernden zu führen und die strenge Disziplin im Tempel aufrechtzuerhalten."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 12,
+            "IN": 14,
+            "CH": 13,
+            "FF": 10,
+            "GE": 12,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 30
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 12
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 11
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Schutzsegen",
+                "FW": 10
+            },
+            {
+                "name": "Initiation",
+                "FW": 12
+            }
+        ]
+    },
+    "session-notes": ""
+}

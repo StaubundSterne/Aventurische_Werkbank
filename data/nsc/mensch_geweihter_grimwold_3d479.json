@@ -1,0 +1,127 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "source": "Entwurf der Mitspielenden: Begegnungen im Finsterkamm; wiki-aventurica.de (Finsterkamm, Firun-Kirche)",
+    "tags": [],
+    "general": {
+        "name": "Grimwold",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 970,
+        "alive": true,
+        "culture": "Bornland / Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Eisbär",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Rondrageweihter und Tempelritter zu Donnerbach",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Saljeth",
+            "Weiden",
+            "Bärwalde"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Finsterkamm, Überlebenstechniken, Elementarordnung"
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 82,
+        "hair": "Dunkelbraunes, schulterlanges Haar und ein dicht gestutzter Vollbart mit einzelnen grauen Strähnen",
+        "skin": "Wettergegerbte, helle Haut mit leichten Frostspuren an den Wangenknochen",
+        "eyes": "Eisblaue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Mantel aus ungeschorenem Bärenfell über einer Rüstung aus gehärtetem Leder und leinenem Hemd",
+            "trousers": "Dicke Hose aus grauem Loden",
+            "footwear": "Kniehohe Lederschürstiefel mit Riemenverschluss",
+            "jewellery": "Eisernes Amulett in Form eines Bärenkopfes mit Eiskristallgravur",
+            "things": "Signalhorn aus Stierhorn, Lederbeutel mit Trockenfleisch und Feuerstein",
+            "weapons": "Eibenlangbogen an der Schulter, breiter Jagddolch am Ledergürtel"
+        },
+        "distinguishing_features": "Eine narbige Vertiefung an der linken Schläfe und sichtbarer Atemhauch auch bei milderen Temperaturen"
+    },
+    "personality": {
+        "traits": [
+            "Diszipliniert",
+            "Schweigsam",
+            "Firungläubig",
+            "Wetterfest",
+            "Praxisbezogen"
+        ],
+        "actual-mood": [
+            "Andächtig"
+        ],
+        "family-background": "Versehrter Veteran der Ogerschlacht 1003 BF. Vater Alduran, Waffenschmied in Festum; Mutter Alrike, Tuchhändlerin. Bruder Boris, Soldat in den Nordmarken. Die Familie schickte Laranko früh zur Ausbildung in den Rondratempel nach Festum, bevor er seine Wege in den Norden nach Donnerbach lenkte.",
+        "motivation": "Transport der erlegten Gemsen nach Lowangen zum Verkauf sowie Weitergabe von Wissen über Gebirgspässe und Waidmannskunst an Reisende."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 13,
+            "CH": 10,
+            "FF": 12,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtenlesen",
+                "FW": 12
+            },
+            {
+                "name": "Bögen",
+                "FW": 11
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 13
+            },
+            {
+                "name": "Orientierung",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Firuns Blick",
+                "FW": 8
+            },
+            {
+                "name": "Kälteschutz",
+                "FW": 10
+            },
+            {
+                "name": "Mahlzeit der Wildnis",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

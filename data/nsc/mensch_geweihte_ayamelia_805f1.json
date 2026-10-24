@@ -1,0 +1,126 @@
+{
+    "id": "e67b2d18-912f-48d1-bc72-6df90e3805f1",
+    "source": "4000 Bibliotheken/DSA5_NCS_Donnerbach.md; wiki-aventurica.de/wiki/Ayamelia",
+    "tags": [],
+    "general": {
+        "name": "Ayamelia Leuenglanz von Donnerbach",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Löwin",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Rondrageweihte",
+        "specification": "Knappin der Göttin",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Feste Donnerhall",
+            "Kavernen von Skrugbrandur"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Goldsirup, Rondrakamm, Tempelnachtwache"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Dunkelblond, streng im Nacken geflochten",
+        "skin": "Leicht sonnengebräunt mit vereinzelten kleinen Narben",
+        "eyes": "Stechendes Grün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Kettenhemd über rotem Wams, weiß-rote Rondrarobe",
+            "trousers": "Dunkle Lederhose",
+            "footwear": "Schwere Beschlagene Lederstiefel",
+            "jewellery": "Amulett mit der Gravur der Löwin von Neetha",
+            "things": "Ampulle mit Weiheöl, Ausgabe des Aventurischen Boten (994 BF)",
+            "weapons": "Rondrakamm, Kurzdolch"
+        },
+        "distinguishing_features": "Aufrechte, kompromisslose Körperhaltung; narbenbedeckte Unterarme"
+    },
+    "personality": {
+        "traits": [
+            "Kompromisslos",
+            "Pflichtbewusst",
+            "Glühend gläubig",
+            "Streng",
+            "Aufbrausend"
+        ],
+        "actual-mood": [
+            "Enttäuscht"
+        ],
+        "family-background": "Ayamelia entstammt einer einfachen Handwerkerfamilie aus dem Mittelreich. Sie trat früh als Novizin in den Rondra-Kult ein und verschrieb ihr Leben lückenlos dem Dienst an der Göttin.",
+        "motivation": "Ayamelia strebt nach absoluter Erfüllung der rondrianischen Tugenden von Mut, Ehre und Aufrichtigkeit. Sie will ihre Pfleglinge im Tempel zu fehlerfreien Streiter:innen der Göttin formen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 11,
+            "GE": 14,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 38
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihandschwerter",
+                "FW": 13
+            },
+            {
+                "name": "Religionskunde",
+                "FW": 11
+            },
+            {
+                "name": "Überreden",
+                "FW": 7
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Schutzsegen",
+                "FW": 10
+            },
+            {
+                "name": "Göttlicher Segen",
+                "FW": 12
+            },
+            {
+                "name": "Ehrenvoller Zweikampf",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": "Josts spirituelle Mentorin und maßlos enttäuscht über Josts Entscheidung, sich nicht weihen zu lassen."
+}

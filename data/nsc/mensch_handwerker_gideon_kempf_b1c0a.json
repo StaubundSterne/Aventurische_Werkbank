@@ -1,0 +1,112 @@
+{
+    "id": "1e4a7b29-583d-4c81-a9f2-8d7e6f3b1c0a",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Gideon Kempf",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Seilergeselle in den Donnerbacher Werkstätten",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Pflegebruder, Tauwerk, Kindheit"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 76,
+        "hair": "Dunkelbraunes, kurz geschnittenes Haar",
+        "skin": "Leicht gebräunt und schwielig an den Händen",
+        "eyes": "Bernsteinfarbene Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Naturfarbenes Leinenhemd mit aufgerollten Ärmeln",
+            "trousers": "Derbe braune Tuchhose mit Lederbesatz",
+            "footwear": "Feste Arbeitsstiefel aus Rindsleder",
+            "jewellery": "Ein einfaches Holzamulett an einem Lederband",
+            "things": "Messerscheide, Hanffasern in der Gürteltasche",
+            "weapons": "Scharfes Seilermesser"
+        },
+        "distinguishing_features": "Eine feine Narbe an der rechten Zeigefingerbeuge vom Seildrehen"
+    },
+    "personality": {
+        "traits": [
+            "Zuverlässig",
+            "Pragmatisch",
+            "Geduldig",
+            "Familienbewusst",
+            "Bedenkenträger"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Pflegeeltern Gerwulf Kempf (56, Gutsherr) und Swangard Kempf (57, Verwalterin). Gideon ist das älteste der Pflegekinder und fühlt sich stets verantwortlich für das Auskommen des Haushalts.",
+        "motivation": "Möchte bald seinen Meisterbrief als Seiler machen, um der Familie ein festes Einkommen zu sichern."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 11,
+            "IN": 12,
+            "CH": 11,
+            "FF": 13,
+            "GE": 11,
+            "KO": 13,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Knotenknüpfen",
+                "FW": 8
+            },
+            {
+                "name": "Handwerk",
+                "FW": 7
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 6
+            },
+            {
+                "name": "Zechen",
+                "FW": 5
+            },
+            {
+                "name": "Sinnenfeinheit",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

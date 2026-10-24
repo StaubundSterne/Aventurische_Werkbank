@@ -1,0 +1,108 @@
+{
+    "id": "f47ac10b-58cc-4372-a1b9-8e5436f521b4",
+    "source": "wiki-aventurica.de, 4208 Angroschs Kinder, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Argax Sohn des Ardosch",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 942,
+        "alive": true,
+        "culture": "Brillantzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Wüstenfuchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händler",
+        "specification": "Karawanenführer und Hehler für exotische und riskante Güter",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Schatodor",
+            "Tjolmar",
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Schatodor-Vergangenheit, Blutpfand-Expertise, Schmuggelrouten"
+    },
+    "appearance": {
+        "size": 138,
+        "weight": 62,
+        "hair": "Dunkelbrauner, mit Silberfäden durchsetzter Bart, in kurze Zöpfe gebunden",
+        "skin": "Wettergegerbt, von der Sonne des Svelltlands tief gebräunt",
+        "eyes": "Bernsteinfarben, wachsam",
+        "outfit": {
+            "headgear": "Abgetragener Lederhut mit breiter Krempe",
+            "top": "Robuste Weste aus gegerbtem Hirschleder über einem Leinenhemd",
+            "trousers": "Dunkle, strapazierfähige Tuchhose",
+            "footwear": "Genagelte Marschstiefel aus Zwergenstahl-Leder-Verbund",
+            "jewellery": "Ein silberner Ohrring rechts, ein Siegelring mit einem stilisierten Amboss (Schatodor-Handelsgilde)",
+            "things": "Ein kleiner Beutel mit Edelsteinen zur Prüfung, eine Lupe",
+            "weapons": "Ein langer Dolch im Gürtel, eine handliche Armbrust griffbereit am Packesel"
+        },
+        "distinguishing_features": "Mehrere parallele Narben an beiden Unterarmen, die an alte Fesselspuren erinnern."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Verschwiegen",
+            "Risikofreudig",
+            "Nüchtern",
+            "Zäh"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Vater Ardosch, verstorbener Minenarbeiter in Schatodor; Mutter Ingrisch, Steinschneiderin; Bruder Grogam, verschollen im Orkland.",
+        "motivation": "Sicherung des Wohlstands durch Handel mit Gütern, die andere Händler aufgrund der Orkgefahr meiden."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 13,
+            "IN": 14,
+            "CH": 10,
+            "FF": 14,
+            "GE": 11,
+            "KO": 15,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 12
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 10
+            },
+            {
+                "name": "Schätzen",
+                "FW": 13
+            },
+            {
+                "name": "Orientierung",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

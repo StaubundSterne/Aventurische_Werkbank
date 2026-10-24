@@ -1,0 +1,102 @@
+{
+    "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+    "source": "wiki-aventurica.de (Lowangen), 4310 Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Odila Zunftmeisterin",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 970,
+        "alive": true,
+        "culture": "Mittelländisch (Lowangen)",
+        "species": "Mensch",
+        "soul-animal": "Hausschwein (wegen der Fruchtbarkeit)",
+        "social-state": "Frei (Patrizierin)"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Mitglied der Gilde der Tuchmacher / Mäzenin des Tempels",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Twergenhausen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Geld-vs-Glaube, Stadtpolitik, Tsa-Spende"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 85,
+        "hair": "Zu einer strengen, aber prunkvollen Turmfrisur hochgesteckt",
+        "skin": "Rosig, gut gepflegt",
+        "eyes": "Grau, geschäftsmäßig kühl",
+        "outfit": {
+            "headgear": "Ein kleines Häubchen aus feinster Lowanger Seide",
+            "top": "Ein prächtiges Kleid aus schwerem Brokat in Regenbogenfarben (zu Ehren Tsas)",
+            "trousers": "Keine",
+            "footwear": "Samtene Hausschuhe",
+            "jewellery": "Mehrere Ringe mit Edelsteinen; ein Tsa-Amulett aus Gold",
+            "things": "Ein fächerartiges Notizbuch aus Elfenbein",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Sie fächelt sich ständig mit einem Seidenfächer Luft zu, selbst wenn es im Tempel zieht."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Großzügig",
+            "Bestimmt",
+            "Aberglaubisch",
+            "Einflussreich"
+        ],
+        "actual-mood": [
+            "Eilig"
+        ],
+        "family-background": "Witwe des Zunftmeisters Gerling; drei Söhne, die das Familiengeschäft führen.",
+        "motivation": "Hofft durch großzügige Spenden an Tsa, dass ihre Familie vom kommenden Unheil verschont bleibt (eine dunkle Vorahnung)."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 12,
+            "CH": 14,
+            "FF": 11,
+            "GE": 9,
+            "KO": 10,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 26,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 13
+            },
+            {
+                "name": "Rechnen",
+                "FW": 12
+            },
+            {
+                "name": "Etikette",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,96 @@
+{
+    "id": "e5678901-cdef-4012-8345-6789abcdef01",
+    "source": "Entwürfe der Mitspielenden, wiki-aventurica.de (Gashok, 1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Brandan Finsterblick",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 958,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Keiler",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Tagelöhner",
+        "specification": "Arbeiter:in auf den umliegenden Feldern und Höfen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Gashok",
+        "former-locations": [
+            "Greifenfurt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelevina"
+        ],
+        "injection-points": "Hinterhalt, Haltegriff, Lodenmantel"
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 95,
+        "hair": "Verfilztes, dunkelgraues Haar",
+        "skin": "Narbig und sonnenverbrannt",
+        "eyes": "Trüb und dunkel",
+        "outfit": {
+            "headgear": "Kapuze des Mantels",
+            "top": "Abgewetzter grauer Lodenmantel aus rohem Stoff",
+            "trousers": "Geflickte Leinenhose",
+            "footwear": "Holzschuhe",
+            "jewellery": "Kein Schmuck sichtbar",
+            "things": "Keine",
+            "weapons": "Die bloßen Hände"
+        },
+        "distinguishing_features": "Kratzt sich vernehmbar am Unterarm, der raue Stoff seiner Ärmel erzeugt beim Zupacken ein lautes Schabgeräusch."
+    },
+    "personality": {
+        "traits": [
+            "Kratzend",
+            "Zupackend",
+            "Grob",
+            "Groß",
+            "Schwerfällig"
+        ],
+        "actual-mood": [
+            "Handgreiflich"
+        ],
+        "family-background": "Sohn der Magd Lene und eines namentlich nicht bekannten Söldners. Schwester Tula arbeitet als Schafhirtin. Besitzt keine eigene Familie und ist ständiger Begleiter von Gisbert.",
+        "motivation": "Tritt aus dem Schatten hervor, packt Fremde hart an den Oberarmen und fixiert sie für Schläge."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 8,
+            "IN": 9,
+            "CH": 8,
+            "FF": 10,
+            "GE": 11,
+            "KO": 13,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kraftakt",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,112 @@
+{
+    "id": "6f7a8b9c-0d1e-4234-9567-89abcdef0123",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Debrek Bienbart",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Absolvent des Seminars  der elfischen Verständigung zu Donnerbach (Anatomie-Spezialist)",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": [
+            "Anatomie-Faszination, Schlafsaal-Schikane, Körperkraft, ehemaliger Kommilitone"
+        ]
+    },
+    "appearance": {
+        "size": 196,
+        "weight": 105,
+        "hair": "Schwarzer, ausgeprägter Nackenvokuhila",
+        "skin": "Grobporig und fettig",
+        "eyes": "Kleine braune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Grobes, schmutziges Obergewand mit Flecken",
+            "trousers": "Weite, derbe Stoffhose",
+            "footwear": "Ausgetretene Stiefel",
+            "jewellery": "Keine",
+            "things": "Anatomisches Seziermesser, Lederetui mit Skalpellen",
+            "weapons": "Schweres Messer"
+        },
+        "distinguishing_features": "Hünenhafte, fast 90 cm breite Statur; grobe, ungeschliffene Erscheinung."
+    },
+    "personality": {
+        "traits": [
+            "Verhätschelt",
+            "Grob",
+            "Stumpf",
+            "Fokussiert",
+            "Unsensibel"
+        ],
+        "actual-mood": [
+            "Gleichgültig"
+        ],
+        "family-background": "Vater Brandan Bienbart, Imker; Mutter Hulda. Debrek ist das fünfte von sechs Kindern und wurde von seinen Eltern stets verwöhnt und vor Konsequenzen geschützt.",
+        "motivation": "Glänzt als Klassenbester in Anatomie, hat ansonsten wenig Feingefühl und beteiligt sich stumpf an Lindariels Schikanen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 10,
+            "CH": 9,
+            "FF": 13,
+            "GE": 10,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 37,
+            "AsP": 35,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 8
+            },
+            {
+                "name": "Anatomie",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 6
+            },
+            {
+                "name": "Klarum Purum",
+                "FW": 4
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

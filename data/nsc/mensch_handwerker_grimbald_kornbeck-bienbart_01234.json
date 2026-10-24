@@ -1,0 +1,105 @@
+{
+    "id": "c5d3e4f6-a7b8-4901-a3d4-e5f678901234",
+    "source": "Eigenentwicklung für Abenteuer in Donnerbach; Referenz zu Zimmerei Bienbart",
+    "tags": [],
+    "general": {
+        "name": "Grimbald Kornbeck-Bienbart",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dachsbär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Töpfergeselle und Formstecher im Werk Neunauge",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Svalmtal"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Reliefbeschädigung, Wirtshausschlägerei, Zunftstolz"
+    },
+    "appearance": {
+        "size": 186,
+        "weight": 95,
+        "hair": "Wuscheliger roter Schopf und ungepflegter Dreitagebart",
+        "skin": "Sonnengewöhnt und pockennarbig",
+        "eyes": "Kleine, stechende graublaue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schmutzige Lederweste über abgewetzter Wolltunika",
+            "trousers": "Fleckige Lederhose mit Rissen an den Knien",
+            "footwear": "Schwere, nagelbeschlagene Arbeitsstiefel",
+            "jewellery": "Ein eiserner Armreif am rechten Unterarm",
+            "things": "Formstecher-Meißel, Schaber, Krug mit Dünnbier",
+            "weapons": "Ein schwerer Holzhammer"
+        },
+        "distinguishing_features": "Eine schiefe Nase von einer Kneipenschlägerei; riecht penetrant nach Rauch und feuchter Erde."
+    },
+    "personality": {
+        "traits": [
+            "Lautstark",
+            "Misstrauisch",
+            "Stur",
+            "Trinkfest",
+            "Grobschlächtig"
+        ],
+        "actual-mood": [
+            "Lustlos"
+        ],
+        "family-background": "Jüngerer Bruder von Danos Kornbeck-Bienbart; Neffe von Gramhuld Bienbart; Mutter Alrike starb am Zitterfieber.",
+        "motivation": "Will das Wappenrelief der Zumpels am Eingang abschlagen, weil es angeblich im Weg steht."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 9,
+            "IN": 10,
+            "CH": 8,
+            "FF": 11,
+            "GE": 10,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Töpfern",
+                "FW": 6
+            },
+            {
+                "name": "Raufen",
+                "FW": 7
+            },
+            {
+                "name": "Zechen",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

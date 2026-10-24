@@ -1,0 +1,105 @@
+{
+    "id": "c3d4e5f6-a1b2-43d4-aef5-6a7b8c9d0e1f",
+    "source": "wiki-aventurica.de, Trallop",
+    "tags": [],
+    "general": {
+        "name": "Eudovan von Beonfirn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 986,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Ritter",
+        "specification": "Knappe des Bärenordens zu Trallop",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Beonfirn",
+        "former-locations": [
+            "Trallop",
+            "Bärnwald"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Adarell"
+        ],
+        "injection-points": "Ritterehre, Waffenbrüderschaft, Wegelagerer"
+    },
+    "appearance": {
+        "size": 189,
+        "weight": 95,
+        "hair": "Kastanienbrauner Wuschelkopf",
+        "skin": "Leicht gebräunt",
+        "eyes": "Dunkelblau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Kettenhemd über gepolstertem Waffenrock mit Beonfirn-Wappen",
+            "trousers": "Feste Lederhose",
+            "footwear": "Schwere Reiterstiefel",
+            "jewellery": "Rondramund-Amulett aus Bronzeguss",
+            "things": "Waffenöl, Wetzstein, Lederpflege",
+            "weapons": "Langes Schwert, Holzschild"
+        },
+        "distinguishing_features": "Breite Statur und dröhnendes, ansteckendes Lachen"
+    },
+    "personality": {
+        "traits": [
+            "Mutig",
+            "Ungeduldig",
+            "Ehrlich",
+            "Bärenstark",
+            "Ungestüm"
+        ],
+        "actual-mood": [
+            "Entschlossen"
+        ],
+        "family-background": "Vetter von Aurelevina. Sohn von Warmelind und Norre. Dient als Ritterknappe in Trallop und träumt von Heldentaten gegen das Orkgesindel.",
+        "motivation": "Sich im Kampf einen Namen zu machen und die Ehre des Hauses Beonfirn zu mehren."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 10,
+            "IN": 11,
+            "CH": 11,
+            "FF": 10,
+            "GE": 13,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 40,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 12
+            },
+            {
+                "name": "Reiten",
+                "FW": 11
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

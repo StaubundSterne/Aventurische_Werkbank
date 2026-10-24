@@ -1,0 +1,96 @@
+{
+    "id": "b2345678-9abc-4def-9012-3456789abcde",
+    "source": "Entwürfe der Mitspielenden, wiki-aventurica.de (Gashok, 1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Alwine Tiefenbrunn",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Schwalbe",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schankmagd",
+        "specification": "Angestellte im 'Wilden Mann', zuständig für Reinigung, Wasserschöpfen und Gerstenbrei",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Gashok",
+        "former-locations": [
+            "Yrramis"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Adarell"
+        ],
+        "injection-points": "Fernweh, Lowangen, Auskunft"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 55,
+        "hair": "Aschblonder, straff nach hinten gebundener Zopf",
+        "skin": "Blass, mit durch Kaltwasser geröteten Händen",
+        "eyes": "Helles Blau",
+        "outfit": {
+            "headgear": "Einfaches weißes Leinenhäubchen",
+            "top": "Graues Leinenkleid",
+            "trousers": "Keine",
+            "footwear": "Holzschuhe",
+            "jewellery": "Kein Schmuck sichtbar",
+            "things": "Raues Leinentuch",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Riecht nach frischer Seife und feuchtem Stroh, schabt mit dem Tuch leise über Fichtenholz, spricht mit stark gedämpfter Stimme."
+    },
+    "personality": {
+        "traits": [
+            "Leise",
+            "Schnell",
+            "Kopfsenkend",
+            "Fleißig",
+            "Ruhig"
+        ],
+        "actual-mood": [
+            "Sehnsüchtig"
+        ],
+        "family-background": "Tochter des Tischlers Gisbert und der verstorbenen Weberin Eliane. Bruder Jallik arbeitet als Köhler:in im Umland. Steht unter der fortwährenden und strengen Aufsicht ihres Vaters.",
+        "motivation": "Verrichtet schweigend Putzarbeiten und formuliert im Gespräch den Plan, mit einem Schiff nach Lowangen zu fahren."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 11,
+            "IN": 12,
+            "CH": 11,
+            "FF": 12,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 25,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hauswirtschaft",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

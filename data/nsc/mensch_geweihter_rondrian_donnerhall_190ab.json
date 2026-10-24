@@ -1,0 +1,120 @@
+{
+    "id": "d81e23f0-5b4a-4c22-9a10-2f837e4190ab",
+    "source": "https://de.wiki-aventurica.de/wiki/Rondrian_Donnerhall",
+    "tags": [],
+    "general": {
+        "name": "Rondrian Donnerhall",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 972,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Berglöwe",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Rondrageweihter Tempelvorsteher zu Donnerbach",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baburin",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": [
+            "Rondramut, Orkenbedrohung, Schwertleite, Elfenkunde"
+        ]
+    },
+    "appearance": {
+        "size": "189",
+        "weight": 86,
+        "hair": "Mittelblondes, schulterlanges Haar, gezeichnet von den Winden des Nordens",
+        "skin": "Wettergegerbte, helle Haut",
+        "eyes": "grüne, wachsame Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Silberner Kettenwirkel über rotem Waffenrock mit Löwenwappen",
+            "trousers": "Lederne Beinlinge mit stählernen Schienbeinschützern",
+            "footwear": "Schwere, beschlagene Lederstiefel",
+            "jewellery": "Massives Rondra-Amulett aus Silber an einer schweren Kette",
+            "things": "Lederfett-Set, Schleifstein",
+            "weapons": "Aventurischer Zweihänder (Rondrakamm)"
+        },
+        "distinguishing_features": "Markante Narbe über der linken Augenbraue aus einem Orkgefecht"
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Ehrenhaft",
+            "Unbeugsam",
+            "Starrköpfig",
+            "Beschützend"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Cousin von Aldare VIII. Donnerhall, Chronist im Orden der Wahrung zu Rhodenstein.",
+        "motivation": "Sicherung der Festung Donnerbach gegen die drohende Orkinvasion und Vorbereitung junger Recken auf den Krieg."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 15,
+            "KL": 11,
+            "IN": 13,
+            "CH": 12,
+            "FF": 10,
+            "GE": 14,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 42,
+            "AsP": 0,
+            "KaP": 44
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihänder",
+                "FW": 16
+            },
+            {
+                "name": "Bekehren & Überzeugen",
+                "FW": 12
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Göttlicher Segen",
+                "FW": 14
+            },
+            {
+                "name": "Rondras Schild",
+                "FW": 12
+            },
+            {
+                "name": "Segen der Tapferkeit",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": "Ist Adarell und Jost persönlich und als Autor von 'Jugenderinnerungen des Geweihten Rondrian Donnerhall von Donnerbach' bekannt."
+}

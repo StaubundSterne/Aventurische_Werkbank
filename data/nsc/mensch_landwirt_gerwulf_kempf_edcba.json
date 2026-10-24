@@ -1,0 +1,113 @@
+{
+    "id": "f8e7d6c5-b4a3-4210-9876-543210fedcba",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Gerwulf Kempf",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 953,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Stier",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Landwirt",
+        "specification": "Gutsherr und Viehzüchter des Kempf'schen Anwesens",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Landstreit, Gastfreundschaft, Ehrenwort"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 90,
+        "hair": "Dichtes, stark ergrautes Haar und ein kurz gestutzter grauer Vollbart",
+        "skin": "Sonnengebräunte, wettergeprägte Haut mit tiefen Stirnfalten",
+        "eyes": "Gutmütige braune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Derbes braunes Lederwams über einem groben Leinenhemd",
+            "trousers": "Feste Hose aus dunkelgrauer Rohwolle",
+            "footwear": "Hohe Arbeitsstiefel aus schwerem Rindsleder",
+            "jewellery": "Wappenring des Hauses Kempf am linken Zeigefinger",
+            "things": "Schnitzmesser, Tabakspfeife aus Kirschholz, Lederbeutel",
+            "weapons": "Jagdmesser"
+        },
+        "distinguishing_features": "Schwielige, durch schwere Arbeit geprägte Hände und eine leicht gebückte Schulterhaltung"
+    },
+    "personality": {
+        "traits": [
+            "Stur",
+            "Gutmütig",
+            "Traditionstreu",
+            "Ehrlich",
+            "Gastfreundlich"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Ehefrau Swangard Kempf (57, Verwalterin); Sohn Ulfried Kempf (Soldat in Weiden); Tochter Alkena Kempf (Händlerin). Er leitet die körperliche Arbeit auf dem Hof seit seiner Jugend.",
+        "motivation": "Seinen Hof ehrenhaft an die nächste Generation zu übergeben und den Landbesitz der Familie gegen Nachbarschaftsfehden zu verteidigen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 12,
+            "CH": 11,
+            "FF": 11,
+            "GE": 10,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 8
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 9
+            },
+            {
+                "name": "Zechen",
+                "FW": 7
+            },
+            {
+                "name": "Zweihänder",
+                "FW": 4
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

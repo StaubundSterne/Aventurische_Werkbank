@@ -1,0 +1,106 @@
+{
+    "id": "f6a1b2c3-d4e5-46a7-9b8c-9d0e1f2a3b4c",
+    "source": "wiki-aventurica.de, Nebelmoor, Neunaugensee, Donnerbach",
+    "tags": [],
+    "general": {
+        "name": "Fandral Krummholz",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 958,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Kutscher",
+        "specification": "Ortskundiger Fuhrmann für Nebelmoor und Neunaugensee",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Nebelmoor",
+        "former-locations": [
+            "Beonfirn",
+            "Neunaugensee",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Jost"
+        ],
+        "injection-points": "Irrlichter, Kutschenpanne, Nebelpfad"
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 82,
+        "hair": "Graues, zotteliges Haar und dichter Vollbart",
+        "skin": "Wettergegerbt, lederartig",
+        "eyes": "Wache, dunkle Augen unter buschigen Brauen",
+        "outfit": {
+            "headgear": "Breitrandiger, geölter Lederhut",
+            "top": "Dicker, imprägnierter Weidener Wachsmantel über einer Wolljacke",
+            "trousers": "Schwere Lederhose",
+            "footwear": "Gefettete Kniestiefel",
+            "jewellery": "Amulett aus getrocknetem Moorholunder gegen Irrlichter",
+            "things": "Kutschenpeitsche, Stalllaterne mit Hornscheiben, Ersatzrad-Axe",
+            "weapons": "Kutscherpeitsche, schwerer Knüppel"
+        },
+        "distinguishing_features": "Raucht unentwegt Pfeife mit starkem, stinkendem Schnitttabak"
+    },
+    "personality": {
+        "traits": [
+            "Wetterfest",
+            "Schweigsam",
+            "Abergläubig",
+            "Zuverlässig",
+            "Umsichtig"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Fährt seit dreißig Jahren die gefährliche Route am Neunaugensee entlang nach Donnerbach. Seine Frau verstarb früh, seine zwei Töchter leben verheiratet in Donnerbach.",
+        "motivation": "Kutsche, Passagiere und sein Gespann sicher durch die tückischen Nebel des Moors ans Ziel zu bringen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 11,
+            "IN": 14,
+            "CH": 10,
+            "FF": 12,
+            "GE": 11,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fahrzeuge",
+                "FW": 12
+            },
+            {
+                "name": "Orientierung",
+                "FW": 11
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": "Fährt Aurelevina im Peraine 1009 BF nach Donnerbach."
+}

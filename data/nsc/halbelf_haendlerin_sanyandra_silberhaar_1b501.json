@@ -1,0 +1,119 @@
+{
+    "id": "c1b82f4e-3a9d-4712-8e01-92f4c3a1b501",
+    "source": "Entwürfe der Mitspielenden, 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Sanyandra Silberhaar",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 944,
+        "alive": true,
+        "culture": "Auelfen",
+        "species": "Halbelf",
+        "soul-animal": "Silberreiher",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Leiterin des Stoerrebrandt-Kontors in Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Schatodor",
+            "Trallop",
+            "Riva"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": "Briefsiegel, Grünes Depot, Zwergen-Erbe"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 62,
+        "hair": "Silberweißes, dichtes Haar, elegant hochgesteckt",
+        "skin": "Ebenmäßige, helle Haut mit zartem Schimmer",
+        "eyes": "Smaragdgrüne, leicht mandelförmige Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkelgrüne Seidenbluse unter einem feingestickten Ledermieder",
+            "trousers": "Dunkelbraune Stoffhose",
+            "footwear": "Elegante, weiche Lederstiefel aus elfischer Fertigung",
+            "jewellery": "Zierliche Silberbrosche in Form einer Tannennadel",
+            "things": "Kontorbuch mit Ledereinband, Petschaft des Handelshauses",
+            "weapons": "Zierdolch mit Elfenbeingriff am Gürtel"
+        },
+        "distinguishing_features": "Wirkt trotz ihrer 65 Jahre wie eine menschliche Frau Ende 30, auffallend silbernes Haar"
+    },
+    "personality": {
+        "traits": [
+            "Besonnen",
+            "Diplomatisch",
+            "Geschäftstüchtig",
+            "Ruhendes Zentrum",
+            "Geduldig"
+        ],
+        "actual-mood": [
+            "Vorsichtig optimistisch"
+        ],
+        "family-background": "Mutter Ailindis Silberhaar, auelfische Zaubersängerin; Vater Alrik Silberhaar, menschlicher Händler aus Trallop; Enkelin Fianna, Viertelelfin und Tauscherin in den Salamandersteinen. Ehemalige Geschäftspartnerin der Zwergin Jetrascha, Tochter der Jadrine.",
+        "motivation": "Erfolgreiche Leitung des Kontors und Bewahrung der Balance zwischen Handelshaus Stoerrebrandt und den Waldelfen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 14,
+            "IN": 15,
+            "CH": 15,
+            "FF": 13,
+            "GE": 14,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 35,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 12
+            },
+            {
+                "name": "Überreden",
+                "FW": 11
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 10
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 8
+            }
+        ],
+        "spells": [
+            {
+                "name": "Bannbaladin",
+                "FW": 8
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 6
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

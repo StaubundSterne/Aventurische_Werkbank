@@ -1,0 +1,96 @@
+{
+    "id": "c3456789-abcd-4ef0-a123-456789abcdef",
+    "source": "Entwürfe der Mitspielenden, wiki-aventurica.de (Gashok, 1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Gisbert Tiefenbrunn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 960,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Wachhund",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Tischler in Gashok",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Gashok",
+        "former-locations": [
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Fredegis"
+        ],
+        "injection-points": "Schläge, Zurechtweisung, Tochter"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 80,
+        "hair": "Graues, lichter werdendes Haar",
+        "skin": "Faltig und wettergegerbt",
+        "eyes": "Grau, oft zu Schlitzen verengt",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schwerer, dunkelgrauer Lodenmantel",
+            "trousers": "Grobe braune Wollhose",
+            "footwear": "Beschlagene Lederstiefel",
+            "jewellery": "Kein Schmuck sichtbar",
+            "things": "Keine",
+            "weapons": "Die bloßen Fäuste"
+        },
+        "distinguishing_features": "Schlägt fortwährend rituelle Zeichen vor der Brust (Sonnenzeichen, Boronsrad), brüllt laut, nutzt kräftige Faustschläge."
+    },
+    "personality": {
+        "traits": [
+            "Laut",
+            "Zuschlagend",
+            "Gestikulierend",
+            "Kräftig",
+            "Rau"
+        ],
+        "actual-mood": [
+            "Angriffslustig"
+        ],
+        "family-background": "Vater von Alwine und Jallik. Verwitwet, seit Ehefrau Eliane (Weberin) am Wundfieber verstarb. Seine Eltern Halmar (Schreiner:in) und Tineke (Näher:in) kamen aus Tjolmar.",
+        "motivation": "Verfolgt Personen in Seitengassen, um Kontaktversuche mit seiner Tochter durch physische Gewalt zu ahnden."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 9,
+            "IN": 10,
+            "CH": 9,
+            "FF": 11,
+            "GE": 10,
+            "KO": 12,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Raufen",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

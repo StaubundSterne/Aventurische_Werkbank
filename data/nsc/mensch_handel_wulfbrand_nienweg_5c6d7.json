@@ -1,0 +1,101 @@
+{
+    "id": "b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7",
+    "source": "Entwürfe der Mitspielenden; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Wulfbrand Nienweg",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Natter",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handel",
+        "specification": "Hotelbesitzer",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Aurelevina"
+        ],
+        "injection-points": "Asymmetrisches Lächeln, Familiengemälde, Lauschgelegenheiten"
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 70,
+        "hair": "Schwarze, streng nach hinten geölte Haare",
+        "skin": "Blass, glatt rasiert",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Samtenes Wams in tiefem Purpur",
+            "trousers": "Eng anliegende, schwarze Stoffhose",
+            "footwear": "Glänzende Lederstiefel",
+            "jewellery": "Ein dicker Siegelring mit Nienweg-Wappen",
+            "things": "Ein besticktes Taschentuch mit scharfem Duftstoff",
+            "weapons": "Ein Zierdegen an der Hüfte"
+        },
+        "distinguishing_features": "Eine feine, weiße Narbe zieht sich vertikal über die linke Lippenhälfte, glänzender Goldzahn rechts im Mund."
+    },
+    "personality": {
+        "traits": [
+            "Bisschen schleimig. Zieht beim Lächeln nur den rechten Mundwinkel hoch",
+            "Zeigt mit Handbewegungen auf Familiengemälde im Foyer",
+            "Verändert seine Körperhaltung je nach Kleidung des Gegenübers",
+            "Wendet sich ab",
+            "wenn Personen ohne Geldmittel in der Nähe sind",
+            "Wiederholt Worte von Gäst:innen in angehobener Lautstärke"
+        ],
+        "actual-mood": [
+            "Berechnend"
+        ],
+        "family-background": "Mutter Alara Nienweg, Kauffrau aus Gareth; Vater Wulfger Nienweg, Ausrüstungsverkäufer aus Gareth. Der Bau des purpurgedeckten Fachwerkhauses am Donnerfall wurde aus Gewinnen im Waffenhandel finanziert.",
+        "motivation": "Bietet Gäst:innen Unterkünfte in den oberen Räumlichkeiten des Hauses an. Sehr großer Opportunist: „Hauptsache, das Hotel macht Umsatz.“"
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 12,
+            "CH": 14,
+            "FF": 10,
+            "GE": 11,
+            "KO": 11,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Überreden",
+                "FW": 12
+            },
+            {
+                "name": "Handel",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

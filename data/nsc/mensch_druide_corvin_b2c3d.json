@@ -1,0 +1,123 @@
+{
+    "id": "a3b1c2d3-e4f5-4a6b-8c7d-8e9f0a1b2c3d",
+    "source": "Entwurf der Mitspielenden, wiki-aventurica.de (Finsterkamm, Archon Megalon)",
+    "tags": [],
+    "general": {
+        "name": "Corvin",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 971,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Steinkauz",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Druide",
+        "specification": "Haindruide (Sumupriester)",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Donnerbach",
+            "Tiefhusen",
+            "Saljeth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": "Minderglobule, Sumus Leib, Hargord Schwarzhain"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Dunkelbraunes, schulterlanges Haar, ungeschnitten, mit einem geflochtenen Zopf an der rechten Schläfe.",
+        "skin": "Wettergegerbt, leicht gebräunt.",
+        "eyes": "Graugrüne Iris.",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Knöchellange Tunika aus ungarbierter, graubrauner Wolle mit grobem Nahtverlauf.",
+            "trousers": "Wollene Beinlinge unter der Tunika.",
+            "footwear": "Schnürschuhe aus Rinderhaut ohne metallene Ösen oder Schnallen.",
+            "jewellery": "Keines",
+            "things": "Doppelmannshoher, knorrenreicher Eichenstab; Gürtel aus geflochtenem Rindsleder mit einer Bronzeschneide in brauner Lederscheide.",
+            "weapons": "Eichenstab, Bronzeschneide"
+        },
+        "distinguishing_features": "Vollständiges Fehlen metallener Knöpfe, Schnallen oder Beschläge. Wahrnehmbarer Geruch nach feuchter Eichenrinde und Rinderfett."
+    },
+    "personality": {
+        "traits": [
+            "Sumugläubig",
+            "Wortkarg",
+            "Metallmeidend",
+            "Ruhig",
+            "Naturverbunden"
+        ],
+        "actual-mood": [
+            "Aufmerksam"
+        ],
+        "family-background": "Mutter Elwine, Kräutersammlerin aus Tiefhusen (verstorben 992 BF); Vater Brandan, Köhler am Finsterkamm. Keine weiteren Geschwister. Aufgewachsen in den Wäldern nahe des Svellt.",
+        "motivation": "Bewahrung der Erdmutter Sumu im Finsterkamm vor fremden Einflüssen und Schutz der Kraftknoten."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 14,
+            "CH": 11,
+            "FF": 12,
+            "GE": 11,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Orientierung",
+                "FW": 10
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 12
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 9
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Sumus Elixier",
+                "FW": 8
+            },
+            {
+                "name": "Eins mit der Natur",
+                "FW": 10
+            },
+            {
+                "name": "Blick durch fremde Augen",
+                "FW": 6
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

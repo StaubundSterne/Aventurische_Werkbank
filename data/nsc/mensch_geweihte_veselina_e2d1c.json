@@ -1,0 +1,114 @@
+{
+    "id": "b5e4d3c2-b1a0-4f9e-8d7c-6b5a4f3e2d1c",
+    "source": "https://de.wiki-aventurica.de/wiki/Veselina",
+    "tags": [],
+    "general": {
+        "name": "Veselina Geißblatt ",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Luchs",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Löwenritterin",
+        "specification": "Löwenritterin auf Feste Donnerhall",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Lowangen",
+            "Neersand"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": "Schwertkampf, Disziplin, Wachenpflicht"
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 70,
+        "hair": "Kupferrotes, stramm im Nacken zusammengebundenes Haar",
+        "skin": "Sommersprossige, helle Haut",
+        "eyes": "Bernsteinfarbene, scharfe Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Brustpanzer aus poliertem Stahl über rotem Waffenrock",
+            "trousers": "Verstärkte Stoffhose",
+            "footwear": "Gepanzerte Lederstiefel",
+            "jewellery": "Schlichtes bronzenes Rondraschwert als Fibel",
+            "things": "Waffenoel, Wundverbände",
+            "weapons": "Anderthalbhänder, Dolch"
+        },
+        "distinguishing_features": "Durchdringender Blick und extrem aufrechte, militärische Haltung"
+    },
+    "personality": {
+        "traits": [
+            "Streng",
+            "Pragmatisch",
+            "Zielstrebig",
+            "Direkt",
+            "Unbestechlich"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Mutter Radscha, Händlerin aus Lowangen; Vater Yaromir, Veteran der Stadtgarde; Schwester Danja, Schneiderin.",
+        "motivation": "Aufrechterhaltung der eisernen Disziplin unter den Tempelgardist:innen und Schutz der heiligen Stätten."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 13,
+            "CH": 11,
+            "FF": 11,
+            "GE": 13,
+            "KO": 13,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 13
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 11
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Göttlicher Segen",
+                "FW": 10
+            },
+            {
+                "name": "Löwenmut",
+                "FW": 9
+            }
+        ]
+    },
+    "session-notes": "Josts nicht-spirituelle Mentorin."
+}

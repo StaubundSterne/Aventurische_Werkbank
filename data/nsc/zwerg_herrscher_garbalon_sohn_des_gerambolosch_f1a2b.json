@@ -1,0 +1,104 @@
+{
+    "id": "4f7e2c1a-8b3d-4e9f-9a1b-3c5d7e9f1a2b",
+    "source": "wiki-aventurica.de (Garbalon Sohn des Gerambalosch); 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Garbalon, Sohn des Gerambolosch",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 839,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Hochadel"
+    },
+    "profession": {
+        "category": "Herrscher",
+        "specification": "Bergkönig der Binge Finsterkoppen",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Finsterkoppen",
+        "former-locations": [
+            "Finsterkamm"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Bingen-Verhör, Schürfrechte, Mooshüter"
+    },
+    "appearance": {
+        "size": 138,
+        "weight": 68,
+        "hair": "Ergrautes, gepflegtes Haupthaar und langes, geflochtenes Bart-Plaiting",
+        "skin": "Wettergegerbt und dunkel",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Schwerer Eisenhelm mit Nasenschutz",
+            "top": "Bienenwachspolierte Lederschürze über einem Kettenhemd aus Eisen",
+            "trousers": "Dunkle Lederhose",
+            "footwear": "Eisenbeschlagene Stiefel",
+            "jewellery": "Goldener Ring am rechten Zeigefinger",
+            "things": "Eichene Verwahrkiste, Messkette",
+            "weapons": "Doppelköpfiger Kriegshammer"
+        },
+        "distinguishing_features": "Breiter Granitsitz mit tiefen Rillen in den Armlehnen im Thronsaal"
+    },
+    "personality": {
+        "traits": [
+            "Traditionsbewusst",
+            "Pflichtbewusst",
+            "Misstrauisch",
+            "Standhaft",
+            "Unbeugsam"
+        ],
+        "actual-mood": [
+            "Prüfend"
+        ],
+        "family-background": "Verstorbene Ehefrau Angrarda, Vater Gerambolosch; Tochter Arglescha, Prinzessin der Binge Finsterkoppen.",
+        "motivation": "Verwaltung der Schürfrechte, Sicherung der Binge Finsterkoppen gegen Orks und Finsterzwerge sowie Durchsetzung des Zwergenrechts."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 15,
+            "KL": 13,
+            "IN": 14,
+            "CH": 12,
+            "FF": 13,
+            "GE": 11,
+            "KO": 16,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 42,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kriegskunst",
+                "FW": 12
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 14
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 11
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

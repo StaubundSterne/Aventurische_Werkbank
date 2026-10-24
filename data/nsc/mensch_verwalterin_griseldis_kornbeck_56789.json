@@ -1,0 +1,105 @@
+{
+    "id": "a3b1c2d4-e5f6-4789-8a1b-c2d3e4f56789",
+    "source": "Eigenentwicklung für Abenteuer in Donnerbach; Referenz zu Zimmerei Bienbart in Weiden",
+    "tags": [],
+    "general": {
+        "name": "Griseldis Kornbeck",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 968,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Hausgans",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Verwalterin",
+        "specification": "Liegenschafts- und Nachlassverwalterin im Auftrag von Jost Zumpel",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": "Mietrückstand, Bienbart-Wappen, Räumungsdrohung"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 62,
+        "hair": "Streng zurückgekämmtes, graumeliertes Haar in einem festen Knoten",
+        "skin": "Blass und sommersprossig",
+        "eyes": "Steingrau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkelgrüne, hochgeschlossene Tuchjacke mit Hornknöpfen",
+            "trousers": "Dunkler Faltenrock aus schwerer Wolle",
+            "footwear": "Derbe Lederstiefel mit Messingschnallen",
+            "jewellery": "Ein schweres Schlüsselbund an einer eisernen Gürtelkette",
+            "things": "Wachsgebundenes Hauptbuch, Federkiel, Tintenfässchen",
+            "weapons": "Ein langer Messing-Schreibgriffel"
+        },
+        "distinguishing_features": "Tätschelt nervös ihre Buchführungsakten und blickt stets verächtlich über die Brille."
+    },
+    "personality": {
+        "traits": [
+            "Geizig",
+            "Paragraphenversessen",
+            "Herrschsüchtig",
+            "Traditionsverhaftet",
+            "Nachtragend"
+        ],
+        "actual-mood": [
+            "Ungeduldig"
+        ],
+        "family-background": "Cousine der tyrannischen Gildenmeisterin Gramhuld Bienbart; Witwe des Balihoer Schreibers Alrik Kornbeck; Mutter von zwei Söhnen (Odelbert, Lehrling in Baliho, und Wulf, Holzfäller im Svalmtal).",
+        "motivation": "Will das Werk Neunauge gewinnbringend an die Bienbart-Sippe abstoßen oder die Belegung durch ordentliche traditionalistische Handwerker erzwingen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 12,
+            "CH": 10,
+            "FF": 11,
+            "GE": 10,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechnen",
+                "FW": 9
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 7
+            },
+            {
+                "name": "Überreden",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

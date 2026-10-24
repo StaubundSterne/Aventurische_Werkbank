@@ -1,0 +1,99 @@
+{
+    "id": "bc3e4f5a-2d1c-4b3a-9e8d-7f6a5b4c3d2e",
+    "source": "Eigene Kampagnenvorgabe, 4201 Das Orkland",
+    "tags": [],
+    "general": {
+        "name": "Wulfgrimm von Eichhafen",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 967,
+        "alive": true,
+        "culture": "Andergastisch",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Krieger",
+        "specification": "Rondrianischer Streiter / Grenzritter",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Eichhafen",
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": "Orkische Logistik, Andergaster Bitterkeit, Grenzer-Erfahrung"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 88,
+        "hair": "Dunkelbraun, struppig, kurzer Vollbart",
+        "skin": "Grob, pockennarbig",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Schlichter Eisenhut",
+            "top": "Lederwams mit Eisenplatten verstärkt",
+            "trousers": "Grobe Wollhose",
+            "footwear": "Nagelbeschlagene Stiefel",
+            "jewellery": "Ein Amulett aus Eichenholz",
+            "things": "Ein Beutel mit getrockneter Eichenrinde zum Kauen",
+            "weapons": "Andergaster (Zweihänder)"
+        },
+        "distinguishing_features": "Fehlendes oberes Glied am kleinen Finger der linken Hand."
+    },
+    "personality": {
+        "traits": [
+            "Bitter",
+            "Erfahren",
+            "Direkt",
+            "Wachsam",
+            "Treu"
+        ],
+        "actual-mood": [
+            "Skeptisch"
+        ],
+        "family-background": "Sohn von Jendrik, einem Förster in Eichhafen. Seine Frau starb bei einem Orküberfall vor zehn Jahren.",
+        "motivation": "Informationen über den Aikar verbreiten und die schläfrigen Mittelreicher warnen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 15,
+            "KL": 10,
+            "IN": 14,
+            "CH": 10,
+            "FF": 11,
+            "GE": 12,
+            "KO": 15,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtensuchen",
+                "FW": 12
+            },
+            {
+                "name": "Zweihänder",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": ""
+}

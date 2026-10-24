@@ -1,0 +1,110 @@
+{
+    "id": "7a3b2c1d-4e5f-4a6b-9c8d-1e2f3a4b5c6d",
+    "source": "wiki-aventurica.de / Abenteuer A057 - Unsterbliche Gier",
+    "tags": [],
+    "general": {
+        "name": "Jesko von Koorbruch",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 942,
+        "alive": true,
+        "culture": "Donnerbach und Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Gildenloser Magier",
+        "specification": "Spektabilität und Akademieleiter",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gareth",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Studienplatz, Protokoll, Archiv"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 82,
+        "hair": "Dunkelbraun mit grauen Strähnen an den Schläfen",
+        "skin": "Blass mit feinen Fältchen um die Augen",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Schlichte Samtkappe",
+            "top": "Dunkelgraue Magierrobe mit gefüttertem Kragen",
+            "trousers": "Dunkle Wollhose",
+            "footwear": "Schlichte Lederschuhe",
+            "jewellery": "Ein silberner Siegelring am linken Ringfinger",
+            "things": "Ein lederner Notizband und eine Schreibfeder",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Eine kleine Narbe am rechten Daumen"
+    },
+    "personality": {
+        "traits": [
+            "Zielstrebig",
+            "Geduldigen Schrittes",
+            "Analytisch",
+            "Pflichtbewusst",
+            "Herumgezeigt"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Vater Alrik von Koorbruch, Gutsverwalter; Mutter Alrike von Koorbruch, geborene Leuenbrand; Schwester Isalie, Kräuterkundige in Perricum.",
+        "motivation": "Sicherung des akademischen Betriebs und Vermittlung zwischen gildenmagischen und elfischen Lehren."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 16,
+            "IN": 15,
+            "CH": 14,
+            "FF": 11,
+            "GE": 10,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 55,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Rechtskunde",
+                "FW": 12
+            },
+            {
+                "name": "Sternkunde",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Odem Arcanum",
+                "FW": 14
+            },
+            {
+                "name": "Analys Arcanstruktur",
+                "FW": 13
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

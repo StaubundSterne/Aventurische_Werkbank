@@ -1,0 +1,118 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "wiki-aventurica.de, eigene Ausarbeitung (Spielleiter-Setzung)",
+    "tags": [],
+    "general": {
+        "name": "Joringel Bohmstädter",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 961,
+        "alive": true,
+        "culture": "Mittelreich (Weiden)",
+        "species": "Mensch",
+        "soul-animal": "Graureiher",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Heiler:in",
+        "specification": "Senior-Mitglied und Verwalter der Bruder- und Schwesternschaft zur Förderung der Heilzauberei",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Bohmstadt",
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": "Verwaltung; Heilzauber; Stresssymptome"
+    },
+    "appearance": {
+        "size": 198,
+        "weight": 76,
+        "hair": "Helles, sehr kurz geschnittenes Haar",
+        "skin": "Blasse, hellhäutige Beschaffenheit",
+        "eyes": "Blassblaue Augen",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung",
+            "top": "Saubere, langärmlige Tunika aus ungebleichter Wolle",
+            "trousers": "Einfache graue Stoffhose",
+            "footwear": "Flache, leise Lederschuhe",
+            "jewellery": "Ein schlichter Silberring am linken Ringfinger",
+            "things": "Kleine Holzschatulle mit getrockneten Kräutern, Wachstafel und Griffel",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Auffallend lange Gliedmaßen und fließende, sehr bedächtige Körperbewegungen"
+    },
+    "personality": {
+        "traits": [
+            "Ausgeglichen",
+            "Geduldig",
+            "Vorsichtig",
+            "Optimistisch",
+            "Innerlich gestresst"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Geboren in Bohmstadt als Sohn einer Bäckerfamilie; zwei jüngere Schwestern verblieben im Bäckerhandwerk.",
+        "motivation": "Sicherstellung des reibungslosen Betriebs der Bruderschaft und Vermeidung jeglicher Unordnung."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 11,
+            "KL": 14,
+            "IN": 14,
+            "CH": 12,
+            "FF": 14,
+            "GE": 12,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 31,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Krankheiten",
+                "FW": 11
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 9
+            },
+            {
+                "name": "Alchimie",
+                "FW": 8
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Ruh' Körper, ruh' Geist",
+                "FW": 8
+            },
+            {
+                "name": "Balsam Salabunde",
+                "FW": 9
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

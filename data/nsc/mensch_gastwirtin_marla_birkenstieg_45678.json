@@ -1,0 +1,109 @@
+{
+    "id": "c7a8b912-3456-4789-9abc-def012345678",
+    "source": "https://de.wiki-aventurica.de/wiki/Auenmarkt",
+    "tags": [],
+    "general": {
+        "name": "Marla Birkenstieg",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 963,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gastwirtin",
+        "specification": "Wirtin der Taverne Am Bach in Auenmarkt",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Würfelspielpreise, Alltagstratsch, gebratener Wels"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 72,
+        "hair": "Schulterlange braune Haare, meist zu einem festen Zopf gebunden",
+        "skin": "Wettergegerbte Haut mit Sommersprossen",
+        "eyes": "Graugrün",
+        "outfit": {
+            "headgear": "Schlichtes Leinenkopftuch",
+            "top": "Grobe Wollbluse mit besticktem Kragen",
+            "trousers": "Robuste braune Hose",
+            "footwear": "Feste Lederschuhe",
+            "jewellery": "Kein auffälliger Schmuck",
+            "things": "Schürze mit bunten Flicken",
+            "weapons": "Kleines Küchenmesser am Gürtel"
+        },
+        "distinguishing_features": "Auffällige Narbe am linken Unterarm, kräftige Arme vom Tragen schwerer Töpfe"
+    },
+    "personality": {
+        "traits": [
+            "Herzlich",
+            "Humorvoll",
+            "Bodenständig",
+            "Gastfreundlich",
+            "Packt an"
+        ],
+        "actual-mood": [
+            "Bester Laune"
+        ],
+        "family-background": "Mutter Alrike Birkenstieg, verstorbene Bäckerin aus Baliho; Ehemann Garvin Birkenstieg, 1002 BF im Fluss verunglückt; Schwester Elwine, Schneiderin in Donnerbach.",
+        "motivation": "Das Gasthaus als sicheren und warmen Ort der Gemeinschaft für alle Handwerker und Alltagsmenschen im Dorf zu führen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 14,
+            "CH": 14,
+            "FF": 13,
+            "GE": 11,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kochen",
+                "FW": 10
+            },
+            {
+                "name": "Zechen",
+                "FW": 9
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 8
+            },
+            {
+                "name": "Überreden",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

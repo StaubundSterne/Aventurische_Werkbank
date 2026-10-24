@@ -1,0 +1,130 @@
+{
+    "id": "c3d98e12-7f4a-4b92-9a81-1e2f3a4b5c6d",
+    "source": "https://de.wiki-aventurica.de/wiki/Gerion_Gr%C3%BCnfelde, Abenteuer Aus dem Hause Kempf, Schild des Reiches, Travia-Vademecum",
+    "tags": [],
+    "general": {
+        "name": "Vater Gerion Grünfelde",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 958,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Hausgans",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Travia-Geweihter, Tempelvorsteher zu Donnerbach",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gareth",
+            "Rommilys"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Zuflucht, Beichte, Herdwärme"
+    },
+    "appearance": {
+        "size": 176,
+        "weight": 84,
+        "hair": "Ergrauendes braunes Haar mit einer stets sorgfältig geschorenen Tonsur",
+        "skin": "Gesunde, leicht von der Herdsonne gebräunte Haut",
+        "eyes": "Gütige, warme braune Augen mit freundlichem Blick",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Mittelweiße, schlichte Kutte aus grober Wolle",
+            "trousers": "Braune Leinenhose",
+            "footwear": "Gut eingelaufene Ledersandalen",
+            "jewellery": "Ein aus Lindenholz geschnitzter Travia-Gänseanhänger an einem dicken Lederband",
+            "things": "Gusseiserner Teekessel, Kräuterbeutel für Lindenblütentee, Holzschale",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Warmherzige, beruhigende Stimme; tief eingegrabene Lachfalten um die Augen"
+    },
+    "personality": {
+        "traits": [
+            "Gastfreundlich",
+            "Geduldiger Zuhörer",
+            "Friedfertig",
+            "Traditionsbewusst",
+            "Herzensgut"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Mutter Alrike Grünfelde, Schneiderin (verstorben); Vater Baduar Grünfelde, Bauer; Schwester Danja Grünfelde, Gasthofbesitzerin in Gareth.",
+        "motivation": "Bietet Verfolgten, Reisenden und Hilfesuchenden im Tempel der Travia zu Donnerbach jederzeit Zuflucht, schlichtet Streitigkeiten am Herdfeuer und steht der Gemeinschaft als treuer Zuhörer bei allen Sorgen zur Seite."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 13,
+            "IN": 14,
+            "CH": 15,
+            "FF": 13,
+            "GE": 10,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 38
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Bekehren & Überzeugen",
+                "FW": 12
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 13
+            },
+            {
+                "name": "Heilkunde Seele",
+                "FW": 11
+            },
+            {
+                "name": "Kochen",
+                "FW": 10
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Segen der Heiligen Travia",
+                "FW": 10
+            },
+            {
+                "name": "Friedenssegen",
+                "FW": 11
+            },
+            {
+                "name": "Heimsegen",
+                "FW": 9
+            },
+            {
+                "name": "Ehesegen",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

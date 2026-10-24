@@ -1,0 +1,113 @@
+{
+    "id": "8e2d1f4b-3a5c-4d6e-8f9a-1b3c5d7e9f02",
+    "source": "wiki-aventurica.de, KDG-Expeditionsberichte, Entwürfe 2 Höhlenforscher:innen der KDG (1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Alvide von Rosenhagen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Höhlenforscher:in",
+        "specification": "Höhlenforscherin und Geologin der Kaiserlich-Derographischen Gesellschaft",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Gareth",
+            "Perricum",
+            "Trollzacken",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Gesteinsproben, Druckschwankungen, Finsterkamm-Zwerge"
+        ]
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Kastanienbraunes Haar, im Nacken zu einem festen Knoten gebunden",
+        "skin": "Helle Haut mit feinen Gesteinsstaubspuren an Unterarmen und Handflächen",
+        "eyes": "Braune Iris",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung",
+            "top": "Samtbesetztes Wams in Dämmergrau über doppelt gewobener Tunika",
+            "trousers": "Gepolsterte Lederhosen",
+            "footwear": "Feste Wanderschuhe aus Rinderleder mit Messingschnallen",
+            "jewellery": "Messingbrille mit hochklappbaren Vergrößerungsgläsern",
+            "things": "Geologenhammer mit Eschenholzgriff, Samtbeutel mit nummerierten Gesteinsproben, Notizbuch in Schweinsleder",
+            "weapons": "Geologenhammer am Ledergürtel"
+        },
+        "distinguishing_features": "Regelmäßiges Hochschieben der Messingbrille und Gesteinsstaub an den Handflächen"
+    },
+    "personality": {
+        "traits": [
+            "Systematisch",
+            "Neugierig",
+            "Wildnisunerfahren",
+            "Pragmatisch",
+            "Analytisch"
+        ],
+        "actual-mood": [
+            "Fasziniert"
+        ],
+        "family-background": "Tochter von Roderich von Rosenhagen, Niederadligem aus Gareth; Mutter Borona von Rosenhagen; Bruder Praiodan von Rosenhagen, Schreibkundiger der Garether Kanzlei.",
+        "motivation": "Systematische Dokumentation von Gesteinsschichten, Druckschwankungen und mineralogischen Phänomenen im Finsterkamm im Auftrag der KDG."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 14,
+            "IN": 12,
+            "CH": 10,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gesteinskunde",
+                "FW": 11
+            },
+            {
+                "name": "Naturkunde",
+                "FW": 6
+            },
+            {
+                "name": "Rechnen",
+                "FW": 8
+            },
+            {
+                "name": "Orientierung",
+                "FW": 2
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,104 @@
+{
+    "id": "e3c14a32-5d6b-4c03-b14f-0a9e3c234567",
+    "source": "4310 Aventurische Namen, wiki-aventurica.de, Eigenkreation Rollenspielrunde",
+    "tags": [],
+    "general": {
+        "name": "Danos Kempf",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 1001,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Pflegekind",
+        "specification": "Botenjunge",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Andergast"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Schmiedeglut, Bunte Tonmurmeln, Gesammelte Steinpaare"
+    },
+    "appearance": {
+        "size": 126,
+        "weight": 25,
+        "hair": "Wuscheliges, rotes Haar",
+        "skin": "Helle Haut mit dicht verteilten Sommersprossen",
+        "eyes": "Dunkelbraune Augen",
+        "outfit": {
+            "headgear": "Eine gehäkelte Wollmütze aus ungefärbter Schafwolle",
+            "top": "Rote Wamsjacke über einer hellen Leinentunika",
+            "trousers": "Kurze braune Stoffhose",
+            "footwear": "Kniehohe Wollenstrümpfe und feste Lederschuhe",
+            "jewellery": "Keine",
+            "things": "Ein Stoffbeutel voller glatter, paarweise sortierter Kieselsteine",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Eine Zahnlücke anstelle der beiden oberen Schneidezähne."
+    },
+    "personality": {
+        "traits": [
+            "Lebhaft",
+            "Ausdauernd",
+            "Furchtlos",
+            "Sammelwütig",
+            "Mitteilsam"
+        ],
+        "actual-mood": [
+            "Übermütig"
+        ],
+        "family-background": "Gelangte 1006 BF nach dem Ableben seiner Großmutter in Andergast über Kontakte des Traviatempels nach Donnerbach. Lebt seitdem bei der Familie Kempf.",
+        "motivation": "Sucht am Ufer des Donnerbachs nach zwei Steinen von gleicher Form und Farbe."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 9,
+            "IN": 11,
+            "CH": 12,
+            "FF": 10,
+            "GE": 13,
+            "KO": 10,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 23,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Klettern",
+                "FW": 5
+            },
+            {
+                "name": "Laufen",
+                "FW": 6
+            },
+            {
+                "name": "Orientierung",
+                "FW": 3
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

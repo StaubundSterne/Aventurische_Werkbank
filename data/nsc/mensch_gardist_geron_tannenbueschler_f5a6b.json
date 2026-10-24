@@ -1,0 +1,110 @@
+{
+    "id": "8d9e2a1b-4c3d-4e5f-9a0b-1c2d3e4f5a6b",
+    "source": "Entwürfe der Mitspielenden, 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Geron Tannenbüschler",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 969,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gardist",
+        "specification": "Sicherheitschef und Logistikleiter",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Niritul",
+            "Trallop",
+            "Uhdenberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": "Karawanenschutz, Seemagazin, Waffenkunde"
+    },
+    "appearance": {
+        "size": 184,
+        "weight": 88,
+        "hair": "Dunkelblondes, schulterlanges Haar, hinten zusammengebunden",
+        "skin": "Wettergegerbte, raue Haut mit Narbe an der Wange",
+        "eyes": "Bernsteinfarbene, ruhige Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Nietenlederwams über einem dicken Wollwams",
+            "trousers": "Dunkelgrüne Lederhose",
+            "footwear": "Schwere Schnürstiefel",
+            "jewellery": "Ein ledernes Armband mit zwergischer Runenprägung",
+            "things": "Lagerhausschlüsselbund, Schleifstein, Seil",
+            "weapons": "Weidener Langschwert, Kordelkorse am Gürtel"
+        },
+        "distinguishing_features": "Breitgebauter Hüne mit einer tiefen Narbe quer über die rechte Wange"
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Standhaft",
+            "Pflichtbewusst",
+            "Wettergegerbt",
+            "Unerschütterlich"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Mutter Berte Tannenbüschler, Bäuerin nahe Niritul; Vater Gerwulf Tannenbüschler, Köhler in den Salamandersteinen; Bruder Alrik, Bogenmacher in Trallop.",
+        "motivation": "Absicherung aller Handelszüge und der Stoerrebrandt-Lagerhäuser gegen Überfälle und orkische Späher."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 13,
+            "CH": 11,
+            "FF": 12,
+            "GE": 13,
+            "KO": 15,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 40,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 11
+            },
+            {
+                "name": "Orientierung",
+                "FW": 10
+            },
+            {
+                "name": "Anführen",
+                "FW": 8
+            },
+            {
+                "name": "Fahrzeuge",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,111 @@
+{
+    "id": "4b8f3a12-8c4e-4e9f-9a1b-3c7d5e1f9a01",
+    "source": "wiki-aventurica.de, KDG-Expeditionsberichte, Entwürfe 2 Kartograph:innen der KDG (1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Levir von Laufenberg",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 983,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Turmfalke",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Kartograph:in",
+        "specification": "Kartograph der Kaiserlich-Derographischen Gesellschaft",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Elenvina",
+            "Gareth",
+            "Perricum",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Boussole-Anomalie, KDG-Messprotokolle, Orientierungsverlust"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Dunkelblondes, im Nacken kurz geschnittenes Haar",
+        "skin": "Helle, durch Kälte leicht gerötete Haut an Wangen und Nasenrücken",
+        "eyes": "Blau-graue Iris",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung",
+            "top": "Taubenblauer Waffentrockenmantel mit verkratzten Messingknöpfen über leinenem Hemd",
+            "trousers": "Eng anliegende Reithosen aus braunem Tuch",
+            "footwear": "Lederne Schnallenstiefel mit dicker Schlammschicht",
+            "jewellery": "Siegelring der Familie von Laufenberg am linken Ringfinger",
+            "things": "Messing-Zirkel, Nivellierinstrument, Pergamentrohr mit Wachssiegel",
+            "weapons": "Zierdegen am Prunkgürtel"
+        },
+        "distinguishing_features": "Kontinuierlicher Blick auf das Nivellierinstrument und leichtes Frösteln der Schultern"
+    },
+    "personality": {
+        "traits": [
+            "Standesbewusst",
+            "Detailversessen",
+            "Wildnisunerfahren",
+            "Förmlich",
+            "Akademisch"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Sohn von Berengar von Laufenberg, Junker auf Gut Laufenberg nahe Elenvina; Mutter Alwine von Laufenberg; jüngere Schwester Clarissa von Laufenberg. Die Familie förderte seine akademische Ausbildung an den Vermessungsschulen des Mittelreichs.",
+        "motivation": "Lückenlose Erfassung von Neigungswinkeln und Barometerständen zur Übermittlung an das Archiv der KDG in Gareth sowie die Halle der Wissenden Herrin in Lowangen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 12,
+            "CH": 11,
+            "FF": 13,
+            "GE": 11,
+            "KO": 10,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geographie",
+                "FW": 10
+            },
+            {
+                "name": "Zeichnen",
+                "FW": 9
+            },
+            {
+                "name": "Rechnen",
+                "FW": 8
+            },
+            {
+                "name": "Orientierung",
+                "FW": 2
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

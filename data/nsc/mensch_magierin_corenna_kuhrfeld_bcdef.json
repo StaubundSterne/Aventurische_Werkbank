@@ -1,0 +1,112 @@
+{
+    "id": "2b3c4d5e-6f7a-4890-8123-456789abcdef",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Corenna Kuhrfeld",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 989,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Elster",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magierin",
+        "specification": "Absolventin des Seminars der elfischen Verständigung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Rommilys",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": [
+            "Rommilys-Groll, Intrigen, Gehässigkeit, ehemalige Kommilitonin"
+        ]
+    },
+    "appearance": {
+        "size": 169,
+        "weight": 55,
+        "hair": "Glatte blonde Haare, streng im Nacken zusammengesteckt",
+        "skin": "Blass",
+        "eyes": "Dunkelbraune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Gepflegte, aber einfache braune Magierrobe",
+            "trousers": "Blickdichter Rock",
+            "footwear": "Zierliche Halbschuhe",
+            "jewellery": "Feine Ohrringe aus Silberwirework",
+            "things": "Notizheft, Tintenfässchen",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Markantes Gesicht mit auffallend breiter Nase; oft mürrischer Gesichtsausdruck."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Verschlagen",
+            "Heuchlerisch",
+            "Opportunistisch",
+            "Nachtragend"
+        ],
+        "actual-mood": [
+            "Gehässig"
+        ],
+        "family-background": "Mutter Rondraja Kuhrfeld, Schreiberin in Rommilys; Vater Thilo, Krämer. Wurde am Informationsinstitut Rommilys abgelehnt und musste nach Donnerbach ausweichen.",
+        "motivation": "Kompensiert ihren Frust über die abgelehnte Wunschakademie, indem sie Lindariel zuarbeitet und schwächere Mitschüler schikaniert."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 13,
+            "CH": 12,
+            "FF": 12,
+            "GE": 11,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 37,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Überreden",
+                "FW": 7
+            },
+            {
+                "name": "Menschenkunde",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Sensibar Empathis",
+                "FW": 5
+            },
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 4
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

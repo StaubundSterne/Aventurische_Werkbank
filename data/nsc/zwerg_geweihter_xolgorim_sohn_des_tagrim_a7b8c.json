@@ -1,0 +1,128 @@
+{
+    "id": "b9e4f3a2-0d1e-4f6a-9b2c-3d4e5f6a7b8c",
+    "source": "Entwürfe der Mitspielenden: 1 Ingerimm- und 1 Angroschgeweihter; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Xolgorim Sohn des Tagrim",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 879,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Angroschgeweihter",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Finsterkoppen",
+            "Lowangen",
+            "Xorlosch",
+            "Eisenhut"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Angroschs Ordnung, Plastischer Roteisenstein, Binge Finsterkoppen"
+    },
+    "appearance": {
+        "size": 138,
+        "weight": 62,
+        "hair": "Langer, dreifach geflochtener grauer Bart, der unter den Gürtel eingesteckt ist; ergrauendes kurzes Haupthaar",
+        "skin": "Erdfarben, wettergegerbt, schwielig",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schweres Lederwams mit stählernen Schulter- und Armschienen über hemdartiger Wolljacke",
+            "trousers": "Dicke Lederhose mit verstärkten Knien",
+            "footwear": "Schwere beschlagene Zwergenstiefel aus Rindsleder",
+            "jewellery": "Breiter Ledergürtel mit geprägten Ambossmotiven und silbernem Angrosch-Symbol",
+            "things": "Lange Schmiedzange, fahrbarer Feldamboss, Zwergenklafter-Messkette, Kerbschnitzmesser",
+            "weapons": "Angrosch-Schmiedehammer, Zwergenskrama"
+        },
+        "distinguishing_features": "Dreifach geflochtener grauer Bart unter dem Gürtel, verhornte Hände"
+    },
+    "personality": {
+        "traits": [
+            "Angroschgläubig",
+            "Traditionsbewusst",
+            "Pedantisch",
+            "Geduldig",
+            "Standhaft"
+        ],
+        "actual-mood": [
+            "Andächtig"
+        ],
+        "family-background": "Vater Tagrim Sohn des Xolgorim, Bergmann in Finsterkoppen; Mutter Morla Tochter der Xolgrima, Steinmetzin; Bruder Garambol Sohn des Tagrim, Hüttenmeister in Xorlosch. Aufgewachsen in den tiefen Bingen von Finsterkoppen.",
+        "motivation": "Reise nach Finsterkoppen zum Besuch des Angroschtempels und der Schmieden sowie Weiterreise nach Lowangen zum Tempel Haus der heiligen Sylvette."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 13,
+            "IN": 12,
+            "CH": 11,
+            "FF": 15,
+            "GE": 10,
+            "KO": 16,
+            "KK": 16
+        },
+        "energies": {
+            "LeP": 42,
+            "AsP": 0,
+            "KaP": 40
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 14
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 13
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 11
+            },
+            {
+                "name": "Hüttenkunde",
+                "FW": 10
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Segen der heiligen Schöpfung",
+                "FW": 9
+            },
+            {
+                "name": "Segen der Esse",
+                "FW": 11
+            },
+            {
+                "name": "Angroschs Wacht",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

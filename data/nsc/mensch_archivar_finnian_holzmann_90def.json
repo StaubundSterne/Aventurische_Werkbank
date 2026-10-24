@@ -1,0 +1,104 @@
+{
+    "id": "b22d0a4e-6f78-43b2-8c99-234567890def",
+    "source": "wiki-aventurica.de/wiki/Donnerbach, DSA5 Regelwiki",
+    "tags": [],
+    "general": {
+        "name": "Finnian Holzmann",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 992,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Archivar",
+        "specification": "Archivgehilfe / Lehrling der Stadtbibliothek",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Andergast"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": "Belletristikliebe, Geheimnisverrat, Schmiedegesellenspur"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 63,
+        "hair": "Struppiges, hellbraunes Haar, das ihm in die Stirn fällt",
+        "skin": "Frisch und von Sommersprossen durchsetzt",
+        "eyes": "Lebhafte braune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Schlichte Leinentunika, an den Ärmeln hochgekrempelt",
+            "trousers": "Geflickte braune Stoffhose",
+            "footwear": "Einfache Halbstiefel aus Wildleder",
+            "jewellery": "Lederband mit durchlochtem Glücksstein um das Handgelenk",
+            "things": "Staubtuch, Trittleiter, versteckter Liebesroman unter dem Arm",
+            "weapons": "Taschendolch"
+        },
+        "distinguishing_features": "Hinterlässt oft Holzstaub- oder Tintenstreifen an den Wangen."
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Schusselig",
+            "Hilfsbereit",
+            "Träumerisch",
+            "Geschwätzig"
+        ],
+        "actual-mood": [
+            "Abgelenkt"
+        ],
+        "family-background": "Sohn des Donnerbacher Tischlermeisters Holzmann. Wurde vom Vater ins Stadtarchiv geschickt, um 'was Anständiges mit Schrift zu lernen', verliert sich dort aber lieber in den Abenteuergeschichten.",
+        "motivation": "Den strengen Anweisungen Meister Giselhers zu entgehen und ungestört Liebes- und Runkel-Groschenromane in der Belletristik-Ecke zu verschlingen."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 12,
+            "KO": 11,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gassenwissen",
+                "FW": 5
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 4
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 3
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

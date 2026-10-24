@@ -1,0 +1,108 @@
+{
+    "id": "76e3b521-447a-4462-8e34-4b521e127392",
+    "source": "4200 Svelltland, 4310 Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Gerlinga ‘Linga’ Tannhaus",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Svellttaler",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Stadtgardistin",
+        "specification": "Unteroffizierin der Lowanger Garde, Expertin für Gassenkampf",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tjolmar"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Şahin"
+        ],
+        "injection-points": "Gassenwissen, Diebstahlprävention, Schmuggelrouten"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 74,
+        "hair": "Strohblond, zu einem festen Zopf geflochten",
+        "skin": "Sommersprossig, durch die Kälte leicht gerötet",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Lederne Sturmhaube mit Metallplatten",
+            "top": "Gesteppter Waffenrock in den Stadtfarben über einem Lederharnisch",
+            "trousers": "Robuste Wollhose",
+            "footwear": "Genagelte Marschstiefel",
+            "jewellery": "Ein kleiner Anhänger der Tsa am Handgelenk",
+            "things": "Ein Bund schwerer eiserner Schlüssel, eine Laterne",
+            "weapons": "Ein schwerer hölzerner Schlagstock (Knüppel), Kurzschwert"
+        },
+        "distinguishing_features": "Fehlt das obere Stück des rechten Ohrläppchens; riecht nach billigem Kautabak."
+    },
+    "personality": {
+        "traits": [
+            "Direkt",
+            "Schlagfertig",
+            "Misstrauisch gegenüber Fremden",
+            "Lokalpatriotisch",
+            "Zupackend"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Tochter von Brauer Alrik Tannhaus aus Lowangen; drei Brüder, die alle im Handwerk tätig sind.",
+        "motivation": "Schutz der Bürger:innen vor orkischen Spionen und Unruhestiftern im Phex."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 13,
+            "CH": 10,
+            "FF": 12,
+            "GE": 12,
+            "KO": 13,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Gassenwissen",
+                "FW": 11
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 9
+            },
+            {
+                "name": "Raufen",
+                "FW": 10
+            },
+            {
+                "name": "Wahrnehmung",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,105 @@
+{
+    "id": "d6e4f5a7-b8c9-4012-b4e5-f67890123456",
+    "source": "Eigenentwicklung für Abenteuer in Donnerbach; Referenz zu Zimmerei Bienbart",
+    "tags": [],
+    "general": {
+        "name": "Wulfrun Kornbeck-Bienbart",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Elster",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerkerin",
+        "specification": "Töpferin und Keramikglasiererin im Werk Neunauge",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho",
+            "Norburg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Petition an Aldare, Dachschaden, Bleiglasur"
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 58,
+        "hair": "Dunkelbraunes Haar, straff geflochten zu zwei hängenden Zöpfen",
+        "skin": "Blass, dünne Haut um die Lippen",
+        "eyes": "Wachsam-braune Augen",
+        "outfit": {
+            "headgear": "Weißes Leinenkopftuch mit vergilbten Rändern",
+            "top": "Einfaches graues Kleid mit einer schmutzigen Tonschürze",
+            "trousers": "Keine",
+            "footwear": "Schnürschuhe aus abgewetztem Rindsleder",
+            "jewellery": "Kupfernes Rondra-Amulett",
+            "things": "Pinselset, Glasurtiegel, Pergamentrolle der Petition",
+            "weapons": "Ein langes, spitzes Glasurmesser"
+        },
+        "distinguishing_features": "Verätzte Flecken an den Händen vom Arbeiten mit toxischen Metallglasuren; redet extrem schnell."
+    },
+    "personality": {
+        "traits": [
+            "Hinterhältig",
+            "Klatschsuchtig",
+            "Nörgelnd",
+            "Scheinheilig",
+            "Fremdenfeindlich"
+        ],
+        "actual-mood": [
+            "Argwöhnisch"
+        ],
+        "family-background": "Nichte von Gramhuld Bienbart; Tochter des Zimmermanns Eberhelm Bienbart; Cousine von Danos und Grimbald.",
+        "motivation": "Sammelt Unterschriften für die Petition an Fürst-Erzgeweihte Aldare VIII., um Werk Neunauge der Zumpel-Familie wegen Baufälligkeit zu entziehen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 12,
+            "IN": 13,
+            "CH": 11,
+            "FF": 12,
+            "GE": 11,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 27,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Töpfern",
+                "FW": 8
+            },
+            {
+                "name": "Überreden",
+                "FW": 6
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

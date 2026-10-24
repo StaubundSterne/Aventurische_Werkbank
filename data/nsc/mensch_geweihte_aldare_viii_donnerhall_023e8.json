@@ -1,0 +1,126 @@
+{
+    "id": "c9a184e2-3b4f-4d61-91a5-82b1d7f023e8",
+    "source": "https://de.wiki-aventurica.de/wiki/Aldare_VIII._Donnerhall",
+    "tags": [],
+    "general": {
+        "name": "Aldare VIII. Donnerhall",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 977,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Löwin",
+        "social-state": "Hochadel"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "27. Fürst-Erzgeweihte des Dominiums Donnerbach, Meisterin des Bundes der Senne Nord der Rondrakirche",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Festung Donnerhall",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Werk Neunauge, Stadtfrieden, Rondra-Orakel"
+    },
+    "appearance": {
+        "size": "184",
+        "weight": "78",
+        "hair": "Braunes, schulterlanges Haar mit ersten grauen Strähnen, straff im Nacken zusammengebunden",
+        "skin": "Leicht sonnengebräunte, wettergewohnte Haut",
+        "eyes": "Graugrüne, aufmerksame Augen",
+        "outfit": {
+            "headgear": "Schmuckloses Reifband aus poliertem Silber",
+            "top": "Prunkvoller rot-weißer Waffenrock mit Silberstickereien über einem bronzierten Kettenhemd",
+            "trousers": "Dunkle, strapazierfähige Lederhose",
+            "footwear": "Hohe Lederstiefel in geschwärztem Leder",
+            "jewellery": "Das Sennenamulett der Senne Nord und ein silbernes Kettenhemdband mit Löwenkopf-Zierat",
+            "things": "Wappenschnalle des Dominiums Donnerbach",
+            "weapons": "Zweihändiger Rondrakamm Donnerhall (einstige heilige Waffe des Heiligen Heleon)"
+        },
+        "distinguishing_features": "Leichter Buckel, hochgezogene Schultern und gesenkter Blick, dennoch eine erhabene, strenge Körperhaltung und eine tiefe, tragende Sprechstimme. ; phasenweise blickt sie versunken in die Ferne"
+    },
+    "personality": {
+        "traits": [
+            "Rondragläubig",
+            "Pflichtbewusst",
+            "Autokratisch",
+            "Schwermütig",
+            "Traditionsbewusst",
+            "Unbeugsam",
+            "Vorurteilsbehaftet"
+        ],
+        "actual-mood": "Besorgt, Ernst",
+        "family-background": "Tochter der Fürst-Erzgeweihten Lyncordia II. Donnerhall; Nichte von Rondradan Donnerhall, Enkelin von Heledir III. Donnerhall, Cousine von Rondrian Donnerhall. Mutter von zwei Kindern: Tochter Thalia (*1002 BF), die streng als Erbin erzogen wird, und Sohn Heorot (*1005 BF, Vater ist ein unbekannter Waldläufer.), dem sie innige Zuneigung entgegenbringt. Unvermählt zur Wahrung ihrer Unabhängigkeit als Landesherrin.\n",
+        "motivation": "Spirituelle und weltliche Führung des Dominiums Donnerbach Wahrung der Unabhängigkeit des Dominiums Donnerbach, Führung der Senne Nord und Bewältigung ihrer Phasen von Schwermut.\nKonservative Honorin, aber offen gegenüber elfischer Magie."
+    },
+    "stats": {
+        "experience-level": "Brillant",
+        "attributes": {
+            "MU": 16,
+            "KL": 13,
+            "IN": 14,
+            "CH": 15,
+            "FF": 11,
+            "GE": 14,
+            "KO": 15,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 42,
+            "AsP": 0,
+            "KaP": 48
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihandschwerter",
+                "FW": 16
+            },
+            {
+                "name": "Bekehren & Überzeugen",
+                "FW": 14
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 13
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 15
+            },
+            {
+                "name": "Etikette",
+                "FW": 12
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Ehrenhaftes Duell",
+                "FW": 14
+            },
+            {
+                "name": "Göttlicher Segen",
+                "FW": 16
+            },
+            {
+                "name": "Schwertsegen",
+                "FW": 13
+            }
+        ]
+    },
+    "session-notes": "Josts oberste Vorgesetzte"
+}

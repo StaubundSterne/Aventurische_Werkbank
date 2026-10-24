@@ -1,0 +1,100 @@
+{
+    "id": "e4f8a1b2-3c4d-4e5f-8a9b-0123456789ab",
+    "source": "https://de.wiki-aventurica.de/wiki/Heorot_Donnerhall",
+    "tags": [],
+    "general": {
+        "name": "Heorot Donnerhall",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 1005,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Waldkauz",
+        "social-state": "Hochadel"
+    },
+    "profession": {
+        "category": "Kleinkind",
+        "specification": "Sohn der Fürst-Erzgeweihten Aldare VIII. Donnerhall",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Burg Heleonsberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Burg Heleonsberg, Fürstennachwuchs, Verwachsener Rücken"
+    },
+    "appearance": {
+        "size": 102,
+        "weight": 16,
+        "hair": "Dunkelblondes, weiches Haar, leicht verwuschelt",
+        "skin": "Hell und zart",
+        "eyes": "Dunkelbraun, aufmerksam und neugierig",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Einfache, feine Tunika aus weicher Wolle in Naturtönen",
+            "trousers": "Bequeme Wollhose",
+            "footwear": "Weiche Lederschühchen",
+            "jewellery": "Kleines Schutzamulett aus Donnerbacher Steineiche an einem Lederband",
+            "things": "Ein geschnitztes Holzspielzeug in Form eines Bären",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Deutlich erkennbarer erblicher Buckel und eine für sein Alter eher zierliche Statur."
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Ruhig",
+            "Naturverbunden",
+            "Zurückhaltend",
+            "Beobachtend"
+        ],
+        "actual-mood": [
+            "Spielerisch"
+        ],
+        "family-background": "Mutter: Aldare VIII. Donnerhall, Fürst-Erzgeweihte der Rondra und Herrscherin von Donnerbach. Schwester: Thalia Donnerhall (geb. 1002 BF). Heorot wächst geborgen auf der fürstlichen Feste Donnerhall in Donnerbach auf. Schon im frühen Alter zeigt sich seine Verwachsung am Rücken.",
+        "motivation": "Erkunden des Burggartens auf dem Heleonsberg und Lauschen auf die Tiergeräusche des nahegelegenen Waldes."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 8,
+            "KL": 8,
+            "IN": 10,
+            "CH": 9,
+            "FF": 8,
+            "GE": 8,
+            "KO": 8,
+            "KK": 6
+        },
+        "energies": {
+            "LeP": 14,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sinnenschärfe",
+                "FW": 3
+            },
+            {
+                "name": "Verstecken",
+                "FW": 2
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

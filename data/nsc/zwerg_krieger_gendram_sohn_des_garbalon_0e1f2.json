@@ -1,0 +1,114 @@
+{
+    "id": "e74c1a23-89ef-4b56-a123-74b8c9d0e1f2",
+    "source": "Entwürfe der Mitspielenden, Binge Finsterkoppen, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Gendram Sohn des Garbalon",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 958,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Krieger",
+        "specification": "Passwache der Binge Finsterkoppen",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Finsterkoppen",
+            "Weiden",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Şahin"
+        ],
+        "injection-points": "Etikette-Protokoll, Ghorinchai-Orks, Erzbergbau"
+    },
+    "appearance": {
+        "size": 139,
+        "weight": 70,
+        "hair": "Kupferroter, breiter Vollbart, dreifach geflochten, rotes, im Nacken zusammengebundenes Haar",
+        "skin": "Helle Haut mit mehreren kleinen Schnittspuren an der linken Wange",
+        "eyes": "Graugrüne Augen unter dicht gewachsenen Brauen",
+        "outfit": {
+            "headgear": "Quadratisch geformter Eisenhelm mit Nasenschutz und eingravierten Zwergenrunen",
+            "top": "Schweres Kettenhemd über einem dicken, dunkelgrauen Lederwams",
+            "trousers": "Gefütterte Lederhose mit verstärkten Lederbesätzen",
+            "footwear": "Schwere Eisenkappenstiefel mit Riemenverschlüssen",
+            "jewellery": "Silberner Ohrring im rechten Ohr, Gürtelschnalle mit Darstellung eines Zentralambosses",
+            "things": "Bergmannslampe aus Messing mit verstellbarem Blendschutz, lederne Gürteltasche mit eingenähter Messkette",
+            "weapons": "Doppelköpfiger Kriegshammer mit stahlverstärktem Schaft, schwere metallene Spitzhacke"
+        },
+        "distinguishing_features": "Dem rechten Ohrläppchen fehlt eine kerbenförmige Aussparung an der Unterkante."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Skeptisch",
+            "Protokollfest",
+            "Ausdauernd",
+            "Schweigsam"
+        ],
+        "actual-mood": [
+            "Misstrauisch"
+        ],
+        "family-background": "Vater: Garbalon Sohn des Gerambalosch, Bergkönig der Binge Finsterkoppen (Zwergenalter 113 im Jahr 1009 BF); Bruder: Daron Sohn des Garbalon; Schwester: Prinzessin Arglescha Tochter der Angrarda; Mutter: Angrarda (verstorben); Großvater: Gerambalosch.",
+        "motivation": "Einhaltung der Grenzkontrollen am Wachtposten im Finsterkamm, Abwehr von Spionierenden der Finsterzwerge unter König Bonderik sowie Erfassung von vorbeiziehenden Personen im Jahr 1009 BF."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 13,
+            "CH": 10,
+            "FF": 13,
+            "GE": 10,
+            "KO": 16,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 44,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hiebwaffen",
+                "FW": 12
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 10
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 7
+            },
+            {
+                "name": "Handel",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

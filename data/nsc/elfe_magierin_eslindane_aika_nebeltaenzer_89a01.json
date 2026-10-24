@@ -1,0 +1,112 @@
+{
+    "id": "3a2f8194-5b23-4d89-9a1b-123456789a01",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Eslindane Aika Nebeltänzer",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Auelf",
+        "species": "Elfe",
+        "soul-animal": "Schneeeule",
+        "social-state": "Gildenmagierin"
+    },
+    "profession": {
+        "category": "Magierin",
+        "specification": "Absolventin des Seminars der elfischen Verständigung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine",
+            "Auhag"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Familienkonflikt, Elfenmagie, ehemalige Kommilitonin"
+        ]
+    },
+    "appearance": {
+        "size": 173,
+        "weight": 68,
+        "hair": "Silbernes, langes Haar",
+        "skin": "Ebenmäßig blass",
+        "eyes": "Kühle graue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkles Magiergewand mit extrem hohem Kragen und engen Ärmeln",
+            "trousers": "Keine (trägt ausschließlich lange, schwere Röcke)",
+            "footwear": "Einfache Lederschuhe",
+            "jewellery": "Schlichtes Silberband im Haar",
+            "things": "Kräuterbeutel, Notizrolle",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Für eine Elfe ungewöhnlich korpulente Statur, sehr steife und zugeknöpfte Körperhaltung."
+    },
+    "personality": {
+        "traits": [
+            "Sehr ernst",
+            "Zugeknöpft",
+            "Pflichtbewusst",
+            "Beobachtend",
+            "Kühl"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Mutter Feyriel, Heilkundige der Nebeltänzer-Sippe; Vater Lindariel der Ältere. Eslindane ist die Cousine von Lindariel Nebeltänzer und leidet unter dessen Gehässigkeit.",
+        "motivation": "Sucht akademischen Erfolg und versucht, den Familienfrieden trotz Lindariels Fehlverhalten aufrechtzuerhalten."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 14,
+            "CH": 12,
+            "FF": 12,
+            "GE": 12,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 7
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 5
+            },
+            {
+                "name": "Balsam Salabunde",
+                "FW": 6
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

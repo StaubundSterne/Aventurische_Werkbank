@@ -1,0 +1,130 @@
+{
+    "id": "e8f47b2c-15a3-4d9e-8a2b-3c4d5e6f7a8b",
+    "source": "Spielkarte '2 Hexen aus Weiden und aus dem Rhorwhed', Wiki Aventurica (Blautannzirkel, Dunkeltann)",
+    "tags": [],
+    "general": {
+        "name": "Stina",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "culture": "Enqui",
+        "species": "Mensch",
+        "soul-animal": "Hund",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Hexe",
+        "specification": "Mitglied in der verschwiegenen Schwesternschaft und Blautannzirkel",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Dunkeltann",
+            "Herzogtum Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Blautannzirkel, Luzelin, Elementare Phänomene"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Rötlich-braunes, geflochtenes Haar",
+        "skin": "Wettergegerbte, helle Haut",
+        "eyes": "Bernsteinfarbene Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Gefütterte Stoffweste über leinenem Hemd",
+            "trousers": "Grüner Lodenrock",
+            "footwear": "Holzkuppelschuhe",
+            "jewellery": "Holzgurt mit geschnitzten Mondsitz-Symbolen",
+            "things": "Tongefäß mit grünlicher Fettsalbe, Schnürbeutel mit Räucherwerk",
+            "weapons": "Dünner Eschenstab"
+        },
+        "distinguishing_features": "Geschnitzte Mondsitz-Symbole auf dem Holzgurt; Begleitung durch einen Hund. Das zottelige, braune Fell riecht nach feuchtem Wald; gelbe Irisringe reflektieren Licht, leises Hecheln."
+    },
+    "personality": {
+        "traits": [
+            "Gemeinschaftsorientiert",
+            "Geduldig",
+            "Naturverbunden",
+            "Traditionsbewusst",
+            "Beobachtend"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Geburtsort Enqui. Schwester Laraanya. Stina lebt im Dunkeltann an den östlichen Hängen des Finsterkamms und ist Mitglied im Zirkel vom Blautann.",
+        "motivation": "Laraanya zur Teilnahme am Hexentanz im Blautann im Monat Rondra sowie Unterstützung der Bündnisbestrebungen von Luzelin vom Blauen Wald bewegen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 13,
+            "IN": 14,
+            "CH": 13,
+            "FF": 12,
+            "GE": 12,
+            "KO": 13,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 33,
+            "AsP": 40,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kräuterkunde",
+                "FW": 12
+            },
+            {
+                "name": "Orientierung",
+                "FW": 10
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 11
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 9
+            },
+            {
+                "name": "Alchimie",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Hexengalle",
+                "FW": 7
+            },
+            {
+                "name": "Hexenkrallen",
+                "FW": 8
+            },
+            {
+                "name": "Satuarias Herrlichkeit",
+                "FW": 8
+            },
+            {
+                "name": "Sumus Elixier",
+                "FW": 10
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

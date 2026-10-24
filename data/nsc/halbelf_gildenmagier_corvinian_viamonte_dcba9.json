@@ -1,0 +1,120 @@
+{
+    "id": "9f8e7d6c-5b4a-4321-8765-43210fedcba9",
+    "source": "4312 Rohals Erben - Aventurische Gildenmagie, 4205 Aus Licht und Traum",
+    "tags": [],
+    "general": {
+        "name": "Corvinian Viamonte",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Horasreich",
+        "species": "Halbelf",
+        "soul-animal": "Rotfuchs",
+        "social-state": "Gildenmagier"
+    },
+    "profession": {
+        "category": "Gildenmagier",
+        "specification": "Dozent im Kreis der Einfühlung",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gerasim",
+            "Methumis",
+            "Vinsalt",
+            "Belhanka"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Adarell"
+        ],
+        "injection-points": "Gildenrechtlicher Disput, Verstecktes Arkanum, Identitätskrise"
+    },
+    "appearance": {
+        "size": 176,
+        "weight": 68,
+        "hair": "Feuerrotes, krauses Haar, hinten zu einem kurzen Zopf gebunden",
+        "skin": "Blass mit deutlichen Sommersprossen",
+        "eyes": "Iris-Heterochromie (ein Auge bernsteinfarben, ein Auge smaragdgrün)",
+        "outfit": {
+            "headgear": "Barette aus rotem Samt",
+            "top": "Schnittige horasische Gelehrtenjacke von Schneider Master Tiziano aus Methumis",
+            "trousers": "Dunkelrote Kniebundhose",
+            "footwear": "Hohe Stiefel aus poliertem Rindsleder",
+            "jewellery": "Silberner Ring mit einem kleinen Rubin vom Juwelier Carlo aus Vinsalt",
+            "things": "Zauberstab aus Schwarzholz, Messing-Sextant, mehrere Pergamentrollen",
+            "weapons": "Gildendolch mit Gravur"
+        },
+        "distinguishing_features": "Aufbrausendes Temperament, das im krassen Gegensatz zur elfischen Gelassenheit steht; gestikuliert lebhaft beim Sprechen."
+    },
+    "personality": {
+        "traits": [
+            "Ehrgeizig",
+            "Temperamentvoll",
+            "Scharfsinnig",
+            "Impulsiv",
+            "Kritisch"
+        ],
+        "actual-mood": [
+            "Ungeduldig"
+        ],
+        "family-background": "Sohn des Vinsalter Kaufmanns Giacomo Viamonte und der Firnelfin Calenra Eisblüte (welche die Menschenwelt rasch wieder verließ). Aufgewachsen bei Tante Beatrice Viamonte in Methumis. Sein Cousin Sebastiano dient als Capitano der Horasgarde.",
+        "motivation": "Zu beweisen, dass auch Nicht-Reine-Elfen die Resonanzfrequenzen des Salasandra mittels strukturell-gildenmagischer Formeln nachempfinden können."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 14,
+            "KL": 15,
+            "IN": 13,
+            "CH": 14,
+            "FF": 12,
+            "GE": 13,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 40,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Magiekunde",
+                "FW": 12
+            },
+            {
+                "name": "Rechnen",
+                "FW": 11
+            },
+            {
+                "name": "Überzeugen",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Analys Arcanstruktur",
+                "FW": 13
+            },
+            {
+                "name": "Unitatio Geistesbund",
+                "FW": 12
+            },
+            {
+                "name": "Foramen Foraminor",
+                "FW": 8
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": "Ehemaliger Gastdozent für die Vergleichende Theorie der Astralkanalisierung im Seelenverbund am Seminar zu Donnerbach"
+}

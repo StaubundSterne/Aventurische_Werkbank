@@ -1,0 +1,118 @@
+{
+    "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+    "source": "wiki-aventurica.de, eigene Ausarbeitung (Spielleiter-Setzung)",
+    "tags": [],
+    "general": {
+        "name": "Stola Zappende",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 973,
+        "alive": true,
+        "culture": "Mittelreich (Weiden)",
+        "species": "Mensch",
+        "soul-animal": "Feldmaus",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Heiler:in",
+        "specification": "Mitglied der Bruder- und Schwesternschaft zur Förderung der Heilzauberei, Handarbeitspflegerin",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Aurelevina"
+        ],
+        "injection-points": "Häkelarbeiten; Familienleben; Heilsalben"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 72,
+        "hair": "Kinnlange, eng gelockte, hellbraune Haare",
+        "skin": "Rosige, weiche Haut",
+        "eyes": "Grün-braune Augen",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung",
+            "top": "Helles, fließendes Gewand mit einer selbst gehäkelten Weste aus hellbrauner Wolle",
+            "trousers": "Weiter, hellgelber Stufenrock",
+            "footwear": "Weiche Stoffschuhe",
+            "jewellery": "Eine gehäkelte Halskette mit einem glatten Flussstein",
+            "things": "Häkelnadel und Wollknäuel in einer Stofftasche, Tiegel mit Heilsalbe",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Stämmige Statur und häufiges, aufmerksames Blickumherwandern"
+    },
+    "personality": {
+        "traits": [
+            "Offenherzig",
+            "Optimistisch",
+            "Ängstlich",
+            "Hilfsbereit",
+            "Häuslich"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Bruder Florentin Runzel. Ehepartner lebt in Donnerbach; das Paar bewohnt ein gemeinsames Haus.",
+        "motivation": "Schutz ihrer Familie und das Wohlergehen der Hilfesuchenden im Viertel."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 13,
+            "IN": 14,
+            "CH": 14,
+            "FF": 15,
+            "GE": 11,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 34,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 9
+            },
+            {
+                "name": "Stoffbearbeitung",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 8
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 8
+            },
+            {
+                "name": "Hexenspeichel",
+                "FW": 5
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

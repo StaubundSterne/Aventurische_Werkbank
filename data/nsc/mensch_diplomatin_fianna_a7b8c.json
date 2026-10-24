@@ -1,0 +1,116 @@
+{
+    "id": "2b3c4d5e-6f7a-4890-bc12-3d4e5f6a7b8c",
+    "source": "Entwürfe der Mitspielenden, 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Fianna",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 987,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Eichhörnchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Diplomatin",
+        "specification": "Waldelfen-Mittlerin und Tauscherin",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine",
+            "Gerasim"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Salamandersteine, Bausch-Tausch, Magiegespür"
+        ]
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 53,
+        "hair": "Kastanienbraunes, wild geflochtenes Haar mit eingewebten Bauschfäden",
+        "skin": "Leicht sonnengebräunte, makellose Haut",
+        "eyes": "Hellgrüne, neugierig funkelsprühende Augen",
+        "outfit": {
+            "headgear": "Feines Stirnband aus geflochtenem Bausch",
+            "top": "Leichte grüne Tunika aus Bausch-Gewebe",
+            "trousers": "Bequeme braune Stoffhose",
+            "footwear": "Weiche, lautlose Wildlederschuhe",
+            "jewellery": "Ohrring aus Mammuton mit geschnitztem Tannenmotiv",
+            "things": "Kräuterbeutel, Tauschgüter (Salz, Messerchen), Isdira-Liederbuch",
+            "weapons": "Jagdmesser, elfischer Kurzbogen"
+        },
+        "distinguishing_features": "Deutlich sichtbares Viertelelfen-Erbe mit leicht angedeuteten Ohrspitzen und sehr leisen Schritten"
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Einfühlsam",
+            "Flink",
+            "Magiebegabt",
+            "Aufgeweckt"
+        ],
+        "actual-mood": [
+            "Bester Laune"
+        ],
+        "family-background": "Mutter Linnea Silberhaar, Schneiderin in Donnerbach; Vater Rondrian, Holzfäller aus Weiden; Großmutter Sanyandra Silberhaar, Leiterin des Stoerrebrandt-Kontors.",
+        "motivation": "Verhandlung fairer Tauschgeschäfte direkt mit den Waldelfensippen der Salamandersteine."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 14,
+            "CH": 14,
+            "FF": 14,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 15,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Klettern",
+                "FW": 10
+            },
+            {
+                "name": "Überreden",
+                "FW": 9
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 8
+            },
+            {
+                "name": "Singen",
+                "FW": 9
+            }
+        ],
+        "spells": [
+            {
+                "name": "Odem Arcanum",
+                "FW": 5
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

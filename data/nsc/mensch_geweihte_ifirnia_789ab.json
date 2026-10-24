@@ -1,0 +1,127 @@
+{
+    "id": "a3c89d12-1234-4a56-b789-0123456789ab",
+    "source": "Entwurf der Mitspielenden: Begegnungen im Finsterkamm; wiki-aventurica.de (Finsterkamm, Ifirn-Kirche)",
+    "tags": [],
+    "general": {
+        "name": "Ifirnia",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Singschwan",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Ifirngeweihte",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Donnerbach",
+            "Lowangen",
+            "Svellttal"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Ifirnglaube, Erstversorgung, Elementarphänomene"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 61,
+        "hair": "Hellblondes, flechtfrisiertes Haar mit eingewebten weißen Wollfäden",
+        "skin": "Helle, leicht sommersprossige Haut mit rötlichen Wangen",
+        "eyes": "Bernsteinfarbene Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Gefütterter Wollmantel in blassblauem und weißem Tuch über einer hellen Tunika",
+            "trousers": "Dunkelblaue Wollhose",
+            "footwear": "Gefütterte Stiefel aus weichem Wildleder mit hellem Fellbesatz",
+            "jewellery": "Geschnitztes Hornamulett in Form eines fliegenden Schwans",
+            "things": "Umhängetasche mit getrocknetem Wirselkraut, Einbeeren und Stoffbinden; Schnitzbank an der Gürtelschlaufe",
+            "weapons": "Kurzbogen an der Schulter, Schnitzmesser am Gürtel"
+        },
+        "distinguishing_features": "Ruhige, gleichmäßige Bewegungen und ein ständiger leichter Duft nach getrocknetem Wirselkraut"
+    },
+    "personality": {
+        "traits": [
+            "Hilfsbereit",
+            "Barmherzig",
+            "Ifirngläubig",
+            "Geduldig",
+            "Gemeinschaftsorientiert"
+        ],
+        "actual-mood": [
+            "Zuversichtlich"
+        ],
+        "family-background": "Mutter Ehrenfriede, Wundärztin in Donnerbach; Vater Jarne, Flößer auf dem Svellt; Bruder Leif, Tischler in Lowangen. Sie wuchs an den Ausläufern des Finsterkamms auf und trat im Jahr 998 BF in den Dienst der Göttin Ifirn.",
+        "motivation": "Durchführung eines Andachtsrituals zum Frühlingsanfang sowie Weitergabe von Kenntnissen zur Erstversorgung bei Frostschäden und Wundpflege an Reisende."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 14,
+            "CH": 14,
+            "FF": 13,
+            "GE": 12,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 10
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 9
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 8
+            },
+            {
+                "name": "Singen",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Blick der Hoffnung",
+                "FW": 8
+            },
+            {
+                "name": "Göttliche Heilung",
+                "FW": 9
+            },
+            {
+                "name": "Sanftes Ruhen",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

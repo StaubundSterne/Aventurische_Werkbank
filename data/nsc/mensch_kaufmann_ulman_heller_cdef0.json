@@ -1,0 +1,96 @@
+{
+    "id": "d4567890-bcde-4f01-b234-56789abcdef0",
+    "source": "Entwürfe der Mitspielenden, wiki-aventurica.de (Gashok, 1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Ulman Heller",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 955,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Krähe",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Kaufmann",
+        "specification": "Händler:in für Tuche und Loden in Gashok",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Gashok",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Hesindian"
+        ],
+        "injection-points": "Identifikation, Laterne, Münzen"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 75,
+        "hair": "Stoppeliger grauer Bart, Halbglatze",
+        "skin": "Bleich",
+        "eyes": "Grau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkler Lodenmantel",
+            "trousers": "Schwarze Stoffhose",
+            "footwear": "Lederschuhe",
+            "jewellery": "Eisenringe an der linken Hand",
+            "things": "Kleine Laterne, mehrere Kupfermünzen",
+            "weapons": "Keine sichtbar"
+        },
+        "distinguishing_features": "Schiebt beständig Münztürme hin und her, hebt zur Identifikation von Personen den knochigen Zeigefinger, zieht die Stirn in tiefe Falten."
+    },
+    "personality": {
+        "traits": [
+            "Schweigend",
+            "Münzenzählend",
+            "Starr",
+            "Beobachtend",
+            "Ruhig"
+        ],
+        "actual-mood": [
+            "Fixierend"
+        ],
+        "family-background": "Sohn der Tuchhändlerin Mareike und des Fuhrmanns Hjalmar. Lebt allein im Stadtzentrum, da seine Verlobte Alruna vor vielen Jahren den Ort verließ.",
+        "motivation": "Folgt Gisbert in die Gasse, leuchtet Zielpersonen mit der Laterne an und markiert sie durch Fingerzeig."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 12,
+            "IN": 11,
+            "CH": 9,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sinnenschärfe",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

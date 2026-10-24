@@ -1,0 +1,126 @@
+{
+    "id": "a9e3f812-4c6d-4b89-b2e1-8f51270c91d4",
+    "source": "wiki-aventurica.de, SSoT Sariya Fulminar von Donnerbach",
+    "tags": [],
+    "general": {
+        "name": "Sariya Fulminar von Donnerbach",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 978,
+        "alive": true,
+        "culture": "Tulamiden",
+        "species": "Mensch",
+        "soul-animal": "Löwin",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Rondrageweihte des Heiligen Ordens zur Wahrung vom Rhodenstein",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Feste Rhodenstein",
+        "former-locations": [
+            "Khunchom",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Ogerschlacht-Veteranin, Rhodenstein-Bibliothek, Narbenbehandlung"
+    },
+    "appearance": {
+        "size": 171,
+        "weight": 63,
+        "hair": "Dunkelbraunes, schulterlanges Haar, im Nacken mit einem Lederband gebunden.",
+        "skin": "Tulamidisch getönte Haut. Eine sichtbare, gewebliche Vernarbung zieht sich über die linke Wange. Weitere flache Narben befinden sich an Handgelenken und Unterarmen.",
+        "eyes": "Dunkelbraune Iris.",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung.",
+            "top": "Weißer Waffenrock der Rondra-Gefolgschaft mit rotem Löwenkopf-Emblem des Ordens zur Wahrung über einer ungebleichten Leinentunika.",
+            "trousers": "Dunkle, feste Stoffhose unter eisernen Beinschienen.",
+            "footwear": "Geschwärzte Stiefel aus festem Leder.",
+            "jewellery": "Ein silberner Siegelring des Heiligen Ordens zur Wahrung an der rechten Hand.",
+            "things": "Lederne Scheide mit beschlagenen Kanten, Schleifstein zur Instandhaltung von Rüstungsteilen.",
+            "weapons": "Ein Anderthalbhänder in einer ledernen Scheide an der linken Hüfte."
+        },
+        "distinguishing_features": "Sichtbare Gesichts- und Gliedmaßen-Narben aus der Zweiten Ogerschlacht (1003 BF). Beim Gehen zeigt sich eine ungleichmäßige Belastung der Beine. Beim Drehen des Oberkörpers schwenkt die gesamte Hüftpartie mit."
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Rondragläubig",
+            "Mitteilsam-bedächtig",
+            "Diszipliniert",
+            "Kriegserfahren"
+        ],
+        "actual-mood": [
+            "Fokussiert"
+        ],
+        "family-background": "Geboren 978 BF in Khunchom. In jungen Jahren Eintritt in die Rondra-Kirche und Versetzung in die Senne Nord. Keine aktiven Verbindungen zu Verwandten in Khunchom dokumentiert.",
+        "motivation": "Verwaltung der Finanzen und Ordensgüter als Tresslerin auf Feste Rhodenstein im Jahr 1009 BF sowie Unterweisung von Noviz:innen und Reifenden der Rondra-Kirche."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 11,
+            "GE": 11,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihandschwerter",
+                "FW": 12
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 10
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 10
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 8
+            },
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Ehrenhaftes Duell",
+                "FW": 8
+            },
+            {
+                "name": "Schutzsegen",
+                "FW": 8
+            },
+            {
+                "name": "Götterhand",
+                "FW": 6
+            }
+        ]
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,121 @@
+{
+    "id": "e5b22a21-709b-4e1d-8f1a-3a21648a1d01",
+    "source": "Entwürfe der Mitspielenden; Seminar der elfischen Verständigung und natürlichen Heilung zu Donnerbach",
+    "tags": [],
+    "general": {
+        "name": "Elida Weberwiesen",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Mittelreichische Stadtkultur (Weiden)",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magierin",
+        "specification": "Adarells ehemalige Tutorin  am Seminar der elfischen Verständigung und natürlichen Heilung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Kräutergarten-Pflege, Anatomie-Leseübungen, Weidener-Dialekt"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 71,
+        "hair": "Blond, zu einem langen Zopf geflochten",
+        "skin": "Helle, leicht sommersprossige Haut",
+        "eyes": "Blaugrau",
+        "outfit": {
+            "headgear": "Stirnband aus braunem Leder",
+            "top": "Helles Leinenhemd, darüber eine schwere braune Lederschürze mit mehreren Scheren- und Pinzettentaschen",
+            "trousers": "Dunkelbraune Lodenhose",
+            "footwear": "Halbhohe, zweckmäßige Lederschuhe mit schnallenlosen Riemen",
+            "jewellery": "Kein Schmuck",
+            "things": "Kupferne Feldschere, zwei Messingpinzetten, Holzbrettchen mit zugeschnittenen Leinenverbänden",
+            "weapons": "Kleine Kräutersichel am Gürtel"
+        },
+        "distinguishing_features": "Große Gestalt. Zieht bei Konzentration die linke Augenbraue hoch. Spricht mit stark betontem Weidener Dialekt."
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Pflichtbewusst",
+            "Geduldig",
+            "Gründlich",
+            "Dialektfest"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Mutter Gerberin Alwine Weberwiesen, Vater Webermeister Geron Weberwiesen in Baliho; jüngerer Bruder Halman Weberwiesen, Geselle in einer Gerberei in Baliho.",
+        "motivation": "Anleitung von Adarell bei der Pflege der universitären Kräutergärten, Kontrolle der wöchentlichen Leseübungen in der Abteilung für magica curativa sowie Demonstration des Zuschneidens fertiger Leinenverbände."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 14,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 12,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 11
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 10
+            },
+            {
+                "name": "Anatomie",
+                "FW": 8
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 8
+            },
+            {
+                "name": "Abvenenum Reines Holz",
+                "FW": 7
+            },
+            {
+                "name": "Klarum Purum",
+                "FW": 6
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": "War zuletzt Assistenzärztin in der Halle des Lebens in Norburg und reiste im Peraine 1009 BF an, um die Große Exkursion zu begleiten. Leider hat sie sich verspätet."
+}

@@ -1,0 +1,113 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Swangard Kempf",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 952,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Verwalterin",
+        "specification": "Gutsverwalterin des Kempf'schen Anwesens",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Baliho"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Hofverwalterei, Erbschaftsstreit, Vorratskrise"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 65,
+        "hair": "Ergrauendes blondes Haar, im Nacken streng zu einem Knoten gebunden",
+        "skin": "Wettergegerbte, helle Haut mit leichten Sommersprossen",
+        "eyes": "Kühle, wache graue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkelgrüne, getragene Wolljacke über einer schlichten Leinenbluse",
+            "trousers": "Dunkelbrauner, robuster Faltenrock aus derber Wolle",
+            "footwear": "Feste, gut gepflegte Lederstiefel",
+            "jewellery": "Ein schlichter Siegelring des Hauses Kempf am rechten Ringfinger",
+            "things": "Schlüsselbund am Gürtel, Hauptbuch, Schreibfeder",
+            "weapons": "Gürtelmesser"
+        },
+        "distinguishing_features": "Aufrechte, kompromisslose Haltung und scharfer, taxierender Blick"
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Pflichtbewusst",
+            "Wortkarg",
+            "Durchsetzungsstark",
+            "Familienbewusst"
+        ],
+        "actual-mood": [
+            "Angespannt"
+        ],
+        "family-background": "Ehemann Gerwulf Kempf (56, Gutsherr); Sohn Ulfried Kempf (Soldat in Weiden); Tochter Alkena Kempf (Händlerin). Die Familie führt seit Generationen den Kempf'schen Hof nahe Donnerbach.",
+        "motivation": "Den Zusammenhalt und den wirtschaftlichen Fortbestand der Familie Kempf pragmatisch und energisch gegen äußere Gefahren und Missernten zu sichern."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 13,
+            "CH": 11,
+            "FF": 12,
+            "GE": 10,
+            "KO": 11,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 31,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Handel",
+                "FW": 9
+            },
+            {
+                "name": "Überreden",
+                "FW": 7
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 8
+            },
+            {
+                "name": "Rechnen",
+                "FW": 8
+            },
+            {
+                "name": "Holzbearbeitung",
+                "FW": 5
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,109 @@
+{
+    "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+    "source": "wiki-aventurica.de, Schild des Reiches, Das Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Egorn Krugpenner, Sohn des Grosch",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 877,
+        "alive": true,
+        "culture": "Hügelzwerg",
+        "species": "Zwerg",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Koch",
+        "specification": "Schenkenkoch (Ex-Abenteurer)",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Baliho",
+        "former-locations": [
+            "Xorlosch",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Hesindian",
+            "Adarell"
+        ],
+        "injection-points": "Essen bestellen, Abenteureranekdoten, Kochrezept-Tausch"
+    },
+    "appearance": {
+        "size": 111,
+        "weight": 68,
+        "hair": "Langes rotes Haar und ein aufwendig geflochtener Bart",
+        "skin": "Rosig, oft mit mehl- oder rußverschmierten Wangen",
+        "eyes": "Nussbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Braun-gelbe Robe mit praktischen kurzen Ärmeln",
+            "trousers": "Bequeme Wollenhose unter der Robe",
+            "footwear": "Weiche Lederschuhe",
+            "jewellery": "Messingringe im geflochtenen Bart",
+            "things": "Großer Holzkochlöffel, Gewürzsäckchen, abgewetztes Abenteuertagebuch",
+            "weapons": "Schweres Küchenbeil und ein Brotmesser"
+        },
+        "distinguishing_features": "1,11 m groß, gebaut wie ein Kürbis, langes rotes Haar mit geflochtenem Bart"
+    },
+    "personality": {
+        "traits": [
+            "Herzlich",
+            "Neugierig",
+            "Erzählfreudig",
+            "Gesellig",
+            "Nostalgisch"
+        ],
+        "actual-mood": [
+            "Mitteilsam"
+        ],
+        "family-background": "Sohn des Grosch. Ehemaliger Abenteurer. Bruder der Herbergsmutter Ingegrimm Krugpenner, die ihn regelmäßig in die Küche zurückscheucht, sobald er sich beim Geschichtenerzählen verquatscht.",
+        "motivation": "Die Gäste mit deftiger Küche zu verwöhnen und alte Abenteuergeschichten zum Besten zu geben."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 13,
+            "GE": 10,
+            "KO": 15,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 42,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kochen",
+                "FW": 11
+            },
+            {
+                "name": "Zechen",
+                "FW": 9
+            },
+            {
+                "name": "Überreden",
+                "FW": 7
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

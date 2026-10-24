@@ -1,0 +1,112 @@
+{
+    "id": "8a9b0c1d-2e3f-4456-9789-abcdef012345",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Lindariel Nebeltänzer",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "culture": "Auelf",
+        "species": "Elf",
+        "soul-animal": "Habicht",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Magier",
+        "specification": "Absolvent des Seminars der elfischen Verständigung zu Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine",
+            "Nebelmoor"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": [
+            "Mobbing, Nebelmoor-Mutprobe, Arroganz, ehemaliger Kommilitone"
+        ]
+    },
+    "appearance": {
+        "size": 186,
+        "weight": 68,
+        "hair": "Hellbraune Haare, die je nach Lichteinfall grünlich schimmern",
+        "skin": "Glatt und feingliedrig",
+        "eyes": "Stechende gelbe Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Feines, grünes Elfenoberteil",
+            "trousers": "Enganliegende Hose aus weichem Wildleder",
+            "footwear": "Lautlose Elfenstiefel",
+            "jewellery": "Geschnitzter Knochenschmuck",
+            "things": "Kleine Holzkassette (für seine Haustier-Eidechse)",
+            "weapons": "Elfischer Zierdolch"
+        },
+        "distinguishing_features": "Schmales Gesicht mit extrem spitzem Kinn und abwertendem Lächeln."
+    },
+    "personality": {
+        "traits": [
+            "Risikofreudig",
+            "Meinungsstark",
+            "Überheblich",
+            "Provozierend",
+            "Dominant"
+        ],
+        "actual-mood": [
+            "Gehässig"
+        ],
+        "family-background": "Cousin von Eslindane Nebeltänzer. Aufgewachsen in der Auelfensippe Nebeltänzer; hält sich wegen seiner reinen elfischen Abstammung für etwas Besserem.",
+        "motivation": "Hält Adarell für einen feigen Halbblut-Versager und stiftet ihn zu einer gefährlichen Mutprobe im Nebelmoor an."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 14,
+            "CH": 12,
+            "FF": 12,
+            "GE": 14,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 38,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Tierkunde",
+                "FW": 7
+            },
+            {
+                "name": "Überreden",
+                "FW": 6
+            }
+        ],
+        "spells": [
+            {
+                "name": "Odem Arcanum",
+                "FW": 6
+            },
+            {
+                "name": "Fulminictis",
+                "FW": 5
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

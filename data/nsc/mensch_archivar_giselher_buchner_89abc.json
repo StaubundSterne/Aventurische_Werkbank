@@ -1,0 +1,109 @@
+{
+    "id": "a11c9f3d-5e67-42a1-9b88-123456789abc",
+    "source": "wiki-aventurica.de/wiki/Donnerbach, DSA5 Regelwiki",
+    "tags": [],
+    "general": {
+        "name": "Giselher Buchner",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 935,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Einsiedlerkrebs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Archivar",
+        "specification": "Stadtarchivar und Leiter der Stadtbibliothek Donnerbach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Festum",
+            "Norburg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Buchschulden, Ausleihverbot, Bellestristik"
+    },
+    "appearance": {
+        "size": 164,
+        "weight": 57,
+        "hair": "Kahlkopf mit schütterem, weißem Kranz an den Seiten",
+        "skin": "Blass, pergamentartig und faltenreich",
+        "eyes": "Trübblau, blickt starr über seine Sehbrille hinweg",
+        "outfit": {
+            "headgear": "Schwarze, leicht abgewetzte Samtkappe",
+            "top": "Dunkelbraune, tintengefleckte Gelehrtenrobe aus schwerem Filz",
+            "trousers": "Dunkelgraue Wollhose",
+            "footwear": "Abgetretene Filzpantoffeln",
+            "jewellery": "Lesebrille an einer abgenutzten Messingkette",
+            "things": "Federkiel, Ausleihbuch der Bibliothek, Staubwedel",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Ständiges leises Hüsteln und ein scharfer, misstrauischer Blick über den Brillenrand."
+    },
+    "personality": {
+        "traits": [
+            "Kleinlich",
+            "Pedantisch",
+            "Nachtragend",
+            "Bücherverliebt",
+            "Kauzige Natur"
+        ],
+        "actual-mood": [
+            "Nervös"
+        ],
+        "family-background": "Sohn eines Festumer Schreibers. Diente früher im Bornland als Gehilfe und zog vor Jahrzehnten nach Donnerbach. Hat keine eigene Familie und betrachtet die Bibliotheksbestände als seinen persönlichen Schatz.",
+        "motivation": "Das lückenhafte Stadtarchiv vor weiterem Verfall schützen und säumige Ausleiher – allen voran Jost – zur Rechenschaft ziehen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 10,
+            "KL": 14,
+            "IN": 13,
+            "CH": 10,
+            "FF": 12,
+            "GE": 9,
+            "KO": 10,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 9
+            },
+            {
+                "name": "Rechtskunde",
+                "FW": 7
+            },
+            {
+                "name": "Keramikkunde",
+                "FW": 6
+            },
+            {
+                "name": "Sagen & Mythen",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

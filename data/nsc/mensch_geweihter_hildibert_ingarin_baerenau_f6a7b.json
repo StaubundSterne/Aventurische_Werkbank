@@ -1,0 +1,129 @@
+{
+    "id": "a8f3e2b1-9c0d-4e5f-8a1b-2c3d4e5f6a7b",
+    "source": "Entwürfe der Mitspielenden: 1 Ingerimm- und 1 Angroschgeweihter; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Ingarin Bärenau",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 964,
+        "alive": true,
+        "culture": "Weiden\n",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Ingerimmgeweihter",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Trallop",
+            "Baliho",
+            "Donnerbach",
+            "Finsterkoppen",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Feldamboss, Elementarfeuer, Gravesh-Glaubenspraxis"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 88,
+        "hair": "Kahl geschorener Kopf, dichter roter Vollbart",
+        "skin": "Rußgeschwärzt an Händen und Gesicht, wettergegerbt",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ärmellose Schürze aus dickem Büffelleder über einer einfachen leinenen Tunika",
+            "trousers": "Dunkle Hose aus grobem Tuch mit Lederbesatz",
+            "footwear": "Feste Arbeitsschuhe mit Eisenkappen",
+            "jewellery": "Eiserner Hammerminiatur-Anhänger an einer rußgeschwärzten Lederkordel",
+            "things": "Tragbare Feld-Esse auf vier eisernen Beinen, Fäustel, Schmiedzange, Holzkübel mit Gebirgswasser",
+            "weapons": "Schmiedehammer (Fäustel), schwerer Reisedolch"
+        },
+        "distinguishing_features": "Rußspuren an Händen und Unterarmen, kahl geschorener Schädel, kräftiger roter Vollbart"
+    },
+    "personality": {
+        "traits": [
+            "Ingerimmgläubig",
+            "Pragmatisch",
+            "Schaffensfreudig",
+            "Aufgeschlossen",
+            "Elementarfasziniert"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Mutter Alrike Bärenau, Grobschmiedin in Trallop; Vater Hildibert Bärenau, Köhler im Weidener Forst; Schwester Elwine Bärenau, Bogenmacherin in Baliho. Aufgewachsen in einer Handwerkerfamilie am Rande der Bärenklamm.",
+        "motivation": "Pilgerfahrt über Finsterkoppen nach Lowangen zum Austausch über Ingerimm- und Angrosch-Glaubenspraxis sowie Erkundung von Elementaranomalien im Finsterkamm."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 12,
+            "FF": 14,
+            "GE": 11,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 12
+            },
+            {
+                "name": "Handwerk",
+                "FW": 10
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 9
+            },
+            {
+                "name": "Orientierung",
+                "FW": 7
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Segen der Heiligen Esse",
+                "FW": 8
+            },
+            {
+                "name": "Feuersegen",
+                "FW": 10
+            },
+            {
+                "name": "Objektsegen",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

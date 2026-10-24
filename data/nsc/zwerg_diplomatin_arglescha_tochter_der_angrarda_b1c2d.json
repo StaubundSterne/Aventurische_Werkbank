@@ -1,0 +1,108 @@
+{
+    "id": "8a1b3c5d-7e9f-4a2b-8c1d-3e5f7a9b1c2d",
+    "source": "wiki-aventurica.de (Arglescha Tochter der Angrarda); 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Arglescha, Tochter der Angrarda",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 939,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Steinmarder",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Diplomatin",
+        "specification": "Prinzessin und Anführerin von Handelsdelegationen der Binge Finsterkoppen",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Finsterkoppen",
+        "former-locations": [
+            "Schatodor",
+            "Lowangen",
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": [
+            "Händlerin Jetrascha, Handelskontakte, Freies Geleit"
+        ]
+    },
+    "appearance": {
+        "size": 134,
+        "weight": 62,
+        "hair": "Kupferrotes, in aufwendige Zöpfe geflochtenes Haar",
+        "skin": "Hell mit Sommersprossen auf dem Nasenrücken",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Bestickte Lederweste mit Metallschuppenmuster über blauem Wollhemd",
+            "trousers": "Lederne Beinkleider",
+            "footwear": "Gezierte Schnürstiefel",
+            "jewellery": "Graviertes Gültband aus Silber und Messing",
+            "things": "Pergamentrolle mit Aufzeichnungen",
+            "weapons": "Zwergenskrama am Gürtel"
+        },
+        "distinguishing_features": "Auffälliges Metallschuppenmuster auf der Lederweste"
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Entschlossen",
+            "Aufmerksam",
+            "Pragmatisch",
+            "Kontaktfreudig"
+        ],
+        "actual-mood": [
+            "Interessiert"
+        ],
+        "family-background": "Vater Garbalon, Bergkönig von Finsterkoppen; Mutter Angrarda (verstorben).",
+        "motivation": "Erkundigung nach Jetrascha aus Schatodor und Knüpfen strategischer Handelsbeziehungen."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 14,
+            "IN": 14,
+            "CH": 14,
+            "FF": 13,
+            "GE": 12,
+            "KO": 14,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Überzeugen",
+                "FW": 11
+            },
+            {
+                "name": "Handelskunst",
+                "FW": 12
+            },
+            {
+                "name": "Gassenwissen",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,104 @@
+{
+    "id": "2c4e6f8a-1b3d-4e5f-9a7b-8c1d3e5f7a9b",
+    "source": "wiki-aventurica.de (Curthar Sohn des Curagorn); 4000 Bibliotheken",
+    "tags": [],
+    "general": {
+        "name": "Curthar, Sohn des Curagorn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 729,
+        "alive": true,
+        "culture": "Erzzwerge",
+        "species": "Zwerg",
+        "soul-animal": "Schildkröte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Steinmetzmeister in der Binge Finsterkoppen",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkoppen",
+        "former-locations": [
+            "Finsterkamm"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Garamoschs Erbe, Gurmagoschs Tod, Schiefertafel"
+    },
+    "appearance": {
+        "size": 132,
+        "weight": 64,
+        "hair": "Schneeweißer, langer Vollbart und spärliches weißes Haupthaar",
+        "skin": "Tief gefurcht, von Granitstaub graue Haut",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Lederne Stirnbinde",
+            "top": "Abgewetzte, steinstaubige Lederschürze über leinenem Arbeitshemd",
+            "trousers": "Grobe Stoffhose",
+            "footwear": "Dicke Holzschuhe mit Lederkappen",
+            "jewellery": "Kein Schmuck",
+            "things": "Schlägel, Meißel, eiserne Keile, Fäustel",
+            "weapons": "Schwerer Steinmetzhammer"
+        },
+        "distinguishing_features": "Schwielige, von jahrzehntelanger Steinmetzarbeit gezeichnete Hände"
+    },
+    "personality": {
+        "traits": [
+            "Geduldig",
+            "Schweigsam",
+            "Trauernd",
+            "Sorgfältig",
+            "Zurückhaltend"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Vater Curagorn, Steinmetz; Bruder von Gurmagosch (verstorben 949 BF bei Lorenunglück) und Garamosch (Mooshüter-Geode, verstorben 1009 BF im Tosch'Kar).",
+        "motivation": "Bewahrung des Andenkens an seine verstorbenen Brüder und Verwahrung verbliebener Steinmetzarbeiten."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 12,
+            "IN": 13,
+            "CH": 10,
+            "FF": 15,
+            "GE": 10,
+            "KO": 13,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Steinbearbeitung",
+                "FW": 13
+            },
+            {
+                "name": "Gesteinskunde",
+                "FW": 12
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

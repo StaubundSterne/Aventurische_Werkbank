@@ -1,0 +1,121 @@
+{
+    "id": "a9b8c7d6-e5f4-4a3b-8c2d-1e2f3a4b5c6d",
+    "source": "wiki-aventurica.de, 1200 Jost Zumpel, AW Master",
+    "tags": [],
+    "general": {
+        "name": "Ayla von Donnerbach",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 991,
+        "alive": true,
+        "culture": "Mittelreicher",
+        "species": "Mensch",
+        "soul-animal": "Bornländer",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Novizin",
+        "specification": "Angehende Knappin der Göttin",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Adarell"
+        ],
+        "injection-points": "Rondratempel, Noviziat, Tempelschmiede"
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 62,
+        "hair": "Langes, dunkles Haar, streng zurückgebunden oder im zweckmäßigen Flechtzopf",
+        "skin": "Gebräunt, durch hartes körperliches Waffentraining gezeichnet",
+        "eyes": "Dunkel, ruhig, aufmerksam und prüfend",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Sauberer, gebügelter weißer Waffenrock mit rotem Löwenwappen, darunter ein feingliedriges, gepflegtes Kettenhemd",
+            "trousers": "Dunkle, strapazierfähige Stoffhose",
+            "footwear": "Gepflegte, stabile Lederstiefel",
+            "jewellery": "Kein weltlicher Schmuck; schlichtes Rondra-Symbol",
+            "things": "Waffenpflegewachs, Schleifstein, Putztuch",
+            "weapons": "Einfaches Schwert am Gürtel"
+        },
+        "distinguishing_features": "Ebenmäßige, hochgewachsene Gestalt mit aufrechter, militärischer Haltung und unerschütterlicher Ernsthaftigkeit im Blick"
+    },
+    "personality": {
+        "traits": [
+            "Zutiefst pflichtbewusst",
+            "Gottesfürchtig",
+            "Unbestechlich",
+            "Ernst",
+            "Etwas abweisend"
+        ],
+        "actual-mood": [
+            "Fokussiert"
+        ],
+        "family-background": "Angeblich Tochter einer Prostituierten; wuchs als Findelkind bei der Pflegefamilie Kempf in Donnerbach auf, bevor sie in den Rondratempel Skrugbrandur aufgenommen wurde.",
+        "motivation": "Der Donnergöttin Rondra mit vollkommener Hingabe dienen, den Ehrenkodex in Wort und Tat leben und die Schwachen beschützen."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 12,
+            "CH": 12,
+            "FF": 11,
+            "GE": 13,
+            "KO": 13,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 28
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Schwerter",
+                "FW": 10
+            },
+            {
+                "name": "Religionskunde",
+                "FW": 8
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 9
+            },
+            {
+                "name": "Selbstbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Athletik",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Segen der Tapferkeit",
+                "FW": 4
+            },
+            {
+                "name": "Ehrenvoller Zweikampf",
+                "FW": 5
+            }
+        ]
+    },
+    "session-notes": ""
+}

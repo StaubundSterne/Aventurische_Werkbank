@@ -1,0 +1,112 @@
+{
+    "id": "e7b8f2d1-9a3c-4e5f-8b2a-1c9d3e5f7a4b",
+    "source": "https://de.wiki-aventurica.de/wiki/Thalia_Ljosvaki_von_Donnerbach",
+    "tags": [],
+    "general": {
+        "name": "Thalia Donnerhall",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 1002,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Junger Bergfalke",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Kind",
+        "specification": "Tochter der Fürst-Erzgeweihten",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Donnerbach, Tempelkind, Rondraglaube"
+    },
+    "appearance": {
+        "size": 122,
+        "weight": 24,
+        "hair": "Blond, schulterlang und ungestüm",
+        "skin": "Helle, sommersprossige Haut",
+        "eyes": "Aufgeweckte blaugraue Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Einfache rote Leinentunika mit gekreuzter Rondra-Stickerei",
+            "trousers": "Bequeme braune Stoffhose",
+            "footwear": "Lederne Kinderschuhe",
+            "jewellery": "Geschnitzter Holzanhänger in Form zweier Schwerter an einer Lederkordel",
+            "things": "Ein selbstgeschnitztes Holzschwert zum Üben",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Ungewöhnlich ernster, entschlossener Blick für ein 7-jähriges Kind; trägt fast immer ihr Holzschwert bei sich"
+    },
+    "personality": {
+        "traits": [
+            "Wissbegierig",
+            "Mutig",
+            "Ehrgeizig",
+            "Ernsthaft",
+            "Verspielt"
+        ],
+        "actual-mood": [
+            "Neugierig"
+        ],
+        "family-background": "Mutter: Aldare VIII. Donnerhall von Donnerbach, Fürst-Erzgeweihte der Senne Nord und Hüterin der heiligen Höhlen. Vater: Unbekannt. Thalia wächst gut behütet, aber streng erzogen im Umfeld des Donnerbacher Tempels auf.",
+        "motivation": "Möchte ihrer Mutter nacheifern, den Rondra-Glauben verstehen und allen beweisen, dass sie schon wie eine echte Kriegerin trainieren kann."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 10,
+            "IN": 11,
+            "CH": 10,
+            "FF": 10,
+            "GE": 11,
+            "KO": 9,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 22,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Klettern",
+                "FW": 3
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 4
+            },
+            {
+                "name": "Sagen und Mythen",
+                "FW": 2
+            },
+            {
+                "name": "Götter und Kulte",
+                "FW": 3
+            },
+            {
+                "name": "Hiebwaffen (Holzschwert)",
+                "FW": 2
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

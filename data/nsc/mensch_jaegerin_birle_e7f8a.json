@@ -1,0 +1,126 @@
+{
+    "id": "7b9e3a1f-2c4d-4e8a-9f12-3b4c5d6e7f8a",
+    "source": "Entwurf der Mitspielenden, Wiki Aventurica (Finsterkamm)",
+    "tags": [],
+    "general": {
+        "name": "Birle",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 982,
+        "alive": true,
+        "culture": "Greifenfurt",
+        "species": "Mensch",
+        "soul-animal": "Marder",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Jägerin",
+        "specification": "Gebirgsjägerin im Finsterkamm",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Yrramis",
+            "Nordhag",
+            "Greifenfurt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Der Wilde Mann, Hohlweg-Hinterhalt, Wildverwertung"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Dunkelblondes, flechtgebundenes Haar unter der Mütze",
+        "skin": "Fleckig gebräunt mit kältegeröteten Wangen",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Grüne Filzmütze",
+            "top": "Braungrüner Lodenrock über gestricktem Wollpullover",
+            "trousers": "Gefettete lederne Beinlinge",
+            "footwear": "Genagelte Wanderschuhe mit abgenutzten Eisenprofilen",
+            "jewellery": "Kein Schmuck",
+            "things": "Trage aus geschältem Eschenholz; Häutungsmesser mit naturbelassenem Hirschhornheft am Gürtel",
+            "weapons": "Windenarmbrust mit Bolzenköcher; dreikantiger Jagdspieß mit geprägter Lederscheide"
+        },
+        "distinguishing_features": "Hält den Blick stetig auf Fanko gerichtet, nickt regelmäßig bei dessen Ausführungen und gleicht das Gewicht der Trage aus, sobald Fanko gestikuliert."
+    },
+    "personality": {
+        "traits": [
+            "Aufmerksam",
+            "Zurückhaltend",
+            "Ausdauernd",
+            "Schweigsam",
+            "Loyal"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Mutter Birte, Näherin in Greifenfurt; Vater Olf, Köhler im Finsterkamm; Bruder Janna, Schindelmacher in Yrramis.",
+        "motivation": "Sichere Beförderung der Beute nach Lowangen und Unterstützung von Fanko bei der Waidmannsarbeit."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 11,
+            "IN": 13,
+            "CH": 10,
+            "FF": 13,
+            "GE": 13,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Fährtenlesen",
+                "FW": 8
+            },
+            {
+                "name": "Klettern",
+                "FW": 9
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 10
+            },
+            {
+                "name": "Orientierung",
+                "FW": 9
+            },
+            {
+                "name": "Tierkunde",
+                "FW": 8
+            },
+            {
+                "name": "Wildnisleben",
+                "FW": 10
+            },
+            {
+                "name": "Armbrüste",
+                "FW": 8
+            },
+            {
+                "name": "Metiere",
+                "FW": 8
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

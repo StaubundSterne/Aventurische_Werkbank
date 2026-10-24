@@ -1,0 +1,114 @@
+{
+    "id": "76e3b54b-9c8a-4b2e-a5d1-9f2e4c1b0a34",
+    "source": "wiki-aventurica.de, Tsa-Vademecum, Reich des roten Mondes (Svellttal)",
+    "tags": [],
+    "general": {
+        "name": "Ederlind von Dragenfeld",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 962,
+        "alive": true,
+        "culture": "Bornländisch (Adelsfamilie aus Dragenfeld)",
+        "species": "Mensch",
+        "soul-animal": "Chamäleon",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Hochgeweihte und Tempelvorsteherin des Hauses der All-Erneuerung zu Lowangen",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Dragenfeld",
+            "Festum",
+            "Norburg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Verlust-der-Zeit, Dragenfeld-Bande, Prismen-Metaphysik"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 58,
+        "hair": "Silbergrau, zu einem lockeren, fast flüchtigen Knoten gebunden",
+        "skin": "Blass, mit feinen Lachfalten, die wie Sonnenstrahlen wirken",
+        "eyes": "Bernsteinfarben, wirken oft so, als würden sie durch das Gegenüber hindurchsehen",
+        "outfit": {
+            "headgear": "Ein Stirnreif aus geschmiedetem Silber mit einem zentralen Bergkristall",
+            "top": "Fließende Seidenrobe, deren Farben von blassem Gelb zu tiefem Violett changieren",
+            "trousers": "Weite, weiße Leinenhosen unter der Robe",
+            "footwear": "Sandalen aus weichem, bunten Leder",
+            "jewellery": "Ein achteckiges Glasprisma an einer silbernen Kette, das ständig das Licht bricht",
+            "things": "Ein kleiner Malstock und Becher mit Pigmenten",
+            "weapons": "Keine (Pazifistin)"
+        },
+        "distinguishing_features": "Sie trägt stets einen leichten Geruch nach frischer Ölfarbe und Weihrauch an sich. Wenn sie spricht, bewegen sich ihre Hände wie flüchtige Vögel."
+    },
+    "personality": {
+        "traits": [
+            "Philosophisch",
+            "Entrückt",
+            "Gütig",
+            "Zukunftsängstlich",
+            "Prismatisch denkend"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Mutter Berlinde von Dragenfeld, verstorben; Bruder Ulfried, Junker im Bornland; Nichte Laniara Armand (noch ein Kind), die sie bereits für die Tsa-Weihe vorgesehen hat.",
+        "motivation": "Sucht nach einem Weg, den 'ewigen Moment' der Tsa-Gnade zu verstehen, ohne den Fluss der Zeit zu beleidigen."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 15,
+            "IN": 16,
+            "CH": 15,
+            "FF": 14,
+            "GE": 10,
+            "KO": 11,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 42
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Götter & Kulte",
+                "FW": 14
+            },
+            {
+                "name": "Malen & Zeichnen",
+                "FW": 12
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 10
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Segen der Erneuerung",
+                "FW": 12
+            },
+            {
+                "name": "Regenbogenbrücke",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

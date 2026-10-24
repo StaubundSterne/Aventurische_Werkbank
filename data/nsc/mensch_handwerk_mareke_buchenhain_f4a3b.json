@@ -1,0 +1,100 @@
+{
+    "id": "f8a7b6c5-d4e3-42f1-a0b9-8c7d6e5f4a3b",
+    "source": "Entwürfe der Mitspielenden; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Mareke Buchenhain",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 950,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Schildkröte",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerk",
+        "specification": "Meisterbäckerin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Gerasim"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Şahin"
+        ],
+        "injection-points": "Sichtbare Narben, Exakte Arbeitsweise, Scheinbare Alterslosigkeit"
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 78,
+        "hair": "Silbergraues Haar, hochgesteckt",
+        "skin": "Weich, von ausgeprägten Falten um die Augen gezeichnet",
+        "eyes": "Klares Blau",
+        "outfit": {
+            "headgear": "Zwei polierte Holzstäbchen im Haar",
+            "top": "Mehlbestäubte, dicke Schürze über grauem Leinenhemd",
+            "trousers": "Bequemer, weiter Rock",
+            "footwear": "Feste Holzschuhe",
+            "jewellery": "Ein schlichter Kupferring am rechten Zeigefinger",
+            "things": "Ein hölzernes Teigschabemesser",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Lange, verblasste Schnittnarben an beiden Unterarmen, die unter hochgekrempelten Ärmeln sichtbar sind."
+    },
+    "personality": {
+        "traits": [
+            "Sehr konsersativ. Platziert Gebäckstücke in gleichen Abständen auf Blechen",
+            "Schüttelt bei Fragen nach Abteilungsleitung den Kopf",
+            "Macht eine Kopfbewegung bei der Begrüßung von Küchenhilfen",
+            "Reibt über ihre Unterarmnarben",
+            "Schiebt Papiere in Elkwins Schürzentasche"
+        ],
+        "actual-mood": [
+            "Geduldig"
+        ],
+        "family-background": "Eltern Gisbert und Althea Buchenhain, Müllersleute in Gerasim. Mareke zog nach Donnerbach und arbeitet seit der Eröffnung des Gebäudes dort.",
+        "motivation": "Stellt Teigwaren nur nach traditionellen Rezepturen her."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 14,
+            "IN": 13,
+            "CH": 12,
+            "FF": 16,
+            "GE": 11,
+            "KO": 12,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 29,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Lebensmittelbearbeitung",
+                "FW": 15
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

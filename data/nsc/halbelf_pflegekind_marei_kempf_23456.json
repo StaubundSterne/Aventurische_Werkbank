@@ -1,0 +1,104 @@
+{
+    "id": "d2b03f21-4c5a-4b92-a03e-9f8d2b123456",
+    "source": "4310 Aventurische Namen, wiki-aventurica.de, Eigenkreation Rollenspielrunde",
+    "tags": [],
+    "general": {
+        "name": "Marei Kempf",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 998,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Halbelf",
+        "soul-animal": "Eisvogel",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Pflegekind",
+        "specification": "Kräutersammlerin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Uhdenberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Kräutergarten, Uhdenberger Wurzeln, Scheu vor Huftieren"
+    },
+    "appearance": {
+        "size": 142,
+        "weight": 34,
+        "hair": "Flachsblondes, schulterlanges Haar, mit zwei seitlichen Flechtzöpfen gebunden",
+        "skin": "Sehr helle, sonnenempfindliche Haut mit Rötungen auf den Wangen",
+        "eyes": "Mandelgeformte, grünblaue Augen",
+        "outfit": {
+            "headgear": "Ein breites Stirnband aus grünem Leinen",
+            "top": "Grüne Bluse aus grobem Linnen mit gesticktem Blättermuster am Kragen",
+            "trousers": "Dunkelbrauner Faltenrock bis zu den Waden",
+            "footwear": "Einfache Halbschuhe aus Weichleder",
+            "jewellery": "Keine",
+            "things": "Ein geflochtener Weidenkorb mit getrockneten Kamillenblüten und Salbeiblättern",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Deutlich leicht zugespitzte Ohren und eine Ansammlung von Sommersprossen auf dem Nasenrücken."
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Naturverbunden",
+            "Zurückhaltend",
+            "Beobachtend",
+            "Sorgfältig"
+        ],
+        "actual-mood": [
+            "Geschäftig"
+        ],
+        "family-background": "Mutter war eine auelfische Jägerin aus dem Svellttal, Vater ein Minenarbeiter aus Uhdenberg. Nach dem Tod der Eltern gelangte Marei 1005 BF mit Händler:innen nach Donnerbach und wurde im Haus Kempf aufgenommen.",
+        "motivation": "Sortiert frische Kräuterbündel zum Trocknen auf dem Dachboden des Hauses.",
+        "stats": {
+            "experience-level": "Unerfahren",
+            "attributes": {
+                "MU": 10,
+                "KL": 11,
+                "IN": 13,
+                "CH": 11,
+                "FF": 12,
+                "GE": 12,
+                "KO": 9,
+                "KK": 9
+            },
+            "energies": {
+                "LeP": 24,
+                "AsP": 0,
+                "KaP": 0
+            }
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Pflanzenkunde",
+                "FW": 5
+            },
+            {
+                "name": "Fährtenlesen",
+                "FW": 3
+            },
+            {
+                "name": "Verbergen",
+                "FW": 4
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

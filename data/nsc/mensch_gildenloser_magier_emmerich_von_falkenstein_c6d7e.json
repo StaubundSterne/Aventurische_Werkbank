@@ -1,0 +1,110 @@
+{
+    "id": "8b4c3d2e-5f6a-4b7c-8d9e-2f3a4b5c6d7e",
+    "source": "wiki-aventurica.de / Seminar der elfischen Verständigung",
+    "tags": [],
+    "general": {
+        "name": "Emmerich von Falkenstein",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 962,
+        "alive": true,
+        "culture": "Mittelreich",
+        "species": "Mensch",
+        "soul-animal": "Eule",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Gildenloser Magier",
+        "specification": "Magister, Anconiter und Scriptor",
+        "clerical": false,
+        "magical": true,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Perricum",
+            "Gareth"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Şahin"
+        ],
+        "injection-points": "Auraanalyse, Untersuchung, Protokoll"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 74,
+        "hair": "Hellblond, kurz und ordentlich gescheitelt",
+        "skin": "Hell",
+        "eyes": "Graublau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkelblaue Magierrobe mit den Symbolen des Ordens",
+            "trousers": "Schwarze Tuchhose",
+            "footwear": "Hohe Reiterstiefel aus Rindsleder",
+            "jewellery": "Ein bronzenes Amulett des Ordens des Anconius",
+            "things": "Ein Pergamentrollenhalter aus Messing",
+            "weapons": "Kurzschwert im Scheidentragriemen"
+        },
+        "distinguishing_features": "Eine leichte Brille mit feinem Metallgestell"
+    },
+    "personality": {
+        "traits": [
+            "Sorgfältig",
+            "Ruhigen Wesens",
+            "Kritisch",
+            "Höflich",
+            "Ausdauernd"
+        ],
+        "actual-mood": [
+            "Beschäftigt"
+        ],
+        "family-background": "Vater Gerold von Falkenstein, Offizier; Mutter Valpurga, Schriftführerin.",
+        "motivation": "Erfassung und Systematisierung feinstofflicher Resonanzen sowie Quellenkritik."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 15,
+            "IN": 14,
+            "CH": 12,
+            "FF": 13,
+            "GE": 11,
+            "KO": 11,
+            "KK": 10
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 11
+            },
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 10
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 12
+            },
+            {
+                "name": "Odem Arcanum",
+                "FW": 11
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,105 @@
+{
+    "id": "d983e2a1-3c6b-4e1a-9f4d-7b2c1a8e9f5d",
+    "source": "Eigene Kampagnenvorgabe, 4200 Svelltland",
+    "tags": [],
+    "general": {
+        "name": "Rhona Leuenglanz von Draustein",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "culture": "Mittelreichisch (Draustein)",
+        "species": "Mensch",
+        "soul-animal": "Eisvogel",
+        "social-state": "Adel"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Rondrageweihte der Senne West",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Draustein",
+            "Arivor"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Aurelevina"
+        ],
+        "injection-points": "Sennen-Konflikt, Drausteiner Stolz, Westliche Disziplin"
+    },
+    "appearance": {
+        "size": 174,
+        "weight": 68,
+        "hair": "Goldblond, geflochten",
+        "skin": "Gepflegt, leicht gebräunt",
+        "eyes": "Bernsteinfarben",
+        "outfit": {
+            "headgear": "Halsberge aus blankem Stahl",
+            "top": "Kettenhemd über blauem Waffenrock",
+            "trousers": "Stoffhose, weiß",
+            "footwear": "Lederstiefel",
+            "jewellery": "Familiensiegelring derer von Draustein",
+            "things": "Kalkpinsel und Eimer (während der Renovierung)",
+            "weapons": "Amazonensäbel"
+        },
+        "distinguishing_features": "Trägt ihre Rüstung mit einer fast unnatürlichen Eleganz, selbst bei Schmutzarbeit."
+    },
+    "personality": {
+        "traits": [
+            "Arrogant",
+            "Pragmatisch",
+            "Kampflustig",
+            "Eloquent",
+            "Fanatisch"
+        ],
+        "actual-mood": [
+            "Zornig"
+        ],
+        "family-background": "Nichte des Barons von Draustein. Ihre Familie hat enge Verbindungen zum Orden des Donners.",
+        "motivation": "Die Schande der Senne Nord tilgen und die Bevölkerung auf den Krieg vorbereiten."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 14,
+            "KL": 12,
+            "IN": 13,
+            "CH": 15,
+            "FF": 11,
+            "GE": 14,
+            "KO": 13,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 30
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Überzeugen",
+                "FW": 11
+            },
+            {
+                "name": "Schwerter",
+                "FW": 14
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Heiliger Befehl",
+                "FW": 7
+            }
+        ]
+    },
+    "session-notes": ""
+}

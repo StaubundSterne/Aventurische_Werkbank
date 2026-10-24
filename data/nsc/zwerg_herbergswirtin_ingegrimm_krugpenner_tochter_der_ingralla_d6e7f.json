@@ -1,0 +1,109 @@
+{
+    "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+    "source": "wiki-aventurica.de, Schild des Reiches, Das Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Ingegrimm Krugpenner, Tochter der Ingralla",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 911,
+        "alive": true,
+        "culture": "Hügelzwerg",
+        "species": "Zwerg",
+        "soul-animal": "Biber",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Herbergswirtin",
+        "specification": "Herbergsmutter der Herberge 'Die Penne'",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Baliho",
+        "former-locations": [
+            "Xorlosch",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Aurelevina"
+        ],
+        "injection-points": "Zimmerbuchung, Beschwerde über Lärm, Nachtlager"
+    },
+    "appearance": {
+        "size": 120,
+        "weight": 62,
+        "hair": "Braunes Haar, meist zu einem akkuraten Kranz eingedreht",
+        "skin": "Rosig und gepflegt",
+        "eyes": "Grün",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Langes Wams in warmen Erdtönen über einer hellen Bluse",
+            "trousers": "Bequeme, praktische Stoffhose",
+            "footwear": "Weiche Lederschuhe",
+            "jewellery": "Fein gearbeitete metallene Haarnadeln im Haarkranz",
+            "things": "Großer Schlüsselbund, Federbesen, Zimmerbuch",
+            "weapons": "Ein solides Nudelholz hinter dem Empfangstresen"
+        },
+        "distinguishing_features": "1,20 m groß, stämmige Statur mit einem runden, lieben Gesicht"
+    },
+    "personality": {
+        "traits": [
+            "Lieb",
+            "Fürsorglich",
+            "Lärmempfindlich",
+            "Konsequent",
+            "Ordnungsliebend"
+        ],
+        "actual-mood": [
+            "Aufmerksam"
+        ],
+        "family-background": "Tochter der Ingralla. Schwester von Egorn Krugpenner. Duldet absolut keinen Lärm in ihrer Herberge und schickt ihren Bruder Egorn konsequent zurück in die Küche, wenn sie ihn beim Geschichtenerzählen erwischt.",
+        "motivation": "Den Gästen ein sauberes, ruhiges Bett zu bieten und für absolute Ordnung in der 'Penne' zu sorgen."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 13,
+            "IN": 13,
+            "CH": 11,
+            "FF": 14,
+            "GE": 11,
+            "KO": 14,
+            "KK": 12
+        },
+        "energies": {
+            "LeP": 38,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Sinnenschärfe",
+                "FW": 8
+            },
+            {
+                "name": "Handel",
+                "FW": 7
+            },
+            {
+                "name": "Schneidern",
+                "FW": 6
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

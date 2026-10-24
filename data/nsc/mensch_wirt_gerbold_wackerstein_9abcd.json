@@ -1,0 +1,97 @@
+{
+    "id": "a1234567-89ab-4cde-8f01-23456789abcd",
+    "source": "Entwürfe der Mitspielenden, wiki-aventurica.de (Gashok, 1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Gerbold Wackerstein",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Wirt",
+        "specification": "Schankwirt im Gasthaus 'Zum wilden Mann'",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Gashok",
+        "former-locations": [
+            "Tiefhusen",
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Jost"
+        ],
+        "injection-points": "Hausrecht, Götterordnung, Schankverbot"
+    },
+    "appearance": {
+        "size": 192,
+        "weight": 105,
+        "hair": "Kurz geschoren, braun mit grauen Strähnen",
+        "skin": "Grobporig und stark gerötet",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkle Schürze über grobem Leinenhemd",
+            "trousers": "Dunkelgraue Wollhose",
+            "footwear": "Schwere Lederstiefel",
+            "jewellery": "Kein Schmuck sichtbar",
+            "things": "Schrubbeimer, raues Leinentuch, hölzerne Löschhornstange",
+            "weapons": "Keine sichtbar"
+        },
+        "distinguishing_features": "Breite Schultern, laute und dröhnende Stimme, poliert beständig das Holz der Schanktheke."
+    },
+    "personality": {
+        "traits": [
+            "Laut",
+            "Breitschultrig",
+            "Befehlend",
+            "Streng",
+            "Präsent"
+        ],
+        "actual-mood": [
+            "Zurechtweisend"
+        ],
+        "family-background": "Sohn der Brauerin Hesindiane und des Holzfällers Ardo. Ehefrau Gerda verstarb vor acht Jahren. Führt den Schankbetrieb ohne weitere Angehörige und pocht lautstark auf die Einhaltung der städtischen Regeln.",
+        "motivation": "Unterbindung des Alkoholausschanks und verbale Durchsetzung der dualistischen Ordnung in seinem Schankraum."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 13,
+            "KL": 10,
+            "IN": 11,
+            "CH": 12,
+            "FF": 10,
+            "GE": 10,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 35,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Hauswirtschaft",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

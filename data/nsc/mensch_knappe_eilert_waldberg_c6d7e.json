@@ -15,7 +15,7 @@
     },
     "profession": {
         "category": "Knappe",
-        "specification": "Knappe im Dienst der Stadtgarde von Donnerbach. Er hofft auf eine baldige Ritterweihe und verbringt jede freie Minute mit dem Studium von Fechtbüchern.",
+        "specification": "Knappe im Dienst der Stadtgarde von Lowangens. Er hofft auf eine baldige Ritterweihe und verbringt jede freie Minute mit dem Studium von Fechtbüchern.",
         "clerical": false,
         "magical": false,
         "noble": false
@@ -62,7 +62,7 @@
         "actual-mood": [
             "Aufgeregt"
         ],
-        "family-background": "Vater Elmar, Büchsenmacher; Mutter Linne, Näherin; Schwester Alrike, Novizin im Peraine-Tempel.",
+        "family-background": "Vater Elmar, Bogenmacher; Mutter Linne, Näherin; Schwester Alrike, Novizin im Peraine-Tempel.",
         "motivation": "Sich als würdiger Verteidiger Donnerbachs zu beweisen und eines Tages in den Adelsstand erhoben zu werden."
     },
     "stats": {

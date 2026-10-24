@@ -1,0 +1,105 @@
+{
+    "id": "e5f6a1b2-c3d4-45f6-8a7b-8c9d0e1f2a3b",
+    "source": "wiki-aventurica.de, Donnerbach",
+    "tags": [],
+    "general": {
+        "name": "Weldmar von Beonfirn",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 941,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Rabe",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Adliger",
+        "specification": "Alt-Junker und Familienchronist",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Beonfirn",
+        "former-locations": [
+            "Donnerbach",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Şahin"
+        ],
+        "injection-points": "Nebelmoor-Legenden, Alte Landkarten, Kultureller Austausch"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Schneeweißes, ausgedünntes Haar",
+        "skin": "Faltig und blass",
+        "eyes": "Graublau, blickt meist mit verengten Augen",
+        "outfit": {
+            "headgear": "Samtene Kopfkappe",
+            "top": "Gefütterter, alter Weidener Reitrock mit Pelzbesatz",
+            "trousers": "Dunkle Tuchhose",
+            "footwear": "Warme Filzstiefel",
+            "jewellery": "Altes Familienamulett an einer Silberkette",
+            "things": "Lesebrille, Tinte, alter Gehstock mit Messingknauf",
+            "weapons": "Stockdegen"
+        },
+        "distinguishing_features": "Geht stark am Stock und neigt zu trockenem Hüsteln"
+    },
+    "personality": {
+        "traits": [
+            "Kauzig",
+            "Gelehrt",
+            "Vergesslich",
+            "Erzählfreudig",
+            "Nostalgisch"
+        ],
+        "actual-mood": [
+            "Neugierig"
+        ],
+        "family-background": "Großonkel von Aurelevina. Verbrachte in seiner Jugend viele Jahre in Donnerbach und sammelte alte Schriften über den Norden.",
+        "motivation": "Sein Werk über die Geschichte der Weidener Grenzgeschlechter vor seinem Ableben zu vollenden."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 10,
+            "KL": 15,
+            "IN": 12,
+            "CH": 11,
+            "FF": 11,
+            "GE": 8,
+            "KO": 9,
+            "KK": 8
+        },
+        "energies": {
+            "LeP": 24,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Geschichtswissen",
+                "FW": 13
+            },
+            {
+                "name": "Sagen & Legenden",
+                "FW": 12
+            },
+            {
+                "name": "Geographie",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

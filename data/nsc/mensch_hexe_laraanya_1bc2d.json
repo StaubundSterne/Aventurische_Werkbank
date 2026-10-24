@@ -1,0 +1,130 @@
+{
+    "id": "c1f23a4b-839d-4e2b-912a-7e3f8901bc2d",
+    "source": "Spielkarte '2 Hexen aus Weiden und aus dem Rhorwhed', Wiki Aventurica (Zirkel der Schwarzen Kröte)",
+    "tags": [],
+    "general": {
+        "name": "Laraanya",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 984,
+        "alive": true,
+        "culture": "Enqui",
+        "species": "Mensch",
+        "soul-animal": "Katze",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Hexe",
+        "specification": "Eine Schöne der Nacht und ehemals im Zirkel der Schwarzen Kröte",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Weiden",
+            "Herzogtum Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Hesindian"
+        ],
+        "injection-points": "Tuur-Amash, Schwarzen Kröte, Vergessensrauch"
+    },
+    "appearance": {
+        "size": "162",
+        "weight": 61,
+        "hair": "Schwarzes, schulterlanges, ungeglättetes Haar",
+        "skin": "Helle Haut mit kleinen Sommersprossen im Nasenbereich",
+        "eyes": "Gelbgrüne Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkler Wollmantel mit abgewetzten Lederbesätzen an den Ellenbogen über leinenem Hemd",
+            "trousers": "Knöchellanger Faltenrock aus dunklem Wollstoff",
+            "footwear": "Schwarze Lederstiefel mit metallenen Schnallen",
+            "jewellery": "Keine",
+            "things": "Holzboxen für getrocknete Kräuter, Beutel mit getrockneten Kräuterblättern",
+            "weapons": "Messer in genähter Lederscheide"
+        },
+        "distinguishing_features": "Abgewetzte Lederbesätze am Wollmantel; Begleitung durch eine Katze. Das dunkel gefleckte, kurze Fell schimmert matt; aus der Kehle dringt ein leises, durchgängiges Schnurren."
+    },
+    "personality": {
+        "traits": [
+            "Zurückhaltend",
+            "Naturverbunden",
+            "Nachtragend",
+            "Pragmatisch",
+            "Vorsichtig"
+        ],
+        "actual-mood": [
+            "Spöttisch"
+        ],
+        "family-background": "Geburtsort Enqui. Schwester Stina, Hexe im Blautannzirkel. Nach dem Scheitern der Beschwörung des Dämonen Tuur-Amash durch Glorana und dem Tod der Zirkelschwestern verließ Laraanya den Rorwhed..",
+        "motivation": "Austausch von Wissen mit ihrer Schwester Stina und Kompensieren ihrer Enttäuschung übe ihren aufgelösten Zirkel."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 13,
+            "KL": 12,
+            "IN": 14,
+            "CH": 14,
+            "FF": 13,
+            "GE": 12,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 42,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Kräuterkunde",
+                "FW": 11
+            },
+            {
+                "name": "Orientierung",
+                "FW": 9
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 10
+            },
+            {
+                "name": "Magiekunde",
+                "FW": 8
+            },
+            {
+                "name": "Fährtenlesen",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Blick in die Gedanken",
+                "FW": 8
+            },
+            {
+                "name": "Große Verwirrung",
+                "FW": 9
+            },
+            {
+                "name": "Hexenblick",
+                "FW": 10
+            },
+            {
+                "name": "Satuarias Herrlichkeit",
+                "FW": 7
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

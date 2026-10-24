@@ -1,0 +1,118 @@
+{
+    "id": "8f3b2a10-9c4d-4e5f-8a1b-2c3d4e5f6a7b",
+    "source": "https://de.wiki-aventurica.de/wiki/Thundra_Eliwalgar_vom_Rathilstein",
+    "tags": [],
+    "general": {
+        "name": "Thundra Eliwalgar vom Rathilstein",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 953,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Steinadler",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Geweihter",
+        "specification": "Schwertbruder des Donnerbacher Rondratempels",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Burg Rathilstein",
+            "Festung Donnerhall"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Fredegis"
+        ],
+        "injection-points": "Traditionskonflikt, Werk Neunauge, Rondra-Kodex"
+    },
+    "appearance": {
+        "size": "184",
+        "weight": 75,
+        "hair": "Ergrauendes, streng im Nacken geflochtenes Haar",
+        "skin": "Wettergegerbte, narbige Haut",
+        "eyes": "Scharf blickende, graugrüne Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Stählerner Kettenpanzer über rotem Waffenrock mit eingesticktem Rondradonnerkeil",
+            "trousers": "Dunkelgraue Lederhose",
+            "footwear": "Schwere, beschlagene Lederstiefel",
+            "jewellery": "Ein abgewetztes Rondra-Amulett aus Brünierstahl",
+            "things": "Ein Schleifstein und Lederpflegeöl",
+            "weapons": "Zweihändiger Rondrakamm"
+        },
+        "distinguishing_features": "Eine schmale Narbe über der linken Wange und eine kompromisslose, militärisch-strenge Haltung."
+    },
+    "personality": {
+        "traits": [
+            "Unbeugsam",
+            "Traditionsbewusst",
+            "Rondragläubig",
+            "Pflichtbewusst",
+            "Streng"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Veteran der Ogerschlacht an der Trollpforte; enger Vertrauter des Hauses Donnerhall in Donnerbach.",
+        "motivation": "Verteidigung der traditionellen rondrianischen Tugenden, Aufrechterhaltung der Ordnung in Donnerbach gegen Aufwieglung."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 15,
+            "KL": 12,
+            "IN": 13,
+            "CH": 13,
+            "FF": 10,
+            "GE": 14,
+            "KO": 15,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 40,
+            "AsP": 0,
+            "KaP": 42
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zweihandschwerter",
+                "FW": 15
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 12
+            },
+            {
+                "name": "Götter & Kulte",
+                "FW": 14
+            },
+            {
+                "name": "Überreden",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": [
+            {
+                "name": "Schwertsegen",
+                "FW": 12
+            },
+            {
+                "name": "Ehrenhaftes Duell",
+                "FW": 11
+            }
+        ]
+    },
+    "session-notes": ""
+}

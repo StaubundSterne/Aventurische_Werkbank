@@ -1,0 +1,109 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "4310 Aventurische Namen, Das Orkland",
+    "tags": [],
+    "general": {
+        "name": "Mira Regenbogenblick",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 986,
+        "alive": true,
+        "culture": "Mittelländisch (Svellttal)",
+        "species": "Mensch",
+        "soul-animal": "Wiedehopf",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Novizin der Tsa / Krankenpflegerin",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Tiefhusen",
+            "Gashok"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Findelkinder, Pazifismus-Dilemma, Svellt-Kolorit"
+    },
+    "appearance": {
+        "size": 162,
+        "weight": 54,
+        "hair": "Kurz geschoren und mit bunten Kreidestrichen bemalt",
+        "skin": "Sommersprossig und vom Nordwind gegerbt",
+        "eyes": "Hellblau, fast wässrig, wirken immer ein wenig feucht",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ein grober Kittel, der mit unzähligen bunten Flicken übersät ist",
+            "trousers": "Keine (lange Tunika)",
+            "footwear": "Barfuß, trotz der Kühle in den Tempelhallen",
+            "jewellery": "Ein Armband aus bunten Glasmurmeln",
+            "things": "Ein Korb mit frischen Blumen und heilenden Kräutern",
+            "weapons": "Ein Wanderstab, der mit bunten Bändern umwickelt ist"
+        },
+        "distinguishing_features": "Sie summt ständig eine Melodie, die keinen Anfang und kein Ende zu haben scheint."
+    },
+    "personality": {
+        "traits": [
+            "Naiv",
+            "Aufopferungsvoll",
+            "Kindlich",
+            "Konfus",
+            "Furchtlos"
+        ],
+        "actual-mood": [
+            "Heiter"
+        ],
+        "family-background": "Wuchs als Findelkind im Tempel auf; kennt ihre leiblichen Eltern nicht; betrachtet alle Waisen als Geschwister.",
+        "motivation": "Möchte jedem Kranken in Lowangen ein Lächeln schenken, egal wie finster die Zeiten sind."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 10,
+            "IN": 13,
+            "CH": 14,
+            "FF": 15,
+            "GE": 12,
+            "KO": 12,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 28
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 10
+            },
+            {
+                "name": "Singen",
+                "FW": 9
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 7
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Kleiner Segen",
+                "FW": 8
+            }
+        ]
+    },
+    "session-notes": ""
+}

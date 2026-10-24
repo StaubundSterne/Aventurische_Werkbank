@@ -3,98 +3,1664 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Aventurische Werkbank 2.0</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Werkbank - Master Screen (PoC 6)</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --sidebar-bg: #1e1e1e;
+            --card-bg: #f4e4bc;
+            --card-border: #8b5e3c;
+            --text-main: #2b1d0e;
+            --accent: #8b0000;
+            /* Aventurisches Rot */
+            --highlight: #d4a017;
+            --status-dead: #4a4a4a;
+            --status-magic: #1e3a8a;
+            --status-god: #b45309;
+            --status-noble: #7f1d1d;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Styling für die Master-Navigation */
+        .master-nav {
+            background-color: #000;
+            padding: 12px 20px;
+            border-bottom: 2px solid var(--highlight);
+            /* Nutzt deine Gold-Variable */
+            display: flex;
+            gap: 30px;
+            font-size: 0.85em;
+            font-family: 'Segoe UI', sans-serif;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .master-nav a {
+            color: var(--highlight);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.8;
+        }
+
+        .master-nav a:hover {
+            opacity: 1;
+            color: #fff;
+            text-shadow: 0 0 8px var(--highlight);
+            transform: translateY(-1px);
+        }
+
+        /* Optional: Kennzeichnung der aktiven Seite */
+        .master-nav a.active {
+            opacity: 1;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 2px;
+        }
+
+        /* --- SIDEBAR (FILTER & LISTE) --- */
+        .sidebar {
+            width: 320px;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #333;
+            padding: 15px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        .global-controls {
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+        }
+
+        /* Versteckt den Filterbereich standardmäßig */
+        .filter-drawer {
+            width: 90%;
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+        }
+
+        .filter-drawer.open {
+            display: block;
+        }
+
+        .toggle-filter-btn {
+            width: 90%;
+            background: none;
+            border: 1px solid #555;
+            cursor: pointer;
+            font-size: 0.8em;
+            padding: 2px 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .toggle-filter-btn:hover {
+            color: var(--highlight);
+            border-color: var(--highlight);
+        }
+
+        .search-box {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .filter-btn {
+            border: 1px solid #555;
+            color: #333;
+            font-size: 0.75em;
+            padding: 4px 8px;
+            cursor: pointer;
+            border-radius: 10px;
+            user-select: none;
+        }
+
+        .filter-btn.active {
+            background: var(--highlight);
+            color: #000;
+            border-color: var(--highlight);
+            font-weight: bold;
+        }
+
+        #nscList {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        .list-item {
+            padding: 8px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+        }
+
+        .list-item:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .list-item strong {
+            display: block;
+        }
+
+        .list-item small {
+            color: var(--accent);
+        }
+
+        /* --- MAIN DECK (KARTEN) --- */
+        .deck {
+            flex-grow: 1;
+            overflow-x: hidden;
+            /* Horizontal zu */
+            overflow-y: auto;
+            /* Vertikal auf */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* Erlaubt das Umbrechen in die nächste Zeile */
+            padding: 20px;
+            gap: 20px;
+            height: 100%;
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+            align-content: flex-start;
+            /* Karten kleben oben am Start */
+        }
+
+        /* --- NSC KARTE --- */
+        .card {
+            min-width: 450px;
+            width: 450px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 4px double var(--card-border);
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            scroll-snap-align: center;
+            position: relative;
+            transition: height 0.2s ease-out;
+            /* Sanftes Einklappen */
+            cursor: default;
+            width: 380px;
+            flex-shrink: 0;
+            font-family: 'Georgia', serif;
+            /* Serif für den In-Game Look */
+        }
+
+        .card.collapsed {
+            /* Nur Header sichtbar */
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .card.collapsed .card-body,
+        .card.collapsed .nsc-status-row,
+        .card.collapsed .status-bar {
+            display: none;
+            /* Versteckt den Rest im minimierten Zustand */
+        }
+
+        /* PRIO 1: HEADER */
+        .card-header {
+            padding: 10px 15px;
+            border-bottom: 2px solid var(--card-border);
+            background: rgba(139, 69, 19, 0.1);
+            cursor: move;
+            /* Zeigt an, dass man hier ziehen kann */
+        }
+
+        /* Visuelles Feedback beim Ziehen */
+        .card.dragging {
+            opacity: 0.4;
+            border: 2px dashed var(--highlight);
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 1.4em;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        /* Container für die Injektion */
+        .injection-container {
+            color: var(--accent);
+            margin-top: 5px;
+            min-height: 1.2em;
+            /* Verhindert, dass das Feld bei 0 Zeichen kollabiert */
+            display: block;
+            width: 100%;
+        }
+
+        /* Macht leere editierbare Felder sichtbar */
+        [contenteditable="true"]:empty:before {
+            content: attr(placeholder);
+            color: rgba(139, 0, 0, 0.4);
+            /* Blasses Aventurisch-Rot */
+            font-style: italic;
+            cursor: text;
+        }
+
+        /* Verhindert, dass das Feld bei Klick wegspringt */
+        [contenteditable="true"] {
+            display: inline-block;
+            min-width: 20px;
+            outline: none;
+        }
+
+        /* Hilfestellung, wenn das Feld leer ist */
+        [contenteditable="true"]:empty:before {
+            content: attr(placeholder);
+            color: rgba(139, 0, 0, 0.3);
+            /* Blasses Rot */
+            display: block;
+        }
+
+        /* PRIO 2: STATUS LEISTE */
+        /* Kompakter Status-Bereich */
+        .nsc-status-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 2px;
+            padding: 5px 10px;
+            border-top: 1px dashed rgba(0, 0, 0, 0.1);
+        }
+
+        .status-emoji {
+            cursor: pointer;
+            filter: grayscale(1);
+            opacity: 0.3;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        /* Wenn aktiv, dann farbig und deutlich */
+        .status-emoji.active {
+            filter: grayscale(0);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* Der Speichern-Button als Teil der Leiste */
+        .save-btn-inline {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: auto;
+            /* Schiebt den Speichern-Button nach ganz rechts */
+            filter: none;
+            opacity: 1;
+        }
+
+        .status-bar {
+            padding: 5px 15px;
+            background: rgba(0, 0, 0, 0.05);
+            display: flex;
+            gap: 10px;
+            font-size: 0.8em;
+            align-items: center;
+            border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+        }
+
+        .status-toggle {
+            cursor: pointer;
+            opacity: 0.3;
+            font-weight: bold;
+        }
+
+        .status-toggle.active {
+            opacity: 1;
+        }
+
+        .s-dead.active {
+            color: var(--status-dead);
+            text-decoration: line-through;
+        }
+
+        .s-magic.active {
+            color: var(--status-magic);
+        }
+
+        .s-god.active {
+            color: var(--status-god);
+        }
+
+        .s-noble.active {
+            color: var(--status-noble);
+        }
+
+        /* CONTENT BEREICH */
+        .card-body {
+            padding: 0 15px 15px 15px;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        /* NOTES (PRIO 1 highlight) */
+        .notes-section {
+            margin-top: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .notes-section[open] {
+            background: rgba(255, 255, 255, 0.6);
+            border-left: 4px solid var(--accent);
+            padding-bottom: 10px;
+        }
+
+        .notes-active {
+            border: 2px solid var(--accent);
+            background: rgba(255, 0, 0, 0.05);
+        }
+
+        .notes-active summary {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* SECTIONS */
+        .section-block {
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            border-bottom: 1px dashed var(--text-main);
+            margin-bottom: 5px;
+            font-variant: small-caps;
+            font-size: 1.1em;
+            color: var(--accent);
+        }
+
+        .kv-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 5px;
+            font-size: 0.9em;
+        }
+
+        .kv-label {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* PRIO 5: CRUNCH (Werte) */
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+
+        .stat-box {
+            display: flex;
+            flex-direction: column;
+            width: 12%;
+        }
+
+        .stat-val {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* HELPER */
+        [contenteditable]:hover {
+            background: rgba(255, 255, 255, 0.5);
+            outline: 1px dotted #888;
+        }
+
+        [contenteditable]:focus {
+            background: white;
+            outline: 2px solid var(--accent);
+        }
+
+        summary {
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            padding: 5px;
+        }
+
+        details {
+            margin-bottom: 5px;
+        }
+
+        /* SAVE BUTTON */
+        .save-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #2e7d32;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.8em;
+            border-radius: 3px;
+        }
+
+        .save-btn:hover {
+            background: #1b5e20;
+        }
+
+        .close-card {
+            position: absolute;
+            top: 10px;
+            right: 90px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.2em;
+            color: #381d06;
+        }
+
+        /* Schließen-Button im Header oben rechts */
+        .close-card-top {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            color: var(--text-main);
+            opacity: 0.5;
+        }
+
+        .close-card-top:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
+
+        /* START OVERLAY */
+        #startOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .big-btn {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            cursor: pointer;
+            background: var(--accent);
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* --- Sektions-Blöcke & Details --- */
+        .section-block summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+        }
+
+        .card-body-content {
+            padding-top: 10px;
+        }
+
+        /* --- Gruppen-Boxen (Eigenschaften) --- */
+        .attributes-box {
+            border: 1px solid rgba(139, 94, 60, 0.3);
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        /* --- Editierbare Werte & Textareas --- */
+        [contenteditable="true"] {
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.5);
+            /* Macht alle Daten fett */
+            outline: none;
+            transition: background 0.2s;
+        }
+
+        [contenteditable="true"]:hover {
+            background: rgba(255, 255, 255, 0.678);
+        }
+
+        .subtitle {
+            min-height: 20px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Entfernt den Standard-Browser-Rand und setzt deinen Akzent */
+        textarea:focus,
+        [contenteditable]:focus {
+            outline: none;
+            /* Deaktiviert das Blau */
+            border: 1px solid var(--accent) !important;
+            /* Dein Aventurisches Rot */
+            box-shadow: 0 0 5px rgba(139, 0, 0, 0.4);
+            /* Ein sanftes Glühen */
+        }
+
+        /* Speziell für die Textareas in der Karte */
+        .notes-area:focus {
+            background: rgba(255, 255, 255, 0.5);
+            /* Wird beim Tippen etwas heller */
+        }
+
+        .notes-area {
+            width: 100%;
+            min-height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            font-family: 'Georgia', serif;
+            font-size: 0.95em;
+            padding: 10px;
+            box-sizing: border-box;
+            resize: vertical;
+            display: block;
+        }
+
+        /* --- Hervorhebung für Chronik --- */
+        .notes-active summary span {
+            color: var(--accent);
+        }
+
+        .notes-active-indicator {
+            color: var(--accent);
+            font-size: 1.2em;
+        }
+
+        /* --- Trenner --- */
+        .card-hr {
+            border: 0;
+            border-top: 1px solid rgba(139, 69, 19, 0.2);
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="workbench">
-
-        <header class="context collapsible" id="main-header">
-            <div class="context-slots">
-                <div class="slot" id="campaign">
-                    <span class="indicator"></span> Kampagne
-                </div>
-                <div class="slot" id="episodes">
-                    <span class="indicator"></span> Episoden
-                </div>
-                <div class="slot" id="recaps">
-                    <span class="indicator"></span> Recaps
-                </div>
-            </div>
-
-            <div class="weight-controls">
-                <div class="control-group">
-                    <label>Kampagne</label>
-                    <input type="range" id="weight-campaign" min="1" max="10" value="1">
-                </div>
-                <div class="control-group">
-                    <label>Episoden</label>
-                    <input type="range" id="weight-episodes" min="1" max="10" value="3">
-                </div>
-                <div class="control-group">
-                    <label>Recaps</label>
-                    <input type="range" id="weight-recaps" min="1" max="10" value="4">
-                </div>
-            </div>
-
-            <button id="toggle-header">&#9650;</button>
-
-        </header>
-
-        <main class="workbench-layout">
-
-            <aside class="ingame-information stream-column" id="aside-ingame-information">
-                <button class="toggle-btn" id="toggle-ingame-information">&#9664;</button>
-                <div id="ingame-information-stream" class="magnet-stream">
-                    <div class="info-card">
-                        <div class="score-badge">0</div>
-                        <h3>TITEL HANDREICHUNG</h3>
-                    </div>
-                </div>
-            </aside>
-
-            <section class="focus-area">
-                <div class="situation-input-container">
-                    <textarea id="situation-input" placeholder="Aktuelle Spielsituation (x 5.0)..."></textarea>
-                </div>
-
-                <div id="workbench-canvas" class="card-display">
-                </div>
-            </section>
-
-            <aside class="resource stream-column" id="aside-resource">
-                <button class="toggle-btn" id="toggle-resource">&#9654;</button>
-                <div id="NSC-stream" class="magnet-stream">
-                    <div class="info-card">
-                        <div class="score-badge">0</div>
-                        <h3>NAME NSC</h3>
-                    </div>
-                </div>
-
-                <div id="venue-stream" class="magnet-stream collapsible">
-                    <div class="info-card">
-                        <div class="score-badge">0</div>
-                        <h3>SCHAUPLATZ</h3>
-                    </div>
-                </div>
-
-                <div id="items-stream" class="magnet-stream">
-                    <div class="info-card">
-                        <div class="score-badge">0</div>
-                        <h3>GEGENSTAND</h3>
-                    </div>
-                </div>
-            </aside>
-
-        </main>
-
+    <div id="startOverlay">
+        <h1>Die Aventurische Werkbank</h1>
+        <p>Bitte wähle deinen NSC-Ordner (JSON Dateien)</p>
+        <button class="big-btn" id="btnLoad">📂 Ordner öffnen</button>
     </div>
 
-    <script src="js/magnet-engine.js" type="module"></script>
-    <script src="js/ui-controller.js" type="module"></script>
+    <nav
+        style="background: #000; padding: 10px; border-bottom: 1px solid #d4a017; display: flex; gap: 20px; font-size: 0.8em;">
+        <a href="werkbank_poc_6.3.html" style="color: #d4a017; text-decoration: none; font-weight: bold;">📜 ZUM
+            MASTER-SCREEN</a>
+        <a href="nsc_fabrik_2.html" style="color: #d4a017; text-decoration: none; font-weight: bold;">⚒️ ZUR
+            NSC-SCHMIEDE</a>
+    </nav>
 
+    <div style="display: flex; flex-grow: 1; overflow: hidden; width: 100%;">
+
+        <div class="sidebar">
+            <input type="text" class="search-box" id="searchInput" placeholder="Suche (z.B. Zwerg Schmied)..."
+                onkeyup="filterList()">
+
+            <button class="toggle-filter-btn" onclick="toggleFilterDrawer()">⚙️ Filter & Optionen</button>
+
+            <div id="filterDrawer" class="filter-drawer">
+                <label style="font-size:0.8em; color:#888;">📅 Aktuelles Jahr (BF)</label>
+                <div style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">
+                    <input type="number" id="globalYear" value="1009"
+                        style="width:60px; background:#111; border:1px solid #555; color:white; padding:5px;">
+                </div>
+
+                <label style="font-size:0.8em; color:#888;">🛡️ Helden-Bezug (ODER)</label>
+                <div class="filter-tags" id="scFilterGroup">
+                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Adarell')">Adarell</span>
+                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Fredegis')">Fredegis</span>
+                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Jost')">Jost</span>
+                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Hesindian')">Hesindian</span>
+                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Şahin')">Şahin</span>
+                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Aurelina Violanta')">Aurelina</span>
+                </div>
+
+                <label style="font-size:0.8em; color:#888; margin-top:10px; display:block;">🧪 Status-Filter</label>
+                <div class="filter-tags">
+                    <span class="filter-btn" onclick="toggleFilter(this, 'general.canonical', true)"> 📚 </span>
+                    <span class="filter-btn" onclick="toggleFilter(this, 'general.alive', false)"> 💀 </span>
+                    <span class="filter-btn" onclick="toggleFilter(this, 'profession.magical', true)"> ✨ </span>
+                    <span class="filter-btn" onclick="toggleFilter(this, 'profession.clerical', true)">🕯️ </span>
+                    <span class="filter-btn" onclick="toggleNotesFilter(this)">📝 </span>
+                </div>
+            </div>
+
+            <div id="nscList"></div>
+        </div>
+
+        <div class="deck" id="cardDeck"></div>
+
+        <script>
+            let nscDatabase = [];
+            let openCards = new Set();
+            let dirHandle = null;
+            let currentYear = 1009;
+            let activeFilters = {};
+
+            // --- 1. SETUP & LOADING (CLOUD-MODUS VIA GITHUB) ---
+
+            // Beim Start der Seite direkt aus der Cloud laden (oder über den Button)
+
+            // Beim Klick auf den Button ebenfalls manuell laden
+            document.getElementById('btnLoad').addEventListener('click', async () => {
+                await loadNscsFromCloud();
+            });
+
+            // Automatisch beim Seitenaufruf ausführen
+            document.addEventListener('DOMContentLoaded', () => {
+                loadNscsFromCloud();
+            });
+
+            async function loadNscsFromCloud() {
+                nscDatabase = [];
+
+                try {
+                    // --- SCHRITT A: Automatische Dateierkennung über die GitHub-API ---
+                    // WICHTIG: Ersetze 'DEIN_GITHUB_BENUTZERNAME' und 'DEIN_REPO_NAME' mit deinen echten Daten!
+                    const githubUser = "StaubundSterne";
+                    const repoName = "NSC-Viewer";
+                    const apiUrl = `https://api.github.com/repos/${githubUser}/${repoName}/contents/nsc`;
+
+                    const response = await fetch(apiUrl);
+                    if (!response.ok) throw new Error("GitHub-Verzeichnis konnte nicht automatisch ausgelesen werden.");
+
+                    const files = await response.json();
+
+                    // Filtere alle Dateien heraus, die auf .json enden
+                    const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+
+                    // Lade jede gefundene NSC-Datei automatisch herunter
+                    for (const fileObj of jsonFiles) {
+                        try {
+                            const fileRes = await fetch(fileObj.download_url);
+                            if (!fileRes.ok) continue;
+
+                            const json = await fileRes.json();
+                            json._filename = fileObj.name; // Speichert den Dateinamen für spätere Updates
+                            nscDatabase.push(json);
+                        } catch (err) {
+                            console.warn(`Konnte NSC ${fileObj.name} nicht laden:`, err);
+                        }
+                    }
+
+                } catch (err) {
+                    console.warn("API-Abruf fehlgeschlagen (evtl. Rate-Limit oder lokaler Test). Nutze Fallback:", err);
+
+                    // --- SCHRITT B: Manueller Fallback (falls die API blockiert wird) ---
+                    const fallbackFiles = [
+                        "gerbold_wackerstein.json",
+                        "brandan_finsterblick.json"
+                    ];
+
+                    for (const filename of fallbackFiles) {
+                        try {
+                            const res = await fetch(`./nsc/${filename}`);
+                            if (res.ok) {
+                                const json = await res.json();
+                                json._filename = filename;
+                                nscDatabase.push(json);
+                            }
+                        } catch (e) {
+                            console.warn(`Fallback konnte ${filename} nicht laden.`);
+                        }
+                    }
+                }
+
+                // Start-Overlay ausblenden und Liste rendern
+                document.getElementById('startOverlay').style.display = 'none';
+                filterList();
+            }
+
+            // --- 2. LISTE & FILTER ---
+            function toggleFilter(btn, key, val) {
+                btn.classList.toggle('active');
+                if (btn.classList.contains('active')) {
+                    activeFilters[key] = val;
+                } else {
+                    delete activeFilters[key];
+                }
+                filterList();
+            }
+
+            let activeSCFilters = new Set();
+
+            function toggleSCFilter(btn, scName) {
+                btn.classList.toggle('active');
+                if (btn.classList.contains('active')) {
+                    activeSCFilters.add(scName);
+                } else {
+                    activeSCFilters.delete(scName);
+                }
+                filterList();
+            }
+
+            function filterList() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const searchTokens = searchInput.split(/\s+/).filter(t => t.length > 0);
+
+                const filtered = nscDatabase.filter(nsc => {
+                    // 1. Notizen-Filter (Neu hinzugefügt)
+                    if (filterOnlyWithNotes && (!nsc['session-notes'] || nsc['session-notes'].length === 0)) return false;
+
+                    // 2. Token-Volltextsuche
+                    if (searchTokens.length > 0) {
+                        const fullText = JSON.stringify(nsc).toLowerCase();
+                        const matchesAllTokens = searchTokens.every(token => fullText.includes(token));
+                        if (!matchesAllTokens) return false;
+                    }
+
+                    // 3. Globale Filter (UND)
+                    for (let [path, expectedVal] of Object.entries(activeFilters)) {
+                        const actualVal = path.split('.').reduce((obj, key) => obj?.[key], nsc);
+                        if (actualVal !== expectedVal) return false;
+                    }
+
+                    // 4. SC-Filter (ODER)
+                    if (activeSCFilters.size > 0) {
+                        const nscScArray = nsc['sc-inject']?.sc || [];
+                        const hasMatch = [...activeSCFilters].some(scName => nscScArray.includes(scName));
+                        if (!hasMatch) return false;
+                    }
+
+                    return true;
+                });
+
+                renderFilteredList(filtered);
+            }
+
+            // Anzeige der NSC-Liste
+            function renderFilteredList(filtered) {
+                const listEl = document.getElementById('nscList');
+                listEl.innerHTML = "";
+
+                filtered.sort((a, b) => (a.profession?.category || '').localeCompare(b.profession?.category || '') || a.general.name.localeCompare(b.general.name));
+
+                filtered.forEach(nsc => {
+                    const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
+
+                    // Prüft jetzt einfach: Ist Text da und nicht nur Leerzeichen?
+                    const hasNotes = typeof nsc['session-notes'] === 'string' && nsc['session-notes'].trim().length > 0;
+                    const isCanon = nsc.general?.canonical === true;
+
+                    const div = document.createElement('div');
+                    div.className = 'list-item';
+                    div.innerHTML = `
+            <strong>${nsc.general?.name || 'Unbenannt'}${isCanon ? ' 📚 ' : ''}${hasNotes ? ' 📝 ' : ''}</strong>
+            <small>${nsc.profession?.category || '???'} | ${age} | ${nsc.general?.species || ''} (${nsc.general?.culture || ''})</small>
+        `;
+
+                    div.onclick = () => createCard(nsc);
+                    listEl.appendChild(div);
+                });
+            }
+
+            // Öffnet/Schließt das Filter-Menü
+            function toggleFilterDrawer() {
+                document.getElementById('filterDrawer').classList.toggle('open');
+            }
+
+            // Spezieller Filter für Session Notes
+            let filterOnlyWithNotes = false;
+            function toggleNotesFilter(btn) {
+                btn.classList.toggle('active');
+                filterOnlyWithNotes = btn.classList.contains('active');
+                filterList();
+            }
+
+            // --- 3. DIE WERKZEUGE (KARTEN ERSTELLEN) ---
+            function createCard(nsc) {
+                // Prüfen, ob Karte schon offen ist
+                if (openCards.has(nsc.id)) {
+                    const existing = document.getElementById(`card-${nsc.id}`);
+                    if (existing) existing.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                    return;
+                }
+                openCards.add(nsc.id);
+
+                const deck = document.getElementById('cardDeck');
+                const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
+                const hasNotes = typeof nsc['session-notes'] === 'string' && nsc['session-notes'].trim().length > 0;
+
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.id = `card-${nsc.id}`;
+
+                card.innerHTML = `
+                    <div class="card-header" ondblclick="this.parentElement.classList.toggle('collapsed')">
+                        <button class="close-card-top" onclick="removeCard('${nsc.id}')" title="Schließen">✕</button>
+
+                        <h2 contenteditable="true" oninput="upd(this, '${nsc.id}', 'general.name')">${nsc.general.name}</h2>
+                        
+                        <div class="sub-header">
+                            <span style="font-size:1.3em" contenteditable="true" oninput="upd(this, '${nsc.id}', 'profession.category')">${nsc.profession.category}</span>
+                            <span style="margin-left: 8px;">
+                            (${age} Jahre, ${nsc.general.gender})
+                            </span>
+                        </div>                        
+                        <div style="color: var(--accent); margin-top: 2px;">
+                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'profession.specification')">${nsc.profession.specification || 'Spezialisierung...'}</span>
+                        </div>                       
+
+                    </div>
+
+                    <div class="card-body">
+
+                            <div class="nsc-status-row">
+                                    <span class="status-emoji ${!nsc.general.alive ? 'active' : ''}" 
+                                        title="Tot" onclick="toggleEmoji('${nsc.id}', 'general.alive', this, true)">💀</span>
+                                    
+                                    <span class="status-emoji ${nsc.profession.magical ? 'active' : ''}" 
+                                        title="Magisch" onclick="toggleEmoji('${nsc.id}', 'profession.magical', this)">✨</span>
+                                    
+                                    <span class="status-emoji ${nsc.profession.clerical ? 'active' : ''}" 
+                                        title="Geweiht" onclick="toggleEmoji('${nsc.id}', 'profession.clerical', this)">🕯️</span>
+                                    
+                                    <span class="status-emoji ${nsc.profession.noble ? 'active' : ''}" 
+                                        title="Adlig" onclick="toggleEmoji('${nsc.id}', 'profession.noble', this)">👑</span>
+
+                                    <span class="status-emoji ${nsc.general.canonical ? 'active' : ''}" 
+                                        title="Kanonisch" onclick="toggleEmoji('${nsc.id}', 'general.canonical', this)">📚</span>
+
+                                    <button class="save-btn-inline" onclick="exportNscToHtml('${nsc.id}')" title="Als HTML exportieren" style="margin-left: auto;">🪪</button>
+                                    <button class="save-btn-inline" onclick="copyNscToClipboard('${nsc.id}', this)" title="JSON in Zwischenablage kopieren">📤</button>
+                                    <button class="save-btn-inline" onclick="pasteJsonToNsc('${nsc.id}', this)" title="JSON aus Zwischenablage ergänzen">📥</button>   
+                                    <button class="save-btn-inline" onclick="saveFile('${nsc.id}')" title="Speichern">💾</button>
+                            </div>
+
+                            <details class="section-block" open>
+
+                                <summary>
+                                    <span>💉 Anregungen und Ideen</span>
+                                </summary>
+
+                                <div class="sub-header" style="margin-top: 5px; border-top: 1px solid rgba(139,69,19,0.2); padding-top: 5px; display: flex; flex-wrap: wrap; gap: 4px;">
+                                    ${['Adarell', 'Fredegis', 'Jost', 'Hesindian', 'Şahin', 'Aurelevina Violanta'].map(name => {
+                    const isActive = nsc['sc-inject']?.sc?.includes(name);
+                    return `
+                                            <button class="filter-btn ${isActive ? 'active' : ''}" 
+                                                    style="font-size: 0.7em; padding: 2px 6px;" 
+                                                    onclick="event.stopPropagation(); toggleScOnCard('${nsc.id}', '${name}', this)">
+                                                ${name.split(' ')[0]}
+                                            </button>
+                                        `;
+                }).join('')}
+                                </div>
+
+                                <div class="injection-container" style="margin-top: 8px;">
+                                    <span contenteditable="true" 
+                                        class="editable-field"
+                                        placeholder="Plot-Injektionen (injection-points)..." 
+                                        oninput="updArray(this, '${nsc.id}', 'sc-inject.injection-points')"
+                                        style="display: block; min-height: 20px; font-style: italic; color: var(--text-main); font-size: 0.9em; white-space: pre-wrap;">${Array.isArray(nsc['sc-inject']?.['injection-points'])
+                        ? nsc['sc-inject']['injection-points'].map(line => line.trim()).join('\n')
+                        : (nsc['sc-inject']?.['injection-points']?.trim() || '')
+                    }</span>
+                                </div>
+                            </details>                            
+
+                            <details class="section-block" open>
+
+                                <summary>
+                                    <span>💃 Erscheinung</span>
+                                    <span contenteditable="true" 
+                                        style="cursor: text;"
+                                        oninput="upd(this, '${nsc.id}', 'general.species')"
+                                        onclick="event.stopPropagation();">
+                                        ${nsc.general?.species || 'Spezies?'}
+                                    </span>
+                                </summary>
+                                
+                                <div class="card-body-content">
+                                    <div class="subtitle" contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.distinguishing_features')">
+                                        ${nsc.appearance?.distinguishing_features || 'Keine auffälligen Merkmale.'}
+                                    </div>
+
+                                    <div class="attributes-box">
+                                        <div class="kv-grid">
+                                            <span class="kv-label">Größe:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.size')">${nsc.appearance?.size || '-'}</span>
+                                            
+                                            <span class="kv-label">Gewicht:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.weight')">${nsc.appearance?.weight || '-'}</span>
+                                            
+                                            <span class="kv-label">Haare:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.hair')">${nsc.appearance?.hair || '-'}</span>
+                                            
+                                            <span class="kv-label">Haut:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.skin')">${nsc.appearance?.skin || '-'}</span>
+                                            
+                                            <span class="kv-label">Augen:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.eyes')">${nsc.appearance?.eyes || '-'}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="attributes-box">
+                                        <div class="kv-grid">
+                                            <span class="kv-label">Kopf:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.headgear')">${nsc.appearance?.outfit?.headgear || '-'}</span>
+                                            
+                                            <span class="kv-label">Oberteil:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.top')">${nsc.appearance?.outfit?.top || '-'}</span>
+                                            
+                                            <span class="kv-label">Beinkleid:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.trousers')">${nsc.appearance?.outfit?.trousers || '-'}</span>
+                                            
+                                            <span class="kv-label">Schuhe:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.footwear')">${nsc.appearance?.outfit?.footwear || '-'}</span>
+                                            
+                                            <span class="kv-label">Schmuck:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.jewellery')">${nsc.appearance?.outfit?.jewellery || '-'}</span>
+                                            
+                                            <span class="kv-label">Dinge:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.things')">${nsc.appearance?.outfit?.things || '-'}</span>
+                                            
+                                            <span class="kv-label">Waffen:</span>
+                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.weapons')">${nsc.appearance?.outfit?.weapons || '-'}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <hr class="card-hr">
+
+                            <details class="section-block ${hasNotes ? 'notes-active' : ''}">                     
+                                <summary>
+                                    <span>📝 Chronik</span>
+                                    ${hasNotes ? '<b class="notes-active-indicator">!</b>' : ''}
+                                </summary>
+                                <textarea class="notes-area" oninput="upd(this, '${nsc.id}', 'session-notes')" placeholder="Notizen...">${nsc['session-notes'] || ''}</textarea>
+                            </details>
+                            
+                            <hr class="card-hr">
+
+                            <details class="section-block">
+
+                                <summary>
+                                        <span>🤦‍♂️ Persönlichkeit</span>
+                                        <span contenteditable="true" 
+                                            style="opacity: 0.7; cursor: text;"
+                                            oninput="upd(this, '${nsc.id}', 'general.culture')"
+                                            onclick="event.stopPropagation();">
+                                            ${nsc.general?.culture || 'Kultur?'}
+                                        </span>
+                                </summary>
+
+                                <div class="card-body-content">
+                                    <div class="subtitle" contenteditable="true" oninput="upd(this, '${nsc.id}', 'personality.motivation')">
+                                        ${nsc.personality?.motivation || 'Keine besondere Motivation.'}
+                                    </div>
+
+                                        <div class="attributes-box">
+                                            <div class="kv-grid">
+                                                <span class="kv-label">Charakter:</span>
+                                                <span contenteditable="true" oninput="updTraits(this, '${nsc.id}')">
+                                                    ${Array.isArray(nsc.personality?.traits) ? nsc.personality.traits.join(', ') : (nsc.personality?.traits || '-')}
+                                                </span>
+                                                
+                                                <span class="kv-label">Stimmung:</span>
+                                                <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'personality.actual-mood')">${nsc.personality?.['actual-mood'] || '-'}</span>
+
+                                                <span class="kv-label">Seelentier:</span>
+                                                <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'general.soul-animal')">${nsc.general?.['soul-animal'] || '-'}</span>
+                                                
+                                                <span class="kv-label">Hintergründe:</span>
+                                                <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'personality.family-background')">${nsc.personality?.['family-background'] || '-'}</span>
+
+                                            </div>
+                                        </div>
+                                </div>
+                            </details>
+
+                            <hr class="card-hr">
+
+                            <details class="section-block">
+                                <summary>⚔️ Eigenschaften & Werte</summary>
+                                <div class="stats-row">
+                                    ${['MU', 'KL', 'IN', 'CH', 'FF', 'GE', 'KO', 'KK'].map(stat => `
+                                        <div class="stat-box">
+                                            <small>${stat}</small>
+                                            <span class="stat-val" contenteditable="true" oninput="updStat(this, '${nsc.id}', '${stat}')">
+                                                ${nsc.stats?.attributes?.[stat] || 8}
+                                            </span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </details>
+                    </div>   
+                </div>`;
+
+                // Doppelklick auf Header zum Minimieren
+                const header = card.querySelector('.card-header');
+                header.ondblclick = () => card.classList.toggle('collapsed');
+
+                // Drag & Drop Aktivierung
+                card.draggable = true;
+                card.addEventListener('dragstart', handleDragStart);
+                card.addEventListener('dragover', handleDragOver);
+                card.addEventListener('drop', handleDrop);
+                card.addEventListener('dragend', handleDragEnd);
+                deck.prepend(card);
+            }
+
+
+            function removeCard(id) {
+                const card = document.getElementById(`card-${id}`);
+                if (card) card.remove();
+                openCards.delete(id);
+            }
+
+            // UNIVERSAL UPDATE HELPER
+            function upd(el, id, path) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                // Check ob Textarea (value) oder Div (innerText)
+                const val = (el.tagName === 'TEXTAREA') ? el.value : el.innerText;
+
+                const keys = path.split('.');
+                let obj = nsc;
+                for (let i = 0; i < keys.length - 1; i++) {
+                    if (!obj[keys[i]]) obj[keys[i]] = {};
+                    obj = obj[keys[i]];
+                }
+                obj[keys[keys.length - 1]] = val;
+            }
+
+            function updArr(el, id, path) {
+                const val = el.innerText.split(',').map(s => s.trim()).filter(s => s);
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (path === 'tags') nsc.tags = val;
+                if (path === 'personality.traits') {
+                    if (!nsc.personality) nsc.personality = {};
+                    nsc.personality.traits = val;
+                }
+            }
+
+            function updTraits(el, id) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                // Erstellt aus "Mutig, Klug, Stolz" wieder ["Mutig", "Klug", "Stolz"]
+                const traitsArray = el.innerText.split(',')
+                    .map(t => t.trim())
+                    .filter(t => t.length > 0);
+
+                if (!nsc.personality) nsc.personality = {};
+                nsc.personality.traits = traitsArray;
+            }
+
+            function updStat(el, id, key) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (nsc && nsc.stats && nsc.stats.attributes) {
+                    nsc.stats.attributes[key] = parseInt(el.innerText) || 0;
+                }
+            }
+
+            function toggleEmoji(id, path, el, isInverted = false) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                const keys = path.split('.');
+                let obj = nsc;
+                for (let i = 0; i < keys.length - 1; i++) obj = obj[keys[i]];
+                const key = keys[keys.length - 1];
+
+                obj[key] = !obj[key];
+
+                // Logik für 'Tot': Icon ist aktiv (farbig), wenn alive = false
+                if (isInverted) {
+                    el.classList.toggle('active', !obj[key]);
+                } else {
+                    el.classList.toggle('active', obj[key]);
+                }
+            }
+
+            // Speichern
+            async function saveFile(id) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc || !dirHandle) return;
+                const copy = JSON.parse(JSON.stringify(nsc));
+                const fname = copy._filename;
+                delete copy._filename;
+
+                try {
+                    const fh = await dirHandle.getFileHandle(fname);
+                    const w = await fh.createWritable();
+                    await w.write(JSON.stringify(copy, null, 4));
+                    await w.close();
+                    const btn = document.querySelector(`#card-${id} .save-btn-inline`);
+                    btn.innerText = "✅"; setTimeout(() => btn.innerText = "💾", 1500);
+                } catch (e) { alert(e.message); }
+            }
+
+            let dragSrcEl = null;
+
+            function handleDragStart(e) {
+                dragSrcEl = this;
+                this.classList.add('dragging');
+                e.dataTransfer.effectAllowed = 'move';
+            }
+
+            function handleDragOver(e) {
+                if (e.preventDefault) e.preventDefault();
+                return false;
+            }
+
+            function handleDrop(e) {
+                if (e.stopPropagation) e.stopPropagation();
+                if (dragSrcEl !== this) {
+                    const deck = document.getElementById('cardDeck');
+                    // Ermittelt, ob vor oder nach das Element gedroppt wurde
+                    const allCards = [...deck.querySelectorAll('.card')];
+                    const hoverIdx = allCards.indexOf(this);
+                    const dragIdx = allCards.indexOf(dragSrcEl);
+
+                    if (dragIdx < hoverIdx) {
+                        this.after(dragSrcEl);
+                    } else {
+                        this.before(dragSrcEl);
+                    }
+                }
+                return false;
+            }
+
+            function handleDragEnd() {
+                this.classList.remove('dragging');
+            }
+
+            function toggleScOnCard(id, scName, el) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                // Wir stellen sicher, dass das gesamte sc-inject Objekt 
+                // und beide Unterfelder (sc und injection-points) existieren.
+                if (!nsc['sc-inject']) {
+                    nsc['sc-inject'] = {
+                        'sc': [],
+                        'injection-points': ''
+                    };
+                }
+
+                // Falls sc-inject existiert, aber die Felder darin fehlen (z.B. aus altem JSON)
+                if (!Array.isArray(nsc['sc-inject'].sc)) nsc['sc-inject'].sc = [];
+                if (nsc['sc-inject']['injection-points'] === undefined) {
+                    nsc['sc-inject']['injection-points'] = '';
+                }
+
+                const index = nsc['sc-inject'].sc.indexOf(scName);
+                if (index > -1) {
+                    nsc['sc-inject'].sc.splice(index, 1);
+                    el.classList.remove('active');
+                } else {
+                    nsc['sc-inject'].sc.push(scName);
+                    el.classList.add('active');
+                }
+
+                // Sofortiger Refresh der Anzeige (Sidebar-Filter)
+                filterList();
+            }
+
+            function updArray(el, id, path) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                // Wir nutzen innerText, trimmen jede Zeile und entfernen komplett leere Zeilen
+                const lines = el.innerText.split('\n')
+                    .map(line => line.trim())
+                    .filter(line => line.length > 0);
+
+                // Pfad-Navigation im Objekt
+                const parts = path.split('.');
+                let current = nsc;
+                for (let i = 0; i < parts.length - 1; i++) {
+                    if (!current[parts[i]]) current[parts[i]] = {};
+                    current = current[parts[i]];
+                }
+                current[parts[parts.length - 1]] = lines;
+            }
+
+            function exportNscToHtml(id) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
+                const traitsText = Array.isArray(nsc.personality?.traits)
+                    ? nsc.personality.traits.join(', ')
+                    : (nsc.personality?.traits || '-');
+
+                const scInjectText = Array.isArray(nsc['sc-inject']?.['injection-points'])
+                    ? nsc['sc-inject']['injection-points'].join('\n')
+                    : (nsc['sc-inject']?.['injection-points'] || '-');
+
+                const activeScs = nsc['sc-inject']?.sc?.join(', ') || 'Keine SC-Bezüge';
+
+                const htmlContent = `<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSC-Datenblatt: ${nsc.general?.name || 'Unbenannte Person'}</title>
+    <style>
+        :root {
+            --card-bg: #f4e4bc;
+            --card-border: #8b5e3c;
+            --text-main: #2b1d0e;
+            --accent: #8b0000;
+        }
+        body {
+            background-color: #121212;
+            color: var(--text-main);
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .export-card {
+            width: 600px;
+            background: var(--card-bg);
+            border: 4px double var(--card-border);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+        }
+        h1 {
+            margin: 0 0 5px 0;
+            font-size: 1.8em;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--accent);
+        }
+        .sub-header {
+            font-size: 1.1em;
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .section-title {
+            font-weight: bold;
+            border-bottom: 1px dashed var(--text-main);
+            margin: 15px 0 8px 0;
+            font-variant: small-caps;
+            font-size: 1.1em;
+            color: var(--accent);
+        }
+        .kv-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4px;
+            font-size: 0.95em;
+        }
+        .kv-label {
+            color: #555;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(0,0,0,0.08);
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .stat-box {
+            display: flex;
+            flex-direction: column;
+        }
+        .stat-val {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .notes-box {
+            background: rgba(255,255,255,0.4);
+            border: 1px solid rgba(0,0,0,0.15);
+            padding: 10px;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .status-badges {
+            display: flex;
+            gap: 10px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            background: rgba(0,0,0,0.04);
+            padding: 5px 8px;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .export-card { width: 100%; border: 1px solid #000; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="export-card">
+        <h1>${nsc.general?.name || 'Unbenannte Person'}</h1>
+        <div class="sub-header">
+            ${nsc.profession?.category || 'Unbekannt'} 
+            ${nsc.profession?.specification ? '– ' + nsc.profession.specification : ''} 
+            (${age} Jahre, ${nsc.general?.gender || 'unbekannt'})
+        </div>
+
+        <div class="status-badges">
+            <span>Status: ${nsc.general?.alive ? 'Lebendig' : 'Verstorben 💀'}</span> |
+            <span>Spezies: ${nsc.general?.species || '-'}</span> |
+            <span>Kultur: ${nsc.general?.culture || '-'}</span> |
+            <span>Kanonisch: ${nsc.general?.canonical ? 'Ja 📚' : 'Nein'}</span>
+        </div>
+
+        <div class="section-title">💉 Anregungen & Plot-Ideen</div>
+        <div class="kv-grid">
+            <span class="kv-label">Held:innen-Bezug:</span>
+            <span>${activeScs}</span>
+        </div>
+        <div class="notes-box">${scInjectText}</div>
+
+        <div class="section-title">💃 Erscheinung</div>
+        <div style="margin-bottom: 8px;"><strong>Besondere Merkmale:</strong> ${nsc.appearance?.distinguishing_features || '-'}</div>
+        <div class="kv-grid">
+            <span class="kv-label">Größe:</span><span>${nsc.appearance?.size || '-'}</span>
+            <span class="kv-label">Gewicht:</span><span>${nsc.appearance?.weight || '-'}</span>
+            <span class="kv-label">Haare:</span><span>${nsc.appearance?.hair || '-'}</span>
+            <span class="kv-label">Haut:</span><span>${nsc.appearance?.skin || '-'}</span>
+            <span class="kv-label">Augen:</span><span>${nsc.appearance?.eyes || '-'}</span>
+            <span class="kv-label">Kleidung/Ausrüstung:</span>
+            <span>
+                ${[
+                        nsc.appearance?.outfit?.headgear,
+                        nsc.appearance?.outfit?.top,
+                        nsc.appearance?.outfit?.trousers,
+                        nsc.appearance?.outfit?.footwear,
+                        nsc.appearance?.outfit?.jewellery,
+                        nsc.appearance?.outfit?.things,
+                        nsc.appearance?.outfit?.weapons
+                    ].filter(Boolean).join(', ') || '-'}
+            </span>
+        </div>
+
+        <div class="section-title">🤦‍♂️ Persönlichkeit</div>
+        <div style="margin-bottom: 8px;"><strong>Motivation:</strong> ${nsc.personality?.motivation || '-'}</div>
+        <div class="kv-grid">
+            <span class="kv-label">Eigenschaften:</span><span>${traitsText}</span>
+            <span class="kv-label">Stimmung:</span><span>${nsc.personality?.['actual-mood'] || '-'}</span>
+            <span class="kv-label">Seelentier:</span><span>${nsc.general?.['soul-animal'] || '-'}</span>
+            <span class="kv-label">Hintergrund:</span><span>${nsc.personality?.['family-background'] || '-'}</span>
+        </div>
+
+        <div class="section-title">⚔️ Eigenschaften & Werte</div>
+        <div class="stats-row">
+            ${['MU', 'KL', 'IN', 'CH', 'FF', 'GE', 'KO', 'KK'].map(stat => `
+                <div class="stat-box">
+                    <small>${stat}</small>
+                    <span class="stat-val">${nsc.stats?.attributes?.[stat] || 8}</span>
+                </div>
+            `).join('')}
+        </div>
+
+        <div class="section-title">📝 Chronik & Spielnotizen</div>
+        <div class="notes-box">${nsc['session-notes'] || 'Keine Eintragsnotizen vorhanden.'}</div>
+    </div>
+</body>
+</html>`;
+
+                // Datei im Browser zum Download an bieten
+                const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8;' });
+                const link = document.createElement('a');
+                const safeFilename = (nsc.general?.name || 'NSC').replace(/[^a-z0-9äöüß_]/gi, '_');
+                link.href = URL.createObjectURL(blob);
+                link.download = `Aventurische_Werkbank_NSC_${safeFilename}.html`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(link.href);
+            }
+
+            // --- NSC JSON-EXPORT & CLIPBOARD ---
+
+            async function copyNscToClipboard(id, btnElement = null) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                // Tiefenkopie erstellen (Verwendung von structuredClone falls verfügbar)
+                const exportData = typeof structuredClone === 'function'
+                    ? structuredClone(nsc)
+                    : JSON.parse(JSON.stringify(nsc));
+
+                // Interne Hilfsfelder entfernen
+                delete exportData._filename;
+
+                // Formatiertes JSON aufbereiten
+                const jsonString = JSON.stringify(exportData, null, 4);
+                let success = false;
+
+                // 1. Primär: Moderne Async Clipboard API
+                if (navigator.clipboard && window.isSecureContext) {
+                    try {
+                        await navigator.clipboard.writeText(jsonString);
+                        success = true;
+                    } catch (err) {
+                        console.warn('Clipboard API fehlgeschlagen, wechsle auf Fallback:', err);
+                    }
+                }
+
+                // 2. Sekundär: Fallback für ungesicherte / ältere Kontexte
+                if (!success) {
+                    success = fallbackCopyTextToClipboard(jsonString);
+                }
+
+                // 3. Visuelles Feedback auslösen
+                if (success) {
+                    // Nutzt primär das direkt übergebene Button-Element, sonst CSS-Fallback
+                    const btn = btnElement || document.querySelector(`#card-${id} button[onclick*="copyNscToClipboard"]`);
+                    if (btn) {
+                        const originalText = btn.innerText;
+                        btn.innerText = "✅";
+                        setTimeout(() => { btn.innerText = originalText; }, 1500);
+                    }
+                }
+            }
+
+            function fallbackCopyTextToClipboard(text) {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+
+                // Unsichtbar positionieren ohne UI-Jumps
+                textArea.style.position = "fixed";
+                textArea.style.top = "0";
+                textArea.style.left = "0";
+                textArea.style.width = "2em";
+                textArea.style.height = "2em";
+                textArea.style.padding = "0";
+                textArea.style.border = "none";
+                textArea.style.outline = "none";
+                textArea.style.boxShadow = "none";
+                textArea.style.background = "transparent";
+                textArea.style.opacity = "0";
+
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+
+                let successful = false;
+                try {
+                    successful = document.execCommand('copy');
+                } catch (err) {
+                    console.error('Fallback-Kopieren fehlgeschlagen:', err);
+                    alert("Kopieren fehlgeschlagen. Bitte manuell kopieren.");
+                }
+
+                document.body.removeChild(textArea);
+                return successful;
+            }
+
+            // --- NSC JSON-IMPORT / MERGE AUS DER ZWISCHENABLAGE (GEHÄRTETE VERSION) ---
+
+            async function pasteJsonToNsc(id, btnElement = null) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) return;
+
+                let pasteText = "";
+
+                // 1. Zwischenablage auslesen mit verbessertem Permission- & Error-Handling
+                try {
+                    if (navigator.clipboard && window.isSecureContext) {
+                        pasteText = await navigator.clipboard.readText();
+                    } else {
+                        pasteText = prompt("Bitte das einzufügende JSON hier hineinkopieren:");
+                    }
+                } catch (err) {
+                    console.warn("Clipboard-Lesezugriff blockiert/fehlgeschlagen, nutze Prompt-Fallback:", err);
+                    pasteText = prompt("Zwischenablage konnte nicht direkt gelesen werden.\nBitte JSON hier hineinkopieren:");
+                }
+
+                if (!pasteText || !pasteText.trim()) return;
+
+                // 2. JSON-Gültigkeit prüfen
+                let parsedData = null;
+                try {
+                    parsedData = JSON.parse(pasteText);
+                } catch (e) {
+                    alert("Fehler: Der Inhalt ist kein gültiges JSON!\n\n" + e.message);
+                    return;
+                }
+
+                if (typeof parsedData !== 'object' || parsedData === null || Array.isArray(parsedData)) {
+                    alert("Fehler: Das einzufügende JSON muss ein Objekt sein (z. B. {\"combat\": ...}).");
+                    return;
+                }
+
+                // 3. Intelligenter Tiefen-Merge (Duplikate in Arrays werden vermieden)
+                deepMergeAppend(nsc, parsedData);
+
+                // 4. Visuelles Feedback auslösen
+                const btn = btnElement || document.querySelector(`#card-${id} button[onclick*="pasteJsonToNsc"]`);
+                if (btn) {
+                    const origText = btn.innerText;
+                    btn.innerText = "✅";
+                    setTimeout(() => { btn.innerText = origText; }, 1500);
+                }
+
+                // 5. Karte im DOM aktualisieren, damit die neuen Daten sofort sichtbar sind
+                refreshCardUI(id);
+            }
+
+            /**
+             * Hilfsfunktion zum rekursiven Ergänzen und Anhängen von JSON-Daten
+             * Verhindert Duplikate in Arrays (z.B. bei Waffen, Talenten, Zaubern) anhand von 'name' oder 'id'.
+             */
+            function deepMergeAppend(target, source) {
+                for (const key in source) {
+                    if (!source.hasOwnProperty(key)) continue;
+
+                    // Interne Steuerungsfelder schützen
+                    if (key === '_filename') continue;
+
+                    // Wenn beide Ziel- und Quellwerte Arrays sind -> Intelligent zusammenführen (Duplikate verhindern)
+                    if (Array.isArray(target[key]) && Array.isArray(source[key])) {
+                        source[key].forEach(newItem => {
+                            const isDuplicate = target[key].some(existingItem => {
+                                if (typeof existingItem === 'object' && existingItem !== null && typeof newItem === 'object' && newItem !== null) {
+                                    return (existingItem.name && existingItem.name === newItem.name) ||
+                                        (existingItem.id && existingItem.id === newItem.id);
+                                }
+                                return existingItem === newItem;
+                            });
+                            if (!isDuplicate) {
+                                target[key].push(newItem);
+                            }
+                        });
+                    }
+                    // Wenn beide Werte Objekte sind -> Rekursiv weiter mergen
+                    else if (
+                        target[key] && typeof target[key] === 'object' && !Array.isArray(target[key]) &&
+                        source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])
+                    ) {
+                        deepMergeAppend(target[key], source[key]);
+                    }
+                    // Ansonsten: Wert hinzufügen oder überschreiben
+                    else {
+                        target[key] = source[key];
+                    }
+                }
+            }
+
+            /**
+             * Schließt die Karte kurz und öffnet sie neu, um die erweiterte Datenstruktur im DOM abzubilden
+             */
+            function refreshCardUI(id) {
+                const cardEl = document.getElementById(`card-${id}`);
+                if (cardEl) {
+                    cardEl.remove();
+                    openCards.delete(id);
+                    const nsc = nscDatabase.find(n => n.id === id);
+                    if (nsc) createCard(nsc);
+                }
+            }
+
+        </script>
 </body>
 
 </html>

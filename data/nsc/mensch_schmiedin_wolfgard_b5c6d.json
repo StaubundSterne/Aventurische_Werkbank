@@ -1,0 +1,109 @@
+{
+    "id": "e2b3c4d5-6e7f-4a8b-9c0d-1e2f3a4b5c6d",
+    "source": "https://de.wiki-aventurica.de/wiki/Festum, Ingame-Informationen 1009 BF",
+    "tags": [],
+    "general": {
+        "name": "Wolfgard",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 929,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Schmiedin",
+        "specification": "Emeritierte Rüstungsmacherin und Altmeisterin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Firunshag",
+            "Norburg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Şahin"
+        ],
+        "injection-points": "Qualitätskontrolle, Altmeisterin, Traditionsstolz"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 70,
+        "hair": "Strenge, graue Hochsteckfrisur",
+        "skin": "Faltige, sonnengegerbte Haut",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Gefaltetes Kopftuch bei der Arbeit",
+            "top": "Dunkles Wollkleid mit lederner Werkstattschürze",
+            "trousers": "Keine",
+            "footwear": "Bequeme Lederstiefel",
+            "jewellery": "Ein einfacher Bronzering am linken Mittelfinger",
+            "things": "Gehstock aus Eichenholz mit Messingknauf, Prüfmaß",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Scharfer, musternder Blick; stützt sich beim Gehen leicht auf ihren Gehstock"
+    },
+    "personality": {
+        "traits": [
+            "Kritisch",
+            "Direkt",
+            "Erfahren",
+            "Unnachgiebig",
+            "Fürsorglich"
+        ],
+        "actual-mood": [
+            "Skeptisch"
+        ],
+        "family-background": "Großmutter von Wolfborst. Leitete die Rüstungswerkstatt über vier Jahrzehnte hinweg selbstständig.",
+        "motivation": "Sicherstellen, dass die Werkstatt unter Wolfborst nur unfehlbare Spitzenqualität ausliefert."
+    },
+    "stats": {
+        "experience-level": "Meisterlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 14,
+            "IN": 15,
+            "CH": 12,
+            "FF": 13,
+            "GE": 10,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 30,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Metallbearbeitung",
+                "FW": 16
+            },
+            {
+                "name": "Geschichtswissen",
+                "FW": 11
+            },
+            {
+                "name": "Menschenkenntnis",
+                "FW": 12
+            },
+            {
+                "name": "Handel",
+                "FW": 10
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

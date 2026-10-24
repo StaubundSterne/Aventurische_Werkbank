@@ -1,0 +1,114 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "source": "wiki-aventurica.de, eigene Ausarbeitung (Spielleiter-Setzung)",
+    "tags": [],
+    "general": {
+        "name": "Florentin Runzel",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 977,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Frettchen",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Heiler und Botaniker",
+        "specification": "Magister und Gärtner im Ordenshaus der Bruder- und Schwesternschaft zur Förderung der Heilzauberei des Anconius in Donnerbach",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop",
+            "Niritul"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Kartenspiel; Heilkräuter; Schlafmangel"
+    },
+    "appearance": {
+        "size": 187,
+        "weight": 84,
+        "hair": "Braune, gelockte Haare, durchgängig unfrisiert",
+        "skin": "Leicht sonnengebräunte, glatte Haut",
+        "eyes": "Braune Augen",
+        "outfit": {
+            "headgear": "Keine Kopfbedeckung",
+            "top": "Helles, weit geschnittenes Leinenhemd mit hochgekrempelten Ärmeln",
+            "trousers": "Dunkle, strapazierfähige Tuchhose",
+            "footwear": "Bequeme, abgewetzte Lederstiefel",
+            "jewellery": "Ein simples Holzamulett an einem einfachen Lederband",
+            "things": "Karten-Set aus Pergament, Salbenkröte, Verbandzeug",
+            "weapons": "Ein kleines Pflückmesser"
+        },
+        "distinguishing_features": "Ein durchgängig lachender Gesichtsausdruck und sichtbare dunkle Ränder unter den Augen"
+    },
+    "personality": {
+        "traits": [
+            "Entspannt",
+            "Aufgedreht",
+            "Jung geblieben",
+            "Kartenspielend",
+            "Unbekümmert"
+        ],
+        "actual-mood": [
+            "Abgelenkt"
+        ],
+        "family-background": "Schwester Stola Zappende, ebenfalls Mitglied der Gemeinschaft. Die Eltern arbeiteten als Kräutersammler im Herzogtum Weiden.",
+        "motivation": "Suche nach neuen Heilmitteln und Gelegenheiten für ein entspanntes Kartenspiel."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 13,
+            "IN": 13,
+            "CH": 14,
+            "FF": 13,
+            "GE": 11,
+            "KO": 12,
+            "KK": 13
+        },
+        "energies": {
+            "LeP": 34,
+            "AsP": 32,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Heilkunde Wunden",
+                "FW": 10
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 8
+            },
+            {
+                "name": "Brett- & Kartenspiele",
+                "FW": 9
+            },
+            {
+                "name": "Zechen",
+                "FW": 7
+            }
+        ],
+        "spells": [
+            {
+                "name": "Balsam Salabunde",
+                "FW": 7
+            }
+        ],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,112 @@
+{
+    "id": "d4b063a6-9c5f-4e34-ba31-5a7b9c1d3e5f",
+    "source": "Abenteuer Aus dem Hause Kempf, Schild des Reiches, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Bernhelm",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 994,
+        "alive": true,
+        "culture": "Weiden",
+        "species": "Mensch",
+        "soul-animal": "Dohle",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Köhlerknecht",
+        "specification": "Köhlergehilfe und Laufbursche in Donnerbach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Pflegebruder, Holzholer, Streichfeuer"
+    },
+    "appearance": {
+        "size": 171,
+        "weight": 63,
+        "hair": "Dunkelblondes, oft von Ruß gestreiftes Haar",
+        "skin": "Sommersprossige, rußfleckige Haut",
+        "eyes": "Lebhafte braune Augen",
+        "outfit": {
+            "headgear": "Schlichte Filzkappe",
+            "top": "Gekochter Wollkittel über einem flickenreichen Hemd",
+            "trousers": "Feste Hose aus braunem Loden",
+            "footwear": "Abgetragene Bundschuhe",
+            "jewellery": "Keine",
+            "things": "Kiepe für Brennholz, Zunderbüchse",
+            "weapons": "Gürtelmesser"
+        },
+        "distinguishing_features": "Fast ständige Rußspuren an Wangen und Händen; sehr behende Bewegungen"
+    },
+    "personality": {
+        "traits": [
+            "Neugierig",
+            "Flink",
+            "Gehorsam",
+            "Bescheiden",
+            "Lebhaft"
+        ],
+        "actual-mood": [
+            "Eifrig"
+        ],
+        "family-background": "Pflegeeltern Gerwulf Kempf (56, Gutsherr) und Swangard Kempf (57, Verwalterin). Verlor seine Herkunftsfamilie früh durch Armut und Krankheit und fand Zuflucht am Herdfeuer der Kempfs.",
+        "motivation": "Das Haus Kempf stets reichlich mit Brennholz und Kohle zu versorgen und Gerwulfs Strenge nicht herauszufordern."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 11,
+            "KL": 11,
+            "IN": 13,
+            "CH": 11,
+            "FF": 12,
+            "GE": 13,
+            "KO": 12,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Körperbeherrschung",
+                "FW": 8
+            },
+            {
+                "name": "Verstecken",
+                "FW": 7
+            },
+            {
+                "name": "Pflanzenkunde",
+                "FW": 5
+            },
+            {
+                "name": "Orientierung",
+                "FW": 6
+            },
+            {
+                "name": "Athletik",
+                "FW": 6
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

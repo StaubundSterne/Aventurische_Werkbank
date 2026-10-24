@@ -15,7 +15,7 @@
     },
     "profession": {
         "category": "Magier",
-        "specification": "Magister an der Akademie der Verformungen zu Lowangen; Mitglied der Gemeinschaft des Lernens; Experte für die theoretischen Grundlagen der Metamorphose [NSC kanonisch]",
+        "specification": "Vorsteher des Lowanger Hesinde-Tempels. Sein Bestreben, der Stadtbevölkerung Wissen und Bildung zugänglich zu machen, spiegelt sich darin wider, dass fast die Hälfte der Bürger des Lesens mächtig ist.",
         "clerical": false,
         "magical": true,
         "noble": false
@@ -32,10 +32,7 @@
             "Hesindian",
             "Aurelevina"
         ],
-        "injection-points": [
-            "Melchior spricht Hesindian auf dessen zwergisches Erbe an und philosophiert darüber, wie die 'Struktur des Erzes' die Formmagie beeinflusst.",
-            "Er bittet Aurelevina um einen Vergleich zwischen der Lowanger 'Schule des direkten Weges' und den eher ästhetisch-formgebenden Ansätzen in den Tulamidenlanden oder Almada."
-        ]
+        "injection-points": []
     },
     "appearance": {
         "size": 174,

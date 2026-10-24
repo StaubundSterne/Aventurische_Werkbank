@@ -1,0 +1,110 @@
+{
+    "id": "7649520e-8f2b-4654-a621-399d8b866c12",
+    "source": "wiki-aventurica.de/wiki/Rudraighe_Gaothan_ni_Direach, 4207 Schild des Reiches",
+    "tags": [],
+    "general": {
+        "name": "Rudraighe Gaothan ni Direach",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 990,
+        "alive": true,
+        "culture": "Andergastisch-Nostrisch (Weidener Wurzeln)",
+        "species": "Mensch",
+        "soul-animal": "Turmfalke",
+        "social-state": "Geweihte"
+    },
+    "profession": {
+        "category": "Geweihte",
+        "specification": "Rondrageweihte der Senne West",
+        "clerical": true,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Havena",
+        "former-locations": [
+            "Weidenau",
+            "Arivor",
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Theologische Rivalität, Weidener Adel, Sakramentssimulation"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 72,
+        "hair": "Stahlgrau, streng nach hinten gebunden",
+        "skin": "Wettergegerbt, blass",
+        "eyes": "Stahlblau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Brünne über weißem Wappenrock mit Wind-Stickerei",
+            "trousers": "Lederne Reiterhose",
+            "footwear": "Schwere Stiefel mit Silbersporen",
+            "jewellery": "Silberner Löwen-Torques der Westsenne",
+            "things": "Gebetbuch aus Leder",
+            "weapons": "Rondrakamm (Zweihänder)"
+        },
+        "distinguishing_features": "Eine feine Narbe zieht sich vertikal über ihre linke Augenbraue."
+    },
+    "personality": {
+        "traits": [
+            "Streng",
+            "Hierarchisch",
+            "Pflichtbewusst",
+            "Ehrenhaft",
+            "Unbeugsam"
+        ],
+        "actual-mood": [
+            "Beobachtend"
+        ],
+        "family-background": "Tochter der Adligen Elfwine ni Direach aus Weiden; Bruder Guntwin ist Ritter in Trallop. Die Familie ist bekannt für ihre Treue zum Haus Bärwalde.",
+        "motivation": "Sicherstellung der rituellen Reinheit und Verteidigung des Svellttals nach den Maßstäben der Westsenne."
+    },
+    "stats": {
+        "experience-level": "Kompetent",
+        "attributes": {
+            "MU": 15,
+            "KL": 11,
+            "IN": 13,
+            "CH": 14,
+            "FF": 10,
+            "GE": 13,
+            "KO": 14,
+            "KK": 14
+        },
+        "energies": {
+            "LeP": 32,
+            "AsP": 0,
+            "KaP": 36
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Einschüchtern",
+                "FW": 10
+            },
+            {
+                "name": "Kriegskunst",
+                "FW": 12
+            }
+        ],
+        "liturgies": [
+            {
+                "name": "Ehrenhaftes Duell",
+                "FW": 8
+            },
+            {
+                "name": "Schutz der Glaubensvorderen",
+                "FW": 10
+            }
+        ]
+    },
+    "session-notes": ""
+}

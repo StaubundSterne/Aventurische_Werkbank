@@ -1,0 +1,100 @@
+{
+    "id": "d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9",
+    "source": "Entwürfe der Mitspielenden; wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Mika Steinbach",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 988,
+        "alive": true,
+        "culture": "Mittelreicher",
+        "species": "Mensch",
+        "soul-animal": "Falke",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Gastronomie",
+        "specification": "Küchenhilfe",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Uhdenberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Androgynes Erscheinungsbild, Pfiff-Kommunikation, Ständiger Zeitdruck"
+    },
+    "appearance": {
+        "size": 155,
+        "weight": 50,
+        "hair": "Aschblond, zu einem kurzen Zopf gebunden",
+        "skin": "Hell, mit Rötungen auf den Wangen",
+        "eyes": "Grau",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Lederweste über weißem Hemd",
+            "trousers": "Dunkelgraue Beinkleider, in die Stiefel gesteckt",
+            "footwear": "Kurze, abgenutzte Lederstiefel",
+            "jewellery": "Kein Schmuck",
+            "things": "Ein kleines Holztablett und eine Sanduhr am Lederband um den Hals",
+            "weapons": "Ein kleines Küchenmesser im Gürtel"
+        },
+        "distinguishing_features": "Schmale Gesichtszüge ohne ausgeprägte geschlechtsspezifische Konturen."
+    },
+    "personality": {
+        "traits": [
+            "Erzeugt helle, kurze Pfifftöne in Richtung des Schankbereichs",
+            "Berührt Kolleg:innen mit dem Ellenbogen im Vorbeigehen",
+            "Richtet den Blick während des Gehens auf die Sanduhr",
+            "Bewegt sich in schnellem Tempo um Tische und Stühle",
+            "Setzt Holztabletts mit vernehmbarem Aufschlag auf"
+        ],
+        "actual-mood": [
+            "Gehetzt"
+        ],
+        "family-background": "Eltern Tsadan Steinbach und Merle Steinbach, fahrende Händler:innen aus dem Svelltland. Mika trennte sich in jungen Jahren von der Handelskarawane.",
+        "motivation": "Transportiert Speisen und Getränke zwischen Küche und Gastraum im Takt der Sanduhr."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 14,
+            "KL": 11,
+            "IN": 13,
+            "CH": 11,
+            "FF": 13,
+            "GE": 15,
+            "KO": 10,
+            "KK": 9
+        },
+        "energies": {
+            "LeP": 25,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Körperbeherrschung",
+                "FW": 12
+            },
+            {
+                "name": "Einschüchtern",
+                "FW": 4
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

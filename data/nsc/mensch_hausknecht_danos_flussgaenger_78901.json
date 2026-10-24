@@ -1,0 +1,105 @@
+{
+    "id": "e9ca1134-5678-4901-b2cd-ef2345678901",
+    "source": "https://de.wiki-aventurica.de/wiki/Auenmarkt",
+    "tags": [],
+    "general": {
+        "name": "Danos Flussgänger",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 975,
+        "alive": true,
+        "culture": "Svellttal",
+        "species": "Mensch",
+        "soul-animal": "Ochs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Hausknecht",
+        "specification": "Hausknecht, Fassträger und Holzspalter im Gasthaus Am Bach",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Auenmarkt",
+        "former-locations": [
+            "Tjolmar",
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Fassrollen, Feuerholz, Svellttal-Kriege"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 88,
+        "hair": "Dunkelbraun, kurz geschoren mit beginnender Glatze",
+        "skin": "Schwielig und von der Arbeit braun gebrannt",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Ärmellose Weste aus grobem Leder über ungefärbtem Hemd",
+            "trousers": "Dicke Leinenhose mit Flickstellen an den Knien",
+            "footwear": "Arbeitsschuhe mit Holzsohle",
+            "jewellery": "Kein Schmuck",
+            "things": "Lederne Arbeitshandschuhe, Wetzstein",
+            "weapons": "Holtspaltaxt (als Werkzeug)"
+        },
+        "distinguishing_features": "Breite Schultern, breites Gemüt und ein leichtes Hinken im linken Bein"
+    },
+    "personality": {
+        "traits": [
+            "Gutmütig",
+            "Schweigsam",
+            "Zuverlässig",
+            "Kräftig",
+            "Geduldig"
+        ],
+        "actual-mood": [
+            "Ruhig"
+        ],
+        "family-background": "Mutter Ilme, Müllerin aus Tjolmar; verlor im Krieg mit den Orks Haus und Hof und zog gen Süden nach Auenmarkt.",
+        "motivation": "Sucht nach verlässlicher, friedlicher Arbeit und schätzt die ruhige Atmosphäre am Fluss sehr."
+    },
+    "stats": {
+        "experience-level": "Durchschnittlich",
+        "attributes": {
+            "MU": 12,
+            "KL": 10,
+            "IN": 11,
+            "CH": 10,
+            "FF": 11,
+            "GE": 11,
+            "KO": 14,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Zimmern",
+                "FW": 6
+            },
+            {
+                "name": "Athletik",
+                "FW": 8
+            },
+            {
+                "name": "Zechen",
+                "FW": 7
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,104 @@
+{
+    "id": "c1a92e10-3b4f-4a81-9f2d-8e7c1a012345",
+    "source": "4310 Aventurische Namen, wiki-aventurica.de, Eigenkreation Rollenspielrunde",
+    "tags": [],
+    "general": {
+        "name": "Alrik Kempf",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 996,
+        "alive": true,
+        "culture": "Donnerbach",
+        "species": "Mensch",
+        "soul-animal": "Dachs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Pflegekind",
+        "specification": "Tischlerlehrling",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Holzschnitzerei, Narbe am Unterarm, Tempelbesuche"
+    },
+    "appearance": {
+        "size": 158,
+        "weight": 49,
+        "hair": "Dunkelbraune, kurz geschnittene Haare",
+        "skin": "Leicht sommersprossige, helle Haut",
+        "eyes": "Graubraune Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Graue Leinentunika mit geflickten Ärmeln",
+            "trousers": "Braune Hosen aus derbem Tuch",
+            "footwear": "Lederne Bundschuhe",
+            "jewellery": "Ein holzgeschnitzter Dachskopf an einem dicken Lederband",
+            "things": "Ein kleines Schnitzmesser in einer einfach gefertigten Lederscheide",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Eine schmale, helle Narbe verläuft quer über die Oberseite des linken Unterarms."
+    },
+    "personality": {
+        "traits": [
+            "Schweigsam",
+            "Handwerklich geschickt",
+            "Frühaufsteher",
+            "Ordnungsliebend",
+            "Hilfsbereit"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Eltern starben 1003 BF bei einem Gehöftbrand nahe Trallop. Vater Gerion Grünfelde nahm Alrik 1004 BF im Donnerbacher Traviatempel auf und übergab ihn in die Obhut der Familie Kempf.",
+        "motivation": "Sägt und hobelt Holzleisten für eine kleine Schatulle, die als Geschenk für die Pflegeeltern gedacht ist."
+    },
+    "stats": {
+        "experience-level": "Unerfahren",
+        "attributes": {
+            "MU": 11,
+            "KL": 10,
+            "IN": 12,
+            "CH": 10,
+            "FF": 13,
+            "GE": 11,
+            "KO": 11,
+            "KK": 11
+        },
+        "energies": {
+            "LeP": 28,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Holzbearbeitung",
+                "FW": 6
+            },
+            {
+                "name": "Sinnenfechtermund",
+                "FW": 4
+            },
+            {
+                "name": "Körperbeherrschung",
+                "FW": 3
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}

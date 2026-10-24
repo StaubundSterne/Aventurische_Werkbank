@@ -1,0 +1,109 @@
+{
+    "id": "f2a1b9c3-d4e5-4f6a-8b7c-9d0e1f2a3b4c",
+    "source": "4201 Das Orkland, 4310 Aventurische Namen",
+    "tags": [],
+    "general": {
+        "name": "Oswin von Bärenau",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 985,
+        "alive": true,
+        "culture": "Mittelreicher",
+        "species": "Mensch",
+        "soul-animal": "Bär",
+        "social-state": "Niederadel"
+    },
+    "profession": {
+        "category": "Stadtgardist",
+        "specification": "Persönlicher Adjutant des Hauptmanns, Bannerführer",
+        "clerical": false,
+        "magical": false,
+        "noble": true
+    },
+    "locations": {
+        "actual-location": "Lowangen",
+        "former-locations": [
+            "Gareth",
+            "Greifenfurt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Heraldik, Etikette, Mittelreichische Politik"
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 88,
+        "hair": "Dunkelbraun, nach hinten gekämmt",
+        "skin": "Rein, leicht gebräunt",
+        "eyes": "Dunkelbraun",
+        "outfit": {
+            "headgear": "Barbiere mit Visier (meist hochgeklappt)",
+            "top": "Brustpanzer über einem blauen Wappenrock",
+            "trousers": "Lederhose mit Schienen",
+            "footwear": "Reitstiefel",
+            "jewellery": "Ein Siegelring seiner Familie (Bärenau)",
+            "things": "Ein zusammengeklapptes Banner der Stadtgarde, Signalhorn",
+            "weapons": "Ein Langschwert, ein kleiner Rundschild (Buckler)"
+        },
+        "distinguishing_features": "Sehr tiefe Stimme; trägt einen akkurat gestutzten Kinnbart."
+    },
+    "personality": {
+        "traits": [
+            "Förmlich",
+            "Loyal",
+            "Etwas steif",
+            "Gebildet",
+            "Gottesfürchtig"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Zweitgeborener eines verarmten Junkers aus dem Kosch; Ausbildung an der Kriegerakademie zu Gareth abgebrochen.",
+        "motivation": "Will sich durch tadellosen Dienst in Lowangen einen Namen machen, um das Erbe seiner Familie zu retten."
+    },
+    "stats": {
+        "experience-level": "Erfahren",
+        "attributes": {
+            "MU": 12,
+            "KL": 12,
+            "IN": 11,
+            "CH": 13,
+            "FF": 10,
+            "GE": 11,
+            "KO": 13,
+            "KK": 15
+        },
+        "energies": {
+            "LeP": 36,
+            "AsP": 0,
+            "KaP": 0
+        }
+    },
+    "abilities": {
+        "talents": [
+            {
+                "name": "Etikette",
+                "FW": 8
+            },
+            {
+                "name": "Heraldik",
+                "FW": 7
+            },
+            {
+                "name": "Schwerter",
+                "FW": 12
+            },
+            {
+                "name": "Willenskraft",
+                "FW": 9
+            }
+        ],
+        "spells": [],
+        "liturgies": []
+    },
+    "session-notes": ""
+}
