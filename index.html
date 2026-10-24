@@ -931,6 +931,7 @@
                                     <button class="save-btn-inline" onclick="copyNscToClipboard('${nsc.id}', this)" title="JSON in Zwischenablage kopieren">📤</button>
                                     <button class="save-btn-inline" onclick="pasteJsonToNsc('${nsc.id}', this)" title="JSON aus Zwischenablage ergänzen">📥</button>   
                                     <button class="save-btn-inline" onclick="saveFile('${nsc.id}')" title="Speichern">💾</button>
+                                    <button class="save-btn-inline" onclick="saveFileToGitHub('${nsc.id}')" title="Online auf GitHub speichern">🪩</button>
                             </div>
 
                             <details class="section-block" open>
@@ -1657,6 +1658,91 @@
                     openCards.delete(id);
                     const nsc = nscDatabase.find(n => n.id === id);
                     if (nsc) createCard(nsc);
+                }
+            }
+
+            // --- ONLINE-SPEICHERUNG ÜBER DIE GITHUB API ---
+
+            async function saveFileToGitHub(id) {
+                const nsc = nscDatabase.find(n => n.id === id);
+                if (!nsc) {
+                    alert("NSC nicht gefunden!");
+                    return;
+                }
+
+                // Dateinamen ermitteln (Fallback, falls _filename fehlt)
+                const filename = nsc._filename || `${nsc.general?.name || nsc.id}.json`.toLowerCase().replace(/[^a-z0-9äöüß_]/gi, "_") + ".json";
+                const filePath = `data/nsc/${filename}`;
+
+                // Token aus dem LocalStorage holen oder einmalig abfragen
+                let token = localStorage.getItem('github_pat');
+                if (!token) {
+                    token = prompt("Bitte gib deinen GitHub Personal Access Token (PAT) ein, um online zu speichern:\n(Wird sicher im Browser-Speicher hinterlegt)");
+                    if (!token) return;
+                    localStorage.setItem('github_pat', token.trim());
+                }
+
+                const owner = "StaubundSterne";
+                const repo = "Aventurische_Werkbank";
+                const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+                try {
+                    console.log("Prüfe Datei auf GitHub...");
+
+                    // 1. Schritt: Wir müssen die aktuelle 'sha'-Prüfsumme der Datei auf GitHub abrufen 
+                    // (Das verlangt die GitHub API zwingend bei jedem Update/PUT-Request).
+                    let sha = null;
+                    const getRes = await fetch(apiUrl, {
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json'
+                        }
+                    });
+
+                    if (getRes.ok) {
+                        const fileMeta = await getRes.json();
+                        sha = fileMeta.sha;
+                    }
+
+                    // 2. Schritt: NSC-Daten vorbereiten (interne Steuerfelder wie _filename entfernen)
+                    const fileCopy = JSON.parse(JSON.stringify(nsc));
+                    delete fileCopy._filename;
+
+                    // JSON formatieren und in Base64 kodieren (da die GitHub API Base64 verlangt)
+                    const jsonString = JSON.stringify(fileCopy, null, 4);
+                    const base64Content = btoa(unescape(encodeURIComponent(jsonString)));
+
+                    // 3. Schritt: Den PUT-Request an GitHub senden (löst automatisch einen Commit aus!)
+                    console.log("Sende Update an GitHub...");
+                    const putRes = await fetch(apiUrl, {
+                        method: 'PUT',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            message: `Update NSC via Werkbank: ${nsc.general?.name || nsc.id}`,
+                            content: base64Content,
+                            sha: sha // Erforderlich, wenn die Datei bereits existiert
+                        })
+                    });
+
+                    if (!putRes.ok) {
+                        const errData = await putRes.json();
+                        if (putRes.status === 401) {
+                            // Token ungültig -> aus dem Speicher löschen
+                            localStorage.removeItem('github_pat');
+                            throw new Error("Ungültiger GitHub Token. Bitte erneut versuchen.");
+                        }
+                        throw new Error(errData.message || "Fehler beim Hochladen zu GitHub.");
+                    }
+
+                    alert(`✅ NSC "${nsc.general?.name || nsc.id}" erfolgreich online auf GitHub gespeichert!\n\n(Hinweis: Es dauert ca. 1-2 Minuten, bis GitHub Pages die Änderung live geschaltet hat).`);
+
+                } catch (err) {
+                    console.error("GitHub API Fehler:", err);
+                    alert("Speichern fehlgeschlagen: " + err.message);
                 }
             }
 
