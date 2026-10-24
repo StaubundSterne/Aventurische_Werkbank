@@ -724,8 +724,8 @@
                     // --- SCHRITT A: Automatische Dateierkennung über die GitHub-API ---
                     // WICHTIG: Ersetze 'DEIN_GITHUB_BENUTZERNAME' und 'DEIN_REPO_NAME' mit deinen echten Daten!
                     const githubUser = "StaubundSterne";
-                    const repoName = "NSC-Viewer";
-                    const apiUrl = `https://api.github.com/repos/${githubUser}/${repoName}/contents/nsc`;
+                    const repoName = "Aventurische_Werkbank";
+                    const apiUrl = `https://api.github.com/repos/${githubUser}/${repoName}/contents/data/nsc`;
 
                     const response = await fetch(apiUrl);
                     if (!response.ok) throw new Error("GitHub-Verzeichnis konnte nicht automatisch ausgelesen werden.");
