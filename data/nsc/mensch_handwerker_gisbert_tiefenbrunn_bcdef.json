@@ -151,11 +151,6 @@
                     "KTW": 8,
                     "AT": 9,
                     "PA": 5
-                },
-                {
-                    "name": "Zweihandhiebwaffen",
-                    "KTW": 9,
-                    "AT": 10
                 }
             ],
             "spells": [],
@@ -186,7 +181,7 @@
                     "melee-weapon-reach": "mittel"
                 },
                 {
-                    "name": "Raufen",
+                    "name": "Waffenlos",
                     "main-weapon": "true",
                     "combat-technique": "Raufen",
                     "hitpoints": "1W6+0",

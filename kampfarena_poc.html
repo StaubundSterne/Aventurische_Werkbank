@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Werkbank - Kampfarena (Battlemaster)</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --sidebar-bg: #1e1e1e;
+            --card-bg: #f4e4bc;
+            --card-border: #8b5e3c;
+            --text-main: #2b1d0e;
+            --accent: #8b0000;
+            --highlight: #d4a017;
+            --status-dead: #4a4a4a;
+            --status-magic: #1e3a8a;
+            --status-god: #b45309;
+            --status-noble: #7f1d1d;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* --- STYLING FÜR DIE MASTER-NAVIGATION (100% Identisch zur Index) --- */
+        .master-nav {
+            background-color: #000;
+            padding: 0 20px;
+            border-bottom: 2px solid var(--highlight);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85em;
+            font-family: 'Segoe UI', sans-serif;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 46px;
+            max-height: 46px;
+        }
+
+        .master-nav.collapsed {
+            height: 0 !important;
+            max-height: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            border-bottom: none !important;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .master-nav a {
+            color: var(--highlight);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.8;
+        }
+
+        .master-nav a:hover {
+            opacity: 1;
+            color: #fff;
+            text-shadow: 0 0 8px var(--highlight);
+            transform: translateY(-1px);
+        }
+
+        .master-nav a.active {
+            opacity: 1;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 2px;
+        }
+
+        .toggle-nav-btn {
+            background: none;
+            border: 1px solid var(--highlight);
+            color: var(--highlight);
+            cursor: pointer;
+            padding: 4px 10px;
+            font-size: 0.85em;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .toggle-nav-btn:hover {
+            background: rgba(212, 160, 23, 0.2);
+        }
+
+        #expandNavBtn {
+            position: fixed;
+            top: 0;
+            right: 20px;
+            background: #000;
+            color: var(--highlight);
+            border: 1px solid var(--highlight);
+            border-top: none;
+            padding: 5px 12px;
+            cursor: pointer;
+            border-radius: 0 0 6px 6px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+        }
+
+        #expandNavBtn.visible {
+            display: block;
+        }
+
+        .global-controls {
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+        }
+
+        .filter-drawer {
+            width: 90%;
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+        }
+
+        .filter-drawer.open {
+            display: block;
+        }
+
+        .toggle-filter-btn {
+            width: 100%;
+            background: none;
+            border: 1px solid #555;
+            cursor: pointer;
+            font-size: 0.8em;
+            padding: 4px 5px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            color: #ccc;
+        }
+
+        .toggle-filter-btn:hover {
+            color: var(--highlight);
+            border-color: var(--highlight);
+        }
+
+        /* --- SIDEBAR (DESIGN & ANIMATION) --- */
+        .sidebar {
+            width: 320px;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #333;
+            padding: 15px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            transition: width 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            min-width: 320px;
+        }
+
+        .sidebar.collapsed {
+            width: 0 !important;
+            min-width: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            border-right: none !important;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Steuerungs-Button in der Sidebar */
+        .toggle-sidebar-btn {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            color: #fff;
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .toggle-sidebar-btn:hover {
+            background: #333;
+            color: var(--highlight);
+            border-color: var(--highlight);
+        }
+
+        /* Schwebender Button, wenn die Sidebar eingeklappt ist */
+        #expandSidebarBtn {
+            position: fixed;
+            left: 0;
+            top: 50px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 2px solid var(--card-border);
+            border-left: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            font-weight: bold;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        #expandSidebarBtn.visible {
+            display: block;
+        }
+
+        /* --- SUCHFELD & LISTEN-ELEMENTE --- */
+        .search-box {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #8b5e3c;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.6);
+            color: var(--text-main);
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .search-box::placeholder {
+            color: rgba(43, 29, 14, 0.5);
+        }
+
+        #nscList {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        .list-item {
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(139, 94, 60, 0.3);
+            cursor: pointer;
+            color: var(--text-main);
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .list-item:hover {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .list-item strong {
+            display: block;
+            font-size: 0.95em;
+        }
+
+        .list-item small {
+            color: var(--accent);
+            font-size: 0.8em;
+        }
+
+        /* --- ARENA HAUPTBEREICH --- */
+        .arena-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-image: radial-gradient(#222 1px, transparent 1px);
+            background-size: 20px 20px;
+            box-sizing: border-box;
+        }
+
+        .arena-card {
+            background: #1e1c18;
+            border: 2px solid #544b42;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            color: #d9cfc7;
+            font-family: 'Georgia', serif;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .arena-card.active-actor {
+            border-color: var(--highlight);
+            box-shadow: 0 0 15px rgba(212, 160, 23, 0.4);
+        }
+
+        .dsa-btn-primary {
+            background: var(--accent);
+            color: #f5ebe6;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 4px 8px;
+            transition: background 0.2s;
+        }
+
+        .dsa-btn-primary:hover {
+            background: #a63131;
+        }
+
+        .dsa-btn-secondary {
+            background: #3d3731;
+            color: #d9cfc7;
+            border: 1px solid #555;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+
+        .dsa-btn-secondary:hover {
+            background: #524a42;
+        }
+
+        /* Log Terminal */
+        #arena-log {
+            background: #0d0d0d;
+            border: 1px solid #333;
+            font-family: monospace;
+            padding: 10px;
+            border-radius: 6px;
+            height: 150px;
+            overflow-y: auto;
+            font-size: 0.85em;
+            color: #ccc;
+        }
+
+        /* --- KAMPF-ARENA ERWEITERUNGEN --- */
+        .arena-layout {
+            display: flex;
+            flex-grow: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .arena-main-content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .arena-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-content: flex-start;
+        }
+
+        .ini-tracker-sidebar {
+            width: 220px;
+            background: #181614;
+            border-left: 2px solid var(--card-border);
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        .ini-slot-item {
+            background: #262420;
+            border: 1px solid #443b32;
+            border-radius: 4px;
+            padding: 6px 8px;
+            margin-bottom: 6px;
+            font-size: 0.85em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #d9cfc7;
+            transition: all 0.2s;
+        }
+
+        .ini-slot-item.active {
+            border-color: var(--highlight);
+            background: rgba(212, 160, 23, 0.15);
+            box-shadow: 0 0 8px rgba(212, 160, 23, 0.3);
+        }
+
+        .ini-slot-item.filled {
+            border-left: 4px solid var(--accent);
+        }
+
+        /* Arena Karten im Werkbank-Stil */
+        .arena-card {
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 4px double var(--card-border);
+            border-radius: 4px;
+            width: 380px;
+            padding: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+        }
+
+        .arena-card.active-card {
+            box-shadow: 0 0 15px 3px var(--highlight);
+            border-color: var(--highlight);
+        }
+
+        .stat-input-group {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .stat-input-group input[type="number"] {
+            width: 50px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid var(--card-border);
+            text-align: center;
+            font-weight: bold;
+            border-radius: 3px;
+            padding: 2px;
+        }
+
+        .weapon-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85em;
+            margin-top: 5px;
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .weapon-table th,
+        .weapon-table td {
+            border: 1px solid rgba(139, 94, 60, 0.3);
+            padding: 4px 6px;
+            text-align: left;
+        }
+
+        .weapon-table th {
+            background: rgba(139, 69, 19, 0.15);
+            font-size: 0.9em;
+        }
+
+        .action-btn-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+            margin-top: 6px;
+        }
+
+        /* Protokoll Terminal */
+        .arena-log-box {
+            background: #0d0d0d;
+            border: 1px solid #333;
+            color: #00ff66;
+            font-family: monospace;
+            padding: 10px;
+            border-radius: 4px;
+            height: 140px;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="expandNavBtn" onclick="toggleNav()" title="Kopfzeile einblenden">▼ Kopfzeile öffnen</button>
+    <button id="expandSidebarBtn" onclick="toggleSidebar()" title="Sidebar ausklappen">▶ Sidebar öffnen</button>
+
+    <nav class="master-nav" id="masterNav">
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html">🏠 NSC-ÜBERSICHT</a>
+            <a href="kampfarena.html" class="active">⚔️ KAMPFARENA</a>
+        </div>
+        <button class="toggle-nav-btn" onclick="toggleNav()">▲ Kopfzeile einklappen</button>
+    </nav>
+
+    <div style="display: flex; flex-grow: 1; overflow: hidden; width: 100%;">
+
+
+        <!-- Arena Hauptbereich -->
+        <div class="arena-layout">
+            <!-- Sidebar mit der NSC-Liste -->
+            <div class="sidebar" id="mainSidebar">
+                <button class="toggle-sidebar-btn" onclick="toggleSidebar()">◀ Sidebar einklappen</button>
+                <input type="text" class="search-box" id="searchInput" placeholder="Suche (z.B. Zimmermann)..."
+                    onkeyup="filterList()">
+                <div id="nscList"></div>
+            </div>
+
+            <!-- Arena Hauptbereich (Mitte) -->
+            <div class="arena-main-content">
+
+                <!-- Karten-Grid -->
+                <div class="arena-grid" id="arenaCardGrid">
+                    <!-- Aktive Kampf-Karten erscheinen hier -->
+                </div>
+
+                <!-- Gendersensitives Aktionsprotokoll am unteren Ende -->
+                <div>
+                    <label style="font-size: 0.85em; font-weight: bold; color: var(--highlight);">📜
+                        Kampf-Protokoll:</label>
+                    <div class="arena-log-box" id="arenaLog">
+                        [System] Kampfarena bereit. Kämpfende und Held:innen können über die Sidebar hinzugefügt werden.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15-Plätze INI-Tracker (Rechts am Rand, schmal) -->
+            <div class="ini-tracker-sidebar">
+                <!-- Buttons ganz oben im INI-Tracker -->
+                <div style="display: flex; gap: 4px; margin-bottom: 8px;">
+                    <button class="dsa-btn-primary" onclick="rollAllInitiatives()"
+                        style="flex: 1; font-size: 0.75em; padding: 6px 2px;" title="Initiative für alle würfeln">🎲
+                        INI</button>
+                    <button class="dsa-btn-secondary" onclick="nextCombatRound()"
+                        style="flex: 1; font-size: 0.75em; padding: 6px 2px; background: #4a3525; border-color: var(--highlight);"
+                        title="Nächste Kampfrunde (Setzt Mehrfach-Mali und Aktionen zurück)">🔄 Rundenwechsel</button>
+                </div>
+
+                <div
+                    style="font-size: 0.85em; font-weight: bold; border-bottom: 1px solid var(--card-border); padding-bottom: 4px; margin-bottom: 6px; text-align: center; color: var(--text-main);">
+                    ⚡ INI-Tracker (15 Plätze)
+                </div>
+                <div id="iniTrackerSlots">
+                    <!-- 15 feste Slots -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let nscDatabase = [];
+            let openCards = new Set();
+            let currentYear = 1009;
+            let activeFilters = {};
+
+            // Beim Laden der Seite direkt ausführen
+            document.addEventListener('DOMContentLoaded', () => {
+                loadNscsFromCloud();
+            });
+
+            async function loadNscsFromCloud(forceReload = false) {
+                nscDatabase = [];
+                const cacheKey = 'nsc_database_persistent_v1';
+                const cacheTimestampKey = 'nsc_database_timestamp_v1';
+                const maxCacheAge = 60 * 60 * 1000; // 1 Stunde Cache
+
+                const cachedTimestamp = parseInt(localStorage.getItem(cacheTimestampKey) || '0', 10);
+                if (!forceReload && (Date.now() - cachedTimestamp) < maxCacheAge) {
+                    const cachedData = localStorage.getItem(cacheKey);
+                    if (cachedData) {
+                        try {
+                            nscDatabase = JSON.parse(cachedData);
+                            console.log(`[Cache] ${nscDatabase.length} NSCs aus LocalStorage geladen.`);
+                            filterList();
+                            return;
+                        } catch (e) {
+                            localStorage.removeItem(cacheKey);
+                        }
+                    }
+                }
+
+                try {
+                    const githubUser = "StaubundSterne";
+                    const repoName = "Aventurische_Werkbank";
+                    const apiUrl = `https://api.github.com/repos/${githubUser}/${repoName}/contents/data/nsc`;
+
+                    const token = localStorage.getItem('github_pat');
+                    const headers = { 'Accept': 'application/vnd.github.v3+json' };
+                    if (token) headers['Authorization'] = `Bearer ${token.trim()}`;
+
+                    const response = await fetch(apiUrl, { headers: headers });
+                    if (!response.ok) throw new Error("GitHub-Verzeichnis nicht erreichbar.");
+
+                    const files = await response.json();
+                    const jsonFiles = Array.isArray(files) ? files.filter(file => file.name.endsWith('.json')) : [];
+
+                    const batchSize = 16;
+                    for (let i = 0; i < jsonFiles.length; i += batchSize) {
+                        const batch = jsonFiles.slice(i, i + batchSize);
+                        const batchPromises = batch.map(async (fileObj) => {
+                            try {
+                                const fileRes = await fetch(fileObj.download_url);
+                                if (!fileRes.ok) return null;
+                                const json = await fileRes.json();
+                                json._filename = fileObj.name;
+                                return json;
+                            } catch (err) {
+                                return null;
+                            }
+                        });
+
+                        const batchResults = await Promise.all(batchPromises);
+                        let hasNewData = false;
+                        batchResults.forEach(nsc => {
+                            if (nsc !== null) {
+                                nscDatabase.push(nsc);
+                                hasNewData = true;
+                            }
+                        });
+                        if (hasNewData) filterList();
+                    }
+
+                    try {
+                        localStorage.setItem(cacheKey, JSON.stringify(nscDatabase));
+                        localStorage.setItem(cacheTimestampKey, Date.now().toString());
+                    } catch (e) { }
+
+                } catch (err) {
+                    console.warn("⚠️ Fallback aktiv:", err.message);
+                    // Lokaler Fallback falls nötig
+                    filterList();
+                }
+            }
+
+            function toggleFilterDrawer() {
+                document.getElementById('filterDrawer').classList.toggle('open');
+            }
+
+            function filterList() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const searchTokens = searchInput.split(/\s+/).filter(t => t.length > 0);
+
+                const filtered = nscDatabase.filter(nsc => {
+                    // ENTSCHEIDENDER UNTERSCHIED: Nur NSCs mit vorhandenen combat-stats zulassen!
+                    if (!nsc.stats || !nsc.stats['combat-stats'] || !nsc.stats['combat-stats'].weapons || nsc.stats['combat-stats'].weapons.length === 0) {
+                        return false;
+                    }
+
+                    // Volltextsuche über Tokens
+                    if (searchTokens.length > 0) {
+                        const fullText = JSON.stringify(nsc).toLowerCase();
+                        const matchesAllTokens = searchTokens.every(token => fullText.includes(token));
+                        if (!matchesAllTokens) return false;
+                    }
+
+                    return true;
+                });
+
+                renderFilteredList(filtered);
+            }
+
+            // NSC-Liste in der Sidebar erstellen
+
+            function renderFilteredList(filtered) {
+                const listEl = document.getElementById('nscList');
+                listEl.innerHTML = "";
+
+                // Sortierung nach Professions-Kategorie und Name
+                filtered.sort((a, b) => (a.profession?.category || '').localeCompare(b.profession?.category || '') || a.general.name.localeCompare(b.general.name));
+
+                filtered.forEach(nsc => {
+                    const name = nsc.general?.name || 'Unbenannt';
+
+                    // Basis-Kampfstats & Energien
+                    const le = nsc.stats?.['derived-stats']?.LE || '-';
+                    const ae = nsc.stats?.['derived-stats']?.AE;
+                    const ke = nsc.stats?.['derived-stats']?.KE;
+                    const rs = nsc.stats?.['combat-stats']?.['armour-protection'] ?? 0;
+                    const pain = nsc.stats?.['combat-stats']?.['pain-level'] ?? 0;
+
+                    // Aktive Waffe ermitteln (nach "main-weapon": true oder Fallback auf das erste Element)
+                    const weapons = nsc.stats?.['combat-stats']?.weapons || [];
+                    const activeWeapon = weapons.find(w => w['main-weapon'] === true || w['main-weapon'] === "true") || weapons[0] || {};
+
+                    const wpnName = activeWeapon.name || 'Waffenlos';
+                    const wpnTp = activeWeapon.hitpoints || activeWeapon.TP || '-';
+                    const wpnTechName = activeWeapon['combat-technique'];
+
+                    // Passende Kampftechnik (AT/PA) für die Waffe ermitteln
+                    let combatTechStr = 'AT/PA: -/-';
+                    if (wpnTechName && nsc.stats?.abilities?.['combat-techniques']) {
+                        const techObj = nsc.stats.abilities['combat-techniques'].find(t => t.name === wpnTechName);
+                        if (techObj) {
+                            const at = techObj.AT ?? '-';
+                            const pa = techObj.PA ?? '-';
+                            combatTechStr = `AT: ${at} / PA: ${pa}`;
+                        }
+                    }
+
+                    // Dynamischer String für Energien (LE ist immer da, AE/KE nur wenn vorhanden)
+                    let energyInfo = `LeP: ${le}`;
+                    if (ae) energyInfo += ` | AsP: ${ae}`;
+                    if (ke) energyInfo += ` | KaP: ${ke}`;
+
+                    // Zusammenbau des Listeneintrags
+                    const div = document.createElement('div');
+                    div.className = 'list-item';
+                    div.innerHTML = `
+                    <strong>${name}</strong>
+                    <small style="display: block; line-height: 1.4; margin-top: 2px;">
+                        ${energyInfo} | RS: ${rs} | Schmerz: ${pain}<br>
+                        
+                        ${wpnName} (${wpnTp}) | ${combatTechStr}
+                    </small>
+                `;
+
+                    div.onclick = () => addNscToCombatArena(nsc);
+                    listEl.appendChild(div);
+                });
+            }
+
+            function addNscToCombatArena(nsc) {
+                console.log("Ausgewählter Kampf-NSC für die Arena:", nsc.general.name);
+                // Hier kannst du die Logik einbauen, um den NSC in Arena Hauptbereich zu übernehmen
+            }
+
+            // --- KAMPF-ARENA STATE & LOGIK ---
+            let activeCombatants = [];
+            let activeCombatantIndex = -1;
+
+            // 1. NSC aus der Sidebar in die Arena holen
+            function addNscToCombatArena(nsc) {
+                if (activeCombatants.some(c => c.id === nsc.id)) {
+                    logArenaAction(`Hinweis: ${nsc.general.name} ist bereits in der Arena.`);
+                    return;
+                }
+
+                const combatant = {
+                    id: nsc.id,
+                    name: nsc.general.name,
+                    type: nsc.profession?.category || 'Kämpfende Person',
+                    leMax: nsc.stats?.['derived-stats']?.LE || 30,
+                    leCurrent: nsc.stats?.['derived-stats']?.LE || 30,
+                    aeMax: nsc.stats?.['derived-stats']?.AE || 0,
+                    aeCurrent: nsc.stats?.['derived-stats']?.AE || 0,
+                    keMax: nsc.stats?.['derived-stats']?.KE || 0,
+                    keCurrent: nsc.stats?.['derived-stats']?.KE || 0,
+                    rs: nsc.stats?.['combat-stats']?.['armour-protection'] || 0,
+                    be: nsc.stats?.['combat-stats']?.['encumbrance'] || 0,
+                    pain: nsc.stats?.['combat-stats']?.['pain-level'] || 0,
+                    iniBase: parseInt(nsc.stats?.['derived-stats']?.INI) || 11,
+                    iniTotal: 0,
+                    weapons: nsc.stats?.['combat-stats']?.weapons || [],
+                    combatTechniques: nsc.stats?.abilities?.['combat-techniques'] || [],
+                    targetId: "",
+                    defensesUsedThisRound: 0,
+                    attackUsedThisRound: false // Begrenzung auf 1 AT/FK pro KR
+                };
+
+                activeCombatants.push(combatant);
+                logArenaAction(`<b>${combatant.name}</b> betritt die Kampf-Arena.`);
+                renderIniTracker();
+                renderArenaCards();
+            }
+
+            // 2. Initiative für alle Teilnehmer würfeln (INI = Basis + 1W6 - BE - Schmerz)
+            function rollAllInitiatives() {
+                if (activeCombatants.length === 0) {
+                    logArenaAction("Keine Kämpfenden in der Arena vorhanden.");
+                    return;
+                }
+
+                activeCombatants.forEach(c => {
+                    const w6 = Math.floor(Math.random() * 6) + 1;
+                    c.iniTotal = c.iniBase + w6 - c.be - c.pain;
+                });
+
+                // Absteigend sortieren nach INI, bei Gleichstand nach INI-Basis
+                activeCombatants.sort((a, b) => b.iniTotal - a.iniTotal || b.iniBase - a.iniBase);
+                activeCombatantIndex = 0;
+
+                logArenaAction("🎲 Initiative für alle Beteiligten gewürfelt und sortiert.");
+                renderIniTracker();
+                renderArenaCards();
+            }
+
+            // 3. 15-Plätze INI-Tracker rendern (rechts am Rand)
+            function renderIniTracker() {
+                const container = document.getElementById('iniTrackerSlots');
+                container.innerHTML = "";
+
+                for (let i = 0; i < 15; i++) {
+                    const combatant = activeCombatants[i];
+                    const slotDiv = document.createElement('div');
+                    slotDiv.className = `ini-slot-item ${combatant ? 'filled' : ''} ${i === activeCombatantIndex ? 'active' : ''}`;
+
+                    if (combatant) {
+                        slotDiv.innerHTML = `
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 130px;">
+                    <b>#${i + 1}</b> ${combatant.name}
+                </span>
+                <span style="color: var(--highlight); font-weight: bold;">(${combatant.iniTotal})</span>
+            `;
+                        slotDiv.onclick = () => setActiveCombatant(i);
+                    } else {
+                        slotDiv.innerHTML = `<span style="opacity: 0.4;">#${i + 1} [frei]</span><span>-</span>`;
+                    }
+                    container.appendChild(slotDiv);
+                }
+            }
+
+            function setActiveCombatant(index) {
+                activeCombatantIndex = index;
+                renderIniTracker();
+                renderArenaCards();
+                if (activeCombatants[index]) {
+                    logArenaAction(`👉 Akt an der Reihe: <b>${activeCombatants[index].name}</b>.`);
+                }
+            }
+
+            // --- 3.1. RUNDENWECHSEL FUNKTION ---
+            function nextCombatRound() {
+                activeCombatants.forEach(c => {
+                    c.defensesUsedThisRound = 0;
+                    c.attackUsedThisRound = false; // Reset der Aktionssperre
+                });
+                logArenaAction(`🔄 <b>Rundenwechsel:</b> Alle Verteidigungen und Attacken-Sperren wurden zurückgesetzt.`);
+                renderArenaCards();
+            }
+
+            // 4. Arena-Karten rendern (mit exakten Vorgaben)
+            function renderArenaCards() {
+                const grid = document.getElementById('arenaCardGrid');
+                grid.innerHTML = "";
+
+                if (activeCombatants.length === 0) {
+                    grid.innerHTML = `<div style="color: #777; font-style: italic; padding: 20px;">Die Arena ist leer. Wähle links in der Sidebar Kämpfende aus.</div>`;
+                    return;
+                }
+
+                activeCombatants.forEach((c, idx) => {
+                    const isActive = (idx === activeCombatantIndex);
+                    const card = document.createElement('div');
+                    card.className = `arena-card ${isActive ? 'active-card' : ''}`;
+
+                    const targetOptions = activeCombatants
+                        .filter(o => o.id !== c.id)
+                        .map(o => `<option value="${o.id}" ${c.targetId === o.id ? 'selected' : ''}>${o.name}</option>`)
+                        .join('');
+
+                    const isMagical = c.aeMax > 0;
+                    const isClerical = c.keMax > 0;
+
+                    // Waffentabelle (Nur Name, RW, AT/FK, PA, TP - OHNE Tech, Leiteigenschaft etc.)
+                    let weaponsHtml = "";
+                    if (c.weapons && c.weapons.length > 0) {
+                        weaponsHtml = `<table class="weapon-table"><tr><th>Waffe</th><th>RW</th><th>AT/FK</th><th>PA</th><th>TP</th></tr>`;
+                        c.weapons.forEach((w, wIdx) => {
+                            const isMain = w['main-weapon'] === true || w['main-weapon'] === "true";
+                            let atVal = 10, paVal = 5;
+                            const techName = w['combat-technique'] || 'Standard';
+                            const techObj = c.combatTechniques.find(t => t.name === techName);
+
+                            if (techObj) {
+                                atVal = (techObj.AT !== undefined) ? techObj.AT : (techObj.KTW || 10);
+                                paVal = (techObj.PA !== undefined) ? techObj.PA : Math.floor((techObj.KTW || 10) / 2);
+                            }
+
+                            const effectiveAT = atVal - c.pain;
+                            const effectivePA = paVal - c.pain;
+                            const tpStr = w.hitpoints || w.TP || '1W6';
+                            const rwStr = w['melee-weapon-reach'] || 'mittel';
+
+                            weaponsHtml += `
+                    <tr style="${isMain ? 'background: rgba(212,160,23,0.15);' : ''}">
+                        <td><input type="radio" name="main-weapon-${c.id}" ${isMain ? 'checked' : ''} onclick="setMainWeapon('${c.id}', ${wIdx})"> <b>${w.name}</b></td>
+                        <td>${rwStr}</td>
+                        <td>${effectiveAT}</td>
+                        <td>${effectivePA}</td>
+                        <td>${tpStr}</td>
+                    </tr>
+                `;
+                        });
+                        weaponsHtml += `</table>`;
+                    } else {
+                        weaponsHtml = `<div style="font-size: 0.85em; font-style: italic;">Standard: Raufen (1W6)</div>`;
+                    }
+
+                    // Aktive Werte für Buttons
+                    const activeWeapon = c.weapons.find(w => w['main-weapon'] === true || w['main-weapon'] === "true") || c.weapons[0] || { name: 'Raufen', hitpoints: '1W6', 'combat-technique': 'Raufen' };
+                    let defaultAT = 11, defaultPA = 6;
+                    const techObj = c.combatTechniques.find(t => t.name === activeWeapon['combat-technique']);
+                    if (techObj) {
+                        defaultAT = (techObj.AT !== undefined) ? techObj.AT : (techObj.KTW || 10);
+                        defaultPA = (techObj.PA !== undefined) ? techObj.PA : Math.floor((techObj.KTW || 10) / 2);
+                    }
+                    const effAT = defaultAT - c.pain;
+                    const basePA = defaultPA - c.pain;
+                    const baseAW = 6;
+
+                    const defenseMalus = c.defensesUsedThisRound * 3;
+                    const currentPA = Math.max(0, basePA - defenseMalus);
+                    const currentAW = Math.max(0, baseAW - defenseMalus);
+                    const isRanged = activeWeapon['combat-technique'] && ['Bogen', 'Armbrüste', 'Wurfwaffen', 'Schleudern'].includes(activeWeapon['combat-technique']);
+
+                    const defenseTooltip = `Verteidigungen in dieser KR: ${c.defensesUsedThisRound} (Malus: -${defenseMalus})`;
+                    const attackDisabledAttr = c.attackUsedThisRound ? 'disabled style="opacity:0.5; cursor:not-allowed;"' : '';
+
+                    card.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--card-border); padding-bottom: 6px;">
+                <h3 style="margin: 0; font-size: 1.2em;">${c.name}</h3>
+                <button onclick="removeCombatant('${c.id}')" style="background: none; border: none; cursor: pointer; color: var(--accent); font-weight: bold;">✕</button>
+            </div>
+
+            <!-- Ressourcen: Bedingt gerendert (nur LeP, sowie AsP/KaP wenn vorhanden) -->
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; background: rgba(0,0,0,0.05); padding: 6px; border-radius: 4px;">
+                <div class="stat-input-group">
+                    <label style="font-weight:bold; font-size:0.85em;">LeP:</label>
+                    <input type="number" value="${c.leCurrent}" onchange="updateResource('${c.id}', 'leCurrent', this.value)">
+                    <span style="font-size:0.85em;">/ ${c.leMax}</span>
+                </div>
+
+                ${isMagical ? `
+                <div class="stat-input-group">
+                    <label style="font-weight:bold; font-size:0.85em;">AsP:</label>
+                    <input type="number" value="${c.aeCurrent}" onchange="updateResource('${c.id}', 'aeCurrent', this.value)">
+                    <span style="font-size:0.85em;">/ ${c.aeMax}</span>
+                </div>` : ''}
+
+                ${isClerical ? `
+                <div class="stat-input-group">
+                    <label style="font-weight:bold; font-size:0.85em;">KaP:</label>
+                    <input type="number" value="${c.keCurrent}" onchange="updateResource('${c.id}', 'keCurrent', this.value)">
+                    <span style="font-size:0.85em;">/ ${c.keMax}</span>
+                </div>` : ''}
+
+                <div class="stat-input-group">
+                    <label style="font-weight:bold; font-size:0.85em;">Schmerz:</label>
+                    <select onchange="updatePain('${c.id}', this.value)" style="font-size:0.85em;">
+                        <option value="0" ${c.pain === 0 ? 'selected' : ''}>0</option>
+                        <option value="1" ${c.pain === 1 ? 'selected' : ''}>1</option>
+                        <option value="2" ${c.pain === 2 ? 'selected' : ''}>2</option>
+                        <option value="3" ${c.pain === 3 ? 'selected' : ''}>3</option>
+                        <option value="4" ${c.pain === 4 ? 'selected' : ''}>4</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Rüstung & Belastung -->
+            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.9em; background: rgba(0,0,0,0.03); padding: 4px 6px; border-radius: 3px;">
+                <div class="stat-input-group">
+                    <label style="font-weight:bold; font-size:0.85em;">🛡️ RS:</label>
+                    <input type="number" value="${c.rs}" onchange="updateResource('${c.id}', 'rs', this.value)">
+                </div>
+                <div>🎒 <b>BE:</b> ${c.be}</div>
+            </div>
+
+            <div>${weaponsHtml}</div>
+
+            <!-- Gegner-Zuordnung -->
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <label style="font-size: 0.85em; font-weight: bold;">Gegner:in:</label>
+                <select onchange="setTarget('${c.id}', this.value)" style="flex-grow: 1; font-size: 0.85em; padding: 2px;">
+                    <option value="">-- Ziel wählen --</option>
+                    ${targetOptions}
+                </select>
+            </div>
+
+            <!-- Buttons mit AT/FK-Limitierung auf 1 pro KR -->
+            <div class="action-btn-row">
+                ${isRanged ?
+                            `<button class="dsa-btn-primary" onclick="performAttack('${c.id}', 'FK', ${effAT})" ${attackDisabledAttr}>🎲 FK (${effAT})</button>` :
+                            `<button class="dsa-btn-primary" onclick="performAttack('${c.id}', 'AT', ${effAT})" ${attackDisabledAttr}>🎲 AT (${effAT})</button>`
+                        }
+                <button class="dsa-btn-secondary" onclick="performDefense('${c.id}', 'PA', ${basePA})" title="${defenseTooltip}">🛡️ PA (${currentPA})</button>
+                <button class="dsa-btn-secondary" onclick="performDefense('${c.id}', 'AW', ${baseAW})" title="${defenseTooltip}">🏃 AW (${currentAW})</button>
+            </div>
+        `;
+                    grid.appendChild(card);
+                });
+            }
+
+            // 4.1 Arena-Karten Waffe aktivieren
+
+            function setMainWeapon(combatantId, weaponIndex) {
+                const c = activeCombatants.find(item => item.id === combatantId);
+                if (c && c.weapons) {
+                    c.weapons.forEach((w, idx) => {
+                        w['main-weapon'] = (idx === weaponIndex);
+                    });
+                    renderArenaCards();
+                    logArenaAction(`<b>${c.name}</b> wechselt die aktive Waffe zu <b>${c.weapons[weaponIndex].name}</b>.`);
+                }
+            }
+
+            // 5. Interaktive State-Aktualisierungen & Schadens-Engine
+            function updateResource(id, field, val) {
+                const c = activeCombatants.find(item => item.id === id);
+                if (c) {
+                    c[field] = parseInt(val) || 0;
+                    checkPainThreshold(c);
+                    renderArenaCards();
+                }
+            }
+
+            function updatePain(id, val) {
+                const c = activeCombatants.find(item => item.id === id);
+                if (c) {
+                    c.pain = parseInt(val) || 0;
+                    logArenaAction(`Zustand geändert: <b>${c.name}</b> hat nun Schmerz-Stufe ${c.pain} (-${c.pain} auf alle Proben).`);
+                    renderArenaCards();
+                }
+            }
+
+            function setTarget(id, targetId) {
+                const c = activeCombatants.find(item => item.id === id);
+                const target = activeCombatants.find(item => item.id === targetId);
+                if (c) {
+                    c.targetId = targetId;
+                    if (target) {
+                        logArenaAction(`Zielzuordnung: <b>${c.name}</b> visiert <b>${target.name}</b> an.`);
+                    }
+                }
+            }
+
+            function removeCombatant(id) {
+                activeCombatants = activeCombatants.filter(c => c.id !== id);
+                renderIniTracker();
+                renderArenaCards();
+                logArenaAction("Eine Person wurde aus der Arena entfernt.");
+            }
+
+            // Automatische Schmerzschwellen-Überprüfung nach DSA 5 Regeln
+            function checkPainThreshold(c) {
+                const ratio = c.leCurrent / c.leMax;
+                let newPain = 0;
+                if (c.leCurrent <= 5) newPain = 4;
+                else if (ratio <= 0.25) newPain = 3;
+                else if (ratio <= 0.50) newPain = 2;
+                else if (ratio <= 0.75) newPain = 1;
+
+                if (newPain !== c.pain) {
+                    c.pain = newPain;
+                    logArenaAction(`⚠️ Schmerz-Automatismus: <b>${c.name}</b> erreicht aufgrund von ${c.leCurrent}/${c.leMax} LeP automatisch Schmerz-Stufe ${c.pain}.`);
+                }
+            }
+
+            // 6. Angriffs-, Verteidigungs- & Schadens-Resolver
+            function performAttack(attackerId, type, skillVal) {
+                const attacker = activeCombatants.find(c => c.id === attackerId);
+                if (!attacker) return;
+
+                if (attacker.attackUsedThisRound) {
+                    logArenaAction(`⚠️ ${attacker.name} hat in dieser Kampfrunde bereits eine Attacke/Fernkampfwangriff ausgeführt.`);
+                    return;
+                }
+
+                attacker.attackUsedThisRound = true; // Aktion für diese KR sperren
+                renderArenaCards();
+
+                const roll = Math.floor(Math.random() * 20) + 1;
+                let isSuccess = roll <= skillVal;
+                let resultStr = roll === 1 ? `🌟 KRITISCHER ERFOLG` : (roll === 20 ? `💀 PATZER` : (isSuccess ? `✅ ERFOLG (${roll} <= ${skillVal})` : `❌ MISSLUNGEN (${roll} > ${skillVal})`));
+
+                logArenaAction(`[Angriff] <b>${attacker.name}</b> führt ${type} aus: ${resultStr}`);
+
+                if (isSuccess && attacker.targetId) {
+                    const target = activeCombatants.find(c => c.id === attacker.targetId);
+                    if (target) {
+                        logArenaAction(`👉 <b>${target.name}</b> wird angegriffen und muss reagieren!`);
+                    }
+                }
+            }
+
+            function performDefense(defenderId, type, baseDefenseVal) {
+                const defender = activeCombatants.find(c => c.id === defenderId);
+                if (!defender) return;
+
+                // 1. Kumulativen Malus berechnen VOR dem Erhöhen des Zählers für DIESE Verteidigung
+                // 1. Verteidigung: 0 Malus (defensesUsedThisRound = 0)
+                // 2. Verteidigung: -3 Malus (defensesUsedThisRound = 1)
+                // 3. Verteidigung: -6 Malus (defensesUsedThisRound = 2) usw.
+                const activeMalus = defender.defensesUsedThisRound * 3;
+                const effectiveDefenseVal = Math.max(0, baseDefenseVal - activeMalus);
+
+                // Verteidigungs-Zähler für diese KR direkt erhöhen (gilt für jede genutzte Verteidigung!)
+                defender.defensesUsedThisRound++;
+
+                const roll = Math.floor(Math.random() * 20) + 1;
+                let isSuccess = roll <= effectiveDefenseVal;
+                let resultStr = "";
+
+                if (roll === 1) {
+                    resultStr = `🌟 KRITISCHE VERTEIDIGUNG (Passierschlag-Chance!)`;
+                    isSuccess = true;
+                } else if (roll === 20) {
+                    resultStr = `💀 VERTEIDIGUNGS-PATZER`;
+                    isSuccess = false;
+                } else if (isSuccess) {
+                    resultStr = `🛡️ ${type} GELUNGEN (Wurf: ${roll} <= ${effectiveDefenseVal}, Malus: -${activeMalus})`;
+                } else {
+                    resultStr = `❌ ${type} MISSGLÜCKT (Wurf: ${roll} > ${effectiveDefenseVal}, Malus: -${activeMalus})`;
+                }
+
+                logArenaAction(`[Verteidigung] <b>${defender.name}</b> führt ${type} aus: ${resultStr}`);
+
+                // Schadensabzug erfolgt NUR bei misslungener Verteidigung
+                if (!isSuccess) {
+                    const attacker = activeCombatants.find(c => c.targetId === defender.id);
+                    let tpRolled = 5;
+                    let weaponName = "Waffenangriff";
+
+                    if (attacker && attacker.weapons && attacker.weapons.length > 0) {
+                        const wpn = attacker.weapons.find(w => w['main-weapon'] === true) || attacker.weapons[0];
+                        weaponName = wpn.name;
+                        if (wpn.hitpoints && wpn.hitpoints.includes('1W6')) {
+                            const w6 = Math.floor(Math.random() * 6) + 1;
+                            const bonus = parseInt(wpn.hitpoints.split('+')[1]) || 0;
+                            tpRolled = w6 + bonus;
+                        }
+                    }
+
+                    const sp = Math.max(0, tpRolled - defender.rs);
+                    defender.leCurrent = Math.max(0, defender.leCurrent - sp);
+                    checkPainThreshold(defender);
+
+                    logArenaAction(`💥 <b>Schadensrechner:</b> ${weaponName} trifft ${defender.name}! TP: ${tpRolled} - RS: ${defender.rs} = <b>${sp} SP</b> abgezogen. Verbleibende LeP: ${defender.leCurrent}/${defender.leMax}.`);
+                }
+
+                // UI aktualisieren, damit die Buttons den neuen Malus für die nächste Aktion anzeigen
+                renderArenaCards();
+            }
+
+            // 7. Gendersensitives Protokoll
+            function logArenaAction(msg) {
+                const logBox = document.getElementById('arenaLog');
+                const timeStr = new Date().toLocaleTimeString();
+                logBox.innerHTML += `<div>[${timeStr}] ${msg}</div>`;
+                logBox.scrollTop = logBox.scrollHeight;
+            }
+
+            // --- EIN- UND AUSKLAPP-STEUERUNG ---
+            function toggleNav() {
+                const nav = document.getElementById('masterNav');
+                const expandNavBtn = document.getElementById('expandNavBtn');
+                nav.classList.toggle('collapsed');
+
+                if (nav.classList.contains('collapsed')) {
+                    expandNavBtn.classList.add('visible');
+                } else {
+                    expandNavBtn.classList.remove('visible');
+                }
+            }
+
+            function toggleSidebar() {
+                const sidebar = document.getElementById('mainSidebar');
+                const expandBtn = document.getElementById('expandSidebarBtn');
+
+                sidebar.classList.toggle('collapsed');
+
+                if (sidebar.classList.contains('collapsed')) {
+                    expandBtn.classList.add('visible');
+                } else {
+                    expandBtn.classList.remove('visible');
+                }
+            }
+        </script>
+</body>
+
+</html>
