@@ -31,7 +31,9 @@
             "Şahin",
             "Hesindian"
         ],
-        "injection-points": "Identifikation, Laterne, Münzen"
+        "injection-points": [
+            "Identifikation, Laterne, Münzen"
+        ]
     },
     "appearance": {
         "size": 172,
@@ -65,32 +67,166 @@
         "motivation": "Folgt Gisbert in die Gasse, leuchtet Zielpersonen mit der Laterne an und markiert sie durch Fingerzeig."
     },
     "stats": {
-        "experience-level": "Durchschnittlich",
+        "experience-level": "Kompetent",
         "attributes": {
             "MU": 11,
-            "KL": 12,
-            "IN": 11,
-            "CH": 9,
-            "FF": 12,
-            "GE": 10,
+            "KL": 13,
+            "IN": 12,
+            "CH": 11,
+            "FF": 13,
+            "GE": 11,
             "KO": 11,
             "KK": 11
         },
-        "energies": {
-            "LeP": 28,
-            "AsP": 0,
-            "KaP": 0
-        }
-    },
-    "abilities": {
-        "talents": [
+        "culture-package": "Svellttal",
+        "profession-package": "Händler",
+        "advantages": [
             {
-                "name": "Sinnenschärfe",
-                "FW": 7
+                "name": "Wohlklang"
+            },
+            {
+                "name": "Zeitgefühl"
             }
         ],
-        "spells": [],
-        "liturgies": []
+        "disadvantages": [
+            {
+                "name": "Schlechte Eigenschaft (Geiz)"
+            },
+            {
+                "name": "Persönlichkeitsschwächen (Neid)"
+            }
+        ],
+        "abilities": {
+            "talents": [
+                {
+                    "name": "Sinnesschärfe",
+                    "FW": 7
+                },
+                {
+                    "name": "Etikette",
+                    "FW": 4
+                },
+                {
+                    "name": "Gassenwissen",
+                    "FW": 3
+                },
+                {
+                    "name": "Menschenkenntnis",
+                    "FW": 5
+                },
+                {
+                    "name": "Überreden",
+                    "FW": 5
+                },
+                {
+                    "name": "Willenskraft",
+                    "FW": 4
+                },
+                {
+                    "name": "Geographie",
+                    "FW": 2
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "FW": 3
+                },
+                {
+                    "name": "Rechnen",
+                    "FW": 6
+                },
+                {
+                    "name": "Rechtskunde",
+                    "FW": 4
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "FW": 4
+                },
+                {
+                    "name": "Fahrzeuge",
+                    "FW": 5
+                },
+                {
+                    "name": "Handel",
+                    "FW": 7
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "FW": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "FW": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "FW": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "FW": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "FW": 1
+                }
+            ],
+            "combat-techniques": [
+                {
+                    "name": "Raufen",
+                    "KTW": 8,
+                    "AT": 9,
+                    "PA": 5,
+                    "FK": 9
+                },
+                {
+                    "name": "Dolche",
+                    "KTW": 10,
+                    "AT": 11,
+                    "PA": 6,
+                    "FK": 11
+                }
+            ],
+            "spells": [],
+            "liturgies": []
+        },
+        "derived-stats": {
+            "LE": 27,
+            "SK": 1,
+            "ZK": 5,
+            "AW": 6,
+            "INI": "11 + 1W6",
+            "GS": 8
+        },
+        "combat-stats": {
+            "armour-protection": 0,
+            "encumbrance": 0,
+            "pain-level": 0,
+            "weapons": [
+                {
+                    "name": "Waffenlos (Raufen)",
+                    "combat-technique": "Raufen",
+                    "hitpoints": "1W6+0",
+                    "TP": "1W6+0",
+                    "conductive-attribute": "GE/KK",
+                    "damage-threshold": 15,
+                      "attack-modifier": 0,
+                    "parry-modifier": 0,
+                    "melee-weapon-reach": "kurz"
+                },
+                {
+                    "name": "Dolch",
+                    "combat-technique": "Dolche",
+                    "hitpoints": "1W6+1",
+                    "TP": "1W6+1",
+                    "conductive-attribute": "GE",
+                    "damage-threshold": 15,
+                    "attack-modifier": 0,
+                    "parry-modifier": 0,
+                    "melee-weapon-reach": "kurz"
+                }
+            ]
+        }
     },
     "session-notes": ""
 }
