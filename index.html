@@ -437,19 +437,149 @@
             border-top: 1px solid rgba(139, 69, 19, 0.2);
             margin: 10px 0;
         }
+
+        /* --- EIN- UND AUSKLAPPBARE BEREICHE (OPTIMIERT) --- */
+        .master-nav {
+            transition: all 0.3s ease;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            max-height: 60px;
+        }
+
+        .master-nav.collapsed {
+            max-height: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            border-bottom: none !important;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Fixierter Button zum Wiederöffnen der Kopfzeile oben rechts */
+        #expandNavBtn {
+            position: fixed;
+            top: 0;
+            right: 20px;
+            background: #000;
+            color: var(--highlight);
+            border: 1px solid var(--highlight);
+            border-top: none;
+            padding: 5px 12px;
+            cursor: pointer;
+            border-radius: 0 0 6px 6px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+        }
+
+        #expandNavBtn.visible {
+            display: block;
+        }
+
+        .sidebar {
+            width: 320px;
+            transition: width 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            min-width: 320px;
+        }
+
+        .sidebar.collapsed {
+            width: 0 !important;
+            min-width: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            border-right: none !important;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Steuerungs-Buttons */
+        .toggle-nav-btn {
+            background: none;
+            border: 1px solid var(--highlight);
+            color: var(--highlight);
+            cursor: pointer;
+            padding: 4px 10px;
+            font-size: 0.85em;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .toggle-nav-btn:hover {
+            background: rgba(212, 160, 23, 0.2);
+        }
+
+        .toggle-sidebar-btn {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            color: #fff;
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .toggle-sidebar-btn:hover {
+            background: #333;
+            color: var(--highlight);
+            border-color: var(--highlight);
+        }
+
+        /* Schwebender Button, wenn die Sidebar eingeklappt ist */
+        #expandSidebarBtn {
+            position: fixed;
+            left: 0;
+            top: 30px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 2px solid var(--card-border);
+            border-left: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            font-weight: bold;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        #expandSidebarBtn.visible {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
 
-    <nav class="master-nav">
-        <a href="index.html">🏠 NSC-ÜBERSICHT</a>
-        <a href="kampfarena.html">⚔️ KAMPFARENA</a>
+    <button id="expandSidebarBtn" onclick="toggleSidebar()" title="Sidebar ausklappen">▶ Sidebar öffnen</button>
+    <button id="expandNavBtn" onclick="toggleNav()" title="Kopfzeile einblenden">▼ Kopfzeile öffnen</button>
+
+    <nav class="master-nav" id="masterNav">
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html">🏠 NSC-ÜBERSICHT</a>
+            <a href="kampfarena.html">⚔️ KAMPFARENA</a>
+        </div>
+        <button class="toggle-nav-btn" onclick="toggleNav()">▲ Kopfzeile einklappen</button>
     </nav>
 
     <div style="display: flex; flex-grow: 1; overflow: hidden; width: 100%;">
 
-        <div class="sidebar">
+        <div class="sidebar" id="mainSidebar">
+            <button class="toggle-sidebar-btn" onclick="toggleSidebar()">◀ Sidebar einklappen</button>
             <input type="text" class="search-box" id="searchInput" placeholder="Suche (z.B. Zwerg Schmied)..."
                 onkeyup="filterList()">
 
@@ -472,12 +602,14 @@
                     <span class="filter-btn" onclick="toggleSCFilter(this, 'Aurelina Violanta')">Aurelina</span>
                 </div>
 
-                <label style="font-size:0.8em; color:#888; margin-top:10px; display:block;">🧪 Status-Filter</label>
+                <label style="font-size:0.8em; color:#888; margin-top:10px; display:block;">🧪
+                    Status-Filter</label>
                 <div class="filter-tags">
                     <span class="filter-btn" onclick="toggleFilter(this, 'general.canonical', true)"> 📚 </span>
                     <span class="filter-btn" onclick="toggleFilter(this, 'general.alive', false)"> 💀 </span>
                     <span class="filter-btn" onclick="toggleFilter(this, 'profession.magical', true)"> ✨ </span>
-                    <span class="filter-btn" onclick="toggleFilter(this, 'profession.clerical', true)">🕯️ </span>
+                    <span class="filter-btn" onclick="toggleFilter(this, 'profession.clerical', true)">🕯️
+                    </span>
                     <span class="filter-btn" onclick="toggleNotesFilter(this)">📝 </span>
                 </div>
             </div>
@@ -503,9 +635,9 @@
             nscDatabase = [];
             const cacheKey = 'nsc_database_persistent_v1';
             const cacheTimestampKey = 'nsc_database_timestamp_v1';
-            
+
             // Cache-Gültigkeit: 1 Stunde (60 Min * 60 Sek * 1000 ms)
-            const maxCacheAge = 60 * 60 * 1000; 
+            const maxCacheAge = 60 * 60 * 1000;
             const cachedTimestamp = parseInt(localStorage.getItem(cacheTimestampKey) || '0', 10);
             const cacheAge = Date.now() - cachedTimestamp;
 
@@ -1407,6 +1539,32 @@
             } catch (err) {
                 console.error("GitHub API Fehler:", err);
                 alert("Speichern fehlgeschlagen: " + err.message);
+            }
+        }
+
+        // --- EIN- UND AUSKLAPP-STEUERUNG ---
+        function toggleNav() {
+            const nav = document.getElementById('masterNav');
+            const expandNavBtn = document.getElementById('expandNavBtn');
+            nav.classList.toggle('collapsed');
+            
+            if (nav.classList.contains('collapsed')) {
+                expandNavBtn.classList.add('visible');
+            } else {
+                expandNavBtn.classList.remove('visible');
+            }
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('mainSidebar');
+            const expandBtn = document.getElementById('expandSidebarBtn');
+            
+            sidebar.classList.toggle('collapsed');
+            
+            if (sidebar.classList.contains('collapsed')) {
+                expandBtn.classList.add('visible');
+            } else {
+                expandBtn.classList.remove('visible');
             }
         }
     </script>
