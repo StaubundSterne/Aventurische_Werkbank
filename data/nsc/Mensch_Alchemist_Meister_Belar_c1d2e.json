@@ -67,31 +67,7 @@
         "motivation": "Versucht eine Formel für ein Elixier zu perfektionieren, das die Kälte des Winters vertreibt."
     },
     "stats": {
-        "experience-level": "Meisterlich",
-        "attributes": {
-            "MU": 10,
-            "KL": 10,
-            "IN": 10,
-            "CH": 10,
-            "FF": 10,
-            "GE": 10,
-            "KO": 10,
-            "KK": 10
-        },
-        "derived-stats": {
-            "LE": 30,
-            "SK": 0,
-            "ZK": 0,
-            "AW": 6,
-            "INI": "11 + 1W6",
-            "GS": 8
-        },
-        "combat-stats": {
-            "armour-protection": 0,
-            "encumbrance": 0,
-            "pain-level": 0,
-            "weapons": []
-        }
+        "experience-level": "Meisterlich"
     },
     "abilities": {
         "talents": [
