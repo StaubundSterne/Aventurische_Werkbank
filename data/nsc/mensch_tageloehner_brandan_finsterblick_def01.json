@@ -155,17 +155,25 @@
             "weapons": [
                 {
                     "name": "Raufen",
+                    "main-weapon": "false",
                     "combat-technique": "Raufen",
                     "hitpoints": "1W6+0",
                     "conductive-attribute": "GE/KK",
-                    "damage-threshold": 15
+                    "damage-threshold": 15,
+                    "attack-modifier": 0,
+                    "parry-modifier": 0,
+                    "melee-weapon-reach": "kurz"
                 },
                 {
                     "name": "Besen (Hiebwaffe)",
+                    "main-weapon": "true",
                     "combat-technique": "Hiebwaffen",
-                    "hitpoints": "1W6+3",
+                    "hitpoints": "1W6",
                     "conductive-attribute": "KK",
-                    "damage-threshold": 14
+                    "damage-threshold": 14,
+                    "attack-modifier": 0,
+                    "parry-modifier": 0,
+                    "melee-weapon-reach": "lang"
                 }
             ]
         }

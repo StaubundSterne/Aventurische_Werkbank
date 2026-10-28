@@ -32,7 +32,7 @@
             "Fredegis"
         ],
         "injection-points": [
-            "Schläge, Zurechtweisung, Tochterherz"
+            "Schläge, Zurechtweisung, Tochter"
         ]
     },
     "appearance": {
@@ -175,7 +175,8 @@
             "pain-level": 0,
             "weapons": [
                 {
-                    "name": "Zimmermannshammer",
+                    "name": "Hammer",
+                    "main-weapon": "false",
                     "combat-technique": "Hiebwaffen",
                     "hitpoints": "1W6+4",
                     "conductive-attribute": "KK",
@@ -186,6 +187,7 @@
                 },
                 {
                     "name": "Raufen",
+                    "main-weapon": "true",
                     "combat-technique": "Raufen",
                     "hitpoints": "1W6+0",
                     "conductive-attribute": "GE",

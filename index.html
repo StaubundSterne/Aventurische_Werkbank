@@ -32,18 +32,32 @@
             overflow: hidden;
         }
 
-        /* Styling für die Master-Navigation */
+        /* --- STYLING FÜR DIE MASTER-NAVIGATION --- */
         .master-nav {
             background-color: #000;
             padding: 12px 20px;
             border-bottom: 2px solid var(--highlight);
             display: flex;
-            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
             font-size: 0.85em;
             font-family: 'Segoe UI', sans-serif;
             letter-spacing: 1px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             z-index: 1000;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            box-sizing: border-box;
+            max-height: 60px;
+        }
+
+        .master-nav.collapsed {
+            max-height: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            border-bottom: none !important;
+            opacity: 0;
+            pointer-events: none;
         }
 
         .master-nav a {
@@ -68,6 +82,43 @@
             opacity: 1;
             border-bottom: 1px solid var(--accent);
             padding-bottom: 2px;
+        }
+
+        .toggle-nav-btn {
+            background: none;
+            border: 1px solid var(--highlight);
+            color: var(--highlight);
+            cursor: pointer;
+            padding: 4px 10px;
+            font-size: 0.85em;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .toggle-nav-btn:hover {
+            background: rgba(212, 160, 23, 0.2);
+        }
+
+        #expandNavBtn {
+            position: fixed;
+            top: 0;
+            right: 20px;
+            background: #000;
+            color: var(--highlight);
+            border: 1px solid var(--highlight);
+            border-top: none;
+            padding: 5px 12px;
+            cursor: pointer;
+            border-radius: 0 0 6px 6px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+        }
+
+        #expandNavBtn.visible {
+            display: block;
         }
 
         /* --- SIDEBAR (FILTER & LISTE) --- */
@@ -121,12 +172,28 @@
             border-color: var(--highlight);
         }
 
+        /* --- SUCHFELD & LISTEN-ELEMENTE --- */
         .search-box {
             width: 90%;
             padding: 8px;
-            border: 1px solid #555;
+            border: 1px solid #8b5e3c;
             border-radius: 4px;
             margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.6);
+            color: var(--text-main);
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .search-box::placeholder {
+            color: rgba(43, 29, 14, 0.5);
+
         }
 
         .filter-tags {
@@ -160,21 +227,26 @@
         }
 
         .list-item {
-            padding: 8px;
-            border-bottom: 1px solid #333;
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(139, 94, 60, 0.3);
             cursor: pointer;
+            color: var(--text-main);
+            border-radius: 4px;
+            transition: background 0.2s;
         }
 
         .list-item:hover {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.6);
         }
 
         .list-item strong {
             display: block;
+            font-size: 0.95em;
         }
 
         .list-item small {
             color: var(--accent);
+            font-size: 0.8em;
         }
 
         /* --- MAIN DECK (KARTEN) --- */
@@ -502,20 +574,6 @@
         }
 
         /* Steuerungs-Buttons */
-        .toggle-nav-btn {
-            background: none;
-            border: 1px solid var(--highlight);
-            color: var(--highlight);
-            cursor: pointer;
-            padding: 4px 10px;
-            font-size: 0.85em;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-
-        .toggle-nav-btn:hover {
-            background: rgba(212, 160, 23, 0.2);
-        }
 
         .toggle-sidebar-btn {
             background: #2a2a2a;
@@ -570,7 +628,7 @@
 
     <nav class="master-nav" id="masterNav">
         <div style="display: flex; gap: 30px; align-items: center;">
-            <a href="index.html">🏠 NSC-ÜBERSICHT</a>
+            <a href="index.html" class="active">🏠 NSC-ÜBERSICHT</a>
             <a href="kampfarena.html">⚔️ KAMPFARENA</a>
         </div>
         <button class="toggle-nav-btn" onclick="toggleNav()">▲ Kopfzeile einklappen</button>
@@ -1547,7 +1605,7 @@
             const nav = document.getElementById('masterNav');
             const expandNavBtn = document.getElementById('expandNavBtn');
             nav.classList.toggle('collapsed');
-            
+
             if (nav.classList.contains('collapsed')) {
                 expandNavBtn.classList.add('visible');
             } else {
@@ -1558,9 +1616,9 @@
         function toggleSidebar() {
             const sidebar = document.getElementById('mainSidebar');
             const expandBtn = document.getElementById('expandSidebarBtn');
-            
+
             sidebar.classList.toggle('collapsed');
-            
+
             if (sidebar.classList.contains('collapsed')) {
                 expandBtn.classList.add('visible');
             } else {

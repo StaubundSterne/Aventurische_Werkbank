@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA Werkbank - Master Screen (PoC 6)</title>
+    <title>DSA Werkbank - Kampfarena (Battlemaster)</title>
     <style>
         :root {
             --bg-dark: #121212;
@@ -13,7 +13,6 @@
             --card-border: #8b5e3c;
             --text-main: #2b1d0e;
             --accent: #8b0000;
-            /* Aventurisches Rot */
             --highlight: #d4a017;
             --status-dead: #4a4a4a;
             --status-magic: #1e3a8a;
@@ -32,19 +31,34 @@
             overflow: hidden;
         }
 
-        /* Styling für die Master-Navigation */
+        /* --- STYLING FÜR DIE MASTER-NAVIGATION (100% Identisch zur Index) --- */
         .master-nav {
             background-color: #000;
-            padding: 12px 20px;
+            padding: 0 20px;
             border-bottom: 2px solid var(--highlight);
-            /* Nutzt deine Gold-Variable */
             display: flex;
-            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
             font-size: 0.85em;
             font-family: 'Segoe UI', sans-serif;
             letter-spacing: 1px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             z-index: 1000;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 46px;
+            max-height: 46px;
+        }
+
+        .master-nav.collapsed {
+            height: 0 !important;
+            max-height: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            border-bottom: none !important;
+            opacity: 0;
+            pointer-events: none;
         }
 
         .master-nav a {
@@ -65,24 +79,47 @@
             transform: translateY(-1px);
         }
 
-        /* Optional: Kennzeichnung der aktiven Seite */
         .master-nav a.active {
             opacity: 1;
             border-bottom: 1px solid var(--accent);
             padding-bottom: 2px;
         }
 
-        /* --- SIDEBAR (FILTER & LISTE) --- */
-        .sidebar {
-            width: 320px;
-            background-color: var(--card-bg);
-            color: var(--text-main);
-            display: flex;
-            flex-direction: column;
-            border-right: 1px solid #333;
-            padding: 15px;
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 10;
+        .toggle-nav-btn {
+            background: none;
+            border: 1px solid var(--highlight);
+            color: var(--highlight);
+            cursor: pointer;
+            padding: 4px 10px;
+            font-size: 0.85em;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .toggle-nav-btn:hover {
+            background: rgba(212, 160, 23, 0.2);
+        }
+
+        #expandNavBtn {
+            position: fixed;
+            top: 0;
+            right: 20px;
+            background: #000;
+            color: var(--highlight);
+            border: 1px solid var(--highlight);
+            border-top: none;
+            padding: 5px 12px;
+            cursor: pointer;
+            border-radius: 0 0 6px 6px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+        }
+
+        #expandNavBtn.visible {
+            display: block;
         }
 
         .global-controls {
@@ -93,7 +130,6 @@
             border: 1px solid #444;
         }
 
-        /* Versteckt den Filterbereich standardmäßig */
         .filter-drawer {
             width: 90%;
             display: none;
@@ -108,15 +144,15 @@
         }
 
         .toggle-filter-btn {
-            width: 90%;
+            width: 100%;
             background: none;
             border: 1px solid #555;
             cursor: pointer;
             font-size: 0.8em;
-            padding: 2px 5px;
+            padding: 4px 5px;
             margin-bottom: 10px;
-            width: 100%;
             border-radius: 4px;
+            color: #ccc;
         }
 
         .toggle-filter-btn:hover {
@@ -124,36 +160,101 @@
             border-color: var(--highlight);
         }
 
+        /* --- SIDEBAR (DESIGN & ANIMATION) --- */
+        .sidebar {
+            width: 320px;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #333;
+            padding: 15px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            transition: width 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            min-width: 320px;
+        }
+
+        .sidebar.collapsed {
+            width: 0 !important;
+            min-width: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            border-right: none !important;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Steuerungs-Button in der Sidebar */
+        .toggle-sidebar-btn {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            color: #fff;
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .toggle-sidebar-btn:hover {
+            background: #333;
+            color: var(--highlight);
+            border-color: var(--highlight);
+        }
+
+        /* Schwebender Button, wenn die Sidebar eingeklappt ist */
+        #expandSidebarBtn {
+            position: fixed;
+            left: 0;
+            top: 50px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 2px solid var(--card-border);
+            border-left: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            font-weight: bold;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        #expandSidebarBtn.visible {
+            display: block;
+        }
+
+        /* --- SUCHFELD & LISTEN-ELEMENTE --- */
         .search-box {
             width: 90%;
             padding: 8px;
-            border: 1px solid #555;
+            border: 1px solid #8b5e3c;
             border-radius: 4px;
             margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.6);
+            color: var(--text-main);
+            box-sizing: border-box;
+            font-family: inherit;
         }
 
-        .filter-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-bottom: 15px;
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.9);
         }
 
-        .filter-btn {
-            border: 1px solid #555;
-            color: #333;
-            font-size: 0.75em;
-            padding: 4px 8px;
-            cursor: pointer;
-            border-radius: 10px;
-            user-select: none;
-        }
-
-        .filter-btn.active {
-            background: var(--highlight);
-            color: #000;
-            border-color: var(--highlight);
-            font-weight: bold;
+        .search-box::placeholder {
+            color: rgba(43, 29, 14, 0.5);
         }
 
         #nscList {
@@ -163,498 +264,64 @@
         }
 
         .list-item {
-            padding: 8px;
-            border-bottom: 1px solid #333;
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(139, 94, 60, 0.3);
             cursor: pointer;
+            color: var(--text-main);
+            border-radius: 4px;
+            transition: background 0.2s;
         }
 
         .list-item:hover {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.6);
         }
 
         .list-item strong {
             display: block;
+            font-size: 0.95em;
         }
 
         .list-item small {
             color: var(--accent);
+            font-size: 0.8em;
         }
 
-        /* --- MAIN DECK (KARTEN) --- */
-        .deck {
+        /* --- ARENA HAUPTBEREICH --- */
+        .arena-container {
             flex-grow: 1;
-            overflow-x: hidden;
-            /* Horizontal zu */
             overflow-y: auto;
-            /* Vertikal auf */
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            /* Erlaubt das Umbrechen in die nächste Zeile */
             padding: 20px;
-            gap: 20px;
-            height: 100%;
-            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-image: radial-gradient(#222 1px, transparent 1px);
             background-size: 20px 20px;
-            align-content: flex-start;
-            /* Karten kleben oben am Start */
-        }
-
-        /* --- NSC KARTE --- */
-        .card {
-            min-width: 450px;
-            width: 450px;
-            background: var(--card-bg);
-            color: var(--text-main);
-            border: 4px double var(--card-border);
-            border-radius: 2px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-            scroll-snap-align: center;
-            position: relative;
-            transition: height 0.2s ease-out;
-            /* Sanftes Einklappen */
-            cursor: default;
-            width: 380px;
-            flex-shrink: 0;
-            font-family: 'Georgia', serif;
-            /* Serif für den In-Game Look */
-        }
-
-        .card.collapsed {
-            /* Nur Header sichtbar */
-            height: 100px;
-            overflow: hidden;
-        }
-
-        .card.collapsed .card-body,
-        .card.collapsed .nsc-status-row,
-        .card.collapsed .status-bar {
-            display: none;
-            /* Versteckt den Rest im minimierten Zustand */
-        }
-
-        /* PRIO 1: HEADER */
-        .card-header {
-            padding: 10px 15px;
-            border-bottom: 2px solid var(--card-border);
-            background: rgba(139, 69, 19, 0.1);
-            cursor: move;
-            /* Zeigt an, dass man hier ziehen kann */
-        }
-
-        /* Visuelles Feedback beim Ziehen */
-        .card.dragging {
-            opacity: 0.4;
-            border: 2px dashed var(--highlight);
-        }
-
-        .card-header h2 {
-            margin: 0;
-            font-size: 1.4em;
-            border-bottom: 1px solid var(--accent);
-        }
-
-        .sub-header {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.1em;
-            margin-top: 5px;
-        }
-
-        /* Container für die Injektion */
-        .injection-container {
-            color: var(--accent);
-            margin-top: 5px;
-            min-height: 1.2em;
-            /* Verhindert, dass das Feld bei 0 Zeichen kollabiert */
-            display: block;
-            width: 100%;
-        }
-
-        /* Macht leere editierbare Felder sichtbar */
-        [contenteditable="true"]:empty:before {
-            content: attr(placeholder);
-            color: rgba(139, 0, 0, 0.4);
-            /* Blasses Aventurisch-Rot */
-            font-style: italic;
-            cursor: text;
-        }
-
-        /* Verhindert, dass das Feld bei Klick wegspringt */
-        [contenteditable="true"] {
-            display: inline-block;
-            min-width: 20px;
-            outline: none;
-        }
-
-        /* Hilfestellung, wenn das Feld leer ist */
-        [contenteditable="true"]:empty:before {
-            content: attr(placeholder);
-            color: rgba(139, 0, 0, 0.3);
-            /* Blasses Rot */
-            display: block;
-        }
-
-        /* PRIO 2: STATUS LEISTE */
-        /* Kompakter Status-Bereich */
-        .nsc-status-row {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-top: 2px;
-            padding: 5px 10px;
-            border-top: 1px dashed rgba(0, 0, 0, 0.1);
-        }
-
-        .status-emoji {
-            cursor: pointer;
-            filter: grayscale(1);
-            opacity: 0.3;
-            transition: all 0.2s ease;
-            user-select: none;
-        }
-
-        /* Wenn aktiv, dann farbig und deutlich */
-        .status-emoji.active {
-            filter: grayscale(0);
-            opacity: 1;
-            transform: scale(1.1);
-        }
-
-        /* Der Speichern-Button als Teil der Leiste */
-        .save-btn-inline {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            margin-left: auto;
-            /* Schiebt den Speichern-Button nach ganz rechts */
-            filter: none;
-            opacity: 1;
-        }
-
-        .status-bar {
-            padding: 5px 15px;
-            background: rgba(0, 0, 0, 0.05);
-            display: flex;
-            gap: 10px;
-            font-size: 0.8em;
-            align-items: center;
-            border-bottom: 1px solid rgba(139, 69, 19, 0.2);
-        }
-
-        .status-toggle {
-            cursor: pointer;
-            opacity: 0.3;
-            font-weight: bold;
-        }
-
-        .status-toggle.active {
-            opacity: 1;
-        }
-
-        .s-dead.active {
-            color: var(--status-dead);
-            text-decoration: line-through;
-        }
-
-        .s-magic.active {
-            color: var(--status-magic);
-        }
-
-        .s-god.active {
-            color: var(--status-god);
-        }
-
-        .s-noble.active {
-            color: var(--status-noble);
-        }
-
-        /* CONTENT BEREICH */
-        .card-body {
-            padding: 0 15px 15px 15px;
-            overflow-y: auto;
-            flex-grow: 1;
-        }
-
-        /* NOTES (PRIO 1 highlight) */
-        .notes-section {
-            margin-top: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .notes-section[open] {
-            background: rgba(255, 255, 255, 0.6);
-            border-left: 4px solid var(--accent);
-            padding-bottom: 10px;
-        }
-
-        .notes-active {
-            border: 2px solid var(--accent);
-            background: rgba(255, 0, 0, 0.05);
-        }
-
-        .notes-active summary {
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        /* SECTIONS */
-        .section-block {
-            font-size: 1.1em;
-            margin-top: 5px;
-        }
-
-        .section-title {
-            font-weight: bold;
-            border-bottom: 1px dashed var(--text-main);
-            margin-bottom: 5px;
-            font-variant: small-caps;
-            font-size: 1.1em;
-            color: var(--accent);
-        }
-
-        .kv-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 5px;
-            font-size: 0.9em;
-        }
-
-        .kv-label {
-            font-size: 1em;
-            color: #555;
-        }
-
-        /* PRIO 5: CRUNCH (Werte) */
-        .stats-row {
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.1);
-            padding: 5px;
-            border-radius: 4px;
-            margin-bottom: 5px;
-        }
-
-        .stat-box {
-            display: flex;
-            flex-direction: column;
-            width: 12%;
-        }
-
-        .stat-val {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        /* HELPER */
-        [contenteditable]:hover {
-            background: rgba(255, 255, 255, 0.5);
-            outline: 1px dotted #888;
-        }
-
-        [contenteditable]:focus {
-            background: white;
-            outline: 2px solid var(--accent);
-        }
-
-        summary {
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-            font-weight: bold;
-            font-size: 0.9em;
-            padding: 5px;
-        }
-
-        details {
-            margin-bottom: 5px;
-        }
-
-        /* SAVE BUTTON */
-        .save-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #2e7d32;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 0.8em;
-            border-radius: 3px;
-        }
-
-        .save-btn:hover {
-            background: #1b5e20;
-        }
-
-        .close-card {
-            position: absolute;
-            top: 10px;
-            right: 90px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            font-size: 1.2em;
-            color: #381d06;
-        }
-
-        /* Schließen-Button im Header oben rechts */
-        .close-card-top {
-            position: absolute;
-            right: 5px;
-            top: 5px;
-            background: none;
-            border: none;
-            font-size: 1.1rem;
-            cursor: pointer;
-            color: var(--text-main);
-            opacity: 0.5;
-        }
-
-        .close-card-top:hover {
-            opacity: 1;
-            color: var(--accent);
-        }
-
-        /* START OVERLAY */
-        #startOverlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: white;
-        }
-
-        .big-btn {
-            padding: 20px 40px;
-            font-size: 1.5em;
-            cursor: pointer;
-            background: var(--accent);
-            border: none;
-            color: white;
-            border-radius: 5px;
-        }
-
-        /* --- Sektions-Blöcke & Details --- */
-        .section-block summary {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 5px;
-            cursor: pointer;
-            font-weight: bold;
-            border-bottom: 1px solid rgba(139, 69, 19, 0.1);
-        }
-
-        .card-body-content {
-            padding-top: 10px;
-        }
-
-        /* --- Gruppen-Boxen (Eigenschaften) --- */
-        .attributes-box {
-            border: 1px solid rgba(139, 94, 60, 0.3);
-            padding: 8px;
-            border-radius: 3px;
-            margin-bottom: 10px;
-            background: rgba(0, 0, 0, 0.02);
-        }
-
-        /* --- Editierbare Werte & Textareas --- */
-        [contenteditable="true"] {
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.5);
-            /* Macht alle Daten fett */
-            outline: none;
-            transition: background 0.2s;
-        }
-
-        [contenteditable="true"]:hover {
-            background: rgba(255, 255, 255, 0.678);
-        }
-
-        .subtitle {
-            min-height: 20px;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        /* Entfernt den Standard-Browser-Rand und setzt deinen Akzent */
-        textarea:focus,
-        [contenteditable]:focus {
-            outline: none;
-            /* Deaktiviert das Blau */
-            border: 1px solid var(--accent) !important;
-            /* Dein Aventurisches Rot */
-            box-shadow: 0 0 5px rgba(139, 0, 0, 0.4);
-            /* Ein sanftes Glühen */
-        }
-
-        /* Speziell für die Textareas in der Karte */
-        .notes-area:focus {
-            background: rgba(255, 255, 255, 0.5);
-            /* Wird beim Tippen etwas heller */
-        }
-
-        .notes-area {
-            width: 100%;
-            min-height: 120px;
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            font-family: 'Georgia', serif;
-            font-size: 0.95em;
-            padding: 10px;
             box-sizing: border-box;
-            resize: vertical;
-            display: block;
         }
 
-        /* --- Hervorhebung für Chronik --- */
-        .notes-active summary span {
-            color: var(--accent);
-        }
-
-        .notes-active-indicator {
-            color: var(--accent);
-            font-size: 1.2em;
-        }
-
-        /* --- Trenner --- */
-        .card-hr {
-            border: 0;
-            border-top: 1px solid rgba(139, 69, 19, 0.2);
-            margin: 10px 0;
-        }
-
-        /* === STYLING FÜR DIE KAMPF-ARENA === */
         .arena-card {
             background: #1e1c18;
             border: 2px solid #544b42;
             border-radius: 8px;
             transition: all 0.3s ease;
+            color: #d9cfc7;
+            font-family: 'Georgia', serif;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .arena-card.active-actor {
-            border-color: #d4a017;
+            border-color: var(--highlight);
             box-shadow: 0 0 15px rgba(212, 160, 23, 0.4);
         }
 
         .dsa-btn-primary {
-            background: #8c2626;
+            background: var(--accent);
             color: #f5ebe6;
             font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 4px 8px;
             transition: background 0.2s;
         }
 
@@ -665,243 +332,148 @@
         .dsa-btn-secondary {
             background: #3d3731;
             color: #d9cfc7;
+            border: 1px solid #555;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 4px 8px;
         }
 
         .dsa-btn-secondary:hover {
             background: #524a42;
+        }
+
+        /* Log Terminal */
+        #arena-log {
+            background: #0d0d0d;
+            border: 1px solid #333;
+            font-family: monospace;
+            padding: 10px;
+            border-radius: 6px;
+            height: 150px;
+            overflow-y: auto;
+            font-size: 0.85em;
+            color: #ccc;
         }
     </style>
 </head>
 
 <body>
 
-    <div id="startOverlay">
-        <h1>Die Aventurische Werkbank</h1>
-        <p>Bitte wähle deinen NSC-Ordner (JSON Dateien)</p>
-        <button class="big-btn" id="btnLoad">📂 Ordner öffnen</button>
-    </div>
+    <button id="expandNavBtn" onclick="toggleNav()" title="Kopfzeile einblenden">▼ Kopfzeile öffnen</button>
+    <button id="expandSidebarBtn" onclick="toggleSidebar()" title="Sidebar ausklappen">▶ Sidebar öffnen</button>
 
-    <nav
-        style="background: #000; padding: 10px; border-bottom: 1px solid #d4a017; display: flex; gap: 20px; font-size: 0.8em;">
-        <a href="werkbank_poc_6.3.html" style="color: #d4a017; text-decoration: none; font-weight: bold;">📜 ZUM
-            MASTER-SCREEN</a>
-        <a href="nsc_fabrik_2.html" style="color: #d4a017; text-decoration: none; font-weight: bold;">⚒️ ZUR
-            NSC-SCHMIEDE</a>
+    <nav class="master-nav" id="masterNav">
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html">🏠 NSC-ÜBERSICHT</a>
+            <a href="kampfarena.html" class="active">⚔️ KAMPFARENA</a>
+        </div>
+        <button class="toggle-nav-btn" onclick="toggleNav()">▲ Kopfzeile einklappen</button>
     </nav>
 
     <div style="display: flex; flex-grow: 1; overflow: hidden; width: 100%;">
 
-        <div class="sidebar">
-            <input type="text" class="search-box" id="searchInput" placeholder="Suche (z.B. Zwerg Schmied)..."
+
+        <div class="sidebar" id="mainSidebar">
+            <button class="toggle-sidebar-btn" onclick="toggleSidebar()">◀ Sidebar einklappen</button>
+            <input type="text" class="search-box" id="searchInput" placeholder="Suche (z.B. Zimmermann)..."
                 onkeyup="filterList()">
 
-            <button class="toggle-filter-btn" onclick="toggleFilterDrawer()">⚙️ Filter & Optionen</button>
-
-            <div id="filterDrawer" class="filter-drawer">
-                <label style="font-size:0.8em; color:#888;">📅 Aktuelles Jahr (BF)</label>
-                <div style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">
-                    <input type="number" id="globalYear" value="1009"
-                        style="width:60px; background:#111; border:1px solid #555; color:white; padding:5px;">
-                </div>
-
-                <label style="font-size:0.8em; color:#888;">🛡️ Helden-Bezug (ODER)</label>
-                <div class="filter-tags" id="scFilterGroup">
-                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Adarell')">Adarell</span>
-                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Fredegis')">Fredegis</span>
-                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Jost')">Jost</span>
-                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Hesindian')">Hesindian</span>
-                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Şahin')">Şahin</span>
-                    <span class="filter-btn" onclick="toggleSCFilter(this, 'Aurelina Violanta')">Aurelina</span>
-                </div>
-
-                <label style="font-size:0.8em; color:#888; margin-top:10px; display:block;">🧪 Status-Filter</label>
-                <div class="filter-tags">
-                    <span class="filter-btn" onclick="toggleFilter(this, 'general.canonical', true)"> 📚 </span>
-                    <span class="filter-btn" onclick="toggleFilter(this, 'general.alive', false)"> 💀 </span>
-                    <span class="filter-btn" onclick="toggleFilter(this, 'profession.magical', true)"> ✨ </span>
-                    <span class="filter-btn" onclick="toggleFilter(this, 'profession.clerical', true)">🕯️ </span>
-                    <span class="filter-btn" onclick="toggleNotesFilter(this)">📝 </span>
-                </div>
-            </div>
-
+            <!-- Hier werden die gefilterten Kampf-NSCs aufgelistet -->
             <div id="nscList"></div>
         </div>
 
-        <div class="deck" id="cardDeck"></div>
-
-        <!-- === KAMPF-ARENA MODUL (BATTLEMASTER) === -->
-        <div id="battle-arena-section" class="mt-8 p-6 bg-stone-900 border-2 border-amber-900/60 rounded-xl shadow-2xl">
-            <div
-                class="flex flex-col md:flex-row justify-between items-center border-b border-amber-900/40 pb-4 mb-4 gap-4">
-                <div>
-                    <h2 class="text-2xl font-bold text-amber-500 tracking-wide">⚔️ Taktische Kampf-Arena (Battlemaster)
-                    </h2>
-                    <p class="text-xs text-amber-200/60">DSA 5 Spielleiter-Schirm (Kodex des Schwertes) – Ohne
-                        Schicksalspunkte</p>
-                </div>
-                <div class="flex flex-wrap gap-2 items-center">
-                    <label
-                        class="bg-stone-800 hover:bg-stone-700 text-amber-200 px-3 py-2 rounded text-sm cursor-pointer border border-amber-900/50">
-                        📂 NSC / SC JSON Importieren
-                        <input type="file" id="json-roster-input" multiple accept=".json" class="hidden"
-                            onchange="handleRosterImport(event)">
-                    </label>
-                    <button onclick="rollAllInitiative()"
-                        class="bg-red-900 hover:bg-red-800 text-stone-100 font-bold px-4 py-2 rounded text-sm shadow">🎲
-                        Initiative würfeln</button>
-                    <button onclick="nextCombatTurn()"
-                        class="bg-stone-800 hover:bg-stone-700 text-stone-200 px-4 py-2 rounded text-sm border border-amber-900/50">Nächster
-                        Akteur ➔</button>
-                    <button onclick="resetCombatArena()"
-                        class="bg-stone-950 text-stone-400 hover:text-stone-200 px-3 py-2 rounded text-sm border border-stone-800">🔄
-                        Reset</button>
-                </div>
-            </div>
-
-            <!-- Runden- & Statusleiste -->
-            <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-stone-950 p-3 rounded-lg border border-amber-950 text-sm mb-6">
-                <div>Kampfrunde (KR): <span id="arena-kr" class="font-bold text-amber-400 text-lg">1</span></div>
-                <div>Aktiver Akteur: <span id="arena-active" class="font-semibold text-amber-200">-</span></div>
-                <div>Beteiligte Kämpfer: <span id="arena-count" class="font-bold text-amber-500">0</span></div>
-            </div>
-
-            <!-- Gashok Quick-Actions Panel (Umweltinteraktionen) -->
-            <div
-                class="bg-stone-950 p-3 rounded-lg border border-amber-950 mb-6 text-xs flex flex-wrap gap-2 items-center">
-                <span class="font-bold text-amber-400">Gashok Quick-Actions:</span>
-                <button onclick="quickActionProvozieeren()"
-                    class="bg-stone-800 hover:bg-stone-700 text-stone-200 px-2.5 py-1.5 rounded border border-stone-700">🗣️
-                    Provozieren (Einschüchtern vs. Willenskraft)</button>
-                <button onclick="quickActionTeppich()"
-                    class="bg-stone-800 hover:bg-stone-700 text-stone-200 px-2.5 py-1.5 rounded border border-stone-700">🧶
-                    Teppich ziehen (Kraftakt)</button>
-                <button onclick="quickActionKronleuchter()"
-                    class="bg-stone-800 hover:bg-stone-700 text-stone-200 px-2.5 py-1.5 rounded border border-stone-700">🕯️
-                    Kronleuchter stürzen (1W6+4 TP)</button>
-            </div>
-
-            <!-- Akteurskarten Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="arena-cards-container">
-                <!-- Dynamische Karten für Gisbert, Brandan, Ulman, Şahin, Qadeem etc. -->
-            </div>
-
-            <!-- Kampf-Protokoll Terminal -->
-            <div class="mt-6 bg-stone-950 p-4 rounded-lg border border-stone-800">
-                <div class="flex justify-between items-center mb-2 border-b border-stone-800 pb-1">
-                    <h3 class="text-sm font-bold text-amber-500">Kampf-Protokoll</h3>
-                    <button onclick="clearArenaLog()" class="text-xs text-stone-500 hover:text-stone-300">Log
-                        leeren</button>
-                </div>
-                <div id="arena-log" class="h-36 overflow-y-auto font-mono text-xs space-y-1 text-stone-300">
-                    <div class="text-stone-500">[System] Kampf-Arena initialisiert. Bereit für JSON-Importe von NSCs
-                        (Gisbert, Brandan, Ulman) und SCs (Şahin, Qadeem).</div>
-                </div>
-            </div>
+        <!-- Arena Hauptbereich -->
+        <div class="arena-container" id="cardDeck">
+            <!-- Deine Arena-Inhalte -->
         </div>
 
         <script>
             let nscDatabase = [];
             let openCards = new Set();
-            let dirHandle = null;
             let currentYear = 1009;
             let activeFilters = {};
 
-            // --- 1. SETUP & LOADING (CLOUD-MODUS VIA GITHUB) ---
-
-            // Beim Start der Seite direkt aus der Cloud laden (oder über den Button)
-
-            // Beim Klick auf den Button ebenfalls manuell laden
-            document.getElementById('btnLoad').addEventListener('click', async () => {
-                await loadNscsFromCloud();
-            });
-
-            // Automatisch beim Seitenaufruf ausführen
+            // Beim Laden der Seite direkt ausführen
             document.addEventListener('DOMContentLoaded', () => {
                 loadNscsFromCloud();
             });
 
-            async function loadNscsFromCloud() {
+            async function loadNscsFromCloud(forceReload = false) {
                 nscDatabase = [];
+                const cacheKey = 'nsc_database_persistent_v1';
+                const cacheTimestampKey = 'nsc_database_timestamp_v1';
+                const maxCacheAge = 60 * 60 * 1000; // 1 Stunde Cache
+
+                const cachedTimestamp = parseInt(localStorage.getItem(cacheTimestampKey) || '0', 10);
+                if (!forceReload && (Date.now() - cachedTimestamp) < maxCacheAge) {
+                    const cachedData = localStorage.getItem(cacheKey);
+                    if (cachedData) {
+                        try {
+                            nscDatabase = JSON.parse(cachedData);
+                            console.log(`[Cache] ${nscDatabase.length} NSCs aus LocalStorage geladen.`);
+                            filterList();
+                            return;
+                        } catch (e) {
+                            localStorage.removeItem(cacheKey);
+                        }
+                    }
+                }
 
                 try {
-                    // --- SCHRITT A: Automatische Dateierkennung über die GitHub-API ---
-                    // WICHTIG: Ersetze 'DEIN_GITHUB_BENUTZERNAME' und 'DEIN_REPO_NAME' mit deinen echten Daten!
                     const githubUser = "StaubundSterne";
                     const repoName = "Aventurische_Werkbank";
                     const apiUrl = `https://api.github.com/repos/${githubUser}/${repoName}/contents/data/nsc`;
 
-                    const response = await fetch(apiUrl);
-                    if (!response.ok) throw new Error("GitHub-Verzeichnis konnte nicht automatisch ausgelesen werden.");
+                    const token = localStorage.getItem('github_pat');
+                    const headers = { 'Accept': 'application/vnd.github.v3+json' };
+                    if (token) headers['Authorization'] = `Bearer ${token.trim()}`;
+
+                    const response = await fetch(apiUrl, { headers: headers });
+                    if (!response.ok) throw new Error("GitHub-Verzeichnis nicht erreichbar.");
 
                     const files = await response.json();
+                    const jsonFiles = Array.isArray(files) ? files.filter(file => file.name.endsWith('.json')) : [];
 
-                    // Filtere alle Dateien heraus, die auf .json enden
-                    const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+                    const batchSize = 16;
+                    for (let i = 0; i < jsonFiles.length; i += batchSize) {
+                        const batch = jsonFiles.slice(i, i + batchSize);
+                        const batchPromises = batch.map(async (fileObj) => {
+                            try {
+                                const fileRes = await fetch(fileObj.download_url);
+                                if (!fileRes.ok) return null;
+                                const json = await fileRes.json();
+                                json._filename = fileObj.name;
+                                return json;
+                            } catch (err) {
+                                return null;
+                            }
+                        });
 
-                    // Lade jede gefundene NSC-Datei automatisch herunter
-                    for (const fileObj of jsonFiles) {
-                        try {
-                            const fileRes = await fetch(fileObj.download_url);
-                            if (!fileRes.ok) continue;
-
-                            const json = await fileRes.json();
-                            json._filename = fileObj.name; // Speichert den Dateinamen für spätere Updates
-                            nscDatabase.push(json);
-                        } catch (err) {
-                            console.warn(`Konnte NSC ${fileObj.name} nicht laden:`, err);
-                        }
+                        const batchResults = await Promise.all(batchPromises);
+                        let hasNewData = false;
+                        batchResults.forEach(nsc => {
+                            if (nsc !== null) {
+                                nscDatabase.push(nsc);
+                                hasNewData = true;
+                            }
+                        });
+                        if (hasNewData) filterList();
                     }
+
+                    try {
+                        localStorage.setItem(cacheKey, JSON.stringify(nscDatabase));
+                        localStorage.setItem(cacheTimestampKey, Date.now().toString());
+                    } catch (e) { }
 
                 } catch (err) {
-                    console.warn("API-Abruf fehlgeschlagen (evtl. Rate-Limit oder lokaler Test). Nutze Fallback:", err);
-
-                    // --- SCHRITT B: Manueller Fallback (falls die API blockiert wird) ---
-                    const fallbackFiles = [
-                        "gerbold_wackerstein.json",
-                        "brandan_finsterblick.json"
-                    ];
-
-                    for (const filename of fallbackFiles) {
-                        try {
-                            const res = await fetch(`./nsc/${filename}`);
-                            if (res.ok) {
-                                const json = await res.json();
-                                json._filename = filename;
-                                nscDatabase.push(json);
-                            }
-                        } catch (e) {
-                            console.warn(`Fallback konnte ${filename} nicht laden.`);
-                        }
-                    }
+                    console.warn("⚠️ Fallback aktiv:", err.message);
+                    // Lokaler Fallback falls nötig
+                    filterList();
                 }
-
-                // Start-Overlay ausblenden und Liste rendern
-                document.getElementById('startOverlay').style.display = 'none';
-                filterList();
             }
 
-            // --- 2. LISTE & FILTER ---
-            function toggleFilter(btn, key, val) {
-                btn.classList.toggle('active');
-                if (btn.classList.contains('active')) {
-                    activeFilters[key] = val;
-                } else {
-                    delete activeFilters[key];
-                }
-                filterList();
-            }
-
-            let activeSCFilters = new Set();
-
-            function toggleSCFilter(btn, scName) {
-                btn.classList.toggle('active');
-                if (btn.classList.contains('active')) {
-                    activeSCFilters.add(scName);
-                } else {
-                    activeSCFilters.delete(scName);
-                }
-                filterList();
+            function toggleFilterDrawer() {
+                document.getElementById('filterDrawer').classList.toggle('open');
             }
 
             function filterList() {
@@ -909,27 +481,16 @@
                 const searchTokens = searchInput.split(/\s+/).filter(t => t.length > 0);
 
                 const filtered = nscDatabase.filter(nsc => {
-                    // 1. Notizen-Filter (Neu hinzugefügt)
-                    if (filterOnlyWithNotes && (!nsc['session-notes'] || nsc['session-notes'].length === 0)) return false;
+                    // ENTSCHEIDENDER UNTERSCHIED: Nur NSCs mit vorhandenen combat-stats zulassen!
+                    if (!nsc.stats || !nsc.stats['combat-stats'] || !nsc.stats['combat-stats'].weapons || nsc.stats['combat-stats'].weapons.length === 0) {
+                        return false;
+                    }
 
-                    // 2. Token-Volltextsuche
+                    // Volltextsuche über Tokens
                     if (searchTokens.length > 0) {
                         const fullText = JSON.stringify(nsc).toLowerCase();
                         const matchesAllTokens = searchTokens.every(token => fullText.includes(token));
                         if (!matchesAllTokens) return false;
-                    }
-
-                    // 3. Globale Filter (UND)
-                    for (let [path, expectedVal] of Object.entries(activeFilters)) {
-                        const actualVal = path.split('.').reduce((obj, key) => obj?.[key], nsc);
-                        if (actualVal !== expectedVal) return false;
-                    }
-
-                    // 4. SC-Filter (ODER)
-                    if (activeSCFilters.size > 0) {
-                        const nscScArray = nsc['sc-inject']?.sc || [];
-                        const hasMatch = [...activeSCFilters].some(scName => nscScArray.includes(scName));
-                        if (!hasMatch) return false;
                     }
 
                     return true;
@@ -938,1231 +499,95 @@
                 renderFilteredList(filtered);
             }
 
-            // Anzeige der NSC-Liste
+            // NSC-Liste in der Sidebar erstellen
+
             function renderFilteredList(filtered) {
                 const listEl = document.getElementById('nscList');
                 listEl.innerHTML = "";
 
+                // Sortierung nach Professions-Kategorie und Name
                 filtered.sort((a, b) => (a.profession?.category || '').localeCompare(b.profession?.category || '') || a.general.name.localeCompare(b.general.name));
 
                 filtered.forEach(nsc => {
-                    const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
+                    const name = nsc.general?.name || 'Unbenannt';
 
-                    // Prüft jetzt einfach: Ist Text da und nicht nur Leerzeichen?
-                    const hasNotes = typeof nsc['session-notes'] === 'string' && nsc['session-notes'].trim().length > 0;
-                    const isCanon = nsc.general?.canonical === true;
+                    // Basis-Kampfstats & Energien
+                    const le = nsc.stats?.['derived-stats']?.LE || '-';
+                    const ae = nsc.stats?.['derived-stats']?.AE;
+                    const ke = nsc.stats?.['derived-stats']?.KE;
+                    const rs = nsc.stats?.['combat-stats']?.['armour-protection'] ?? 0;
+                    const pain = nsc.stats?.['combat-stats']?.['pain-level'] ?? 0;
 
+                    // Aktive Waffe ermitteln (nach "main-weapon": true oder Fallback auf das erste Element)
+                    const weapons = nsc.stats?.['combat-stats']?.weapons || [];
+                    const activeWeapon = weapons.find(w => w['main-weapon'] === true || w['main-weapon'] === "true") || weapons[0] || {};
+                    
+                    const wpnName = activeWeapon.name || 'Waffenlos';
+                    const wpnTp = activeWeapon.hitpoints || activeWeapon.TP || '-';
+                    const wpnTechName = activeWeapon['combat-technique'];
+
+                    // Passende Kampftechnik (AT/PA) für die Waffe ermitteln
+                    let combatTechStr = 'AT/PA: -/-';
+                    if (wpnTechName && nsc.stats?.abilities?.['combat-techniques']) {
+                        const techObj = nsc.stats.abilities['combat-techniques'].find(t => t.name === wpnTechName);
+                        if (techObj) {
+                            const at = techObj.AT ?? '-';
+                            const pa = techObj.PA ?? '-';
+                            combatTechStr = `AT: ${at} / PA: ${pa}`;
+                        }
+                    }
+
+                    // Dynamischer String für Energien (LE ist immer da, AE/KE nur wenn vorhanden)
+                    let energyInfo = `LeP: ${le}`;
+                    if (ae) energyInfo += ` | AsP: ${ae}`;
+                    if (ke) energyInfo += ` | KaP: ${ke}`;
+
+                    // Zusammenbau des Listeneintrags
                     const div = document.createElement('div');
                     div.className = 'list-item';
                     div.innerHTML = `
-            <strong>${nsc.general?.name || 'Unbenannt'}${isCanon ? ' 📚 ' : ''}${hasNotes ? ' 📝 ' : ''}</strong>
-            <small>${nsc.profession?.category || '???'} | ${age} | ${nsc.general?.species || ''} (${nsc.general?.culture || ''})</small>
-        `;
+                    <strong>${name}</strong>
+                    <small style="display: block; line-height: 1.4; margin-top: 2px;">
+                        ${energyInfo} | RS: ${rs} | Schmerz: ${pain}<br>
+                        ${wpnName} (${wpnTp}) — ${combatTechStr}
+                    </small>
+                `;
 
-                    div.onclick = () => createCard(nsc);
+                    div.onclick = () => addNscToCombatArena(nsc);
                     listEl.appendChild(div);
                 });
             }
 
-            // Öffnet/Schließt das Filter-Menü
-            function toggleFilterDrawer() {
-                document.getElementById('filterDrawer').classList.toggle('open');
+            function addNscToCombatArena(nsc) {
+                console.log("Ausgewählter Kampf-NSC für die Arena:", nsc.general.name);
+                // Hier kannst du die Logik einbauen, um den NSC in dein combatRoster-Array zu übernehmen
             }
 
-            // Spezieller Filter für Session Notes
-            let filterOnlyWithNotes = false;
-            function toggleNotesFilter(btn) {
-                btn.classList.toggle('active');
-                filterOnlyWithNotes = btn.classList.contains('active');
-                filterList();
-            }
+            // --- EIN- UND AUSKLAPP-STEUERUNG ---
+            function toggleNav() {
+                const nav = document.getElementById('masterNav');
+                const expandNavBtn = document.getElementById('expandNavBtn');
+                nav.classList.toggle('collapsed');
 
-            // --- 3. DIE WERKZEUGE (KARTEN ERSTELLEN) ---
-            function createCard(nsc) {
-                // Prüfen, ob Karte schon offen ist
-                if (openCards.has(nsc.id)) {
-                    const existing = document.getElementById(`card-${nsc.id}`);
-                    if (existing) existing.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-                    return;
-                }
-                openCards.add(nsc.id);
-
-                const deck = document.getElementById('cardDeck');
-                const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
-                const hasNotes = typeof nsc['session-notes'] === 'string' && nsc['session-notes'].trim().length > 0;
-
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.id = `card-${nsc.id}`;
-
-                card.innerHTML = `
-                    <div class="card-header" ondblclick="this.parentElement.classList.toggle('collapsed')">
-                        <button class="close-card-top" onclick="removeCard('${nsc.id}')" title="Schließen">✕</button>
-
-                        <h2 contenteditable="true" oninput="upd(this, '${nsc.id}', 'general.name')">${nsc.general.name}</h2>
-                        
-                        <div class="sub-header">
-                            <span style="font-size:1.3em" contenteditable="true" oninput="upd(this, '${nsc.id}', 'profession.category')">${nsc.profession.category}</span>
-                            <span style="margin-left: 8px;">
-                            (${age} Jahre, ${nsc.general.gender})
-                            </span>
-                        </div>                        
-                        <div style="color: var(--accent); margin-top: 2px;">
-                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'profession.specification')">${nsc.profession.specification || 'Spezialisierung...'}</span>
-                        </div>                       
-
-                    </div>
-
-                    <div class="card-body">
-
-                            <div class="nsc-status-row">
-                                    <span class="status-emoji ${!nsc.general.alive ? 'active' : ''}" 
-                                        title="Tot" onclick="toggleEmoji('${nsc.id}', 'general.alive', this, true)">💀</span>
-                                    
-                                    <span class="status-emoji ${nsc.profession.magical ? 'active' : ''}" 
-                                        title="Magisch" onclick="toggleEmoji('${nsc.id}', 'profession.magical', this)">✨</span>
-                                    
-                                    <span class="status-emoji ${nsc.profession.clerical ? 'active' : ''}" 
-                                        title="Geweiht" onclick="toggleEmoji('${nsc.id}', 'profession.clerical', this)">🕯️</span>
-                                    
-                                    <span class="status-emoji ${nsc.profession.noble ? 'active' : ''}" 
-                                        title="Adlig" onclick="toggleEmoji('${nsc.id}', 'profession.noble', this)">👑</span>
-
-                                    <span class="status-emoji ${nsc.general.canonical ? 'active' : ''}" 
-                                        title="Kanonisch" onclick="toggleEmoji('${nsc.id}', 'general.canonical', this)">📚</span>
-
-                                    <button class="save-btn-inline" onclick="exportNscToHtml('${nsc.id}')" title="Als HTML exportieren" style="margin-left: auto;">🪪</button>
-                                    <button class="save-btn-inline" onclick="copyNscToClipboard('${nsc.id}', this)" title="JSON in Zwischenablage kopieren">📤</button>
-                                    <button class="save-btn-inline" onclick="pasteJsonToNsc('${nsc.id}', this)" title="JSON aus Zwischenablage ergänzen">📥</button>   
-                                    <button class="save-btn-inline" onclick="saveFile('${nsc.id}')" title="Speichern">💾</button>
-                                    <button class="save-btn-inline" onclick="saveFileToGitHub('${nsc.id}')" title="Online auf GitHub speichern">🪩</button>
-                            </div>
-
-                            <details class="section-block" open>
-
-                                <summary>
-                                    <span>💉 Anregungen und Ideen</span>
-                                </summary>
-
-                                <div class="sub-header" style="margin-top: 5px; border-top: 1px solid rgba(139,69,19,0.2); padding-top: 5px; display: flex; flex-wrap: wrap; gap: 4px;">
-                                    ${['Adarell', 'Fredegis', 'Jost', 'Hesindian', 'Şahin', 'Aurelevina Violanta'].map(name => {
-                    const isActive = nsc['sc-inject']?.sc?.includes(name);
-                    return `
-                                            <button class="filter-btn ${isActive ? 'active' : ''}" 
-                                                    style="font-size: 0.7em; padding: 2px 6px;" 
-                                                    onclick="event.stopPropagation(); toggleScOnCard('${nsc.id}', '${name}', this)">
-                                                ${name.split(' ')[0]}
-                                            </button>
-                                        `;
-                }).join('')}
-                                </div>
-
-                                <div class="injection-container" style="margin-top: 8px;">
-                                    <span contenteditable="true" 
-                                        class="editable-field"
-                                        placeholder="Plot-Injektionen (injection-points)..." 
-                                        oninput="updArray(this, '${nsc.id}', 'sc-inject.injection-points')"
-                                        style="display: block; min-height: 20px; font-style: italic; color: var(--text-main); font-size: 0.9em; white-space: pre-wrap;">${Array.isArray(nsc['sc-inject']?.['injection-points'])
-                        ? nsc['sc-inject']['injection-points'].map(line => line.trim()).join('\n')
-                        : (nsc['sc-inject']?.['injection-points']?.trim() || '')
-                    }</span>
-                                </div>
-                            </details>                            
-
-                            <details class="section-block" open>
-
-                                <summary>
-                                    <span>💃 Erscheinung</span>
-                                    <span contenteditable="true" 
-                                        style="cursor: text;"
-                                        oninput="upd(this, '${nsc.id}', 'general.species')"
-                                        onclick="event.stopPropagation();">
-                                        ${nsc.general?.species || 'Spezies?'}
-                                    </span>
-                                </summary>
-                                
-                                <div class="card-body-content">
-                                    <div class="subtitle" contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.distinguishing_features')">
-                                        ${nsc.appearance?.distinguishing_features || 'Keine auffälligen Merkmale.'}
-                                    </div>
-
-                                    <div class="attributes-box">
-                                        <div class="kv-grid">
-                                            <span class="kv-label">Größe:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.size')">${nsc.appearance?.size || '-'}</span>
-                                            
-                                            <span class="kv-label">Gewicht:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.weight')">${nsc.appearance?.weight || '-'}</span>
-                                            
-                                            <span class="kv-label">Haare:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.hair')">${nsc.appearance?.hair || '-'}</span>
-                                            
-                                            <span class="kv-label">Haut:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.skin')">${nsc.appearance?.skin || '-'}</span>
-                                            
-                                            <span class="kv-label">Augen:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.eyes')">${nsc.appearance?.eyes || '-'}</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="attributes-box">
-                                        <div class="kv-grid">
-                                            <span class="kv-label">Kopf:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.headgear')">${nsc.appearance?.outfit?.headgear || '-'}</span>
-                                            
-                                            <span class="kv-label">Oberteil:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.top')">${nsc.appearance?.outfit?.top || '-'}</span>
-                                            
-                                            <span class="kv-label">Beinkleid:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.trousers')">${nsc.appearance?.outfit?.trousers || '-'}</span>
-                                            
-                                            <span class="kv-label">Schuhe:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.footwear')">${nsc.appearance?.outfit?.footwear || '-'}</span>
-                                            
-                                            <span class="kv-label">Schmuck:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.jewellery')">${nsc.appearance?.outfit?.jewellery || '-'}</span>
-                                            
-                                            <span class="kv-label">Dinge:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.things')">${nsc.appearance?.outfit?.things || '-'}</span>
-                                            
-                                            <span class="kv-label">Waffen:</span>
-                                            <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'appearance.outfit.weapons')">${nsc.appearance?.outfit?.weapons || '-'}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </details>
-
-                            <hr class="card-hr">
-
-                            <details class="section-block ${hasNotes ? 'notes-active' : ''}">                     
-                                <summary>
-                                    <span>📝 Chronik</span>
-                                    ${hasNotes ? '<b class="notes-active-indicator">!</b>' : ''}
-                                </summary>
-                                <textarea class="notes-area" oninput="upd(this, '${nsc.id}', 'session-notes')" placeholder="Notizen...">${nsc['session-notes'] || ''}</textarea>
-                            </details>
-                            
-                            <hr class="card-hr">
-
-                            <details class="section-block">
-
-                                <summary>
-                                        <span>🤦‍♂️ Persönlichkeit</span>
-                                        <span contenteditable="true" 
-                                            style="opacity: 0.7; cursor: text;"
-                                            oninput="upd(this, '${nsc.id}', 'general.culture')"
-                                            onclick="event.stopPropagation();">
-                                            ${nsc.general?.culture || 'Kultur?'}
-                                        </span>
-                                </summary>
-
-                                <div class="card-body-content">
-                                    <div class="subtitle" contenteditable="true" oninput="upd(this, '${nsc.id}', 'personality.motivation')">
-                                        ${nsc.personality?.motivation || 'Keine besondere Motivation.'}
-                                    </div>
-
-                                        <div class="attributes-box">
-                                            <div class="kv-grid">
-                                                <span class="kv-label">Charakter:</span>
-                                                <span contenteditable="true" oninput="updTraits(this, '${nsc.id}')">
-                                                    ${Array.isArray(nsc.personality?.traits) ? nsc.personality.traits.join(', ') : (nsc.personality?.traits || '-')}
-                                                </span>
-                                                
-                                                <span class="kv-label">Stimmung:</span>
-                                                <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'personality.actual-mood')">${nsc.personality?.['actual-mood'] || '-'}</span>
-
-                                                <span class="kv-label">Seelentier:</span>
-                                                <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'general.soul-animal')">${nsc.general?.['soul-animal'] || '-'}</span>
-                                                
-                                                <span class="kv-label">Hintergründe:</span>
-                                                <span contenteditable="true" oninput="upd(this, '${nsc.id}', 'personality.family-background')">${nsc.personality?.['family-background'] || '-'}</span>
-
-                                            </div>
-                                        </div>
-                                </div>
-                            </details>
-
-                            <hr class="card-hr">
-
-                            <details class="section-block">
-                                <summary>⚔️ Eigenschaften & Werte</summary>
-                                <div class="stats-row">
-                                    ${['MU', 'KL', 'IN', 'CH', 'FF', 'GE', 'KO', 'KK'].map(stat => `
-                                        <div class="stat-box">
-                                            <small>${stat}</small>
-                                            <span class="stat-val" contenteditable="true" oninput="updStat(this, '${nsc.id}', '${stat}')">
-                                                ${nsc.stats?.attributes?.[stat] || 8}
-                                            </span>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </details>
-                    </div>   
-                </div>`;
-
-                // Doppelklick auf Header zum Minimieren
-                const header = card.querySelector('.card-header');
-                header.ondblclick = () => card.classList.toggle('collapsed');
-
-                // Drag & Drop Aktivierung
-                card.draggable = true;
-                card.addEventListener('dragstart', handleDragStart);
-                card.addEventListener('dragover', handleDragOver);
-                card.addEventListener('drop', handleDrop);
-                card.addEventListener('dragend', handleDragEnd);
-                deck.prepend(card);
-            }
-
-
-            function removeCard(id) {
-                const card = document.getElementById(`card-${id}`);
-                if (card) card.remove();
-                openCards.delete(id);
-            }
-
-            // UNIVERSAL UPDATE HELPER
-            function upd(el, id, path) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                // Check ob Textarea (value) oder Div (innerText)
-                const val = (el.tagName === 'TEXTAREA') ? el.value : el.innerText;
-
-                const keys = path.split('.');
-                let obj = nsc;
-                for (let i = 0; i < keys.length - 1; i++) {
-                    if (!obj[keys[i]]) obj[keys[i]] = {};
-                    obj = obj[keys[i]];
-                }
-                obj[keys[keys.length - 1]] = val;
-            }
-
-            function updArr(el, id, path) {
-                const val = el.innerText.split(',').map(s => s.trim()).filter(s => s);
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (path === 'tags') nsc.tags = val;
-                if (path === 'personality.traits') {
-                    if (!nsc.personality) nsc.personality = {};
-                    nsc.personality.traits = val;
-                }
-            }
-
-            function updTraits(el, id) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                // Erstellt aus "Mutig, Klug, Stolz" wieder ["Mutig", "Klug", "Stolz"]
-                const traitsArray = el.innerText.split(',')
-                    .map(t => t.trim())
-                    .filter(t => t.length > 0);
-
-                if (!nsc.personality) nsc.personality = {};
-                nsc.personality.traits = traitsArray;
-            }
-
-            function updStat(el, id, key) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (nsc && nsc.stats && nsc.stats.attributes) {
-                    nsc.stats.attributes[key] = parseInt(el.innerText) || 0;
-                }
-            }
-
-            function toggleEmoji(id, path, el, isInverted = false) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                const keys = path.split('.');
-                let obj = nsc;
-                for (let i = 0; i < keys.length - 1; i++) obj = obj[keys[i]];
-                const key = keys[keys.length - 1];
-
-                obj[key] = !obj[key];
-
-                // Logik für 'Tot': Icon ist aktiv (farbig), wenn alive = false
-                if (isInverted) {
-                    el.classList.toggle('active', !obj[key]);
+                if (nav.classList.contains('collapsed')) {
+                    expandNavBtn.classList.add('visible');
                 } else {
-                    el.classList.toggle('active', obj[key]);
+                    expandNavBtn.classList.remove('visible');
                 }
             }
 
-            // Speichern
-            async function saveFile(id) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc || !dirHandle) return;
-                const copy = JSON.parse(JSON.stringify(nsc));
-                const fname = copy._filename;
-                delete copy._filename;
+            function toggleSidebar() {
+                const sidebar = document.getElementById('mainSidebar');
+                const expandBtn = document.getElementById('expandSidebarBtn');
 
-                try {
-                    const fh = await dirHandle.getFileHandle(fname);
-                    const w = await fh.createWritable();
-                    await w.write(JSON.stringify(copy, null, 4));
-                    await w.close();
-                    const btn = document.querySelector(`#card-${id} .save-btn-inline`);
-                    btn.innerText = "✅"; setTimeout(() => btn.innerText = "💾", 1500);
-                } catch (e) { alert(e.message); }
-            }
+                sidebar.classList.toggle('collapsed');
 
-            let dragSrcEl = null;
-
-            function handleDragStart(e) {
-                dragSrcEl = this;
-                this.classList.add('dragging');
-                e.dataTransfer.effectAllowed = 'move';
-            }
-
-            function handleDragOver(e) {
-                if (e.preventDefault) e.preventDefault();
-                return false;
-            }
-
-            function handleDrop(e) {
-                if (e.stopPropagation) e.stopPropagation();
-                if (dragSrcEl !== this) {
-                    const deck = document.getElementById('cardDeck');
-                    // Ermittelt, ob vor oder nach das Element gedroppt wurde
-                    const allCards = [...deck.querySelectorAll('.card')];
-                    const hoverIdx = allCards.indexOf(this);
-                    const dragIdx = allCards.indexOf(dragSrcEl);
-
-                    if (dragIdx < hoverIdx) {
-                        this.after(dragSrcEl);
-                    } else {
-                        this.before(dragSrcEl);
-                    }
-                }
-                return false;
-            }
-
-            function handleDragEnd() {
-                this.classList.remove('dragging');
-            }
-
-            function toggleScOnCard(id, scName, el) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                // Wir stellen sicher, dass das gesamte sc-inject Objekt 
-                // und beide Unterfelder (sc und injection-points) existieren.
-                if (!nsc['sc-inject']) {
-                    nsc['sc-inject'] = {
-                        'sc': [],
-                        'injection-points': ''
-                    };
-                }
-
-                // Falls sc-inject existiert, aber die Felder darin fehlen (z.B. aus altem JSON)
-                if (!Array.isArray(nsc['sc-inject'].sc)) nsc['sc-inject'].sc = [];
-                if (nsc['sc-inject']['injection-points'] === undefined) {
-                    nsc['sc-inject']['injection-points'] = '';
-                }
-
-                const index = nsc['sc-inject'].sc.indexOf(scName);
-                if (index > -1) {
-                    nsc['sc-inject'].sc.splice(index, 1);
-                    el.classList.remove('active');
+                if (sidebar.classList.contains('collapsed')) {
+                    expandBtn.classList.add('visible');
                 } else {
-                    nsc['sc-inject'].sc.push(scName);
-                    el.classList.add('active');
-                }
-
-                // Sofortiger Refresh der Anzeige (Sidebar-Filter)
-                filterList();
-            }
-
-            function updArray(el, id, path) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                // Wir nutzen innerText, trimmen jede Zeile und entfernen komplett leere Zeilen
-                const lines = el.innerText.split('\n')
-                    .map(line => line.trim())
-                    .filter(line => line.length > 0);
-
-                // Pfad-Navigation im Objekt
-                const parts = path.split('.');
-                let current = nsc;
-                for (let i = 0; i < parts.length - 1; i++) {
-                    if (!current[parts[i]]) current[parts[i]] = {};
-                    current = current[parts[i]];
-                }
-                current[parts[parts.length - 1]] = lines;
-            }
-
-            function exportNscToHtml(id) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
-                const traitsText = Array.isArray(nsc.personality?.traits)
-                    ? nsc.personality.traits.join(', ')
-                    : (nsc.personality?.traits || '-');
-
-                const scInjectText = Array.isArray(nsc['sc-inject']?.['injection-points'])
-                    ? nsc['sc-inject']['injection-points'].join('\n')
-                    : (nsc['sc-inject']?.['injection-points'] || '-');
-
-                const activeScs = nsc['sc-inject']?.sc?.join(', ') || 'Keine SC-Bezüge';
-
-                const htmlContent = `<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NSC-Datenblatt: ${nsc.general?.name || 'Unbenannte Person'}</title>
-    <style>
-        :root {
-            --card-bg: #f4e4bc;
-            --card-border: #8b5e3c;
-            --text-main: #2b1d0e;
-            --accent: #8b0000;
-        }
-        body {
-            background-color: #121212;
-            color: var(--text-main);
-            font-family: 'Georgia', serif;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            margin: 0;
-        }
-        .export-card {
-            width: 600px;
-            background: var(--card-bg);
-            border: 4px double var(--card-border);
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
-            box-sizing: border-box;
-        }
-        h1 {
-            margin: 0 0 5px 0;
-            font-size: 1.8em;
-            color: var(--text-main);
-            border-bottom: 2px solid var(--accent);
-        }
-        .sub-header {
-            font-size: 1.1em;
-            color: var(--accent);
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-        .section-title {
-            font-weight: bold;
-            border-bottom: 1px dashed var(--text-main);
-            margin: 15px 0 8px 0;
-            font-variant: small-caps;
-            font-size: 1.1em;
-            color: var(--accent);
-        }
-        .kv-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 4px;
-            font-size: 0.95em;
-        }
-        .kv-label {
-            color: #555;
-        }
-        .stats-row {
-            display: flex;
-            justify-content: space-between;
-            background: rgba(0,0,0,0.08);
-            padding: 8px;
-            border-radius: 4px;
-            text-align: center;
-            margin-top: 5px;
-        }
-        .stat-box {
-            display: flex;
-            flex-direction: column;
-        }
-        .stat-val {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .notes-box {
-            background: rgba(255,255,255,0.4);
-            border: 1px solid rgba(0,0,0,0.15);
-            padding: 10px;
-            white-space: pre-wrap;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
-        .status-badges {
-            display: flex;
-            gap: 10px;
-            font-size: 0.85em;
-            margin-bottom: 10px;
-            background: rgba(0,0,0,0.04);
-            padding: 5px 8px;
-        }
-        @media print {
-            body { background: white; padding: 0; }
-            .export-card { width: 100%; border: 1px solid #000; box-shadow: none; }
-        }
-    </style>
-</head>
-<body>
-    <div class="export-card">
-        <h1>${nsc.general?.name || 'Unbenannte Person'}</h1>
-        <div class="sub-header">
-            ${nsc.profession?.category || 'Unbekannt'} 
-            ${nsc.profession?.specification ? '– ' + nsc.profession.specification : ''} 
-            (${age} Jahre, ${nsc.general?.gender || 'unbekannt'})
-        </div>
-
-        <div class="status-badges">
-            <span>Status: ${nsc.general?.alive ? 'Lebendig' : 'Verstorben 💀'}</span> |
-            <span>Spezies: ${nsc.general?.species || '-'}</span> |
-            <span>Kultur: ${nsc.general?.culture || '-'}</span> |
-            <span>Kanonisch: ${nsc.general?.canonical ? 'Ja 📚' : 'Nein'}</span>
-        </div>
-
-        <div class="section-title">💉 Anregungen & Plot-Ideen</div>
-        <div class="kv-grid">
-            <span class="kv-label">Held:innen-Bezug:</span>
-            <span>${activeScs}</span>
-        </div>
-        <div class="notes-box">${scInjectText}</div>
-
-        <div class="section-title">💃 Erscheinung</div>
-        <div style="margin-bottom: 8px;"><strong>Besondere Merkmale:</strong> ${nsc.appearance?.distinguishing_features || '-'}</div>
-        <div class="kv-grid">
-            <span class="kv-label">Größe:</span><span>${nsc.appearance?.size || '-'}</span>
-            <span class="kv-label">Gewicht:</span><span>${nsc.appearance?.weight || '-'}</span>
-            <span class="kv-label">Haare:</span><span>${nsc.appearance?.hair || '-'}</span>
-            <span class="kv-label">Haut:</span><span>${nsc.appearance?.skin || '-'}</span>
-            <span class="kv-label">Augen:</span><span>${nsc.appearance?.eyes || '-'}</span>
-            <span class="kv-label">Kleidung/Ausrüstung:</span>
-            <span>
-                ${[
-                        nsc.appearance?.outfit?.headgear,
-                        nsc.appearance?.outfit?.top,
-                        nsc.appearance?.outfit?.trousers,
-                        nsc.appearance?.outfit?.footwear,
-                        nsc.appearance?.outfit?.jewellery,
-                        nsc.appearance?.outfit?.things,
-                        nsc.appearance?.outfit?.weapons
-                    ].filter(Boolean).join(', ') || '-'}
-            </span>
-        </div>
-
-        <div class="section-title">🤦‍♂️ Persönlichkeit</div>
-        <div style="margin-bottom: 8px;"><strong>Motivation:</strong> ${nsc.personality?.motivation || '-'}</div>
-        <div class="kv-grid">
-            <span class="kv-label">Eigenschaften:</span><span>${traitsText}</span>
-            <span class="kv-label">Stimmung:</span><span>${nsc.personality?.['actual-mood'] || '-'}</span>
-            <span class="kv-label">Seelentier:</span><span>${nsc.general?.['soul-animal'] || '-'}</span>
-            <span class="kv-label">Hintergrund:</span><span>${nsc.personality?.['family-background'] || '-'}</span>
-        </div>
-
-        <div class="section-title">⚔️ Eigenschaften & Werte</div>
-        <div class="stats-row">
-            ${['MU', 'KL', 'IN', 'CH', 'FF', 'GE', 'KO', 'KK'].map(stat => `
-                <div class="stat-box">
-                    <small>${stat}</small>
-                    <span class="stat-val">${nsc.stats?.attributes?.[stat] || 8}</span>
-                </div>
-            `).join('')}
-        </div>
-
-        <div class="section-title">📝 Chronik & Spielnotizen</div>
-        <div class="notes-box">${nsc['session-notes'] || 'Keine Eintragsnotizen vorhanden.'}</div>
-    </div>
-</body>
-</html>`;
-
-                // Datei im Browser zum Download an bieten
-                const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8;' });
-                const link = document.createElement('a');
-                const safeFilename = (nsc.general?.name || 'NSC').replace(/[^a-z0-9äöüß_]/gi, '_');
-                link.href = URL.createObjectURL(blob);
-                link.download = `Aventurische_Werkbank_NSC_${safeFilename}.html`;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                URL.revokeObjectURL(link.href);
-            }
-
-            // --- NSC JSON-EXPORT & CLIPBOARD ---
-
-            async function copyNscToClipboard(id, btnElement = null) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                // Tiefenkopie erstellen (Verwendung von structuredClone falls verfügbar)
-                const exportData = typeof structuredClone === 'function'
-                    ? structuredClone(nsc)
-                    : JSON.parse(JSON.stringify(nsc));
-
-                // Interne Hilfsfelder entfernen
-                delete exportData._filename;
-
-                // Formatiertes JSON aufbereiten
-                const jsonString = JSON.stringify(exportData, null, 4);
-                let success = false;
-
-                // 1. Primär: Moderne Async Clipboard API
-                if (navigator.clipboard && window.isSecureContext) {
-                    try {
-                        await navigator.clipboard.writeText(jsonString);
-                        success = true;
-                    } catch (err) {
-                        console.warn('Clipboard API fehlgeschlagen, wechsle auf Fallback:', err);
-                    }
-                }
-
-                // 2. Sekundär: Fallback für ungesicherte / ältere Kontexte
-                if (!success) {
-                    success = fallbackCopyTextToClipboard(jsonString);
-                }
-
-                // 3. Visuelles Feedback auslösen
-                if (success) {
-                    // Nutzt primär das direkt übergebene Button-Element, sonst CSS-Fallback
-                    const btn = btnElement || document.querySelector(`#card-${id} button[onclick*="copyNscToClipboard"]`);
-                    if (btn) {
-                        const originalText = btn.innerText;
-                        btn.innerText = "✅";
-                        setTimeout(() => { btn.innerText = originalText; }, 1500);
-                    }
+                    expandBtn.classList.remove('visible');
                 }
             }
-
-            function fallbackCopyTextToClipboard(text) {
-                const textArea = document.createElement("textarea");
-                textArea.value = text;
-
-                // Unsichtbar positionieren ohne UI-Jumps
-                textArea.style.position = "fixed";
-                textArea.style.top = "0";
-                textArea.style.left = "0";
-                textArea.style.width = "2em";
-                textArea.style.height = "2em";
-                textArea.style.padding = "0";
-                textArea.style.border = "none";
-                textArea.style.outline = "none";
-                textArea.style.boxShadow = "none";
-                textArea.style.background = "transparent";
-                textArea.style.opacity = "0";
-
-                document.body.appendChild(textArea);
-                textArea.focus();
-                textArea.select();
-
-                let successful = false;
-                try {
-                    successful = document.execCommand('copy');
-                } catch (err) {
-                    console.error('Fallback-Kopieren fehlgeschlagen:', err);
-                    alert("Kopieren fehlgeschlagen. Bitte manuell kopieren.");
-                }
-
-                document.body.removeChild(textArea);
-                return successful;
-            }
-
-            // --- NSC JSON-IMPORT / MERGE AUS DER ZWISCHENABLAGE (GEHÄRTETE VERSION) ---
-
-            async function pasteJsonToNsc(id, btnElement = null) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) return;
-
-                let pasteText = "";
-
-                // 1. Zwischenablage auslesen mit verbessertem Permission- & Error-Handling
-                try {
-                    if (navigator.clipboard && window.isSecureContext) {
-                        pasteText = await navigator.clipboard.readText();
-                    } else {
-                        pasteText = prompt("Bitte das einzufügende JSON hier hineinkopieren:");
-                    }
-                } catch (err) {
-                    console.warn("Clipboard-Lesezugriff blockiert/fehlgeschlagen, nutze Prompt-Fallback:", err);
-                    pasteText = prompt("Zwischenablage konnte nicht direkt gelesen werden.\nBitte JSON hier hineinkopieren:");
-                }
-
-                if (!pasteText || !pasteText.trim()) return;
-
-                // 2. JSON-Gültigkeit prüfen
-                let parsedData = null;
-                try {
-                    parsedData = JSON.parse(pasteText);
-                } catch (e) {
-                    alert("Fehler: Der Inhalt ist kein gültiges JSON!\n\n" + e.message);
-                    return;
-                }
-
-                if (typeof parsedData !== 'object' || parsedData === null || Array.isArray(parsedData)) {
-                    alert("Fehler: Das einzufügende JSON muss ein Objekt sein (z. B. {\"combat\": ...}).");
-                    return;
-                }
-
-                // 3. Intelligenter Tiefen-Merge (Duplikate in Arrays werden vermieden)
-                deepMergeAppend(nsc, parsedData);
-
-                // 4. Visuelles Feedback auslösen
-                const btn = btnElement || document.querySelector(`#card-${id} button[onclick*="pasteJsonToNsc"]`);
-                if (btn) {
-                    const origText = btn.innerText;
-                    btn.innerText = "✅";
-                    setTimeout(() => { btn.innerText = origText; }, 1500);
-                }
-
-                // 5. Karte im DOM aktualisieren, damit die neuen Daten sofort sichtbar sind
-                refreshCardUI(id);
-            }
-
-            /**
-             * Hilfsfunktion zum rekursiven Ergänzen und Anhängen von JSON-Daten
-             * Verhindert Duplikate in Arrays (z.B. bei Waffen, Talenten, Zaubern) anhand von 'name' oder 'id'.
-             */
-            function deepMergeAppend(target, source) {
-                for (const key in source) {
-                    if (!source.hasOwnProperty(key)) continue;
-
-                    // Interne Steuerungsfelder schützen
-                    if (key === '_filename') continue;
-
-                    // Wenn beide Ziel- und Quellwerte Arrays sind -> Intelligent zusammenführen (Duplikate verhindern)
-                    if (Array.isArray(target[key]) && Array.isArray(source[key])) {
-                        source[key].forEach(newItem => {
-                            const isDuplicate = target[key].some(existingItem => {
-                                if (typeof existingItem === 'object' && existingItem !== null && typeof newItem === 'object' && newItem !== null) {
-                                    return (existingItem.name && existingItem.name === newItem.name) ||
-                                        (existingItem.id && existingItem.id === newItem.id);
-                                }
-                                return existingItem === newItem;
-                            });
-                            if (!isDuplicate) {
-                                target[key].push(newItem);
-                            }
-                        });
-                    }
-                    // Wenn beide Werte Objekte sind -> Rekursiv weiter mergen
-                    else if (
-                        target[key] && typeof target[key] === 'object' && !Array.isArray(target[key]) &&
-                        source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])
-                    ) {
-                        deepMergeAppend(target[key], source[key]);
-                    }
-                    // Ansonsten: Wert hinzufügen oder überschreiben
-                    else {
-                        target[key] = source[key];
-                    }
-                }
-            }
-
-            /**
-             * Schließt die Karte kurz und öffnet sie neu, um die erweiterte Datenstruktur im DOM abzubilden
-             */
-            function refreshCardUI(id) {
-                const cardEl = document.getElementById(`card-${id}`);
-                if (cardEl) {
-                    cardEl.remove();
-                    openCards.delete(id);
-                    const nsc = nscDatabase.find(n => n.id === id);
-                    if (nsc) createCard(nsc);
-                }
-            }
-
-            // --- ONLINE-SPEICHERUNG ÜBER DIE GITHUB API ---
-
-            async function saveFileToGitHub(id) {
-                const nsc = nscDatabase.find(n => n.id === id);
-                if (!nsc) {
-                    alert("NSC nicht gefunden!");
-                    return;
-                }
-
-                // Dateinamen ermitteln (Fallback, falls _filename fehlt)
-                const filename = nsc._filename || `${nsc.general?.name || nsc.id}.json`.toLowerCase().replace(/[^a-z0-9äöüß_]/gi, "_") + ".json";
-                const filePath = `data/nsc/${filename}`;
-
-                // Token aus dem LocalStorage holen oder einmalig abfragen
-                let token = localStorage.getItem('github_pat');
-                if (!token) {
-                    token = prompt("Bitte gib deinen GitHub Personal Access Token (PAT) ein, um online zu speichern:\n(Wird sicher im Browser-Speicher hinterlegt)");
-                    if (!token) return;
-                    localStorage.setItem('github_pat', token.trim());
-                }
-
-                const owner = "StaubundSterne";
-                const repo = "Aventurische_Werkbank";
-                const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
-
-                try {
-                    console.log("Prüfe Datei auf GitHub...");
-
-                    // 1. Schritt: Wir müssen die aktuelle 'sha'-Prüfsumme der Datei auf GitHub abrufen 
-                    // (Das verlangt die GitHub API zwingend bei jedem Update/PUT-Request).
-                    let sha = null;
-                    const getRes = await fetch(apiUrl, {
-                        headers: {
-                            'Authorization': `Bearer ${token}`,
-                            'Accept': 'application/vnd.github.v3+json'
-                        }
-                    });
-
-                    if (getRes.ok) {
-                        const fileMeta = await getRes.json();
-                        sha = fileMeta.sha;
-                    }
-
-                    // 2. Schritt: NSC-Daten vorbereiten (interne Steuerfelder wie _filename entfernen)
-                    const fileCopy = JSON.parse(JSON.stringify(nsc));
-                    delete fileCopy._filename;
-
-                    // JSON formatieren und in Base64 kodieren (da die GitHub API Base64 verlangt)
-                    const jsonString = JSON.stringify(fileCopy, null, 4);
-                    const base64Content = btoa(unescape(encodeURIComponent(jsonString)));
-
-                    // 3. Schritt: Den PUT-Request an GitHub senden (löst automatisch einen Commit aus!)
-                    console.log("Sende Update an GitHub...");
-                    const putRes = await fetch(apiUrl, {
-                        method: 'PUT',
-                        headers: {
-                            'Authorization': `Bearer ${token}`,
-                            'Accept': 'application/vnd.github.v3+json',
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            message: `Update NSC via Werkbank: ${nsc.general?.name || nsc.id}`,
-                            content: base64Content,
-                            sha: sha // Erforderlich, wenn die Datei bereits existiert
-                        })
-                    });
-
-                    if (!putRes.ok) {
-                        const errData = await putRes.json();
-                        if (putRes.status === 401) {
-                            // Token ungültig -> aus dem Speicher löschen
-                            localStorage.removeItem('github_pat');
-                            throw new Error("Ungültiger GitHub Token. Bitte erneut versuchen.");
-                        }
-                        throw new Error(errData.message || "Fehler beim Hochladen zu GitHub.");
-                    }
-
-                    alert(`✅ NSC "${nsc.general?.name || nsc.id}" erfolgreich online auf GitHub gespeichert!\n\n(Hinweis: Es dauert ca. 1-2 Minuten, bis GitHub Pages die Änderung live geschaltet hat).`);
-
-                } catch (err) {
-                    console.error("GitHub API Fehler:", err);
-                    alert("Speichern fehlgeschlagen: " + err.message);
-                }
-            }
-
-            /* === LOGIK & ENGINE FÜR DIE KAMPF-ARENA (DSA 5 / KODEX DES SCHWERTES) === */
-            let combatRoster = [
-                {
-                    id: "c3456789-abcd-4ef0-a123-456789abcdef",
-                    name: "Gisbert Tiefenbrunn",
-                    category: "Handwerker (Zimmermann)",
-                    leMax: 31, leCurrent: 31,
-                    iniBase: 11, iniCurrent: 11,
-                    be: 0, rs: 0, painLevel: 0,
-                    defensesUsedThisRound: 0,
-                    weapons: [
-                        { name: "Zimmermannshammer", at: 12, pa: 7, tp: "1W6+4", reach: "mittel" },
-                        { name: "Raufen", at: 11, pa: 6, tp: "1W6+0", reach: "kurz" }
-                    ]
-                },
-                {
-                    id: "e5678901-cdef-4012-8345-6789abcdef01",
-                    name: "Brandan Finsterblick",
-                    category: "Tagelöhner",
-                    leMax: 46, leCurrent: 46,
-                    iniBase: 12, iniCurrent: 12,
-                    be: 0, rs: 0, painLevel: 0,
-                    defensesUsedThisRound: 0,
-                    weapons: [
-                        { name: "Besen (Hiebwaffe)", at: 11, pa: 7, tp: "1W6+3", reach: "mittel" },
-                        { name: "Raufen", at: 9, pa: 6, tp: "1W6+0", reach: "kurz" }
-                    ]
-                },
-                {
-                    id: "d4567890-bcde-4f01-b234-56789abcdef0",
-                    name: "Ulman Heller",
-                    category: "Kaufmann",
-                    leMax: 27, leCurrent: 27,
-                    iniBase: 11, iniCurrent: 11,
-                    be: 0, rs: 0, painLevel: 0,
-                    defensesUsedThisRound: 0,
-                    weapons: [
-                        { name: "Dolch", at: 11, pa: 6, tp: "1W6+1", reach: "kurz" },
-                        { name: "Raufen", at: 9, pa: 5, tp: "1W6+0", reach: "kurz" }
-                    ]
-                }
-            ];
-
-            let combatRound = 1;
-            let activeActorIdx = 0;
-
-            function d6() { return Math.floor(Math.random() * 6) + 1; }
-            function d20() { return Math.floor(Math.random() * 20) + 1; }
-
-            function logArena(msg) {
-                const logDiv = document.getElementById('arena-log');
-                logDiv.innerHTML += `<div>${msg}</div>`;
-                logDiv.scrollTop = logDiv.scrollHeight;
-            }
-
-            function clearArenaLog() { document.getElementById('arena-log').innerHTML = ''; }
-
-            // Exakte Schmerzberechnung nach KdS: 3/4, 1/2, 1/4 LeP Verlust sowie <= 5 LeP
-            function calculatePainLevel(leCurrent, leMax) {
-                if (leCurrent <= 0) return 4;
-                let p = 0;
-                if (leCurrent <= leMax * 0.75) p = 1;
-                if (leCurrent <= leMax * 0.50) p = 2;
-                if (leCurrent <= leMax * 0.25) p = 3;
-                if (leCurrent <= 5) p = 4;
-                return p;
-            }
-
-            function parseAndRollTPString(tpStr) {
-                const match = tpStr.match(/(\d+)W6\+?(-?\d+)?/i);
-                if (!match) return { total: 4, rolls: [4], bonus: 0 };
-                const count = parseInt(match[1]) || 1;
-                const bonus = parseInt(match[2]) || 0;
-                let sum = 0, rolls = [];
-                for (let i = 0; i < count; i++) {
-                    const r = d6();
-                    rolls.push(r);
-                    sum += r;
-                }
-                return { total: sum + bonus, rolls, bonus };
-            }
-
-            function handleRosterImport(event) {
-                const files = event.target.files;
-                if (!files.length) return;
-                Array.from(files).forEach(file => {
-                    const reader = new FileReader();
-                    reader.onload = function (e) {
-                        try {
-                            const json = JSON.parse(e.target.result);
-                            const name = json.general?.name || json.name || "Importierter Akteur";
-                            const le = json.stats?.derived_stats?.LE || json.stats?.derivedStats?.LE || 30;
-                            const mu = json.stats?.attributes?.MU || 11;
-                            const ge = json.stats?.attributes?.GE || 11;
-                            const iniBase = Math.floor((mu + ge) / 2);
-
-                            const newCom = {
-                                id: json.id || String(Date.now()),
-                                name: name,
-                                category: json.profession?.specification || "Held / NSC",
-                                leMax: le, leCurrent: le,
-                                iniBase: iniBase, iniCurrent: iniBase,
-                                be: json.stats?.combatStats?.encumbrance || 0,
-                                rs: json.stats?.combatStats?.armourProtection || 0,
-                                painLevel: 0,
-                                defensesUsedThisRound: 0,
-                                weapons: (json.stats?.combatStats?.weapons || []).map(w => ({
-                                    name: w.name,
-                                    at: 11, pa: 6,
-                                    tp: w.hitpoints || w.TP || "1W6+0",
-                                    reach: w.meleeWeaponReach || "mittel"
-                                }))
-                            };
-                            if (newCom.weapons.length === 0) {
-                                newCom.weapons.push({ name: "Waffenlos", at: 10, pa: 5, tp: "1W6+0", reach: "kurz" });
-                            }
-                            combatRoster.push(newCom);
-                            logArena(`📥 Akteur <b>${name}</b> erfolgreich in die Kampf-Arena importiert.`);
-                            renderArena();
-                        } catch (err) {
-                            logArena(`❌ Import-Fehler bei ${file.name}: ${err.message}`);
-                        }
-                    };
-                    reader.readAsText(file);
-                });
-            }
-
-            function rollAllInitiative() {
-                combatRoster.forEach(c => {
-                    const roll = d6();
-                    c.iniCurrent = c.iniBase + roll - c.be - c.painLevel;
-                    logArena(`🎲 INI <b>${c.name}</b>: ${c.iniBase} (Basis) + ${roll} (W6) - ${c.be} (BE) - ${c.painLevel} (Schmerz) = <b>${c.iniCurrent}</b>[cite: 312]`);
-                });
-                combatRoster.sort((a, b) => b.iniCurrent - a.iniCurrent);
-                activeActorIdx = 0;
-                combatRound = 1;
-                document.getElementById('arena-kr').innerText = combatRound;
-                renderArena();
-            }
-
-            function executeAttackAction(cIdx, wIdx) {
-                const actor = combatRoster[cIdx];
-                const wpn = actor.weapons[wIdx];
-                const mod = actor.be + actor.painLevel;
-                const effAT = wpn.at - mod;
-                const roll = d20();
-
-                let resultTxt = "";
-                let success = false;
-                if (roll === 1) {
-                    resultTxt = `<span class="text-amber-400 font-bold">KRITISCHER ERFOLG! (Würfel: 1 vs AT ${effAT})[cite: 312]</span>`;
-                    success = true;
-                } else if (roll === 20) {
-                    resultTxt = `<span class="text-red-500 font-bold">PATZER! (Würfel: 20 vs AT ${effAT})[cite: 312]</span>`;
-                } else if (roll <= effAT) {
-                    resultTxt = `<span class="text-green-400">Erfolg (Würfel: ${roll} vs AT ${effAT})</span>`;
-                    success = true;
-                } else {
-                    resultTxt = `<span class="text-red-400">Fehlschlag (Würfel: ${roll} vs AT ${effAT})</span>`;
-                }
-                logArena(`⚔️ <b>${actor.name}</b> greift mit <i>${wpn.name}</i> an: ${resultTxt}`);
-                if (success) {
-                    const tpRoll = parseAndRollTPString(wpn.tp);
-                    logArena(`💥 Waffenschaden: ${tpRoll.rolls.join('+')} + ${tpRoll.bonus} = <b>${tpRoll.total} TP</b>[cite: 312]`);
-                }
-            }
-
-            function executeParryAction(cIdx, wIdx) {
-                const actor = combatRoster[cIdx];
-                const wpn = actor.weapons[wIdx];
-                const mod = actor.be + actor.painLevel;
-                const defensePenalty = actor.defensesUsedThisRound * 3; // Kumulative Mehrfachparade-Mali (-3 pro Reaktion)[cite: 312]
-                const effPA = wpn.pa - mod - defensePenalty;
-
-                const roll = d20();
-                actor.defensesUsedThisRound++;
-
-                const success = roll <= effPA;
-                const resTxt = success ? `<span class="text-blue-400 font-bold">Erfolgreich pariert</span>` : `<span class="text-red-400">Parade misslungen</span>`;
-                logArena(`🛡️ <b>${actor.name}</b> Parade (${actor.defensesUsedThisRound}. Reaktion) mit <i>${wpn.name}</i>: ${resTxt} (Würfel: ${roll} vs eff. PA ${effPA})[cite: 312]`);
-                renderArena();
-            }
-
-            function applyDamageToActor(cIdx) {
-                const actor = combatRoster[cIdx];
-                const tpInput = prompt(`Trefferpunkte (TP) für ${actor.name} eingeben:`, "6");
-                if (tpInput !== null && !isNaN(parseInt(tpInput))) {
-                    const tp = parseInt(tpInput);
-                    const sp = Math.max(0, tp - actor.rs);
-                    actor.leCurrent = Math.max(0, actor.leCurrent - sp);
-                    actor.painLevel = calculatePainLevel(actor.leCurrent, actor.leMax);
-                    logArena(`🩸 <b>${actor.name}</b> erleidet ${tp} TP abzüglich ${actor.rs} RS = <b>${sp} SP</b>. LeP: ${actor.leCurrent}/${actor.leMax} | Neuer Schmerz: Stufe ${actor.painLevel}[cite: 312]`);
-                    renderArena();
-                }
-            }
-
-            function nextCombatTurn() {
-                if (combatRoster.length === 0) return;
-                activeActorIdx = (activeActorIdx + 1) % combatRoster.length;
-                if (activeActorIdx === 0) {
-                    combatRound++;
-                    document.getElementById('arena-kr').innerText = combatRound;
-                    combatRoster.forEach(c => c.defensesUsedThisRound = 0); // Reset Mehrfachverteidigung pro KR[cite: 312]
-                    logArena(`--- <b>Kampfrunde ${combatRound} beginnt (Verteidigungs-Zähler zurückgesetzt)</b> ---`);
-                }
-                renderArena();
-            }
-
-            function resetCombatArena() {
-                combatRound = 1;
-                activeActorIdx = 0;
-                document.getElementById('arena-kr').innerText = combatRound;
-                combatRoster.forEach(c => {
-                    c.leCurrent = c.leMax;
-                    c.painLevel = 0;
-                    c.be = 0;
-                    c.defensesUsedThisRound = 0;
-                    c.iniCurrent = c.iniBase;
-                });
-                logArena(`🔄 Kampf-Arena zurückgesetzt.`);
-                renderArena();
-            }
-
-            function quickActionProvozieeren() {
-                logArena(`🗣️ <b>Quick-Action [Provozieren]:</b> Vergleichsprobe Einschüchtern vs. Willenskraft[cite: 312].`);
-            }
-            function quickActionTeppich() {
-                logArena(`🧶 <b>Quick-Action [Teppich ziehen]:</b> Probe auf Kraftakt (Erschwert um Gewicht)[cite: 312].`);
-            }
-            function quickActionKronleuchter() {
-                logArena(`🕯️ <b>Quick-Action [Kronleuchter stürzen]:</b> Betroffene im Radius müssen mit Körperbeherrschung ausweichen oder erleiden 1W6+4 TP[cite: 312].`);
-            }
-
-            function renderArena() {
-                const container = document.getElementById('arena-cards-container');
-                container.innerHTML = '';
-                document.getElementById('arena-count').innerText = combatRoster.length;
-
-                if (combatRoster.length > 0) {
-                    const active = combatRoster[activeActorIdx];
-                    document.getElementById('arena-active').innerText = `${active.name} (INI ${active.iniCurrent})`;
-                } else {
-                    document.getElementById('arena-active').innerText = "-";
-                }
-
-                combatRoster.forEach((c, idx) => {
-                    const isActive = idx === activeActorIdx;
-                    const totalMod = c.be + c.painLevel;
-
-                    let weaponsHtml = c.weapons.map((w, wIdx) => {
-                        const effAT = w.at - totalMod;
-                        const defensePenalty = c.defensesUsedThisRound * 3;
-                        const effPA = w.pa - totalMod - defensePenalty;
-                        return `
-        <div class="bg-stone-900 p-2 rounded border border-stone-800 flex justify-between items-center text-xs mb-1">
-          <div>
-            <span class="font-bold text-amber-200">${w.name}</span> <span class="text-stone-400">(${w.tp})</span><br>
-            <span class="text-stone-400">AT: <b class="text-amber-400">${effAT}</b> | PA: <b class="text-blue-400">${effPA}</b></span>
-          </div>
-          <div class="flex gap-1">
-            <button onclick="executeAttackAction(${idx}, ${wIdx})" class="dsa-btn-primary px-2 py-1 rounded text-xs">AT</button>
-            <button onclick="executeParryAction(${idx}, ${wIdx})" class="dsa-btn-secondary px-2 py-1 rounded text-xs border border-stone-700">PA</button>
-          </div>
-        </div>
-      `;
-                    }).join('');
-
-                    const cardHtml = `
-      <div class="arena-card p-4 flex flex-col justify-between shadow-lg ${isActive ? 'active-actor' : ''}">
-        <div>
-          <div class="flex justify-between items-start border-b border-stone-700 pb-2 mb-3">
-            <div>
-              <h4 class="text-lg font-bold text-amber-400">${c.name}</h4>
-              <p class="text-xs text-stone-400">${c.category}</p>
-            </div>
-            <div class="text-right">
-              <span class="text-xs text-stone-400">INI</span>
-              <div class="text-lg font-bold text-amber-300">${c.iniCurrent}</div>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-2 mb-3 text-sm">
-            <div class="bg-stone-900 p-2 rounded border border-stone-800">
-              <div class="text-xs text-stone-400">LeP / Max</div>
-              <div class="font-bold ${c.leCurrent <= 5 ? 'text-red-500' : 'text-green-400'}">${c.leCurrent} / ${c.leMax}</div>
-            </div>
-            <div class="bg-stone-900 p-2 rounded border border-stone-800">
-              <div class="text-xs text-stone-400">Schmerz / Abwehr-Mali</div>
-              <div class="font-bold text-amber-500">Stufe ${c.painLevel} <span class="text-[10px] text-stone-400">(-${c.defensesUsedThisRound * 3} PA)</span></div>
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <div class="text-xs font-semibold text-stone-400 mb-1">Waffen & Kampfwerte:</div>
-            ${weaponsHtml}
-          </div>
-        </div>
-
-        <div class="pt-2 border-t border-stone-800 flex justify-between gap-1">
-          <button onclick="applyDamageToActor(${idx})" class="dsa-btn-primary px-3 py-1 text-xs rounded">💥 Schaden</button>
-          <button onclick="c.leCurrent = Math.min(c.leMax, c.leCurrent + 5); c.painLevel = calculatePainLevel(c.leCurrent, c.leMax); renderArena();" class="dsa-btn-secondary px-3 py-1 text-xs rounded border border-stone-700">💚 +5 LeP</button>
-        </div>
-      </div>
-    `;
-                    container.innerHTML += cardHtml;
-                });
-            }
-
-            // Initiales Rendern beim Laden der SPA
-            window.addEventListener('DOMContentLoaded', () => {
-                renderArena();
-            });
-
         </script>
 </body>
 

@@ -176,15 +176,13 @@
                     "name": "Raufen",
                     "KTW": 8,
                     "AT": 9,
-                    "PA": 5,
-                    "FK": 9
+                    "PA": 5
                 },
                 {
                     "name": "Dolche",
                     "KTW": 10,
                     "AT": 11,
-                    "PA": 6,
-                    "FK": 11
+                    "PA": 6
                 }
             ],
             "spells": [],
@@ -204,21 +202,21 @@
             "pain-level": 0,
             "weapons": [
                 {
-                    "name": "Waffenlos (Raufen)",
+                    "name": "Waffenlos",
+                    "main-weapon": "true",
                     "combat-technique": "Raufen",
                     "hitpoints": "1W6+0",
-                    "TP": "1W6+0",
                     "conductive-attribute": "GE/KK",
                     "damage-threshold": 15,
-                      "attack-modifier": 0,
+                    "attack-modifier": 0,
                     "parry-modifier": 0,
                     "melee-weapon-reach": "kurz"
                 },
                 {
                     "name": "Dolch",
+                    "main-weapon": "false",
                     "combat-technique": "Dolche",
                     "hitpoints": "1W6+1",
-                    "TP": "1W6+1",
                     "conductive-attribute": "GE",
                     "damage-threshold": 15,
                     "attack-modifier": 0,
