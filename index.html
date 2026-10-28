@@ -443,8 +443,8 @@
 <body>
 
     <nav class="master-nav">
-        <a href="werkbank_poc_6.3.html">📜 ZUM MASTER-SCREEN</a>
-        <a href="nsc_fabrik_2.html">⚒️ ZUR NSC-SCHMIEDE</a>
+        <a href="index.html">🏠 NSC-ÜBERSICHT</a>
+        <a href="kampfarena.html">⚔️ KAMPFARENA</a>
     </nav>
 
     <div style="display: flex; flex-grow: 1; overflow: hidden; width: 100%;">
@@ -494,25 +494,32 @@
         let currentYear = 1009;
         let activeFilters = {};
 
-        // --- 1. OPTIMIERTES LADEN (AUTOMATISCH BEIM SEITENAUFRUF) ---
+        // --- 1. OPTIMIERTES LADEN (PERSISTENTER LOCALSTORAGE CACHE + ERHÖHTE PARALLELITÄT) ---
         document.addEventListener('DOMContentLoaded', () => {
             loadNscsFromCloud();
         });
 
         async function loadNscsFromCloud(forceReload = false) {
             nscDatabase = [];
-            const cacheKey = 'nsc_database_cache_v2';
+            const cacheKey = 'nsc_database_persistent_v1';
+            const cacheTimestampKey = 'nsc_database_timestamp_v1';
+            
+            // Cache-Gültigkeit: 1 Stunde (60 Min * 60 Sek * 1000 ms)
+            const maxCacheAge = 60 * 60 * 1000; 
+            const cachedTimestamp = parseInt(localStorage.getItem(cacheTimestampKey) || '0', 10);
+            const cacheAge = Date.now() - cachedTimestamp;
 
-            if (!forceReload) {
-                const cachedData = sessionStorage.getItem(cacheKey);
+            // 1. Persistenten Cache prüfen (Ultraschnell bei Folgebesuchen)
+            if (!forceReload && cacheAge < maxCacheAge) {
+                const cachedData = localStorage.getItem(cacheKey);
                 if (cachedData) {
                     try {
                         nscDatabase = JSON.parse(cachedData);
-                        console.log("[Cache] NSCs aus Session-Cache geladen.");
+                        console.log(`[Cache] ${nscDatabase.length} NSCs aus dem persistenten LocalStorage geladen.`);
                         filterList();
                         return;
                     } catch (e) {
-                        sessionStorage.removeItem(cacheKey);
+                        localStorage.removeItem(cacheKey);
                     }
                 }
             }
@@ -539,9 +546,11 @@
                 }
 
                 const files = await response.json();
-                const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+                // Korrigierte Prüfung: GitHub Contents liefert immer direkt ein Array von Dateien
+                const jsonFiles = Array.isArray(files) ? files.filter(file => file.name.endsWith('.json')) : [];
 
-                const batchSize = 8;
+                // 2. Erhöhte Batch-Größe (16 Dateien parallel dank HTTP/2 Multiplexing)
+                const batchSize = 16;
                 for (let i = 0; i < jsonFiles.length; i += batchSize) {
                     const batch = jsonFiles.slice(i, i + batchSize);
 
@@ -568,18 +577,21 @@
                         }
                     });
 
+                    // UI nach jedem Batch progressiv aktualisieren
                     if (hasNewData) {
                         filterList();
                     }
                 }
 
+                // 3. In LocalStorage cachen (bleibt über Tabs und Sessions hinweg erhalten)
                 try {
-                    sessionStorage.setItem(cacheKey, JSON.stringify(nscDatabase));
+                    localStorage.setItem(cacheKey, JSON.stringify(nscDatabase));
+                    localStorage.setItem(cacheTimestampKey, Date.now().toString());
                 } catch (e) {
-                    console.warn("SessionStorage voll:", e);
+                    console.warn("LocalStorage voll oder gesperrt:", e);
                 }
 
-                console.log(`[Erfolg] ${nscDatabase.length} NSCs erfolgreich geladen.`);
+                console.log(`[Erfolg] ${nscDatabase.length} NSCs erfolgreich geladen und im LocalStorage gesichert.`);
 
             } catch (err) {
                 console.warn("⚠️ GitHub API-Fehler. Wechsle zu lokalem Fallback:", err.message);
@@ -1015,24 +1027,183 @@
         function exportNscToHtml(id) {
             const nsc = nscDatabase.find(n => n.id === id);
             if (!nsc) return;
+
             const age = currentYear - (parseInt(nsc.general?.['birth-year']) || 1000);
             const traitsText = Array.isArray(nsc.personality?.traits)
                 ? nsc.personality.traits.join(', ')
                 : (nsc.personality?.traits || '-');
+
             const scInjectText = Array.isArray(nsc['sc-inject']?.['injection-points'])
                 ? nsc['sc-inject']['injection-points'].join('\n')
                 : (nsc['sc-inject']?.['injection-points'] || '-');
+
             const activeScs = nsc['sc-inject']?.sc?.join(', ') || 'Keine SC-Bezüge';
 
             const htmlContent = `<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSC-Datenblatt: ${nsc.general?.name || 'Unbenannte Person'}</title>
+    <style>
+        :root {
+            --card-bg: #f4e4bc;
+            --card-border: #8b5e3c;
+            --text-main: #2b1d0e;
+            --accent: #8b0000;
+        }
+        body {
+            background-color: #121212;
+            color: var(--text-main);
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .export-card {
+            width: 600px;
+            background: var(--card-bg);
+            border: 4px double var(--card-border);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+        }
+        h1 {
+            margin: 0 0 5px 0;
+            font-size: 1.8em;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--accent);
+        }
+        .sub-header {
+            font-size: 1.1em;
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .section-title {
+            font-weight: bold;
+            border-bottom: 1px dashed var(--text-main);
+            margin: 15px 0 8px 0;
+            font-variant: small-caps;
+            font-size: 1.1em;
+            color: var(--accent);
+        }
+        .kv-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4px;
+            font-size: 0.95em;
+        }
+        .kv-label {
+            color: #555;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(0,0,0,0.08);
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .stat-box {
+            display: flex;
+            flex-direction: column;
+        }
+        .stat-val {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .notes-box {
+            background: rgba(255,255,255,0.4);
+            border: 1px solid rgba(0,0,0,0.15);
+            padding: 10px;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .status-badges {
+            display: flex;
+            gap: 10px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            background: rgba(0,0,0,0.04);
+            padding: 5px 8px;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .export-card { width: 100%; border: 1px solid #000; box-shadow: none; }
+        }
+    </style>
 </head>
 <body>
-    <h1>${nsc.general?.name || 'Unbenannte Person'}</h1>
-    <p>${nsc.profession?.category || 'Unbekannt'} (${age} Jahre)</p>
+    <div class="export-card">
+        <h1>${nsc.general?.name || 'Unbenannte Person'}</h1>
+        <div class="sub-header">
+            ${nsc.profession?.category || 'Unbekannt'} 
+            ${nsc.profession?.specification ? '– ' + nsc.profession.specification : ''} 
+            (${age} Jahre, ${nsc.general?.gender || 'unbekannt'})
+        </div>
+
+        <div class="status-badges">
+            <span>Status: ${nsc.general?.alive ? 'Lebendig' : 'Verstorben 💀'}</span> |
+            <span>Spezies: ${nsc.general?.species || '-'}</span> |
+            <span>Kultur: ${nsc.general?.culture || '-'}</span> |
+            <span>Kanonisch: ${nsc.general?.canonical ? 'Ja 📚' : 'Nein'}</span>
+        </div>
+
+        <div class="section-title">💉 Anregungen & Plot-Ideen</div>
+        <div class="kv-grid">
+            <span class="kv-label">Held:innen-Bezug:</span>
+            <span>${activeScs}</span>
+        </div>
+        <div class="notes-box">${scInjectText}</div>
+
+        <div class="section-title">💃 Erscheinung</div>
+        <div style="margin-bottom: 8px;"><strong>Besondere Merkmale:</strong> ${nsc.appearance?.distinguishing_features || '-'}</div>
+        <div class="kv-grid">
+            <span class="kv-label">Größe:</span><span>${nsc.appearance?.size || '-'}</span>
+            <span class="kv-label">Gewicht:</span><span>${nsc.appearance?.weight || '-'}</span>
+            <span class="kv-label">Haare:</span><span>${nsc.appearance?.hair || '-'}</span>
+            <span class="kv-label">Haut:</span><span>${nsc.appearance?.skin || '-'}</span>
+            <span class="kv-label">Augen:</span><span>${nsc.appearance?.eyes || '-'}</span>
+            <span class="kv-label">Kleidung/Ausrüstung:</span>
+            <span>
+                ${[
+                    nsc.appearance?.outfit?.headgear,
+                    nsc.appearance?.outfit?.top,
+                    nsc.appearance?.outfit?.trousers,
+                    nsc.appearance?.outfit?.footwear,
+                    nsc.appearance?.outfit?.jewellery,
+                    nsc.appearance?.outfit?.things,
+                    nsc.appearance?.outfit?.weapons
+                ].filter(Boolean).join(', ') || '-'}
+            </span>
+        </div>
+
+        <div class="section-title">🤦‍♂️ Persönlichkeit</div>
+        <div style="margin-bottom: 8px;"><strong>Motivation:</strong> ${nsc.personality?.motivation || '-'}</div>
+        <div class="kv-grid">
+            <span class="kv-label">Eigenschaften:</span><span>${traitsText}</span>
+            <span class="kv-label">Stimmung:</span><span>${nsc.personality?.['actual-mood'] || '-'}</span>
+            <span class="kv-label">Seelentier:</span><span>${nsc.general?.['soul-animal'] || '-'}</span>
+            <span class="kv-label">Hintergrund:</span><span>${nsc.personality?.['family-background'] || '-'}</span>
+        </div>
+
+        <div class="section-title">⚔️ Eigenschaften & Werte</div>
+        <div class="stats-row">
+            ${['MU', 'KL', 'IN', 'CH', 'FF', 'GE', 'KO', 'KK'].map(stat => `
+                <div class="stat-box">
+                    <small>${stat}</small>
+                    <span class="stat-val">${nsc.stats?.attributes?.[stat] || 8}</span>
+                </div>
+            `).join('')}
+        </div>
+
+        <div class="section-title">📝 Chronik & Spielnotizen</div>
+        <div class="notes-box">${nsc['session-notes'] || 'Keine Eintragsnotizen vorhanden.'}</div>
+    </div>
 </body>
 </html>`;
 
