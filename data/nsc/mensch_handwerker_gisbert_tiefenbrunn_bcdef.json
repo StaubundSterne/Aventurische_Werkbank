@@ -31,7 +31,9 @@
             "Şahin",
             "Fredegis"
         ],
-        "injection-points": "Schläge, Zurechtweisung, Tochter"
+        "injection-points": [
+            "Schläge, Zurechtweisung, Tochter"
+        ]
     },
     "appearance": {
         "size": 178,

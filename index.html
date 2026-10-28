@@ -1661,9 +1661,8 @@
                 }
             }
 
-            // --- ONLINE-SPEICHERUNG ÜBER DIE GITHUB API ---
-
-            async function saveFileToGitHub(id) {
+            // --- ONLINE-SPEICHERUNG ÜBER DIE GITHUB API (Mit Schema-Prüfung & Stats-Integrität) ---
+            async function saveFileToGitHub(id, btnElement = null) {
                 const nsc = nscDatabase.find(n => n.id === id);
                 if (!nsc) {
                     alert("NSC nicht gefunden!");
@@ -1672,6 +1671,13 @@
 
                 // Dateinamen ermitteln (Fallback, falls _filename fehlt)
                 const filename = nsc._filename || `${nsc.general?.name || nsc.id}.json`.toLowerCase().replace(/[^a-z0-9äöüß_]/gi, "_") + ".json";
+
+                // 1. ABSOLUTER SICHERHEITSSCHUTZ: Verhindern, dass Schema-Dateien überschrieben werden
+                if (filename.toLowerCase().includes('schema')) {
+                    alert("Sicherheitsfehler: Schema-Dateien (NSC_Datenschema / NSC_Stats_Datenschema) dürfen nicht überschrieben werden!");
+                    return;
+                }
+
                 const filePath = `data/nsc/${filename}`;
 
                 // Token aus dem LocalStorage holen oder einmalig abfragen
@@ -1689,8 +1695,7 @@
                 try {
                     console.log("Prüfe Datei auf GitHub...");
 
-                    // 1. Schritt: Wir müssen die aktuelle 'sha'-Prüfsumme der Datei auf GitHub abrufen 
-                    // (Das verlangt die GitHub API zwingend bei jedem Update/PUT-Request).
+                    // 1. Schritt: Aktuelle 'sha'-Prüfsumme der Datei auf GitHub abrufen (zwingend für GitHub API PUT-Requests)
                     let sha = null;
                     const getRes = await fetch(apiUrl, {
                         headers: {
@@ -1704,15 +1709,39 @@
                         sha = fileMeta.sha;
                     }
 
-                    // 2. Schritt: NSC-Daten vorbereiten (interne Steuerfelder wie _filename entfernen)
+                    // 2. Schritt: Tiefenkopie des NSC-Objekts erstellen
                     const fileCopy = JSON.parse(JSON.stringify(nsc));
-                    delete fileCopy._filename;
+                    delete fileCopy._filename; // Interne Steuerungs-Eigenschaft vor dem Upload entfernen
 
-                    // JSON formatieren und in Base64 kodieren (da die GitHub API Base64 verlangt)
+                    // 3. SCHEMA-VALIDIERUNG & INTEGRITÄTSSICHERUNG (Unterscheidung Standard vs. Stats-Datenschema)
+                    const hasStatsSchema = fileCopy.stats && typeof fileCopy.stats === 'object';
+
+                    if (hasStatsSchema) {
+                        // Integritätssicherung für NSCs im NSC_Stats_Datenschema (schützt Attribute und Kampfwerte vor dem Überschreiben oder Leeren)
+                        if (!fileCopy.stats.attributes) {
+                            fileCopy.stats.attributes = { MU: 10, KL: 10, IN: 10, CH: 10, FF: 10, GE: 10, KO: 10, KK: 10 };
+                        }
+                        if (!fileCopy.stats['derived-stats']) {
+                            fileCopy.stats['derived-stats'] = { LE: 30, SK: 0, ZK: 0, AW: 6, INI: "11 + 1W6", GS: 8 };
+                        }
+                        if (!fileCopy.stats['combat-stats']) {
+                            fileCopy.stats['combat-stats'] = {
+                                "armour-protection": 0,
+                                "encumbrance": 0,
+                                "pain-level": 0,
+                                "weapons": []
+                            };
+                        }
+                        console.log(`[GitHub Speichern] NSC "${fileCopy.general?.name}" wird im NSC_Stats-Datenschema gesichert (Kampfwerte geschützt).`);
+                    } else {
+                        console.log(`[GitHub Speichern] NSC "${fileCopy.general?.name}" wird im klassischen NSC_Datenschema gesichert.`);
+                    }
+
+                    // 4. Schritt: JSON formatieren und in Base64 kodieren (mit robuster UTF-8 Unterstützung für Umlaute)
                     const jsonString = JSON.stringify(fileCopy, null, 4);
                     const base64Content = btoa(unescape(encodeURIComponent(jsonString)));
 
-                    // 3. Schritt: Den PUT-Request an GitHub senden (löst automatisch einen Commit aus!)
+                    // 5. Schritt: PUT-Request an GitHub senden (löst automatisch einen Commit aus)
                     console.log("Sende Update an GitHub...");
                     const putRes = await fetch(apiUrl, {
                         method: 'PUT',
@@ -1722,23 +1751,30 @@
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            message: `Update NSC via Werkbank: ${nsc.general?.name || nsc.id}`,
+                            message: `Update NSC via Werkbank: ${fileCopy.general?.name || id}`,
                             content: base64Content,
-                            sha: sha // Erforderlich, wenn die Datei bereits existiert
+                            sha: sha // Erforderlich für bestehende Dateien auf GitHub
                         })
                     });
 
                     if (!putRes.ok) {
                         const errData = await putRes.json();
                         if (putRes.status === 401) {
-                            // Token ungültig -> aus dem Speicher löschen
                             localStorage.removeItem('github_pat');
                             throw new Error("Ungültiger GitHub Token. Bitte erneut versuchen.");
                         }
                         throw new Error(errData.message || "Fehler beim Hochladen zu GitHub.");
                     }
 
-                    alert(`✅ NSC "${nsc.general?.name || nsc.id}" erfolgreich online auf GitHub gespeichert!\n\n(Hinweis: Es dauert ca. 1-2 Minuten, bis GitHub Pages die Änderung live geschaltet hat).`);
+                    // 6. Schritt: Visuelles Feedback am Speicher-Button der Karte (🪩)
+                    const btn = btnElement || document.querySelector(`#card-${id} button[onclick*="saveFileToGitHub"]`);
+                    if (btn) {
+                        const origHtml = btn.innerHTML;
+                        btn.innerHTML = "✅";
+                        setTimeout(() => btn.innerHTML = origHtml, 2000);
+                    }
+
+                    alert(`✅ NSC "${fileCopy.general?.name || id}" erfolgreich online auf GitHub gespeichert!\n\n(Hinweis: Es dauert ca. 1-2 Minuten, bis GitHub Pages die Änderung live geschaltet hat).`);
 
                 } catch (err) {
                     console.error("GitHub API Fehler:", err);
