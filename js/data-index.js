@@ -162,7 +162,7 @@ export const NSC_FILES = [
   'Mensch_Krimineller_Raul_Der_Schlächter_von_Gashok_bcdef.json',
   'Mensch_Kundschafterin_Sivrid_Sumpfinger_c5d6e.json',
   'mensch_kutscher_fandral_krummholz_a3b4c.json',
-  'mensch_landwirt_gerwulf_kempf_edcba.json',
+  'mensch_landwirt_gerwulf_kempf_edcbb.json',
   'Mensch_Lichtdiener_Ucurio_d7e8f.json',
   'mensch_magd_mira_c2d4e.json',
   'Mensch_Magiebegabte_Selinde_Krähenauge_bcdef.json',
