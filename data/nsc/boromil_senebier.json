@@ -65,7 +65,7 @@
         "actual-mood": [
             "Begeistert"
         ],
-        "family-background": "Sohn von Alwine Senebier, einer Hebamme aus Riva; sein Vater unbekannt. Wuchs in den Gärten des Hesindetempels in Riva auf.",
+        "family-background": "Wie Adarells und Josts Freundin Leadnra eine Angehörige der Krähenruf-Sippe in den Salamandersteinen",
         "motivation": "Die Vielfalt der Schöpfung katalogisieren und das Wissen über Heilpflanzen für das gemeine Volk zugänglich machen."
     },
     "stats": {
@@ -84,6 +84,20 @@
             "LeP": 31,
             "AsP": 0,
             "KaP": 35
+        },
+        "derived-stats": {
+            "LE": 30,
+            "SK": 0,
+            "ZK": 0,
+            "AW": 6,
+            "INI": "11 + 1W6",
+            "GS": 8
+        },
+        "combat-stats": {
+            "armour-protection": 0,
+            "encumbrance": 0,
+            "pain-level": 0,
+            "weapons": []
         }
     },
     "abilities": {
