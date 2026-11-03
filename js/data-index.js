@@ -17,6 +17,8 @@ export const NSC_FILES = [
   'elf_bewahrerin_leandra_d8a9b.json',
   'elfe_magierin_eslindane_aika_nebeltaenzer_89a01.json',
   'elf_magier_lindariel_nebeltaenzer_12345.json',
+  'elf_maler_golodion_seemond_3d479.json',
+  'elf_malerin_morvray_sieht-schwarze-federn-fallen_b4c5d.json',
   'Elf_Wildnisbewohner_Lindariel_Mondschatten_bcdef.json',
   'elf_zauberweber_alwadirion_morgentauglanz_c2d3e.json',
   'elf_zauberweberin_alia_lichtweberin_d5e6f.json',

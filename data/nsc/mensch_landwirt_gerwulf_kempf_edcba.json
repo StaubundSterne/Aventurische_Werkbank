@@ -15,7 +15,11 @@
     },
     "profession": {
         "category": "Landwirt",
+<<<<<<< HEAD
         "specification": "Viehzüchter",
+=======
+        "specification": "Lanwirt und Immantrainer von Nurdra Donnerbach",
+>>>>>>> cd26de2 (Update)
         "clerical": false,
         "magical": false,
         "noble": true
@@ -62,8 +66,8 @@
         "actual-mood": [
             "Nachdenklich"
         ],
-        "family-background": "Ehefrau Swangard Kempf (57, Verwalterin); Sohn Ulfried Kempf (Soldat in Weiden); Tochter Alkena Kempf (Händlerin). Er leitet die körperliche Arbeit auf dem Hof seit seiner Jugend.",
-        "motivation": "Seinen Hof ehrenhaft an die nächste Generation zu übergeben und den Landbesitz der Familie gegen Nachbarschaftsfehden zu verteidigen."
+        "family-background": "Ehefrau Swangard Kempf (57, Verwalterin. Er leitet die körperliche Arbeit auf dem Hof seit seiner Jugend. Seine Leidenschaft ist das Immanspiel.",
+        "motivation": "Seinen Hof ehrenhaft an die nächste Generation zu übergeben und den wenigen Landbesitz der Familie zu verteidigen."
     },
     "stats": {
         "experience-level": "Durchschnittlich",

@@ -8,14 +8,14 @@
         "canonical": true,
         "birth-year": 965,
         "alive": true,
-        "culture": "Weiden",
+        "culture": "Donnerbach",
         "species": "Mensch",
         "soul-animal": "Bärin",
         "social-state": "Frei"
     },
     "profession": {
         "category": "Heiler",
-        "specification": "Magister magnus und Vorsteher des Ordenshaus' der Bruder- und Schwesternschaft zur Förderung der Heilzauberei des Anconius in Donnerbach",
+        "specification": "Verwalterin",
         "clerical": false,
         "magical": false,
         "noble": false
@@ -62,7 +62,7 @@
         "actual-mood": [
             "Bestimmt"
         ],
-        "family-background": "Geboren in Trallop als Sohn einer Bäckerfamilie; zwei jüngere Schwestern verblieben im Bäckerhandwerk.",
+        "family-background": "Ehemann Gerwulf Kempf (56, Gutsherr). Die Familie kümmert sich seit Jahren um Pflegekinder in Donnerbach.",
         "motivation": "Die Schenke 'Zum leckeren Krug' mit eiserner Hand und vollem Einsatz erfolgreich zu führen."
     },
     "stats": {
