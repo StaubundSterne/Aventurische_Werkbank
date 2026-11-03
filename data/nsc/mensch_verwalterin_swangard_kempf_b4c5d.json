@@ -15,7 +15,7 @@
     },
     "profession": {
         "category": "Verwalterin",
-        "specification": "Gutsverwalterin des Kempf'schen Anwesens",
+        "specification": "Gutsverwalterin und Pflegemutter",
         "clerical": false,
         "magical": false,
         "noble": true
@@ -62,7 +62,7 @@
         "actual-mood": [
             "Angespannt"
         ],
-        "family-background": "Ehemann Gerwulf Kempf (56, Gutsherr); Sohn Ulfried Kempf (Soldat in Weiden); Tochter Alkena Kempf (Händlerin). Die Familie führt seit Generationen den Kempf'schen Hof nahe Donnerbach.",
+        "family-background": "Ehemann Gerwulf Kempf (56). Die Familie nimmt seit Jahren Pflegekinder in Donnerbach auf.",
         "motivation": "Den Zusammenhalt und den wirtschaftlichen Fortbestand der Familie Kempf pragmatisch und energisch gegen äußere Gefahren und Missernten zu sichern."
     },
     "stats": {
