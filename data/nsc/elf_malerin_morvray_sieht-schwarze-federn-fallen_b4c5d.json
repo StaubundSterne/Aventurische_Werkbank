@@ -1,0 +1,68 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "source": "Aus Licht und Traum, Auf Elfenpfaden, wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Morvray sieht-schwarze-Federn-fallen",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 727,
+        "alive": true,
+        "culture": "Waldelfen (Krähenruf-Sippe)",
+        "species": "Elf",
+        "soul-animal": "Rabe",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Malerin",
+        "specification": "Waldelfische Seherin und angehende Malerin",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Salamandersteine",
+        "former-locations": [
+            "Salamandersteine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": "Traumgesichte, Krähenruf-Sippe, Malkunst"
+    },
+    "appearance": {
+        "size": 1750,
+        "weight": 50,
+        "hair": "tiefschwarzes, glattes Haar",
+        "skin": "helle Elfenhaut",
+        "eyes": "tiefschwarze, undurchdringliche Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Robuste Waldelfentunika aus gegerbtem Leder",
+            "trousers": "Beinkleid aus weichem Hirschleder",
+            "footwear": "Bequeme Lederstiefel für die Wildnis",
+            "jewellery": "Kein auffälliger Schmuck",
+            "things": "Zeichenkohle, Pigmente und Pergamentrollen",
+            "weapons": "Elfischer Kompositbogen und Jagdmesser"
+        },
+        "distinguishing_features": "Tiefschwarze Augen und Haare, schweigsame und düstere Ausstrahlung"
+    },
+    "personality": {
+        "traits": [
+            "Willensstark",
+            "Schweigsam",
+            "Düster",
+            "Zielstrebig",
+            "Ernst"
+        ],
+        "actual-mood": [
+            "Nachdenklich"
+        ],
+        "family-background": "Angehörige der Krähenruf-Sippe in den Salamandersteinen",
+        "motivation": "Deutung und bildhafte Festhaltung ihrer intensiven, warnenden und düsteren Traumgesichte"
+    },
+    "session-notes": ""
+}

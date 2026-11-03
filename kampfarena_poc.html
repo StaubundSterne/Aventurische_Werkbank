@@ -437,6 +437,21 @@
             border-color: var(--highlight);
         }
 
+        .arena-export-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 2px 4px;
+            font-size: 1.1em;
+            opacity: 0.8;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .arena-export-btn:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
         .stat-input-group {
             display: flex;
             align-items: center;
@@ -672,6 +687,10 @@
 
                 renderFilteredList(filtered);
             }
+
+            // SC-Liste in der sidebar erstellen
+
+            
 
             // NSC-Liste in der Sidebar erstellen
 
@@ -921,10 +940,13 @@
                     const attackDisabledAttr = c.attackUsedThisRound ? 'disabled style="opacity:0.5; cursor:not-allowed;"' : '';
 
                     card.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--card-border); padding-bottom: 6px;">
-                <h3 style="margin: 0; font-size: 1.2em;">${c.name}</h3>
-                <button onclick="removeCombatant('${c.id}')" style="background: none; border: none; cursor: pointer; color: var(--accent); font-weight: bold;">✕</button>
-            </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--card-border); padding-bottom: 6px;">
+                            <h3 style="margin: 0; font-size: 1.2em;">${c.name}</h3>
+                                <div style="display: flex; gap: 6px; align-items: center;">
+                                    <button class="arena-export-btn" onclick="exportCombatantToHtml('${c.id}')" title="Kampf-Datenblatt als HTML exportieren">🪪</button>
+                                    <button onclick="removeCombatant('${c.id}')" style="background: none; border: none; cursor: pointer; color: var(--accent); font-weight: bold;" title="Aus Arena entfernen">✕</button>
+                                </div>
+                        </div>
 
             <!-- Ressourcen: Bedingt gerendert (nur LeP, sowie AsP/KaP wenn vorhanden) -->
             <div style="display: flex; flex-wrap: wrap; gap: 8px; background: rgba(0,0,0,0.05); padding: 6px; border-radius: 4px;">
@@ -1005,6 +1027,174 @@
                     renderArenaCards();
                     logArenaAction(`<b>${c.name}</b> wechselt die aktive Waffe zu <b>${c.weapons[weaponIndex].name}</b>.`);
                 }
+            }
+
+            // 4.2 Export kämpfender NSC
+
+            function exportCombatantToHtml(combatantId) {
+                const c = activeCombatants.find(item => item.id === combatantId);
+                if (!c) {
+                    alert("Kampfteilnehmer nicht gefunden!");
+                    return;
+                }
+
+                // Waffentabelle für das Export-Dokument generieren (inkl. AT & PA)
+                let weaponsExportHtml = "";
+                if (c.weapons && c.weapons.length > 0) {
+                    weaponsExportHtml = `<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-top: 8px; background: rgba(0,0,0,0.03);">
+            <tr style="background: rgba(139, 69, 19, 0.15); border-bottom: 1px solid #8b5e3c;">
+                <th style="padding: 6px; text-align: left; border: 1px solid rgba(139, 94, 60, 0.4);">Waffe</th>
+                <th style="padding: 6px; text-align: left; border: 1px solid rgba(139, 94, 60, 0.4);">RW</th>
+                <th style="padding: 6px; text-align: left; border: 1px solid rgba(139, 94, 60, 0.4);">Kampftechnik</th>
+                <th style="padding: 6px; text-align: left; border: 1px solid rgba(139, 94, 60, 0.4);">AT</th>
+                <th style="padding: 6px; text-align: left; border: 1px solid rgba(139, 94, 60, 0.4);">PA</th>
+                <th style="padding: 6px; text-align: left; border: 1px solid rgba(139, 94, 60, 0.4);">TP</th>
+            </tr>`;
+                    c.weapons.forEach(w => {
+                        const isMain = w['main-weapon'] === true || w['main-weapon'] === "true";
+
+                        // AT und PA für diese Waffe ermitteln
+                        let atVal = 10, paVal = 5;
+                        const techName = w['combat-technique'] || 'Standard';
+                        const techObj = c.combatTechniques ? c.combatTechniques.find(t => t.name === techName) : null;
+                        if (techObj) {
+                            atVal = (techObj.AT !== undefined) ? techObj.AT : (techObj.KTW || 10);
+                            paVal = (techObj.PA !== undefined) ? techObj.PA : Math.floor((techObj.KTW || 10) / 2);
+                        }
+                        const effectiveAT = atVal - c.pain;
+                        const effectivePA = paVal - c.pain;
+
+                        weaponsExportHtml += `
+                <tr style="${isMain ? 'background: rgba(212,160,23,0.15); font-weight: bold;' : 'border-bottom: 1px solid rgba(139,94,60,0.2);'}">
+                    <td style="padding: 6px; border: 1px solid rgba(139, 94, 60, 0.4);">${w.name} ${isMain ? '(Hauptwaffe)' : ''}</td>
+                    <td style="padding: 6px; border: 1px solid rgba(139, 94, 60, 0.4);">${w['melee-weapon-reach'] || 'mittel'}</td>
+                    <td style="padding: 6px; border: 1px solid rgba(139, 94, 60, 0.4);">${w['combat-technique'] || '-'}</td>
+                    <td style="padding: 6px; border: 1px solid rgba(139, 94, 60, 0.4);">${effectiveAT}</td>
+                    <td style="padding: 6px; border: 1px solid rgba(139, 94, 60, 0.4);">${effectivePA}</td>
+                    <td style="padding: 6px; border: 1px solid rgba(139, 94, 60, 0.4);">${w.hitpoints || w.TP || '-'}</td>
+                </tr>`;
+                    });
+                    weaponsExportHtml += `</table>`;
+                } else {
+                    weaponsExportHtml = `<p style="font-style: italic; font-size: 0.9em;">Keine speziellen Waffen hinterlegt (Standard: Raufen).</p>`;
+                }
+
+                const htmlContent = `<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA 5 Kampf-Datenblatt: ${c.name}</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #2b1d0e;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .export-card {
+            width: 650px;
+            background: #f4e4bc;
+            border: 4px double #8b5e3c;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+            box-sizing: border-box;
+        }
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid #8b0000;
+            color: #2b1d0e;
+        }
+        .section-title {
+            font-weight: bold;
+            border-bottom: 1px dashed #2b1d0e;
+            margin: 15px 0 8px 0;
+            font-variant: small-caps;
+            font-size: 1.1em;
+            color: #8b0000;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            background: rgba(0,0,0,0.06);
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        .stat-box {
+            display: flex;
+            flex-direction: column;
+        }
+        .stat-val {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #8b0000;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .export-card { width: 100%; border: 1px solid #000; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="export-card">
+        <h1>${c.name}</h1>
+
+        <div class="section-title">🛡️ Kampf- & Zustands-Status</div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <small>LeP (Aktuell / Max)</small>
+                <span class="stat-val">${c.leCurrent} / ${c.leMax}</span>
+            </div>
+            <div class="stat-box">
+                <small>Rüstungsschutz (RS)</small>
+                <span class="stat-val">${c.rs}</span>
+            </div>
+            <div class="stat-box">
+                <small>INI</small>
+                <span class="stat-val">${c.iniBase}</span>
+            </div>
+            <div class="stat-box">
+                <small>Belastung (BE)</small>
+                <span class="stat-val">${c.be}</span>
+            </div>
+            <div class="stat-box">
+                <small>Schmerz-Stufe</small>
+                <span class="stat-val">${c.pain}</span>
+            </div>
+            ${c.aeMax > 0 ? `
+            <div class="stat-box">
+                <small>AsP</small>
+                <span class="stat-val">${c.aeCurrent} / ${c.aeMax}</span>
+            </div>` : ''}
+            ${c.keMax > 0 ? `
+            <div class="stat-box">
+                <small>KaP</small>
+                <span class="stat-val">${c.keCurrent} / ${c.keMax}</span>
+            </div>` : ''}
+        </div>
+
+        <div class="section-title">⚔️ Ausrüstung & Waffen (Combat-Stats)</div>
+        ${weaponsExportHtml}
+    </div>
+</body>
+</html>`;
+
+                const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8;' });
+                const link = document.createElement('a');
+                const safeFilename = c.name.replace(/[^a-z0-9äöüß_]/gi, '_');
+                link.href = URL.createObjectURL(blob);
+                link.download = `Kampfdatenblatt_${safeFilename}.html`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(link.href);
             }
 
             // 5. Interaktive State-Aktualisierungen & Schadens-Engine
