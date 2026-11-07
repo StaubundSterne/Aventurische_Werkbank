@@ -1,0 +1,80 @@
+{
+    "id": "3f2a1b9e-6c4d-4e5f-b8a2-1c9d8e7f0a4b",
+    "source": "4502 Zug durch das Nebelmoor / Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Svala Wersing",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 978,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Svellttal",
+        "culture-package": "Svellttal",
+        "soul-animal": "Mooreule",
+        "social-state": "Frei",
+        "experience-level": "Unerfahren"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Torfstecherin",
+        "profession-package": "Torfstecherin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Nebelmoor",
+        "former-locations": [
+            "Olat"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Moorwissen, Torfziegel, Handelsweg"
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 68,
+        "hair": "hellbraun, unter einem festen Tuch verborgen",
+        "skin": "wettergegerbt, von der moortypischen Frische gezeichnet",
+        "eyes": "graugrün",
+        "outfit": {
+            "headgear": "festes Tuch um den Kopf",
+            "top": "klobiger, warmer Lodenmantel über Lederlatzhose und Wams",
+            "trousers": "lederne Latzhose",
+            "footwear": "kniehohe Schlammstiefel",
+            "jewellery": "schlichter Zinnring",
+            "things": "Ersatz-Wollstrümpfe",
+            "weapons": "hölzerne Baugabel zum Schichten der Torfziegel"
+        },
+        "distinguishing_features": "wache Augen, pragmatische Ausstrahlung und geschickte, wetterharte Hände"
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Aufmerksam",
+            "Wetterhart",
+            "Gesprächig",
+            "Tüchtig"
+        ],
+        "advantages": [
+            "Richtungssinn",
+            "Zähigkeit"
+        ],
+        "disadvantages": [
+            "Misstrauen",
+            "Ungeduld"
+        ],
+        "actual-mood": [
+            "erleichtert"
+        ],
+        "family-background": "Mutter Alrun Wersing, Gemüsebäuerin in Olat; Onkel Folke Wersing (verstorben); Vetter Horten Wersing, Torfstecher.",
+        "motivation": "Möchte die schweren Torfladungen trocken nach Donnerbach schaffen und den neuesten Tratsch über Händler und Handwerker erfahren."
+    },
+    "session-notes": ""
+}

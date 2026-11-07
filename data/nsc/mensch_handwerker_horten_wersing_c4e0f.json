@@ -1,0 +1,80 @@
+{
+    "id": "7b542c18-9a3d-4c82-8e1f-3d2a9b6c4e0f",
+    "source": "4502 Zug durch das Nebelmoor / Wiki Aventurica",
+    "tags": [],
+    "general": {
+        "name": "Horten Wersing",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Svellttal",
+        "culture-package": "Svellttal",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei",
+        "experience-level": "Unerfahren"
+    },
+    "profession": {
+        "category": "Handwerker",
+        "specification": "Torfstecher",
+        "profession-package": "Torfstecher",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Nebelmoor",
+        "former-locations": [
+            "Olat"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Adarell"
+        ],
+        "injection-points": "Torfhandel, Sumpfkunde, Weggefahr"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 88,
+        "hair": "braun, kurz und struppig",
+        "skin": "schwaddurchsetzte Haut an den Unterarmen durch jahrelange Torfarbeit",
+        "eyes": "braun",
+        "outfit": {
+            "headgear": "keine",
+            "top": "einfaches Leinenhemd unter einem klobigen Lodenmantel",
+            "trousers": "hochgekrempelte Zeltstoffhose",
+            "footwear": "ungewöhnlich breite Holzschuhe mit seitlichen Auskragungen zur Vergrößerung der Auftrittsfläche",
+            "jewellery": "keine",
+            "things": "Holzschnitzmesser für Achskeile",
+            "weapons": "Torfspaten mit rechtwinklig gebogener Stahlklinge"
+        },
+        "distinguishing_features": "breite Schultern, kräftige Statur und muskulöse, schlammgegerbte Unterarme"
+    },
+    "personality": {
+        "traits": [
+            "Redselig",
+            "Arbeitssam",
+            "Wettergeprüft",
+            "Praktisch",
+            "Hilfsbereit"
+        ],
+        "advantages": [
+            "Zäher Hund",
+            "Kälteresistenz"
+        ],
+        "disadvantages": [
+            "Neugier",
+            "Sturkheit"
+        ],
+        "actual-mood": [
+            "redselig"
+        ],
+        "family-background": "Mutter Alrun Wersing, Gemüsebäuerin in Olat; Vater Folke Wersing, Torfstecher (verstorben im Moor); Cousine Svala Wersing, Torfstecherin.",
+        "motivation": "Möchte seine Torfladung sicher zur Töpferei der Familie Kornbeck-Bienbart nach Donnerbach bringen und dem quälenden Schweigen des Moors entkommen."
+    },
+    "session-notes": ""
+}

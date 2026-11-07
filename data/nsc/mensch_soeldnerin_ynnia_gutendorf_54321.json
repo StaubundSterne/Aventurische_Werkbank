@@ -1,0 +1,78 @@
+{
+    "id": "c9d8e7f6-a5b4-4321-9fed-cb0987654321",
+    "source": "wiki-aventurica.de; Finsterkamm-Expedition (1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Ynnia Gutendorf",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 974,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Weiden",
+        "culture-package": "Weiden",
+        "soul-animal": "Luchs",
+        "social-state": "Frei",
+        "experience-level": "Erfahren"
+    },
+    "profession": {
+        "category": "Söldner:in",
+        "specification": "Söldnerin und Jägerin",
+        "profession-package": "Söldner",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Weiden",
+            "Greifenfurt"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis"
+        ],
+        "injection-points": "Vampirjagd, Eichenholzpfähle, Schwarzkuppen"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 65,
+        "hair": "kurz geschoren, dunkel",
+        "skin": "wettergegerbt",
+        "eyes": "dunkel",
+        "outfit": {
+            "headgear": "breitkrempiger Hut",
+            "top": "Rindslederwams mit Steckfächern für Holzpfähle, lederverstärkter Tuchmantel mit hohem Kragen",
+            "trousers": "feste Lederhose",
+            "footwear": "feste Stiefel",
+            "jewellery": "Kette aus geschnitzten Eichenholzperlen um den Hals",
+            "things": "Glasphiole mit geweihtem Öl",
+            "weapons": "zwei lange Silberschneidendolche"
+        },
+        "distinguishing_features": "kurz geschorenes dunkles Haar, Eichenholzperlen-Kette"
+    },
+    "personality": {
+        "traits": [
+            "Wachsam",
+            "Pragmatisch",
+            "Vorsichtig",
+            "Entschlossen",
+            "Wettergeprüft"
+        ],
+        "advantages": [
+            "Waidwerk"
+        ],
+        "disadvantages": [
+            "Prinzipientreue"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Mutter Alwina, Kräutersammlerin; Vater Rorand, Waldarbeiter in Weiden.",
+        "motivation": "Spürt Gerüchten um die Acheburg und verlassene Minenstollen in den Schwarzkuppen nach."
+    },
+    "session-notes": ""
+}

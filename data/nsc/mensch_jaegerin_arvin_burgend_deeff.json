@@ -1,0 +1,78 @@
+{
+    "id": "a1b2c3d4-e5f6-4a7b-8899-aabbccddeeff",
+    "source": "wiki-aventurica.de; Finsterkamm-Expedition (1009 BF)",
+    "tags": [],
+    "general": {
+        "name": "Arvin Burgend",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 971,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Almada",
+        "culture-package": "Almada",
+        "soul-animal": "Rabe",
+        "social-state": "Frei",
+        "experience-level": "Erfahren"
+    },
+    "profession": {
+        "category": "Jäger:in",
+        "specification": "Golgari-nahe:r Jäger:in",
+        "profession-package": "Jäger",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Finsterkamm",
+        "former-locations": [
+            "Almada",
+            "Elenvina"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis"
+        ],
+        "injection-points": "Vampirjagd, Acheburg, Silberbolzen"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 82,
+        "hair": "kurz, dunkel",
+        "skin": "wettergegerbt",
+        "eyes": "dunkel, aufmerksam",
+        "outfit": {
+            "headgear": "breitkrempiger Hut",
+            "top": "dunkles Lederkoller mit eisernen Nieten, lederverstärkter Tuchmantel mit hohem Kragen",
+            "trousers": "feste Lederhose",
+            "footwear": "feste Stiefel",
+            "jewellery": "Armschienen mit geprägten Rabensymbolen",
+            "things": "Bienenwachs und Lederlappen für die Armbrustschnur",
+            "weapons": "schwere Windenarmbrust, Silberschneidendolche"
+        },
+        "distinguishing_features": "vernarbte Wange"
+    },
+    "personality": {
+        "traits": [
+            "Ernst",
+            "Zielstrebig",
+            "Wachsam",
+            "Golgari-nah",
+            "Entschlossen"
+        ],
+        "advantages": [
+            "Waidwerk"
+        ],
+        "disadvantages": [
+            "Prinzipientreue"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Mutter Cilly, Wirtin in Valquirbrück; Vater Koris, Büchsenmacher in Gareth.",
+        "motivation": "Spürt Gerüchten um die Acheburg und dem Schrecken von der Acheburg im Auftrag des Orden des Heiligen Golgari nach."
+    },
+    "session-notes": ""
+}

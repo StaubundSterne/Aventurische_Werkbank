@@ -1,0 +1,81 @@
+{
+    "id": "e72b3c4f-8a12-4c56-9d34-7e890123456a",
+    "source": "wiki-aventurica.de, Regionalspielhilfe Das Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Eilika Terbentrog",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 981,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Weidener",
+        "culture-package": "Weidener",
+        "soul-animal": "Stute",
+        "social-state": "Frei",
+        "experience-level": "Erfahren"
+    },
+    "profession": {
+        "category": "Kurier",
+        "specification": "Beilunker Reiterin im offiziellen Eilkurierdienst",
+        "profession-package": "Kurier / Reiter",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Trallop",
+        "former-locations": [
+            "Beilunk",
+            "Reichsend"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Aurelevina"
+        ],
+        "injection-points": "Eilkurier, Wachssiegel, Ermüdetes Reittier"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 63,
+        "hair": "Sorgfältig zusammengebundenes, rotes Haar",
+        "skin": "Blass durch den langen Ritt, von Wind und Kälte gerötete Wangen",
+        "eyes": "Wachsamer, konzentrierter grüner Blick",
+        "outfit": {
+            "headgear": "Einfache Lederkappe",
+            "top": "Gleiche Reitertracht aus verstärktem Tuchstoff",
+            "trousers": "Eng anliegende Reithosen aus Tuch",
+            "footwear": "Strapazierfähige Reitstiefel und Lederhandschuhe",
+            "jewellery": "Ein kleiner silberner Ring der verstorbenen Mutter",
+            "things": "Kurierhorn aus poliertem Messing, Depeschentasche mit rotem Wachssiegel",
+            "weapons": "Kurzschwert und Reiterdolch"
+        },
+        "distinguishing_features": "Ständig wachsamer, besorgter Blick auf ihr ermüdetes Reittier"
+    },
+    "personality": {
+        "traits": [
+            "Pflichtbewusst",
+            "Wachsam",
+            "Verunsichert",
+            "Zielstrebig",
+            "Diszipliniert"
+        ],
+        "advantages": [
+            "Gefahreninstinkt",
+            "Zähigkeit"
+        ],
+        "disadvantages": [
+            "Schlafstörungen",
+            "Nervös"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Mutter Isalda, Krämerin in Beilunk; Vater Wulfart, verstorbener Jäger im Bärnwald. Aufgewachsen in geordneten bürgerlichen Verhältnissen.",
+        "motivation": "Das ermüdete Pferd schonen und die wichtige Depesche unversehrt nach Trallop abliefern."
+    },
+    "session-notes": ""
+}

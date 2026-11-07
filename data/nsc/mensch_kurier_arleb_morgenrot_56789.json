@@ -1,0 +1,81 @@
+{
+    "id": "d942b2e4-7c31-482a-9f62-5b9123456789",
+    "source": "wiki-aventurica.de, Regionalspielhilfe Das Herzogtum Weiden",
+    "tags": [],
+    "general": {
+        "name": "Arleb Morgenrot",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 977,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Weidener",
+        "culture-package": "Weidener",
+        "soul-animal": "Falke",
+        "social-state": "Frei",
+        "experience-level": "Erfahren"
+    },
+    "profession": {
+        "category": "Kurier",
+        "specification": "Beilunker Reiter im herzoglichen Kurierdienst",
+        "profession-package": "Kurier / Reiter",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Trallop",
+        "former-locations": [
+            "Beilunk",
+            "Reichsend"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Jost"
+        ],
+        "injection-points": "Depesche, Botenreiter, Weidener Bär"
+    },
+    "appearance": {
+        "size": 185,
+        "weight": 82,
+        "hair": "Kurz geschnittenes, blondes Haar",
+        "skin": "Wettergegerbte, harte Gesichtszüge",
+        "eyes": "Wache, strenge blaue Augen",
+        "outfit": {
+            "headgear": "Einfacher Reiterhut aus Leder",
+            "top": "Traditionelle Kluft der Beilunker Reiter aus verstärktem Tuchstoff",
+            "trousers": "Enge Reithosen aus festem Leder",
+            "footwear": "Hohe Reiterstiefel",
+            "jewellery": "Kein auffälliger Schmuck",
+            "things": "Am breiten Brustgurt befestigte lederne Depeschentasche",
+            "weapons": "Gürtelschwert und Reiterhammer"
+        },
+        "distinguishing_features": "Eine leichte Narbe an der linken Wange von einem alten Scharmützel"
+    },
+    "personality": {
+        "traits": [
+            "Überheblich",
+            "Routiniert",
+            "Herablassend",
+            "Pflichtbewusst",
+            "Wetterhart"
+        ],
+        "advantages": [
+            "Eiserner Wille",
+            "Richtungssinn"
+        ],
+        "disadvantages": [
+            "Arroganz",
+            "Jähzorn"
+        ],
+        "actual-mood": [
+            "Genervt"
+        ],
+        "family-background": "Mutter Alrike, Hebamme in Beilunk; Bruder Gerold, Soldat in Greifenfurt. Die Familie stammt aus den östlichen Weidener Grenzmarken.",
+        "motivation": "Den anstrengenden Eilritt nach Trallop zügig beenden, um sich im Gasthaus zu erholen."
+    },
+    "session-notes": ""
+}
