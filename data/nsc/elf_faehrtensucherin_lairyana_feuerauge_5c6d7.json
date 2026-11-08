@@ -1,0 +1,80 @@
+{
+    "id": "b2c3d4e5-f6a7-48b9-9c0d-e2f3a4b5c6d7",
+    "source": "wiki-aventurica.de, 4205 Aus Licht und Traum.md, Spielkarte: Ausrüsten im Donnerbacher Kramladen",
+    "tags": [],
+    "general": {
+        "name": "Lairyana Feuerauge",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 950,
+        "alive": true,
+        "species": "Elf",
+        "species-package": "Waldelf",
+        "culture": "Elfen",
+        "culture-package": "Waldelfen",
+        "soul-animal": "Falke",
+        "social-state": "Frei",
+        "experience-level": "Kompetent"
+    },
+    "profession": {
+        "category": "Fährtensucherin",
+        "specification": "Führerin und Fährtensucherin",
+        "profession-package": "Waldläuferin / Fährtensucherin",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Fährtensuche, Wildnis, Skepsis"
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 55,
+        "hair": "Langes, helles elfisches Haar",
+        "skin": "Zart gebräunte Haut",
+        "eyes": "Grünliche Augen mit intensivem Blick",
+        "outfit": {
+            "headgear": "Einfaches Lederstirnband",
+            "top": "Moosgrüne Tunika aus feinem Leder",
+            "trousers": "Beige Lederhose",
+            "footwear": "Weiche Wildlederstiefel",
+            "jewellery": "Ein kleiner Holzreif am linken Ohr",
+            "things": "Botanisiertrommel, Feuerstahl",
+            "weapons": "Elfenbogen und Jagdmesser"
+        },
+        "distinguishing_features": "Aufmerksamer, musternder Blick, bewegt sich völlig lautlos"
+    },
+    "personality": {
+        "traits": [
+            "Schweigsam",
+            "Beobachtend",
+            "Naturverbunden",
+            "Kühl",
+            "Wachsam"
+        ],
+        "advantages": [
+            "Dunkelsicht",
+            "Astrale Regeneration"
+        ],
+        "disadvantages": [
+            "Weltfremd",
+            "Prinzipientreu"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Elterliche Sippe in den Salamandersteinen, Mutter Elwynn, Jägerin; Vater Yal Cor, Holzschnitzer.",
+        "motivation": "Die Wildnis erkunden und Reisende sicher durch die tückischen Wälder um Donnerbach führen."
+    },
+    "session-notes": ""
+}

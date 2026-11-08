@@ -1,0 +1,79 @@
+{
+    "id": "c3d4e5f6-a7b8-49c0-8d0e-f3a4b5c6d7e8",
+    "source": "wiki-aventurica.de, 4207 Schild des Reiches.md, Spielkarte: Ausrüsten im Donnerbacher Kramladen",
+    "tags": [],
+    "general": {
+        "name": "Boronfried Geyersbach",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 958,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Donnerbach",
+        "culture-package": "Nordaventurien",
+        "soul-animal": "Esel",
+        "social-state": "Frei",
+        "experience-level": "Durchschnittlich"
+    },
+    "profession": {
+        "category": "Händler:in",
+        "specification": "Inhaber des Kramladens",
+        "profession-package": "Kaufmann / Händler",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Lowangen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Şahin"
+        ],
+        "injection-points": "Kramladen, Geheimcodes, Handeln"
+    },
+    "appearance": {
+        "size": 172,
+        "weight": 82,
+        "hair": "Lichter grauer Haarkranz",
+        "skin": "Wettergegerbte, rötliche Haut",
+        "eyes": "Wache braune Augen",
+        "outfit": {
+            "headgear": "Wollmütze",
+            "top": "Steppweste über schwerem Leinenhemd",
+            "trousers": "Fester Tuchrock / Stoffhose",
+            "footwear": "Robuste Holzschuhe mit Filzeinlagen",
+            "jewellery": "Messingener Fingerring",
+            "things": "Rechenschieber, Notizbuch, Schlüsselbund",
+            "weapons": "Schwerer Hakenstock"
+        },
+        "distinguishing_features": "Lauter, mürrischer Ruf, aber gutmütiges Herz"
+    },
+    "personality": {
+        "traits": [
+            "Pragmatisch",
+            "Geschäftstüchtig",
+            "Mürrisch",
+            "Hilfsbereit",
+            "Beobachtend"
+        ],
+        "advantages": [
+            "Feilscher"
+        ],
+        "disadvantages": [
+            "Neugierig",
+            "Eitel"
+        ],
+        "actual-mood": [
+            "Geschäftig"
+        ],
+        "family-background": "Vater Aldemar, Händler; Mutter Alwina, Wäscherin.",
+        "motivation": "Den Kramladen erfolgreich führen und Reisende vor dem Frost retten (und gute Geschäfte machen)."
+    },
+    "session-notes": ""
+}

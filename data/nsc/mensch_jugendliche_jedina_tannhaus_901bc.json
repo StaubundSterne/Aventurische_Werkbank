@@ -1,0 +1,79 @@
+{
+    "id": "b2c3d4e5-f6a7-48b9-8c0d-2345678901bc",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Jedina Tannhaus",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 994,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Donnerbach",
+        "culture-package": "Mittelreicher",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Jugendliche",
+        "specification": "Imman-Spielerin und Handwerkstochter",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Donnerbach"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Fredegis"
+        ],
+        "injection-points": "Imman-Schläger, Elfenhass, verletzte Kniescheibe"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 58,
+        "hair": "Wilde braune Locken",
+        "skin": "Sommersprossige Haut",
+        "eyes": "Stechende grüne Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Robuste Sporttunika für das Immantraining",
+            "trousers": "Strapazierfähige Lederhose",
+            "footwear": "Verstärkte Imman-Stiefel",
+            "jewellery": "Einfaches Lederarmband",
+            "things": "Zerschlagener Imman-Schläger, Wetzstein",
+            "weapons": "Imman-Schläger als Hiebwaffe"
+        },
+        "distinguishing_features": "Athletische Statur, kampfbereit, zeigt offene Ablehnung gegenüber Elfen."
+    },
+    "personality": {
+        "traits": [
+            "Jähzornig",
+            "Ehrgeizig",
+            "Rebellisch",
+            "Vorurteilsvoll",
+            "Entschlossen"
+        ],
+        "advantages": [
+            "Hitzeresistenz",
+            "Zäher Hund"
+        ],
+        "disadvantages": [
+            "Aversion gegen Elfen",
+            "Arroganz",
+            "Reizbarkeit"
+        ],
+        "actual-mood": [
+            "Aggressiv"
+        ],
+        "family-background": "Mutter Elwe, Schneiderin; Vater Rondralf, Händler; älterer Bruder Jallik, Magiescholar. Jedina hegt einen tiefen Groll gegen Elfen, besonders nach dem Vorfall mit den zerstörten Aufzeichnungen.",
+        "motivation": "Will es den Elfen und ihren Anhängern heimzahlen und verteidigt ihre Sicht mit harten Bandagen."
+    },
+    "session-notes": ""
+}

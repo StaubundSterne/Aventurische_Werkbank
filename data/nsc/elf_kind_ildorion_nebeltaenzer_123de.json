@@ -1,0 +1,78 @@
+{
+    "id": "d4e5f6a7-b8c9-40d1-8e2f-4567890123de",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Ildorion Nebeltänzer",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 995,
+        "alive": true,
+        "species": "Elf",
+        "species-package": "Elfen",
+        "culture": "Auelfen (Sippe Nebeltänzer)",
+        "culture-package": "Auelfen",
+        "soul-animal": "Reh",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Kind",
+        "specification": "Junger Auelf und Imman-Spieler",
+        "clerical": false,
+        "magical": true,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Salamandersteine"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Aurelevina"
+        ],
+        "injection-points": "Gebrochene Kniescheibe, Elbenfeld, Balsam Salabunde"
+    },
+    "appearance": {
+        "size": 175,
+        "weight": 55,
+        "hair": "Silberblonde, schulterlange Locken",
+        "skin": "Elfenbeinfarbene, zarte Haut",
+        "eyes": "Große, leuchtende amethystfarbene Augen",
+        "outfit": {
+            "headgear": "Falkenfeder im Haar",
+            "top": "Leichtes schilfgrünes Bausch-Jagdhemd",
+            "trousers": "Eng anliegende Bauschhose",
+            "footwear": "Weiche kelchartige Lederstiefel",
+            "jewellery": "Kette aus blauem Opalit",
+            "things": "Rohrflöte, Kräutersäckchen",
+            "weapons": "Kleiner Kurzbogen"
+        },
+        "distinguishing_features": "Zierliche Statur, leicht hinkend durch die kürzlich geheilte Kniescheibe."
+    },
+    "personality": {
+        "traits": [
+            "Sanftmütig",
+            "Musikalisch",
+            "Empfindsam",
+            "Friedliebend",
+            "Vorsichtig"
+        ],
+        "advantages": [
+            "Sechter Sinn",
+            "Hellsicht"
+        ],
+        "disadvantages": [
+            "Raumangst",
+            "Empfindfindlichkeit gegen Lärm"
+        ],
+        "actual-mood": [
+            "Verunsichert"
+        ],
+        "family-background": "Cousin von Lindariel aus der Sippe der Nebeltänzer. Ildorion wuchs in den Auen des Elbenfeldes auf.",
+        "motivation": "Will nach dem brutalen Übergriff von Jedina sein inneres Gleichgewicht wiederfinden und die Harmonie in Donnerbach bewahren."
+    },
+    "session-notes": ""
+}

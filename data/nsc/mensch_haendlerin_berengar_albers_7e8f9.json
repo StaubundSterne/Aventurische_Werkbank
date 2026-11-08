@@ -1,0 +1,78 @@
+{
+    "id": "d4e5f6a7-b8c9-40d1-8e0f-a4b5c6d7e8f9",
+    "source": "Spielkarte: Ausrüsten im Donnerbacher Kramladen",
+    "tags": [],
+    "general": {
+        "name": "Berengar Albers",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 970,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Donnerbach",
+        "culture-package": "Mittelländische Städte",
+        "soul-animal": "Rabe",
+        "social-state": "Frei",
+        "experience-level": "Unerfahren"
+    },
+    "profession": {
+        "category": "Händler:in",
+        "specification": "Marktstandbetreiber",
+        "profession-package": "Kleinhändler",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Anderath"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Fredegis",
+            "Aurelevina"
+        ],
+        "injection-points": "Marktstand, Karotten, Feilschen"
+    },
+    "appearance": {
+        "size": 165,
+        "weight": 70,
+        "hair": "Kurzes, struppiges braunes Haar",
+        "skin": "Frostgerötete Wangen",
+        "eyes": "Wässrige blaue Augen",
+        "outfit": {
+            "headgear": "Gefütterte Pelzkappe",
+            "top": "Dicker Wollmantel mit Flicken",
+            "trousers": "Grobe Leinenhose",
+            "footwear": "Abgetragene Stiefel",
+            "jewellery": "Kein Schmuck",
+            "things": "Waagschale, Kleingeldbeutel",
+            "weapons": "Rostiges Fahrtenmesser"
+        },
+        "distinguishing_features": "Heisere Stimme vom stundenlangen Rufen"
+    },
+    "personality": {
+        "traits": [
+            "Heiser",
+            "Redselig",
+            "Geschäftig",
+            "Hartnäckig",
+            "Sorgenvoll"
+        ],
+        "advantages": [
+            "Feilscher"
+        ],
+        "disadvantages": [
+            "Pechmagnet"
+        ],
+        "actual-mood": [
+            "Fröstelnd"
+        ],
+        "family-background": "Vater Wulfram, Bauer; Mutter Hiltrud, Magd.",
+        "motivation": "Die letzten frostigen Rübengewächse und Laute loswerden, um Brennholz zu kaufen."
+    },
+    "session-notes": ""
+}

@@ -1,0 +1,78 @@
+{
+    "id": "f6a7b8c9-d0e1-42f3-80ab-c6d7e8f9a0b1",
+    "source": "Spielkarte: Ausrüsten im Donnerbacher Kramladen",
+    "tags": [],
+    "general": {
+        "name": "Isalie Bärwurz",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 980,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Donnerbach",
+        "culture-package": "Mittelländische Städte",
+        "soul-animal": "Hase",
+        "social-state": "Frei",
+        "experience-level": "Unerfahren"
+    },
+    "profession": {
+        "category": "Hausfrau",
+        "specification": "Bürgerin / Hausfrau",
+        "profession-package": "Einfache Bürgerin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Perricum"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Aurelevina",
+            "Fredegis"
+        ],
+        "injection-points": "Frieren, Karotten, Marktsuche"
+    },
+    "appearance": {
+        "size": 160,
+        "weight": 55,
+        "hair": "Dunkelblonde, windverwehte Haare",
+        "skin": "Blass vor Kälte",
+        "eyes": "Blaue Augen",
+        "outfit": {
+            "headgear": "Zu dünnes Wollkopftuch",
+            "top": "Dünner Sommerumhang (völlig unzureichend)",
+            "trousers": "Einfacher Rock",
+            "footwear": "Stoffschuhe mit nassen Sohlen",
+            "jewellery": "Einfacher Kupferring",
+            "things": "Leeres Marktnetz, Taschentuch",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Zittert am ganzen Leib vor Kälte, reibt sich unaufhörlich die Hände"
+    },
+    "personality": {
+        "traits": [
+            "Fröstelnd",
+            "Ungeduldig",
+            "Sorgenvoll",
+            "Höflich",
+            "Einfältig"
+        ],
+        "advantages": [
+            "Glück im Unglück"
+        ],
+        "disadvantages": [
+            "Kälteempfindlich"
+        ],
+        "actual-mood": [
+            "Erfrierend"
+        ],
+        "family-background": "Ehemann Korbinian, Schreiner; Tochter Leandra.",
+        "motivation": "Dringend frische Karotten und Wurzelgemüse für den Eintopf finden, bevor die Kinder hungrig werden."
+    },
+    "session-notes": ""
+}

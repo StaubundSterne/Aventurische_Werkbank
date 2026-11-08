@@ -1,0 +1,78 @@
+{
+    "id": "e5f6a7b8-c9d0-41e2-8f0a-b5c6d7e8f9a0",
+    "source": "Spielkarte: Ausrüsten im Donnerbacher Kramladen",
+    "tags": [],
+    "general": {
+        "name": "Alrike Seeglas",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Donnerbach",
+        "culture-package": "Mittelländische Städte",
+        "soul-animal": "Wildschwein",
+        "social-state": "Frei",
+        "experience-level": "Unerfahren"
+    },
+    "profession": {
+        "category": "Händler:in",
+        "specification": "Metzgerin / Marktstandbetreiberin",
+        "profession-package": "Metzgerin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Grätlingen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Hesindian"
+        ],
+        "injection-points": "Pökelfleisch, Markt, Rauchduft"
+    },
+    "appearance": {
+        "size": 170,
+        "weight": 75,
+        "hair": "Dunkle, zu einem Knoten gesteckte Haare",
+        "skin": "Wettergegerbte Haut",
+        "eyes": "Dunkelbraune Augen",
+        "outfit": {
+            "headgear": "Wollhaube",
+            "top": "Lederschürze über dickem Wollwams",
+            "trousers": "Robuste Hosen",
+            "footwear": "Feste Stiefel",
+            "jewellery": "Zinnring am Finger",
+            "things": "Fleischbeil, Räucherhaken",
+            "weapons": "Knochenmesser"
+        },
+        "distinguishing_features": "Riecht stark nach Rauch und Pökelfleisch"
+    },
+    "personality": {
+        "traits": [
+            "Robust",
+            "Direkt",
+            "Geschäftstüchtig",
+            "Wohlwollend",
+            "Laut"
+        ],
+        "advantages": [
+            "Gut im Nehmen"
+        ],
+        "disadvantages": [
+            "Jähzornig"
+        ],
+        "actual-mood": [
+            "Zufrieden"
+        ],
+        "family-background": "Vater Jaro, Jäger; Mutter Morina, Köchin.",
+        "motivation": "Gutes Fleisch an hungrige Reisende verkaufen und den Winter überstehen."
+    },
+    "session-notes": ""
+}

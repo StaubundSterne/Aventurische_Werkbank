@@ -1,0 +1,79 @@
+{
+    "id": "c3d4e5f6-a7b8-49c0-9d1e-3456789012cd",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Rondralf Tannhaus",
+        "gender": "männlich",
+        "canonical": false,
+        "birth-year": 963,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Mittelreich",
+        "culture-package": "Mittelreicher",
+        "soul-animal": "Fuchs",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Händler",
+        "specification": "Krämer und Fernhändler",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Festum",
+        "former-locations": [
+            "Donnerbach",
+            "Uhdenberg"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Hesindian"
+        ],
+        "injection-points": "Handelsreise, Brief nach Festum, geschäftlicher Druck"
+    },
+    "appearance": {
+        "size": 178,
+        "weight": 84,
+        "hair": "Kurzes, grau meliertes Haar",
+        "skin": "Wettergegerbte Händlershaut",
+        "eyes": "Wache blaue Augen",
+        "outfit": {
+            "headgear": "Gepflegter Reisehut",
+            "top": "Teurer Wams aus blauer Wolle mit Pelzbesatz",
+            "trousers": "Solide Lederhose",
+            "footwear": "Gute Reitstiefel",
+            "jewellery": "Massiver silberner Siegelring",
+            "things": "Handelsbücher, Schreibfeder, Lederbeutel mit Dukaten",
+            "weapons": "Gürteldolch"
+        },
+        "distinguishing_features": "Bestimmtes Auftreten, riecht leicht nach fremdländischen Gewürzen."
+    },
+    "personality": {
+        "traits": [
+            "Geschäftstüchtig",
+            "Ambitioniert",
+            "Reiselustig",
+            "Bestimmt",
+            "Pragmatisch"
+        ],
+        "advantages": [
+            "Rechtswohlanständigkeit",
+            "Gute Kontakte"
+        ],
+        "disadvantages": [
+            "Goldgier",
+            "Verantwortungsscheu gegenüber der Familie"
+        ],
+        "actual-mood": [
+            "Geschäftig"
+        ],
+        "family-background": "Ehefrau Elwe, Schneiderin in Donnerbach; Sohn Jallik, Scholastikus; Tochter Jedina. Rondralf ist seit Monaten geschäftlich unterwegs und drängt Jallik, ihm nach Festum zu folgen.",
+        "motivation": "Will im Bornland lukrative Handelskontakte zur Halle des Quecksilbers knüpfen und sein Geschäft vergrößern."
+    },
+    "session-notes": ""
+}

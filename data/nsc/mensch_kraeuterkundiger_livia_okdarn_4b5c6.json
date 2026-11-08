@@ -1,0 +1,80 @@
+{
+    "id": "a1b2c3d4-e5f6-47a8-8b0c-d1e2f3a4b5c6",
+    "source": "wiki-aventurica.de, 4205 Aus Licht und Traum.md, Spielkarte: Ausrüsten im Donnerbacher Kramladen",
+    "tags": [],
+    "general": {
+        "name": "Livia Okdarn",
+        "gender": "weiblich",
+        "canonical": true,
+        "birth-year": 960,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Donnerbach",
+        "culture-package": "Nordaventurien",
+        "soul-animal": "Dachs",
+        "social-state": "Frei",
+        "experience-level": "Erfahren"
+    },
+    "profession": {
+        "category": "Kräuterkundige:r",
+        "specification": "Kräuterfrau",
+        "profession-package": "Heilkundige / Kräuterhändlerin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Tiefhusen"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Heilkräuter, Winterkälte, Kräuterturm"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 65,
+        "hair": "Schulterlange graugrüne Haare meist zu einem festen Zopf gebunden",
+        "skin": "Wettergegerbte Haut mit Sommersprossen",
+        "eyes": "Graugrüne Augen",
+        "outfit": {
+            "headgear": "Schlichtes Leinenkopftuch",
+            "top": "Grobe Wollbluse mit besticktem Kragen",
+            "trousers": "Robuste braune Hose",
+            "footwear": "Feste Lederschuhe",
+            "jewellery": "Ein kleiner silberner Kräuteranhänger",
+            "things": "Kleine Kräuterschere, Holzdose mit Salben",
+            "weapons": "Kleines Küchenmesser am Gürtel"
+        },
+        "distinguishing_features": "Freundliches Lächeln, leichter Kräuterduft an den Händen"
+    },
+    "personality": {
+        "traits": [
+            "Herzlich",
+            "Bodenständig",
+            "Hilfsbereit",
+            "Aufmerksam",
+            "Ruhig"
+        ],
+        "advantages": [
+            "Kräuterkundig",
+            "Eisern"
+        ],
+        "disadvantages": [
+            "Neugierig",
+            "Stubenhocker"
+        ],
+        "actual-mood": [
+            "Gelassen"
+        ],
+        "family-background": "Mutter Alrike, Hebamme; Bruder Gerold, Soldat in Greifenfurt.",
+        "motivation": "Die Menschen und Elfen in Donnerbach mit Heilmitteln versorgen und den Kräuterturm hüten."
+    },
+    "session-notes": ""
+}

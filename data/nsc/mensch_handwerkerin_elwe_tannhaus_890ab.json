@@ -1,0 +1,78 @@
+{
+    "id": "a1b2c3d4-e5f6-47a8-9b0c-1234567890ab",
+    "source": "Spieler-Entwurf & wiki-aventurica.de",
+    "tags": [],
+    "general": {
+        "name": "Elwe Tannhaus",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 965,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mittelländer",
+        "culture": "Donnerbach",
+        "culture-package": "Mittelreicher",
+        "soul-animal": "Hauskatze",
+        "social-state": "Frei"
+    },
+    "profession": {
+        "category": "Handwerkerin",
+        "specification": "Schneiderin",
+        "clerical": false,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Adarell",
+            "Jost"
+        ],
+        "injection-points": "Hausarbeit, mütterliche Sorge, Gewürzwein"
+    },
+    "appearance": {
+        "size": 168,
+        "weight": 62,
+        "hair": "Graugesprenkeltes dunkles Haar, zu einem Knoten gebunden",
+        "skin": "Wettergegerbte, gesunde Haut",
+        "eyes": "Warmherzige braune Augen",
+        "outfit": {
+            "headgear": "Einfaches Leinenkopftuch",
+            "top": "Bequeme Wollbluse mit besticktem Kragen",
+            "trousers": "Robuste dunkle Hausmannshose",
+            "footwear": "Weiche Lederschuhe",
+            "jewellery": "Kleiner silberner Fingerring",
+            "things": "Nähzeug, Stoffreste, hölzerner Kochlöffel",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Hat immer saubere Hände vom Geschirrspülen und strahlt mütterliche Ruhe aus."
+    },
+    "personality": {
+        "traits": [
+            "Mütterlich",
+            "Pragmatisch",
+            "Gastfreundlich",
+            "Fleißig",
+            "Geduldig"
+        ],
+        "advantages": [
+            "Gutaussehend",
+            "Soziale Anpassungsfähigkeit"
+        ],
+        "disadvantages": [
+            "Schlafstörungen",
+            "Sorgenhaft"
+        ],
+        "actual-mood": [
+            "Besorgt"
+        ],
+        "family-background": "Ehemann Rondralf, Fernhändler; Sohn Jallik, Scholastikus am Seminar; Tochter Jedina. Elwe führt den Haushalt in Donnerbach und sorgt sich um die Zukunft ihrer Kinder angesichts der familiären Spannungen.",
+        "motivation": "Will ihren Haushalt in Ordnung halten und wünscht sich, dass ihre Kinder ihren Weg finden und glücklich werden."
+    },
+    "session-notes": ""
+}
