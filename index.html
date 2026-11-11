@@ -721,7 +721,7 @@
 
                 const token = localStorage.getItem('github_pat');
                 const headers = { 'Accept': 'application/vnd.github.v3+json' };
-                if (token) {
+                if (token && token.trim()) {
                     headers['Authorization'] = `Bearer ${token.trim()}`;
                 }
 
@@ -729,6 +729,11 @@
                 const response = await fetch(apiUrl, { headers: headers });
 
                 if (!response.ok) {
+                    if (response.status === 401) {
+                        localStorage.removeItem('github_pat');
+                        console.warn("⚠️ GitHub Token abgelaufen oder ungültig (401). Wurde automatisch aus dem Speicher entfernt.");
+                        throw new Error("GitHub Token ungültig (401).");
+                    }
                     if (response.status === 403 || response.status === 429) {
                         throw new Error("GitHub API Rate-Limit erreicht.");
                     }
@@ -1513,10 +1518,11 @@
                 return;
             }
 
-            const filePath = `data/nsc/${filename}`;
             let token = localStorage.getItem('github_pat');
+            if (token) token = token.trim();
+
             if (!token) {
-                token = prompt("Bitte gib deinen GitHub Personal Access Token (PAT) ein:");
+                token = prompt("Bitte gib deinen GitHub Personal Access Token (PAT) ein:\n(Wird sicher im Browser-Speicher hinterlegt)");
                 if (!token) return;
                 localStorage.setItem('github_pat', token.trim());
             }
