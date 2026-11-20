@@ -1,0 +1,372 @@
+{
+  "ap-total": 1100,
+  "ap-spent": 1100,
+  "ap-remaining": 0,
+  "stats": {
+    "experience-level": {
+      "id": "EL_3",
+      "title": "Erfahren"
+    },
+    "attributes": {
+      "MU": 14,
+      "KL": 8,
+      "IN": 11,
+      "CH": 10,
+      "FF": 14,
+      "GE": 15,
+      "KO": 14,
+      "KK": 14
+    },
+    "advantages": [
+      {
+        "id": "ADV_16",
+        "instance-id": "423c8b89-4ba3-4264-9765-020bc667241a",
+        "title": "Herausragende Fertigkeit",
+        "selection": {
+          "target-id": "TAL_57",
+          "target-title": "Schlösserknacken"
+        }
+      },
+      {
+        "id": "ADV_16",
+        "instance-id": "94d9c1bb-0c52-4204-bc51-d472f16d8964",
+        "title": "Herausragende Fertigkeit",
+        "selection": {
+          "target-id": "TAL_4",
+          "target-title": "Körperbeherrschung"
+        }
+      },
+      {
+        "id": "ADV_5",
+        "instance-id": "7669a16a-7d42-4697-a146-748b5bde477e",
+        "title": "Beidhändig"
+      },
+      {
+        "id": "ADV_10",
+        "instance-id": "f0288b2c-8a91-47ea-bb76-6304bea4473a",
+        "title": "Fuchssinn"
+      },
+      {
+        "id": "ADV_17",
+        "instance-id": "04c39d30-76f4-4323-9b10-dcc0e21c3579",
+        "title": "Herausragende Kampftechnik",
+        "selection": {
+          "target-id": "CT_3",
+          "target-title": "Dolche"
+        }
+      },
+      {
+        "id": "ADV_38",
+        "instance-id": "94e99f20-ae23-4cc8-b72e-6effbb061866",
+        "title": "Schlangenmensch"
+      },
+      {
+        "id": "ADV_47",
+        "instance-id": "f3e34c25-6bb2-4ffc-b06f-d257286013c3",
+        "title": "Waffenbegabung",
+        "selection": {
+          "target-id": "CT_3",
+          "target-title": "Dolche"
+        }
+      },
+      {
+        "id": "ADV_53",
+        "instance-id": "83c3a2df-524a-43b3-942b-c8539eeba5bb",
+        "title": "Zwergennase"
+      }
+    ],
+    "disadvantages": [
+      {
+        "id": "DISADV_48",
+        "instance-id": "b6a5defc-2282-4be8-8961-f0bcd0834e4e",
+        "title": "Unfähig",
+        "selection": {
+          "target-id": "TAL_26",
+          "target-title": "Fischen & Angeln"
+        }
+      },
+      {
+        "id": "DISADV_48",
+        "instance-id": "3a123dd8-ac02-4c16-9006-f52fb1561420",
+        "title": "Unfähig",
+        "selection": {
+          "target-id": "TAL_11",
+          "target-title": "Tanzen"
+        }
+      },
+      {
+        "id": "DISADV_37",
+        "instance-id": "1f98a302-76bb-4bec-bb70-1d81cbaf7c25",
+        "title": "Schlechte Eigenschaft",
+        "selection": {
+          "id": 4,
+          "title": "Goldgier"
+        }
+      },
+      {
+        "id": "DISADV_37",
+        "instance-id": "bb828391-464d-40c0-8ba4-eeb71fcb1a0b",
+        "title": "Schlechte Eigenschaft",
+        "selection": {
+          "id": 3,
+          "title": "Geiz"
+        }
+      },
+      {
+        "id": "DISADV_7",
+        "instance-id": "008546b9-c403-43a4-b95b-25ef7905e145",
+        "title": "Eingeschränkter Sinn",
+        "selection": {
+          "id": 3,
+          "title": "Geruch & Geschmack"
+        }
+      },
+      {
+        "id": "DISADV_1",
+        "instance-id": "7aeb4f82-d270-464d-9fcb-17830e1c3149",
+        "title": "Angst vor",
+        "selection": {
+          "id": 8,
+          "title": "Spinnen"
+        },
+        "level": 3
+      }
+    ],
+    "abilities": {
+      "talents": [
+        {
+          "id": "TAL_4",
+          "instance-id": "43a3282a-020a-4a9e-a62f-27d732dab49b",
+          "title": "Körperbeherrschung",
+          "FW": 11
+        },
+        {
+          "id": "TAL_57",
+          "instance-id": "770e0eef-f75e-4f5f-8923-2c9425c66af7",
+          "title": "Schlösserknacken",
+          "FW": 11
+        },
+        {
+          "id": "TAL_2",
+          "instance-id": "96e42cf1-c46d-4404-9da6-535ea528cec5",
+          "title": "Gaukeleien",
+          "FW": 2
+        },
+        {
+          "id": "TAL_3",
+          "instance-id": "1ac9d892-8102-40f1-8ad2-5736cc59ea43",
+          "title": "Klettern",
+          "FW": 10
+        },
+        {
+          "id": "TAL_5",
+          "instance-id": "58bfec03-6a21-420b-8663-1d8833acf925",
+          "title": "Kraftakt",
+          "FW": 8
+        },
+        {
+          "id": "TAL_7",
+          "instance-id": "0c9887dc-5c14-422b-bab9-fbbd8da45c7a",
+          "title": "Schwimmen",
+          "FW": 2
+        },
+        {
+          "id": "TAL_8",
+          "instance-id": "2b82b0de-ab32-424c-8b90-83a67054d8ee",
+          "title": "Selbstbeherrschung",
+          "FW": 8
+        },
+        {
+          "id": "TAL_10",
+          "instance-id": "545e2f9e-78d2-4989-aea1-75a1b88fbda9",
+          "title": "Sinnesschärfe",
+          "FW": 8
+        },
+        {
+          "id": "TAL_13",
+          "instance-id": "10fe2e68-5c5d-4467-91c0-39551c90eba5",
+          "title": "Verbergen",
+          "FW": 8
+        },
+        {
+          "id": "TAL_17",
+          "instance-id": "1c7e0347-71c3-4e7f-b014-b6ceb51376c4",
+          "title": "Einschüchtern",
+          "FW": 8
+        },
+        {
+          "id": "TAL_20",
+          "instance-id": "e702aa53-3c7a-4a8d-a5e8-a84f886764a8",
+          "title": "Menschenkenntnis",
+          "FW": 6
+        },
+        {
+          "id": "TAL_21",
+          "instance-id": "b1b58217-af78-41b0-bec7-1e97ab3868bf",
+          "title": "Überreden",
+          "FW": 6
+        },
+        {
+          "id": "TAL_23",
+          "instance-id": "3c10082f-21dd-470c-96f7-38f26b706f92",
+          "title": "Willenskraft",
+          "FW": 10
+        },
+        {
+          "id": "TAL_24",
+          "instance-id": "ab509486-c33b-4e29-8f67-0d2a94594fe6",
+          "title": "Fährtensuchen",
+          "FW": 2
+        },
+        {
+          "id": "TAL_25",
+          "instance-id": "ea878c3a-2d85-4ffa-a8eb-98fd4ec06528",
+          "title": "Fesseln",
+          "FW": 4
+        },
+        {
+          "id": "TAL_46",
+          "instance-id": "2f9934fb-ee91-45df-9c87-e1e70c61a9db",
+          "title": "Handel",
+          "FW": 8
+        }
+      ],
+      "combat-techniques": [
+        {
+          "id": "CT_3",
+          "instance-id": "d2279f08-a390-4668-9b18-d0dc58ea9029",
+          "title": "Dolche",
+          "KTW": 13
+        },
+        {
+          "id": "CT_14",
+          "instance-id": "0cd4f045-ed51-4ea7-8321-d8fc8fd8e4b3",
+          "title": "Wurfwaffen",
+          "KTW": 12
+        }
+      ],
+      "spells": [],
+      "liturgies": [],
+      "special-abilities": [
+        {
+          "id": "SA_29",
+          "instance-id": "24702ddb-922c-4464-879e-6bc0992852f2",
+          "title": "Sprache",
+          "selection": {
+            "id": 8,
+            "title": "Garethi"
+          },
+          "level": 4
+        },
+        {
+          "id": "SA_96",
+          "instance-id": "998f5404-148d-43c7-ad53-80f23aca879d",
+          "title": "Abrollen"
+        },
+        {
+          "id": "SA_106",
+          "instance-id": "c2439969-b464-4658-85c4-f8cbad0341d3",
+          "title": "Drohgebärden"
+        },
+        {
+          "id": "SA_9",
+          "instance-id": "72415677-06d3-4fae-9be0-93582e99c8cf",
+          "title": "Fertigkeitsspezialisierung",
+          "selection": {
+            "target-id": "TAL_57",
+            "target-title": "Schlösserknacken",
+            "id": 1,
+            "title": "Bartschlösser"
+          }
+        },
+        {
+          "id": "SA_9",
+          "instance-id": "1354ed5e-30b9-4d50-9932-a77bb77dc419",
+          "title": "Fertigkeitsspezialisierung",
+          "selection": {
+            "target-id": "TAL_4",
+            "target-title": "Körperbeherrschung",
+            "id": 4,
+            "title": "Kampfmanöver"
+          }
+        },
+        {
+          "id": "SA_110",
+          "instance-id": "a8143a9f-8b72-48a8-9a8f-49751e48d804",
+          "title": "Freiklettern"
+        },
+        {
+          "id": "SA_1021",
+          "instance-id": "0338420d-9252-4fac-938e-0aa8dc63ccd7",
+          "title": "Nerven aus Stahl"
+        },
+        {
+          "id": "SA_138",
+          "instance-id": "23eb4693-5c10-4e1d-93c7-d37079962c18",
+          "title": "Skifahren"
+        },
+        {
+          "id": "SA_1035",
+          "instance-id": "18be271d-d8e8-4c36-aadb-e01d2db5ae48",
+          "title": "Werte schätzen"
+        },
+        {
+          "id": "SA_42",
+          "instance-id": "0a601819-8e69-4607-87ee-160e2c5d732b",
+          "title": "Beidhändiger Kampf",
+          "level": 2
+        },
+        {
+          "id": "SA_160",
+          "instance-id": "d5716f75-f6e6-4d59-8593-f2c64cf31f8e",
+          "title": "Gezielter Angriff"
+        },
+        {
+          "id": "SA_877",
+          "instance-id": "c94d9b1f-1a6a-4a79-8d6d-3b85a33b608a",
+          "title": "Klinge drehen"
+        },
+        {
+          "id": "SA_53",
+          "instance-id": "204cf42c-714f-4a59-8648-026c9bf6d8ba",
+          "title": "Kreuzblock"
+        },
+        {
+          "id": "SA_56",
+          "instance-id": "967172ff-30d7-4a93-9315-ebab4625c293",
+          "title": "Präziser Stich",
+          "level": 1
+        },
+        {
+          "id": "SA_61",
+          "instance-id": "ca152d1d-54a1-4ddb-8f01-a966b06866e0",
+          "title": "Schnellziehen"
+        }
+      ]
+    },
+    "derived-stats": {
+      "LE": 33,
+      "SK": 1,
+      "ZK": 2,
+      "AW": 8,
+      "INI": {
+        "base": 15,
+        "dice": "1W6",
+        "modifier": 0
+      },
+      "GS": 8
+    },
+    "species-package": {
+      "id": "R_1",
+      "instance-id": "da26040c-2365-4933-a002-4839437f4f50",
+      "title": "Mensch"
+    }
+  },
+  "metadata": {
+    "source": "Optolith",
+    "source-version": "1.5.2",
+    "source-character-id": "H_1795037811629",
+    "source-created": "2025-11-20T22:33:51.231Z",
+    "source-modified": "2026-11-18T21:46:16.303Z"
+  }
+}

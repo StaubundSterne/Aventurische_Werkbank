@@ -1,0 +1,1277 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DSA 5-Talente und Kampftechniken",
+  "type": "object",
+  "description": "Vollständige Übersicht aller 59 profanen Talente und 21 Kampftechniken nach DSA 5-Regeln für maschinenlesbare Regelsysteme.",
+  "properties": {
+    "talents": {
+      "type": "array",
+      "description": "Vollständige Liste aller DSA 5-Talente mit ihren Regelmeldungen.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Offizieller Name des Talents."
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Körpertalente",
+              "Gesellschaftstalente",
+              "Naturtalente",
+              "Wissenstalente",
+              "Handwerkstalente"
+            ],
+            "description": "Die übergeordnete Talentgruppe nach DSA 5."
+          },
+          "probe": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}/[A-Z]{2}/[A-Z]{2}$",
+            "description": "Die drei Attribute der Talentprobe im Format AB/CD/EF."
+          },
+          "encumbrance": {
+            "type": "boolean",
+            "description": "Gibt an, ob das Talent durch Rüstungsbelastung (BE) behindert wird."
+          },
+          "steigerungsfaktor": {
+            "type": "string",
+            "enum": ["A", "B", "C", "D"],
+            "description": "Der Steigerungsfaktor für die AP-Kosten."
+          },
+          "applications": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Offizielle Anwendungsgebiete des Talents."
+          },
+          "tools": {
+            "type": "string",
+            "description": "Benötigte oder hilfreiche Werkzeuge."
+          },
+          "quality": {
+            "type": "string",
+            "description": "Auswirkung höherer Qualitätsstufen (QS)."
+          },
+          "failed_check": {
+            "type": "string",
+            "description": "Auswirkung einer misslungenen Probe."
+          },
+          "critical_success": {
+            "type": "string",
+            "description": "Auswirkung eines Kritischen Erfolgs (Doppel-1 / Dreifach-1)."
+          },
+          "botch": {
+            "type": "string",
+            "description": "Auswirkung eines Patzers (Doppel-20 / Dreifach-20)."
+          }
+        },
+        "required": [
+          "name",
+          "category",
+          "probe",
+          "encumbrance",
+          "steigerungsfaktor",
+          "applications",
+          "tools",
+          "quality",
+          "failed_check",
+          "critical_success",
+          "botch"
+        ]
+      }
+    },
+    "combat-techniques": {
+      "type": "array",
+      "description": "Vollständige Liste aller 21 DSA 5-Kampftechniken.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Offizieller Name der Kampftechnik."
+          },
+          "special": {
+            "type": "string",
+            "description": "Besonderheiten bei der Anwendung der Kampftechnik."
+          },
+          "Leiteigenschaft": {
+            "type": "string",
+            "description": "Die betreffende(n) Leiteigenschaft(en) aus den 8 Attributes."
+          },
+          "steigerungsfaktor": {
+            "type": "string",
+            "enum": ["B", "C"],
+            "description": "Der Steigerungsfaktor für die AP-Kosten."
+          },
+          "KTW": {
+            "type": "integer",
+            "minimum": 6,
+            "description": "Basis-Kampftechnikwert (Startwert standardmäßig 6)."
+          }
+        },
+        "required": [
+          "name",
+          "special",
+          "Leiteigenschaft",
+          "steigerungsfaktor"
+        ]
+      }
+    }
+  },
+  "required": ["talents", "combat-techniques"],
+  "talents": [
+    {
+      "name": "Fliegen",
+      "category": "Körpertalente",
+      "probe": "MU/IN/GE",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Kampfmanöver",
+        "Langstreckenflug",
+        "Verfolgungsjagden"
+      ],
+      "tools": "Fluggeräte oder Flugzauber/Flügel",
+      "quality": "Distanzen werden schneller überwunden, Flugmanöver gelingen eleganter.",
+      "failed_check": "Das Flugmanöver misslingt; Höhenverlust oder Geschwindigkeitsabfall.",
+      "critical_success": "Perfekte Beherrschung des Luftraums, Verdopplung der Fluggeschwindigkeit.",
+      "botch": "Absturz aus der aktuellen Flughöhe mit Sturzschaden."
+    },
+    {
+      "name": "Gaukeleien",
+      "category": "Körpertalente",
+      "probe": "MU/CH/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Jonglieren",
+        "Taschenspielertricks",
+        "Akrobatik"
+      ],
+      "tools": "Jonglierbälle, Karten, Becher, Seile",
+      "quality": "Publikum zeigt sich beeindruckter; höherer finanzieller Ertrag.",
+      "failed_check": "Tricks misslingen durchschauhbar; Einnahmen bleiben aus.",
+      "critical_success": "Fasziniertes Publikum, dreifacher Einnahmenertrag.",
+      "botch": "Requisite geht kaputt, Selbstverletzung oder öffentliche Blamage."
+    },
+    {
+      "name": "Klettern",
+      "category": "Körpertalente",
+      "probe": "MU/GE/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Bergsteigen",
+        "Fassadenklettern",
+        "Bäume erklimmen"
+      ],
+      "tools": "Kletterseil, Enterhaken, Magnesia, Kletterschuhe",
+      "quality": "Höhere Klettergeschwindigkeit, kräfteschonender Aufstieg.",
+      "failed_check": "Kein Vorankommen an der Steilwand.",
+      "critical_success": "Aufstieg in Rekordzeit ohne Ermüdung.",
+      "botch": "Halt verliert sich vollkommen; Sturz aus der erreichten Höhe."
+    },
+    {
+      "name": "Körperbeherrschung",
+      "category": "Körpertalente",
+      "probe": "GE/GE/KO",
+      "encumbrance": true,
+      "steigerungsfaktor": "D",
+      "applications": [
+        "Balance",
+        "Entwinden",
+        "Kampfmanöver",
+        "Laufen",
+        "Springen"
+      ],
+      "tools": "Keine erforderlich",
+      "quality": "Aktion wird schneller, eleganter und kräfteschonender ausgeführt.",
+      "failed_check": "Stolpern, Gleichgewichtsverlust oder Verfehlen des Sprungziels.",
+      "critical_success": "Spektakuläre Akrobatik ohne Ausdauerverlust, volle Bewegungsfreiheit.",
+      "botch": "Schwerer Sturz, Ausrutschen und Eintreten des Zustands Liegend."
+    },
+    {
+      "name": "Kraftakt",
+      "category": "Körpertalente",
+      "probe": "KO/KK/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Drücken & Heben",
+        "Zertrümmern",
+        "Ziehen & Stemmen"
+      ],
+      "tools": "Brechstange, Hebel, Tragegurte",
+      "quality": "Objekt wird schneller oder mit geringerem Kraftaufwand bewegt.",
+      "failed_check": "Die Kraft reicht nicht aus; das Objekt bewegt sich nicht.",
+      "critical_success": "Mühelose Kraftanstrengung; Hindernis berstet auf der Stelle.",
+      "botch": "Muskelzerrung oder Ausrutschen; Objekt fällt auf die ausführende Person."
+    },
+    {
+      "name": "Reiten",
+      "category": "Körpertalente",
+      "probe": "CH/GE/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Kampfmanöver zu Pferd",
+        "Langstreckenreiten",
+        "Verfolgungsjagden"
+      ],
+      "tools": "Sattel, Zaumzeug, Sporen",
+      "quality": "Das Reittier reagiert präziser; höhere Reisegeschwindigkeit.",
+      "failed_check": "Reittier verweigert den Gehorsam oder bockt.",
+      "critical_success": "Perfekte Einheit von Reiter und Tier; maximale Reisegeschwindigkeit.",
+      "botch": "Sturz vom Pferd; Gefahr des Zertrampelns durch das Reittier."
+    },
+    {
+      "name": "Schwimmen",
+      "category": "Körpertalente",
+      "probe": "GE/KO/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Tauchen",
+        "Weitschwimmen",
+        "Wildwasserschwimmen"
+      ],
+      "tools": "Schwimmhilfen, Taucherglocke",
+      "quality": "Schnelleres Vorankommen im Wasser; längere Tauchzeit.",
+      "failed_check": "Wassertreten ohne Vorankommen; Kraftverlust.",
+      "critical_success": "Müheloses Durchqueren auch stürmischer Gewässer.",
+      "botch": "Wasser schlucken, Entstehen des Zustands Ertrinken."
+    },
+    {
+      "name": "Selbstbeherrschung",
+      "category": "Körpertalente",
+      "probe": "MU/MU/KO",
+      "encumbrance": false,
+      "steigerungsfaktor": "D",
+      "applications": [
+        "Handlungsfähigkeit bewahren",
+        "Schmerz unterdrücken",
+        "Störung unterdrücken"
+      ],
+      "tools": "Keine erforderlich",
+      "quality": "Schmerz oder Handlungsunfähigkeit wird effizienter ignoriert.",
+      "failed_check": "Schmerz oder Ausnahmezustand bricht voll durch; Handlungsunfähigkeit.",
+      "critical_success": "Vollständiges Ausblenden aller körperlichen Qualen für die Szenendauer.",
+      "botch": "Nervenzusammenbruch, Schockzustand oder Erleiden zusätzlicher Stufen Schmerz."
+    },
+    {
+      "name": "Singen",
+      "category": "Körpertalente",
+      "probe": "KL/CH/KO",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Chorgesang",
+        "Gesang zur Unterhaltung",
+        "Ritusgesang"
+      ],
+      "tools": "Liederbuch, Stimmgabel",
+      "quality": "Gesang klingt emotionaler, stimmiger und weitreichender.",
+      "failed_check": "Fehltöne, Heiserkeit; Zuhörer reagieren unbeeindruckt oder genervt.",
+      "critical_success": "Zuhörer werden tief gerührt; Erhöhung des Ansehens.",
+      "botch": "Stimmbandzerrung, peinlicher Kiekser vor großem Publikum."
+    },
+    {
+      "name": "Sinnesschärfe",
+      "category": "Körpertalente",
+      "probe": "KL/IN/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Hinterhalt entdecken",
+        "Lippenlesen",
+        "Suchen",
+        "Wahrnehmen"
+      ],
+      "tools": "Fernrohr, Lupe, Hörrohr",
+      "quality": "Mehr Details werden in kürzerer Zeit wahrgenommen.",
+      "failed_check": "Versteckte Objekte oder Geräusche bleiben unbemerkt.",
+      "critical_success": "Sofortiges Erkennen kleinster Verstecke oder schleichender Feinde.",
+      "botch": "Fehlinterpretation von Wahrnehmungen; Erschrecken vor Phantomen."
+    },
+    {
+      "name": "Tanzen",
+      "category": "Körpertalente",
+      "probe": "KL/CH/GE",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Hoftanz",
+        "Kulttanz",
+        "Volkstanz"
+      ],
+      "tools": "Tanzschuhe, passende Kleidung",
+      "quality": "Der Tanz wirkt eleganter; positiver Eindruck auf Tanzpartner.",
+      "failed_check": "Aus dem Takt kommen; Stolpern auf dem Parkett.",
+      "critical_success": "Bewunderung des gesamten Saales; Gewinn von Gunst beim Adel.",
+      "botch": "Sturz auf dem Tanzparkett; Umwerfen von Gästen oder Mobiliar."
+    },
+    {
+      "name": "Taschendiebstahl",
+      "category": "Körpertalente",
+      "probe": "MU/FF/GE",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Abschneiden",
+        "Gegenstand zustecken",
+        "Taschenleeren"
+      ],
+      "tools": "Rasierklinge, Diebesmesser",
+      "quality": "Gegenstand wird völlig unbemerkt entwendet oder platziert.",
+      "failed_check": "Der Diebstahl misslingt; Hand verfängt sich in der Tasche.",
+      "critical_success": "Wertvollstes Objekt in der Tasche greifen ohne jegliches Spüren.",
+      "botch": "Bemerktwerden durch das Opfer oder Umstehende; Ergreifen der Hand."
+    },
+    {
+      "name": "Verbergen",
+      "category": "Körpertalente",
+      "probe": "MU/IN/GE",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Gegenstand verstecken",
+        "Schleichen",
+        "Sich verstecken"
+      ],
+      "tools": "Tarnkleidung, Ruß, Tarnnetz",
+      "quality": "Versteck ist noch schwerer auszumachen; lautlose Bewegung.",
+      "failed_check": "Person oder Gegenstand bleibt leicht auffindbar.",
+      "critical_success": "Völliges Verschmelzen mit den Schatten; unauffindbar.",
+      "botch": "Lautes Geräusch verursachen; Versteck auffällig enthüllen."
+    },
+    {
+      "name": "Zechen",
+      "category": "Körpertalente",
+      "probe": "KL/KO/KK",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Zechen standhalten",
+        "Kater vermeiden"
+      ],
+      "tools": "Keine erforderlich",
+      "quality": "Wirkung von Alkohol wird verzögert; Geist bleibt klar.",
+      "failed_check": "Schnelleres Betrunkenwerden; Kontrollverlust.",
+      "critical_success": "Unmengen Alkohol trinken ohne jegliche Rauscheinwirkung.",
+      "botch": "Alkoholleiche nach wenigen Bechern; peinliches Entgleisen."
+    },
+    {
+      "name": "Bekehren & Überzeugen",
+      "category": "Gesellschaftstalente",
+      "probe": "MU/KL/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Einzelgespräch",
+        "Öffentliche Rede",
+        "Religiöse Doktrin"
+      ],
+      "tools": "Heiliges Buch, Kanzel, Standesabzeichen",
+      "quality": "Argumente wirken nachhaltiger; Zielperson ändert Weltbild.",
+      "failed_check": "Zuhörer bleiben unüberzeugt oder skeptisch.",
+      "critical_success": "Vollständige Bekehrung oder Begeisterung der Zuhörerschaft.",
+      "botch": "Zuhörer werden erzürnt; Gegenteil der gewünschten Wirkung tritt ein."
+    },
+    {
+      "name": "Betören",
+      "category": "Gesellschaftstalente",
+      "probe": "MU/CH/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Liebesgeflüster",
+        "Flirten",
+        "Verführung"
+      ],
+      "tools": "Parfüm, Schicke Kleidung, Schmuck",
+      "quality": "Zielperson zeigt sich empfänglicher und hilfsbereiter.",
+      "failed_check": "Flirt wirkt plump oder störend.",
+      "critical_success": "Zielperson verfällt dem Helden völlig in Liebe oder Leidenschaft.",
+      "botch": "Schwere Beleidigung der Zielperson; Herbeiführen von Ekel."
+    },
+    {
+      "name": "Einschüchtern",
+      "category": "Gesellschaftstalente",
+      "probe": "MU/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Drohung",
+        "Folter",
+        "Provokation"
+      ],
+      "tools": "Waffen, Folterinstrumente, bedrohliches Auftreten",
+      "quality": "Zielperson knickt schneller ein und gibt Informationen preis.",
+      "failed_check": "Drohung wird belächelt oder ignoriert.",
+      "critical_success": "Zielperson verfällt in Panik und gehorcht aufs Wort.",
+      "botch": "Zielperson wird zum Gegenangriff oder zu extremer Wut getrieben."
+    },
+    {
+      "name": "Etikette",
+      "category": "Gesellschaftstalente",
+      "probe": "KL/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Höflichkeit",
+        "Klatsch & Tratsch",
+        "Ständekunde"
+      ],
+      "tools": "Standesgemäße Kleidung, Wappenbuch",
+      "quality": "Sichereres Auftreten auf diplomatischem Parkett; Respektgewinn.",
+      "failed_check": "Fettnäpfchen; kleiner Fauxpas am Hofe.",
+      "critical_success": "Perfekte Einhaltung aller Bräuche; Anerkennung als Standesvorbild.",
+      "botch": "Schwerer Etiketteverstoß; Eklat bei Adligen oder Würdenträgern."
+    },
+    {
+      "name": "Gassenwissen",
+      "category": "Gesellschaftstalente",
+      "probe": "KL/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Informationsbeschaffung",
+        "Beschattung",
+        "Unterschlupf finden"
+      ],
+      "tools": "Bestechungsgeld, lokale Kontakte",
+      "quality": "Informationen werden schneller und detaillierter beschafft.",
+      "failed_check": "Keine Kontakte im Viertel; Gerüchte bleiben im Dunkeln.",
+      "critical_success": "Zugang zu den geheimsten Unterweltzirkeln der Stadt.",
+      "botch": "Aufdecken der eigenen Identität gegenüber feindlichen Banden."
+    },
+    {
+      "name": "Menschenkenntnis",
+      "category": "Gesellschaftstalente",
+      "probe": "KL/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Absichten durchschauen",
+        "Motive erkennen",
+        "Lügen bemerken"
+      ],
+      "tools": "Keine erforderlich",
+      "quality": "Tiefere Einblicke in emotionale Zustände des Gegenübers.",
+      "failed_check": "Gegenüber bleibt eine unlesbare Maske.",
+      "critical_success": "Sofortiges Durchschauen jeder Täuschung oder versteckten Absicht.",
+      "botch": "Gänzliche Fehleinleitung; Fälschliches Vertrauen in Feinde."
+    },
+    {
+      "name": "Überreden",
+      "category": "Gesellschaftstalente",
+      "probe": "MU/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Ausreden",
+        "Feilschen",
+        "Schmeicheln",
+        "Überzeugen"
+      ],
+      "tools": "Keine erforderlich",
+      "quality": "Gegenüber akzeptiert Bedingungen schneller.",
+      "failed_check": "Argumentation überzeugt nicht; Rabatt verwehrt.",
+      "critical_success": "Gegenüber stimmt unbesehen allen Bedingungen zu.",
+      "botch": "Gegenüber wird misstrauisch und bricht Verhandlungen ab."
+    },
+    {
+      "name": "Verkleiden",
+      "category": "Gesellschaftstalente",
+      "probe": "IN/CH/GE",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Personenimitation",
+        "Rollenmäntel",
+        "Unscheinbarkeit"
+      ],
+      "tools": "Schminke, Perücken, Kostüme",
+      "quality": "Täuschung ist auch aus nächster Nähe nicht zu durchschauen.",
+      "failed_check": "Verkleidung wirkt unnatürlich oder stümperhaft.",
+      "critical_success": "Makellose Verwandlung; selbst vertraute Personen erkennen den Helden nicht.",
+      "botch": "Verkleidung fällt im ungünstigsten Moment ab oder fliegt auf."
+    },
+    {
+      "name": "Willenskraft",
+      "category": "Gesellschaftstalente",
+      "probe": "MU/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "D",
+      "applications": [
+        "Einfluss widerstehen",
+        "Einschüchtern widerstehen",
+        "Zauber widerstehen"
+      ],
+      "tools": "Keine erforderlich",
+      "quality": "Geistige Standhaftigkeit schützt vor Überredung oder Magie.",
+      "failed_check": "Geist knickt ein; Fremdeinfluss setzt sich durch.",
+      "critical_success": "Absolute Immunität gegen mentale Manipulationen in dieser Szene.",
+      "botch": "Vollkommene Unterwerfung unter den gegnerischen Einfluss."
+    },
+    {
+      "name": "Fährtensuchen",
+      "category": "Naturtalente",
+      "probe": "MU/IN/GE",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Tiermodell lesen",
+        "Verfolgung",
+        "Wetterspuren"
+      ],
+      "tools": "Lupe, Spurensuchbesteck",
+      "quality": "Fährte kann rascher und über schwierigere Untergründe verfolgt werden.",
+      "failed_check": "Spur verliert sich im Gelände.",
+      "critical_success": "Genaue Bestimmung von Zahl, Alter und Zustand der Verfolgten.",
+      "botch": "Falsche Fährte aufnehmen; Verlaufen im Dickicht."
+    },
+    {
+      "name": "Fesseln",
+      "category": "Naturtalente",
+      "probe": "KL/FF/KK",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Fesselungen",
+        "Knotenkunde",
+        "Netze knüpfen"
+      ],
+      "tools": "Seile, Ketten, Handschellen",
+      "quality": "Knoten sind extrem schwer zu lösen oder zu entwinden.",
+      "failed_check": "Knoten ist locker; Gefesselter kann sich leicht befreien.",
+      "critical_success": "Ausbrechen ohne Werkzeug absolut unmöglich.",
+      "botch": "Seil verheddert sich rasch oder reißt beim Binden."
+    },
+    {
+      "name": "Fischen & Angeln",
+      "category": "Naturtalente",
+      "probe": "FF/GE/KO",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Unterwasserjagd",
+        "Netzfischen",
+        "Angeln"
+      ],
+      "tools": "Angelrute, Netz, Köder, Harpune",
+      "quality": "Reichhaltigerer Fang in kürzerer Zeit.",
+      "failed_check": "Kein Fisch beißt an.",
+      "critical_success": "Fang eines prachtvollen Speisefisches oder seltenen Wasserwesens.",
+      "botch": "Angelzubehör geht verloren; Verheddern im eigenen Netz."
+    },
+    {
+      "name": "Orientierung",
+      "category": "Naturtalente",
+      "probe": "KL/IN/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Astronavigation",
+        "Geländekunde",
+        "Himmelsrichtungen bestimmen"
+      ],
+      "tools": "Kompass, Astrolabium, Landkarte",
+      "quality": "Genaue Bestimmung des Standorts und der Marschroute.",
+      "failed_check": "Unklarheit über die genaue Position.",
+      "critical_success": "Perfekte Routenfindung unter Umgehung aller Hindernisse.",
+      "botch": "Vollständiges Orientierungslosigkeit; Marsch in die falsche Richtung."
+    },
+    {
+      "name": "Pflanzenkunde",
+      "category": "Naturtalente",
+      "probe": "KL/FF/KO",
+      "encumbrance": false,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Heilpflanzen",
+        "Kräutersuche",
+        "Nutzpflanzen",
+        "Giftpflanzen"
+      ],
+      "tools": "Kräutermesser, Sammelbüchse",
+      "quality": "Bestimmung und Ernte wirksamerer Pflanzenteile.",
+      "failed_check": "Pflanze nicht gefunden oder falsch eingeschätzt.",
+      "critical_success": "Auffinden einer seltenen und hochwirksamen Heil- oder Giftpflanze.",
+      "botch": "Verwechslung mit einer tödlichen Giftpflanze."
+    },
+    {
+      "name": "Tierkunde",
+      "category": "Naturtalente",
+      "probe": "MU/MU/CH",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Domestizierung",
+        "Jagdbeute",
+        "Monstren",
+        "Wildtiere"
+      ],
+      "tools": "Leckerlis, Abrichtzubehör",
+      "quality": "Tiefere Kenntnis über Verhalten, Schwachstellen und Lebensraum.",
+      "failed_check": "Reaktion des Tieres wird falsch eingeschätzt.",
+      "critical_success": "Sofortiges Durchschauen des Verhaltens; Beruhigung eines wilden Tieres.",
+      "botch": "Tier wird durch Fehlverhalten provoziert und greift an."
+    },
+    {
+      "name": "Wildnisleben",
+      "category": "Naturtalente",
+      "probe": "MU/GE/KO",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Lagerplatz",
+        "Tarnung",
+        "Shelterbau"
+      ],
+      "tools": "Axt, Zeltplane, Feuerstein & Stahl",
+      "quality": "Besser geschützte, komfortablere Lagerstätte.",
+      "failed_check": "Lagerplatz ist ungemütlich, feucht oder ungeschützt.",
+      "critical_success": "Perfektes Lager; Erholungswert der Nacht steigt deutlich.",
+      "botch": "Lagerfeuer gerät außer Kontrolle oder zieht Raubtiere an."
+    },
+    {
+      "name": "Brett- & Glücksspiel",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Brettspiele",
+        "Kartenspiele",
+        "Würfelspiele"
+      ],
+      "tools": "Würfel, Kartendeck, Spielbrett",
+      "quality": "Gewinnchancen steigen; Taktiken des Gegners durchschaut.",
+      "failed_check": "Verlust des Einsatzes.",
+      "critical_success": "Großer Gewinn; Abräumen der gesamten Spielrunde.",
+      "botch": "Verdacht auf Falschspiel; Beschuldigung durch Mitspieler."
+    },
+    {
+      "name": "Geographie",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Länderkunde",
+        "Kartographie",
+        "Städtewissen"
+      ],
+      "tools": "Landkarten, Atlanten, Messinstrumente",
+      "quality": "Detaillierte Informationen über Regionen, Handelswege und Grenzen.",
+      "failed_check": "Keine vertrauten Daten zur gesuchten Region.",
+      "critical_success": "Exakte Kenntnis selbst geheimster Pfade und Besonderheiten.",
+      "botch": "Vollständig falsche Vorstellung über die Lage von Orten."
+    },
+    {
+      "name": "Geschichtswissen",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Alte Rassen",
+        "Dynastien",
+        "Kriegsgeschichte",
+        "Regionalgeschichte"
+      ],
+      "tools": "Chroniken, Geschichtsbücher",
+      "quality": "Genaue Datierung und historische Zusammenhänge erschließen sich.",
+      "failed_check": "Historisches Ereignis ist nicht bekannt.",
+      "critical_success": "Tiefes Wissen über vergessene Zeitalter oder historische Geheimnisse.",
+      "botch": "Falsche historische Fakten führen zu gravierenden Fehlschlüssen."
+    },
+    {
+      "name": "Götter & Kulte",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Zwölfgötter",
+        "Namenloser",
+        "Exotische Kulte",
+        "Mythen"
+      ],
+      "tools": "Heilige Schriften, Ikonen",
+      "quality": "Detailwissen zu Liturgien, Geboten und Riten der Glaubensgemeinschaften.",
+      "failed_check": "Ritus oder Gottheit ist unbekannt.",
+      "critical_success": "Sofortige Identifizierung geheimster Kulte oder sakraler Artefakte.",
+      "botch": "Gotteslästerlicher Fauxpas aus Unwissenheit."
+    },
+    {
+      "name": "Kriegskunst",
+      "category": "Wissenstalente",
+      "probe": "MU/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Belagerung",
+        "Feldschlacht",
+        "Taktik",
+        "Nachschub"
+      ],
+      "tools": "Kriegskarten, Zirkel, Modellfiguren",
+      "quality": "Erkennen taktischer Vorteile auf dem Schlachtfeld.",
+      "failed_check": "Fehleinschätzung der gegnerischen Truppenstärke oder Aufstellung.",
+      "critical_success": "Genialer Schachzug; Erringen eines strategischen Sieges.",
+      "botch": "Fehlbefehl; Umzingelung oder Niederlage der eigenen Truppen."
+    },
+    {
+      "name": "Magiekunde",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Artefakte",
+        "Magische Wesen",
+        "Rituale",
+        "Zaubersprüche"
+      ],
+      "tools": "Grimoires, Analysator, Zauberbücher",
+      "quality": "Mehr Details zu Wirkungsweise, Formel und Herkunft von Magie.",
+      "failed_check": "Zauberwirkung kann nicht identifiziert werden.",
+      "critical_success": "Vollständige Aufdeckung aller magischen Matrixeigenschaften.",
+      "botch": "Fälschliches Halten eines Flüche für einen Schutzzauber."
+    },
+    {
+      "name": "Mechanik",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/FF",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Hebelgesetze",
+        "Fallenbau",
+        "Uhrmacherei",
+        "Flaschenzüge"
+      ],
+      "tools": "Baupläne, Lupenbrille, Messinstrumente",
+      "quality": "Konstruktion läuft reibungsloser, präziser und langlebiger.",
+      "failed_check": "Mechanismus klemmt oder funktioniert nicht.",
+      "critical_success": "Meisterhafte Konstruktion von höchster Effizienz.",
+      "botch": "Fehlkonstruktion; Auslösen einer Falle oder Einsturz der Mechanik."
+    },
+    {
+      "name": "Rechnen",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Algebra",
+        "Buchhaltung",
+        "Statistik"
+      ],
+      "tools": "Abakus, Rechentafeln, Tinte & Feder",
+      "quality": "Schnelle und fehlerfreie Kalkulation großer Summen.",
+      "failed_check": "Rechenfehler bei der Kalkulation.",
+      "critical_success": "Sofortiges Durchschauen komplexer Buchhaltungen und Bilanzfälschungen.",
+      "botch": "Schwerwiegender Rechenfehler führt zu finanziellen Verlusten."
+    },
+    {
+      "name": "Rechtskunde",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Garether Recht",
+        "Prozessführung",
+        "Staatsrecht",
+        "Handelsrecht"
+      ],
+      "tools": "Gesetzbücher, Gesetzessammlungen",
+      "quality": "Auffinden von Gesetzeslücken und passenden Paragraphen.",
+      "failed_check": "Rechtslage bleibt unklar.",
+      "critical_success": "Gewinnen eines Prozesses durch treffendes Paragraphenzitat.",
+      "botch": "Verletzung von Gerichtsvorschriften; Strafe wegen Missachtung."
+    },
+    {
+      "name": "Sagen & Legenden",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Lokale Mythen",
+        "Helden-Epen",
+        "Fabelwesen"
+      ],
+      "tools": "Folianten, Liederbücher",
+      "quality": "Trennung von Wahrheit und Dichtung in der Sage gelingt.",
+      "failed_check": "Sage ist unbekannt.",
+      "critical_success": "Kenntnis über den wahren Kern einer uralten Legende.",
+      "botch": "Aberglaube für bare Münze nehmen."
+    },
+    {
+      "name": "Sphärenkunde",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Dämonen",
+        "Limbus",
+        "Elementare",
+        "Namenlose Welten"
+      ],
+      "tools": "Sphärenkarten, Magische Traktate",
+      "quality": "Erkennen der Herkunft von Wesenheiten und deren Schwächen.",
+      "failed_check": "Wesenheit oder Sphäre unbekannt.",
+      "critical_success": "Sofortiges Wissen um die wahren Namen oder Banntrikots von Dämonen.",
+      "botch": "Gefährliche Verwechslung von erzdämonischen Domänen."
+    },
+    {
+      "name": "Sternkunde",
+      "category": "Wissenstalente",
+      "probe": "KL/KL/IN",
+      "encumbrance": false,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Astrologie",
+        "Kalenderkunde",
+        "Navigation"
+      ],
+      "tools": "Astrolabium, Sternenkarten, Fernrohr",
+      "quality": "Präzise Deutung der Sternkonstellationen.",
+      "failed_check": "Himmel ist zu verhangen oder Sternbild unbekannt.",
+      "critical_success": "Exakte Vorhersage von Himmelserscheinungen oder Schicksalswenden.",
+      "botch": "Fehlinterpretation von Omen und Sternbildern."
+    },
+    {
+      "name": "Alchimie",
+      "category": "Handwerkstalente",
+      "probe": "MU/KL/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Elixiere",
+        "Gifte",
+        "Alchimistische Maimer"
+      ],
+      "tools": "Alchimielabor, Mörser, Retorten, Waage",
+      "quality": "Höhere Stufe des Gebrauchs- oder Zaubertranks erzeugt.",
+      "failed_check": "Brauvorgang misslingt; Zutaten sind verdorben.",
+      "critical_success": "Trank mit maximaler Wirkungsdauer und doppelter Stärke.",
+      "botch": "Explosion des Labors oder Entstehen eines tödlichen Gases."
+    },
+    {
+      "name": "Boote & Schiffe",
+      "category": "Handwerkstalente",
+      "probe": "FF/GE/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Flussschifffahrt",
+        "Seefahrt",
+        "Rudern",
+        "Segelsetzen"
+      ],
+      "tools": "Steuerruder, Tauwerk, Bootshaken",
+      "quality": "Schiff hält Kurs auch bei schwierigen Strömungen.",
+      "failed_check": "Abdrift vom Kurs; Verfehlen der Anlegestelle.",
+      "critical_success": "Meisterhaftes Manövrieren durch gefährliche Riffe oder Schnellen.",
+      "botch": "Kollision mit Klippen; Auflaufen auf Grund oder Kentern."
+    },
+    {
+      "name": "Fahrzeuge",
+      "category": "Handwerkstalente",
+      "probe": "CH/FF/KO",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Kutschen fahren",
+        "Streitwagen",
+        "Karren lenken"
+      ],
+      "tools": "Peitsche, Zügel, Wagenheber",
+      "quality": "Fahrzeug überwindet Unebenheiten ohne Geschwindigkeitsverlust.",
+      "failed_check": "Wagen gerät ins Stocken oder bleibt stecken.",
+      "critical_success": "Spektakuläres Fahrmanöver; Ausweichen in letzter Sekunde.",
+      "botch": "Achsenbruch, Umkippen des Wagens oder Kontrollverlust."
+    },
+    {
+      "name": "Handel",
+      "category": "Handwerkstalente",
+      "probe": "KL/IN/CH",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Buchführung",
+        "Feilschen",
+        "Warenabschätzung"
+      ],
+      "tools": "Waage, Münzprüfer, Musterbuch",
+      "quality": "Höhere Gewinnspanne beim Ein- oder Verkauf.",
+      "failed_check": "Ware wird zum Normalpreis verkauft; kein Gewinn.",
+      "critical_success": "Abschluss eines überragenden Geschäfts mit enormem Vorteil.",
+      "botch": "Kauf minderwertiger Fälschungen zum Wucherpreis."
+    },
+    {
+      "name": "Heilkunde Gift",
+      "category": "Handwerkstalente",
+      "probe": "MU/KL/IN",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Mineralische Gifte",
+        "Pflanzengifte",
+        "Tiergifte"
+      ],
+      "tools": "Heilkundeset, Brechmittel, Gegengifte",
+      "quality": "Verzögerung oder Aufhebung des Schadens durch das Gift.",
+      "failed_check": "Giftwirkung hält unvermindert an.",
+      "critical_success": "Sofortige Neutralisierung des Giftes ohne Folgeschäden.",
+      "botch": "Verabreichung des falschen Gegengiftes; Zustand verschlimmert sich."
+    },
+    {
+      "name": "Heilkunde Krankheiten",
+      "category": "Handwerkstalente",
+      "probe": "MU/IN/KO",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Ansteckende Siechen",
+        "Wundfieber",
+        "Parasiten"
+      ],
+      "tools": "Aderlassbesteck, Fiebertees, Kräuter",
+      "quality": "Krankheitsverlauf wird abgemildert oder verkürzt.",
+      "failed_check": "Krankheit nimmt ihren gewohnten Verlauf.",
+      "critical_success": "Sofortiges Brechen des Fiebers; schnelle Genesung.",
+      "botch": "Patient steckt sich zusätzlich an oder erleidet Rückfall."
+    },
+    {
+      "name": "Heilkunde Seele",
+      "category": "Handwerkstalente",
+      "probe": "IN/CH/KO",
+      "encumbrance": false,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Trauma behandeln",
+        "Wahnsinn lindern",
+        "Geistige Leiden"
+      ],
+      "tools": "Ruhiger Raum, Beruhigungsmittel",
+      "quality": "Patient baut Ängste ab und gewinnt Fassung zurück.",
+      "failed_check": "Kein Zugang zum Geist des Patienten.",
+      "critical_success": "Heilung schwerer Traumata oder geistiger Verwirrung.",
+      "botch": "Verschlimmerung des Schocks; Patient wird gewalttätig."
+    },
+    {
+      "name": "Heilkunde Wunden",
+      "category": "Handwerkstalente",
+      "probe": "KL/FF/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "D",
+      "applications": [
+        "Abgebundene Glieder",
+        "Chirurgie",
+        "Quetschungen",
+        "Schnittwunden"
+      ],
+      "tools": "Verbandszeug, Nadel & Faden, Wundsalbe, Feldscherbesteck",
+      "quality": "Zusätzliche Regeneration von Lebenspunkten (LeP); schnellere Wundheilung.",
+      "failed_check": "Keine Regeneration über die Probe; Wunde bleibt offen.",
+      "critical_success": "Maximale LeP-Wiederherstellung, narbenfreie Abheilung.",
+      "botch": "Verschlimmerung der Wunde; Infektion oder Blutverlust."
+    },
+    {
+      "name": "Holzbearbeitung",
+      "category": "Handwerkstalente",
+      "probe": "FF/GE/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Bogenbau",
+        "Zimmerei",
+        "Schnitzen",
+        "Schreinerei"
+      ],
+      "tools": "Säge, Hobel, Schnitzmesser, Beil",
+      "quality": "Werkstück wird stabiler, passgenauer und ästhetischer.",
+      "failed_check": "Holz splittert; Werkstück ist unbrauchbar.",
+      "critical_success": "Meisterwerk der Schnitz- oder Zimmermannskunst.",
+      "botch": "Verletzung durch Werkzeug; Material irreparabel zerstört."
+    },
+    {
+      "name": "Lebensmittelbearbeitung",
+      "category": "Handwerkstalente",
+      "probe": "IN/FF/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Backen",
+        "Kochen",
+        "Konservieren",
+        "Brauen"
+      ],
+      "tools": "Kochgeschirr, Messer, Gewürze, Ofen",
+      "quality": "Schmackhafteres Essen; längere Haltbarkeit.",
+      "failed_check": "Essen schmeckt fad oder brennt an.",
+      "critical_success": "Festmahl, das den Erholungswert der Rast steigert.",
+      "botch": "Magenverstimmung oder Vergiftung durch verdorbene Speisen."
+    },
+    {
+      "name": "Lederbearbeitung",
+      "category": "Handwerkstalente",
+      "probe": "FF/GE/KO",
+      "encumbrance": true,
+      "steigerungsfaktor": "B",
+      "applications": [
+        "Gerben",
+        "Kürschnerei",
+        "Schuhmacherei",
+        "Rüstungsbau"
+      ],
+      "tools": "Ahle, Ledermesser, Gerbsalze",
+      "quality": "Geschmeidiges, langlebiges und reißfestes Lederprodukt.",
+      "failed_check": "Leder wird brüchig oder ungleichmäßig.",
+      "critical_success": "Perfekt sitzende Lederkleidung oder Rüstung von höchster Haltbarkeit.",
+      "botch": "Material verschnitten; Werkzeug zerstört das Leder."
+    },
+    {
+      "name": "Malen & Zeichnen",
+      "category": "Handwerkstalente",
+      "probe": "IN/FF/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Kartieren",
+        "Porträtieren",
+        "Kalligraphie",
+        "Symbolzeichnen"
+      ],
+      "tools": "Pinsel, Farben, Kohlestifte, Pergament",
+      "quality": "Detailgetreue Abbildung; kunstvolles Erscheinungsbild.",
+      "failed_check": "Zeichnung ist verwaschen oder ungenau.",
+      "critical_success": "Täuschend echte Abbildung; Kunstwerk von hohem Wert.",
+      "botch": "Tintenfleck ruiniert das gesamte Dokument."
+    },
+    {
+      "name": "Metallbearbeitung",
+      "category": "Handwerkstalente",
+      "probe": "FF/KO/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Grobschmied",
+        "Waffenschmied",
+        "Gießerei",
+        "Feinschmied"
+      ],
+      "tools": "Schmiedehammer, Zange, Amboss, Essenfeuer",
+      "quality": "Höhere Härte, Schärfe oder Elastizität des Metalls.",
+      "failed_check": "Metall erkaltet ungleichmäßig; Risse im Werkstück.",
+      "critical_success": "Meisterhafte Klinge oder Rüstungsteile mit Waffen-Vorteilen.",
+      "botch": "Werkstück bricht; Werkzeug- oder Schmiedeunfall mit Verbrennungen."
+    },
+    {
+      "name": "Musizieren",
+      "category": "Handwerkstalente",
+      "probe": "CH/FF/KO",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Blasinstrumente",
+        "Saiteninstrumente",
+        "Trommeln"
+      ],
+      "tools": "Musikinstrument",
+      "quality": "Wohlklingendes Spiel, das Zuhörer in Bann zieht.",
+      "failed_check": "Falsche Töne gespielt; Zuhörer wenden sich ab.",
+      "critical_success": "Begeisterte Reaktionen; nennenswerte Einnahmen durch Gönner.",
+      "botch": "Reißen einer Saite oder Beschädigung des Instruments."
+    },
+    {
+      "name": "Schlösserknacken",
+      "category": "Handwerkstalente",
+      "probe": "IN/FF/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "C",
+      "applications": [
+        "Buntbartschlösser",
+        "Kombinationsschlösser",
+        "Fallen entschärfen"
+      ],
+      "tools": "Dietrichset, Spannungssucher, Feilen",
+      "quality": "Schloss wird rascher und ohne Geräusche geöffnet.",
+      "failed_check": "Schloss bleibt verschlossen.",
+      "critical_success": "Sofortiges Aufspringen des Schlossmechanismus ohne Abnutzung.",
+      "botch": "Dietrich bricht im Schloss ab; Blockieren des Mechanismus."
+    },
+    {
+      "name": "Steinbearbeitung",
+      "category": "Handwerkstalente",
+      "probe": "FF/FF/KK",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Steinmetz",
+        "Bildhauerei",
+        "Maurerei"
+      ],
+      "tools": "Meißel, Fäustel, Winkel, Lot",
+      "quality": "Exakter Schnitt des Steins; dauerhafte Baukonstruktionen.",
+      "failed_check": "Stein bricht an falscher Stelle ab.",
+      "critical_success": "Erschaffen eines makellosen Monumentalwerks.",
+      "botch": "Werkstück zerspringt; Funkenflug verletzt das Auge."
+    },
+    {
+      "name": "Stoffbearbeitung",
+      "category": "Handwerkstalente",
+      "probe": "KL/FF/FF",
+      "encumbrance": true,
+      "steigerungsfaktor": "A",
+      "applications": [
+        "Schneidern",
+        "Weberei",
+        "Spinnerei",
+        "Färben"
+      ],
+      "tools": "Nadel & Faden, Webstuhl, Schere",
+      "quality": "Prächtige Kleidung; feine Nähte und hohe Belastbarkeit.",
+      "failed_check": "Naht ist schief oder reißt leicht.",
+      "critical_success": "Meisterhaftes Gewand; perfekter Sitz und Blickfang.",
+      "botch": "Stoff zerfetzt; Schere beschädigt das Material unrettbar."
+    }
+  ],
+  "combat-techniques": [
+    {
+      "name": "Armbrüste",
+      "special": "Nach dem Schießen ist zum Nachladen eine bestimmte Anzahl an Aktionen nötig. Das Zielen ist unter bestimmten Bedingungen möglich.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Blasrohre",
+      "special": "Können keine Rüstung durchdringen, eignen sich aber hervorragend zum Verschießen von Giften.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Bögen",
+      "special": "Erfordern zum Spannen eine Mindest-Körperkraft, um den vollen Schaden zu erzielen.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Diskusse",
+      "special": "Wurfwaffen mit speziellen aerodynamischen Eigenschaften und der Fähigkeit zu Querschlägern bei manchen Meisterschaften.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Dolche",
+      "special": "Sehr kurze Nahkampfwaffen, die auch im Nahkampfgetümmel oder als Wurfbehelf eingesetzt werden können.",
+      "Leiteigenschaft": "GE",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Fächer",
+      "special": "Können sowohl als modische Accessoires als auch als überraschende Nahkampfwaffen getarnt werden.",
+      "Leiteigenschaft": "GE",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Fechtwaffen",
+      "special": "Eleganz und Präzision stehen im Vordergrund; oft mit Boni auf spezielle Manöver wie Finte.",
+      "Leiteigenschaft": "GE",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Feuerspeien",
+      "special": "Wird nur unter Verwendung der Sonderfertigkeit Feuerschlucker im Nahbereich als Spezialangriff eingesetzt.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Hiebwaffen",
+      "special": "Wuchtige Einhandwaffen, die darauf ausgelegt sind, auch durch Rüstungen hindurch Schaden zu verursachen.",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Kettenwaffen",
+      "special": "Ignorieren aufgrund ihrer Flexibilität teilweise Schilde und erschweren gegnerische Paraden.",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Lanzen",
+      "special": "Speziell für den Reiterkampf optimierte Stoßwaffen, die beim Sturmangriff verheerenden Schaden anrichten.",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Peitschen",
+      "special": "Erlauben Angriffe auf Distanz und das Fesseln oder Entwaffnen von Gegnern.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Raufen",
+      "special": "Unbewaffneter Kampf mit Fäusten, Füßen und Ringen; immer verfügbar.",
+      "Leiteigenschaft": "GE/KK",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Schilde",
+      "special": "Dienen primär der verbesserten aktiven und passiven Verteidigung sowie dem Rammen von Gegnern.",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Schleudern",
+      "special": "Fernkampfwaffen mit hoher Reichweite, die günstige Munition (Steine) verschießen können.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Schwerter",
+      "special": "Die vielseitigsten Standardwaffen des aventurischen Raums mit ausgewogener Attacke und Parade.",
+      "Leiteigenschaft": "GE/KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Spießwaffen",
+      "special": "Lange Stangenwaffen, die besonders effektiv gegen anstürmende Gegner und Reiter sind.",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Stangenwaffen",
+      "special": "Große Reichweite und wuchtige Hebelwirkung im Nahkampf.",
+      "Leiteigenschaft": "GE/KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Wurfwaffen",
+      "special": "Wurfmesser, Wurfspeere und Wurfbeile für den schnellen Distanzangriff vor dem Nahkampf.",
+      "Leiteigenschaft": "FF",
+      "steigerungsfaktor": "B"
+    },
+    {
+      "name": "Zweihandhiebwaffen",
+      "special": "Enormer Wuchtschaden, verlangt jedoch nach hoher Körperkraft und lässt keine Parade zu (nur Ausweichen).",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "C"
+    },
+    {
+      "name": "Zweihandschwerter",
+      "special": "Kombinieren große Reichweite und hohen Schaden mit speziellen wuchtigen Hieben.",
+      "Leiteigenschaft": "KK",
+      "steigerungsfaktor": "C"
+    }
+  ]
+}

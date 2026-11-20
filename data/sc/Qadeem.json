@@ -1,0 +1,395 @@
+{
+  "ap-total": 1100,
+  "ap-spent": 1100,
+  "ap-remaining": 0,
+  "stats": {
+    "experience-level": {
+      "id": "EL_3",
+      "title": "Erfahren"
+    },
+    "attributes": {
+      "MU": 11,
+      "KL": 11,
+      "IN": 14,
+      "CH": 12,
+      "FF": 11,
+      "GE": 14,
+      "KO": 15,
+      "KK": 12
+    },
+    "advantages": [
+      {
+        "id": "ADV_72",
+        "instance-id": "70efbc33-668c-469c-834c-3caa55326a42",
+        "title": "Allerweltsname"
+      },
+      {
+        "id": "ADV_5",
+        "instance-id": "e7d7c0f8-e9b8-492b-a8a4-eced53286861",
+        "title": "Beidhändig"
+      },
+      {
+        "id": "ADV_54",
+        "instance-id": "be8d8911-c310-46cd-8033-be3bb0574e2e",
+        "title": "Eisern"
+      },
+      {
+        "id": "ADV_9",
+        "instance-id": "cd190f0b-8865-4b09-8f84-94773428b783",
+        "title": "Flink"
+      },
+      {
+        "id": "ADV_22",
+        "instance-id": "96881ead-b197-40c3-af47-d679aa84985c",
+        "title": "Hitzeresistenz"
+      },
+      {
+        "id": "ADV_49",
+        "instance-id": "c14c3960-2f13-4c09-859c-a70198f0c562",
+        "title": "Zäher Hund"
+      },
+      {
+        "id": "ADV_44",
+        "instance-id": "5120bf78-ea4c-498d-9d3b-8d850eefa9bc",
+        "title": "Verbesserte Regeneration (Lebensenergie)",
+        "level": 1
+      },
+      {
+        "id": "ADV_31",
+        "instance-id": "f3d134d6-0354-413b-95af-b8a91592a55f",
+        "title": "Krankheitsresistenz",
+        "level": 1
+      },
+      {
+        "id": "ADV_47",
+        "instance-id": "a91fd549-9a57-40cf-953b-7ea5ee13320a",
+        "title": "Waffenbegabung",
+        "selection": {
+          "target-id": "CT_9",
+          "target-title": "Raufen"
+        }
+      }
+    ],
+    "disadvantages": [
+      {
+        "id": "DISADV_45",
+        "instance-id": "088d0f38-3782-4bd7-b7f8-3bb13e151ad6",
+        "title": "Stigma",
+        "selection": {
+          "id": 2,
+          "title": "Brandmale"
+        }
+      },
+      {
+        "id": "DISADV_1",
+        "instance-id": "7375fb18-ba6b-4f1b-8e4c-11e6eb65ce4d",
+        "title": "Angst vor",
+        "selection": {
+          "id": 4,
+          "title": "Insekten"
+        },
+        "level": 1
+      },
+      {
+        "id": "DISADV_7",
+        "instance-id": "cfb6f03d-9b8c-4119-a816-596971f60f2a",
+        "title": "Eingeschränkter Sinn",
+        "selection": {
+          "id": 2,
+          "title": "Gehör"
+        }
+      },
+      {
+        "id": "DISADV_33",
+        "instance-id": "a228805b-f994-41f7-a14f-4a52118a61f0",
+        "title": "Persönlichkeitsschwächen",
+        "selection": {
+          "id": 8,
+          "title": "Weltfremd"
+        }
+      },
+      {
+        "id": "DISADV_2",
+        "instance-id": "51e87fe3-ace3-4951-815f-591983e1f944",
+        "title": "Arm",
+        "level": 1
+      }
+    ],
+    "abilities": {
+      "talents": [
+        {
+          "id": "TAL_4",
+          "instance-id": "91932a6d-09a9-4623-9e04-d00b052c5508",
+          "title": "Körperbeherrschung",
+          "FW": 10
+        },
+        {
+          "id": "TAL_3",
+          "instance-id": "401e23bb-8f3c-4f5d-8770-6a833aae65c7",
+          "title": "Klettern",
+          "FW": 3
+        },
+        {
+          "id": "TAL_6",
+          "instance-id": "eb1c41c2-c3d8-463f-9f66-51c28499a674",
+          "title": "Reiten",
+          "FW": 2
+        },
+        {
+          "id": "TAL_7",
+          "instance-id": "761c56c6-aa0c-4512-99f6-3f6752433ec9",
+          "title": "Schwimmen",
+          "FW": 5
+        },
+        {
+          "id": "TAL_8",
+          "instance-id": "cab75a6c-5ba1-47ac-8255-1d7a6b1c2492",
+          "title": "Selbstbeherrschung",
+          "FW": 10
+        },
+        {
+          "id": "TAL_9",
+          "instance-id": "4e9652c0-cdbf-4a77-8ad6-28a56434e0c8",
+          "title": "Singen",
+          "FW": 1
+        },
+        {
+          "id": "TAL_10",
+          "instance-id": "e119ad61-be2c-4a5b-81cc-6aa3cbe905e6",
+          "title": "Sinnesschärfe",
+          "FW": 6
+        },
+        {
+          "id": "TAL_11",
+          "instance-id": "65636e8f-5367-424f-96b2-15f138171c6d",
+          "title": "Tanzen",
+          "FW": 2
+        },
+        {
+          "id": "TAL_13",
+          "instance-id": "31fd8939-ee98-4405-a404-20d9cefc589a",
+          "title": "Verbergen",
+          "FW": 3
+        },
+        {
+          "id": "TAL_17",
+          "instance-id": "71216a02-8e3f-489c-b395-cdef1f33bf22",
+          "title": "Einschüchtern",
+          "FW": 4
+        },
+        {
+          "id": "TAL_19",
+          "instance-id": "4e4e865c-5653-47b4-9e7d-c15124f21768",
+          "title": "Gassenwissen",
+          "FW": 3
+        },
+        {
+          "id": "TAL_20",
+          "instance-id": "9a7d0870-d5d9-4c1d-871c-d721500daaa4",
+          "title": "Menschenkenntnis",
+          "FW": 4
+        },
+        {
+          "id": "TAL_23",
+          "instance-id": "2f3afb03-9c78-4688-8632-ba445c3a73d8",
+          "title": "Willenskraft",
+          "FW": 7
+        },
+        {
+          "id": "TAL_27",
+          "instance-id": "5540ece9-0a97-4fe8-aad1-974371d4dfca",
+          "title": "Orientierung",
+          "FW": 6
+        },
+        {
+          "id": "TAL_30",
+          "instance-id": "5fd52dd0-c2d3-4376-b87a-422e906f1edf",
+          "title": "Wildnisleben",
+          "FW": 6
+        },
+        {
+          "id": "TAL_28",
+          "instance-id": "27dac032-8732-45ca-a356-c44716fb4d60",
+          "title": "Pflanzenkunde",
+          "FW": 3
+        },
+        {
+          "id": "TAL_26",
+          "instance-id": "6c8f926c-79c6-4771-85b1-13e932708ab5",
+          "title": "Fischen & Angeln",
+          "FW": 3
+        },
+        {
+          "id": "TAL_44",
+          "instance-id": "01749871-8279-45ff-a6a0-02a5fff89795",
+          "title": "Boote & Schiffe",
+          "FW": 3
+        },
+        {
+          "id": "TAL_50",
+          "instance-id": "49156f46-ac9b-4d1c-82a0-d3fd7021f279",
+          "title": "Heilkunde Wunden",
+          "FW": 6
+        },
+        {
+          "id": "TAL_49",
+          "instance-id": "7800b94d-be40-43f5-b195-5a82fed57308",
+          "title": "Heilkunde Seele",
+          "FW": 2
+        },
+        {
+          "id": "TAL_48",
+          "instance-id": "6be17be7-ae18-4893-abfd-acf8d8fdf95d",
+          "title": "Heilkunde Krankheiten",
+          "FW": 1
+        },
+        {
+          "id": "TAL_53",
+          "instance-id": "3e2f12de-5588-465d-b4db-17d5d5d85613",
+          "title": "Lederbearbeitung",
+          "FW": 5
+        },
+        {
+          "id": "TAL_52",
+          "instance-id": "6c66e7ed-3983-421c-befc-a95214bba3fa",
+          "title": "Lebensmittelbearbeitung",
+          "FW": 6
+        },
+        {
+          "id": "TAL_51",
+          "instance-id": "2f937836-be0d-486a-a6b4-8166d55cacdc",
+          "title": "Holzbearbeitung",
+          "FW": 3
+        },
+        {
+          "id": "TAL_14",
+          "instance-id": "daab4019-ef48-43b6-8090-847f14f0c64c",
+          "title": "Zechen",
+          "FW": 1
+        },
+        {
+          "id": "TAL_21",
+          "instance-id": "5893ea21-1be3-4639-9bd2-147f2c2a3d69",
+          "title": "Überreden",
+          "FW": 6
+        },
+        {
+          "id": "TAL_5",
+          "instance-id": "0e2298e8-e47b-4221-bfd9-ab298ff5a507",
+          "title": "Kraftakt",
+          "FW": 4
+        }
+      ],
+      "combat-techniques": [
+        {
+          "id": "CT_9",
+          "instance-id": "69e03239-e458-435b-b88f-5561e9aabcc5",
+          "title": "Raufen",
+          "KTW": 12
+        },
+        {
+          "id": "CT_3",
+          "instance-id": "11f36cb8-b0a2-435b-9e93-28b916b48629",
+          "title": "Dolche",
+          "KTW": 10
+        },
+        {
+          "id": "CT_13",
+          "instance-id": "be9b1c16-29b0-4387-84b3-7edf280f2e38",
+          "title": "Stangenwaffen",
+          "KTW": 9
+        }
+      ],
+      "spells": [],
+      "liturgies": [],
+      "special-abilities": [
+        {
+          "id": "SA_29",
+          "instance-id": "e162eab9-9106-47e3-a835-4224557e6c87",
+          "title": "Sprache",
+          "selection": {
+            "id": 8,
+            "title": "Garethi"
+          },
+          "level": 4
+        },
+        {
+          "id": "SA_42",
+          "instance-id": "9541683e-0d5c-4234-8438-28cc4d225b6d",
+          "title": "Beidhändiger Kampf",
+          "level": 1
+        },
+        {
+          "id": "SA_41",
+          "instance-id": "70f7232b-83ed-4e53-b59e-b75f8211f2d5",
+          "title": "Belastungsgewöhnung",
+          "level": 1
+        },
+        {
+          "id": "SA_163",
+          "instance-id": "0784697b-4d67-4985-b2cd-fabf5714d022",
+          "title": "Kampf im Wasser"
+        },
+        {
+          "id": "SA_65",
+          "instance-id": "31a8f161-9e08-4d06-9bd0-4d38862395a0",
+          "title": "Verteidigungshaltung"
+        },
+        {
+          "id": "SA_186",
+          "instance-id": "1e21fcf8-03f4-4360-b364-b90a1cc023a4",
+          "title": "Hruruzat"
+        },
+        {
+          "id": "SA_40",
+          "instance-id": "4f39dc16-011c-4c65-9f9c-b44b2e17077e",
+          "title": "Aufmerksamkeit"
+        },
+        {
+          "id": "SA_160",
+          "instance-id": "aa8c1e9f-58d5-41a6-9114-97075a133344",
+          "title": "Gezielter Angriff"
+        },
+        {
+          "id": "SA_52",
+          "instance-id": "cd4c66dd-356b-41d4-abad-17972514bce2",
+          "title": "Klingenfänger"
+        },
+        {
+          "id": "SA_164",
+          "instance-id": "bd0e10ac-554f-4837-a543-c10f8897322e",
+          "title": "Kampfstil-Kombination"
+        },
+        {
+          "id": "SA_184",
+          "instance-id": "4daa0253-ed5d-420b-8fb6-46b4fc35f24a",
+          "title": "Gladiatoren-Stil"
+        }
+      ]
+    },
+    "derived-stats": {
+      "LE": 35,
+      "SK": 1,
+      "ZK": 2,
+      "AW": 7,
+      "INI": {
+        "base": 13,
+        "dice": "1W6",
+        "modifier": 0
+      },
+      "GS": 8
+    },
+    "species-package": {
+      "id": "R_1",
+      "instance-id": "d91dd4bd-af2a-42e1-9f10-09daac8852fe",
+      "title": "Mensch"
+    }
+  },
+  "metadata": {
+    "source": "Optolith",
+    "source-version": "1.5.2",
+    "source-character-id": "H_1793098251798",
+    "source-created": "2026-06-06T16:17:19.951Z",
+    "source-modified": "2026-10-27T11:03:45.253Z"
+  }
+}

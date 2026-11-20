@@ -1,0 +1,351 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DSA 5 - Nah- und Fernkampfwaffen",
+  "type": "object",
+  "description": "Vollständige Übersicht aller Nah- und Fernkampfwaffen nach DSA 5-Regeln mit strukturierten spieltechnischen Werten für maschinelle Validierung.",
+  "weapons": [
+    {
+      "name": "Amazonensäbel",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Säbel",
+      "damage-threshold": "GE/KK 14"
+    },
+    {
+      "name": "Axt",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "KK",
+      "combat-technique": "Hiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Bannschwert (mittel)",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Schwerter",
+      "damage-threshold": "GE/KK 15"
+    },
+    {
+      "name": "Blasrohr",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "FF",
+      "combat-technique": "Blasrohre",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Borndorn",
+      "hitpoints": "1W6+2",
+      "conductive-attribute": "GE",
+      "combat-technique": "Dolche",
+      "damage-threshold": "GE 15"
+    },
+    {
+      "name": "Byakka",
+      "hitpoints": "1W6+5",
+      "conductive-attribute": "KK",
+      "combat-technique": "Hiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Degen",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE",
+      "combat-technique": "Fechtwaffen",
+      "damage-threshold": "GE 15"
+    },
+    {
+      "name": "Diskus",
+      "hitpoints": "1W6+2",
+      "conductive-attribute": "FF",
+      "combat-technique": "Diskusse",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Dolch",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "GE",
+      "combat-technique": "Dolche",
+      "damage-threshold": "GE 15"
+    },
+    {
+      "name": "Dornenkeule",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "KK",
+      "combat-technique": "Hiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Drachentöter",
+      "hitpoints": "2W6+8",
+      "conductive-attribute": "FF",
+      "combat-technique": "Armbrüste",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Elfendolch (Briza)",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "GE",
+      "combat-technique": "Dolche",
+      "damage-threshold": "GE 15"
+    },
+    {
+      "name": "Firunsbogen",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "FF",
+      "combat-technique": "Bögen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Fledermaus",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "KK",
+      "combat-technique": "Zweihandhiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Hellebarde",
+      "hitpoints": "1W6+6",
+      "conductive-attribute": "KK",
+      "combat-technique": "Stangenwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Holzfälleraxt",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "KK",
+      "combat-technique": "Zweihandhiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Iryanoid",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "FF",
+      "combat-technique": "Wurfwaffen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Jagdbogen",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "FF",
+      "combat-technique": "Bögen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Khunchomer",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Schwerter",
+      "damage-threshold": "GE/KK 14"
+    },
+    {
+      "name": "Kriegshammer",
+      "hitpoints": "2W6+3",
+      "conductive-attribute": "KK",
+      "combat-technique": "Zweihandhiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Kriegslanze",
+      "hitpoints": "2W6+4",
+      "conductive-attribute": "KK",
+      "combat-technique": "Lanzen",
+      "damage-threshold": "KK 15"
+    },
+    {
+      "name": "Kurzbogen",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "FF",
+      "combat-technique": "Bögen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Kurzschwert",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Schwerter",
+      "damage-threshold": "GE/KK 15"
+    },
+    {
+      "name": "Langbogen",
+      "hitpoints": "1W6+6",
+      "conductive-attribute": "FF",
+      "combat-technique": "Bögen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Langschwert",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Schwerter",
+      "damage-threshold": "GE/KK 15"
+    },
+    {
+      "name": "Leichte Armbrust",
+      "hitpoints": "1W6+6",
+      "conductive-attribute": "FF",
+      "combat-technique": "Armbrüste",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Lindwurmschläger",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "KK",
+      "combat-technique": "Hiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Magierdegen",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE",
+      "combat-technique": "Fechtwaffen",
+      "damage-threshold": "GE 15"
+    },
+    {
+      "name": "Magierstab (lang)",
+      "hitpoints": "1W6+2",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Stangenwaffen",
+      "damage-threshold": "GE/KK 15"
+    },
+    {
+      "name": "Neethaner Langaxt",
+      "hitpoints": "1W6+6",
+      "conductive-attribute": "KK",
+      "combat-technique": "Zweihandhiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Neunschwänzige Katze",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "FF",
+      "combat-technique": "Peitschen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Peitsche",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "FF",
+      "combat-technique": "Peitschen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Rapier",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE",
+      "combat-technique": "Fechtwaffen",
+      "damage-threshold": "GE 15"
+    },
+    {
+      "name": "Säbel",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Säbel",
+      "damage-threshold": "GE/KK 14"
+    },
+    {
+      "name": "Schleuder",
+      "hitpoints": "1W6+2",
+      "conductive-attribute": "FF",
+      "combat-technique": "Schleudern",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Schwere Armbrust",
+      "hitpoints": "2W6+6",
+      "conductive-attribute": "FF",
+      "combat-technique": "Armbrüste",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Speer",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Stangenwaffen",
+      "damage-threshold": "GE/KK 14"
+    },
+    {
+      "name": "Streitaxt",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "KK",
+      "combat-technique": "Hiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Streitkolben",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "KK",
+      "combat-technique": "Hiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Torsionsarmbrust (Balläster)",
+      "hitpoints": "1W6+5",
+      "conductive-attribute": "FF",
+      "combat-technique": "Armbrüste",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Turnierzweihänder",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Zweihandschwerter",
+      "damage-threshold": "GE/KK 16"
+    },
+    {
+      "name": "Waffenlos (Raufen)",
+      "hitpoints": "1W6+0",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Raufen",
+      "damage-threshold": "GE/KK 15"
+    },
+    {
+      "name": "Wurfbeil",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "FF",
+      "combat-technique": "Wurfwaffen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Wurfdolch",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "FF",
+      "combat-technique": "Wurfwaffen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Wurfspeer",
+      "hitpoints": "1W6+4",
+      "conductive-attribute": "FF",
+      "combat-technique": "Wurfwaffen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Wurfstern",
+      "hitpoints": "1W6+1",
+      "conductive-attribute": "FF",
+      "combat-technique": "Wurfwaffen",
+      "damage-threshold": "-"
+    },
+    {
+      "name": "Zweihänder",
+      "hitpoints": "2W6+4",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Zweihandschwerter",
+      "damage-threshold": "GE/KK 14"
+    },
+    {
+      "name": "Zweihandhiebwaffe (Kriegshammer)",
+      "hitpoints": "2W6+3",
+      "conductive-attribute": "KK",
+      "combat-technique": "Zweihandhiebwaffen",
+      "damage-threshold": "KK 14"
+    },
+    {
+      "name": "Zweililien",
+      "hitpoints": "1W6+3",
+      "conductive-attribute": "GE/KK",
+      "combat-technique": "Stangenwaffen",
+      "damage-threshold": "GE/KK 15"
+    }
+  ]
+}

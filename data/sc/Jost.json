@@ -1,0 +1,347 @@
+{
+  "ap-total": 1100,
+  "ap-spent": 1100,
+  "ap-remaining": 0,
+  "stats": {
+    "experience-level": {
+      "id": "EL_3",
+      "title": "Erfahren"
+    },
+    "attributes": {
+      "MU": 15,
+      "KL": 10,
+      "IN": 13,
+      "CH": 11,
+      "FF": 10,
+      "GE": 13,
+      "KO": 14,
+      "KK": 14
+    },
+    "advantages": [
+      {
+        "id": "ADV_12",
+        "instance-id": "fb9bc947-27b7-42ec-932d-b4c85e2aa97c",
+        "title": "Geweihter"
+      },
+      {
+        "id": "ADV_47",
+        "instance-id": "324a8bbb-12c2-4f0d-86f0-d2c040cb2620",
+        "title": "Waffenbegabung",
+        "selection": {
+          "target-id": "CT_16",
+          "target-title": "Zweihandschwerter"
+        }
+      },
+      {
+        "id": "ADV_74",
+        "instance-id": "eef1bbf6-419f-46bc-93bc-65ff1cd74f75",
+        "title": "Heldenhafter Name"
+      },
+      {
+        "id": "ADV_17",
+        "instance-id": "373afccb-f0ac-4324-b9c5-a72c169ecae5",
+        "title": "Herausragende Kampftechnik",
+        "selection": {
+          "target-id": "CT_16",
+          "target-title": "Zweihandschwerter"
+        }
+      }
+    ],
+    "disadvantages": [
+      {
+        "id": "DISADV_37",
+        "instance-id": "f521a2ed-ead5-4f6b-8fb9-6da7ec019e00",
+        "title": "Schlechte Eigenschaft",
+        "selection": {
+          "id": 2,
+          "title": "Autoritätsglaube"
+        }
+      },
+      {
+        "id": "DISADV_50",
+        "instance-id": "853ec586-89cc-402d-8d06-57443da79a81",
+        "title": "Verpflichtungen",
+        "selection": {
+          "id": 5,
+          "title": "Geweihter gegenüber seinem Tempel"
+        },
+        "level": 2
+      },
+      {
+        "id": "DISADV_0",
+        "instance-id": "f6bde6fa-dd28-45e1-b29a-240538e19abb",
+        "title": "Eigener Nachteil",
+        "selection": {
+          "title": "familienverbunden"
+        }
+      },
+      {
+        "id": "DISADV_34",
+        "instance-id": "542fc189-cbfd-4efb-b561-ccb762ca354d",
+        "title": "Prinzipientreue",
+        "selection": {
+          "id": 10,
+          "title": "Moralkodex der Rondrakirche"
+        },
+        "level": 2
+      },
+      {
+        "id": "DISADV_71",
+        "instance-id": "edb96b53-e18d-4878-8432-3b1b4ec904ab",
+        "title": "Unverträglichkeit gegenüber Alkohol"
+      }
+    ],
+    "abilities": {
+      "talents": [
+        {
+          "id": "TAL_55",
+          "instance-id": "fb896355-4ae1-4eec-903c-8f6c7225aa0c",
+          "title": "Metallbearbeitung",
+          "FW": 8
+        },
+        {
+          "id": "TAL_4",
+          "instance-id": "68953e2d-ed3c-4120-81ee-805c02ebac94",
+          "title": "Körperbeherrschung",
+          "FW": 5
+        },
+        {
+          "id": "TAL_5",
+          "instance-id": "aab43773-7e68-4ea6-9ebc-6154f561e3cb",
+          "title": "Kraftakt",
+          "FW": 7
+        },
+        {
+          "id": "TAL_7",
+          "instance-id": "f104b123-0576-4ab7-8124-81e76d0d4ae5",
+          "title": "Schwimmen",
+          "FW": 5
+        },
+        {
+          "id": "TAL_8",
+          "instance-id": "ee5375e6-ca76-4add-8d78-a72e7a47bfd2",
+          "title": "Selbstbeherrschung",
+          "FW": 10
+        },
+        {
+          "id": "TAL_10",
+          "instance-id": "f10f534d-cc1f-4fde-b045-f275c1e0e1a2",
+          "title": "Sinnesschärfe",
+          "FW": 6
+        },
+        {
+          "id": "TAL_15",
+          "instance-id": "fa265aec-f58e-4e48-9fc0-4a05981550f8",
+          "title": "Bekehren & Überzeugen",
+          "FW": 5
+        },
+        {
+          "id": "TAL_20",
+          "instance-id": "4f4ce4ea-1b5c-40b7-b023-6f70b30cefae",
+          "title": "Menschenkenntnis",
+          "FW": 2
+        },
+        {
+          "id": "TAL_23",
+          "instance-id": "bb204269-444e-409b-940e-5484b0779105",
+          "title": "Willenskraft",
+          "FW": 8
+        },
+        {
+          "id": "TAL_27",
+          "instance-id": "b5509602-76c6-4437-ad0a-ac1b09c62b6f",
+          "title": "Orientierung",
+          "FW": 6
+        },
+        {
+          "id": "TAL_30",
+          "instance-id": "dae73852-4b8e-4cc8-84ae-4de707513892",
+          "title": "Wildnisleben",
+          "FW": 8
+        },
+        {
+          "id": "TAL_44",
+          "instance-id": "9f2d9b08-8458-4617-9aea-e86d69064285",
+          "title": "Boote & Schiffe",
+          "FW": 2
+        },
+        {
+          "id": "TAL_50",
+          "instance-id": "30d4ec07-bb4a-4e6b-9a83-55d76e0e3245",
+          "title": "Heilkunde Wunden",
+          "FW": 5
+        },
+        {
+          "id": "TAL_59",
+          "instance-id": "882e75ce-db6f-4b04-84c6-8c50a1d23953",
+          "title": "Stoffbearbeitung",
+          "FW": 2
+        }
+      ],
+      "combat-techniques": [
+        {
+          "id": "CT_16",
+          "instance-id": "5babc3f1-9444-4bc6-ad96-238ce104b4e0",
+          "title": "Zweihandschwerter",
+          "KTW": 13
+        },
+        {
+          "id": "CT_12",
+          "instance-id": "eaa708ba-ef31-407e-a324-61d34aa96c41",
+          "title": "Schwerter",
+          "KTW": 11
+        },
+        {
+          "id": "CT_3",
+          "instance-id": "c5c0414f-6d5f-40ea-a525-c368703d00c9",
+          "title": "Dolche",
+          "KTW": 11
+        },
+        {
+          "id": "CT_9",
+          "instance-id": "8b1c418b-4291-456d-a8d0-e4feabc7dec9",
+          "title": "Raufen",
+          "KTW": 12
+        }
+      ],
+      "spells": [],
+      "liturgies": [],
+      "special-abilities": [
+        {
+          "id": "SA_41",
+          "instance-id": "93be87cc-78f9-40a3-a8ef-2acb61404418",
+          "title": "Belastungsgewöhnung",
+          "level": 1
+        },
+        {
+          "id": "SA_450",
+          "instance-id": "b9b0f4ee-334c-41ac-924b-e8e45922fe71",
+          "title": "Schutz der Löwin"
+        },
+        {
+          "id": "SA_682",
+          "instance-id": "e606b507-791b-46f2-bde5-e06c76a5fb12",
+          "title": "Tradition (Rondrakirche)"
+        },
+        {
+          "id": "SA_29",
+          "instance-id": "12993b67-01d6-41da-861d-cf52eb7508f5",
+          "title": "Sprache",
+          "selection": {
+            "id": 6,
+            "title": "Bosparano"
+          },
+          "level": 1
+        },
+        {
+          "id": "SA_29",
+          "instance-id": "79c4933e-6d52-4927-b896-b1e63e577009",
+          "title": "Sprache",
+          "selection": {
+            "id": 10,
+            "title": "Isdira"
+          },
+          "level": 1
+        },
+        {
+          "id": "SA_29",
+          "instance-id": "22e74b72-24f8-4d9e-8df9-7c90308c2ca3",
+          "title": "Sprache",
+          "selection": {
+            "id": 8,
+            "title": "Garethi"
+          },
+          "level": 4
+        },
+        {
+          "id": "SA_27",
+          "instance-id": "818515d0-3dd7-4ac0-8b39-eb5f5f45125f",
+          "title": "Schrift",
+          "selection": {
+            "id": 9,
+            "title": "Kusliker Zeichen"
+          }
+        }
+      ]
+    },
+    "derived-stats": {
+      "LE": 33,
+      "SK": 1,
+      "ZK": 2,
+      "AW": 7,
+      "INI": 14,
+      "GS": 8
+    },
+    "combat-stats": {
+      "armour-protection": 4,
+      "encumbrance": 1,
+      "pain-level": 0,
+      "weapons": [
+        {
+          "instance-id": "6c6a8d31-8b24-4e91-a2f7-1d5c3e9b7042",
+          "title": "Waffenlos",
+          "active-weapon": false,
+          "combat-technique": "Raufen",
+          "combat-technique-id": "CT_9",
+          "hitpoints": "1W6",
+          "conductive-attribute": "GE/KK",
+          "damage-threshold": 14,
+          "attack-modifier": 0,
+          "parry-modifier": 0,
+          "melee-weapon-reach": "kurz"
+        },
+        {
+          "instance-id": "a8f17c42-3d65-49b0-8e21-6f4c2a9d7351",
+          "title": "Langschwert",
+          "active-weapon": true,
+          "combat-technique": "Schwerter",
+          "combat-technique-id": "CT_12",
+          "hitpoints": "1W6+4",
+          "conductive-attribute": "GE/KK",
+          "damage-threshold": 15,
+          "attack-modifier": 0,
+          "parry-modifier": 0,
+          "melee-weapon-reach": "mittel"
+        },
+        {
+          "instance-id": "d2b94e76-1f83-4a5c-9e30-7b6d2a8f4159",
+          "title": "Rondrakamm (2H)",
+          "active-weapon": false,
+          "combat-technique": "Zweihandschwerter",
+          "combat-technique-id": "CT_16",
+          "hitpoints": "2W6+2",
+          "conductive-attribute": "KK",
+          "damage-threshold": 14,
+          "attack-modifier": 0,
+          "parry-modifier": -1,
+          "melee-weapon-reach": "mittel"
+        },
+        {
+          "instance-id": "f3c71a85-2e49-46d8-b105-8a4f9c2d6370",
+          "title": "Dolch",
+          "active-weapon": false,
+          "combat-technique": "Dolche",
+          "combat-technique-id": "CT_3",
+          "hitpoints": "1W6+1",
+          "conductive-attribute": "GE",
+          "damage-threshold": 14,
+          "attack-modifier": 0,
+          "parry-modifier": 0,
+          "melee-weapon-reach": "kurz"
+        }
+      ]
+    },
+    "species-package": {
+      "id": "R_1",
+      "instance-id": "c85e524c-a37c-414e-bf8f-f3a5bd18f88a",
+      "title": "Mensch"
+    }
+  },
+  "metadata": {
+    "source": "Optolith",
+    "source-version": "1.5.2",
+    "source-character-id": "H_1795082665541",
+    "source-created": "2025-11-16T13:56:51.501Z",
+    "source-modified": "2026-11-19T10:10:13.028Z"
+  }
+}

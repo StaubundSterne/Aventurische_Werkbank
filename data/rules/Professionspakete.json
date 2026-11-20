@@ -1,0 +1,3019 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DSA 5 Professionspakete Master-Schema",
+  "description": "Validierungs-Schema für die zentralen DSA 5-Professionspakete im Pre-Processing-Backend.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "profession_packages": {
+      "type": "array",
+      "description": "Liste aller eingepflegten Professionspakete nach DSA 5-Regeln.",
+      "items": {
+        "$ref": "#/definitions/profession"
+      }
+    }
+  },
+  "definitions": {
+    "profession": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^prof_[a_z0-9_]+$",
+          "description": "Eindeutiger technischer Identifikator der Profession."
+        },
+        "name": {
+          "type": "string",
+          "description": "Offizielle Bezeichnung der Grundprofession."
+        },
+        "ap_value": {
+          "type": [
+            "integer",
+            "string"
+          ],
+          "description": "AP-Kosten des Pakets als Zahl oder 'Var.'/'X AP' String."
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Bedingungen (Eigenschaften, Vorteile, Sonderfertigkeiten)."
+        },
+        "magical": {
+          "type": "boolean",
+          "default": false,
+          "description": "Kennzeichnet magische Professionen."
+        },
+        "clerical": {
+          "type": "boolean",
+          "default": false,
+          "description": "Kennzeichnet geweihte Professionen."
+        },
+        "magic_tradition": {
+          "type": "string",
+          "description": "Magische Tradition (z. B. Gildenmagier, Hexe, Druide)."
+        },
+        "blessed_tradition": {
+          "type": "string",
+          "description": "Kirche / Tradition des Geweihten (z. B. Praios, Hesinde)."
+        },
+        "special_abilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "ap_cost": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "name"
+            ]
+          },
+          "description": "Sonderfertigkeiten inklusive fester Bindungen (z. B. Stabverbindung 14 AP)."
+        },
+        "talent_style": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "ap_cost": {
+              "type": "integer"
+            }
+          },
+          "description": "Talentstil der Profession."
+        },
+        "combat_techniques": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Kampftechnikwerte (KTW-Modifikatoren oder Festwerte)."
+        },
+        "talents": {
+          "type": "object",
+          "properties": {
+            "koerper": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            },
+            "gesellschaft": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            },
+            "natur": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            },
+            "wissen": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            },
+            "handwerk": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            }
+          },
+          "additionalProperties": false,
+          "description": "Fertigkeitspunkte nach den 5 Talentgruppen."
+        },
+        "spells": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Aktivierte Zauber und deren ZFW."
+        },
+        "cantrips": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Aktivierte Zaubertricks."
+        },
+        "liturgies": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Aktivierte Liturgien/Zeremonien und deren LFW."
+        },
+        "blessings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Aktivierte Segnungen."
+        },
+        "recommended_advantages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recommended_disadvantages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unsuitable_advantages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unsuitable_disadvantages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "ap_value": {
+                "type": [
+                  "integer",
+                  "string"
+                ]
+              },
+              "modifications": {
+                "type": "object",
+                "properties": {
+                  "prerequisites": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "special_abilities": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "special_abilities_replacement": {
+                    "type": "object",
+                    "properties": {
+                      "from": {
+                        "type": "string"
+                      },
+                      "to": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "combat_techniques": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "integer"
+                    }
+                  },
+                  "talents": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "integer"
+                    }
+                  },
+                  "spells": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "integer"
+                    }
+                  },
+                  "liturgies": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "name"
+            ]
+          },
+          "description": "Abweichende oder ergänzende Professionsvarianten."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "ap_value"
+      ]
+    }
+  },
+  "profession_packages": [
+    {
+      "id": "prof_hazaqi",
+      "name": "Hazaqi",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_diener_der_erdmutter",
+      "name": "Diener der Erdmutter (Gefährte des Feuers)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sharisad",
+      "name": "Sharisad",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ritter",
+      "name": "Ritter",
+      "ap_value": "230 AP"
+    },
+    {
+      "id": "prof_herr_der_erde",
+      "name": "Herr der Erde (Luftherr)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gauklerin",
+      "name": "Gauklerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_amazone",
+      "name": "Amazone",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_brobim_geode",
+      "name": "Brobim-Geode",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_seefahrerin",
+      "name": "Seefahrerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wasserherr",
+      "name": "Wasserherr",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_jaeger",
+      "name": "Jäger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fallensteller",
+      "name": "Fallensteller",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fleischer",
+      "name": "Fleischer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_holzfaeller",
+      "name": "Holzfäller",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_karawanenfuehrerin",
+      "name": "Karawanenführerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kontoristin",
+      "name": "Kontoristin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_apothekarius",
+      "name": "Apothekarius",
+      "ap_value": "161 AP"
+    },
+    {
+      "id": "prof_baderin",
+      "name": "Baderin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_lanisto",
+      "name": "Lanisto",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mawdli",
+      "name": "Mawdli",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_patrizierin",
+      "name": "Patrizierin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_prospektor",
+      "name": "Prospektor",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_raeuberin",
+      "name": "Räuberin",
+      "ap_value": "310 AP"
+    },
+    {
+      "id": "prof_sappeurin",
+      "name": "Sappeurin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_scanlail_ni_uinin_schwertgeselle",
+      "name": "Scanlail ni Uinin-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schaukaempferin",
+      "name": "Schaukämpferin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schauspielerin",
+      "name": "Schauspielerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schmugglerin",
+      "name": "Schmugglerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schreiberin",
+      "name": "Schreiberin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schriftsteller",
+      "name": "Schriftsteller",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_seesoldat",
+      "name": "Seesoldat",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_stutzer",
+      "name": "Stutzer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_taetowiererin",
+      "name": "Tätowiererin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_viehtreiber",
+      "name": "Viehtreiber",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zimmermann",
+      "name": "Zimmermann",
+      "ap_value": 268,
+      "prerequisites": [],
+      "special_abilities": [
+        {
+          "name": "Sprachen und Schriften",
+          "ap_cost": 4
+        },
+        {
+          "name": "Fertigkeitsspezialisierung Holzbearbeitung",
+          "ap_cost": 2
+        }
+      ],
+      "talent_style": {
+        "name": "Weg des Zimmermanns",
+        "ap_cost": 5
+      },
+      "combat_techniques": {
+        "Dolche": 8,
+        "Hiebwaffen": 11,
+        "Raufen": 10,
+        "Zweihandhiebwaffen": 9
+      },
+      "talents": {
+        "koerper": {
+          "Körperbeherrschung": 4,
+          "Kraftakt": 7,
+          "Selbstbeherrschung": 4,
+          "Sinnesschärfe": 5,
+          "Zechen": 3
+        },
+        "gesellschaft": {
+          "Einschüchtern": 3,
+          "Etikette": 2,
+          "Gassenwissen": 3,
+          "Menschenkenntnis": 3,
+          "Überreden": 3,
+          "Willenskraft": 3
+        },
+        "natur": {
+          "Orientierung": 3,
+          "Pflanzenkunde": 6
+        },
+        "wissen": {
+          "Geographie": 3,
+          "Geschichtswissen": 3,
+          "Götter & Kulte": 4,
+          "Mechanik": 4,
+          "Rechnen": 3,
+          "Rechtskunde": 3,
+          "Sagen & Legenden": 3
+        },
+        "handwerk": {
+          "Boote & Schiffe": 2,
+          "Fahrzeuge": 3,
+          "Handel": 3,
+          "Holzbearbeitung": 8,
+          "Malen & Zeichnen": 3,
+          "Metallbearbeitung": 3,
+          "Steinbearbeitung": 3
+        }
+      },
+      "recommended_advantages": [],
+      "recommended_disadvantages": [],
+      "unsuitable_advantages": [
+        "Adel"
+      ],
+      "unsuitable_disadvantages": [],
+      "variants": [
+        {
+          "name": "Schiffszimmermann/-frau",
+          "ap_value": 279,
+          "modifications": {
+            "talents": {
+              "Boote & Schiffe": 6,
+              "Fahrzeuge": 0,
+              "Schwimmen": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "prof_zofe",
+      "name": "Zofe",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_entdecker",
+      "name": "Entdecker",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gelehrte",
+      "name": "Gelehrte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hirte",
+      "name": "Hirte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mechanikus",
+      "name": "Mechanikus",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_adersin_schwertgeselle",
+      "name": "Adersin-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schankmagd",
+      "name": "Schankmagd",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_marwan_sahib_balayan",
+      "name": "Marwan Sahib-Balayan",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fedorino_schwertgeselle",
+      "name": "Fedorino-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tannhaus_schwertgeselle",
+      "name": "Tannhaus-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_metessa_galora_schwertgesellin",
+      "name": "Metessa Galora-Schwertgesellin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zwergenkrieger_nach_hardas",
+      "name": "Zwergenkrieger nach Hardas",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_herrscher",
+      "name": "Herrscher",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_auftragsmoerderin",
+      "name": "Auftragsmörderin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_meuchelmoerder",
+      "name": "Meuchelmörder",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_logenmitglied",
+      "name": "Logenmitglied",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_taschendieb",
+      "name": "Taschendieb",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_deichbauer",
+      "name": "Deichbauer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenlose_magierin_nach_rafim_bey",
+      "name": "Gildenlose Magierin nach Rafim Bey",
+      "ap_value": "296 AP"
+    },
+    {
+      "id": "prof_rafim_bey_daemonen_zweig",
+      "name": "Rafim Bey - Dämonen-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rafim_bey_elementar_zweig",
+      "name": "Rafim Bey - Elementar-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kriegerin",
+      "name": "Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hesindegeweihte",
+      "name": "Hesindegeweihte",
+      "ap_value": "310 AP"
+    },
+    {
+      "id": "prof_soeldner",
+      "name": "Söldner",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bardin",
+      "name": "Bardin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_haendler",
+      "name": "Händler",
+      "ap_value": 136,
+      "prerequisites": [],
+      "special_abilities": [
+        {
+          "name": "Sprachen und Schriften",
+          "ap_cost": 10
+        },
+        {
+          "name": "Fertigkeitsspezialisierung Handel",
+          "ap_cost": 2
+        }
+      ],
+      "talent_style": {
+        "name": "Weg des Händlers",
+        "ap_cost": 10
+      },
+      "combat_techniques": {
+        "Stangenwaffen": 8
+      },
+      "talents": {
+        "koerper": {
+          "Sinnesschärfe": 3
+        },
+        "gesellschaft": {
+          "Etikette": 4,
+          "Gassenwissen": 3,
+          "Menschenkenntnis": 5,
+          "Überreden": 5,
+          "Willenskraft": 4
+        },
+        "natur": {},
+        "wissen": {
+          "Geographie": 2,
+          "Götter & Kulte": 3,
+          "Rechnen": 6,
+          "Rechtskunde": 4,
+          "Sagen & Legenden": 3
+        },
+        "handwerk": {
+          "Fahrzeuge": 3,
+          "Handel": 7
+        }
+      },
+      "recommended_advantages": [
+        "Begabung in Gesellschaftstalenten",
+        "Soziale Anpassungsfähigkeit",
+        "Wohlklang",
+        "Zeitgefühl"
+      ],
+      "recommended_disadvantages": [
+        "Persönlichkeitsschwächen (Neid)",
+        "Schlechte Eigenschaften (Geiz, Goldgier)"
+      ],
+      "unsuitable_advantages": [],
+      "unsuitable_disadvantages": [
+        "Blind",
+        "Blutrausch",
+        "Hässlich",
+        "Persönlichkeitsschwächen (Weltfremd)"
+      ],
+      "variants": [
+        {
+          "name": "Fahrende/r Händler/in",
+          "ap_value": 167,
+          "modifications": {
+            "combat_techniques": {
+              "Hiebwaffen": 8,
+              "Raufen": 8
+            },
+            "talents": {
+              "Orientierung": 4,
+              "Wildnisleben": 3,
+              "Fahrzeuge": 7
+            }
+          }
+        },
+        {
+          "name": "Fernhändler/in",
+          "ap_value": 172,
+          "modifications": {
+            "talents": {
+              "Orientierung": 3,
+              "Wildnisleben": 4,
+              "Geographie": 7,
+              "Magiekunde": 2,
+              "Sternkunde": 2
+            }
+          }
+        },
+        {
+          "name": "Geldwechsler/in",
+          "ap_value": 153,
+          "modifications": {
+            "special_abilities_replacement": {
+              "from": "Fertigkeitsspezialisierung Handel",
+              "to": "Fertigkeitsspezialisierung Rechnen"
+            },
+            "combat_techniques": {
+              "Dolche": 8,
+              "Hiebwaffen": 8,
+              "Stangenwaffen": 6
+            },
+            "talents": {
+              "Gassenwissen": 7,
+              "Rechnen": 8
+            }
+          }
+        },
+        {
+          "name": "Hausierer/in",
+          "ap_value": 162,
+          "modifications": {
+            "combat_techniques": {
+              "Stangenwaffen": 6
+            },
+            "talents": {
+              "Orientierung": 4,
+              "Gassenwissen": 7,
+              "Menschenkenntnis": 7,
+              "Überreden": 7
+            }
+          }
+        },
+        {
+          "name": "Tauschhändler/in",
+          "ap_value": 166,
+          "modifications": {
+            "talents": {
+              "Fährtensuchen": 4,
+              "Orientierung": 4,
+              "Wildnisleben": 4,
+              "Fahrzeuge": 1
+            },
+            "prerequisites": [
+              "Kultur Fjarninger, Utulus, Waldmenschen oder Nivesen wählen"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "prof_hoefling",
+      "name": "Höfling",
+      "ap_value": "176 AP"
+    },
+    {
+      "id": "prof_hofdame",
+      "name": "Hofdame",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_spitzelin",
+      "name": "Spitzelin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_streuner",
+      "name": "Streuner",
+      "ap_value": "212 AP"
+    },
+    {
+      "id": "prof_gardist",
+      "name": "Gardist",
+      "ap_value": "246 AP"
+    },
+    {
+      "id": "prof_gjalskerschamane",
+      "name": "Gjalskerschamane",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nuan",
+      "name": "Nuan",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mudran_nura",
+      "name": "Mudran'Nura (Trollzacker Elementmeisterin)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tierkrieger_des_hochlands",
+      "name": "Tierkrieger des Hochlands (Durro-Dûn)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gladiatorin",
+      "name": "Gladiatorin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zauberweber",
+      "name": "Zauberweber",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zauberweber_der_shakagra",
+      "name": "Zauberweber der Shakagra",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hadan_harigasta",
+      "name": "Hadan-Harigasta (Zauberschmiedin der Fjarninger)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wildnislaeuferin",
+      "name": "Wildnisläuferin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zuckerbaecker",
+      "name": "Zuckerbäcker",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_prostituierte",
+      "name": "Prostituierte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sklavin",
+      "name": "Sklavin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tsatuara_anhaengerin",
+      "name": "Tsatuara-Anhängerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_buskur",
+      "name": "Buskur",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_erotikkuenstler",
+      "name": "Erotikkünstler",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_haremswaechter",
+      "name": "Haremswächter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sexualmagierin",
+      "name": "Sexualmagierin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_levthanpriester",
+      "name": "Levthanpriester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rahjageweihte",
+      "name": "Rahjageweihte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rahjasutra_meister",
+      "name": "Rahjasutra-Meister",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_saebeltaenzer",
+      "name": "Säbeltänzer",
+      "ap_value": "306 AP"
+    },
+    {
+      "id": "prof_freibund_kontoristin",
+      "name": "Freibund-Kontoristin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_goblinischer_rattenfaenger",
+      "name": "Goblinischer Rattenfänger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nekromantin",
+      "name": "Nekromantin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ishannah_al_kira_balayan",
+      "name": "Ishannah al'Kira-Balayan",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rahjakavalier",
+      "name": "Rahjakavalier",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sarvinio_della_monte_schwertgesellin",
+      "name": "Sarvinio della Monte-Schwertgesellin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ordenskrieger_der_tarisharim",
+      "name": "Ordenskrieger der Tarisharim",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_echsenreiter",
+      "name": "Echsenreiter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_golembauer",
+      "name": "Golembauer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_automatentueftler",
+      "name": "Automatentüftler",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_homunculusalchimist",
+      "name": "Homunculusalchimist",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_klingensaenger",
+      "name": "Klingensänger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zelot",
+      "name": "Zelot",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_thorwalsche_godi",
+      "name": "Thorwalsche Godi",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ottajasko_rekkerin",
+      "name": "Ottajasko-Rekkerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_reisende_sangara",
+      "name": "Reisende Sangara",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_runenschoepfer",
+      "name": "Runenschöpfer (Runahöfundur)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wandernder_swafnirgeweihter",
+      "name": "Wandernder Swafnirgeweihter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_swafnirgeweihter",
+      "name": "Swafnirgeweihter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_adlige_der_miniwatu",
+      "name": "Adlige der Miniwatu",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_dschungelschleicherin",
+      "name": "Dschungelschleicherin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_dschungelschleicherin_der_keke_wanaq",
+      "name": "Dschungelschleicherin der Keke-Wanaq",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_eidechsenkriegerin",
+      "name": "Eidechsenkriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_eidechsenkriegerin_der_yakosh_dey",
+      "name": "Eidechsenkriegerin der Yakosh-Dey",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_perlentaucher",
+      "name": "Perlentaucher",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_waffenschmied_der_tapo_tikaute",
+      "name": "Waffenschmied der Tapo-Tikaute",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_animist_der_tapo_tikaute",
+      "name": "Animist der Tapo-Tikaute",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nipakau_kocan_der_tschopukikuha",
+      "name": "Nipakau-Kocan der Tschopukikuha",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_papageienhexe_der_napewanha",
+      "name": "Papageienhexe der Napewanha",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_speerkaempferin_der_darna",
+      "name": "Speerkämpferin der Darna",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_obaranschamane_der_rololo",
+      "name": "Obaranschamane der Rololo",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ratetakschamanin_der_tapo_tikaute",
+      "name": "Ratetakschamanin der Tapo-Tikaute",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_aranischer_sippenkrieger",
+      "name": "Aranischer Sippenkrieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nostrische_seenritterin",
+      "name": "Nostrische Seenritterin",
+      "ap_value": "280 AP"
+    },
+    {
+      "id": "prof_andergaster_waldritter",
+      "name": "Andergaster Waldritter",
+      "ap_value": "293 AP"
+    },
+    {
+      "id": "prof_bognerin",
+      "name": "Bognerin",
+      "ap_value": "180 AP"
+    },
+    {
+      "id": "prof_andergaster_mehrer_der_macht",
+      "name": "Andergaster Mehrer der Macht",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mehrer_der_macht",
+      "name": "Mehrer der Macht",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sumudiener",
+      "name": "Sumudiener",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bewahrer",
+      "name": "Bewahrer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kaempfer",
+      "name": "Kämpfer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_legendensaenger",
+      "name": "Legendensänger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_selemitische_kultisten",
+      "name": "Selemitische Kultisten",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_grosswildjaeger",
+      "name": "Großwildjäger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bestienjaeger",
+      "name": "Bestienjäger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_achazstammeskrieger",
+      "name": "Achazstammeskrieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_echsenschleicher",
+      "name": "Echsenschleicher",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gesichtsloser_gardist",
+      "name": "Gesichtsloser Gardist",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_intuitive_achazzauberin",
+      "name": "Intuitive Achazzauberin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kristallomant",
+      "name": "Kristallomant",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_achazschamane",
+      "name": "Achazschamane",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_chr_ssir_ssr_priester",
+      "name": "Chr'Ssir'Ssr-Priester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_priester_der_h_szint",
+      "name": "Priester der H'Szint",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zsahh_priesterin",
+      "name": "Zsahh-Priesterin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zauberalchimistin",
+      "name": "Zauberalchimistin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_intuitiver_alchimist",
+      "name": "Intuitiver Alchimist (brillant)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_havener_kriegerin",
+      "name": "Havener Kriegerin",
+      "ap_value": "314 AP"
+    },
+    {
+      "id": "prof_efferdgeweihte",
+      "name": "Efferdgeweihte",
+      "ap_value": "290 AP"
+    },
+    {
+      "id": "prof_efferdgeweihter_der_siebenwindkueste",
+      "name": "Efferdgeweihter der Siebenwindküste",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wanderin",
+      "name": "Wanderin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_goblinzauberin",
+      "name": "Goblinzauberin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_schueler_des_alrik_dagabor",
+      "name": "Gildenloser Magier (Schüler des Alrik Dagabor)",
+      "ap_value": "237 AP"
+    },
+    {
+      "id": "prof_alrik_dagabor_weg_des_kaempfers",
+      "name": "Alrik Dagabor - Weg des Kämpfers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_alrik_dagabor_weg_des_reisenden",
+      "name": "Alrik Dagabor - Weg des Reisenden",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagier_schueler_des_demirion_ophenos",
+      "name": "Schwarzmagier (Schüler des Demirion Ophenos)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_demirion_ophenos_weg_der_niederhoellen",
+      "name": "Demirion Ophenos - Weg der Niederhöllen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_demirion_ophenos_weg_ohne_gnade",
+      "name": "Demirion Ophenos - Weg ohne Gnade",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenlose_magierin_nach_halib_abu_l_ketab",
+      "name": "Gildenlose Magierin nach Halib abu'l Ketab",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halib_abu_l_ketab_pfad_des_abenteurers",
+      "name": "Halib abu'l Ketab - Pfad des Abenteurers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halib_abu_l_ketab_pfad_des_pyromanten",
+      "name": "Halib abu'l Ketab - Pfad des Pyromanten",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_schueler_des_hesindius_lichtblick",
+      "name": "Weißmagier (Schüler des Hesindius Lichtblick)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hesindius_lichtblick_weg_der_bekaempfung_des_boesen",
+      "name": "Hesindius Lichtblick - Weg der Bekämpfung des Bösen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hesindius_lichtblick_weg_der_unterstuetzung_des_guten",
+      "name": "Hesindius Lichtblick - Weg der Unterstützung des Guten",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenlose_magierin_schuelerin_der_khelbara_ay_baburia",
+      "name": "Gildenlose Magierin (Schülerin der Khelbara ay Baburia)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_khelbara_ay_baburia_weg_der_heilerin",
+      "name": "Khelbara ay Baburia - Weg der Heilerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_khelbara_ay_baburia_weg_der_verfuehrerin",
+      "name": "Khelbara ay Baburia - Weg der Verführerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_qabaloth_der_nachtwinde",
+      "name": "Qabaloth der Nachtwinde",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nachtwinde_pfad_der_entschlossenheit",
+      "name": "Nachtwinde - Pfad der Entschlossenheit",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nachtwinde_pfad_der_heimlichkeit",
+      "name": "Nachtwinde - Pfad der Heimlichkeit",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rashduler_daemonologe",
+      "name": "Rashduler Dämonologe",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rashduler_daemonologen_pfad_des_golembauers",
+      "name": "Rashduler Dämonologen - Pfad des Golembauers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rashduler_daemonologen_pfad_des_totenbeschwoerers",
+      "name": "Rashduler Dämonologen - Pfad des Totenbeschwörers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_nach_sevastana_gevendar",
+      "name": "Gildenloser Magier nach Sevastana Gevendar",
+      "ap_value": "375 AP"
+    },
+    {
+      "id": "prof_sevastana_gevendar_bordmagus_zweig",
+      "name": "Sevastana Gevendar - Bordmagus-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sevastana_gevendar_kriegszug_zweig",
+      "name": "Sevastana Gevendar - Kriegszug-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagier_nach_shanada_von_ben_oni",
+      "name": "Schwarzmagier nach Shanada von Ben-Oni",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_shanada_von_ben_oni_pfad_der_daemonenjaegerin",
+      "name": "Shanada von Ben-Oni - Pfad der Dämonenjägerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_shanada_von_ben_oni_pfad_der_daemonologenjaegerin",
+      "name": "Shanada von Ben-Oni - Pfad der Dämonologenjägerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_schueler_des_vadif_sal_karim",
+      "name": "Gildenloser Magier (Schüler des Vadif sal Karim)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_vadif_sal_karim_weg_des_wuestenzauberers",
+      "name": "Vadif sal Karim - Weg des Wüstenzauberers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_vadif_sal_karim_weg_des_tieres",
+      "name": "Vadif sal Karim - Weg des Tieres",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenlose_magierin_nach_kiranya_von_kutaki",
+      "name": "Gildenlose Magierin nach Kiranya von Kutaki",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kiranya_von_kutaki_pfad_der_hellsicht",
+      "name": "Kiranya von Kutaki - Pfad der Hellsicht",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kiranya_von_kutaki_pfad_der_sphaeren",
+      "name": "Kiranya von Kutaki - Pfad der Sphären",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_nach_kalliomathea_dorikeikos_von_sorabis",
+      "name": "Gildenloser Magier nach Kalliomathëa Dorikeikos von Sorabis",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kalliomathea_dorikeikos_von_sorabis_pfad_der_hellsicht",
+      "name": "Kalliomathëa Dorikeikos von Sorabis - Pfad der Hellsicht",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kalliomathea_dorikeikos_von_sorabis_pfad_der_sphaeren",
+      "name": "Kalliomathëa Dorikeikos von Sorabis - Pfad der Sphären",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hueter_der_kraft",
+      "name": "Hüter der Kraft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hueter_der_macht",
+      "name": "Hüter der Macht",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_haindruide",
+      "name": "Haindruide",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_nach_agrimeton",
+      "name": "Gildenloser Magier nach Agrimeton",
+      "ap_value": "358 AP"
+    },
+    {
+      "id": "prof_drachenjaeger",
+      "name": "Drachenjäger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_konzildruide_fakultaet_des_erzes",
+      "name": "Konzildruide (Fakultät des Erzes)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fakultaet_des_eises",
+      "name": "Fakultät des Eises",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fakultaet_des_feuers",
+      "name": "Fakultät des Feuers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fakultaet_des_humus",
+      "name": "Fakultät des Humus",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fakultaet_der_luft",
+      "name": "Fakultät der Luft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fakultaet_des_wassers",
+      "name": "Fakultät des Wassers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_majuna",
+      "name": "Majuna",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_pardelhexe",
+      "name": "Pardelhexe (Schöne der Nacht)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ordensmitglied_der_mada_basari",
+      "name": "Ordensmitglied der Mada Basari",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rosenritter",
+      "name": "Rosenritter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_walfaenger",
+      "name": "Walfänger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_jaeger_der_verfluchten",
+      "name": "Jäger der Verfluchten",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_als_schuelerin_der_thyella_vom_gewitterturm",
+      "name": "Graumagierin als Schülerin der Thyella vom Gewitterturm",
+      "ap_value": "244 AP"
+    },
+    {
+      "id": "prof_ifirngeweihte",
+      "name": "Ifirngeweihte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nivesenschamane",
+      "name": "Nivesenschamane",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_oloranthe_della_cerrano_schwertgeselle",
+      "name": "Oloranthe della Cerrano-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_cerrano_schwertgeselle",
+      "name": "Cerrano-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_der_akademie_der_erscheinungen_zu_grangor",
+      "name": "Graumagierin der Akademie der Erscheinungen zu Grangor",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_erscheinungen_zu_grangor_pfad_des_illusionisten",
+      "name": "Akademie der Erscheinungen zu Grangor - Pfad des Illusionisten",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_erscheinungen_zu_grangor_pfad_des_geisterbeschwoerers",
+      "name": "Akademie der Erscheinungen zu Grangor - Pfad des Geisterbeschwörers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_neersander_krieger",
+      "name": "Neersander Krieger",
+      "ap_value": "411 AP"
+    },
+    {
+      "id": "prof_vinsalter_krieger",
+      "name": "Vinsalter Krieger",
+      "ap_value": "389 AP"
+    },
+    {
+      "id": "prof_winhaller_krieger",
+      "name": "Winhaller Krieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mengbiller_krieger",
+      "name": "Mengbiller Krieger",
+      "ap_value": "390 AP"
+    },
+    {
+      "id": "prof_al_beni",
+      "name": "Al'Beni",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hadjinim_ordenskrieger",
+      "name": "Hadjinim-Ordenskrieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_anach_nur",
+      "name": "Anach-Nûr (Ferkina-Besessener)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_derwische",
+      "name": "Derwische",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_der_zauberschule_des_kalifen_zu_mherwed",
+      "name": "Graumagier der Zauberschule des Kalifen zu Mherwed",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zauberschule_des_kalifen_zu_mherwed_pfad_des_wuestensandes",
+      "name": "Zauberschule des Kalifen zu Mherwed - Pfad des Wüstensandes",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zauberschule_des_kalifen_zu_mherwed_pfad_des_wuestenwindes",
+      "name": "Zauberschule des Kalifen zu Mherwed - Pfad des Wüstenwindes",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rahkisa",
+      "name": "Rahkisa",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ferkinaschamane",
+      "name": "Ferkinaschamane",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_geisterbeschwoerer",
+      "name": "Geisterbeschwörer",
+      "ap_value": "380 / 480 / 680 AP"
+    },
+    {
+      "id": "prof_shindai",
+      "name": "Shindai (Adoru-Schwertkämpfer)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_erz_shindai",
+      "name": "Erz-Shindai",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_feuer_shindai",
+      "name": "Feuer-Shindai",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ojomyaa",
+      "name": "Ojomyaa (Adoru-Priesterin)",
+      "ap_value": "273 AP"
+    },
+    {
+      "id": "prof_dorukha",
+      "name": "Dorukha (Adoru-Magier)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_humus",
+      "name": "Humus",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_luft",
+      "name": "Luft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wasser",
+      "name": "Wasser",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tahayaschamanin",
+      "name": "Tahayaschamanin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_schule_der_hohen_magie_zu_punin",
+      "name": "Graumagierin (Schule der Hohen Magie zu Punin)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_hohen_magie_invocatoren_zweig",
+      "name": "Akademie der Hohen Magie - Invocatoren-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_hohen_magie_observatoren_zweig",
+      "name": "Akademie der Hohen Magie - Observatoren-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kuenstlerin",
+      "name": "Künstlerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_adlige",
+      "name": "Adlige",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_almgreve",
+      "name": "Almgreve",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_arivorer_kriegerin",
+      "name": "Arivorer Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_baburiner_kriegerin",
+      "name": "Baburiner Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_balihoer_krieger",
+      "name": "Balihoer Krieger",
+      "ap_value": "387 AP"
+    },
+    {
+      "id": "prof_baeuerin",
+      "name": "Bäuerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_birkholter_krieger",
+      "name": "Birkholter Krieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_botin",
+      "name": "Botin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_dienerin",
+      "name": "Dienerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_elenviner_kriegerin",
+      "name": "Elenviner Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_eroscham_schwertgeselle",
+      "name": "Eroscham-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_eslamsgrunder_kriegerin",
+      "name": "Eslamsgrunder Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rur_und_gror_priesterin",
+      "name": "Rur-und-Gror-Priesterin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_garether_kriegerin",
+      "name": "Garether Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_heilerin",
+      "name": "Heilerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_hylailer_kriegerin",
+      "name": "Hylailer Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kuestenschmugglerin",
+      "name": "Küstenschmugglerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_landwehrsoldat",
+      "name": "Landwehrsoldat",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_lanzerin",
+      "name": "Lanzerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_methumiser_krieger",
+      "name": "Methumiser Krieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_neethaner_kriegerin",
+      "name": "Neethaner Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_offizierin",
+      "name": "Offizierin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_philosophin",
+      "name": "Philosophin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_premer_kriegerin",
+      "name": "Premer Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_puniner_kriegerin",
+      "name": "Puniner Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rechtswahrer",
+      "name": "Rechtswahrer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rommilyser_kriegerin",
+      "name": "Rommilyser Kriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_klippag_schwertgeselle",
+      "name": "Klippag-Schwertgeselle",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schmied",
+      "name": "Schmied",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_seekriegerin",
+      "name": "Seekriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sippenkrieger",
+      "name": "Sippenkrieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_windhager_sippenkrieger",
+      "name": "Windhager Sippenkrieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_thorwaler_krieger",
+      "name": "Thorwaler Krieger",
+      "ap_value": "424 AP"
+    },
+    {
+      "id": "prof_soldatin",
+      "name": "Soldatin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_stammeskriegerin",
+      "name": "Stammeskriegerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tageloehner",
+      "name": "Tagelöhner",
+      "ap_value": 141,
+      "prerequisites": [],
+      "special_abilities": [
+        {
+          "name": "Sprachen und Schriften",
+          "ap_cost": 2
+        },
+        {
+          "name": "Fertigkeitsspezialisierung Kraftakt",
+          "ap_cost": 2
+        }
+      ],
+      "combat_techniques": {
+        "Hiebwaffen": 10,
+        "Raufen": 10
+      },
+      "talents": {
+        "koerper": {
+          "Klettern": 3,
+          "Körperbeherrschung": 5,
+          "Kraftakt": 7,
+          "Selbstbeherrschung": 3,
+          "Sinnesschärfe": 3,
+          "Zechen": 4
+        },
+        "gesellschaft": {
+          "Überreden": 2,
+          "Willenskraft": 2
+        },
+        "natur": {
+          "Fesseln": 2,
+          "Orientierung": 3
+        },
+        "wissen": {
+          "Brett- & Glücksspiel": 3,
+          "Götter & Kulte": 2,
+          "Rechnen": 2,
+          "Sagen & Legenden": 3
+        },
+        "handwerk": {
+          "Holzbearbeitung": 4,
+          "Steinbearbeitung": 4
+        }
+      },
+      "recommended_advantages": [
+        "Hitzeresistenz",
+        "Hohe Zähigkeit",
+        "Unscheinbar",
+        "Zäher Hund"
+      ],
+      "recommended_disadvantages": [
+        "Angst vor (Höhe)",
+        "Arm",
+        "Pech",
+        "Pechmagnet",
+        "Persönlichkeitsschwächen (Spielsucht, Verschwendungssucht)",
+        "Schlechte Eigenschaften (Aberglaube)",
+        "Unfähig in Wissenstalenten",
+        "Unfrei",
+        "Verstümmelt (für die Arbeit irrelevante Gliedmaßen)"
+      ],
+      "unsuitable_advantages": [
+        "Adel",
+        "Reich"
+      ],
+      "unsuitable_disadvantages": [
+        "Behäbig",
+        "Fettleibig",
+        "Verstümmelt (für die Arbeit relevante Gliedmaßen)",
+        "Zerbrechlich"
+      ],
+      "variants": [
+        {
+          "name": "Bergmann/-frau oder Bauhelfer/in",
+          "ap_value": 148,
+          "modifications": {
+            "combat_techniques": {
+              "Hiebwaffen": 11
+            },
+            "talents": {
+              "Steinbearbeitung": 6
+            }
+          }
+        },
+        {
+          "name": "Fuhrmann/-frau",
+          "ap_value": 144,
+          "modifications": {
+            "special_abilities_replacement": {
+              "from": "Fertigkeitsspezialisierung Kraftakt",
+              "to": "Fertigkeitsspezialisierung Fahrzeuge"
+            },
+            "talents": {
+              "Kraftakt": 3,
+              "Reiten": 3,
+              "Fahrzeuge": 6
+            }
+          }
+        },
+        {
+          "name": "Lastenträger/in",
+          "ap_value": 157,
+          "modifications": {
+            "talents": {
+              "Kraftakt": 8,
+              "Etikette": 3,
+              "Orientierung": 5
+            }
+          }
+        },
+        {
+          "name": "Palmschneider/in",
+          "ap_value": 157,
+          "modifications": {
+            "special_abilities_replacement": {
+              "from": "Fertigkeitsspezialisierung Kraftakt",
+              "to": "Fertigkeitsspezialisierung Klettern"
+            },
+            "combat_techniques": {
+              "Schwerter": 10
+            },
+            "talents": {
+              "Klettern": 7,
+              "Kraftakt": 4,
+              "Fesseln": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "prof_tulamidischer_balayan",
+      "name": "Tulamidischer Balayan",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wildniskundiger",
+      "name": "Wildniskundiger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_wirtin",
+      "name": "Wirtin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_xorloscher_drachenkaempfer",
+      "name": "Xorloscher Drachenkämpfer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_blutkrieger",
+      "name": "Blutkrieger",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nipakau_kocan",
+      "name": "Nipakau-kocan (Tahaya-Geisterkrieger)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_konzil_der_elemente_drakonia_erzelementarist",
+      "name": "Graumagier des Konzils der Elemente zu Drakonia (Erzelementarist)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_konzil_der_elemente_drakonia_eiselementarist",
+      "name": "Graumagier des Konzils der Elemente zu Drakonia (Eiselementarist)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_konzil_der_elemente_drakonia_feuerelementarist",
+      "name": "Graumagier des Konzils der Elemente zu Drakonia (Feuerelementarist)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_konzil_der_elemente_drakonia_humuselementarist",
+      "name": "Graumagier des Konzils der Elemente zu Drakonia (Humuselementarist)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_konzil_der_elemente_drakonia_luftelementarist",
+      "name": "Graumagier des Konzils der Elemente zu Drakonia (Luftelementarist)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_konzil_der_elemente_drakonia_wasserelementarist",
+      "name": "Graumagier des Konzils der Elemente zu Drakonia (Wasserelementarist)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_konzil_der_elemente_drakonia_pfad_des_experimentalisten",
+      "name": "Konzils der Elemente zu Drakonia - Pfad des Experimentalisten",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_konzil_der_elemente_drakonia_pfad_der_feldforschung",
+      "name": "Konzils der Elemente zu Drakonia - Pfad des Feldforschung",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_former",
+      "name": "Former",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_bannakademie_fasar",
+      "name": "Gildenloser Magier der Bannakademie von Fasar",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bannakademie_fasar_pfad_des_dieners",
+      "name": "Bannakademie von Fasar - Pfad des Dieners",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bannakademie_fasar_pfad_des_waechters",
+      "name": "Bannakademie von Fasar - Pfad des Wächters",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_halle_der_winde_olport",
+      "name": "Gildenloser Magier der Halle der Winde zu Olport",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_winde_olport_pfad_der_kapermagierin",
+      "name": "Halle der Winde zu Olport- Pfad der Kapermagierin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_winde_olport_pfad_der_windruferin",
+      "name": "Halle der Winde zu Olport- Pfad der Windruferin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenlose_magierin_heptagonakademie_yol_ghurmak",
+      "name": "Gildenlose Magierin der Heptagonakademie zu Yol-Ghurmak",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_heptagonakademie_yol_ghurmak_pfad_der_chimaerologie",
+      "name": "Heptagonakademie zu Yol-Ghurmak - Pfad der Chimärologie",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_heptagonakademie_yol_ghurmak_pfad_der_nekromantie",
+      "name": "Heptagonakademie zu Yol-Ghurmak - Pfad der Nekromantie",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_kreis_der_einfuehlung",
+      "name": "Gildenloser Magier des Kreises der Einfühlung",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kreis_der_einfuehlung_einfuehlungs_zweig",
+      "name": "Kreis der Einfühlung - Einfühlungs-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kreis_der_einfuehlung_wildnis_zweig",
+      "name": "Kreis der Einfühlung - Wildnis-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_schule_des_direkten_weges_gerasim",
+      "name": "Graumagier (Schule des Direkten Weges zu Gerasim)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_des_direkten_weges_gerasim_menschlicher_zweig",
+      "name": "Schule des Direkten Weges zu Gerasim - Menschlicher Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_des_direkten_weges_gerasim_elfischer_zweig",
+      "name": "Schule des Direkten Weges zu Gerasim - Elfischer Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenlose_magierin_magierkolleg_honingen",
+      "name": "Gildenlose Magierin des Magierkollegs zu Honingen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_magierkolleg_honingen_pfad_der_gemeinschaft",
+      "name": "Magierkolleg zu Honingen - Pfad der Gemeinschaft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_magierkolleg_honingen_pfad_der_vielfalt",
+      "name": "Magierkolleg zu Honingen - Pfad der Vielfalt",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_gildenloser_magier_seminar_donnerbach",
+      "name": "Gildenloser Magier des Seminars der elfischen Verständigung und natürlichen Heilung zu Donnerbach",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_seminar_donnerbach_heiler_zweig",
+      "name": "Seminars der elfischen Verständigung und natürlichen Heilung zu Donnerbach - Heiler-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_seminar_donnerbach_verstaendigungs_zweig",
+      "name": "Seminars der elfischen Verständigung und natürlichen Heilung zu Donnerbach - Verständigungs-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagierin_al_achami_fasar",
+      "name": "Schwarzmagierin (Al'Achami zu Fasar)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_geistigen_kraft_fasar_pfad_der_harten_hand",
+      "name": "Akademie der Geistigen Kraft zu Fasar - Pfad der harten Hand",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_geistigen_kraft_fasar_pfad_der_weichen_hand",
+      "name": "Akademie der Geistigen Kraft zu Fasar - Pfad der weichen Hand",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_qabaloth_der_toechter_niobaras",
+      "name": "Qabaloth der Töchter Niobaras",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_toechter_niobaras_weg_der_geheimnisse",
+      "name": "Töchter Niobaras - Weg der Geheimnisse",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_toechter_niobaras_weg_der_offenbarung",
+      "name": "Töchter Niobaras - Weg der Offenbarung",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mendener_magier",
+      "name": "Mendener Magier",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_akademie_der_geistreisen_belhanka",
+      "name": "Graumagierin der Akademie der Geistreisen zu Belhanka",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_geistreisen_belhanka_pfad_der_bewegung",
+      "name": "Akademie der Geistreisen zu Belhanka - Pfad der Bewegung",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_geistreisen_belhanka_pfad_der_reise",
+      "name": "Akademie Geistreisen zu Belhanka - Pfad der Reise",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_schule_der_verformungen_lowangen",
+      "name": "Graumagierin (Schule der Verformungen zu Lowangen)",
+      "ap_value": "310 AP"
+    },
+    {
+      "id": "prof_akademie_der_verformungen_lowangen_heilkunst_zweig",
+      "name": "Akademie der Verformungen zu Lowangen - Heilkunst-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_verformungen_lowangen_verwandlungs_zweig",
+      "name": "Akademie der Verformungen zu Lowangen - Verwandlungs-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagier_halle_der_macht_lowangen",
+      "name": "Schwarzmagier der Halle der Macht zu Lowangen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_macht_lowangen_pfad_der_beherrschung",
+      "name": "Halle der Macht zu Lowangen - Pfad der Beherrschung",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_macht_lowangen_pfad_der_willenskraft",
+      "name": "Halle der Macht zu Lowangen - Pfad der Willenskraft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_akademie_wagenhalt",
+      "name": "Graumagierin der Akademie zu Wagenhalt",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_wagenhalt_pfad_des_personenschutzes",
+      "name": "Akademie zu Wagenhalt - Pfad des Personenschutzes",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_wagenhalt_pfad_des_festungsschutzes",
+      "name": "Akademie zu Wagenhalt - Pfad des Festungsschutzes",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_stoerrebrandt_kolleg_riva",
+      "name": "Graumagier des Stoerrebrandt-Kollegs zu Riva",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_stoerrebrandt_kolleg_riva_berater_zweig",
+      "name": "Stoerrebrandt-Kollegs zu Riva - Berater-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_stoerrebrandt_kolleg_riva_leibmagier_zweig",
+      "name": "Stoerrebrandt-Kollegs zu Riva - Leibmagier-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_drachenei_akademie_khunchom",
+      "name": "Graumagier der Drachenei-Akademie zu Khunchom",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_drachenei_akademie_khunchom_pfad_des_artefaktmagiers",
+      "name": "Drachenei-Akademie zu Khunchom - Pfad des Artefaktmagiers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_drachenei_akademie_khunchom_pfad_des_haendlers",
+      "name": "Drachenei-Akademie zu Khunchom - Pfad des Händlers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_halle_der_antimagie_kuslik",
+      "name": "Graumagier (Halle der Antimagie zu Kuslik)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_antimagie_kuslik_defensor_zweig",
+      "name": "Halle der Antimagie zu Kuslik - Defensor-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_antimagie_kuslik_contemplator_zweig",
+      "name": "Halle der Antimagie zu Kuslik - Contemplator-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_halle_des_quecksilbers_festum",
+      "name": "Graumagier der Halle des Quecksilbers zu Festum",
+      "ap_value": "297 AP"
+    },
+    {
+      "id": "prof_halle_des_quecksilbers_festum_pfad_des_stofflichen",
+      "name": "Halle des Quecksilbers zu Festum - Pfad des Stofflichen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_des_quecksilbers_festum_pfad_des_verborgenen",
+      "name": "Halle des Quecksilbers zu Festum - Pfad des Verborgenen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_halle_des_vollendeten_kampfes_bethana",
+      "name": "Graumagierin der Halle der vollendeten Kampfes zu Bethana",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_des_vollendeten_kampfes_bethana_pfad_des_koerpers",
+      "name": "Halle der vollendeten Kampfes zu Bethana - Pfad des Körpers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_des_vollendeten_kampfes_bethana_pfad_des_willens",
+      "name": "Halle der vollendeten Kampfes zu Bethana - Pfad des Willens",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_kampfseminar_andergast",
+      "name": "Graumagier des Kampfseminars zu Andergast",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kampfseminar_andergast_pfad_des_krieges",
+      "name": "Kampfseminars zu Andergast - Pfad des Krieges",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kampfseminar_andergast_pfad_der_zerstoerung",
+      "name": "Kampfseminars zu Andergast - Pfad der Zerstörung",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_akademie_von_licht_und_dunkelheit_nostria",
+      "name": "Weißmagier (Akademie von Licht und Dunkelheit zu Nostria)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_von_licht_und_dunkelheit_nostria_pfad_der_dunkelheit",
+      "name": "Akademie von Licht und Dunkelheit zu Nostria - Pfad der Dunkelheit",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_von_licht_und_dunkelheit_nostria_pfad_des_lichts",
+      "name": "Akademie von Licht und Dunkelheit zu Nostria - Pfad des Lichts",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_pentagramm_akademie_rashdul",
+      "name": "Graumagierin der Pentagramm-Akademie zu Rashdul",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_pentagramm_akademie_rashdul_pfad_des_erdbaendigers",
+      "name": "Pentagramm-Akademie zu Rashdul - Pfad des Erdbändigers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_pentagramm_akademie_rashdul_pfad_des_luftbaendigers",
+      "name": "Pentagramm-Akademie zu Rashdul - Pfad des Luftbändigers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_schule_der_beherrschung_neersand",
+      "name": "Graumagierin der Schule der Beherrschung zu Neersand",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_beherrschung_neersand_pfad_des_friedens",
+      "name": "Schule der Beherrschung zu Neersand - Pfad des Friedens",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_beherrschung_neersand_pfad_des_zwanges",
+      "name": "Schule der Beherrschung zu Neersand - Pfad des Zwanges",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_schule_der_hellsicht_thorwal",
+      "name": "Graumagier (Schule der Hellsicht zu Thorwal)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_hellsicht_thorwal_philosophen_zweig",
+      "name": "Schule der Hellsicht zu Thorwal - Philosophen-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_hellsicht_thorwal_reisender_zweig",
+      "name": "Schule der Hellsicht zu Thorwal - Reisender-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_schule_des_seienden_scheins_zorgan",
+      "name": "Graumagier (Schule des Seienden Scheins zu Zorgan)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_des_seienden_scheins_zorgan_gaukler_zweig",
+      "name": "Schule des Seienden Scheins zu Zorgan - Gaukler-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_des_seienden_scheins_zorgan_hofkuenstler_zweig",
+      "name": "Schule des Seienden Scheins zu Zorgan - Hofkünstler-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagierin_schule_der_vierfachen_verwandlung_sinoda",
+      "name": "Graumagierin (Schule der Vierfachen Verwandlung zu Sinoda)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_vierfachen_verwandlung_sinoda_selbstverwandler_zweig",
+      "name": "Schule der Vierfachen Verwandlung zu Sinoda - Selbstverwandler-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_vierfachen_verwandlung_sinoda_fremdverwandler_zweig",
+      "name": "Schule der Vierfachen Verwandlung zu Sinoda - Fremdverwandler-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_qabaloth_der_erben_der_graeber",
+      "name": "Qabaloth der Erben der Gräber",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagierin_dunkle_halle_der_geister_brabak",
+      "name": "Schwarzmagierin der Dunklen Halle der Geister zu Brabak",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_dunkle_halle_der_geister_brabak_pfad_des_daemonenbeschwoerers",
+      "name": "Dunkle Halle der Geister zu Brabak - Pfad des Dämonenbeschwörers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_dunkle_halle_der_geister_brabak_pfad_des_sphaerologen",
+      "name": "Dunkle Halle der Geister zu Brabak - Pfad des Sphärologen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagier_halle_der_erleuchtung_al_anfa",
+      "name": "Schwarzmagier (Halle der Erleuchtung zu Al'Anfa)",
+      "ap_value": "345 AP"
+    },
+    {
+      "id": "prof_halle_der_erleuchtung_al_anfa_leibmagier_zweig",
+      "name": "Halle der Erleuchtung zu Al'Anfa - Leibmagier-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_erleuchtung_al_anfa_seekrieg_zweig",
+      "name": "Halle der Erleuchtung zu Al'Anfa - Seekrieg-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schwarzmagierin_schule_der_variablen_form_mirham",
+      "name": "Schwarzmagierin der Schule der variablen Form zu Mirham",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_variablen_form_mirham_pfad_des_golems",
+      "name": "Schule der variablen Form zu Mirham - Pfad des Golems",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_variablen_form_mirham_pfad_des_schattens",
+      "name": "Schule der variablen Form zu Mirham - Pfad des Schattens",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagierin_akademie_der_herrschaft_elenvina",
+      "name": "Weißmagierin der Akademie der Herrschaft zu Elenvina",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_herrschaft_elenvina_pfad_der_herrschaft",
+      "name": "Akademie der Herrschaft zu Elenvina - Pfad der Herrschaft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_herrschaft_elenvina_pfad_der_widerstandskraft",
+      "name": "Akademie der Herrschaft zu Elenvina - Pfad der Widerstandskraft",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagierin_akademie_der_magischen_ruestung_gareth",
+      "name": "Weißmagierin der Akademie der magischen Rüstung zu Gareth",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_magischen_ruestung_gareth_pfad_des_leibwaechters",
+      "name": "Akademie der magischen Rüstung zu Gareth - Pfad des Leibwächters",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_der_magischen_ruestung_gareth_pfad_des_beraters",
+      "name": "Akademie der magischen Rüstung zu Gareth - Pfad des Beraters",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_schwert_und_stab_beilunk",
+      "name": "Weißmagier (Schwert & Stab Akademie zu Beilunk)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_schwert_und_stab_gareth",
+      "name": "Weißmagier (Schwert & Stab Akademie zu Gareth)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_schwert_und_stab_gareth_schwert_zweig",
+      "name": "Akademie Schwert und Stab zu Gareth - Schwert-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_akademie_schwert_und_stab_gareth_stab_zweig",
+      "name": "Akademie Schwert und Stab zu Gareth - Stab-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_bannakademie_ysilia",
+      "name": "Weißmagier (Bannakademie zu Ysilia)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_graumagier_illusions_akademie_mendena",
+      "name": "Graumagier (Illusions-Akademie zu Mendena)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagierin_anatomische_akademie_vinsalt",
+      "name": "Weißmagierin der Anatomischen Akademie zu Vinsalt",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_anatomische_akademie_vinsalt_pfad_der_kosmetik",
+      "name": "Anatomischen Akademie zu Vinsalt - Pfad der Kosmetik",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_anatomische_akademie_vinsalt_pfad_der_venenik",
+      "name": "Anatomischen Akademie zu Vinsalt - Pfad der Venenik",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_halle_des_lebens_norburg",
+      "name": "Weißmagier der Halle des Lebens zu Norburg",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_des_lebens_norburg_pfad_der_alchimie",
+      "name": "Halle des Lebens zu Norburg - Pfad der Alchimie",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_des_lebens_norburg_pfad_der_kraeuterkunde",
+      "name": "Halle des Lebens zu Norburg - Pfad der Kräuterkunde",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagierin_halle_der_metamorphosen_kuslik",
+      "name": "Weißmagierin der Halle der Metamorphosen zu Kuslik",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_metamorphosen_kuslik_pfad_der_gehaeuteten_schlange",
+      "name": "Halle der Metamorphosen zu Kuslik - Pfad der gehäutetem Schlange",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_halle_der_metamorphosen_kuslik_pfad_der_giftigen_schlange",
+      "name": "Halle der Metamorphosen zu Kuslik - Pfad der giftigen Schlange",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_informations_institut_rommilys",
+      "name": "Weißmagier des Informations-Instituts zu Rommilys",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_informations_institut_rommilys_pfad_des_inspektors",
+      "name": "Informations-Institut zu Rommilys - Pfad des Inspektors",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_informations_institut_rommilys_pfad_des_kryptographen",
+      "name": "Informations-Institut zu Rommilys - Pfad des Kryptographen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagierin_schule_der_austreibung_perricum",
+      "name": "Weißmagierin (Schule der Austreibung)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_austreibung_perricum_exorzisten_zweig",
+      "name": "Schule der Austreibung zu Perricum - Exorzisten-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_der_austreibung_perricum_seelenheiler_zweig",
+      "name": "Schule der Austreibung zu Perricum - Seelenheiler-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_weissmagier_schule_des_magischen_wissens_methumis",
+      "name": "Weißmagier der Schule des magischen Wissens zu Methumis",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_des_magischen_wissens_methumis_feldforscher_zweig",
+      "name": "Schule des magischen Wissens zu Methumis - Feldforscher-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schule_des_magischen_wissens_methumis_theoretiker_zweig",
+      "name": "Schule des magischen Wissens zu Methumis - Theoretiker-Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_affenhexen",
+      "name": "Affenhexen",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_eulenhexe",
+      "name": "Eulenhexe (Schwesternschaft: Verschwiegene Schwesternschaft)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nostrische_eulenhexe",
+      "name": "Nostrische Eulenhexe (Verschwiegene Schwesternschaft)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_katzenhexe",
+      "name": "Katzenhexe (Schwesternschaft: Schöne der Nacht)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_kroetenhexe",
+      "name": "Krötenhexe (Schwesternschaft: Töchter der Erde)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rabenhexe",
+      "name": "Rabenhexe (Schwesternschaft: Seherinnen von Heute und Morgen)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schlangenhexe",
+      "name": "Schlangenhexe (Schwesternschaft: Schwestern des Wissens)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nostrische_schlangenhexe",
+      "name": "Nostrische Schlangenhexe (Schwesternschaft des Wissens)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_spinnenhexe",
+      "name": "Spinnenhexe (Schwesternschaft: Schwarze Witwen)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ceoladir",
+      "name": "Ceoladir",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_satuduraki",
+      "name": "Satuduraki",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_intuitiver_zauberer",
+      "name": "Intuitiver Zauberer (Magischer Taugenichts)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_scharlatan",
+      "name": "Scharlatan",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_schelmin",
+      "name": "Schelmin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ysilische_bannzeichnerin",
+      "name": "Ysilische Bannzeichnerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_zibilja",
+      "name": "Zibilja",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_praiosgeweihte",
+      "name": "Praiosgeweihte",
+      "ap_value": "242 AP"
+    },
+    {
+      "id": "prof_legalist",
+      "name": "Legalist/-in",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rondrageweihte",
+      "name": "Rondrageweihte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_traditionalist",
+      "name": "Traditionalist/-in",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_salutarist",
+      "name": "Salutarist/-in",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_honore",
+      "name": "Honore/-in",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_traviageweihter",
+      "name": "Traviageweihter",
+      "ap_value": "224 AP"
+    },
+    {
+      "id": "prof_borongeweihter",
+      "name": "Borongeweihter",
+      "ap_value": "285 AP"
+    },
+    {
+      "id": "prof_diener_golgaris",
+      "name": "Diener/-in Golgaris",
+      "ap_value": "285 AP"
+    },
+    {
+      "id": "prof_diener_bishdariels",
+      "name": "Diener/-in Bishdariels",
+      "ap_value": "285 AP"
+    },
+    {
+      "id": "prof_firungeweihter",
+      "name": "Firungeweihter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tsageweihte",
+      "name": "Tsageweihte",
+      "ap_value": "292 AP"
+    },
+    {
+      "id": "prof_phexgeweihter",
+      "name": "Phexgeweihter",
+      "ap_value": "304 AP"
+    },
+    {
+      "id": "prof_perainegeweihter",
+      "name": "Perainegeweihter",
+      "ap_value": "290 AP"
+    },
+    {
+      "id": "prof_saeer",
+      "name": "Säer/-in",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_heiler_geweihter",
+      "name": "Heiler/-in (Geweihte)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_artefaktmagier_brillant",
+      "name": "Artefaktmagier (brillant)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_intuitiver_zauberschmied_brillant",
+      "name": "Intuitiver Zauberschmied (brillant)",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ingerimmgeweihte",
+      "name": "Ingerimmgeweihte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_avesgeweihte",
+      "name": "Avesgeweihte",
+      "ap_value": "342 AP"
+    },
+    {
+      "id": "prof_korgeweihter",
+      "name": "Korgeweihter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_marbopriester",
+      "name": "Marbopriester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nandusgeweihte",
+      "name": "Nandusgeweihte",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_angroschpriester",
+      "name": "Angroschpriester",
+      "ap_value": "329 AP"
+    },
+    {
+      "id": "prof_graveshpriester",
+      "name": "Graveshpriester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_nivesenschamane",
+      "name": "Nivesenschamane",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_namenloser_geweihter",
+      "name": "Namenloser-Geweihter",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_numinorupriester",
+      "name": "Numinorupriester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rikaipriester",
+      "name": "Rikaipriester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_shinxirpriester",
+      "name": "Shinxirpriester",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_trollzackerschamanin",
+      "name": "Trollzackerschamanin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_fjarningerschamanin",
+      "name": "Fjarningerschamanin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_tairachschamane",
+      "name": "Tairachschamane",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ardarit",
+      "name": "Ardarit",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rondrageweihter_ardarit",
+      "name": "Rondrageweihter Ardarit",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_badilakanerin",
+      "name": "Badilakanerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bannstrahler",
+      "name": "Bannstrahler",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_praiosgeweihter_bannstrahler",
+      "name": "Praiosgeweihter Bannstrahler",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_bruder_des_lodernden_feuers",
+      "name": "Bruder des Lodernden Feuers",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_buendlerin_des_wahren_glaubens",
+      "name": "Bündlerin des Wahren Glaubens",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_draconiterin",
+      "name": "Draconiterin",
+      "ap_value": "248 AP"
+    },
+    {
+      "id": "prof_arkaner_zweig",
+      "name": "Arkaner Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sakraler_zweig",
+      "name": "Sakraler Zweig",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_etilianer",
+      "name": "Etilianer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_golgaritin",
+      "name": "Golgaritin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_untotenjaeger",
+      "name": "Untotenjäger/in",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_borongeweihte_golgaritin",
+      "name": "Borongeweihte Golgaritin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_mitglied_des_dreischwesternordens",
+      "name": "Mitglied des Dreischwesternordens",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_noionit",
+      "name": "Noionit",
+      "ap_value": "291 AP"
+    },
+    {
+      "id": "prof_ordenskriegerin_der_al_drakorhim",
+      "name": "Ordenskriegerin der Al'Drakorhim",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ordensmitglied_der_beni_fessiri",
+      "name": "Ordensmitglied der Beni Fessiri",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ordenskriegerin_der_beni_uchakani",
+      "name": "Ordenskriegerin der Beni Uchakâni",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rabengardistin",
+      "name": "Rabengardistin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rhodensteinerin",
+      "name": "Rhodensteinerin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_rahjageweihter_saebeltaenzer",
+      "name": "Rahjageweihter Säbeltänzer",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_sonnenlegionaerin",
+      "name": "Sonnenlegionärin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_therbunit",
+      "name": "Therbûnit",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_ucuriatin",
+      "name": "Ucuriatin",
+      "ap_value": "Var."
+    },
+    {
+      "id": "prof_yppolitanerin",
+      "name": "Yppolitanerin",
+      "ap_value": "Var."
+    }
+  ],
+  "required": [
+    "profession_packages"
+  ]
+}

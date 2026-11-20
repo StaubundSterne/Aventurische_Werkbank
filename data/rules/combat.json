@@ -1,0 +1,283 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DSA 5 – Kampfregelreferenz",
+  "description": "Integrierte Schema- und Datenreferenz für DSA-5-Kampfregeln.",
+  "definitions": {
+    "combatRules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "description",
+        "attributeRules",
+        "combatTechniques",
+        "combatModifiers"
+      ],
+      "properties": {
+        "id": {
+          "const": "DSA5_COMBAT_RULES"
+        },
+        "version": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "attributeRules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "attackDefault",
+            "attackWhips",
+            "rangedDefault",
+            "higherOfGEorKK"
+          ],
+          "properties": {
+            "attackDefault": {
+              "const": "MU"
+            },
+            "attackWhips": {
+              "const": "FF"
+            },
+            "rangedDefault": {
+              "const": "FF"
+            },
+            "higherOfGEorKK": {
+              "const": true
+            }
+          }
+        },
+        "combatTechniques": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "name",
+              "attackAttribute",
+              "parryAttribute",
+              "ranged"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^CT_[A-Z0-9_]+$"
+              },
+              "name": {
+                "type": "string"
+              },
+              "attackAttribute": {
+                "enum": ["MU", "FF"]
+              },
+              "parryAttribute": {
+                "enum": ["GE", "KK", "GE_KK", null]
+              },
+              "ranged": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "combatModifiers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "parryRounding",
+            "pain",
+            "multipleDefense"
+          ],
+          "properties": {
+            "parryRounding": {
+              "const": "ceil"
+            },
+            "pain": {
+              "type": "object",
+              "required": ["penaltyPerLevel"],
+              "properties": {
+                "penaltyPerLevel": {
+                  "const": -1
+                }
+              }
+            },
+            "multipleDefense": {
+              "type": "object",
+              "required": [
+                "penaltyPerAdditionalDefense",
+                "firstDefensePenalty",
+                "resetEachRound",
+                "affectsBaseValue"
+              ],
+              "properties": {
+                "penaltyPerAdditionalDefense": {
+                  "const": -3
+                },
+                "firstDefensePenalty": {
+                  "const": 0
+                },
+                "resetEachRound": {
+                  "const": true
+                },
+                "affectsBaseValue": {
+                  "const": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "data": {
+    "id": "DSA5_COMBAT_RULES",
+    "version": "1.0.0",
+    "description": "Kampfregelreferenz für DSA 5.",
+    "attributeRules": {
+      "attackDefault": "MU",
+      "attackWhips": "FF",
+      "rangedDefault": "FF",
+      "higherOfGEorKK": true
+    },
+    "combatTechniques": [
+      {
+        "id": "CT_DAGGERS",
+        "name": "Dolche",
+        "attackAttribute": "MU",
+        "parryAttribute": "GE",
+        "ranged": false
+      },
+      {
+        "id": "CT_FANS",
+        "name": "Fächer",
+        "attackAttribute": "MU",
+        "parryAttribute": "GE",
+        "ranged": false
+      },
+      {
+        "id": "CT_FENCING_WEAPONS",
+        "name": "Fechtwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": "GE",
+        "ranged": false
+      },
+      {
+        "id": "CT_IMPACT_WEAPONS",
+        "name": "Hiebwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_CHAIN_WEAPONS",
+        "name": "Kettenwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_LANCES",
+        "name": "Lanzen",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_SHIELDS",
+        "name": "Schilde",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_POLEARMS",
+        "name": "Spießwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_TWO_HANDED_SWORDS",
+        "name": "Zweihandschwerter",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_TWO_HANDED_IMPACT",
+        "name": "Zweihandhiebwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": "KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_BRAWLING",
+        "name": "Raufen",
+        "attackAttribute": "MU",
+        "parryAttribute": "GE_KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_SWORDS",
+        "name": "Schwerter",
+        "attackAttribute": "MU",
+        "parryAttribute": "GE_KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_POLEARMS_GENERAL",
+        "name": "Stangenwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": "GE_KK",
+        "ranged": false
+      },
+      {
+        "id": "CT_WHIP",
+        "name": "Peitschen",
+        "attackAttribute": "FF",
+        "parryAttribute": null,
+        "ranged": false
+      },
+      {
+        "id": "CT_BOWS",
+        "name": "Bogen",
+        "attackAttribute": "MU",
+        "parryAttribute": null,
+        "ranged": true
+      },
+      {
+        "id": "CT_THROWING_WEAPONS",
+        "name": "Wurfwaffen",
+        "attackAttribute": "MU",
+        "parryAttribute": null,
+        "ranged": true
+      },
+      {
+        "id": "CT_CROSSBOWS",
+        "name": "Armbrüste",
+        "attackAttribute": "MU",
+        "parryAttribute": null,
+        "ranged": true
+      },
+      {
+        "id": "CT_SLINGS",
+        "name": "Schleudern",
+        "attackAttribute": "MU",
+        "parryAttribute": null,
+        "ranged": true
+      }
+    ],
+    "combatModifiers": {
+      "parryRounding": "ceil",
+      "pain": {
+        "penaltyPerLevel": -1
+      },
+      "multipleDefense": {
+        "penaltyPerAdditionalDefense": -3,
+        "firstDefensePenalty": 0,
+        "resetEachRound": true,
+        "affectsBaseValue": false
+      }
+    }
+  }
+}

@@ -65,7 +65,10 @@
         "motivation": "Der Donnergöttin Rondra mit vollkommener Hingabe dienen, den Ehrenkodex in Wort und Tat leben und die Schwachen beschützen."
     },
     "stats": {
-        "experience-level": "Erfahren",
+        "experience-level": {
+            "id": "EL_3",
+            "title": "Erfahren"
+        },
         "attributes": {
             "MU": 14,
             "KL": 11,
@@ -76,46 +79,118 @@
             "KO": 13,
             "KK": 13
         },
-        "energies": {
-            "LeP": 34,
-            "AsP": 0,
-            "KaP": 28
+        "advantages": [],
+        "disadvantages": [],
+        "abilities": {
+            "talents": [
+                {
+                    "title": "Götter und Kulte",
+                    "instance-id": "c1bff8ca-ed49-4194-b017-2d3f0fd9047c",
+                    "FW": 8
+                },
+                {
+                    "title": "Körperbeherrschung",
+                    "instance-id": "d187b51e-e4b6-443f-b88c-c6312cb8dec6",
+                    "FW": 9
+                },
+                {
+                    "title": "Selbstbeherrschung",
+                    "instance-id": "75090ea9-651c-4676-9305-6aa337cc4ac8",
+                    "FW": 10
+                },
+                {
+                    "title": "Kraftakt",
+                    "instance-id": "e8a31f72-5c49-4d06-9b25-71c4f0a82e63",
+                    "FW": 8
+                }
+            ],
+            "liturgies": [
+                {
+                    "title": "Kleiner Schutzsegen",
+                    "instance-id": "b42d7e19-8f63-4c51-ae02-6d9b3f75c814",
+                    "FW": 4
+                },
+                {
+                    "title": "Ehrenhaftigkeit",
+                    "instance-id": "9c6f2a83-1d47-4e90-b5c8-32a71f06d459",
+                    "FW": 5
+                }
+            ],
+            "combat-techniques": [
+                {
+                    "instance-id": "7f3a9c21-6d84-4b52-ae19-83c7d05f2b61",
+                    "title": "Schwerter",
+                    "KTW": 10,
+                    "AT": 12,
+                    "PA": 6
+                },
+                {
+                    "id": "CT_3",
+                    "instance-id": "b71c3e92-4a85-46d0-9f21-8c5a2e7d6134",
+                    "title": "Dolche",
+                    "KTW": 8
+                },
+                {
+                    "id": "CT_9",
+                    "instance-id": "d42a8f61-7c39-4e15-b206-5f1d9a3c7482",
+                    "title": "Raufen",
+                    "KTW": 6
+                }
+            ],
+            "special-abilities": []
+        },
+        "derived-stats": {
+            "LE": 34,
+            "AE": 0,
+            "KE": 28,
+            "AW": 7,
+            "INI": 14,
+            "GS": 8
+        },
+        "combat-stats": {
+            "armour-protection": 4,
+            "encumbrance": 2,
+            "pain-level": 0,
+            "weapons": [
+                {
+                    "instance-id": "72b0159e-c171-4e7d-ae72-135064c43736",
+                    "title": "Schwert",
+                    "active-weapon": true,
+                    "combat-technique": "Schwerter",
+                    "hitpoints": "1W6+4",
+                    "conductive-attribute": "GE",
+                    "damage-threshold": 14,
+                    "attack-modifier": 0,
+                    "parry-modifier": 0,
+                    "melee-weapon-reach": "mittel",
+                    "reload-time": 0
+                },
+                {
+                    "instance-id": "c1d8a5f2-7b43-4e96-a021-6f9c3d8b5247",
+                    "title": "Waffenlos",
+                    "active-weapon": false,
+                    "combat-technique": "Raufen",
+                    "hitpoints": "1W6",
+                    "conductive-attribute": "GE/KK",
+                    "damage-threshold": 14,
+                    "attack-modifier": 0,
+                    "parry-modifier": 0,
+                    "melee-weapon-reach": "kurz"
+                },
+                {
+                    "instance-id": "e4a2b761-9c35-48d0-b812-5f6a3e7c1948",
+                    "title": "Schwerer Dolch",
+                    "active-weapon": false,
+                    "combat-technique": "Dolche",
+                    "hitpoints": "1W6+2",
+                    "conductive-attribute": "GE",
+                    "damage-threshold": 14,
+                    "attack-modifier": 0,
+                    "parry-modifier": -1,
+                    "melee-weapon-reach": "kurz"
+                }
+            ]
         }
-    },
-    "abilities": {
-        "talents": [
-            {
-                "name": "Schwerter",
-                "FW": 10
-            },
-            {
-                "name": "Religionskunde",
-                "FW": 8
-            },
-            {
-                "name": "Körperbeherrschung",
-                "FW": 9
-            },
-            {
-                "name": "Selbstbeherrschung",
-                "FW": 10
-            },
-            {
-                "name": "Athletik",
-                "FW": 8
-            }
-        ],
-        "spells": [],
-        "liturgies": [
-            {
-                "name": "Segen der Tapferkeit",
-                "FW": 4
-            },
-            {
-                "name": "Ehrenvoller Zweikampf",
-                "FW": 5
-            }
-        ]
     },
     "session-notes": ""
 }

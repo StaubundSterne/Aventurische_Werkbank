@@ -1,0 +1,565 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DSA 5 - Spezies",
+  "description": "Regelreferenz der Spezies für die Aventurische Werkbank. Die Datei enthält Grundwerte, Attributsmodifikationen sowie Verweise auf automatisch gewährte Vor- und Nachteile.",
+  "schema": {
+    "type": "object",
+    "required": [
+      "species"
+    ],
+    "properties": {
+      "species": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "LE",
+            "SK",
+            "ZK",
+            "GS",
+            "attribute_adjustments",
+            "advantages",
+            "disadvantages",
+            "ap_value"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "LE": {
+              "type": "integer"
+            },
+            "SK": {
+              "type": "integer"
+            },
+            "ZK": {
+              "type": "integer"
+            },
+            "GS": {
+              "type": "integer"
+            },
+            "attribute_adjustments": {
+              "type": "object",
+              "required": [
+                "fixed",
+                "choices"
+              ],
+              "properties": {
+                "fixed": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "attribute",
+                      "modifier"
+                    ],
+                    "properties": {
+                      "attribute": {
+                        "type": "string",
+                        "enum": [
+                          "MU",
+                          "KL",
+                          "IN",
+                          "CH",
+                          "FF",
+                          "GE",
+                          "KO",
+                          "KK"
+                        ]
+                      },
+                      "modifier": {
+                        "type": "integer"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "choices": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "count",
+                      "options"
+                    ],
+                    "properties": {
+                      "count": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "options": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "attribute",
+                            "modifier"
+                          ],
+                          "properties": {
+                            "attribute": {
+                              "type": "string",
+                              "enum": [
+                                "MU",
+                                "KL",
+                                "IN",
+                                "CH",
+                                "FF",
+                                "GE",
+                                "KO",
+                                "KK"
+                              ]
+                            },
+                            "modifier": {
+                              "type": "integer"
+                            }
+                          },
+                          "additionalProperties": false
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            },
+            "advantages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "disadvantages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "ap_value": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "data": {
+    "species": [
+      {
+        "id": "SPEC_ACH",
+        "name": "Achaz",
+        "LE": 5,
+        "SK": -4,
+        "ZK": -5,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "IN",
+              "modifier": 1
+            },
+            {
+              "attribute": "KO",
+              "modifier": 1
+            }
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "MU",
+                  "modifier": -1
+                },
+                {
+                  "attribute": "KK",
+                  "modifier": -1
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [
+          "ADV_6",
+          "WB_ADV_001"
+        ],
+        "disadvantages": [
+          "WB_DISADV_001"
+        ],
+        "ap_value": 25
+      },
+      {
+        "id": "R_2",
+        "name": "Elf",
+        "LE": 2,
+        "SK": -4,
+        "ZK": -6,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "IN",
+              "modifier": 1
+            },
+            {
+              "attribute": "GE",
+              "modifier": 1
+            }
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "KL",
+                  "modifier": -2
+                },
+                {
+                  "attribute": "KK",
+                  "modifier": -2
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [
+          "ADV_50",
+          "ADV_52"
+        ],
+        "disadvantages": [],
+        "ap_value": 18
+      },
+      {
+        "id": "SPEC_GOB",
+        "name": "Goblin",
+        "LE": 3,
+        "SK": -6,
+        "ZK": -5,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "FF",
+              "modifier": 1
+            },
+            {
+              "attribute": "GE",
+              "modifier": 1
+            }
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "MU",
+                  "modifier": -1
+                },
+                {
+                  "attribute": "KL",
+                  "modifier": -1
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [
+          "ADV_6",
+          "ADV_18",
+          "ADV_31"
+        ],
+        "disadvantages": [],
+        "ap_value": 5
+      },
+      {
+        "id": "R_3",
+        "name": "Halbelf",
+        "LE": 5,
+        "SK": -4,
+        "ZK": -6,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "MU",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "KL",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "IN",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "CH",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "FF",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "GE",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "KO",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "KK",
+                  "modifier": 1
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [],
+        "disadvantages": [],
+        "ap_value": 0
+      },
+      {
+        "id": "SPEC_HOR",
+        "name": "Halbork",
+        "LE": 6,
+        "SK": -6,
+        "ZK": -5,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "KO",
+              "modifier": 1
+            },
+            {
+              "attribute": "CH",
+              "modifier": -1
+            }
+          ],
+          "choices": []
+        },
+        "advantages": [
+          "ADV_49"
+        ],
+        "disadvantages": [],
+        "ap_value": 1
+      },
+      {
+        "id": "SPEC_HOL",
+        "name": "Holberker",
+        "LE": 6,
+        "SK": -6,
+        "ZK": -5,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "KL",
+              "modifier": -1
+            },
+            {
+              "attribute": "KO",
+              "modifier": 1
+            }
+          ],
+          "choices": []
+        },
+        "advantages": [
+          "ADV_49"
+        ],
+        "disadvantages": [],
+        "ap_value": 1
+      },
+      {
+        "id": "R_1",
+        "name": "Mensch",
+        "LE": 5,
+        "SK": -5,
+        "ZK": -5,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "MU",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "KL",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "IN",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "CH",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "FF",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "GE",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "KO",
+                  "modifier": 1
+                },
+                {
+                  "attribute": "KK",
+                  "modifier": 1
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [],
+        "disadvantages": [],
+        "ap_value": 0
+      },
+      {
+        "id": "SPEC_NAL",
+        "name": "Nachtalb",
+        "LE": 2,
+        "SK": -4,
+        "ZK": -6,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "IN",
+              "modifier": 1
+            },
+            {
+              "attribute": "GE",
+              "modifier": 1
+            }
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "KL",
+                  "modifier": -2
+                },
+                {
+                  "attribute": "KK",
+                  "modifier": -2
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [
+          "ADV_50",
+          "ADV_52"
+        ],
+        "disadvantages": [],
+        "ap_value": 18
+      },
+      {
+        "id": "SPEC_ORK",
+        "name": "Ork",
+        "LE": 8,
+        "SK": -6,
+        "ZK": -4,
+        "GS": 8,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "MU",
+              "modifier": 1
+            },
+            {
+              "attribute": "KO",
+              "modifier": 1
+            }
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "KL",
+                  "modifier": -1
+                },
+                {
+                  "attribute": "CH",
+                  "modifier": -1
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [],
+        "disadvantages": [],
+        "ap_value": 18
+      },
+      {
+        "id": "R_4",
+        "name": "Zwerg",
+        "LE": 8,
+        "SK": -4,
+        "ZK": -4,
+        "GS": 6,
+        "attribute_adjustments": {
+          "fixed": [
+            {
+              "attribute": "KO",
+              "modifier": 1
+            },
+            {
+              "attribute": "KK",
+              "modifier": 1
+            }
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "options": [
+                {
+                  "attribute": "CH",
+                  "modifier": -2
+                },
+                {
+                  "attribute": "GE",
+                  "modifier": -2
+                }
+              ]
+            }
+          ]
+        },
+        "advantages": [],
+        "disadvantages": [],
+        "ap_value": 61
+      }
+    ]
+  }
+}

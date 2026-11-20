@@ -14,8 +14,8 @@
         "social-state": "Frei"
     },
     "profession": {
-        "category": "Stadtgardist",
-        "specification": "Weibel der Stadtwache; zuständig für das Viertel 'Bunte Flucht' und die Kontzrollen an der Regenbogenbrücke.",
+        "category": "Rundhelm in Reichsend",
+        "specification": "Weibel der Rundhelme",
         "clerical": false,
         "magical": false,
         "noble": false
@@ -32,7 +32,7 @@
             "Fredegis"
         ],
         "injection-points": [
-            "Ardo schätzt Fredegis' forstliche Expertise; er hat ihn schon mehrmals als sachverständigen Zeugen bei Wilderei-Prozessen vor das Stadtgericht geladen."
+            "Lichterscheinungen im Finsterkamm"
         ]
     },
     "appearance": {
@@ -81,5 +81,5 @@
             }
         ]
     },
-    "session-notes": ""
+    "session-notes": "Wurde von den Botenreiter:innen Arleb und Eilika gegenüber Fredegis erwähnt."
 }

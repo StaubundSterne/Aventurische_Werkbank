@@ -1,0 +1,2623 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Heldenerschaffung für NSC-Erstellung",
+    "type": "object",
+    "properties": {
+        "max_values_character_creation": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "species_overview": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "cultures": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "ap_values_and_increases": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "cost_table": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "attribute_point_costs": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "foreign_spells_by_experience_level": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    },
+    "max_values_character_creation": [
+        {
+            "experience_level": "Unerfahren",
+            "ap_pool": 900,
+            "max_attribute": 12,
+            "max_skill": 10,
+            "max_combat_technique": 8,
+            "max_attribute_points": 95,
+            "max_spells_liturgies": 8,
+            "max_foreign_spells": 0
+        },
+        {
+            "experience_level": "Durchschnittlich",
+            "ap_pool": 1000,
+            "max_attribute": 13,
+            "max_skill": 10,
+            "max_combat_technique": 10,
+            "max_attribute_points": 98,
+            "max_spells_liturgies": 10,
+            "max_foreign_spells": 1
+        },
+        {
+            "experience_level": "Erfahren",
+            "ap_pool": 1100,
+            "max_attribute": 14,
+            "max_skill": 10,
+            "max_combat_technique": 12,
+            "max_attribute_points": 100,
+            "max_spells_liturgies": 12,
+            "max_foreign_spells": 2
+        },
+        {
+            "experience_level": "Kompetent",
+            "ap_pool": 1200,
+            "max_attribute": 15,
+            "max_skill": 13,
+            "max_combat_technique": 14,
+            "max_attribute_points": 102,
+            "max_spells_liturgies": 14,
+            "max_foreign_spells": 3
+        },
+        {
+            "experience_level": "Meisterlich",
+            "ap_pool": 1400,
+            "max_attribute": 16,
+            "max_skill": 16,
+            "max_combat_technique": 16,
+            "max_attribute_points": 105,
+            "max_spells_liturgies": 16,
+            "max_foreign_spells": 4
+        },
+        {
+            "experience_level": "Brillant",
+            "ap_pool": 1700,
+            "max_attribute": 17,
+            "max_skill": 19,
+            "max_combat_technique": 18,
+            "max_attribute_points": 109,
+            "max_spells_liturgies": 18,
+            "max_foreign_spells": 5
+        },
+        {
+            "experience_level": "Legendär",
+            "ap_pool": 2100,
+            "max_attribute": 18,
+            "max_skill": 20,
+            "max_combat_technique": 20,
+            "max_attribute_points": 114,
+            "max_spells_liturgies": 20,
+            "max_foreign_spells": 6
+        }
+    ],
+    "species": [
+        {
+            "species": "Achaz",
+            "le": 5,
+            "sk": -4,
+            "zk": -5,
+            "gs": 8,
+            "attribute_modifiers": "IN und KO +1; MU oder KK -1",
+            "advantages": [
+                "Dunkelsicht I",
+                "Zusätzliche Gliedmaße (Schwanz)"
+            ],
+            "disadvantages": [
+                "Kältestarre"
+            ],
+            "ap_value": 25
+        },
+        {
+            "species": "Elf",
+            "le": 2,
+            "sk": -4,
+            "zk": -6,
+            "gs": 8,
+            "attribute_modifiers": "IN und GE +1; KL oder KK -2",
+            "advantages": [
+                "Zauberer",
+                "Zweistimmiger Gesang"
+            ],
+            "disadvantages": [],
+            "ap_value": 18
+        },
+        {
+            "species": "Goblin",
+            "le": 3,
+            "sk": -6,
+            "zk": -5,
+            "gs": 8,
+            "attribute_modifiers": "FF +1 und GE +1, MU -1 oder KL -1",
+            "advantages": [
+                "Dunkelsicht I",
+                "Herausragender Sinn (Gehör)",
+                "Herausragender Sinn (Geruch & Geschmack)",
+                "Krankheitsresistenz I"
+            ],
+            "disadvantages": [],
+            "ap_value": 5
+        },
+        {
+            "species": "Halbelf",
+            "le": 5,
+            "sk": -4,
+            "zk": -6,
+            "gs": 8,
+            "attribute_modifiers": "eine beliebige +1",
+            "advantages": [],
+            "disadvantages": [],
+            "ap_value": 0
+        },
+        {
+            "species": "Halbork",
+            "le": 6,
+            "sk": -6,
+            "zk": -5,
+            "gs": 8,
+            "attribute_modifiers": "KO +1, CH -1",
+            "advantages": [
+                "Zäher Hund"
+            ],
+            "disadvantages": [],
+            "ap_value": 1
+        },
+        {
+            "species": "Holberker",
+            "le": 6,
+            "sk": -6,
+            "zk": -5,
+            "gs": 8,
+            "attribute_modifiers": "KL -1, KO +1",
+            "advantages": [
+                "Zäher Hund"
+            ],
+            "disadvantages": [],
+            "ap_value": 1
+        },
+        {
+            "species": "Mensch",
+            "le": 5,
+            "sk": -5,
+            "zk": -5,
+            "gs": 8,
+            "attribute_modifiers": "eine beliebige +1",
+            "advantages": [],
+            "disadvantages": [],
+            "ap_value": 0
+        },
+        {
+            "species": "Nachtalb",
+            "le": 2,
+            "sk": -4,
+            "zk": -6,
+            "gs": 8,
+            "attribute_modifiers": "IN und GE +1; KL oder KK -2",
+            "advantages": [
+                "Zauberer",
+                "Zweistimmiger Gesang"
+            ],
+            "disadvantages": [],
+            "ap_value": 18
+        },
+        {
+            "species": "Ork",
+            "le": 8,
+            "sk": -6,
+            "zk": -4,
+            "gs": 8,
+            "attribute_modifiers": "MU +1 und KO +1, KL -1 oder CH -1",
+            "advantages": [],
+            "disadvantages": [],
+            "ap_value": 18
+        },
+        {
+            "species": "Zwerg",
+            "le": 8,
+            "sk": -4,
+            "zk": -4,
+            "gs": 6,
+            "attribute_modifiers": "KO und KK +1; CH oder GE -2",
+            "advantages": [],
+            "disadvantages": [],
+            "ap_value": 61
+        }
+    ],
+    "cultures": [
+        {
+            "id": "andergast",
+            "name": "Andergast",
+            "category": "Menschliche Kulturen",
+            "ap_value": 20,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Andergaster.html",
+            "package_talents": [
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "aranien",
+            "name": "Aranien",
+            "category": "Menschliche Kulturen",
+            "ap_value": 26,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Aranier.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Brett- & Glücksspiel",
+                    "bonus": 1
+                },
+                {
+                    "name": "Gassenwissen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Handel",
+                    "bonus": 2
+                },
+                {
+                    "name": "Menschenkenntnis",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechnen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Stoffbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Überreden",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "bornland",
+            "name": "Bornland",
+            "category": "Menschliche Kulturen",
+            "ap_value": 18,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Bornl%C3%A4nder.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Lebensmittelbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "engasal",
+            "name": "Engasal",
+            "category": "Menschliche Kulturen",
+            "ap_value": 10,
+            "source_url": "https://dsa.ulisses-regelwiki.de/WdV-Kultur_Engasaler.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Brett- & Glücksspiel",
+                    "bonus": 1
+                },
+                {
+                    "name": "Gaukeleien",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lebensmittelbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Malen & Zeichnen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Überreden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "ferkinas",
+            "name": "Ferkinas",
+            "category": "Menschliche Kulturen",
+            "ap_value": 39,
+            "source_url": "https://dsa.ulisses-regelwiki.de/kul_Ferkinas.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Reiten",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "fjarninger",
+            "name": "Fjarninger",
+            "category": "Menschliche Kulturen",
+            "ap_value": 33,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Fjarninger.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 2
+                },
+                {
+                    "name": "Metallbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "horasreich",
+            "name": "Horasreich",
+            "category": "Menschliche Kulturen",
+            "ap_value": 27,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Horasier.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Etikette",
+                    "bonus": 2
+                },
+                {
+                    "name": "Gassenwissen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geographie",
+                    "bonus": 1
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Handel",
+                    "bonus": 1
+                },
+                {
+                    "name": "Mechanik",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechnen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Rechtskunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "gjalsker",
+            "name": "Gjalsker",
+            "category": "Menschliche Kulturen",
+            "ap_value": 34,
+            "source_url": "https://dsa.ulisses-regelwiki.de/kul_Gjalsker.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 2
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "koboldwelt",
+            "name": "Koboldwelt",
+            "category": "Menschliche Kulturen",
+            "ap_value": 18,
+            "source_url": "https://dsa.ulisses-regelwiki.de/rergbgfb.html",
+            "package_talents": [
+                {
+                    "name": "Brett- & Glücksspiel",
+                    "bonus": 1
+                },
+                {
+                    "name": "Gassenwissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Gaukeleien",
+                    "bonus": 2
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Magiekunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Malen & Zeichnen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 1
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sphärenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "maraskan",
+            "name": "Maraskan",
+            "category": "Menschliche Kulturen",
+            "ap_value": 26,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Maraskaner.html",
+            "package_talents": [
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 1
+                },
+                {
+                    "name": "Heilkunde Gift",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "mhanadistan",
+            "name": "Mhanadistan",
+            "category": "Menschliche Kulturen",
+            "ap_value": 28,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Mhanadistani.html",
+            "package_talents": [
+                {
+                    "name": "Brett- & Glücksspiel",
+                    "bonus": 2
+                },
+                {
+                    "name": "Gassenwissen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 2
+                },
+                {
+                    "name": "Handel",
+                    "bonus": 2
+                },
+                {
+                    "name": "Magiekunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 2
+                },
+                {
+                    "name": "Überreden",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "mittelreich",
+            "name": "Mittelreich",
+            "category": "Menschliche Kulturen",
+            "ap_value": 12,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Mittelreicher.html",
+            "package_talents": [
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Metallbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Stoffbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "nivesen",
+            "name": "Nivesen",
+            "category": "Menschliche Kulturen",
+            "ap_value": 37,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Nivesen.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fahrzeuge",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "norbarden",
+            "name": "Norbarden",
+            "category": "Menschliche Kulturen",
+            "ap_value": 18,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Norbarden.html",
+            "package_talents": [
+                {
+                    "name": "Fahrzeuge",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geographie",
+                    "bonus": 2
+                },
+                {
+                    "name": "Handel",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Überreden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "nordaventurien",
+            "name": "Nordaventurien",
+            "category": "Menschliche Kulturen",
+            "ap_value": 25,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Nordaventurier.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Handel",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "nostria",
+            "name": "Nostria",
+            "category": "Menschliche Kulturen",
+            "ap_value": 15,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Nostrier.html",
+            "package_talents": [
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "novadis",
+            "name": "Novadis",
+            "category": "Menschliche Kulturen",
+            "ap_value": 25,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Novadis.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Rechtskunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Reiten",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "suedaventurien",
+            "name": "Südaventurien",
+            "category": "Menschliche Kulturen",
+            "ap_value": 26,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_S%C3%BCdaventurier.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 1
+                },
+                {
+                    "name": "Gassenwissen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Heilkunde Gift",
+                    "bonus": 1
+                },
+                {
+                    "name": "Menschenkenntnis",
+                    "bonus": 2
+                },
+                {
+                    "name": "Überreden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Willenskraft",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "svellttal",
+            "name": "Svellttal",
+            "category": "Menschliche Kulturen",
+            "ap_value": 21,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Svellttaler.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fahrzeuge",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "thorwal",
+            "name": "Thorwal",
+            "category": "Menschliche Kulturen",
+            "ap_value": 24,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Thorwaler.html",
+            "package_talents": [
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 2
+                },
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geographie",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "tocamuyac",
+            "name": "Tocamuyac",
+            "category": "Menschliche Kulturen",
+            "ap_value": 49,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Menschen/tocamuyac.html",
+            "package_talents": [
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geographie",
+                    "bonus": 1
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 1
+                },
+                {
+                    "name": "Heilkunde Gift",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 2
+                },
+                {
+                    "name": "Schwimmen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sphärenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sternkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "trollzacker",
+            "name": "Trollzacker",
+            "category": "Menschliche Kulturen",
+            "ap_value": 38,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Trollzacker.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "utulus",
+            "name": "Utulus",
+            "category": "Menschliche Kulturen",
+            "ap_value": 40,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Utulus.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Heilkunde Gift",
+                    "bonus": 1
+                },
+                {
+                    "name": "Heilkunde Krankheiten",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Schwimmen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "waldmenschen",
+            "name": "Waldmenschen",
+            "category": "Menschliche Kulturen",
+            "ap_value": 42,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Waldmenschen.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Heilkunde Gift",
+                    "bonus": 1
+                },
+                {
+                    "name": "Heilkunde Krankheiten",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "zahori",
+            "name": "Zahori",
+            "category": "Menschliche Kulturen",
+            "ap_value": 28,
+            "source_url": "https://dsa.ulisses-regelwiki.de/kul_Zahori.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Gaukeleien",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Taschendiebstahl",
+                    "bonus": 2
+                },
+                {
+                    "name": "Überreden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verkleiden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "zyklopeninseln",
+            "name": "Zyklopeninseln",
+            "category": "Menschliche Kulturen",
+            "ap_value": 16,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Zyklop%C3%A4er.html",
+            "package_talents": [
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 2
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechnen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechtskunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "auelfen",
+            "name": "Auelfen",
+            "category": "Kulturen der Elfen",
+            "ap_value": 43,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Auelfen.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Schwimmen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "firnelfen",
+            "name": "Firnelfen",
+            "category": "Kulturen der Elfen",
+            "ap_value": 55,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Firnelfen.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "steppenelfen",
+            "name": "Steppenelfen",
+            "category": "Kulturen der Elfen",
+            "ap_value": 48,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kult_Steppenelfen.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Reiten",
+                    "bonus": 2
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "waldelfen",
+            "name": "Waldelfen",
+            "category": "Kulturen der Elfen",
+            "ap_value": 47,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Waldelfen.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "wüstenelfen",
+            "name": "Wüstenelfen",
+            "category": "Kulturen der Elfen",
+            "ap_value": 55,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Elfen/wuestenelfen.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "ambosszwerge",
+            "name": "Ambosszwerge",
+            "category": "Kulturen der Zwerge",
+            "ap_value": 31,
+            "source_url": "https://dsa.ulisses-regelwiki.de/ZK_Ambosszwerge.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 2
+                },
+                {
+                    "name": "Kriegskunst",
+                    "bonus": 2
+                },
+                {
+                    "name": "Mechanik",
+                    "bonus": 1
+                },
+                {
+                    "name": "Metallbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "brillantzwerge",
+            "name": "Brillantzwerge",
+            "category": "Kulturen der Zwerge",
+            "ap_value": 29,
+            "source_url": "https://dsa.ulisses-regelwiki.de/ZL_Brillantzwerge.html",
+            "package_talents": [
+                {
+                    "name": "Betören",
+                    "bonus": 1
+                },
+                {
+                    "name": "Geographie",
+                    "bonus": 2
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Metallbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Musizieren",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Schlösserknacken",
+                    "bonus": 2
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "erzzwerge",
+            "name": "Erzzwerge",
+            "category": "Kulturen der Zwerge",
+            "ap_value": 34,
+            "source_url": "https://dsa.ulisses-regelwiki.de/ZK_Erzzwerge.html",
+            "package_talents": [
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 2
+                },
+                {
+                    "name": "Mechanik",
+                    "bonus": 2
+                },
+                {
+                    "name": "Metallbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechnen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Rechtskunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 2
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "hügelzwerge",
+            "name": "Hügelzwerge",
+            "category": "Kulturen der Zwerge",
+            "ap_value": 13,
+            "source_url": "https://dsa.ulisses-regelwiki.de/ZK_H%C3%BCgelzwerge.html",
+            "package_talents": [
+                {
+                    "name": "Fahrzeuge",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lebensmittelbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Singen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tanzen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "wildzwerge",
+            "name": "Wildzwerge",
+            "category": "Kulturen der Zwerge",
+            "ap_value": 17,
+            "source_url": "https://dsa.ulisses-regelwiki.de/kultur_wildzwerge.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "achaz-rha",
+            "name": "Achaz-Rha",
+            "category": "Kulturen der Achaz",
+            "ap_value": 55,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Achaz-Rha.html",
+            "package_talents": [
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 1
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Magiekunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Mechanik",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechnen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 2
+                },
+                {
+                    "name": "Schwimmen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sphärenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sternkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                },
+                {
+                    "name": "Willenskraft",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "ctki-ssrr",
+            "name": "Ctki’Ssrr",
+            "category": "Kulturen der Achaz",
+            "ap_value": 49,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_CtkiSsrr.html",
+            "package_talents": [
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 1
+                },
+                {
+                    "name": "Geschichtswissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Götter & Kulte",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Schwimmen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                },
+                {
+                    "name": "Willenskraft",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "stammesachaz",
+            "name": "Stammesachaz",
+            "category": "Kulturen der Achaz",
+            "ap_value": 50,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Stammesachaz.html",
+            "package_talents": [
+                {
+                    "name": "Boote & Schiffe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fischen & Angeln",
+                    "bonus": 2
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Schwimmen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                },
+                {
+                    "name": "Willenskraft",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "stammesgoblins",
+            "name": "Stammesgoblins",
+            "category": "Kulturen der Goblins",
+            "ap_value": 45,
+            "source_url": "https://dsa.ulisses-regelwiki.de/kulturen/goblin-kulturen/stammesgoblins.html",
+            "package_talents": [
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 2
+                },
+                {
+                    "name": "Sagen & Legenden",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 2
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "stammesorks",
+            "name": "Stammesorks",
+            "category": "Kulturen der Orks",
+            "ap_value": 40,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Orkland.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Klettern",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 2
+                },
+                {
+                    "name": "Kriegskunst",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Selbstbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 2
+                }
+            ]
+        },
+        {
+            "id": "holberk",
+            "name": "Holberk",
+            "category": "Spezielle Kulturen",
+            "ap_value": 27,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Holberk.html",
+            "package_talents": [
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Körperbeherrschung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Kraftakt",
+                    "bonus": 1
+                },
+                {
+                    "name": "Lederbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Metallbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Pflanzenkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Steinbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                }
+            ]
+        },
+        {
+            "id": "raeuberbande",
+            "name": "Räuberbande",
+            "category": "Spezielle Kulturen",
+            "ap_value": 34,
+            "source_url": "https://dsa.ulisses-regelwiki.de/Kul_Raeuberbande.html",
+            "package_talents": [
+                {
+                    "name": "Einschüchtern",
+                    "bonus": 2
+                },
+                {
+                    "name": "Fährtensuchen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Fesseln",
+                    "bonus": 2
+                },
+                {
+                    "name": "Gassenwissen",
+                    "bonus": 1
+                },
+                {
+                    "name": "Holzbearbeitung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Orientierung",
+                    "bonus": 1
+                },
+                {
+                    "name": "Rechtskunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Sinnesschärfe",
+                    "bonus": 1
+                },
+                {
+                    "name": "Tierkunde",
+                    "bonus": 1
+                },
+                {
+                    "name": "Verbergen",
+                    "bonus": 2
+                },
+                {
+                    "name": "Wildnisleben",
+                    "bonus": 1
+                },
+                {
+                    "name": "Zechen",
+                    "bonus": 1
+                }
+            ]
+        }
+    ],
+    "ap_values_and_increases": [
+        {
+            "ability": "Eigenschaft",
+            "ap_value": "nach Kostentabelle (E)"
+        },
+        {
+            "ability": "Fertigkeit",
+            "ap_value": "nach Kostentabelle (A–D)"
+        },
+        {
+            "ability": "Kampftechnik",
+            "ap_value": "nach Kostentabelle (B–D)"
+        },
+        {
+            "ability": "Vorteil",
+            "ap_value": "je nach Vorteil"
+        },
+        {
+            "ability": "Nachteil",
+            "ap_value": "je nach Nachteil"
+        },
+        {
+            "ability": "Zaubertrick",
+            "ap_value": "1 AP"
+        },
+        {
+            "ability": "Segnung",
+            "ap_value": "1 AP"
+        },
+        {
+            "ability": "Zauber/Ritual",
+            "ap_value": "nach Kostentabelle (A–D)"
+        },
+        {
+            "ability": "Liturgie/Zeremonie",
+            "ap_value": "nach Kostentabelle (A–D)"
+        }
+    ],
+    "cost_table": [
+        {
+            "level": "Aktivierung auf 0",
+            "A": 1,
+            "B": 2,
+            "C": 3,
+            "D": 4,
+            "E": null
+        },
+        {
+            "level": "1-12",
+            "A": 1,
+            "B": 2,
+            "C": 3,
+            "D": 4,
+            "E": 15
+        },
+        {
+            "level": "13",
+            "A": 2,
+            "B": 4,
+            "C": 6,
+            "D": 8,
+            "E": 15
+        },
+        {
+            "level": "14",
+            "A": 3,
+            "B": 6,
+            "C": 9,
+            "D": 12,
+            "E": 15
+        },
+        {
+            "level": "15",
+            "A": 4,
+            "B": 8,
+            "C": 12,
+            "D": 16,
+            "E": 30
+        },
+        {
+            "level": "16",
+            "A": 5,
+            "B": 10,
+            "C": 15,
+            "D": 20,
+            "E": 45
+        },
+        {
+            "level": "17",
+            "A": 6,
+            "B": 12,
+            "C": 18,
+            "D": 24,
+            "E": 60
+        },
+        {
+            "level": "18",
+            "A": 7,
+            "B": 14,
+            "C": 21,
+            "D": 28,
+            "E": 75
+        },
+        {
+            "level": "19",
+            "A": 8,
+            "B": 16,
+            "C": 24,
+            "D": 32,
+            "E": 90
+        },
+        {
+            "level": "20",
+            "A": 9,
+            "B": 18,
+            "C": 27,
+            "D": 36,
+            "E": 105
+        },
+        {
+            "level": "21",
+            "A": 10,
+            "B": 20,
+            "C": 30,
+            "D": 40,
+            "E": 120
+        },
+        {
+            "level": "22",
+            "A": 11,
+            "B": 22,
+            "C": 33,
+            "D": 44,
+            "E": 135
+        },
+        {
+            "level": "23",
+            "A": 12,
+            "B": 24,
+            "C": 36,
+            "D": 48,
+            "E": 150
+        },
+        {
+            "level": "24",
+            "A": 13,
+            "B": 26,
+            "C": 39,
+            "D": 52,
+            "E": 165
+        },
+        {
+            "level": "25",
+            "A": 14,
+            "B": 28,
+            "C": 42,
+            "D": 56,
+            "E": 180
+        }
+    ],
+    "attribute_point_costs": [
+        {
+            "attribute_value": "Bis 14",
+            "ap_value": 15
+        },
+        {
+            "attribute_value": "15",
+            "ap_value": 30
+        },
+        {
+            "attribute_value": "16",
+            "ap_value": 45
+        },
+        {
+            "attribute_value": "17",
+            "ap_value": 60
+        },
+        {
+            "attribute_value": "18",
+            "ap_value": 75
+        },
+        {
+            "attribute_value": "19",
+            "ap_value": 90
+        }
+    ],
+    "foreign_spells_by_experience_level": [
+        {
+            "experience_level": "Unerfahren",
+            "foreign_spells": 0
+        },
+        {
+            "experience_level": "Durchschnittlich",
+            "foreign_spells": 1
+        },
+        {
+            "experience_level": "Erfahren",
+            "foreign_spells": 2
+        },
+        {
+            "experience_level": "Kompetent",
+            "foreign_spells": 3
+        },
+        {
+            "experience_level": "Meisterlich",
+            "foreign_spells": 4
+        },
+        {
+            "experience_level": "Brillant",
+            "foreign_spells": 5
+        },
+        {
+            "experience_level": "Legendär",
+            "foreign_spells": 6
+        }
+    ]
+
+}

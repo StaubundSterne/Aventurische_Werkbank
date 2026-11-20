@@ -1,0 +1,227 @@
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "DSA 5 – Nachteile",
+    "description": "Regelreferenzdaten für Nachteile.",
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "disadvantages"
+        ],
+        "properties": {
+            "disadvantages": {
+                "type": "array",
+                "description": "Liste aller Nachteile nach DSA 5-Regeln.",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "id",
+                        "name",
+                        "rule"
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "description": "Eindeutige Regel-ID des Nachteils."
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "Offizielle Bezeichnung des Nachteils."
+                        },
+                        "ap_value": {
+                            "type": "integer",
+                            "description": "Abenteuerpunktewert eines nicht gestuften Nachteils."
+                        },
+                        "rule": {
+                            "type": "string",
+                            "description": "Vollständiger Regeltext des Nachteils."
+                        },
+                        "levels": {
+                            "type": "array",
+                            "description": "Stufen eines gestuften Nachteils einschließlich der jeweiligen AP-Werte.",
+                            "minItems": 1,
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                    "level",
+                                    "ap_value"
+                                ],
+                                "properties": {
+                                    "level": {
+                                        "type": "integer",
+                                        "minimum": 1,
+                                        "description": "Nummer der Nachteilsstufe."
+                                    },
+                                    "ap_value": {
+                                        "type": "integer",
+                                        "description": "Abenteuerpunktewert dieser Stufe."
+                                    }
+                                }
+                            }
+                        },
+                        "selection": {
+                            "type": "array",
+                            "description": "Verfügbare Auswahlmöglichkeiten des Nachteils.",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "id": {
+                                        "type": "integer",
+                                        "minimum": 0,
+                                        "description": "Numerische Auswahl-ID aus den Optolith-Referenzdaten."
+                                    },
+                                    "title": {
+                                        "type": "string",
+                                        "description": "Bezeichnung der Auswahl oder Freitextangabe."
+                                    },
+                                    "target-id": {
+                                        "type": "string",
+                                        "description": "Regel-ID eines referenzierten Regelgegenstands."
+                                    },
+                                    "target-title": {
+                                        "type": "string",
+                                        "description": "Bezeichnung des referenzierten Regelgegenstands."
+                                    }
+                                },
+                                "anyOf": [
+                                    {
+                                        "required": [
+                                            "id"
+                                        ]
+                                    },
+                                    {
+                                        "required": [
+                                            "title"
+                                        ]
+                                    },
+                                    {
+                                        "required": [
+                                            "target-id",
+                                            "target-title"
+                                        ]
+                                    }
+                                ],
+                                "dependencies": {
+                                    "target-id": [
+                                        "target-title"
+                                    ],
+                                    "target-title": [
+                                        "target-id"
+                                    ]
+                                }
+                            }
+                        },
+                        "prerequisites": {
+                            "type": "array",
+                            "description": "Voraussetzungen und Ausschlussbedingungen.",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                    "type",
+                                    "id",
+                                    "condition"
+                                ],
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "advantage",
+                                            "disadvantage",
+                                            "skill",
+                                            "combat_technique",
+                                            "special_ability"
+                                        ]
+                                    },
+                                    "id": {
+                                        "type": "string",
+                                        "description": "Eindeutige Regel-ID des referenzierten Regelgegenstands."
+                                    },
+                                    "condition": {
+                                        "type": "string",
+                                        "enum": [
+                                            "present",
+                                            "not_present"
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "publications": {
+                            "type": "array",
+                            "description": "Publikationen, in denen der Nachteil beschrieben wird.",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                    "name"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "page": {
+                                        "type": "integer",
+                                        "minimum": 1
+                                    },
+                                    "url": {
+                                        "type": "string",
+                                        "format": "uri"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "oneOf": [
+                        {
+                            "required": [
+                                "ap_value"
+                            ],
+                            "not": {
+                                "required": [
+                                    "levels"
+                                ]
+                            }
+                        },
+                        {
+                            "required": [
+                                "levels"
+                            ],
+                            "not": {
+                                "required": [
+                                    "ap_value"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "data": {
+        "disadvantages": []
+    }
+}
+
+
+
+
+
+Nachteile
+ID	Regelgegenstand
+DISADV_1	Angst vor …
+DISADV_2	Arm
+DISADV_7	Eingeschränkter Sinn
+DISADV_34	Prinzipientreue
+DISADV_37	Persönlichkeitsschwächen
+DISADV_50	Verpflichtungen
+
+Auch hier hatten wir Auswahlwerte aufgelöst:
+- DISADV_1, sid: 8 – Spinnen
+- DISADV_7, sid: 3 – Geruch & Geschmack
+- DISADV_37, sid: 3 – Geiz
+- DISADV_37, sid: 4 – Goldgier

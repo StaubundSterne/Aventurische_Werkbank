@@ -1,23 +1,69 @@
+
 #!/bin/bash
+set -euo pipefail
 
-echo "/** Automatisch generierter Index **/ " > js/data-index.js
+# Immer vom Projektverzeichnis aus arbeiten
+cd "$(dirname "$0")"
 
-# Funktion für die Standard-Ordner (Filtert jetzt explizit auf .json)
-generate_list() {
-    echo "export const $2 = [" >> js/data-index.js
-    # Wir fügen *.json beim ls-Befehl wieder hinzu
-    ls data/$1/*.json 2>/dev/null | xargs -n 1 basename 2>/dev/null | sed "s/.*/  '&',/" >> js/data-index.js
-    echo "];" >> js/data-index.js
-    echo "" >> js/data-index.js
-}
+mkdir -p js
 
-# Nur die permanenten Datenbank-Ordner indizieren
-generate_list "ingame-information" "INGAME_INFORMATION_FILES"
-generate_list "nsc" "NSC_FILES"
-generate_list "venues" "VENUES_FILES"
-generate_list "items" "ITEMS_FILES"
+python3 <<'PY'
+import json
+from pathlib import Path
 
-# Einzelfall Campaign (hier ist die Endung .md fest im Text)
-echo "export const CAMPAIGN_FILE = 'campaign/campaign.md';" >> js/data-index.js
+output = Path("js/data-index.js")
 
-echo "Index für statische Daten wurde aktualisiert!"
+directories = [
+    ("ingame-information", "INGAME_INFORMATION_FILES"),
+    ("sc", "SC_FILES"),
+    ("nsc", "NSC_FILES"),
+    ("venues", "VENUES_FILES"),
+    ("items", "ITEMS_FILES"),
+    ("playcards", "PLAYCARDS_FILES"),
+    ("recaps", "RECAPS_FILES"),
+]
+
+lines = [
+    "/** Automatisch generierter Index **/",
+    ""
+]
+
+for directory, export_name in directories:
+    lines.append(f"export const {export_name} = [")
+
+    folder = Path("data") / directory
+
+    if folder.exists():
+        files = sorted(
+            folder.glob("*.json"),
+            key=lambda path: path.name.casefold()
+        )
+
+        for file in files:
+            filename = json.dumps(
+                file.name,
+                ensure_ascii=False
+            )
+            lines.append(f"  {filename},")
+
+    lines.extend([
+        "];",
+        ""
+    ])
+
+lines.append(
+    "export const CAMPAIGN_FILE = 'campaign/campaign.md';"
+)
+
+output.write_text(
+    "\n".join(lines) + "\n",
+    encoding="utf-8"
+)
+
+print("Index für statische Daten wurde aktualisiert!")
+
+for directory, export_name in directories:
+    folder = Path("data") / directory
+    count = len(list(folder.glob("*.json"))) if folder.exists() else 0
+    print(f"  {export_name}: {count}")
+PY

@@ -1,0 +1,404 @@
+{
+  "ap-total": 1100,
+  "ap-spent": 1100,
+  "ap-remaining": 0,
+  "stats": {
+    "experience-level": {
+      "id": "EL_3",
+      "title": "Erfahren"
+    },
+    "attributes": {
+      "MU": 14,
+      "KL": 10,
+      "IN": 14,
+      "CH": 15,
+      "FF": 13,
+      "GE": 14,
+      "KO": 10,
+      "KK": 10
+    },
+    "advantages": [
+      {
+        "id": "ADV_50",
+        "instance-id": "35a64f56-055e-489d-8ace-3e5c299cf672",
+        "title": "Zauberer"
+      },
+      {
+        "id": "ADV_98",
+        "instance-id": "d8df44ef-6511-423a-a477-ac6a8f47beb4",
+        "title": "Begabte/r Aufreißer/in"
+      },
+      {
+        "id": "ADV_0",
+        "instance-id": "a4e59059-a259-45f1-bd93-e27fe44becbd",
+        "title": "Eigener Vorteil",
+        "selection": {
+          "title": "wird als 12 Jahre alt eingeschätzt"
+        }
+      },
+      {
+        "id": "ADV_9",
+        "instance-id": "389e8317-a1ad-42cd-870b-14028de080d9",
+        "title": "Flink"
+      },
+      {
+        "id": "ADV_15",
+        "instance-id": "92288281-8def-43df-8390-0a1bbdf949b2",
+        "title": "Gutaussehend",
+        "level": 1
+      },
+      {
+        "id": "ADV_22",
+        "instance-id": "f4ed0bcc-3646-4d57-b198-e3582514bda3",
+        "title": "Hitzeresistenz"
+      },
+      {
+        "id": "ADV_38",
+        "instance-id": "afc7ce77-b602-4885-b2f2-55180cf34efe",
+        "title": "Schlangenmensch"
+      },
+      {
+        "id": "ADV_75",
+        "instance-id": "dd0e5f82-e1a2-4cbd-a45e-58d49b3984d2",
+        "title": "Schnell wieder auf den Beinen"
+      },
+      {
+        "id": "ADV_48",
+        "instance-id": "3aeabd04-9464-40fe-b1dd-e21bd505165d",
+        "title": "Wohlklang"
+      }
+    ],
+    "disadvantages": [
+      {
+        "id": "DISADV_16",
+        "instance-id": "bfcb14c7-989c-4bb2-98cf-b2f6294819cb",
+        "title": "Kälteempfindlich"
+      },
+      {
+        "id": "DISADV_36",
+        "instance-id": "c2c50e54-287a-49bb-8c97-bcb1bb447b22",
+        "title": "Schlechte Angewohnheit",
+        "selection": {
+          "id": 4,
+          "title": "Duzer"
+        }
+      },
+      {
+        "id": "DISADV_37",
+        "instance-id": "fb4fe173-971e-4586-b38d-618d6fa06dc4",
+        "title": "Schlechte Eigenschaft",
+        "selection": {
+          "id": 8,
+          "title": "Neugier"
+        }
+      },
+      {
+        "id": "DISADV_37",
+        "instance-id": "4c8db9d7-4ac3-4c2b-b428-83e61579a71e",
+        "title": "Schlechte Eigenschaft",
+        "selection": {
+          "id": 7,
+          "title": "Naiv"
+        }
+      },
+      {
+        "id": "DISADV_48",
+        "instance-id": "00d60511-e6f6-4131-b0d9-0d67b2165f9b",
+        "title": "Unfähig",
+        "selection": {
+          "target-id": "TAL_17",
+          "target-title": "Einschüchtern"
+        }
+      },
+      {
+        "id": "DISADV_1",
+        "instance-id": "96f6d0d0-8dd0-46ce-a2c2-2be679b77cf4",
+        "title": "Angst vor",
+        "selection": {
+          "id": 7,
+          "title": "engen Räumen"
+        },
+        "level": 1
+      },
+      {
+        "id": "DISADV_0",
+        "instance-id": "3380c2b9-7705-4b8d-b698-99dc73266cf2",
+        "title": "Eigener Nachteil",
+        "selection": {
+          "title": "wird als 12 Jahre alt wahrgenommen"
+        }
+      },
+      {
+        "id": "DISADV_56",
+        "instance-id": "c7c5acfb-bd88-4686-8574-7166b594a29d",
+        "title": "Gläsern"
+      },
+      {
+        "id": "DISADV_55",
+        "instance-id": "40c1c2b9-7449-4467-962e-840a04060840",
+        "title": "Zerbrechlich"
+      }
+    ],
+    "abilities": {
+      "talents": [
+        {
+          "id": "TAL_2",
+          "instance-id": "89bca56e-2785-4ea1-ab20-dc679656f3e9",
+          "title": "Gaukeleien",
+          "FW": 10
+        },
+        {
+          "id": "TAL_4",
+          "instance-id": "cf7da00e-a786-4346-b62a-f49983da5d9e",
+          "title": "Körperbeherrschung",
+          "FW": 6
+        },
+        {
+          "id": "TAL_11",
+          "instance-id": "5ca04a4d-1d35-4114-9135-c79e8e51d302",
+          "title": "Tanzen",
+          "FW": 10
+        },
+        {
+          "id": "TAL_13",
+          "instance-id": "7a83576c-6648-49e9-b3f9-418363dfe258",
+          "title": "Verbergen",
+          "FW": 5
+        },
+        {
+          "id": "TAL_14",
+          "instance-id": "3db96976-2b56-44ab-b8e2-d6b203a3743e",
+          "title": "Zechen",
+          "FW": 3
+        },
+        {
+          "id": "TAL_16",
+          "instance-id": "e1fa5e8e-05a5-44de-81c4-e18a1c00d40d",
+          "title": "Betören",
+          "FW": 8
+        },
+        {
+          "id": "TAL_22",
+          "instance-id": "6643089f-d0b4-4f13-9c2e-a88fa3dbcfcf",
+          "title": "Verkleiden",
+          "FW": 5
+        },
+        {
+          "id": "TAL_20",
+          "instance-id": "2d993100-e36e-447b-83cd-f985b14da4b3",
+          "title": "Menschenkenntnis",
+          "FW": 8
+        },
+        {
+          "id": "TAL_25",
+          "instance-id": "f1b4ea3c-f089-4779-9448-a00618c8076c",
+          "title": "Fesseln",
+          "FW": 4
+        },
+        {
+          "id": "TAL_30",
+          "instance-id": "509bfdaa-33bd-4071-8717-81f058ac9144",
+          "title": "Wildnisleben",
+          "FW": 2
+        },
+        {
+          "id": "TAL_52",
+          "instance-id": "5a200e5f-c01b-4ef6-b7ca-012ed40cc5ae",
+          "title": "Lebensmittelbearbeitung",
+          "FW": 2
+        },
+        {
+          "id": "TAL_56",
+          "instance-id": "9de40a80-bb64-41a8-a521-b7273bf62b32",
+          "title": "Musizieren",
+          "FW": 10
+        },
+        {
+          "id": "TAL_57",
+          "instance-id": "67ad98e1-31cf-44a1-861d-2c4f72667122",
+          "title": "Schlösserknacken",
+          "FW": 5
+        },
+        {
+          "id": "TAL_54",
+          "instance-id": "81e93d1d-865a-4965-8477-1dfb44a2eb58",
+          "title": "Malen & Zeichnen",
+          "FW": 2
+        },
+        {
+          "id": "TAL_3",
+          "instance-id": "660d5fec-9a4c-4392-8278-55907e1b990f",
+          "title": "Klettern",
+          "FW": 3
+        },
+        {
+          "id": "TAL_9",
+          "instance-id": "1144ebcd-a985-486e-91d0-4a537e3169da",
+          "title": "Singen",
+          "FW": 10
+        },
+        {
+          "id": "TAL_8",
+          "instance-id": "7b13f0fb-0bf3-4b0b-9e84-36dcc6668e6c",
+          "title": "Selbstbeherrschung",
+          "FW": 3
+        },
+        {
+          "id": "TAL_21",
+          "instance-id": "09674040-1af6-4474-b33a-f9da1474b8e0",
+          "title": "Überreden",
+          "FW": 4
+        },
+        {
+          "id": "TAL_23",
+          "instance-id": "9a0b1438-2f6d-4a59-bb12-61e8fb488c95",
+          "title": "Willenskraft",
+          "FW": 3
+        },
+        {
+          "id": "TAL_28",
+          "instance-id": "07a11c7e-217c-4a74-ab72-376be94218af",
+          "title": "Pflanzenkunde",
+          "FW": 1
+        },
+        {
+          "id": "TAL_29",
+          "instance-id": "d5f610e7-2be5-4d1f-b504-bf1d9cb77262",
+          "title": "Tierkunde",
+          "FW": 1
+        },
+        {
+          "id": "TAL_10",
+          "instance-id": "5e4479e1-989c-45f7-a8d1-35bcbcb28241",
+          "title": "Sinnesschärfe",
+          "FW": 1
+        }
+      ],
+      "combat-techniques": [
+        {
+          "id": "CT_11",
+          "instance-id": "93fd6496-fca8-42e1-96d8-afabdca3f310",
+          "title": "Schleudern",
+          "KTW": 8
+        }
+      ],
+      "spells": [],
+      "liturgies": [],
+      "special-abilities": [
+        {
+          "id": "SA_29",
+          "instance-id": "9c0a6872-af27-4259-bc12-517a17fbda48",
+          "title": "Sprache",
+          "selection": {
+            "id": 8,
+            "title": "Garethi"
+          },
+          "level": 2
+        },
+        {
+          "id": "SA_29",
+          "instance-id": "e6d1015f-02eb-45c1-8ed9-b717dcc5f1ed",
+          "title": "Sprache",
+          "selection": {
+            "id": 23,
+            "title": "Tulamidya"
+          },
+          "level": 4
+        },
+        {
+          "id": "SA_678",
+          "instance-id": "ea282f95-9961-4fb8-9492-c41db828a4d8",
+          "title": "Tradition (Zaubertänzer)"
+        },
+        {
+          "id": "SA_424",
+          "instance-id": "45c4911a-8890-4c2e-9188-99f23f5e1202",
+          "title": "Hose Herunterziehen/Hemd Hochziehen"
+        },
+        {
+          "id": "SA_992",
+          "instance-id": "c39f9753-5101-4f8a-a474-74e552f6ce13",
+          "title": "Abschleppspezialist/in"
+        },
+        {
+          "id": "SA_997",
+          "instance-id": "49efd71d-ccde-43ba-b36c-2df076aeb3cd",
+          "title": "Beeindruckende Vorstellung",
+          "selection": {
+            "target-id": "TAL_11",
+            "target-title": "Tanzen"
+          }
+        },
+        {
+          "id": "SA_997",
+          "instance-id": "5cb81bcc-7993-4ace-8618-3989d0577516",
+          "title": "Beeindruckende Vorstellung",
+          "selection": {
+            "target-id": "TAL_2",
+            "target-title": "Gaukeleien"
+          }
+        },
+        {
+          "id": "SA_108",
+          "instance-id": "d45ad87b-2968-4b52-87a8-52893cacc964",
+          "title": "Faszinierender Gesang"
+        },
+        {
+          "id": "SA_107",
+          "instance-id": "b27ffed9-b1af-4b2f-a2b2-f00e6820150d",
+          "title": "Ermutigender Gesang"
+        },
+        {
+          "id": "SA_9",
+          "instance-id": "aa29f581-56e0-4616-9f9a-d98a05aa65fe",
+          "title": "Fertigkeitsspezialisierung",
+          "selection": {
+            "target-id": "TAL_16",
+            "target-title": "Betören",
+            "id": 1,
+            "title": "Anbändeln"
+          }
+        },
+        {
+          "id": "SA_21",
+          "instance-id": "b7144333-21b3-449b-96eb-b01d92735e54",
+          "title": "Meister der Improvisation"
+        },
+        {
+          "id": "SA_137",
+          "instance-id": "68602dc6-30d2-4b2b-baeb-cd2c3175dc07",
+          "title": "Seile herstellen"
+        },
+        {
+          "id": "SA_375",
+          "instance-id": "787e9e93-290c-4f86-af12-bc18811f44c8",
+          "title": "Bindung der Zauberkleidung"
+        }
+      ]
+    },
+    "derived-stats": {
+      "LE": 25,
+      "SK": 1,
+      "ZK": 0,
+      "AW": 7,
+      "INI": {
+        "base": 14,
+        "dice": "1W6",
+        "modifier": 0
+      },
+      "GS": 8
+    },
+    "species-package": {
+      "id": "R_1",
+      "instance-id": "96469f01-2219-4087-9373-39ccaae4ef0b",
+      "title": "Mensch"
+    }
+  },
+  "metadata": {
+    "source": "Optolith",
+    "source-version": "1.5.2",
+    "source-character-id": "H_1793099679275",
+    "source-created": "2026-06-06T17:18:48.793Z",
+    "source-modified": "2026-10-27T11:15:37.083Z"
+  }
+}
