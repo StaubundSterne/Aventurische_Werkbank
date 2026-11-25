@@ -1,0 +1,84 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "source": "wiki-aventurica.de; Şahins 3. Untersuchung – Große Anamnese und Verständigungsprüfung.md",
+    "tags": [],
+    "general": {
+        "name": "Josold von Trallop",
+        "gender": "männlich",
+        "canonical": true,
+        "birth-year": 950,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Weiden",
+        "culture-package": "mittelreich",
+        "soul-animal": "Rabe",
+        "experience-level": "Kompetent"
+    },
+    "profession": {
+        "category": "Geweihte:r",
+        "specification": "Borongeweihte:r und Hüter des Raben",
+        "profession-package": "prof_borongeweihter",
+        "clerical": true,
+        "magical": false,
+        "noble": false
+    },
+    "locations": {
+        "actual-location": "Donnerbach",
+        "former-locations": [
+            "Trallop"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Şahin",
+            "Adarell"
+        ],
+        "injection-points": "Boron-Zeremonie, Erinnerungsschleier, Seelenzustand"
+    },
+    "appearance": {
+        "size": 182,
+        "weight": 78,
+        "hair": "Dunkles, kurzes Haar",
+        "skin": "Blasse Haut",
+        "eyes": "Dunkle Augen",
+        "outfit": {
+            "headgear": "Keine",
+            "top": "Dunkle Gewänder des Borongottes",
+            "trousers": "Dunkles Beinkleid",
+            "footwear": "Schlichte dunkle Stiefel",
+            "jewellery": "Ein schweres, silbernes Raben-Amulett",
+            "things": "Eine kleine Schale mit Grabweihrauch",
+            "weapons": "Keine"
+        },
+        "distinguishing_features": "Gravitätische Ruhe, Hornhaut an den Fingern, tiefe, sonore Stimme."
+    },
+    "personality": {
+        "traits": [
+            "Schweigsam",
+            "Gravitätisch",
+            "In sich gekehrt",
+            "Distanziert",
+            "Besonnen"
+        ],
+        "advantages": [
+            "Geweihte:r (Boron)"
+        ],
+        "disadvantages": [
+            "Prinzipientreue (Borongesetze)"
+        ],
+        "actual-mood": [
+            "Konzentriert"
+        ],
+        "family-background": "Mutter Alrike, Weberin in Trallop; Vater Wulfram, Steinmetz in Trallop.",
+        "motivation": "Durchführung der heiligen Zeremonie des Erinnerns zur Aufdeckung verborgener Wahrheiten."
+    },
+    "session-notes": "",
+    "relations": {
+        "nsc": [],
+        "ingame-information": [],
+        "venues": [],
+        "items": [],
+        "playcards": []
+    }
+}

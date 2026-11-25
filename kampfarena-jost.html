@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jost Zumpel – Kampfarena</title>
+
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --panel: #202020;
+            --panel-light: #2b2b2b;
+            --card-bg: #f4e4bc;
+            --card-border: #8b5e3c;
+            --text-main: #2b1d0e;
+            --accent: #8b0000;
+            --highlight: #d4a017;
+            --text-light: #e8e0d0;
+            --muted: #777;
+            --success: #27633a;
+            --danger: #8b0000;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        header {
+            background: #080808;
+            border-bottom: 2px solid var(--highlight);
+            padding: 15px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--highlight);
+            font-size: 1.35rem;
+        }
+
+        header .subtitle {
+            color: #aaa;
+            font-size: .85rem;
+            margin-top: 3px;
+        }
+
+        main {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 18px;
+        }
+
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            border: 1px solid #77502f;
+            background: #38271d;
+            color: #f4e4bc;
+            padding: 9px 13px;
+            border-radius: 4px;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        button:hover {
+            background: #583a28;
+            border-color: var(--highlight);
+        }
+
+        button.primary {
+            background: var(--accent);
+            border-color: #b66b45;
+        }
+
+        button.primary:hover {
+            background: #a00000;
+        }
+
+        button:disabled {
+            opacity: .4;
+            cursor: not-allowed;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 14px;
+            margin-bottom: 16px;
+        }
+
+        .panel h2 {
+            margin: 0 0 12px;
+            color: var(--highlight);
+            font-size: 1.05rem;
+        }
+
+        .panel h3 {
+            margin: 14px 0 8px;
+            color: #e6c77e;
+            font-size: .95rem;
+        }
+
+        .status-message {
+            padding: 12px;
+            border-radius: 4px;
+            background: #292929;
+            border-left: 4px solid var(--highlight);
+            margin-bottom: 16px;
+        }
+
+        .status-message.error {
+            border-left-color: #c33;
+        }
+
+        .status-message.success {
+            border-left-color: #4a6;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Zentrale Charakterkarte – Gestaltung und Grundstruktur
+   orientieren sich an der arena-card der Meister-Kampfarena. */
+
+        .arena-card {
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 3px solid var(--card-border);
+            border-radius: 7px;
+            padding: 18px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, .35);
+            margin-bottom: 18px;
+        }
+
+        .arena-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+            border-bottom: 2px solid rgba(139, 94, 60, .5);
+            padding-bottom: 12px;
+            margin-bottom: 14px;
+        }
+
+        .arena-card-header h2 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        .arena-card-header .character-type {
+            font-size: .8rem;
+            color: #68472d;
+            margin-top: 4px;
+        }
+
+        .character-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, .4);
+            border: 1px solid rgba(139, 94, 60, .35);
+            border-radius: 4px;
+            padding: 9px;
+            text-align: center;
+        }
+
+        .stat-box .label {
+            display: block;
+            color: #68472d;
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+        }
+
+        .stat-box .value {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .resource {
+            background: rgba(255, 255, 255, .35);
+            border: 1px solid rgba(139, 94, 60, .35);
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .resource label {
+            display: block;
+            font-size: .8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .resource input {
+            width: 100%;
+        }
+
+        input,
+        select {
+            background: #fffaf0;
+            color: #24170d;
+            border: 1px solid #98704e;
+            border-radius: 4px;
+            padding: 8px;
+            font: inherit;
+            min-width: 0;
+        }
+
+        input[type="number"] {
+            width: 100%;
+        }
+
+        .field-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .field label {
+            display: block;
+            font-size: .8rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .field input,
+        .field select {
+            width: 100%;
+        }
+
+        .weapon-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .88rem;
+            margin-top: 8px;
+        }
+
+        .weapon-table th,
+        .weapon-table td {
+            padding: 8px;
+            border-bottom: 1px solid rgba(139, 94, 60, .3);
+            text-align: left;
+        }
+
+        .weapon-table th {
+            color: #68472d;
+            font-size: .75rem;
+            text-transform: uppercase;
+        }
+
+        .weapon-table tr.active-weapon {
+            background: rgba(212, 160, 23, .22);
+            font-weight: bold;
+        }
+
+        .weapon-table button {
+            padding: 5px 8px;
+            font-size: .78rem;
+        }
+
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .action-box {
+            background: rgba(255, 255, 255, .32);
+            border: 1px solid rgba(139, 94, 60, .4);
+            border-radius: 5px;
+            padding: 12px;
+        }
+
+        .action-box h3 {
+            color: var(--accent);
+            margin: 0 0 10px;
+        }
+
+        .action-box p {
+            font-size: .83rem;
+            line-height: 1.4;
+            color: #59412c;
+        }
+
+        .action-box button {
+            margin-top: 9px;
+        }
+
+        .roll-result {
+            font-weight: bold;
+            margin-top: 9px;
+            min-height: 20px;
+        }
+
+        .log {
+            max-height: 320px;
+            overflow-y: auto;
+            background: #101010;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: Consolas, monospace;
+            font-size: .83rem;
+        }
+
+        .log-entry {
+            padding: 5px 0;
+            border-bottom: 1px solid #292929;
+            line-height: 1.4;
+        }
+
+        .log-entry .time {
+            color: #888;
+            margin-right: 7px;
+        }
+
+        .log-entry.success {
+            color: #a8d8a8;
+        }
+
+        .log-entry.failure {
+            color: #e5a0a0;
+        }
+
+        .log-entry.info {
+            color: #e4ce91;
+        }
+
+        .muted {
+            color: #6d563e;
+            font-size: .82rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(139, 0, 0, .12);
+            color: var(--accent);
+            padding: 3px 7px;
+            border-radius: 3px;
+            font-size: .75rem;
+            font-weight: bold;
+        }
+
+        .initiative-display {
+            font-size: 1.7rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: .75rem;
+            padding: 18px;
+        }
+
+        @media (max-width: 650px) {
+            main {
+                padding: 10px;
+            }
+
+            .arena-card {
+                padding: 12px;
+            }
+
+            .arena-card-header {
+                flex-direction: column;
+            }
+
+            .weapon-table {
+                font-size: .75rem;
+            }
+
+            .weapon-table th,
+            .weapon-table td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Jost Zumpel – Kampfarena</h1>
+            <div class="subtitle">Persönliches Kampfwerkzeug für den Spielercharakter</div>
+        </div>
+        <span class="badge">Spieleransicht</span>
+    </header>
+
+    <main>
+
+        <div id="loadStatus" class="status-message">
+            Lade Josts Charakterdaten aus <code>data/sc/Jost.json</code> …
+        </div>
+
+        <div id="arenaInterface" class="hidden">
+
+            <div class="toolbar">
+                <button class="primary" onclick="rollInitiative()">Initiative würfeln</button>
+                <button onclick="nextRound()">Neue Kampfrunde</button>
+                <button onclick="resetCombat()">Kampf zurücksetzen</button>
+            </div>
+
+            <section class="arena-card" id="jostArenaCard">
+                <div class="arena-card-header">
+                    <div>
+                        <h2 id="characterName">Jost Zumpel</h2>
+                        <div class="character-type" id="characterDescription">
+                            Persönlicher Charakterbogen
+                        </div>
+                    </div>
+                    <div>
+                        <div class="muted">Initiative im Kampf</div>
+                        <div class="initiative-display" id="initiativeValue">–</div>
+                    </div>
+                </div>
+
+                <div class="character-stats" id="attributeDisplay"></div>
+
+                <div class="resource-grid">
+                    <div class="resource">
+                        <label for="currentLE">Lebensenergie</label>
+                        <input type="number" id="currentLE" min="0">
+                        <div class="muted" id="maxLE"></div>
+                    </div>
+                    <div class="resource">
+                        <label for="currentAE">Astralenergie</label>
+                        <input type="number" id="currentAE" min="0">
+                        <div class="muted" id="maxAE"></div>
+                    </div>
+                    <div class="resource">
+                        <label for="currentKE">Karmaenergie</label>
+                        <input type="number" id="currentKE" min="0">
+                        <div class="muted" id="maxKE"></div>
+                    </div>
+                    <div class="resource">
+                        <label for="painLevel">Schmerzstufe</label>
+                        <input type="number" id="painLevel" min="0" max="4" value="0">
+                        <div class="muted">Wird bei Proben und Kampfwerten berücksichtigt.</div>
+                    </div>
+                </div>
+
+                <h3>Abgeleitete Kampfwerte</h3>
+                <div class="character-stats" id="combatValues"></div>
+
+                <h3>Waffen und Kampftechniken</h3>
+                <div id="weaponArea"></div>
+
+                <div class="muted" id="weaponNotice"></div>
+            </section>
+
+            <section class="panel">
+                <h2>Kampfhandlungen</h2>
+                <div class="action-grid">
+
+                    <div class="action-box">
+                        <h3>1. Nahkampfangriff</h3>
+                        <p>
+                            Wähle eine Waffe. Der Angriffswert wird aus dem
+                            Kampftechnikwert und dem zugehörigen Attribut berechnet.
+                            Schmerz und ein eigener Modifikator werden berücksichtigt.
+                        </p>
+
+                        <div class="field-grid">
+                            <div class="field">
+                                <label for="attackModifier">Modifikator</label>
+                                <input type="number" id="attackModifier" value="0">
+                            </div>
+                            <div class="field">
+                                <label for="attackRoll">Wurf (leer = automatisch)</label>
+                                <input type="number" id="attackRoll" min="1" max="20" placeholder="1–20">
+                            </div>
+                        </div>
+
+                        <button class="primary" onclick="performAttack()">Angriff ausführen</button>
+                        <div id="attackResult" class="roll-result"></div>
+                    </div>
+
+                    <div class="action-box">
+                        <h3>2. Parade</h3>
+                        <p>
+                            Trage den Angriffswurf des Gegners ein. Die Arena
+                            berechnet Josts aktuelle Parade einschließlich der
+                            kumulativen Abzüge durch weitere Verteidigungen.
+                        </p>
+
+                        <div class="field-grid">
+                            <div class="field">
+                                <label for="incomingAttackRoll">Angriffswurf des Gegners</label>
+                                <input type="number" id="incomingAttackRoll" min="1" max="20">
+                            </div>
+                            <div class="field">
+                                <label for="parryModifier">Parademodifikator</label>
+                                <input type="number" id="parryModifier" value="0">
+                            </div>
+                            <div class="field">
+                                <label for="parryRoll">Eigener Wurf (leer = automatisch)</label>
+                                <input type="number" id="parryRoll" min="1" max="20" placeholder="1–20">
+                            </div>
+                        </div>
+
+                        <button onclick="performDefense('PA')">Parade würfeln</button>
+                        <div id="parryResult" class="roll-result"></div>
+                    </div>
+
+                    <div class="action-box">
+                        <h3>3. Ausweichen</h3>
+                        <p>
+                            Alternativ zur Parade kann Jost ausweichen.
+                            Pro Angriff steht eine Verteidigung zur Verfügung.
+                            Der Abzug für weitere Verteidigungen gilt
+                            über Parade und Ausweichen hinweg.
+                        </p>
+
+                        <div class="field-grid">
+                            <div class="field">
+                                <label for="dodgeModifier">Ausweichmodifikator</label>
+                                <input type="number" id="dodgeModifier" value="0">
+                            </div>
+                            <div class="field">
+                                <label for="dodgeRoll">Eigener Wurf (leer = automatisch)</label>
+                                <input type="number" id="dodgeRoll" min="1" max="20" placeholder="1–20">
+                            </div>
+                        </div>
+
+                        <button onclick="performDefense('AW')">Ausweichen würfeln</button>
+                        <div id="dodgeResult" class="roll-result"></div>
+                    </div>
+
+                    <div class="action-box">
+                        <h3>4. Eingehenden Schaden erfassen</h3>
+                        <p>
+                            Diese Eingabe dient dazu, einen nicht abgewehrten Treffer
+                            anhand der von der Spielleitung mitgeteilten Trefferpunkte
+                            und Josts Rüstungsschutz nachzuhalten.
+                        </p>
+
+                        <div class="field-grid">
+                            <div class="field">
+                                <label for="incomingTP">Trefferpunkte</label>
+                                <input type="number" id="incomingTP" min="0" value="0">
+                            </div>
+                            <div class="field">
+                                <label for="ownRS">Josts Rüstungsschutz</label>
+                                <input type="number" id="ownRS" min="0" value="0">
+                            </div>
+                        </div>
+
+                        <button onclick="applyIncomingDamage()">Schaden übernehmen</button>
+                        <div id="damageResult" class="roll-result"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Kampfrundenübersicht</h2>
+                <div class="field-grid">
+                    <div class="stat-box">
+                        <span class="label">Kampfrunde</span>
+                        <span class="value" id="roundNumber">1</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">Angriff verwendet</span>
+                        <span class="value" id="attackStatus">Nein</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">Verteidigungen</span>
+                        <span class="value" id="defenseCount">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">Nächster Verteidigungsabzug</span>
+                        <span class="value" id="nextDefensePenalty">–</span>
+                    </div>
+                </div>
+                <p class="muted">
+                    Die Arena verwaltet Josts eigene Handlungen. Sie ersetzt nicht
+                    die Entscheidung der Spielleitung über Treffer, Reichweiten,
+                    gegnerische Werte oder besondere Situationen.
+                </p>
+            </section>
+
+            <section class="panel">
+                <h2>Kampfprotokoll</h2>
+                <div class="toolbar">
+                    <button onclick="clearLog()">Protokoll leeren</button>
+                    <button onclick="copyLog()">Protokoll kopieren</button>
+                </div>
+                <div class="log" id="combatLog">
+                    <div class="log-entry info">Die Kampfarena ist bereit.</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        Jost Zumpel – persönliche Spieler-Kampfarena · DSA 5
+    </footer>
+
+    <script>
+        "use strict";
+
+        /* -------------------------------------------------------
+           CHARAKTERDATEN
+           Die Datei wird relativ zu dieser HTML-Datei geladen.
+           Erwarteter Speicherort: data/sc/Jost.json
+        ------------------------------------------------------- */
+
+        const CHARACTER_FILE = "data/sc/Jost.json";
+
+        let characterData = null;
+        let characterStats = null;
+        let derivedStats = null;
+        let combatStats = null;
+        let attributes = {};
+        let weapons = [];
+        let combatTechniques = [];
+
+        let activeWeaponIndex = 0;
+
+        let combatState = {
+            round: 1,
+            initiative: null,
+            attackUsed: false,
+            defensesUsed: 0
+        };
+
+        const $ = id => document.getElementById(id);
+
+        function numberOrNull(value) {
+            if (value === null || value === undefined || value === "") return null;
+            const n = Number(value);
+            return Number.isFinite(n) ? n : null;
+        }
+
+        function getCharacterName(data) {
+            return data?.general?.name
+                || data?.metadata?.name
+                || data?.name
+                || "Jost Zumpel";
+        }
+
+        function getTechniqueName(weapon) {
+            return weapon?.["combat-technique"]
+                || weapon?.combatTechnique
+                || weapon?.technique
+                || "";
+        }
+
+        function getTechniqueValue(weapon) {
+            const techniqueId = weapon?.["combat-technique-id"];
+            const name = getTechniqueName(weapon);
+
+            const technique = combatTechniques.find(t =>
+                (techniqueId && t?.id === techniqueId)
+                || (t?.title === name)
+            );
+
+            if (!technique) return null;
+
+            return numberOrNull(
+                technique.KTW
+                ?? technique.value
+                ?? technique.rating
+                ?? technique.ktw
+                ?? technique["combat-technique-value"]
+            );
+        }
+
+        function getAttributeValue(attributeSpec) {
+            if (!attributeSpec) return null;
+
+            const keys = String(attributeSpec)
+                .split("/")
+                .map(key => key.trim().toUpperCase());
+
+            const values = keys
+                .map(key => numberOrNull(attributes[key]))
+                .filter(value => value !== null);
+
+            if (!values.length) return null;
+
+            return Math.max(...values);
+        }
+
+        function getWeaponDamage(weapon) {
+            return weapon?.hitpoints
+                || weapon?.damage
+                || weapon?.TP
+                || "Nicht hinterlegt";
+        }
+
+        function getWeaponName(weapon) {
+            return weapon?.name || weapon?.title || "Unbenannte Waffe";
+        }
+
+        function getWeaponModifier(weapon, key) {
+            const candidates = {
+                AT: ["attack-modifier", "AT-Modifikator", "AT", "at-modifier"],
+                PA: ["parry-modifier", "PA-Modifikator", "PA", "pa-modifier"]
+            };
+
+            for (const field of candidates[key] || []) {
+                const value = numberOrNull(weapon?.[field]);
+                if (value !== null) return value;
+            }
+            return 0;
+        }
+
+        async function loadJost() {
+            try {
+                const response = await fetch(CHARACTER_FILE, { cache: "no-store" });
+
+                if (!response.ok) {
+                    throw new Error(
+                        `Die Datei ${CHARACTER_FILE} konnte nicht geladen werden (HTTP ${response.status}).`
+                    );
+                }
+
+                characterData = await response.json();
+                characterStats = characterData.stats || {};
+                derivedStats = characterStats["derived-stats"] || {};
+                combatStats = characterStats["combat-stats"] || {};
+                attributes = characterStats.attributes || {};
+
+                const abilities = characterStats.abilities || {};
+                combatTechniques = abilities["combat-techniques"] || [];
+
+                weapons = Array.isArray(combatStats.weapons)
+                    ? structuredClone(combatStats.weapons)
+                    : [];
+
+                initializeArena();
+                $("loadStatus").className = "status-message success";
+                $("loadStatus").textContent = "Josts Charakterdaten wurden erfolgreich geladen.";
+                $("arenaInterface").classList.remove("hidden");
+
+            } catch (error) {
+                console.error(error);
+                $("loadStatus").className = "status-message error";
+                $("loadStatus").innerHTML =
+                    "<strong>Josts Charakterdaten konnten nicht geladen werden.</strong><br>" +
+                    escapeHtml(error.message) +
+                    "<br><br>Prüfe, ob die HTML-Datei im Projektverzeichnis liegt und " +
+                    "<code>data/sc/Jost.json</code> vorhanden ist. Öffne die Arena über einen " +
+                    "lokalen Webserver, nicht direkt per Doppelklick als <code>file://</code>.";
+            }
+        }
+
+        function initializeArena() {
+            $("characterName").textContent = getCharacterName(characterData);
+
+            const profession =
+                characterStats["profession-package"]
+                || characterData?.general?.profession
+                || "Spielcharakter";
+
+            $("characterDescription").textContent =
+                typeof profession === "string" ? profession : "Spielcharakter";
+
+            const le = numberOrNull(derivedStats.LE);
+            const ae = numberOrNull(derivedStats.AE);
+            const ke = numberOrNull(derivedStats.KE);
+
+            setResource("currentLE", "maxLE", le);
+            setResource("currentAE", "maxAE", ae);
+            setResource("currentKE", "maxKE", ke);
+
+            $("painLevel").value = numberOrNull(combatStats["pain-level"]) ?? 0;
+            $("ownRS").value = numberOrNull(combatStats["armour-protection"]) ?? 0;
+
+            renderAttributes();
+            renderCombatValues();
+            renderWeapons();
+            updateRoundDisplay();
+
+            logAction("Josts Charakterdaten wurden geladen.", "info");
+        }
+
+        function setResource(inputId, maxId, value) {
+            $(inputId).value = value ?? "";
+            $(maxId).textContent = value === null
+                ? "Maximalwert nicht hinterlegt"
+                : `Maximum: ${value}`;
+        }
+
+        /* -------------------------------------------------------
+           ANZEIGE DER CHARAKTERWERTE
+        ------------------------------------------------------- */
+
+        function renderAttributes() {
+            const names = {
+                MU: "Mut", KL: "Klugheit", IN: "Intuition", CH: "Charisma",
+                FF: "Fingerfertigkeit", GE: "Gewandtheit",
+                KO: "Konstitution", KK: "Körperkraft"
+            };
+
+            $("attributeDisplay").innerHTML = Object.entries(names)
+                .map(([key, label]) => {
+                    const value = numberOrNull(attributes[key]);
+                    return `
+                <div class="stat-box">
+                    <span class="label">${label} (${key})</span>
+                    <span class="value">${value ?? "–"}</span>
+                </div>`;
+                }).join("");
+        }
+
+        function renderCombatValues() {
+            const values = [
+                ["SK", numberOrNull(derivedStats.SK)],
+                ["ZK", numberOrNull(derivedStats.ZK)],
+                ["AW", getCurrentDodgeValue()],
+                ["RS", numberOrNull(combatStats["armour-protection"])],
+                ["BE", numberOrNull(combatStats.encumbrance)],
+                ["INI-Basis", numberOrNull(derivedStats.INI)]
+            ];
+
+            $("combatValues").innerHTML = values.map(([label, value]) => `
+        <div class="stat-box">
+            <span class="label">${label}</span>
+            <span class="value">${value ?? "–"}</span>
+        </div>
+    `).join("");
+        }
+
+        /* -------------------------------------------------------
+           WAFFEN UND KAMPFTECHNIKEN
+        ------------------------------------------------------- */
+
+        function getActiveWeapon() {
+            return weapons[activeWeaponIndex] || null;
+        }
+
+        function getParryAttribute(techniqueName) {
+            const name = String(techniqueName).toLowerCase();
+
+            if (
+                name.includes("dolche")
+                || name.includes("fächer")
+                || name.includes("fechtwaffen")
+            ) return "GE";
+
+            if (
+                name.includes("hiebwaffen")
+                || name.includes("kettenwaffen")
+                || name.includes("lanzen")
+                || name.includes("schilde")
+                || name.includes("spießwaffen")
+                || name.includes("zweihandschwerter")
+                || name.includes("zweihandhiebwaffen")
+            ) return "KK";
+
+            if (
+                name.includes("raufen")
+                || name.includes("schwerter")
+                || name.includes("stangenwaffen")
+            ) return "GE/KK";
+
+            return null;
+        }
+
+        function calculateWeaponValues(weapon) {
+            if (!weapon) {
+                return { AT: null, PA: null, KTW: null };
+            }
+
+            const techniqueName = getTechniqueName(weapon);
+            const ktw = getTechniqueValue(weapon);
+
+            if (ktw === null) {
+                return { AT: null, PA: null, KTW: null };
+            }
+
+            // AT: voller KTW + je volle 3 Punkte MU über 8
+            const mu = numberOrNull(attributes.MU);
+
+            const at = mu === null
+                ? null
+                : ktw + Math.floor((mu - 8) / 3);
+
+            // PA: halber KTW + je volle 3 Punkte des Paradeattributs über 8
+            const parryAttribute = getParryAttribute(techniqueName);
+            const parryAttributeValue = getAttributeValue(parryAttribute);
+
+            const pa = parryAttributeValue === null
+                ? null
+                : Math.ceil(ktw / 2)
+                + Math.floor((parryAttributeValue - 8) / 3);
+
+            return {
+                AT: at === null
+                    ? null
+                    : at + getWeaponModifier(weapon, "AT"),
+
+                PA: pa === null
+                    ? null
+                    : pa + getWeaponModifier(weapon, "PA"),
+
+                KTW: ktw,
+                techniqueName
+            };
+        }
+        function getCurrentAttackValue() {
+            const values = calculateWeaponValues(getActiveWeapon());
+            return values.AT;
+        }
+
+        function getCurrentParryValue() {
+            const values = calculateWeaponValues(getActiveWeapon());
+            return values.PA;
+        }
+
+        function getCurrentDodgeValue() {
+            return numberOrNull(derivedStats.AW);
+        }
+
+        function renderWeapons() {
+            if (!weapons.length) {
+                $("weaponArea").innerHTML =
+                    "<p>In Josts Charakterdatei sind keine Waffen hinterlegt.</p>";
+                $("weaponNotice").textContent =
+                    "Ohne Waffendaten kann die Arena keinen waffengebundenen AT- oder PA-Wert berechnen.";
+                return;
+            }
+
+            $("weaponArea").innerHTML = `
+        <table class="weapon-table">
+            <thead>
+                <tr>
+                    <th>Waffe</th>
+                    <th>Kampftechnik</th>
+                    <th>AT</th>
+                    <th>PA</th>
+                    <th>TP</th>
+                    <th>Auswahl</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${weapons.map((weapon, index) => {
+                const values = calculateWeaponValues(weapon);
+                return `
+                        <tr class="${index === activeWeaponIndex ? "active-weapon" : ""}">
+                            <td>${escapeHtml(getWeaponName(weapon))}</td>
+                            <td>${escapeHtml(getTechniqueName(weapon) || "–")}</td>
+                            <td>${values.AT ?? "–"}</td>
+                            <td>${values.PA ?? "–"}</td>
+                            <td>${escapeHtml(String(getWeaponDamage(weapon)))}</td>
+                            <td>
+                                <button onclick="selectWeapon(${index})">
+                                    ${index === activeWeaponIndex ? "Aktiv" : "Wählen"}
+                                </button>
+                            </td>
+                        </tr>`;
+            }).join("")}
+            </tbody>
+        </table>
+    `;
+
+            $("weaponNotice").textContent =
+                "Die Werte werden aus den hinterlegten Attributen und Kampftechniken berechnet.";
+        }
+
+        function selectWeapon(index) {
+            if (!Number.isInteger(index) || !weapons[index]) return;
+            activeWeaponIndex = index;
+            renderWeapons();
+            renderCombatValues();
+            logAction(`Jost führt nun ${getWeaponName(weapons[index])}.`, "info");
+        }
+
+        /* -------------------------------------------------------
+           INITIATIVE UND KAMPFRUNDEN
+        ------------------------------------------------------- */
+
+        function rollInitiative() {
+            const base = numberOrNull(derivedStats.INI);
+
+            if (base === null) {
+                logAction("In Josts Charakterdatei ist kein INI-Basiswert hinterlegt.", "failure");
+                return;
+            }
+
+            const die = rollDie(6);
+            const be = numberOrNull(combatStats.encumbrance) ?? 0;
+            const pain = getPainLevel();
+
+            combatState.initiative = base + die - be - pain;
+
+            $("initiativeValue").textContent = combatState.initiative;
+            logAction(
+                `Initiative: ${base} + ${die} − BE ${be} − Schmerz ${pain} = ${combatState.initiative}.`,
+                "success"
+            );
+        }
+
+        function nextRound() {
+            combatState.round += 1;
+            combatState.attackUsed = false;
+            combatState.defensesUsed = 0;
+
+            $("attackRoll").value = "";
+            $("incomingAttackRoll").value = "";
+            $("parryRoll").value = "";
+            $("dodgeRoll").value = "";
+
+            $("attackResult").textContent = "";
+            $("parryResult").textContent = "";
+            $("dodgeResult").textContent = "";
+
+            updateRoundDisplay();
+            logAction(`Kampfrunde ${combatState.round} beginnt. Aktionszähler und Verteidigungsabzüge wurden zurückgesetzt.`, "info");
+        }
+
+        function resetCombat() {
+            combatState = {
+                round: 1,
+                initiative: null,
+                attackUsed: false,
+                defensesUsed: 0
+            };
+
+            $("initiativeValue").textContent = "–";
+            $("attackResult").textContent = "";
+            $("parryResult").textContent = "";
+            $("dodgeResult").textContent = "";
+            $("damageResult").textContent = "";
+
+            updateRoundDisplay();
+            logAction("Der Kampfzustand wurde zurückgesetzt. Die Ressourcen bleiben unverändert.", "info");
+        }
+
+        function updateRoundDisplay() {
+            $("roundNumber").textContent = combatState.round;
+            $("attackStatus").textContent = combatState.attackUsed ? "Ja" : "Nein";
+            $("defenseCount").textContent = combatState.defensesUsed;
+            $("nextDefensePenalty").textContent =
+                combatState.defensesUsed * 3;
+        }
+
+        /* -------------------------------------------------------
+           PROBEN UND KAMPFHANDLUNGEN
+        ------------------------------------------------------- */
+
+        function rollDie(sides) {
+            return Math.floor(Math.random() * sides) + 1;
+        }
+
+        function readRoll(inputId) {
+            const entered = numberOrNull($(inputId).value);
+            if (entered === null) return rollDie(20);
+            return Math.max(1, Math.min(20, Math.floor(entered)));
+        }
+
+        function getPainLevel() {
+            return Math.max(0, numberOrNull($("painLevel").value) ?? 0);
+        }
+
+        function getEffectiveValue(base, modifier = 0) {
+            if (base === null || base === undefined) return null;
+            return Math.max(0, base + modifier - getPainLevel());
+        }
+
+        function isSuccessfulRoll(roll, value) {
+            return value !== null && roll <= value;
+        }
+
+        function performAttack() {
+            if (combatState.attackUsed) {
+                $("attackResult").textContent =
+                    "Jost hat seine Aktion in dieser Kampfrunde bereits verwendet.";
+                return;
+            }
+
+            const weapon = getActiveWeapon();
+            if (!weapon) {
+                $("attackResult").textContent = "Keine aktive Waffe vorhanden.";
+                return;
+            }
+
+            const base = getCurrentAttackValue();
+            if (base === null) {
+                $("attackResult").textContent =
+                    "Der Angriffswert kann aus den hinterlegten Daten nicht berechnet werden.";
+                return;
+            }
+
+            const modifier = numberOrNull($("attackModifier").value) ?? 0;
+            const effective = getEffectiveValue(base, modifier);
+            const roll = readRoll("attackRoll");
+            const success = isSuccessfulRoll(roll, effective);
+
+            combatState.attackUsed = true;
+
+            const text = `Wurf ${roll} gegen AT ${effective}: ${success ? "Treffer" : "Fehlschlag"}.`;
+            $("attackResult").textContent = text;
+
+            logAction(
+                `Angriff mit ${getWeaponName(weapon)}: ${text}`,
+                success ? "success" : "failure"
+            );
+
+            updateRoundDisplay();
+        }
+
+        function performDefense(type) {
+            const attackRoll = numberOrNull($("incomingAttackRoll").value);
+
+            if (attackRoll === null || attackRoll < 1 || attackRoll > 20) {
+                const message = "Bitte zuerst den Angriffswurf des Gegners eintragen.";
+                $(type === "PA" ? "parryResult" : "dodgeResult").textContent = message;
+                return;
+            }
+
+            const base = type === "PA"
+                ? getCurrentParryValue()
+                : getCurrentDodgeValue();
+
+            if (base === null) {
+                $(type === "PA" ? "parryResult" : "dodgeResult").textContent =
+                    type === "PA"
+                        ? "Für die aktive Waffe ist kein Parade-Wert berechenbar."
+                        : "Josts Ausweichen ist in den Charakterdaten nicht hinterlegt.";
+                return;
+            }
+
+            const modifier = type === "PA"
+                ? (numberOrNull($("parryModifier").value) ?? 0)
+                : (numberOrNull($("dodgeModifier").value) ?? 0);
+
+            const cumulativePenalty = combatState.defensesUsed * 3;
+            const effective = getEffectiveValue(base, modifier - cumulativePenalty);
+
+            if (effective <= 0) {
+                const message = `Der Wert ist durch den Verteidigungsabzug (${cumulativePenalty}) auf 0 oder darunter gesunken.`;
+                $(type === "PA" ? "parryResult" : "dodgeResult").textContent = message;
+                return;
+            }
+
+            const roll = readRoll(type === "PA" ? "parryRoll" : "dodgeRoll");
+            const success = isSuccessfulRoll(roll, effective);
+
+            combatState.defensesUsed += 1;
+
+            const label = type === "PA" ? "Parade" : "Ausweichen";
+            const resultText =
+                `${label}: Wurf ${roll} gegen ${effective}. ` +
+                `${success ? "Verteidigung gelungen." : "Verteidigung misslungen."}`;
+
+            $(type === "PA" ? "parryResult" : "dodgeResult").textContent = resultText;
+
+            logAction(
+                `${resultText} (Grundwert ${base}, kumulativer Abzug ${cumulativePenalty}).`,
+                success ? "success" : "failure"
+            );
+
+            updateRoundDisplay();
+        }
+
+        /* -------------------------------------------------------
+           SCHADEN UND SCHMERZ
+        ------------------------------------------------------- */
+
+        function applyIncomingDamage() {
+            const tp = numberOrNull($("incomingTP").value);
+            const rs = numberOrNull($("ownRS").value);
+
+            if (tp === null || rs === null) {
+                $("damageResult").textContent =
+                    "Bitte Trefferpunkte und Rüstungsschutz eintragen.";
+                return;
+            }
+
+            const damage = Math.max(0, tp - rs);
+            const currentLE = numberOrNull($("currentLE").value);
+
+            if (currentLE === null) {
+                $("damageResult").textContent =
+                    "Josts aktuelle Lebensenergie ist nicht hinterlegt.";
+                return;
+            }
+
+            const newLE = Math.max(0, currentLE - damage);
+            $("currentLE").value = newLE;
+
+            const oldPain = getPainLevel();
+            const newPain = calculatePainLevel(newLE);
+
+            $("painLevel").value = newPain;
+
+            const message =
+                `${tp} TP − ${rs} RS = ${damage} SP. ` +
+                `Lebensenergie: ${currentLE} → ${newLE}.`;
+
+            $("damageResult").textContent = message;
+            logAction(message, damage > 0 ? "failure" : "info");
+
+            if (newPain !== oldPain) {
+                logAction(
+                    `Schmerzstufe verändert sich von ${oldPain} auf ${newPain}.`,
+                    "info"
+                );
+            }
+
+            if (newLE <= 0) {
+                logAction("Jost hat 0 LeP erreicht und ist im Sterben.", "failure");
+            }
+
+            renderCombatValues();
+        }
+
+        function calculatePainLevel(currentLE) {
+            const maxLE = numberOrNull(derivedStats.LE);
+            if (maxLE === null || maxLE <= 0) return 0;
+
+            let pain = 0;
+
+            if (currentLE <= maxLE * 0.75) pain = 1;
+            if (currentLE <= maxLE * 0.50) pain = 2;
+            if (currentLE <= maxLE * 0.25) pain = 3;
+            if (currentLE <= 5) pain = Math.max(pain, 4);
+
+            return pain;
+        }
+
+        /* -------------------------------------------------------
+           PROTOKOLL UND HILFSFUNKTIONEN
+        ------------------------------------------------------- */
+
+        function logAction(message, type = "info") {
+            const log = $("combatLog");
+            const entry = document.createElement("div");
+            entry.className = `log-entry ${type}`;
+
+            const time = document.createElement("span");
+            time.className = "time";
+            time.textContent = new Date().toLocaleTimeString("de-DE", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit"
+            });
+
+            const content = document.createElement("span");
+            content.textContent = message;
+
+            entry.append(time, content);
+            log.appendChild(entry);
+            log.scrollTop = log.scrollHeight;
+        }
+
+        function clearLog() {
+            $("combatLog").innerHTML = "";
+        }
+
+        async function copyLog() {
+            const text = Array.from(
+                $("combatLog").querySelectorAll(".log-entry")
+            ).map(entry => entry.innerText).join("\n");
+
+            try {
+                await navigator.clipboard.writeText(text);
+                logAction("Kampfprotokoll wurde in die Zwischenablage kopiert.", "success");
+            } catch {
+                logAction("Das Kopieren wurde vom Browser nicht gestattet.", "failure");
+            }
+        }
+
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>"']/g, char => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#039;"
+            })[char]);
+        }
+
+        /* -------------------------------------------------------
+           START
+        ------------------------------------------------------- */
+
+        document.addEventListener("DOMContentLoaded", loadJost);
+    </script>
+
+</body>
+
+</html>

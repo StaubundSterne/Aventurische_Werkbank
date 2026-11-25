@@ -101,6 +101,7 @@ export const NSC_FILES = [
   "mensch_geweihter_abelmir_freistaetter_8f801.json",
   "mensch_geweihter_grimwold_3d479.json",
   "mensch_geweihter_hildibert_ingarin_baerenau_f6a7b.json",
+  "mensch_geweihter_josold_von_trallop_3d479.json",
   "mensch_geweihter_laranko_hewalkar_von_festum_3d479.json",
   "mensch_geweihter_lurio_guertinger_3d4e5.json",
   "mensch_geweihter_rondrian_donnerhall_190ab.json",
