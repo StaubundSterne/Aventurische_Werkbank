@@ -1,0 +1,64 @@
+{
+    "id": "c7ff6cb1-7667-456a-ab88-0c70daadb882",
+    "source": "Jost – Eindrücke, Geschichten und Erzählungen",
+    "general": {
+        "name": "Traja Zumpel, geborene Guldenberg",
+        "gender": "weiblich",
+        "canonical": false,
+        "birth-year": 958,
+        "alive": true,
+        "species": "Mensch",
+        "species-package": "Mensch",
+        "culture": "Weiden",
+        "culture-package": "Mittelreich",
+        "soul-animal": "Biber"
+    },
+    "profession": {
+        "category": "Händlerin",
+        "specification": "Kaufmännische Leiterin eines kleinen Handelshaushalts in Trallop. Spezialisiert auf den Handel mit Tonwaren, Töpfergeschirr und Haushaltskeramik. Kümmert sich um Einkauf, Lagerhaltung, Lieferverträge und die Beziehungen zu Handwerksbetrieben. Ihr Lagerhaus liegt am Rand der Handelsinsel."
+    },
+    "locations": {
+        "actual-location": "Trallop, Weiden – Wohnhaus am Rand der Handelsinsel",
+        "former-locations": [
+            "Donnerbach, Weiden"
+        ]
+    },
+    "sc-inject": {
+        "sc": [
+            "Jost",
+            "Hesindian"
+        ],
+        "injection-points": "Zumpel-Familienzeichen; Windauge-Konstruktionsskizzen; auffällige Einträge in den Handelsbüchern"
+    },
+    "appearance": {
+        "size": 166,
+        "weight": 68,
+        "hair": "Schulterlanges, inzwischen überwiegend graues Haar. Sie trägt es meist zurückgebunden oder mit einer schlichten Haarnadel aus dem Gesicht gestrichen.",
+        "skin": "Helle Haut mit feinen Linien an den Augen und um den Mund. An den Händen sind kleine Schwielen und einzelne dunkle Spuren von Lagerstaub und Tonabrieb zu sehen.",
+        "eyes": "Graugrüne Augen, die beim Lächeln schmal werden.",
+        "outfit": {
+            "headgear": "Bei der Arbeit eine schlichte Haube aus festem Leinen; im Haus meist ohne Kopfbedeckung.",
+            "top": "Gut geschnittenes, dunkelgrünes Wollkleid mit einem hellen Leinenkragen. Darüber trägt sie bei kühlem Wetter ein festes, gefüttertes Wams.",
+            "trousers": "Keine; sie trägt einen langen Rock aus dichtem Wollstoff.",
+            "footwear": "Dunkle, knöchelhohe Lederschuhe mit niedrigen Absätzen und verstärkten Sohlen.",
+            "jewellery": "Ein schmaler Ring aus Silber am rechten Ringfinger. An einer feinen Kette trägt sie ein kleines, schlichtes Medaillon ohne auffälliges Wappen.",
+            "things": "Ein ledergebundenes Kontorbuch, ein kleiner Schreibgriffel, ein Beutel mit Münzen und ein Schlüsselbund für Wohnhaus und Lager. Häufig trägt sie außerdem ein zusammengerolltes Stück Packpapier mit Liefervermerken bei sich.",
+            "weapons": "Ein kleines Gebrauchsmesser in einer Lederscheide am Gürtel."
+        },
+        "distinguishing_features": "Ihr graues Haar und ihr offenes Lächeln fallen zuerst auf. Beim Zuhören legt sie den Kopf leicht schräg und hält häufig mit einer Hand den Gegenstand fest, den sie gerade bearbeitet. Ihre Fingerkuppen sind rau, an den Nägeln bleiben gelegentlich dunkle Spuren von Ton und Lagerstaub."
+    },
+    "personality": {
+        "traits": [
+            "Warmherzig",
+            "Verbindlich",
+            "Geschäftstüchtig",
+            "Ausdauernd",
+            "Zurückhaltend in ihrer Trauer"
+        ],
+        "actual-mood": [
+            "Wachsam"
+        ],
+        "family-background": "Traja stammt aus der Tralloper Händlerfamilie Guldenberg. Vater Bärnhelm Guldenberg führte Lager und Fuhrwerke, Mutter Erlinde Guldenberg kümmerte sich um Haushalt und Rechnungsbücher. Ihr Bruder Ralmir Guldenberg arbeitet als Fuhrunternehmer, ihre Schwester Waidgunde Guldenberg handelt mit Tuchen. Traja heiratete Edomar Zumpel, den Bootsbauer aus Donnerbach. Seit dessen Verschwinden auf dem Neunaugensee im Jahr 994 BF gilt er als verschollen. Ihr Schwager Hendrik Zumpel war Töpfer; ihre Neffen Darwolf und Giselhold wuchsen mit Jost auf. Traja brachte Jost nach dem Verschwinden der Familie zum Rondratempel und kehrte nach Trallop zurück.",
+        "motivation": "Traja will den Handelshaushalt der Guldenbergs in geordneten Bahnen halten und die wirtschaftliche Grundlage ihrer Familie sichern. Sie pflegt Lieferbeziehungen zu Töpfern und anderen Handwerksbetrieben und achtet darauf, dass ihre Lagerbestände und Rechnungen stimmen. Jost gegenüber empfindet sie eine anhaltende Verantwortung: Sie schreibt ihm regelmäßig, schickt ihm Pakete und möchte, dass er seine Herkunft nicht vergisst. Das Verschwinden Edomars hat sie nach außen in ihr kaufmännisches Leben zurückkehren lassen; innerlich hat sie den Verlust nicht abgeschlossen. Sie bewahrt noch Unterlagen zu Edomars Vorhaben, den Neunaugensee mit seinem Flügelsegel Windauge wieder befahrbar zu machen."
+    }
+}

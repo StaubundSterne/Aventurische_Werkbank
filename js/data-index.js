@@ -131,6 +131,7 @@ export const NSC_FILES = [
   "mensch_haendlerin_berengar_albers_7e8f9.json",
   "mensch_haendlerin_boronfried_geyersbach_6d7e8.json",
   "mensch_haendlerin_gerburgis_von_twerun_f0821.json",
+  "mensch_haendlerin_traja_zumpel_geborene_guldenberg_db882.json",
   "mensch_handel_wulfbrand_nienweg_5c6d7.json",
   "mensch_handwerk_mareke_buchenhain_f4a3b.json",
   "Mensch_Handwerker_Alrik_von_Tiefhusen_d4e5f.json",
